@@ -1,0 +1,28 @@
+block studio-idei {
+
+    content: [
+        {
+            elem   : 'process',
+            mix    : [
+                { block: 'b-link' }
+            ],
+            content: 'Создание сайта',
+            url    : this.ctx.projectUrl
+        },
+        {
+            elem   : 'name',
+            mix    : [
+                { block: 'b-link', url: 'http://www.d-idei.ru/' }
+            ],
+            content: [
+                {
+                    elem: 'logo'
+                },
+                {
+                    elem   : 'text',
+                    content: 'студия «IDEI»'
+                }
+            ]
+        }
+    ]
+}

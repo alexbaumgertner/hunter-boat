@@ -1,0 +1,15 @@
+.buyer-menu
+{
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    color: #000000;
+    font-size: 13px;
+    float: right;
+}
+
+.buyer-menu .b-link {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #9eacb2;
+}

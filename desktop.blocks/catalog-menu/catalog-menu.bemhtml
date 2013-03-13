@@ -1,0 +1,23 @@
+block catalog-menu {
+
+    elem 'list', tag: 'ul'
+
+    elem 'item' {
+        tag: 'li',
+        content: {
+            block: 'b-link',
+            content: this.ctx.content,
+            url: this.ctx.url
+        }
+    }
+
+
+    elem 'section-header' {
+        content: {
+            block: 'b-link',
+            content: this.ctx.content,
+            url: this.ctx.url
+        }
+    }
+
+}

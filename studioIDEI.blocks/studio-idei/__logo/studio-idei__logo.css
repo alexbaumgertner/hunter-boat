@@ -1,0 +1,9 @@
+.studio-idei__logo {
+    background: url("studio-idei__logo.png") no-repeat;
+    height: 40px;
+    width: 90px;
+    position: absolute;
+    right: 100%;
+    top: 5px;
+    margin: 0 15px 0 0;
+}

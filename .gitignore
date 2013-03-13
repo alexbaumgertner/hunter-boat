@@ -1,0 +1,15 @@
+bem-bl
+bemhtml
+node_modules
+.DS_Store
+.idea
+.project
+.svn
+.bem/cache
+desktop.bundles/*/*.*
+!desktop.bundles/*/*.bemjson.js
+!desktop.bundles/merged/img/*
+!desktop.bundles/merged/js/*
+!desktop.bundles/merged/template/*
+!desktop.bundles/.bem/*
+*.*~

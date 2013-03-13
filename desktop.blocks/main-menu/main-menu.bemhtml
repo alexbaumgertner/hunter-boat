@@ -1,0 +1,15 @@
+block main-menu {
+
+    tag: 'ul'
+
+    elem item {
+
+        tag: 'li'
+        content: {
+            block: 'b-link',
+            content: this.ctx.name,
+            url: this.ctx.url
+        }
+    }
+
+}

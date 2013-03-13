@@ -1,0 +1,13 @@
+.catalog-menu__section_state_current
+{
+
+}
+
+.catalog-menu__section_state_current .catalog-menu__section-header {
+    color: #ff0000;
+}
+
+.catalog-menu__section_state_current .catalog-menu__section-header .b-link {
+    border-bottom: none;
+    color: #ff0000;
+}

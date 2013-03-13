@@ -1,0 +1,8 @@
+block catalog-section {
+
+    elem header, tag: 'h4'
+
+    elem list, tag: 'ul'
+
+    elem item, tag: 'li'
+}

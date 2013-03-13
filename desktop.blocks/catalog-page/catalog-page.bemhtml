@@ -1,0 +1,5 @@
+block catalog-page {
+
+
+    elem header, tag: 'h3'
+}
