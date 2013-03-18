@@ -1,3 +1,10 @@
 .info-block_type_shipping
 {
 }
+
+.info-block_type_shipping .info-block__photo
+{
+    background: url("../__photo/shipping-box.png");
+    width: 50px;
+    height: 41px;
+}

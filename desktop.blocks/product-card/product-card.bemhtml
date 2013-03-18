@@ -3,6 +3,16 @@ block product-card {
 
     content: [
         {
+            elem: 'icon',
+            content: {
+                block: 'catalog-icon', mods: { type: (function () {
+                    var mods = ['new', 'pop', 'rec'];
+                    var random = Math.floor(Math.random() * mods.length);
+                    return mods[random];
+                }()) }
+            }
+        },
+        {
             elem: 'photo'
         },
         {
