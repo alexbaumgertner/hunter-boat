@@ -1,0 +1,32 @@
+.catalog-icon__img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.catalog-icon_type_new .catalog-icon__img {
+    opacity: 0.5;
+    background: url("catalog-icon_type_new.png") no-repeat;
+
+}
+
+.catalog-icon_type_pop .catalog-icon__img {
+    opacity: 0.5;
+    background: url("catalog-icon_type_pop.png") no-repeat;
+
+}
+
+
+.catalog-icon_type_rec .catalog-icon__img {
+    opacity: 0.5;
+    background: url("catalog-icon_type_rec.png") no-repeat;
+
+}
+
+
+.catalog-icon:hover .catalog-icon__img {
+    opacity: 1;
+}

@@ -193,17 +193,23 @@
                                                 {
                                                     elem    : 'item',
                                                     elemMods: { section: 'new' },
-                                                    content : { block: 'b-link', url: '/new/', content: 'new' }
+                                                    content : { block: 'b-link', url: '/new/', content: {
+                                                        block: 'catalog-icon', mods: { type: 'new' }
+                                                    } }
                                                 },
                                                 {
                                                     elem    : 'item',
                                                     elemMods: { section: 'pop' },
-                                                    content : { block: 'b-link', url: '/pop/', content: 'pop' }
+                                                    content : { block: 'b-link', url: '/pop/', content: {
+                                                        block: 'catalog-icon', mods: { type: 'pop' }
+                                                    } }
                                                 },
                                                 {
                                                     elem    : 'item',
                                                     elemMods: { section: 'rec' },
-                                                    content : { block: 'b-link', url: '/rec/', content: 'rec' }
+                                                    content : { block: 'b-link', url: '/rec/', content: {
+                                                        block: 'catalog-icon', mods: { type: 'rec' }
+                                                    } }
                                                 }
                                             ]
                                         }

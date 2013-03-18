@@ -1,0 +1,18 @@
+block catalog-icon {
+
+    tag: 'span',
+
+    content: [
+        {
+            elem: 'img',
+            tag: 'span'
+
+        },
+        {
+            elem: 'text',
+            tag: 'span',
+            content: this.ctx.mods.type
+        }
+    ]
+
+}
