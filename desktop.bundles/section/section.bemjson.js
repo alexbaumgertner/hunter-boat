@@ -18,10 +18,10 @@
                     mods   : { width: '960' },
                     content: [
                         {
-                            block  : 'header',
-                            elem   : 'column',
+                            block   : 'header',
+                            elem    : 'column',
                             elemMods: { position: 'left' },
-                            content: [
+                            content : [
                                 {
                                     block  : 'logo',
                                     content: 'HUNTERBOAT'
@@ -30,10 +30,10 @@
                         },
 
                         {
-                            block  : 'header',
-                            elem   : 'column',
+                            block   : 'header',
+                            elem    : 'column',
                             elemMods: { position: 'right' },
-                            content: [
+                            content : [
                                 {
                                     block  : 'cart-info',
                                     content: [
@@ -62,7 +62,7 @@
                                 },
                                 {
                                     block  : 'contacts',
-                                    mods: { color: '000000' },
+                                    mods   : { color: '000000' },
                                     content: [
                                         {
                                             elem   : 'phone',
@@ -91,10 +91,10 @@
                                     block  : 'main-menu',
                                     content: [
                                         {
-                                            elem   : 'section',
+                                            elem    : 'section',
                                             elemMods: { background: 'red' },
-                                            content: {
-                                                elem: 'list',
+                                            content : {
+                                                elem   : 'list',
                                                 content: [
                                                     {
                                                         elem    : 'item',
@@ -108,7 +108,7 @@
                                         {
                                             elem   : 'section',
                                             content: {
-                                                elem: 'list',
+                                                elem   : 'list',
                                                 content: [
                                                     {
                                                         elem: 'item',
@@ -174,18 +174,18 @@
                     mods   : { width: '960' },
                     content: [
                         {
-                            block  : 'content',
-                            elem   : 'column',
+                            block   : 'content',
+                            elem    : 'column',
                             elemMods: { position: 'left' },
-                            content: [
+                            content : [
                                 {
                                     block  : 'catalog-links',
                                     content: [
                                         {
-                                            elem: 'title',
+                                            elem   : 'title',
                                             content: {
-                                                block: 'b-link',
-                                                url: '/catalog/',
+                                                block  : 'b-link',
+                                                url    : '/catalog/',
                                                 content: 'Каталог'
                                             }
                                         },
@@ -253,10 +253,10 @@
                                                             url    : '/catalog/boats/inflatable/lux/'
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem    : 'item',
                                                             elemMods: { marker: 'precent' },
-                                                            content: 'Уценка',
-                                                            url    : '/catalog/boats/inflatable/markdown/'
+                                                            content : 'Уценка',
+                                                            url     : '/catalog/boats/inflatable/markdown/'
                                                         }
                                                     ]
                                                 }
@@ -412,13 +412,13 @@
                             ]
                         },
                         {
-                            block  : 'content',
-                            elem   : 'column',
+                            block   : 'content',
+                            elem    : 'column',
                             elemMods: { position: 'right' },
-                            content: [
+                            content : [
                                 {
                                     block  : 'catalog-page',
-                                    js: true,
+                                    js     : true,
                                     content: [
                                         {
                                             elem   : 'header',
@@ -428,15 +428,15 @@
                                             elem   : 'menu',
                                             content: [
                                                 {
-                                                    elem: 'menu-item',
+                                                    elem    : 'menu-item',
                                                     elemMods: { state: 'current' },
-                                                    content: { elem: 'menu-item-title', content: 'по типу', elemMods: {
+                                                    content : { elem: 'menu-item-title', content: 'по типу', elemMods: {
                                                         order: 'asc'
                                                     }  }
                                                 },
 
                                                 {
-                                                    elem: 'menu-item',
+                                                    elem   : 'menu-item',
                                                     content: { elem: 'menu-item-title', content: 'по цене', elemMods: {
                                                         order: 'desc'
                                                     }  }
@@ -453,13 +453,21 @@
                                                             elem   : 'header',
                                                             content: [
                                                                 {
-                                                                    elem   : 'title',
-                                                                    content: 'Гребные'
+                                                                    elem   : 'header-inner',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'title',
+                                                                            content: 'Гребные'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'counter',
+                                                                            content: '3'
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
-                                                                    elem   : 'counter',
-                                                                    content: '3'
-                                                                }
+                                                                    elem: 'header-line'
+                                                                },
                                                             ]
                                                         },
                                                         {
@@ -499,15 +507,22 @@
                                                             elem   : 'header',
                                                             content: [
                                                                 {
-                                                                    elem   : 'title',
-                                                                    content: 'Моторные'
+                                                                    elem   : 'header-inner',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'title',
+                                                                            content: 'Моторные'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'counter',
+                                                                            content: '7'
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
-                                                                    elem   : 'counter',
-                                                                    content: '7'
-                                                                }
-                                                            ]
-                                                        },
+                                                                    elem: 'header-line'
+                                                                },
+                                                            ]                                                        },
                                                         {
                                                             elem   : 'list',
                                                             content: [
@@ -540,15 +555,22 @@
                                                             elem   : 'header',
                                                             content: [
                                                                 {
-                                                                    elem   : 'title',
-                                                                    content: 'Моторно-гребные'
+                                                                    elem   : 'header-inner',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'title',
+                                                                            content: 'Моторно-гребные'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'counter',
+                                                                            content: '4'
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
-                                                                    elem   : 'counter',
-                                                                    content: '4'
-                                                                }
-                                                            ]
-                                                        },
+                                                                    elem: 'header-line'
+                                                                },
+                                                            ]                                                        },
                                                         {
                                                             elem   : 'list',
                                                             content: [
@@ -577,15 +599,22 @@
                                                             elem   : 'header',
                                                             content: [
                                                                 {
-                                                                    elem   : 'title',
-                                                                    content: 'Люкс'
+                                                                    elem   : 'header-inner',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'title',
+                                                                            content: 'Люкс'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'counter',
+                                                                            content: '30'
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
-                                                                    elem   : 'counter',
-                                                                    content: '3'
-                                                                }
-                                                            ]
-                                                        },
+                                                                    elem: 'header-line'
+                                                                },
+                                                            ]                                                        },
                                                         {
                                                             elem   : 'list',
                                                             content: [
@@ -626,10 +655,10 @@
                     mods   : { width: '960' },
                     content: [
                         {
-                            block: 'footer',
-                            elem   : 'column',
+                            block   : 'footer',
+                            elem    : 'column',
                             elemMods: { position: 'left' },
-                            content: [
+                            content : [
                                 {
                                     block  : 'contacts',
                                     mods   : { color: 'e5e5e5' },
@@ -668,10 +697,10 @@
                             ]
                         },
                         {
-                            block: 'footer',
-                            elem   : 'column',
+                            block   : 'footer',
+                            elem    : 'column',
                             elemMods: { position: 'center' },
-                            content: [
+                            content : [
                                 {
                                     block: 'search'
                                 },
@@ -693,10 +722,10 @@
                             ]
                         },
                         {
-                            block: 'footer',
-                            elem   : 'column',
+                            block   : 'footer',
+                            elem    : 'column',
                             elemMods: { position: 'right' },
-                            content: [
+                            content : [
                                 {
                                     block     : 'studio-idei',
                                     mods      : { color: 'fff1d6' },

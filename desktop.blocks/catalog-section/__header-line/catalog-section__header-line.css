@@ -1,0 +1,7 @@
+.catalog-section__header-line
+{
+    background: url("catalog-section__header-line__bg.gif") repeat-x 0 center;
+    display: inline-block;
+    height: 3px;
+    vertical-align: middle;
+}
