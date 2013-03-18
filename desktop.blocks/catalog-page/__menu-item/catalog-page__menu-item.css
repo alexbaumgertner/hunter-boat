@@ -3,7 +3,7 @@
     display: inline-block;
     vertical-align: top;
     color: #0081bc;
-    border-bottom: 1px dashed;
+    border-radius: 10px;
     cursor: pointer;
     padding: 9px 11px 6px;
     margin: 0 10px 0 0;

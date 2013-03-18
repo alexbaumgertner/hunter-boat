@@ -1,0 +1,11 @@
+.contacts__phone-city-code
+{
+}
+
+.contacts__phone-city-code:before {
+    content: '(';
+}
+
+.contacts__phone-city-code:after {
+    content: ')';
+}

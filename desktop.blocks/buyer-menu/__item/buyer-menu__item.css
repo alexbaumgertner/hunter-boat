@@ -3,4 +3,20 @@
     display: inline-block;
     vertical-align: top;
     padding: 0 11px;
+    position: relative;
+}
+
+.buyer-menu__item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    right: -1px;
+    background: #717b7f;
+}
+
+
+.buyer-menu__item:last-child:after {
+    display: none;
 }

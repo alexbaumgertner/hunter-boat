@@ -1,0 +1,9 @@
+.catalog-page__menu-item-title
+{
+    border-bottom: 1px dashed;
+}
+
+.catalog-page__menu-item_state_current .catalog-page__menu-item-title
+{
+    border-bottom: none;
+}

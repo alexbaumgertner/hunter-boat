@@ -1,0 +1,6 @@
+block header {
+
+    elem column {
+        tag: 'span'
+    }
+}

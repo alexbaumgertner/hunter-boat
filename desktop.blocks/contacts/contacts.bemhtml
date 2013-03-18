@@ -1,0 +1,8 @@
+block contacts {
+
+    elem phone, tag: 'span'
+    elem phone-city-code, tag: 'span'
+    elem phone-number, tag: 'span'
+    elem link, tag: 'span'
+
+}

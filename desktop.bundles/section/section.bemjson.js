@@ -17,7 +17,8 @@
                     content: [
                         {
                             block  : 'header',
-                            elem   : 'left',
+                            elem   : 'column',
+                            elemMods: { position: 'left' },
                             content: [
                                 {
                                     block  : 'logo',
@@ -28,49 +29,112 @@
 
                         {
                             block  : 'header',
-                            elem   : 'right',
+                            elem   : 'column',
+                            elemMods: { position: 'right' },
                             content: [
                                 {
                                     block  : 'cart-info',
-                                    content: 'В заказе: 3 товара на сумму 95 000.-'
+                                    content: [
+                                        {
+                                            elem   : 'link',
+                                            content: {
+                                                block  : 'b-link',
+                                                url    : 'cart',
+                                                content: 'В заказе:'
+                                            }
+                                        },
+                                        {
+                                            elem   : 'info',
+                                            content: [
+                                                {
+                                                    elem   : 'text',
+                                                    content: '3 товара на сумму'
+                                                },
+                                                {
+                                                    elem   : 'total-price',
+                                                    content: { block: 'price', mods: { currency: 'RUB' }, value: '95000' }
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
                                     block  : 'contacts',
-                                    content: '(812) 320-02-60 Обратный звонок'
+                                    mods: { color: '000000' },
+                                    content: [
+                                        {
+                                            elem   : 'phone',
+                                            content: [
+                                                {
+                                                    elem   : 'phone-city-code',
+                                                    content: '812'
+                                                },
+                                                {
+                                                    elem   : 'phone-number',
+                                                    content: '320-02-60'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'link',
+                                            content: {
+                                                block  : 'b-link',
+                                                mods   : { pseudo: 'yes' },
+                                                content: 'Обратный звонок'
+                                            }
+                                        }
+                                    ]
                                 },
                                 {
                                     block  : 'main-menu',
                                     content: [
                                         {
-                                            elem    : 'item',
-                                            elemMods: { section: 'catalog' },
-                                            name    : 'Каталог',
-                                            url     : '/catalog/'
+                                            elem   : 'section',
+                                            elemMods: { background: 'red' },
+                                            content: {
+                                                elem: 'list',
+                                                content: [
+                                                    {
+                                                        elem    : 'item',
+                                                        elemMods: { section: 'catalog' },
+                                                        name    : 'Каталог',
+                                                        url     : '/catalog/'
+                                                    }
+                                                ]
+                                            }
                                         },
                                         {
-                                            elem: 'item',
-                                            name: 'О компании',
-                                            url : '/about/'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Отзывы',
-                                            url : '/feedback/'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Вопрос-ответ',
-                                            url : '/faq/'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Фотографии',
-                                            url : '/photos/'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Оптовикам',
-                                            url : '/wholesale/'
+                                            elem   : 'section',
+                                            content: {
+                                                elem: 'list',
+                                                content: [
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'О компании',
+                                                        url : '/about/'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Отзывы',
+                                                        url : '/feedback/'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Вопрос-ответ',
+                                                        url : '/faq/'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Фотографии',
+                                                        url : '/photos/'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Оптовикам',
+                                                        url : '/wholesale/'
+                                                    }
+                                                ]
+                                            }
                                         }
                                     ]
                                 },
@@ -108,32 +172,38 @@
                     mods   : { width: '960' },
                     content: [
                         {
-                            block: 'content',
-                            elem: 'left',
+                            block  : 'content',
+                            elem   : 'column',
+                            elemMods: { position: 'left' },
                             content: [
                                 {
-                                    block: 'catalog-links',
+                                    block  : 'catalog-links',
                                     content: [
                                         {
-                                            elem: 'title'
+                                            elem: 'title',
+                                            content: {
+                                                block: 'b-link',
+                                                url: '/catalog/',
+                                                content: 'Каталог'
+                                            }
                                         },
                                         {
-                                            elem: 'list',
+                                            elem   : 'list',
                                             content: [
                                                 {
-                                                    elem: 'item',
-                                                    elemMods: { section: 'new' } ,
-                                                    content: { block: 'b-link', url: '/new/', content: 'new' }
+                                                    elem    : 'item',
+                                                    elemMods: { section: 'new' },
+                                                    content : { block: 'b-link', url: '/new/', content: 'new' }
                                                 },
                                                 {
-                                                    elem: 'item',
-                                                    elemMods: { section: 'pop' } ,
-                                                    content: { block: 'b-link', url: '/pop/', content: 'pop' }
+                                                    elem    : 'item',
+                                                    elemMods: { section: 'pop' },
+                                                    content : { block: 'b-link', url: '/pop/', content: 'pop' }
                                                 },
                                                 {
-                                                    elem: 'item',
-                                                    elemMods: { section: 'rec' } ,
-                                                    content: { block: 'b-link', url: '/rec/', content: 'rec' }
+                                                    elem    : 'item',
+                                                    elemMods: { section: 'rec' },
+                                                    content : { block: 'b-link', url: '/rec/', content: 'rec' }
                                                 }
                                             ]
                                         }
@@ -143,9 +213,9 @@
                                     block  : 'catalog-menu',
                                     content: [
                                         {
-                                            elem   : 'section',
+                                            elem    : 'section',
                                             elemMods: { state: 'current' },
-                                            content: [
+                                            content : [
                                                 {
                                                     elem   : 'section-header',
                                                     content: 'Надувные лодки',
@@ -176,6 +246,7 @@
                                                         },
                                                         {
                                                             elem   : 'item',
+                                                            elemMods: { marker: 'precent' },
                                                             content: 'Уценка',
                                                             url    : '/catalog/boats/inflatable/markdown/'
                                                         }
@@ -306,25 +377,25 @@
                                     ]
                                 },
                                 {
-                                    block: 'info-block',
-                                    mods: { type: 'shipping' },
+                                    block  : 'info-block',
+                                    mods   : { type: 'shipping' },
                                     content: [
                                         {
                                             elem: 'photo'
                                         },
                                         {
-                                            elem: 'title',
+                                            elem   : 'title',
                                             content: 'Доставка'
                                         },
                                         {
-                                            elem: 'desc',
+                                            elem   : 'desc',
                                             content: 'Доставка транспортными компаниями и курьером почтой Росии'
                                         },
                                         {
-                                            elem: 'link',
+                                            elem   : 'link',
                                             content: {
-                                                block: 'b-link',
-                                                url: '/shipping/',
+                                                block  : 'b-link',
+                                                url    : '/shipping/',
                                                 content: 'Подробнее о доставке'
                                             }
                                         }
@@ -333,8 +404,9 @@
                             ]
                         },
                         {
-                            block: 'content',
-                            elem : 'right',
+                            block  : 'content',
+                            elem   : 'column',
+                            elemMods: { position: 'right' },
                             content: [
                                 {
                                     block  : 'catalog-page',
@@ -346,8 +418,16 @@
                                         {
                                             elem   : 'menu',
                                             content: [
-                                                {elem: 'menu-item', content: 'по типу', elemMods: { state: 'current' }},
-                                                {elem: 'menu-item', content: 'по цене'}
+                                                {
+                                                    elem: 'menu-item',
+                                                    elemMods: { state: 'current' },
+                                                    content: { elem: 'menu-item-title', content: 'по типу'  }
+                                                },
+
+                                                {
+                                                    elem: 'menu-item',
+                                                    content: { elem: 'menu-item-title', content: 'по цене'  }
+                                                }
                                             ]
                                         },
                                         {
@@ -533,9 +613,83 @@
                     mods   : { width: '960' },
                     content: [
                         {
-                            block     : 'studio-idei',
-                            mods      : { color: 'fff1d6' },
-                            projectUrl: 'project-url'
+                            block: 'footer',
+                            elem   : 'column',
+                            elemMods: { position: 'left' },
+                            content: [
+                                {
+                                    block  : 'contacts',
+                                    mods   : { color: 'e5e5e5' },
+                                    content: [
+                                        {
+                                            elem   : 'phone',
+                                            content: [
+                                                {
+                                                    elem   : 'phone-city-code',
+                                                    content: '812'
+                                                },
+                                                {
+                                                    elem   : 'phone-number',
+                                                    content: '320-02-60'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem   : 'link',
+                                            content: {
+                                                block  : 'b-link',
+                                                mods   : { pseudo: 'yes' },
+                                                content: 'Обратный звонок'
+                                            }
+                                        },
+                                        {
+                                            elem   : 'address',
+                                            content: 'Санкт-Петербург, ул. Профессора Качалова, 8'
+                                        }
+                                    ]
+                                },
+                                {
+                                    block  : 'copyright',
+                                    content: 'ООО "Производственно-торговая Компания Хантер - производство и продажа надувных лодок Хантер " '
+                                }
+                            ]
+                        },
+                        {
+                            block: 'footer',
+                            elem   : 'column',
+                            elemMods: { position: 'center' },
+                            content: [
+                                {
+                                    block: 'search'
+                                },
+                                {
+                                    block  : 'menu',
+                                    content: [
+                                        {
+                                            elem: 'item',
+                                            name: 'Вакансии',
+                                            url : '/vacancies/'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            name: 'Отзывы',
+                                            url : '/feedback/'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block: 'footer',
+                            elem   : 'column',
+                            elemMods: { position: 'right' },
+                            content: [
+                                {
+                                    block     : 'studio-idei',
+                                    mods      : { color: 'fff1d6' },
+                                    projectUrl: 'project-url'
+                                }
+                            ]
                         }
                     ]
                 }

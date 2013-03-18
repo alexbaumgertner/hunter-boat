@@ -2,6 +2,10 @@ block catalog-section {
 
     elem header, tag: 'h4'
 
+    elem title, tag: 'span'
+
+    elem counter, tag: 'span'
+
     elem list, tag: 'ul'
 
     elem item, tag: 'li'

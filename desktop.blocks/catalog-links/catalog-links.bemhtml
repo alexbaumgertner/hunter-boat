@@ -1,0 +1,6 @@
+block catalog-links {
+
+    elem title, tag: 'span'
+    elem list, tag: 'ul'
+    elem item, tag: 'li'
+}

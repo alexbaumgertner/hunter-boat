@@ -1,0 +1,13 @@
+block search {
+    content: {
+        elem: 'form',
+        tag: 'form',
+        attrs: {
+            action: '/search/'
+        },
+        content: {
+            elem: 'input',
+            tag: 'input'
+        }
+    }
+}

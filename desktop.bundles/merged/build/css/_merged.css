@@ -1,0 +1,534 @@
+/* ../../desktop.blocks/b-page/__body/b-page__body.css begin */
+.b-page__body
+{
+    margin: 0;
+    padding: 0;
+    background: #e2f6ff;
+    font-family: Arial, sans-serif;
+}
+
+/* ../../desktop.blocks/b-page/__body/b-page__body.css end */
+
+/* ../../desktop.blocks/header/__left/header__left.css begin */
+.header__left
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+}
+
+/* ../../desktop.blocks/header/__left/header__left.css end */
+
+/* ../../desktop.blocks/header/__right/header__right.css begin */
+.header__right
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* ../../desktop.blocks/header/__right/header__right.css end */
+
+/* ../../studioIDEI.blocks/wrapper-fix-width/wrapper-fix-width.css begin */
+.wrapper-fix-width
+{
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ../../studioIDEI.blocks/wrapper-fix-width/wrapper-fix-width.css end */
+
+/* ../../studioIDEI.blocks/wrapper-fix-width/_width/wrapper-fix-width_width_960.css begin */
+.wrapper-fix-width_width_960
+{
+    width: 960px;
+}
+
+/* ../../studioIDEI.blocks/wrapper-fix-width/_width/wrapper-fix-width_width_960.css end */
+
+/* ../../desktop.blocks/logo/logo.css begin */
+.logo {
+    background: url('../templates/logo.png') no-repeat;
+    width: 184px;
+    height: 59px;
+    display: inline-block;
+    vertical-align: top;
+
+    /* hide text */
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+/* ../../desktop.blocks/logo/logo.css end */
+
+/* ../../desktop.blocks/cart-info/cart-info.css begin */
+.cart-info
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* ../../desktop.blocks/cart-info/cart-info.css end */
+
+/* ../../bem-bl/blocks-desktop/b-link/_pseudo/b-link_pseudo_yes.css begin */
+.b-link_pseudo_yes
+{
+    color: #1a3dc1;
+}
+
+.i-ua_js_yes .b-link_pseudo_yes
+{
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.i-ua_js_yes .b-link_pseudo_yes .b-link__inner
+{
+    text-decoration: none;
+
+    color: inherit;
+    border-bottom: 1px dotted;
+}
+
+/* ../../bem-bl/blocks-desktop/b-link/_pseudo/b-link_pseudo_yes.css end */
+
+/* ../../studioIDEI.blocks/price/price.css begin */
+.price
+{
+}
+
+/* ../../studioIDEI.blocks/price/price.css end */
+
+/* ../../studioIDEI.blocks/price/__value/price__value.css begin */
+
+.price__value
+{
+}
+
+/* ../../studioIDEI.blocks/price/__value/price__value.css end */
+
+/* ../../studioIDEI.blocks/price/__currency/price__currency.css begin */
+.price__currency
+{
+    font-family: 'ALSRubl-Arial', Arial, sans-serif;
+    line-height: normal;
+    padding: 0 0 0 4px;
+}
+
+/* ../../studioIDEI.blocks/price/__currency/price__currency.css end */
+
+/* ../../desktop.blocks/contacts/contacts.css begin */
+.contacts
+{
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
+/* ../../desktop.blocks/contacts/contacts.css end */
+
+/* ../../desktop.blocks/main-menu/main-menu.css begin */
+.main-menu
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+.main-menu .b-link {
+    color: #000000;
+    text-decoration: none;
+}
+/* ../../desktop.blocks/main-menu/main-menu.css end */
+
+/* ../../desktop.blocks/main-menu/__item/main-menu__item.css begin */
+.main-menu__item
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 18px;
+    text-align: center;
+}
+
+/* ../../desktop.blocks/main-menu/__item/main-menu__item.css end */
+
+/* ../../desktop.blocks/buyer-menu/buyer-menu.css begin */
+.buyer-menu
+{
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    color: #000000;
+    font-size: 13px;
+    float: right;
+}
+
+.buyer-menu .b-link {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #9eacb2;
+}
+/* ../../desktop.blocks/buyer-menu/buyer-menu.css end */
+
+/* ../../desktop.blocks/buyer-menu/__item/buyer-menu__item.css begin */
+.buyer-menu__item
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 11px;
+}
+
+/* ../../desktop.blocks/buyer-menu/__item/buyer-menu__item.css end */
+
+/* ../../desktop.blocks/content/content.css begin */
+.content
+{
+    margin: 50px 0 0 0;
+}
+
+/* ../../desktop.blocks/content/content.css end */
+
+/* ../../desktop.blocks/content/__left/content__left.css begin */
+.content__left
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin: 80px 0 0 0;
+}
+
+/* ../../desktop.blocks/content/__left/content__left.css end */
+
+/* ../../desktop.blocks/content/__right/content__right.css begin */
+.content__right
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 710px;
+}
+
+/* ../../desktop.blocks/content/__right/content__right.css end */
+
+/* ../../desktop.blocks/catalog-menu/catalog-menu.css begin */
+.catalog-menu
+{
+}
+
+.catalog-menu .b-link {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #a6b1b5;
+}
+/* ../../desktop.blocks/catalog-menu/catalog-menu.css end */
+
+/* ../../desktop.blocks/catalog-menu/__section/catalog-menu__section.css begin */
+.catalog-menu__section
+{
+    margin: 0 0 25px 0;
+}
+
+/* ../../desktop.blocks/catalog-menu/__section/catalog-menu__section.css end */
+
+/* ../../desktop.blocks/catalog-menu/__section/_state/catalog-menu__section_state_current.css begin */
+.catalog-menu__section_state_current
+{
+
+}
+
+.catalog-menu__section_state_current .catalog-menu__section-header {
+    color: #ff0000;
+}
+
+.catalog-menu__section_state_current .catalog-menu__section-header .b-link {
+    border-bottom: none;
+    color: #ff0000;
+}
+/* ../../desktop.blocks/catalog-menu/__section/_state/catalog-menu__section_state_current.css end */
+
+/* ../../desktop.blocks/catalog-menu/__section-header/catalog-menu__section-header.css begin */
+.catalog-menu__section-header
+{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* ../../desktop.blocks/catalog-menu/__section-header/catalog-menu__section-header.css end */
+
+/* ../../desktop.blocks/catalog-menu/__list/catalog-menu__list.css begin */
+.catalog-menu__list
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ../../desktop.blocks/catalog-menu/__list/catalog-menu__list.css end */
+
+/* ../../desktop.blocks/catalog-menu/__item/catalog-menu__item.css begin */
+.catalog-menu__item
+{
+    font-size: 15px;
+}
+
+/* ../../desktop.blocks/catalog-menu/__item/catalog-menu__item.css end */
+
+/* ../../desktop.blocks/info-block/info-block.css begin */
+.info-block
+{
+    margin: 175px 0 0 0;
+    width: 185px;
+}
+
+/* ../../desktop.blocks/info-block/info-block.css end */
+
+/* ../../desktop.blocks/info-block/__photo/info-block__photo.css begin */
+.info-block__photo
+{
+}
+
+/* ../../desktop.blocks/info-block/__photo/info-block__photo.css end */
+
+/* ../../desktop.blocks/info-block/__title/info-block__title.css begin */
+.info-block__title
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 15px 0;
+}
+
+/* ../../desktop.blocks/info-block/__title/info-block__title.css end */
+
+/* ../../desktop.blocks/info-block/__desc/info-block__desc.css begin */
+.info-block__desc
+{
+    font-size: 13px;
+    line-height: 16px;
+}
+
+/* ../../desktop.blocks/info-block/__desc/info-block__desc.css end */
+
+/* ../../desktop.blocks/info-block/__link/info-block__link.css begin */
+.info-block__link
+{
+    margin: 15px 0 0 0;
+    font-size: 16px;
+}
+
+.info-block__link .b-link {
+    color: #0081bc;
+}
+/* ../../desktop.blocks/info-block/__link/info-block__link.css end */
+
+/* ../../desktop.blocks/info-block/_type/info-block_type_shipping.css begin */
+.info-block_type_shipping
+{
+}
+
+/* ../../desktop.blocks/info-block/_type/info-block_type_shipping.css end */
+
+/* ../../desktop.blocks/catalog-page/catalog-page.css begin */
+.catalog-page
+{
+
+}
+
+/* ../../desktop.blocks/catalog-page/catalog-page.css end */
+
+/* ../../desktop.blocks/catalog-page/__header/catalog-page__header.css begin */
+.catalog-page__header
+{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* ../../desktop.blocks/catalog-page/__header/catalog-page__header.css end */
+
+/* ../../desktop.blocks/catalog-page/__menu/catalog-page__menu.css begin */
+.catalog-page__menu
+{
+    float: right;
+    margin: 0 -10px 0 0;
+}
+
+/* ../../desktop.blocks/catalog-page/__menu/catalog-page__menu.css end */
+
+/* ../../desktop.blocks/catalog-page/__menu-item/catalog-page__menu-item.css begin */
+.catalog-page__menu-item
+{
+    display: inline-block;
+    vertical-align: top;
+    color: #0081bc;
+    border-bottom: 1px dashed;
+    cursor: pointer;
+    padding: 9px 11px 6px;
+    margin: 0 10px 0 0;
+}
+
+/* ../../desktop.blocks/catalog-page/__menu-item/catalog-page__menu-item.css end */
+
+/* ../../desktop.blocks/catalog-page/__menu-item/_state/catalog-page__menu-item_state_current.css begin */
+.catalog-page__menu-item_state_current
+{
+    color: #000000;
+    border: 1px solid #aeaeae;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: default;
+}
+
+/* ../../desktop.blocks/catalog-page/__menu-item/_state/catalog-page__menu-item_state_current.css end */
+
+/* ../../desktop.blocks/catalog-page/__content/catalog-page__content.css begin */
+.catalog-page__content
+{
+    margin: 40px 0 0 0;
+}
+
+/* ../../desktop.blocks/catalog-page/__content/catalog-page__content.css end */
+
+/* ../../desktop.blocks/catalog-section/catalog-section.css begin */
+.catalog-section
+{
+}
+
+/* ../../desktop.blocks/catalog-section/catalog-section.css end */
+
+/* ../../desktop.blocks/catalog-section/__header/catalog-section__header.css begin */
+.catalog-section__header
+{
+}
+
+/* ../../desktop.blocks/catalog-section/__header/catalog-section__header.css end */
+
+/* ../../desktop.blocks/catalog-section/__list/catalog-section__list.css begin */
+.catalog-section__list
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ../../desktop.blocks/catalog-section/__list/catalog-section__list.css end */
+
+/* ../../desktop.blocks/catalog-section/__item/catalog-section__item.css begin */
+.catalog-section__item
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 235px;
+}
+
+/* ../../desktop.blocks/catalog-section/__item/catalog-section__item.css end */
+
+/* ../../desktop.blocks/product-card/product-card.css begin */
+.product-card
+{
+    text-align: center;
+    width: 200px;
+    padding: 0 0 60px 0;
+}
+
+/* ../../desktop.blocks/product-card/product-card.css end */
+
+/* ../../desktop.blocks/product-card/__photo/product-card__photo.css begin */
+.product-card__photo
+{
+}
+
+/* ../../desktop.blocks/product-card/__photo/product-card__photo.css end */
+
+/* ../../desktop.blocks/product-card/__title/product-card__title.css begin */
+.product-card__title
+{
+    font-size: 15px;
+    color: #0081bc;
+}
+
+
+.product-card__title .b-link
+{
+    font-size: 15px;
+    color: #0081bc;
+}
+
+/* ../../desktop.blocks/product-card/__title/product-card__title.css end */
+
+/* ../../desktop.blocks/product-card/__desc/product-card__desc.css begin */
+.product-card__desc
+{
+    font-size: 11px;
+    color: #767676;
+}
+
+/* ../../desktop.blocks/product-card/__desc/product-card__desc.css end */
+
+/* ../../desktop.blocks/product-card/__price/product-card__price.css begin */
+.product-card__price
+{
+}
+
+/* ../../desktop.blocks/product-card/__price/product-card__price.css end */
+
+/* ../../desktop.blocks/footer/footer.css begin */
+.footer
+{
+    background: #000000;
+    height: 150px;
+}
+
+/* ../../desktop.blocks/footer/footer.css end */
+
+/* ../../studioIDEI.blocks/studio-idei/studio-idei.css begin */
+.studio-idei
+{
+    position: relative;
+    line-height: 17px;
+    font-size: 12px;
+    margin: 0 0 0 105px;
+}
+
+.studio-idei .b-link:hover {
+    color: #ffffff;
+}
+/* ../../studioIDEI.blocks/studio-idei/studio-idei.css end */
+
+/* ../../studioIDEI.blocks/studio-idei/__process/studio-idei__process.css begin */
+.studio-idei__process {
+}
+
+/* ../../studioIDEI.blocks/studio-idei/__process/studio-idei__process.css end */
+
+/* ../../studioIDEI.blocks/studio-idei/__name/studio-idei__name.css begin */
+.studio-idei__name {
+
+}
+
+/* ../../studioIDEI.blocks/studio-idei/__name/studio-idei__name.css end */
+
+/* ../../studioIDEI.blocks/studio-idei/__logo/studio-idei__logo.css begin */
+.studio-idei__logo {
+    background: url('../templates/studio-idei__logo.png') no-repeat;
+    height: 40px;
+    width: 90px;
+    position: absolute;
+    right: 100%;
+    top: 5px;
+    margin: 0 15px 0 0;
+}
+
+/* ../../studioIDEI.blocks/studio-idei/__logo/studio-idei__logo.css end */
+
+/* ../../studioIDEI.blocks/studio-idei/__text/studio-idei__text.css begin */
+.studio-idei__text {
+}
+
+/* ../../studioIDEI.blocks/studio-idei/__text/studio-idei__text.css end */
+
+/* ../../studioIDEI.blocks/studio-idei/_color/studio-idei_color_fff1d6.css begin */
+.studio-idei_color_fff1d6,
+.studio-idei_color_fff1d6 .b-link {
+    color: #fff1d6;
+}
+/* ../../studioIDEI.blocks/studio-idei/_color/studio-idei_color_fff1d6.css end */
