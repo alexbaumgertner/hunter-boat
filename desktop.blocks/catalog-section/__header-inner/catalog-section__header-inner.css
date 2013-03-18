@@ -1,0 +1,9 @@
+.catalog-section__header-inner
+{
+    padding: 10px 10px 5px 15px;
+    background: #f0faff;
+    border: 1px solid #43a2ce;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+}

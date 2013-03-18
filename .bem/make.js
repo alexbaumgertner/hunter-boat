@@ -10,6 +10,7 @@ MAKE.decl('Arch', {
 
     bundlesLevelsRegexp: /^.+?\.bundles$/,
 
+/*
     getLibraries: function() {
 
         return {
@@ -25,6 +26,7 @@ MAKE.decl('Arch', {
         };
 
     }
+*/
 
 });
 
@@ -50,10 +52,8 @@ MAKE.decl('BundleNode', {
 
 });
 
-/*
 MAKE.decl('BundlesLevelNode', {
     buildMergedBundle: function () {
         return true;
     }
 });
-*/

@@ -1,10 +1,16 @@
 block catalog-section {
 
-    elem header, tag: 'h4'
+    elem header {
+        tag: 'h4',
+        content: apply("", this.ctx.elem = 'header-inner')
+    }
+
+
+    elem header-inner, tag: 'span'
 
     elem title, tag: 'span'
-
     elem counter, tag: 'span'
+
 
     elem list, tag: 'ul'
 

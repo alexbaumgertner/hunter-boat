@@ -4,7 +4,9 @@
     head   : [
         { elem: 'css', url: '_section.css', ie: false},
         { elem: 'css', url: '_section', ie: true },
-        { block: 'i-jquery', elem: 'core'},
+        /*{ block: 'i-jquery', elem: 'core'},*/
+
+        { elem: 'js', url: 'jquery-1.6.2.min.js'},
         { elem: 'js', url: '_section.js'},
     ],
     content: [
@@ -416,6 +418,7 @@
                             content: [
                                 {
                                     block  : 'catalog-page',
+                                    js: true,
                                     content: [
                                         {
                                             elem   : 'header',
@@ -427,12 +430,16 @@
                                                 {
                                                     elem: 'menu-item',
                                                     elemMods: { state: 'current' },
-                                                    content: { elem: 'menu-item-title', content: 'по типу'  }
+                                                    content: { elem: 'menu-item-title', content: 'по типу', elemMods: {
+                                                        order: 'asc'
+                                                    }  }
                                                 },
 
                                                 {
                                                     elem: 'menu-item',
-                                                    content: { elem: 'menu-item-title', content: 'по цене'  }
+                                                    content: { elem: 'menu-item-title', content: 'по цене', elemMods: {
+                                                        order: 'desc'
+                                                    }  }
                                                 }
                                             ]
                                         },

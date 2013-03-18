@@ -6,12 +6,18 @@ block main-menu {
 
     elem item {
 
-        tag: 'li'
+        tag: 'li',
         content: {
-            block: 'b-link',
-            content: this.ctx.name,
-            url: this.ctx.url
+           block: 'b-link',
+           url: this.ctx.url,
+           content: {
+                block: 'main-menu',
+                elem: 'item-selector',
+                tag: 'span',
+                content: this.ctx.name
+           }
         }
+
     }
 
 }
