@@ -45,7 +45,7 @@ block product-card {
                 var photos = ['hunter_250_ML', 'hunter_280_LT', 'hunter_290_L', 'hunter_320_LK_lux'];
                 var random = Math.floor(Math.random() * photos.length);
 
-                return '../merged/img/catalog/boats/' + photos[random] + '.png'
+                return 'img/catalog/boats/' + photos[random] + '.png'
             }())
         }
     }

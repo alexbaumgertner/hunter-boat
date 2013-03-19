@@ -249,12 +249,12 @@
                                                         },
                                                         {
                                                             elem   : 'item',
-                                                            content: 'Люкс',
+                                                            content: '«Люкс»',
                                                             url    : '/catalog/boats/inflatable/lux/'
                                                         },
                                                         {
                                                             elem    : 'item',
-                                                            elemMods: { marker: 'precent' },
+                                                            elemMods: { marker: 'percent' },
                                                             content : 'Уценка',
                                                             url     : '/catalog/boats/inflatable/markdown/'
                                                         }
@@ -290,7 +290,7 @@
                                                         },
                                                         {
                                                             elem   : 'item',
-                                                            content: 'Люкс',
+                                                            content: '«Люкс»',
                                                             url    : '/catalog/boats/section/inflatable/lux/'
                                                         },
                                                         {
@@ -692,7 +692,7 @@
                                 },
                                 {
                                     block  : 'copyright',
-                                    content: 'ООО "Производственно-торговая Компания Хантер - производство и продажа надувных лодок Хантер " '
+                                    content: 'ООО «Производственно-торговая Компания Хантер — производство и продажа надувных лодок Хантер» '
                                 }
                             ]
                         },
@@ -728,7 +728,7 @@
                             content : [
                                 {
                                     block     : 'studio-idei',
-                                    mods      : { color: 'fff1d6' },
+                                    mods      : { color: '865151' },
                                     projectUrl: 'project-url'
                                 }
                             ]
