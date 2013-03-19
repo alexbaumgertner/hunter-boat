@@ -1,7 +1,10 @@
 .catalog-section__counter
 {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: normal;
     vertical-align: super;
     margin: 0 0 0 7px;
+    position: relative;
+    top: -5px;
+    right: -5px;
 }

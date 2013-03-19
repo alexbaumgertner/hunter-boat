@@ -1,7 +1,8 @@
 .catalog-page__header
 {
     font-size: 35px;
-    margin: 0;
     font-family: Arial, sans-serif;
     font-weight: normal;
+    margin: 4px 0 0 25px;
+    text-transform: uppercase;
 }
