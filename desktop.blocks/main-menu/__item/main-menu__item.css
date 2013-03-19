@@ -4,13 +4,16 @@
     vertical-align: top;
     text-align: center;
     position: relative;
+    font-size: 14px;
+    line-height: 14px;
+
 }
 
 
 
 .main-menu__item .b-link {
     text-decoration: none;
-    padding: 10px 17px;
+    padding: 8px 20px;
     display: inline-block;
     vertical-align: top;
 }

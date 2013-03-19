@@ -11,7 +11,11 @@ block catalog-section {
 
     elem header-line, tag: 'span'
 
-    elem title, tag: 'span'
+    elem title {
+        tag: 'span',
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+
     elem counter, tag: 'span'
 
 

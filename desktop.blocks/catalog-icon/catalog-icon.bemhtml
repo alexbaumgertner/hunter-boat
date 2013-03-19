@@ -11,6 +11,7 @@ block catalog-icon {
         {
             elem: 'text',
             tag: 'span',
+            mix: [ { block: 'i-font', mods: { face: 'hermes' } } ],
             content: this.ctx.mods.type
         }
     ]
