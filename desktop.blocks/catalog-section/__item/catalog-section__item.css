@@ -2,5 +2,11 @@
 {
     display: inline-block;
     vertical-align: top;
-    width: 230px;
+    width: 200px;
+    margin: 0 50px 0 0;
+}
+
+
+.catalog-section__item:nth-child(3n) {
+    margin-right: 0;
 }

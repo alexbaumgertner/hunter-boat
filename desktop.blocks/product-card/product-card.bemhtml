@@ -19,18 +19,28 @@ block product-card {
             elem: 'title',
             content: {
                 block: 'b-link',
-                content: 'Название лодки или другого',
+                content: (function(){
+                    var names = ['Хантер 320 Л ЛЮКС', 'Хантер 159 НР', 'Хантер 777 ЛЮКС', 'Хантер 320 ПВХ'];
+                    var random = Math.floor(Math.random() * names.length);
+                    return names[random];
+                }()),
                 url: 'catalog/boats/'
             }
         },
         {
             elem: 'desc',
-            content: 'Описание лодки или другого товара'
+            content: (function(){
+                var descs = ['Лодка ПВХ', 'Гребная лодка', 'Лодка надувная', 'Лодка моторная ЛЮКС'];
+                var random = Math.floor(Math.random() * descs.length);
+                return descs[random];
+            }())
         },
         {
             elem: 'price',
             content: {
-                block: 'price'
+                block: 'price',
+                mods: { currency: 'RUB' },
+                value: Math.floor(Math.random() * 100000)
             }
         }
     ]

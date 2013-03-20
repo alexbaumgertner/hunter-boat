@@ -1,3 +1,6 @@
 .product-card__price
 {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+    font-size: 21px;
 }

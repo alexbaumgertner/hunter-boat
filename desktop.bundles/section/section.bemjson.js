@@ -490,11 +490,6 @@
                                                                     content: {
                                                                         block: 'product-card'
                                                                     }
-                                                                },
-                                                                {
-                                                                    elem    : 'item',
-                                                                    elemMods: { type: 'link-to-all' },
-                                                                    content : 'Показать все'
                                                                 }
                                                             ]
                                                         }
@@ -539,12 +534,7 @@
                                                                     }
 
                                                                     return content;
-                                                                }()), {
-                                                                    elem    : 'item',
-                                                                    elemMods: { type: 'link-to-all' },
-                                                                    content : 'Показать все'
-                                                                }
-                                                            ]
+                                                                }())                                                            ]
                                                         }
                                                     ]
                                                 },
