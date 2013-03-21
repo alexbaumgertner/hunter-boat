@@ -5,3 +5,10 @@
     color: #767676;
     margin: 1px 0 0 0;
 }
+
+.product-card_type_withFullDesc .product-card__desc {
+    font-style: normal;
+    color: #000000;
+    margin: 20px 0 0 0;
+    font-size: 13px;
+}

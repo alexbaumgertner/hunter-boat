@@ -595,8 +595,8 @@
                                                 {
                                                     block  : 'catalog-section-carousel',
                                                     content: [
-                                                        { elem: 'control', mods: { direction: 'prev' }, content: '<' },
-                                                        { elem: 'control', mods: { direction: 'next' }, content: '>' },
+                                                        { elem: 'control', mods: { direction: 'prev' } },
+                                                        { elem: 'control', mods: { direction: 'next' } },
                                                         {
                                                             elem   : 'header',
                                                             content: [
@@ -623,19 +623,24 @@
                                                                                         }
                                                                                     },
                                                                                     {
-                                                                                        elem   : 'title',
-                                                                                        content: 'Лодочный мотор Yamaha 6CMHS'
-                                                                                    },
-                                                                                    {
-                                                                                        elem   : 'desc',
-                                                                                        content: 'Yamaha 6CMHS - 2x тактный мотос с 2 цилиндрами при рабочем объеме 165 куб. см. развивает мощность 6 л.с. и весит 27 килограмм. Такое соотношение мощность/вес приводит к улучшению и без того отличных динамичемских характетистик.'                                                                                    },
-                                                                                    {
-                                                                                        elem   : 'price',
-                                                                                        content: {
-                                                                                            block: 'price',
-                                                                                            mods : { currency: 'RUB' },
-                                                                                            value: 66500
-                                                                                        }
+                                                                                        elem   : 'info',
+                                                                                        content: [
+                                                                                            {
+                                                                                                elem   : 'title',
+                                                                                                content: { block: 'b-link',  url: 'catalog/boats/', content: 'Лодочный мотор Yamaha 6CMHS' }
+                                                                                            },
+                                                                                            {
+                                                                                                elem   : 'desc',
+                                                                                                content: 'Yamaha 6CMHS - 2x тактный мотос с 2 цилиндрами при рабочем объеме 165 куб. см. развивает мощность 6 л.с. и весит 27 килограмм. Такое соотношение мощность/вес приводит к улучшению и без того отличных динамичемских характетистик.'                                                                                    },
+                                                                                            {
+                                                                                                elem   : 'price',
+                                                                                                content: {
+                                                                                                    block: 'price',
+                                                                                                    mods : { currency: 'RUB' },
+                                                                                                    value: 66500
+                                                                                                }
+                                                                                            }
+                                                                                        ]
                                                                                     }
                                                                                 ]
                                                                             ]
