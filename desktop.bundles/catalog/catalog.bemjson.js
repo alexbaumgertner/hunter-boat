@@ -173,30 +173,106 @@
                     mods   : { width: '960' },
                     content: [
                         {
+                            block  : 'promo',
+                            content: [
+                                {
+                                    elem    : 'column',
+                                    elemMods: { position: 'left' },
+                                    content : [
+                                        {
+                                            block  : 'buy-now-list',
+                                            content: [
+                                                {
+                                                    elem: 'header',
+                                                    content: 'Прямо сейчас покупают:'
+                                                },
+                                                {
+                                                    elem: 'list',
+                                                    content: [
+                                                        {
+                                                            elem: 'item',
+                                                            name: 'Хантер 290 Л',
+                                                            url : '/catalog/333'
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            name: 'Лодочный мотор Yamaha 6CMHS',
+                                                            url : '/catalog/333'
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            name: 'Хантер 390 ЛЮКС',
+                                                            url : '/catalog/333'
+                                                        }
+                                                    ]
+                                                },
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem    : 'column',
+                                    elemMods: { position: 'right' },
+                                    content : [
+                                        {
+                                            block  : 'products-promo-carousel',
+                                            content: [
+                                                {
+                                                    elem   : 'item',
+                                                    content: [
+                                                        {
+                                                            elem   : 'header',
+                                                            content: 'Надувная лодка Хантер 360'
+                                                        },
+                                                        {
+                                                            elem   : 'price',
+                                                            content: [
+                                                                { elem: 'price-old', content: '41000' },
+                                                                { elem: 'price-new', content: {
+                                                                    block: 'price',
+                                                                    mods: { currency: 'RUB'},
+                                                                    value: '39900'  }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'photo',
+                                                            src: 'img/catalog/boats/hunter_big.png'
+                                                        },
+                                                        {
+                                                            elem: 'links',
+                                                            content: [
+                                                                {
+                                                                    elem   : 'link-to-info',
+                                                                    content: { block: 'b-link', content: 'Узнать все о Хантер 360', url: '/catalog/111#all-info' }
+                                                                },
+                                                                {
+                                                                    elem   : 'link-to-order',
+                                                                    content: { block: 'b-link', content: 'Заказать', url: '/catalog/111/order' }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'controlls',
+                                                            content: [
+                                                                { elem: 'switch' },
+                                                                { elem: 'switch' },
+                                                                { elem: 'switch' }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             block   : 'content',
                             elem    : 'column',
                             elemMods: { position: 'left' },
                             content : [
-                                {
-                                    block  : 'buy-now-list',
-                                    content: [
-                                        {
-                                            elem: 'item',
-                                            name: 'Хантер 290 Л',
-                                            url : '/catalog/333'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Лодочный мотор Yamaha 6CMHS',
-                                            url : '/catalog/333'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Хантер 390 ЛЮКС',
-                                            url : '/catalog/333'
-                                        }
-                                    ]
-                                },
                                 {
                                     block  : 'catalog-menu',
                                     content: [
@@ -400,43 +476,6 @@
                             elemMods: { position: 'right' },
                             content : [
                                 {
-                                    block  : 'products-promo-carousel',
-                                    content: [
-                                        {
-                                            elem   : 'item',
-                                            content: [
-                                                {
-                                                    elem   : 'header',
-                                                    content: 'Надувная лодка Хантер 360'
-                                                },
-                                                {
-                                                    elem   : 'price',
-                                                    content: [
-                                                        { elem: 'price-old', content: '41000' },
-                                                        { elem: 'price-new', content: { block: 'price', mods: { currency: 'RUB', value: '39900' } } }
-                                                    ]
-                                                },
-                                                {
-                                                    elem   : 'link-to-info',
-                                                    content: { block: 'b-link', content: 'Узнать все о Хантер 360', url: '/catalog/111#all-info' }
-                                                },
-                                                {
-                                                    elem   : 'link-to-order',
-                                                    content: { block: 'b-link', content: 'Заказать', url: '/catalog/111/order' }
-                                                },
-                                                {
-                                                    elem   : 'controlls',
-                                                    content: [
-                                                        { elem: 'switch' },
-                                                        { elem: 'switch' },
-                                                        { elem: 'switch' }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
                                     block  : 'catalog-index-page',
                                     content: [
                                         {
@@ -531,9 +570,9 @@
                                                                         {
                                                                             elem   : 'item',
                                                                             content: {
-                                                                                block: 'b-link',
-                                                                                mods: { pseudo: 'yes' },
-                                                                                url: '/catalog/news',
+                                                                                block  : 'b-link',
+                                                                                mods   : { pseudo: 'yes' },
+                                                                                url    : '/catalog/news',
                                                                                 content: 'Показать все новинки'
                                                                             }
                                                                         }
@@ -543,7 +582,7 @@
                                                         },
                                                         {
                                                             block: 'catalog-section',
-                                                            elem: 'header-line',
+                                                            elem : 'header-line',
                                                             attrs: { 'style': 'width: 100%;' }
                                                         }
                                                     ]
@@ -551,7 +590,7 @@
                                             ]
                                         },
                                         {
-                                            elem: 'carousels',
+                                            elem   : 'carousels',
                                             content: [
                                                 {
                                                     block  : 'catalog-section-carousel',
