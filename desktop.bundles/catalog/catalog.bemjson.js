@@ -255,7 +255,7 @@
                                                         {
                                                             elem   : 'controlls',
                                                             content: [
-                                                                { elem: 'switch' },
+                                                                { elem: 'switch', elemMods: { state: 'current' } },
                                                                 { elem: 'switch' },
                                                                 { elem: 'switch' }
                                                             ]

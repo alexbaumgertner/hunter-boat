@@ -1,3 +1,6 @@
 .products-promo-carousel__controlls
 {
+    position: absolute;
+    bottom: 46px;
+    left: 122px;
 }

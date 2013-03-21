@@ -1,0 +1,15 @@
+.products-promo-carousel__switch_state_current
+{
+    background: #ffffff;
+    border-color: #0095da;
+}
+
+.products-promo-carousel__switch_state_current:after {
+    content: '•';
+    font-size: 57px;
+    line-height: 0;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    color: #0095da;
+}
