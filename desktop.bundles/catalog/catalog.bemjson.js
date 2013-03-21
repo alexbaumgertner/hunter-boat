@@ -425,11 +425,11 @@
                                                     content: { block: 'b-link', content: 'Заказать', url: '/catalog/111/order' }
                                                 },
                                                 {
-                                                    elem   : 'control',
+                                                    elem   : 'controlls',
                                                     content: [
-                                                        { elem: 'switch', js: { item: 1 } },
-                                                        { elem: 'switch', js: { item: 2 } },
-                                                        { elem: 'switch', js: { item: 3 } }
+                                                        { elem: 'switch' },
+                                                        { elem: 'switch' },
+                                                        { elem: 'switch' }
                                                     ]
                                                 }
                                             ]
@@ -440,232 +440,144 @@
                                     block  : 'catalog-index-page',
                                     content: [
                                         {
-                                            elem   : 'menu',
+                                            elem   : 'products',
                                             content: [
                                                 {
-                                                    elem    : 'menu-item',
-                                                    elemMods: { state: 'current' },
-                                                    content : [
-                                                        {
-                                                            elem   : 'menu-item-title',
-                                                            content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Новинки' }
-                                                        },
-                                                        {
-                                                            elem   : 'menu-item-counter',
-                                                            content: '3'
-                                                        }
-                                                    ]
-                                                },
-
-                                                {
-                                                    elem   : 'menu-item',
+                                                    elem   : 'menu',
                                                     content: [
                                                         {
-                                                            elem   : 'menu-item-title',
-                                                            content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Популярное' }
-                                                        },
-                                                        {
-                                                            elem   : 'menu-item-counter',
-                                                            content: '3'
-                                                        }
-                                                    ]
-                                                },
-
-                                                {
-                                                    elem   : 'menu-item',
-                                                    content: [
-                                                        {
-                                                            elem   : 'menu-item-title',
-                                                            content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Рекомендуемое' }
-                                                        },
-                                                        {
-                                                            elem   : 'menu-item-counter',
-                                                            content: '3'
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            elem   : 'content',
-                                            content: [
-                                                {
-                                                    block  : 'catalog-section',
-                                                    content: [
-                                                        {
-                                                            elem   : 'header',
-                                                            content: [
+                                                            elem    : 'menu-item',
+                                                            elemMods: { state: 'current' },
+                                                            content : [
                                                                 {
-                                                                    elem   : 'header-inner',
-                                                                    content: [
-                                                                        {
-                                                                            elem   : 'title',
-                                                                            content: 'Гребные'
-                                                                        },
-                                                                        {
-                                                                            elem   : 'counter',
-                                                                            content: '3'
-                                                                        }
-                                                                    ]
+                                                                    elem   : 'menu-item-title',
+                                                                    content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Новинки' }
                                                                 },
                                                                 {
-                                                                    elem: 'header-line'
-                                                                },
+                                                                    elem   : 'menu-item-counter',
+                                                                    content: '3'
+                                                                }
                                                             ]
                                                         },
+
                                                         {
-                                                            elem   : 'list',
+                                                            elem   : 'menu-item',
                                                             content: [
                                                                 {
-                                                                    elem   : 'item',
-                                                                    content: {
-                                                                        block: 'product-card'
-                                                                    }
+                                                                    elem   : 'menu-item-title',
+                                                                    content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Популярное' }
                                                                 },
                                                                 {
-                                                                    elem   : 'item',
-                                                                    content: {
-                                                                        block: 'product-card'
-                                                                    }
+                                                                    elem   : 'menu-item-counter',
+                                                                    content: '3'
+                                                                }
+                                                            ]
+                                                        },
+
+                                                        {
+                                                            elem   : 'menu-item',
+                                                            content: [
+                                                                {
+                                                                    elem   : 'menu-item-title',
+                                                                    content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Рекомендуемое' }
                                                                 },
                                                                 {
-                                                                    elem   : 'item',
-                                                                    content: {
-                                                                        block: 'product-card'
-                                                                    }
+                                                                    elem   : 'menu-item-counter',
+                                                                    content: '3'
                                                                 }
                                                             ]
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    block  : 'catalog-section',
+                                                    elem   : 'products-content',
                                                     content: [
                                                         {
-                                                            elem   : 'header',
+                                                            block  : 'catalog-section',
                                                             content: [
                                                                 {
-                                                                    elem   : 'header-inner',
+                                                                    elem   : 'list',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'title',
-                                                                            content: 'Моторные'
-                                                                        },
-                                                                        {
-                                                                            elem   : 'counter',
-                                                                            content: '7'
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    elem: 'header-line'
-                                                                },
-                                                            ]                                                        },
-                                                        {
-                                                            elem   : 'list',
-                                                            content: [
-                                                                (function () {
-                                                                    var content = [];
-
-                                                                    for (var i = 0; i < 7; i++) {
-                                                                        content.push({
                                                                             elem   : 'item',
                                                                             content: {
                                                                                 block: 'product-card'
                                                                             }
-                                                                        });
-                                                                    }
-
-                                                                    return content;
-                                                                }())                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'item',
+                                                                            content: {
+                                                                                block: 'product-card'
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            elem   : 'item',
+                                                                            content: {
+                                                                                block: 'product-card'
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            elem   : 'item',
+                                                                            content: {
+                                                                                block: 'product-card'
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            elem   : 'item',
+                                                                            content: {
+                                                                                block: 'product-card'
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            elem   : 'item',
+                                                                            content: {
+                                                                                block: 'b-link',
+                                                                                mods: { pseudo: 'yes' },
+                                                                                url: '/catalog/news',
+                                                                                content: 'Показать все новинки'
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            block: 'catalog-section',
+                                                            elem: 'header-line',
+                                                            attrs: { 'style': 'width: 100%;' }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'carousels',
+                                            content: [
+                                                {
+                                                    block  : 'catalog-section-carousel',
+                                                    content: [
+                                                        {
+                                                            elem: 'controlls'
+                                                        },
+                                                        {
+                                                            elem: 'header'
+                                                        },
+                                                        {
+                                                            elem: 'item'
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    block  : 'catalog-section',
+                                                    block  : 'catalog-section-carousel',
                                                     content: [
                                                         {
-                                                            elem   : 'header',
-                                                            content: [
-                                                                {
-                                                                    elem   : 'header-inner',
-                                                                    content: [
-                                                                        {
-                                                                            elem   : 'title',
-                                                                            content: 'Моторно-гребные'
-                                                                        },
-                                                                        {
-                                                                            elem   : 'counter',
-                                                                            content: '4'
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    elem: 'header-line'
-                                                                },
-                                                            ]                                                        },
+                                                            elem: 'controlls'
+                                                        },
                                                         {
-                                                            elem   : 'list',
-                                                            content: [
-                                                                (function () {
-                                                                    var content = [];
-
-                                                                    for (var i = 0; i < 4; i++) {
-                                                                        content.push({
-                                                                            elem   : 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        });
-                                                                    }
-
-                                                                    return content;
-                                                                }())
-                                                            ]
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    block  : 'catalog-section',
-                                                    content: [
+                                                            elem: 'header'
+                                                        },
                                                         {
-                                                            elem   : 'header',
-                                                            content: [
-                                                                {
-                                                                    elem   : 'header-inner',
-                                                                    content: [
-                                                                        {
-                                                                            elem   : 'title',
-                                                                            content: 'Люкс'
-                                                                        },
-                                                                        {
-                                                                            elem   : 'counter',
-                                                                            content: '30'
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    elem: 'header-line'
-                                                                },
-                                                            ]                                                        },
-                                                        {
-                                                            elem   : 'list',
-                                                            content: [
-                                                                (function () {
-                                                                    var content = [];
-
-                                                                    for (var i = 0; i < 2; i++) {
-                                                                        content.push({
-                                                                            elem   : 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        });
-                                                                    }
-
-                                                                    return content;
-                                                                }())
-                                                            ]
+                                                            elem: 'item'
                                                         }
                                                     ]
                                                 }
