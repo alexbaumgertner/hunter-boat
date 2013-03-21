@@ -1,5 +1,4 @@
-block product-card {
-
+block product-card, (!this.mods || this.mods.type !== 'withFullDesc') {
 
     content: [
         {
@@ -44,7 +43,6 @@ block product-card {
             }
         }
     ]
-
 
 
     elem photo {

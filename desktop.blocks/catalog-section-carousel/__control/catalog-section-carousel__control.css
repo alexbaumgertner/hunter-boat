@@ -1,0 +1,9 @@
+.catalog-section-carousel__control
+{
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 35px;
+    margin: -16px 0 0 0;
+    cursor: pointer;
+}

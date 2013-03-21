@@ -183,11 +183,11 @@
                                             block  : 'buy-now-list',
                                             content: [
                                                 {
-                                                    elem: 'header',
+                                                    elem   : 'header',
                                                     content: 'Прямо сейчас покупают:'
                                                 },
                                                 {
-                                                    elem: 'list',
+                                                    elem   : 'list',
                                                     content: [
                                                         {
                                                             elem: 'item',
@@ -230,17 +230,17 @@
                                                                 { elem: 'price-old', content: '41000' },
                                                                 { elem: 'price-new', content: {
                                                                     block: 'price',
-                                                                    mods: { currency: 'RUB'},
+                                                                    mods : { currency: 'RUB'},
                                                                     value: '39900'  }
                                                                 }
                                                             ]
                                                         },
                                                         {
                                                             elem: 'photo',
-                                                            src: 'img/catalog/boats/hunter_big.png'
+                                                            src : 'img/catalog/boats/hunter_big.png'
                                                         },
                                                         {
-                                                            elem: 'links',
+                                                            elem   : 'links',
                                                             content: [
                                                                 {
                                                                     elem   : 'link-to-info',
@@ -595,29 +595,95 @@
                                                 {
                                                     block  : 'catalog-section-carousel',
                                                     content: [
+                                                        { elem: 'control', mods: { direction: 'prev' }, content: '<' },
+                                                        { elem: 'control', mods: { direction: 'next' }, content: '>' },
                                                         {
-                                                            elem: 'controlls'
+                                                            elem   : 'header',
+                                                            content: [
+                                                                { elem: 'title', content: { block: 'b-link', content: 'Лодочные моторы', url: '/motors' } },
+                                                                { elem: 'counter', content: '35' }
+                                                            ]
                                                         },
                                                         {
-                                                            elem: 'header'
-                                                        },
-                                                        {
-                                                            elem: 'item'
+                                                            elem   : 'list',
+                                                            content: [
+                                                                {
+                                                                    elem   : 'item',
+                                                                    content: [
+                                                                        {
+                                                                            block  : 'product-card',
+                                                                            mods   : { type: 'withFullDesc' },
+                                                                            content: [
+                                                                                [
+                                                                                    {
+                                                                                        elem : 'photo',
+                                                                                        tag  : 'img',
+                                                                                        attrs: {
+                                                                                            src: 'img/catalog/motors/yamaha_06.png'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem   : 'title',
+                                                                                        content: 'Лодочный мотор Yamaha 6CMHS'
+                                                                                    },
+                                                                                    {
+                                                                                        elem   : 'desc',
+                                                                                        content: 'Yamaha 6CMHS - 2x тактный мотос с 2 цилиндрами при рабочем объеме 165 куб. см. развивает мощность 6 л.с. и весит 27 килограмм. Такое соотношение мощность/вес приводит к улучшению и без того отличных динамичемских характетистик.'                                                                                    },
+                                                                                    {
+                                                                                        elem   : 'price',
+                                                                                        content: {
+                                                                                            block: 'price',
+                                                                                            mods : { currency: 'RUB' },
+                                                                                            value: 66500
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
                                                 {
                                                     block  : 'catalog-section-carousel',
                                                     content: [
+                                                        { elem: 'control', elemMods: { direction: 'prev' }},
+                                                        { elem: 'control', elemMods: { direction: 'next' }},
                                                         {
-                                                            elem: 'controlls'
+                                                            elem   : 'header',
+                                                            content: [
+                                                                { elem: 'title', content: { block: 'b-link', content: 'Аксессуары к лодками', url: '/motors' } },
+                                                                { elem: 'counter', content: '35' }
+                                                            ]
+
                                                         },
                                                         {
-                                                            elem: 'header'
-                                                        },
-                                                        {
-                                                            elem: 'item'
+                                                            elem   : 'list',
+                                                            content: [
+                                                                {
+                                                                    elem   : 'item',
+                                                                    content: [
+                                                                        { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem   : 'item',
+                                                                    content: [
+                                                                        { block: 'product-card', mods: { type: 'withoutDesc' } },
+
+                                                                    ]
+                                                                } ,
+                                                                {
+                                                                    elem   : 'item',
+                                                                    content: [
+                                                                        { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                                    ]
+                                                                }
+                                                            ]
                                                         }
+
                                                     ]
                                                 }
                                             ]
