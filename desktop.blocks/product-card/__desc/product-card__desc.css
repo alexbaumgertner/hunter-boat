@@ -12,3 +12,7 @@
     margin: 20px 0 0 0;
     font-size: 13px;
 }
+
+.product-card_type_withoutDesc .product-card__desc {
+    display: none;
+}
