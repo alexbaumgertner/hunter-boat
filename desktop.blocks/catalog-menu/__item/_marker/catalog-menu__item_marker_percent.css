@@ -1,0 +1,9 @@
+.catalog-menu__item_marker_percent
+{
+}
+
+.catalog-menu__item_marker_percent:after {
+    content: '%';
+    margin: 0 0 0 7px;
+    color: #ff0000;
+}
