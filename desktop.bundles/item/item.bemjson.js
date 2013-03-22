@@ -444,27 +444,27 @@
                                                                     {
                                                                         elem   : 'price-old',
                                                                         content: {
-                                                                            block: 'price', mods: { currency: '', value: 41000 }
+                                                                            block: 'price', mods: { currency: 'empty' }, value: 41000
                                                                         }
                                                                     },
                                                                     {
                                                                         elem   : 'price-new',
                                                                         content: {
-                                                                            block: 'price', mods: { currency: '.-', value: 39900 }
+                                                                            block: 'price', mods: { currency: 'dot-dash' }, value: 39900
                                                                         }
                                                                     }
                                                                 ]
                                                             },
                                                             {
                                                                 elem: 'buy-button',
-                                                                content: 'Заказать'
+                                                                content: { block: 'button', mods: { type: 'buy' }, content: 'Заказать' }
                                                             },
                                                             {
                                                                 elem: 'markdown-link',
                                                                 content: {
                                                                     block: 'b-link',
                                                                     content: 'Купить эту лодку с уценкой',
-                                                                    url: '/catalog/boats/1/markdown'
+                                                                    url: '/catalog/boats/hunter_320_LK_LUX/markdown'
                                                                 }
                                                             }
 
@@ -476,26 +476,26 @@
                                                             {
                                                                 elem: 'photos-list-item',
                                                                 mods: { state: 'current' },
-                                                                url : '/catalog/boats/1/photos/1_small.jpg'
+                                                                url : 'img/catalog/boats/hunter_320_LK_LUX/photos/1_small.jpg'
                                                             },
                                                             {
                                                                 elem: 'photos-list-item',
-                                                                url : '/catalog/boats/1/photos/2_small.jpg'
+                                                                url : 'img/catalog/boats/hunter_320_LK_LUX/photos/2_small.jpg'
                                                             },
                                                             {
                                                                 elem: 'photos-list-item',
-                                                                url : '/catalog/boats/1/photos/3_small.jpg'
+                                                                url : 'img/catalog/boats/hunter_320_LK_LUX/photos/3_small.jpg'
                                                             }
                                                         ]
                                                     },
                                                     {
                                                         elem: 'photo-big',
-                                                        url : '/catalog/boats/1/photos/1_medium.jpg'
+                                                        url : 'img/catalog/boats/hunter_320_LK_LUX/photos/1_medium.jpg'
                                                     },
                                                     {
                                                         elem   : 'colors',
                                                         content: [
-                                                            { elem: 'colors-item', elemMods: { state: 'current', color: 'a0a0a0' }, content: 'серая' },
+                                                            { elem: 'colors-item', elemMods: { color: 'a0a0a0', state: 'current' }, content: 'серая' },
                                                             { elem: 'colors-item', elemMods: { color: '377530' }, content: 'зеленая' },
                                                         ]
                                                     },
@@ -503,8 +503,8 @@
                                                         elem   : 'links',
                                                         content: [
                                                             {
-                                                                elem   : 'b-link',
-                                                                url    : '/catalog/boats/1/photos',
+                                                                block   : 'b-link',
+                                                                url    : '/catalog/boats/hunter_320_LK_LUX/photos',
                                                                 content: 'Все фотографии Хантер 320 ЛК ЛЮКС'
                                                             }
                                                         ]

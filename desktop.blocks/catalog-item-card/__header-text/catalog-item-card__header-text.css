@@ -1,0 +1,9 @@
+.catalog-item-card__header-text
+{
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0 0 0 5px;
+    width: 340px;
+    display: inline-block;
+}

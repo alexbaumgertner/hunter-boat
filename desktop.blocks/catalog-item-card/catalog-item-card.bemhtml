@@ -1,0 +1,37 @@
+block catalog-item-card {
+
+    elem header-text {
+        tag: 'h3',
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+
+    elem  header-icon {
+        tag: 'span'
+    }
+
+
+    elem price {
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+
+
+    elem photo-big {
+        tag: 'img',
+        attrs: {
+            src: this.ctx.url
+        }
+    }
+
+    elem photos-list-item {
+        tag: 'img',
+        attrs: {
+            src: this.ctx.url
+        }
+    }
+
+
+    elem colors-item {
+        tag: 'span'
+    }
+
+}
