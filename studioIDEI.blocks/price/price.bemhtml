@@ -12,6 +12,30 @@ block price {
     }
 
 
+    mod currency empty {
+        content: [
+            {
+                elem: 'value',
+                content: this.ctx.value
+            }
+        ]
+    }
+
+
+    mod currency 'dot-dash' {
+        content: [
+            {
+                elem: 'value',
+                content: this.ctx.value
+            },
+            {
+                elem: 'currency',
+                content: '.-'
+            }
+        ]
+    }
+
+
     mod currency RUB {
         content: [
             {
