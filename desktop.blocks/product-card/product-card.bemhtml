@@ -42,7 +42,7 @@ block product-card, (!this.mods || this.mods.type !== 'withFullDesc') {
                     elem: 'price',
                     content: {
                         block: 'price',
-                        mods: { currency: 'RUB' },
+                        mods: { currency: 'dot-dash' },
                         value: Math.floor(Math.random() * 100000)
                     }
                 }
