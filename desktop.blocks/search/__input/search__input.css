@@ -21,3 +21,7 @@
     left: 0;
     border: 1px solid #afafaf;
 }
+
+.search__input:focus {
+    background-color: #ffffff;
+}
