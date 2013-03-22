@@ -5,7 +5,7 @@
         { elem: 'css', url: '_catalog.css', ie: false},
         { elem: 'css', url: '_catalog', ie: true },
         /*{ block: 'i-jquery', elem: 'core'},*/
-        { elem: 'js', url: 'jquery-1.6.2.min.js'},
+        { elem: 'js', url: 'jquery-1.7.2.js'},
         { elem: 'js', url: '_catalog.js'},
     ],
     content: [
@@ -216,6 +216,7 @@
                                     content : [
                                         {
                                             block  : 'products-promo-carousel',
+                                            js: true,
                                             content: [
                                                 {
                                                     elem   : 'item',

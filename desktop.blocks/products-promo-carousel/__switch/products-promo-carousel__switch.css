@@ -8,4 +8,5 @@
     margin: 0 7px 0 0;
     border: 1px solid #a0a0a0;
     cursor: pointer;
+    position: relative;
 }

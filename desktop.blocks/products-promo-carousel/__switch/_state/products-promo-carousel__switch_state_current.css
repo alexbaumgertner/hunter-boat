@@ -5,11 +5,13 @@
 }
 
 .products-promo-carousel__switch_state_current:after {
-    content: '•';
-    font-size: 57px;
-    line-height: 0;
+    content: '';
+    font: 0/0 a;
     position: absolute;
-    top: 11px;
-    left: 0;
-    color: #0095da;
+    top: 2px;
+    left: 2px;
+    background: #0095da;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
 }
