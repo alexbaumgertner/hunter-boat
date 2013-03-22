@@ -520,8 +520,8 @@
                                                 {
                                                     elem   : 'info-menu-list',
                                                     content: [
-                                                        { elem: 'info-menu-item', elemMods: { state: 'current' }, content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Описание', url: '/catalog/boats/1#desc', js: { section: 'desc' } } },
-                                                        { elem: 'info-menu-item', content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Характеристики', url: '/catalog/boats/1#spec', js: { section: 'spec' } } },
+                                                        { elem: 'info-menu-item', content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Описание', url: '/catalog/boats/1#desc', js: { section: 'desc' } } },
+                                                        { elem: 'info-menu-item', elemMods: { state: 'current' }, content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Характеристики', url: '/catalog/boats/1#spec', js: { section: 'spec' } } },
                                                         { elem: 'info-menu-item', content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Комплектация', url: '/catalog/boats/1#set', js: { section: 'set' } } },
                                                         { elem: 'info-menu-item', content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Отзывы', url: '/catalog/boats/1#reviews', js: { section: 'reviews' } } },
                                                     ]
