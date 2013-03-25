@@ -4,8 +4,9 @@
     head   : [
         { elem: 'css', url: '_item.css', ie: false},
         { elem: 'css', url: '_item', ie: true },
-        { block: 'i-jquery', elem: 'core'},
-        { elem: 'js', url: '_item.js'},
+        /*{ block: 'i-jquery', elem: 'core'},*/
+        { elem: 'js', url: 'jquery-1.7.2.js'},,
+        { elem: 'js', url: '_item.js'}
     ],
     content: [
         {
@@ -416,6 +417,7 @@
                             content : [
                                 {
                                     block  : 'catalog-item',
+                                    js: true,
                                     content: [
                                         {
                                             elem   : 'card',
@@ -456,15 +458,15 @@
                                                                 ]
                                                             },
                                                             {
-                                                                elem: 'buy-button',
+                                                                elem   : 'buy-button',
                                                                 content: { block: 'button', mods: { type: 'buy' }, content: 'Заказать' }
                                                             },
                                                             {
-                                                                elem: 'markdown-link',
+                                                                elem   : 'markdown-link',
                                                                 content: {
-                                                                    block: 'b-link',
+                                                                    block  : 'b-link',
                                                                     content: 'Купить эту лодку с уценкой',
-                                                                    url: '/catalog/boats/hunter_320_LK_LUX/markdown'
+                                                                    url    : '/catalog/boats/hunter_320_LK_LUX/markdown'
                                                                 }
                                                             }
 
@@ -503,7 +505,7 @@
                                                         elem   : 'links',
                                                         content: [
                                                             {
-                                                                block   : 'b-link',
+                                                                block  : 'b-link',
                                                                 url    : '/catalog/boats/hunter_320_LK_LUX/photos',
                                                                 content: 'Все фотографии Хантер 320 ЛК ЛЮКС'
                                                             }
@@ -520,10 +522,10 @@
                                                 {
                                                     elem   : 'info-menu-list',
                                                     content: [
-                                                        { elem: 'info-menu-item', content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Описание', url: '/catalog/boats/1#desc', js: { section: 'desc' } } },
-                                                        { elem: 'info-menu-item', elemMods: { state: 'current' }, content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Характеристики', url: '/catalog/boats/1#spec', js: { section: 'spec' } } },
-                                                        { elem: 'info-menu-item', content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Комплектация', url: '/catalog/boats/1#set', js: { section: 'set' } } },
-                                                        { elem: 'info-menu-item', content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Отзывы', url: '/catalog/boats/1#reviews', js: { section: 'reviews' } } },
+                                                        { elem: 'info-menu-item', js: { section: 'desc' }, content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Описание', url: '/catalog/boats/1#desc' } },
+                                                        { elem: 'info-menu-item', js: { section: 'spec' }, elemMods: { state: 'current' }, content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Характеристики', url: '/catalog/boats/1#spec' } },
+                                                        { elem: 'info-menu-item', js: { section: 'set' }, content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Комплектация', url: '/catalog/boats/1#set' } },
+                                                        { elem: 'info-menu-item', js: { section: 'reviews' }, content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Отзывы', url: '/catalog/boats/1#reviews' } },
                                                     ]
                                                 },
                                                 {
@@ -531,15 +533,15 @@
 
                                                     content: [
                                                         {
-                                                            elem: 'info-content-item',
-                                                            elemMods: { state: 'current' },
-                                                            content: {
-                                                                block: 'enumeration-list',
-                                                                mods: { spaceStyle: 'dotted' },
+                                                            elem    : 'info-content-item',
+                                                            elemMods: { state: 'current', section: 'spec' },
+                                                            content : {
+                                                                block  : 'enumeration-list',
+                                                                mods   : { spaceStyle: 'dotted' },
                                                                 content: [
                                                                     {
-                                                                        elem: 'item',
-                                                                        key: 'Вес',
+                                                                        elem : 'item',
+                                                                        key  : 'Вес',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
@@ -601,12 +603,171 @@
                                                             }
                                                         },
                                                         {
-                                                            elem: 'info-content-item',
+                                                            elem   : 'info-content-item',
+                                                            elemMods: { section: 'reviews' },
+                                                            content: [
+                                                                {
+                                                                    block  : 'product-review',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'date',
+                                                                            content: '21 октября 2009 года'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'header',
+                                                                            content: [
+                                                                                { elem: 'author', content: 'Олег' },
+                                                                                { elem: 'author-address', content: 'Санкт-Петербург' }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'content',
+                                                                            content: 'Время набора максимальной скорости, обобщая изложенное, поступательно интегрирует гироскопический прибор, используя имеющиеся в этом случае первые интегралы. Нутация, несмотря на некоторую погрешность, нелинеен. Гиротахометр, как следует из системы уравнений, неустойчив. Кинематическое уравнение Эйлера неустойчиво связывает прецессирующий угол крена, используя имеющиеся в этом случае первые интегралы.'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    block  : 'product-review',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'date',
+                                                                            content: '21 октября 2009 года'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'header',
+                                                                            content: [
+                                                                                { elem: 'author', content: 'Иван' },
+                                                                                { elem: 'author-address', content: 'Москва' }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'content',
+                                                                            content: 'Заказывал лодку Хантер 280 РТ через сайт. Доставили вовремя, как раз ко дню рождения, менеджеры молодцы – постоянно информируют о движении товара. Так держать – сразу же дозаказал дополнительные полы -передали в Питере (доставили в гостиницу).'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    block  : 'product-review',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'date',
+                                                                            content: '21 октября 2009 года'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'header',
+                                                                            content: [
+                                                                                { elem: 'author', content: 'Николай' },
+                                                                                { elem: 'author-address', content: 'Владивосток' }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'content',
+                                                                            content: 'Купил вашу лодку в магазине «Лодки-Питер» - очень порадовало качество изготовления. Но самое главное диаметр баллона – то что нужно для рыбалки. Спасибо…'
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'info-content-item',
+                                                            elemMods: { section: 'set' },
                                                             content: {
-                                                                block: 'product-reviews',
+                                                                block  : 'enumeration-list',
+                                                                mods   : { spaceStyle: 'dotted' },
                                                                 content: [
                                                                     {
-                                                                        elem: 'review'
+                                                                        elem : 'item',
+                                                                        key  : 'Лодка надувная Хантер 320 ЛК',
+                                                                        value: '1 шт'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Весло разборное',
+                                                                        value: '2 шт'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Помпа воздушная',
+                                                                        value: '1 шт'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Рюкзак + сумка на изделие',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Паспорт на изделие',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Ремкомплект',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Банка (сидение)',
+                                                                        value: '3 человека'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Рюкзак + сумка на изделие',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Паспорт на изделие',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Ремкомплект',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Банка (сидение)',
+                                                                        value: '3 человека'
+                                                                    }
+                                                                ]
+                                                            }
+
+                                                        },
+                                                        {
+                                                            elem: 'info-content-item',
+                                                            elemMods: { section: 'desc' },
+                                                            content: {
+                                                                block: 'b-text',
+                                                                content: [
+                                                                    {
+                                                                        elem: 'p',
+                                                                        content: 'Параграф текста описания лодки, просто текст в теге р. Параграфов может быть несколько. Могут быть другие виды информации: список, ссылка.'
+                                                                    },
+                                                                    {
+                                                                        elem: 'p',
+                                                                        content: 'Еще одну новинку от компании ООО «ПТК Хантер» по достоинству оценят даже самые взыскательные рыбаки. Здесь есть все, что не обходимо для удачной и комфортной рыбалки командой из двух человек:'
+                                                                    },
+                                                                    {
+                                                                        elem: 'ul',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'li',
+                                                                                content: 'Элемент списка в описании лоддки, маркер -- тире'
+                                                                            },
+                                                                            {
+                                                                                elem: 'li',
+                                                                                content: 'Носовой тент надувной лодки Хантер 320 ЛК ЛЮКС прекрасно защитит кокпит и пассажиров от брызг и ветра, как во время движения так и во время стоянки.'
+                                                                            },
+                                                                            {
+                                                                                elem: 'li',
+                                                                                content: 'Стационарный транец позволит установить подвесной лодочный мотор до 8 л.с, что позволит любителям рыбалки и активного отдыха на воде ощутить большую свободу передвижения и существенно расширить ореол рыбных мест.'
+                                                                            },
+                                                                            {
+                                                                                elem: 'li',
+                                                                                content: 'Установленные в базе держатели спиннинга по достоинству оценят любители троллинга и донной ловли. Теперь вам не прийдется ломать голову над тем как установить спинниг или бортовую удочку в надувной моторной лодке лодке.'
+                                                                            }
+                                                                        ]
                                                                     }
                                                                 ]
                                                             }
