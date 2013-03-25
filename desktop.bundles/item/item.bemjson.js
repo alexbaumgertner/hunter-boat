@@ -5,7 +5,7 @@
         { elem: 'css', url: '_item.css', ie: false},
         { elem: 'css', url: '_item', ie: true },
         /*{ block: 'i-jquery', elem: 'core'},*/
-        { elem: 'js', url: 'jquery-1.7.2.js'},,
+        { elem: 'js', url: 'jquery-1.7.2.js'},
         { elem: 'js', url: '_item.js'}
     ],
     content: [

@@ -5,8 +5,7 @@
         { elem: 'css', url: '_section.css', ie: false},
         { elem: 'css', url: '_section', ie: true },
         /*{ block: 'i-jquery', elem: 'core'},*/
-
-        { elem: 'js', url: 'jquery-1.6.2.min.js'},
+        { elem: 'js', url: 'jquery-1.7.2.js'},
         { elem: 'js', url: '_section.js'},
     ],
     content: [
