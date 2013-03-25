@@ -179,10 +179,13 @@
                             content : [
                                 {
                                     block  : 'reviews',
+
                                     content: [
                                         {
                                             elem   : 'header',
-                                            content: { block: 'text-mask', image: 'template/mask/', content: 'Отзывы' }
+
+                                            content: 'Отзывы',
+                                            mix: [{ block: 'text-mask', image: 'template/mask/'}]
                                         },
                                         {
                                             elem   : 'list',
@@ -205,22 +208,33 @@
                                                         elem   : 'item',
                                                         content: {
                                                             block  : 'product-review',
+                                                            mods: { style: 'two-col' },
                                                             content: [
                                                                 {
-                                                                    elem   : 'date',
-                                                                    content: '21 октября 2009 года'
+                                                                    elem: 'column',
+                                                                    elemMods: { position: 'left' },
+                                                                    content : {
+                                                                        elem   : 'date',
+                                                                        content: '21 октября 2009 года'
+                                                                    }
                                                                 },
                                                                 {
-                                                                    elem   : 'header',
+                                                                    elem: 'column',
+                                                                    elemMods: { position: 'right' },
                                                                     content: [
-                                                                        { elem: 'author', content: names[(Math.floor(Math.random() * names.length))] },
+                                                                        {
+                                                                            elem   : 'header',
+                                                                            content: [
+                                                                                { elem: 'author', content: names[(Math.floor(Math.random() * names.length))] },
 
-                                                                        { elem: 'author-address', content: cities[(Math.floor(Math.random() * cities.length))] }
+                                                                                { elem: 'author-address', content: cities[(Math.floor(Math.random() * cities.length))] }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'content',
+                                                                            content: review[(Math.floor(Math.random() * review.length))]
+                                                                        }
                                                                     ]
-                                                                },
-                                                                {
-                                                                    elem   : 'content',
-                                                                    content: review[(Math.floor(Math.random() * review.length))]
                                                                 }
                                                             ]
                                                         }
