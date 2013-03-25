@@ -527,7 +527,91 @@
                                                     ]
                                                 },
                                                 {
-                                                    elem: 'info-content'
+                                                    elem: 'info-content-list',
+
+                                                    content: [
+                                                        {
+                                                            elem: 'info-content-item',
+                                                            elemMods: { state: 'current' },
+                                                            content: {
+                                                                block: 'enumeration-list',
+                                                                mods: { spaceStyle: 'dotted' },
+                                                                content: [
+                                                                    {
+                                                                        elem: 'item',
+                                                                        key: 'Вес',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Грузоподъемность',
+                                                                        value: '450 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Диаметр баллона',
+                                                                        value: '0543245 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Количество отсеков',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Вес',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Крепление банок',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Пассажировместимость',
+                                                                        value: '3 человека'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Пол',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Транец',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Ширина',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Длина',
+                                                                        value: '35 кг'
+                                                                    },
+                                                                    {
+                                                                        elem : 'item',
+                                                                        key  : 'Рекомендованная мощность мотора кг',
+                                                                        value: '8 лс'
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            elem: 'info-content-item',
+                                                            content: {
+                                                                block: 'product-reviews',
+                                                                content: [
+                                                                    {
+                                                                        elem: 'review'
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
