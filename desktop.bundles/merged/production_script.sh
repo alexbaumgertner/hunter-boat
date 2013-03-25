@@ -40,22 +40,16 @@ echo `date` >  merged.html
 ls ../ | while read line; do
 
 #TODO (begin):
-# replace _line(\S*)\.css to css/_merged$1.css
-# cat $line.html | sed 's/_$line\(\S*\).css/css\/_merged\1.css/g'
-
-
-# replace _line\.js to js/_merged.js
 # replace &quot; to '
 #TODO (end):
-    cp ../$line/$line.html build;
-    #cat build/$line.html | sed "s/_${line}\(\S*\).css/css\/_merged\1.css/gw";
-    #cat build/$line.html | sed "s/_${line}\(\S*\).js/js\/_merged\1.js/gw";
 
-    cat build/$line.html | sed "s!_${line}\(\S*\).css!css/_merged\1.css!g";
+    cp ../$line/$line.html build;
+
+# replace css/js source url
+    cat build/$line.html | sed -i "s!_${line}\(\S*\).js!js/_merged\1.js!g" build/$line.html;
+    cat build/$line.html | sed -i "s!_${line}\(\S*\).css!css/_merged\1.css!g" build/$line.html;
 done;
 
-
-exit 0;
 
 
 # copy css img
