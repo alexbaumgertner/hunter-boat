@@ -230,6 +230,13 @@
                                                 return content;
 
                                             } ())
+                                        },
+                                        {
+                                            elem: 'add',
+                                            content: {
+                                                block: 'b-link',
+                                                url: '/'
+                                            }
                                         }
                                     ]
                                 }

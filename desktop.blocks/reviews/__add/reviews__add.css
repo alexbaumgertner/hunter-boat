@@ -1,0 +1,11 @@
+.reviews__add
+{
+    font-size: 17px;
+    font-weight: bold;
+    color: #0d84bc;
+}
+
+.reviews__add .b-link {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
