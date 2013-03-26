@@ -194,6 +194,7 @@
                                                         '/repair-boat-707/1_small.jpg',
                                                         '/test-drive-101/1_small.jpg',
                                                         '/fix-and-replay/1_small.jpg',
+                                                        '/super-tent-1/1_small.jpg',
                                                         '/develop-505/1_small.jpg'
                                                     ];
 
@@ -218,36 +219,46 @@
                                                     for (var i = 0; i < 7; i++) {
 
                                                         items.push({
-                                                                elem    : 'column',
-                                                                elemMods: { position: 'left' },
-                                                                content : [
+                                                            elem   : 'item',
+                                                            content: {
+                                                                block  : 'article',
+                                                                content: [
                                                                     {
-                                                                        elem: 'photo',
-                                                                        src: 'img/articles' + photos[(Math.floor(Math.random() * photos.length))]
+                                                                        elem    : 'column',
+                                                                        elemMods: { position: 'left' },
+                                                                        content : [
+                                                                            {
+                                                                                elem: 'photo',
+                                                                                src : 'img/news' + photos[(Math.floor(Math.random() * photos.length))]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        elem    : 'column',
+                                                                        elemMods: { position: 'right' },
+                                                                        content : [
+                                                                            {
+                                                                                elem   : 'date',
+                                                                                content: '28 марта 2011'
+                                                                            },
+                                                                            {
+                                                                                elem   : 'title',
+                                                                                content: { block: 'b-link', url: '', content: titles[(Math.floor(Math.random() * titles.length))] }
+
+                                                                            },
+                                                                            {
+                                                                                elem   : 'content',
+                                                                                content: contents[(Math.floor(Math.random() * contents.length))]
+                                                                            },
+                                                                            {
+                                                                                elem   : 'link',
+                                                                                content: { block: 'b-link', url: '', content: 'Подробно' }
+                                                                            }
+                                                                        ]
                                                                     }
                                                                 ]
-                                                            }, {
-                                                                elem    : 'column',
-                                                                elemMods: { position: 'right' },
-                                                                content : [
-                                                                    {
-                                                                        elem: 'date',
-                                                                        content: '26 марта 2011'
-                                                                    },
-                                                                    {
-                                                                        elem: 'title',
-                                                                        content: titles[(Math.floor(Math.random() * titles.length))]
-                                                                    },
-                                                                    {
-                                                                        elem: 'content',
-                                                                        content: contents[(Math.floor(Math.random() * contents.length))]
-                                                                    },
-                                                                    {
-                                                                        elem   : 'link',
-                                                                        content: { block: 'b-link', url: '', content: 'Подробно' }
-                                                                    }
-                                                                ]
-                                                            });
+                                                            }
+                                                        });
                                                     }
 
 
