@@ -183,7 +183,7 @@
                                             {
                                                 elem: 'header',
                                                 mix: [{ block: 'text-mask', image: 'template/mask/'}],
-                                                content: 'Новости'
+                                                content: 'Статьи'
                                             },
                                             {
                                                 elem: 'list',
