@@ -1,0 +1,9 @@
+.paginator__item_state_current
+{
+    background: #0081bc;
+    border-radius: 100%;
+    color: #ffffff;
+    padding: 6px 10px;
+    margin-top: -8px;
+    margin-left: -4px;
+}

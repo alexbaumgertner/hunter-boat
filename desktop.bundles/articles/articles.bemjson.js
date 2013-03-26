@@ -274,7 +274,7 @@
                                                     itemsTotal: 15,
                                                     itemsUrlPrefix: '/articles/',
                                                     itemsVisible: 4,
-                                                    currItem: 2
+                                                    itemCurr: 2
                                                 }
                                             }
                                         ]
