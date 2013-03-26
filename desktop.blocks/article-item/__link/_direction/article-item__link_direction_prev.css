@@ -1,0 +1,7 @@
+.article-item__link_direction_prev
+{
+}
+
+.article-item__link_direction_prev:before {
+    content: '←';
+}

@@ -1,0 +1,9 @@
+.article-item__link_direction_next
+{
+    position: absolute;
+    right: 0;
+}
+
+.article-item__link_direction_next:after {
+    content: '→';
+}
