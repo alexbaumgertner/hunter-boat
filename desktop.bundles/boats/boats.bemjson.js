@@ -53,7 +53,7 @@
                                                     },
                                                     {
                                                         elem   : 'total-price',
-                                                        content: { block: 'price', mods: { currency: 'RUB' }, value: '95000' }
+                                                        content: { block: 'price', mods: { currency: 'dot-dash' }, value: '95000' }
                                                     }
                                                 ]
                                             }

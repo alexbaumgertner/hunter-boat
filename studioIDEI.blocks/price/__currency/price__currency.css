@@ -4,3 +4,7 @@
     line-height: normal;
     padding: 0 0 0 4px;
 }
+
+.price_currency_dot-dash .price__currency {
+    padding: 0;
+}
