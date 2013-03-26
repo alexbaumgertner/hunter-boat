@@ -53,7 +53,7 @@
                                                     },
                                                     {
                                                         elem   : 'total-price',
-                                                        content: { block: 'price', mods: { currency: 'RUB' }, value: '95000' }
+                                                        content: { block: 'price', mods: { currency: 'dot-dash' }, value: '95000' }
                                                     }
                                                 ]
                                             }
@@ -175,14 +175,100 @@
                             {
                                 block   : 'content',
                                 elem    : 'column',
-                                elemMods: { position: 'left' },
-                                content : []
-                            },
-                            {
-                                block   : 'content',
-                                elem    : 'column',
-                                elemMods: { position: 'right' },
-                                content : []
+                                elemMods: { position: 'full' },
+                                content : [
+                                    {
+                                        block: 'articles',
+                                        content: [
+                                            {
+                                                elem: 'header',
+                                                mix: [{ block: 'text-mask', image: 'template/mask/'}],
+                                                content: 'Новости'
+                                            },
+                                            {
+                                                elem: 'list',
+                                                content: (function() {
+                                                    var items = [];
+
+                                                    var photos = [
+                                                        '/repair-boat-707/1_small.jpg',
+                                                        '/test-drive-101/1_small.jpg',
+                                                        '/fix-and-replay/1_small.jpg',
+                                                        '/develop-505/1_small.jpg'
+                                                    ];
+
+                                                    var titles = [
+                                                        'Tест – драйв надувной лодки Хантер 360',
+                                                        'Сборка полов на лодке Хантер 320. Фотоинструкция',
+                                                        'Ремонт надувной лодки ПВХ своими силами',
+                                                        'Как собрать надувную лодку Хантер. Инструкция',
+                                                        'Тюнинг гребной надувной лодки ПВХ'
+                                                    ];
+
+                                                    var contents = [
+                                                        'Купил вашу лодку в магазине «Лодки-Питер» - очень порадовало качество изготовления. Но самое главное диаметр баллона – то что нужно для рыбалки.',
+                                                        '',
+                                                        'В жизни всякое бывает - то крысы появляются в самых неожиданных местах, да и торчащие из воды прутья арматуры сейчас уже не редкость на наших водоемах.',
+                                                        'Итак, вы стали обладателем надувной лодки Хантер, не важно какого размера и какой модели. Главное что вы получили или забрали из магазина заветный рюкзак с самой...',
+                                                        'Ситуация, когда наступает необходимость модернизировать свою надувную лодку, рано или поздно возникает у любого рыбака.'
+
+                                                    ];
+
+
+                                                    for (var i = 0; i < 7; i++) {
+
+                                                        items.push({
+                                                                elem    : 'column',
+                                                                elemMods: { position: 'left' },
+                                                                content : [
+                                                                    {
+                                                                        elem: 'photo',
+                                                                        src: 'img/articles' + photos[(Math.floor(Math.random() * photos.length))]
+                                                                    }
+                                                                ]
+                                                            }, {
+                                                                elem    : 'column',
+                                                                elemMods: { position: 'right' },
+                                                                content : [
+                                                                    {
+                                                                        elem: 'date',
+                                                                        content: '26 марта 2011'
+                                                                    },
+                                                                    {
+                                                                        elem: 'title',
+                                                                        content: titles[(Math.floor(Math.random() * titles.length))]
+                                                                    },
+                                                                    {
+                                                                        elem: 'content',
+                                                                        content: contents[(Math.floor(Math.random() * contents.length))]
+                                                                    },
+                                                                    {
+                                                                        elem   : 'link',
+                                                                        content: { block: 'b-link', url: '', content: 'Подробно' }
+                                                                    }
+                                                                ]
+                                                            });
+                                                    }
+
+
+
+                                                    return items;
+
+                                                }()),
+                                            },
+                                            {
+                                                elem: 'paginator',
+                                                content: {
+                                                    block: 'paginator',
+                                                    itemsTotal: 15,
+                                                    itemsUrlPrefix: '/articles/',
+                                                    itemsVisible: 4,
+                                                    currItem: 2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }

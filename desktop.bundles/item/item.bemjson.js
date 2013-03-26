@@ -779,6 +779,44 @@
                                         {
                                             elem   : 'header',
                                             content: [
+                                                { elem: 'title', content: { block: 'b-link', content: 'Рекомендуемые моторы для лодки', url: '/motors' } }
+                                            ]
+
+                                        },
+                                        {
+                                            elem   : 'list',
+                                            content: [
+                                                {
+                                                    elem   : 'item',
+                                                    content: [
+                                                        { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                    ]
+                                                },
+                                                {
+                                                    elem   : 'item',
+                                                    content: [
+                                                        { block: 'product-card', mods: { type: 'withoutDesc' } },
+
+                                                    ]
+                                                } ,
+                                                {
+                                                    elem   : 'item',
+                                                    content: [
+                                                        { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    block  : 'catalog-section-carousel',
+                                    content: [
+                                        { elem: 'control', elemMods: { direction: 'prev' }},
+                                        { elem: 'control', elemMods: { direction: 'next' }},
+                                        {
+                                            elem   : 'header',
+                                            content: [
                                                 { elem: 'title', content: { block: 'b-link', content: 'Аксессуары к Хантер 350 ЛК ЛЮКС', url: '/motors' } },
                                                 { elem: 'counter', content: '35' }
                                             ]
@@ -808,7 +846,6 @@
                                                 }
                                             ]
                                         }
-
                                     ]
                                 }
                             ]
