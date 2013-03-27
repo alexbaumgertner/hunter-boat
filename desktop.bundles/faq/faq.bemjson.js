@@ -179,6 +179,7 @@
                                 content : [
                                     {
                                         block: 'faq',
+                                        js: true,
                                         content: [
                                             {
                                                 elem: 'top',
