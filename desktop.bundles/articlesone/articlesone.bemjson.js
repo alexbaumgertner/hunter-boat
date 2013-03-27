@@ -2,11 +2,11 @@
     block  : 'b-page',
     title  : 'articles_item',
     head   : [
-        { elem: 'css', url: 'articlesItem.css', ie: false},
-        { elem: 'css', url: 'articlesItem', ie: true },
+        { elem: 'css', url: '_articlesone.css', ie: false},
+        { elem: 'css', url: '_articlesone', ie: true },
         /*{ block: 'i-jquery', elem: 'core'},*/
         { elem: 'js', url: 'jquery-1.7.2.js'},
-        { elem: 'js', url: 'articlesItem.js'},
+        { elem: 'js', url: '_articlesone.js'},
     ],
     content: [
         {

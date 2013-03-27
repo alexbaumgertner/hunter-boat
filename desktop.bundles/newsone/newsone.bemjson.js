@@ -2,11 +2,11 @@
     block: 'b-page',
     title: 'news_item',
     head: [
-        { elem: 'css', url: '_newsItem.css', ie: false},
-        { elem: 'css', url: '_newsItem', ie: true },
+        { elem: 'css', url: '_newsone.css', ie: false},
+        { elem: 'css', url: '_newsone', ie: true },
         /*{ block: 'i-jquery', elem: 'core'},*/
         { elem: 'js', url: 'jquery-1.7.2.js'},
-        { elem: 'js', url:'_newsItem.js'},
+        { elem: 'js', url:'_newsone.js'},
     ],
     content: [
             {
