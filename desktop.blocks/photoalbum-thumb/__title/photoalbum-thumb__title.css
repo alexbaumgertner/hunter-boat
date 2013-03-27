@@ -1,0 +1,9 @@
+.photoalbum-thumb__title
+{
+    color: #0081bc;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 3px auto 5px auto;
+    width: 180px;
+    font-weight: bold;
+}

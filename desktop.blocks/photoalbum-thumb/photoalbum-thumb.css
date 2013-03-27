@@ -1,0 +1,19 @@
+.photoalbum-thumb
+{
+    height: 230px;
+    width: 220px;
+    padding: 8px;
+
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #b8e9ff;
+
+    text-align: center;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+    -webkit-box-shadow: 3px 3px 9px 0px rgba(0, 149, 218, 0.29);
+    box-shadow: 3px 3px 9px 0 rgba(0, 149, 218, 0.29);
+}
