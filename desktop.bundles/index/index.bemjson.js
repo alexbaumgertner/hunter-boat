@@ -178,13 +178,7 @@
                         {
                             block   : 'content',
                             elem    : 'column',
-                            elemMods: { position: 'left' },
-                            content : []
-                        },
-                        {
-                            block   : 'content',
-                            elem    : 'column',
-                            elemMods: { position: 'right' },
+                            elemMods: { position: 'full' },
                             content : []
                         }
                     ]

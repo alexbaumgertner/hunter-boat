@@ -1,0 +1,25 @@
+block validate {
+
+    content: [
+        {
+            elem: 'input',
+            content: { block: 'input', placeholder: 'Введите код', name: 'captcha' }
+        },
+        {
+            elem: 'captcha',
+            content: [
+                {
+                    elem: 'captcha-image',
+                    tag: 'img',
+                    attrs: {
+                        src: '/validate/captcha/' + this.ctx.capchaID
+                    }
+                },
+                {
+                    elem: 'captcha-reload',
+                    content: 'Обновить капчу'
+                }
+            ]
+        }
+    ]
+}

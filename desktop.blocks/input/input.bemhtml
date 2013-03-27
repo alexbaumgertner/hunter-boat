@@ -1,0 +1,9 @@
+block input {
+    tag: 'input',
+    attrs: {
+        placeholder: this.ctx.placeholder,
+        name: this.ctx.name,
+        size: this.ctx.size,
+        type: this.ctx.type
+    }
+}
