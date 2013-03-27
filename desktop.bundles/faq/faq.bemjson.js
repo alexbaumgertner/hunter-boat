@@ -299,6 +299,9 @@
                                                 content: [
                                                     {
                                                         block: 'form',
+                                                        method: 'post',
+                                                        action: '/faq/questions/add',
+                                                        mods: { type: 'add-question' },
                                                         content: [
                                                             {
                                                                 elem: 'header',
@@ -308,7 +311,7 @@
                                                                 elem: 'author-info',
                                                                 content: [
                                                                     {
-                                                                        elem   : 'column',
+                                                                        elem   : 'author-info-item',
                                                                         content: {
                                                                             block      : 'input',
                                                                             name       : 'name',
@@ -316,27 +319,27 @@
                                                                         }
                                                                     },
                                                                     {
-                                                                        elem   : 'column',
+                                                                        elem   : 'author-info-item',
                                                                         content: {
                                                                             block      : 'input',
-                                                                            name       : 'name',
-                                                                            placeholder: 'Имя'
+                                                                            name       : 'email',
+                                                                            placeholder: 'E-mail'
                                                                         }
                                                                     },
                                                                     {
-                                                                        elem   : 'column',
+                                                                        elem   : 'author-info-item',
                                                                         content: {
                                                                             block      : 'input',
-                                                                            name       : 'name',
-                                                                            placeholder: 'Имя'
+                                                                            name       : 'city',
+                                                                            placeholder: 'Город'
                                                                         }
                                                                     },
                                                                     {
-                                                                        elem   : 'column',
+                                                                        elem   : 'author-info-item',
                                                                         content: {
                                                                             block      : 'input',
-                                                                            name       : 'name',
-                                                                            placeholder: 'Имя'
+                                                                            name       : 'phone',
+                                                                            placeholder: 'Телефон'
                                                                         }
                                                                     }
                                                                 ]
@@ -356,12 +359,12 @@
                                                                         elem: 'validate',
                                                                         content: {
                                                                             block: 'validate',
-                                                                            id: 'capchaID'
+                                                                            id: 'captchaID'
                                                                         }
                                                                     },
                                                                     {
                                                                         elem: 'send-button',
-                                                                        content: { block: 'button', mods: { type: 'confirm' }, content: 'Задать вопрос' }
+                                                                        content: { block: 'button', mods: { type: 'submit' }, content: 'Задать вопрос' }
                                                                     }
                                                                 ]
                                                             }

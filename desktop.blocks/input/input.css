@@ -1,3 +1,12 @@
 .input
 {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    -webkit-box-shadow: inset 0px 4px 4px 1px rgba(0, 0, 0, 0.35);
+    box-shadow: inset 0px 4px 4px 1px rgba(0, 0, 0, 0.15);
+    position: relative;
+    box-sizing: border-box;
 }
