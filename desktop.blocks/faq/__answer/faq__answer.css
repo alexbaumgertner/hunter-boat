@@ -1,0 +1,15 @@
+.faq__answer
+{
+    margin: 15px 0 0 70px;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.faq__item_state_opened .faq__answer {
+    display: block;
+}
+
+.faq__item_state_closed .faq__answer {
+    display: none;
+}

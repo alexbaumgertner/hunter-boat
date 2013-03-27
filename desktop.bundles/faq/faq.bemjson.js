@@ -189,7 +189,7 @@
                                                     },
                                                     {
                                                         elem: 'info',
-                                                        content: '<a class="faq__add" href="/faq/question/add">Задать вопрос</a> легко'
+                                                        content: '<a class="faq__add-link" href="/faq/question/add">Задать вопрос</a> легко'
                                                     }
                                                 ]
                                             },
@@ -300,6 +300,10 @@
                                                     {
                                                         block: 'form',
                                                         content: [
+                                                            {
+                                                                elem: 'header',
+                                                                content: 'Вы можете задать свой вопрос'
+                                                            },
                                                             {
                                                                 elem: 'author-info',
                                                                 content: [
