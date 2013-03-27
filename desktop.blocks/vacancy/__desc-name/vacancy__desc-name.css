@@ -1,0 +1,8 @@
+.vacancy__desc-name
+{
+    margin: 0 15px 0 0;
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    font-style: italic;
+}

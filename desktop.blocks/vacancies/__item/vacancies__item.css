@@ -1,0 +1,10 @@
+.vacancies__item
+{
+    margin: 0 0 25px 0;
+    padding: 0 0 25px 0;
+    background: url('../../catalog-section/__header-line/catalog-section__header-line__bg.gif') repeat-x 0 bottom;
+}
+
+.vacancies__item:last-child {
+    background-image: none;
+}
