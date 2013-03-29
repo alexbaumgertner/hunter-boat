@@ -8,4 +8,8 @@ block button {
     mod type submit {
             mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
     }
+
+    mod type carousel-horiz {
+        tag: 'a'
+    }
 }

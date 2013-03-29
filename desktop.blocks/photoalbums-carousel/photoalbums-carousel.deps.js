@@ -1,6 +1,8 @@
 ({
-    mustDeps: [],
+    mustDeps: [
+        { block: 'i-carousel' }
+    ],
     shouldDeps: [
-        { block: 'i-font', mods: { face: 'hermes' } }
+        { block: 'i-font', mods: { face: 'hermes' } },
     ]
 })

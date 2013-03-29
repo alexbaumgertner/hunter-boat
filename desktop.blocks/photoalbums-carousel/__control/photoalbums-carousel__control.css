@@ -1,4 +1,6 @@
 .photoalbums-carousel__control
 {
     position: absolute;
+    top: 50%;
+    margin: -16px 0 0 0;
 }

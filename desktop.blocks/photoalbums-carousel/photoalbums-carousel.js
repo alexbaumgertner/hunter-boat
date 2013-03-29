@@ -1,24 +1,14 @@
 /** @requires BEM */
 /** @requires BEM.DOM */
 
-(function(undefined) {
+(function (undefined) {
 
-BEM.DOM.decl('photoalbums-carousel', {
+    BEM.DOM.decl({ name: 'photoalbums-carousel', baseBlock: 'i-carousel' }, {}, {
 
-    onSetMod : {
-
-        'js' : function() {
-            /* ... */
+        live: function () {
+            this.__base();
         }
 
-    }
-
-}, {
-
-    live : function() {
-        /* ... */
-    }
-
-});
+    });
 
 })();

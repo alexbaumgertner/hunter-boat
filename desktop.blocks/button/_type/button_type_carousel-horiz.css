@@ -1,0 +1,8 @@
+.button_type_carousel-horiz
+{
+    width: 16px;
+    height: 32px;
+    cursor: pointer;
+    background: url('buttons_type_carousel-horiz.png') no-repeat;
+    display: block;
+}

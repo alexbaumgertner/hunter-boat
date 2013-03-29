@@ -1,0 +1,14 @@
+.button_direction_prev
+{
+    background-position: -36px 0;
+}
+
+.button_direction_prev:hover
+{
+    background-position: -17px 0;
+}
+
+.button_direction_prev:active
+{
+    background-position: 0 0;
+}
