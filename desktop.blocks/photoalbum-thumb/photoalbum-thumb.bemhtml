@@ -21,10 +21,11 @@ block photoalbum-thumb {
                 'Надувная лодка Хантер 320 - зеленый цвет'
             ];
 
-            return titles[(Math.floor(Math.random() * titles.length))]
+            return { block: 'b-link', content: titles[(Math.floor(Math.random() * titles.length))], url: '/' }
 
         }())
     }
+
 
     elem photo {
         tag: 'img',

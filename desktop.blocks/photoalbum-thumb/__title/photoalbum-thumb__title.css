@@ -7,3 +7,11 @@
     width: 190px;
     font-weight: bold;
 }
+
+.photoalbum-thumb__title .b-link {
+    text-decoration: none;
+}
+
+.photoalbum-thumb__title .b-link:hover {
+    border-bottom: 1px solid;
+}
