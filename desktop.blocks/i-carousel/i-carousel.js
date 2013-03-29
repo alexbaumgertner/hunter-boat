@@ -15,6 +15,8 @@ BEM.DOM.decl('i-carousel', {
 
     onControlClick: function (e) {
 
+        console.log(this.getMod('type'));
+
         var buttonPrev = this.findBlockInside({ block : 'button', modName : 'direction', modVal : 'prev' });
 
         if (this.getMod(e.data.domElem, 'direction') == 'next') {

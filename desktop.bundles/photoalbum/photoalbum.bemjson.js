@@ -208,7 +208,7 @@
                                                                 content: [
                                                                     {
                                                                         elem    : 'control',
-                                                                        elemMods: { direction: 'prev' }
+                                                                        elemMods: { direction: 'prev' },
                                                                     },
                                                                     {
                                                                         elem    : 'control',
@@ -266,11 +266,13 @@
                                                         content: [
                                                             {
                                                                 elem    : 'control',
-                                                                elemMods: { direction: 'prev' }
+                                                                elemMods: { direction: 'prev' },
+                                                                content: { block: 'button', mods: { type: 'carousel-horiz', direction: 'prev', state: 'disabled' } }
                                                             },
                                                             {
                                                                 elem    : 'control',
-                                                                elemMods: { direction: 'next' }
+                                                                elemMods: { direction: 'next' },
+                                                                content: { block: 'button', mods: { type: 'carousel-horiz', direction: 'next', state: 'enabled' } }
                                                             },
                                                             {
                                                                 elem   : 'viewport',

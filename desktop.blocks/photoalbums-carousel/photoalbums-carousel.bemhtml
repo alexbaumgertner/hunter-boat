@@ -1,5 +1,8 @@
 block photoalbums-carousel {
 
+    mix: { block: 'i-carousel', mods: { type: 'horiz' } },
+    js: 'true'
+
     elem list, tag: 'ul'
 
     elem item, tag: 'li'
