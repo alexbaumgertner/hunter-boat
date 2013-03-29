@@ -30,7 +30,7 @@
                         {
                             elem    : 'control',
                             elemMods: { direction: 'prev' },
-                            content: { block: 'button', mods: { type: 'carousel-horiz', direction: 'prev', state: 'enabled' } }
+                            content: { block: 'button', mods: { type: 'carousel-horiz', direction: 'prev', state: 'disabled' } }
                         },
                         {
                             elem    : 'control',

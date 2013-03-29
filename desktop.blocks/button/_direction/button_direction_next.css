@@ -1,14 +1,14 @@
-.button_direction_next
+.button_type_carousel-horiz.button_direction_next
 {
-    background-position: -87px 0;
+    background-position: -86px 0;
 }
 
-.button_direction_next:hover {
+.button_type_carousel-horiz.button_direction_next:hover {
     background-position: -104px 0;
 }
 
 
-.button_direction_next:active {
+.button_type_carousel-horiz.button_direction_next:active {
 
     background-position: -122px 0;
 }
