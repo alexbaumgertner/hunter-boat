@@ -1,0 +1,6 @@
+block studio-idei, elem name {
+    tag: 'a',
+    attrs: {
+        href: 'http://www.d-idei.ru/'
+    }
+}

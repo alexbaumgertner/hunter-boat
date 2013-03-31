@@ -1,0 +1,8 @@
+block studio-idei, elem process {
+
+    tag: 'a',
+    attrs: {
+        href: this.ctx.url
+    }
+
+}

@@ -1,0 +1,15 @@
+block button {
+    tag: 'button'
+
+    mod type buy {
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+
+    mod type submit {
+            mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+
+    mod type carousel-horiz {
+        tag: 'a'
+    }
+}

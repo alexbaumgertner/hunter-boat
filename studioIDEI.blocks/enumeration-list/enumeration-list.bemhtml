@@ -1,0 +1,23 @@
+block enumeration-list {
+
+    tag: 'ul'
+
+    elem item {
+        tag: 'li',
+        content: [
+            {
+                elem: 'key',
+                tag: 'span',
+                content: this.ctx.key
+            },
+            {
+                elem: 'value',
+                tag: 'span',
+                content: this.ctx.value
+            }
+        ]
+    }
+
+
+
+}
