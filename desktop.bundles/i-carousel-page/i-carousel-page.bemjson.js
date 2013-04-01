@@ -14,10 +14,6 @@
         },
         content: {
             block  : 'photoalbums-carousel',
-            js: 'true',
-            mix    : [
-                { block: 'i-carousel', mods: { type: 'horiz' } }
-            ],
             content: [
 
                 {

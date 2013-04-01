@@ -8,7 +8,7 @@ BEM.DOM.decl('i-carousel', {
     onSetMod : {
 
         'js' : function() {
-            /* ... */
+            console.log(this);
         }
 
     },

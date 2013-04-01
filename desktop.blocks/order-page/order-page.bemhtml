@@ -1,0 +1,12 @@
+block order-page {
+
+    elem menu {
+        tag: 'ul'
+    }
+
+
+    elem menu-item {
+        tag: 'li',
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+}

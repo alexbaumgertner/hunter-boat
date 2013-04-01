@@ -1,0 +1,31 @@
+.order-page__menu-item
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 50px 0 0;
+    padding: 10px 15px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #9c9c9c;
+    cursor: pointer;
+}
+
+
+.order-page__menu-item:after {
+    color: #9c9c9c;
+    content: '→';
+    position: absolute;
+    right: -35px;
+    font-family: Arial, serif;
+}
+
+
+
+.order-page__menu-item:last-child {
+    margin-right: 0;
+}
+
+.order-page__menu-item:last-child:after {
+    content: '';
+    display: none;
+}
