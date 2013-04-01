@@ -7,9 +7,9 @@ node_modules
 .svn
 .bem/cache
 desktop.bundles/*/*.*
-desktop.bundles/merged/build
 !desktop.bundles/*/*.bemjson.js
+!desktop.bundles/merged/*.sh
 !desktop.bundles/merged/img/*
-!desktop.bundles/merged/production_script.sh
+!desktop.bundles/merged/js/*
+!desktop.bundles/merged/template/*
 !desktop.bundles/.bem/*
-*.*~

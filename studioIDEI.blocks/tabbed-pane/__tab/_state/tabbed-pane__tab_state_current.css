@@ -1,0 +1,4 @@
+.tabbed-pane__tab_state_current
+{
+    display: block; /* decl. block/inline-block/list-item... etc, on project level */
+}
