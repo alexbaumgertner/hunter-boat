@@ -3,20 +3,10 @@
 
 (function(undefined) {
 
-BEM.DOM.decl('order-page', {
-
-    onSetMod : {
-
-        'js' : function() {
-            /* ... */
-        }
-
-    }
-
-}, {
+BEM.DOM.decl({ name: 'order-page', baseBlock: 'i-tabbed-pane'  }, {}, {
 
     live : function() {
-        /* ... */
+        this.__base();
     }
 
 });

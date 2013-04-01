@@ -207,24 +207,24 @@
                                                 elem: 'content',
                                                 content: [
                                                     {
-                                                        elem: 'content-item',
+                                                        elem: 'tab',
                                                         elemMods: { state: 'current' },
                                                         content: 'Уточнение заказа'
                                                     },
                                                     {
-                                                        elem    : 'content-item',
+                                                        elem    : 'tab',
                                                         content : 'Авторизация'
                                                     },
                                                     {
-                                                        elem   : 'content-item',
+                                                        elem   : 'tab',
                                                         content: 'Авторизация'
                                                     },
                                                     {
-                                                        elem   : 'content-item',
+                                                        elem   : 'tab',
                                                         content: 'Способ оплаты / получения заказа'
                                                     },
                                                     {
-                                                        elem   : 'content-item',
+                                                        elem   : 'tab',
                                                         content: 'Подверждение заказа'
                                                     }
                                                 ]
