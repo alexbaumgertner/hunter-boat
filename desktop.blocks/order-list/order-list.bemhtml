@@ -54,4 +54,16 @@ block order-list {
         tag: 'span'
     }
 
+    elem info {
+        tag: 'span'
+    }
+
+    elem total-text {
+        tag: 'span'
+    }
+
+    elem total-value {
+        tag: 'span'
+    }
+
 }

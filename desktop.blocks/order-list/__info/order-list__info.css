@@ -1,3 +1,9 @@
 .order-list__info
 {
+    font-size: 13px;
+    color: #787878;
+    line-height: 19px;
+    font-style: italic;
+    display: inline-block;
+    width: 440px;
 }
