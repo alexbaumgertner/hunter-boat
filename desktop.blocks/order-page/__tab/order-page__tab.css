@@ -1,6 +1,6 @@
 .order-page__tab
 {
     display: none;
-    display: block;
     position: relative;
+    width: 100%;
 }

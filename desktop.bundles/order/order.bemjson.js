@@ -412,27 +412,19 @@
                                                                 },
                                                                 {
                                                                     elem   : 'list',
+
                                                                     content: [
                                                                         {
                                                                             elem   : 'item',
-                                                                            mix    : [
-                                                                                { elem: 'menu-item' }
-                                                                            ],
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', checked: true, label: 'Наличными' }
+                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', checked: 'checked', label: 'Наличными' }
                                                                         },
                                                                         {
                                                                             elem   : 'item',
-                                                                            mix    : [
-                                                                                { elem: 'menu-item' }
-                                                                            ],
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', label: 'Наличными' }
+                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', label: 'Банковской картой' }
                                                                         },
                                                                         {
                                                                             elem   : 'item',
-                                                                            mix    : [
-                                                                                { elem: 'menu-item' }
-                                                                            ],
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', label: 'Наличными' }
+                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', label: 'Выписать счёт' }
                                                                         }
                                                                     ]
                                                                 },
@@ -594,21 +586,21 @@
                                                                             mix    : [
                                                                                 { elem: 'menu-item' }
                                                                             ],
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', checked: true, label: 'Самовывоз ' }
+                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'delivery-method', value: 'cash', checked: 'checked', label: 'Самовывоз ' }
                                                                         },
                                                                         {
                                                                             elem   : 'item',
                                                                             mix    : [
                                                                                 { elem: 'menu-item' }
                                                                             ],
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', label: 'Доставка по Санкт-Петербургу' }
+                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'delivery-method', value: 'cash', label: 'Доставка по Санкт-Петербургу' }
                                                                         },
                                                                         {
                                                                             elem   : 'item',
                                                                             mix    : [
                                                                                 { elem: 'menu-item' }
                                                                             ],
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', label: 'Доставка в регионы' }
+                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'delivery-method', value: 'cash', label: 'Доставка в регионы' }
                                                                         }
                                                                     ]
                                                                 },

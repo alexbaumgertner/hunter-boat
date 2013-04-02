@@ -1,0 +1,10 @@
+block fieldset {
+    tag: 'fieldset',
+    content: [
+        {
+            tag: 'legend',
+            content: this.ctx.name
+        },
+         this.ctx.content
+    ]
+}
