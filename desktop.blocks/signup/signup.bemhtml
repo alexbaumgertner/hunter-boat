@@ -1,0 +1,36 @@
+block signup {
+
+    tag: 'form',
+    attrs: {
+        action: '/'
+    }
+
+    content: [
+        {
+            elem: 'header',
+            content: 'Уже покупали у нас?'
+        },
+        {
+            elem: 'info',
+            content: 'Авторизуйтесь на сайте'
+        },
+        {
+            elem: 'email',
+            content: { block: 'input', placeholder: 'E-mail', name: 'email' }
+        },
+        {
+            elem: 'password',
+            content: [
+                {   block: 'input', placeholder: 'Пароль', name: 'password' },
+                {
+                    elem: 'password-recovery',
+                    content: { block: 'b-link', url: '/authorization/recovery', content: 'Забыли?' }
+                 }
+            ]
+        },
+        {
+            elem: 'text',
+            content: 'Наши менеджеры сами перезвонят для уточнения и подтверждения заказа'
+        }
+    ]
+}
