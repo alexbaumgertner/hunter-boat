@@ -4,6 +4,7 @@ block input {
         placeholder: this.ctx.placeholder,
         name: this.ctx.name,
         size: this.ctx.size,
-        type: this.ctx.type
+        type: this.ctx.type,
+        value: this.ctx.value
     }
 }

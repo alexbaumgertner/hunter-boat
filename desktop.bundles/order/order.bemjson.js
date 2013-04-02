@@ -218,21 +218,26 @@
                                                                     content: [
                                                                         {
                                                                             elem   : 'header-item',
+                                                                            mix: [ {  elem: 'item-photo' } ],
                                                                             content: 'Товар'
                                                                         },
                                                                         {
-                                                                            elem: 'header-item'
+                                                                            elem: 'header-item',
+                                                                            mix: [ {  elem: 'item-desc' } ],
                                                                         },
                                                                         {
                                                                             elem   : 'header-item',
+                                                                            mix: [ {  elem: 'counter' } ],
                                                                             content: 'Кол-во'
                                                                         },
                                                                         {
                                                                             elem   : 'header-item',
+                                                                            mix: [ {  elem: 'price' } ],
                                                                             content: 'Цена, руб.'
                                                                         },
                                                                         {
                                                                             elem   : 'header-item',
+                                                                            mix: [ {  elem: 'delete' } ],
                                                                             content: 'Удалить'
                                                                         }
 
@@ -246,36 +251,98 @@
                                                                             content: [
                                                                                 {
                                                                                     elem: 'item-photo',
-                                                                                    src : ''
+                                                                                    content: { elem: 'item-img', src: 'img/catalog/boats/hunter_320_LK_LUX/photos/1_small.jpg' }
                                                                                 },
                                                                                 {
                                                                                     elem   : 'item-desc',
                                                                                     content: [
                                                                                         {
                                                                                             elem   : 'item-name',
-                                                                                            content: 'Надувная лодка Хантер 290 Р'
+                                                                                            content: { block: 'b-link', content: 'Надувная лодка Хантер 290 Р', url: '' }
                                                                                         },
                                                                                         {
                                                                                             elem   : 'item-qualif',
-                                                                                            content: 'цвет'
+                                                                                            content: 'серая/зеденая'
                                                                                         }
                                                                                     ]
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'item-name',
-                                                                                    content: 'Надувная лодка Хантер 290 Р'
-                                                                                },
-                                                                                {
                                                                                     elem : 'counter',
-                                                                                    count: 4
+                                                                                    content: { block: 'input', value: 10, name: 'delete' }
                                                                                 },
                                                                                 {
                                                                                     elem   : 'price',
-                                                                                    content: { block: 'b-price', value: 38790, mods: { currency: 'empty' } }
+                                                                                    content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
                                                                                 },
                                                                                 {
                                                                                     elem   : 'delete',
-                                                                                    content: { block: 'button', mods: { type: 'order-item-delete' } }
+                                                                                    content: { block: 'button', mods: { type: 'delete' } }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'item',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'item-photo',
+                                                                                    content: { elem: 'item-img', src: 'img/catalog/motors/yamaha_rx600/photos/1_small.jpg' }
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'item-desc',
+                                                                                    content: [
+                                                                                        {
+                                                                                            elem   : 'item-name',
+                                                                                            content: { block: 'b-link', content: 'Лодочный мотор HDX T 3.6 BMS', url: '' }
+                                                                                        },
+                                                                                        {
+                                                                                            elem   : 'item-qualif'
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem : 'counter',
+                                                                                    content: { block: 'input', value: 10, name: 'delete' }
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'price',
+                                                                                    content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'delete',
+                                                                                    content: { block: 'button', mods: { type: 'delete' } }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'item',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'item-photo',
+                                                                                    content: { elem: 'item-img', src: 'img/catalog/boat-addons/jilet_007/1_small.jpg' }
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'item-desc',
+                                                                                    content: [
+                                                                                        {
+                                                                                            elem   : 'item-name',
+                                                                                            content: { block: 'b-link', content: 'Жилет спасательный универсальный Хантер', url: '' }
+                                                                                        },
+                                                                                        {
+                                                                                            elem   : 'item-qualif'
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem : 'counter',
+                                                                                    content: { block: 'input', value: 10, name: 'delete' }
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'price',
+                                                                                    content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'delete',
+                                                                                    content: { block: 'button', mods: { type: 'delete' } }
                                                                                 }
                                                                             ]
                                                                         }
@@ -290,7 +357,7 @@
                                                                         },
                                                                         {
                                                                             elem   : 'total-value',
-                                                                            content: { block: 'b-price', value: 999999, mods: { currency: 'empty' } }
+                                                                            content: { block: 'price', value: 999999, mods: { currency: 'empty' } }
                                                                         }
                                                                     ]
                                                                 },
@@ -676,7 +743,7 @@
                                                                                 },
                                                                                 {
                                                                                     elem   : 'price',
-                                                                                    content: { block: 'b-price', value: 38790, mods: { currency: 'empty' } }
+                                                                                    content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
                                                                                 }
                                                                             ]
                                                                         }
@@ -691,7 +758,7 @@
                                                                         },
                                                                         {
                                                                             elem   : 'total-value',
-                                                                            content: { block: 'b-price', value: 999999, mods: { currency: 'empty' } }
+                                                                            content: { block: 'price', value: 999999, mods: { currency: 'empty' } }
                                                                         }
                                                                     ]
                                                                 }

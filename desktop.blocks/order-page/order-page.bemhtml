@@ -17,7 +17,7 @@ block order-page {
     }
 
     elem tab {
-        tag: 'form'
+        tag: 'div'
     }
 
 }
