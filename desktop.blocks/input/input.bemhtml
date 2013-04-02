@@ -1,10 +1,46 @@
 block input {
-    tag: 'input',
-    attrs: {
-        placeholder: this.ctx.placeholder,
-        name: this.ctx.name,
-        size: this.ctx.size,
-        type: this.ctx.type,
-        value: this.ctx.value
+
+        tag: 'input',
+        attrs: {
+            placeholder: this.ctx.placeholder,
+            name: this.ctx.name,
+            size: this.ctx.size,
+            type: this.ctx.type,
+            value: this.ctx.value
+        }
+
+
+
+    mod type radio {
+
+        attrs: {
+            type: 'radio',
+            name: this.ctx.name,
+            checked: this.ctx.checked
+        }
+
+        !!this.ctx.label {
+            tag: 'span',
+            content: [
+                {
+                    elem: 'input',
+                    tag: 'input',
+                    attrs: {
+                        id: this.generateId(),
+                        type: 'radio',
+                        name: this.ctx.name,
+                        checked: this.ctx.checked
+                    }
+                },
+                {
+                    elem: 'label',
+                    tag: 'label',
+                    content: this.ctx.label,
+                    attrs: {
+                        'for': this.generateId()
+                    }
+                }
+            ]
+        }
     }
 }
