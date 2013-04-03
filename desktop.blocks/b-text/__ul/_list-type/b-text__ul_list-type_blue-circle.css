@@ -1,0 +1,18 @@
+.b-text__ul_list-type_blue-circle
+{
+    list-style: none;
+}
+
+
+.b-text__ul_list-type_blue-circle .b-text__li {
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+
+.b-text__ul_list-type_blue-circle .b-text__li:before {
+    content: '●';
+    font-size: 20px;
+    color: #0095da;
+    margin: 0 0 0 -20px;
+    position: absolute;
+}

@@ -1,0 +1,13 @@
+.delivery-info__section
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 420px;
+    margin: 0 50px 60px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.delivery-info__section:nth-child(2n) {
+    margin-right: 0;
+}
