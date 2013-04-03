@@ -658,12 +658,13 @@
                                                                                 content: [
                                                                                     {
                                                                                         block  : 'select',
+                                                                                        name: 'market',
                                                                                         title  : 'Выберите магазин',
                                                                                         options: [
-                                                                                            { label: 'Главный магазин', value: 0 },
-                                                                                            { label: '1 магазин', value: 1},
-                                                                                            { label: '2 магазин', value: 2 },
-                                                                                            { label: '3 магазин', value: 3 },
+                                                                                            { content: 'Главный магазин', value: 0 },
+                                                                                            { content: '1 магазин', value: 1},
+                                                                                            { content: '2 магазин', value: 2 },
+                                                                                            { content: '3 магазин', value: 3 },
                                                                                         ]
                                                                                     }
                                                                                 ]
