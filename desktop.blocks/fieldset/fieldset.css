@@ -4,3 +4,7 @@
     padding: 0;
     margin: 0;
 }
+
+.fieldset .input {
+    margin-bottom: 15px;
+}

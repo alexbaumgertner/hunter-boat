@@ -681,29 +681,68 @@
                                                                                     block  : 'fieldset',
                                                                                     content: [
                                                                                         {
-                                                                                            block      : 'input',
-                                                                                            placeholder: 'ФИО',
-                                                                                            name       : 'fio'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            placeholder: 'Телефон',
-                                                                                            name       : 'phone'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'textarea',
-                                                                                            placeholder: 'Паспортные данные',
-                                                                                            name       : 'passport'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'textarea',
-                                                                                            placeholder: 'Полный адрес доставки'
-                                                                                        },
-                                                                                        {
-                                                                                            block: 'input',
-                                                                                            type : 'checkbox',
-                                                                                            name : 'agree',
-                                                                                            label: 'Я даю своё согласие компании ООО «Бот-Трейдинг» на обработку и передачу моей личной информации транспортной компании для оформления доставки моего заказа. '
+                                                                                            block: 'region-delivery-info',
+                                                                                            content: [
+                                                                                                {
+                                                                                                    elem   : 'fio',
+                                                                                                    content: {
+                                                                                                        block      : 'input',
+                                                                                                        placeholder: 'ФИО',
+                                                                                                        name       : 'fio'
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    elem   : 'phone',
+                                                                                                    content: {
+                                                                                                        block      : 'input',
+                                                                                                        placeholder: 'Телефон',
+                                                                                                        name       : 'phone'
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    elem: 'passport',
+                                                                                                    content: [
+                                                                                                        {
+                                                                                                            elem   : 'textarea',
+                                                                                                            content: {
+                                                                                                                block      : 'textarea',
+                                                                                                                placeholder: 'Паспортные данные',
+                                                                                                                name       : 'passport'
+                                                                                                            },
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem: 'label',
+                                                                                                            content: 'Серия и номер паспорта <br> Где, кем и когда выдан. <br> Данные нужны для транспортной компании'
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    elem: 'address',
+                                                                                                    content: [
+                                                                                                        {
+                                                                                                            elem: 'textarea',
+                                                                                                            content:{
+                                                                                                                block      : 'textarea',
+                                                                                                                placeholder: 'Полный адрес доставки'
+                                                                                                            },
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem: 'label',
+                                                                                                            content: 'Укажите индекс, город, улицу, дом и корпус. Адрес необходим для транспортной компании.'
+                                                                                                        }
+                                                                                                    ]
+
+                                                                                                },
+                                                                                                {
+                                                                                                    elem: 'select',
+                                                                                                    content: {
+                                                                                                        block: 'input',
+                                                                                                        type : 'checkbox',
+                                                                                                        name : 'agree',
+                                                                                                        label: 'Я даю своё согласие компании ООО «Бот-Трейдинг» на обработку и передачу моей личной информации транспортной компании для оформления доставки моего заказа. '
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
                                                                                         }
                                                                                     ]
                                                                                 }
