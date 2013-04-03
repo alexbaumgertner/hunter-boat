@@ -6,7 +6,8 @@ block input {
             name: this.ctx.name,
             size: this.ctx.size,
             type: this.ctx.type,
-            value: this.ctx.value
+            value: this.ctx.value,
+            style: this.ctx.style
         }
 
 

@@ -218,26 +218,36 @@
                                                                     content: [
                                                                         {
                                                                             elem   : 'header-item',
-                                                                            mix: [ {  elem: 'item-photo' } ],
+                                                                            mix    : [
+                                                                                {  elem: 'item-photo' }
+                                                                            ],
                                                                             content: 'Товар'
                                                                         },
                                                                         {
                                                                             elem: 'header-item',
-                                                                            mix: [ {  elem: 'item-desc' } ],
+                                                                            mix : [
+                                                                                {  elem: 'item-desc' }
+                                                                            ],
                                                                         },
                                                                         {
                                                                             elem   : 'header-item',
-                                                                            mix: [ {  elem: 'counter' } ],
+                                                                            mix    : [
+                                                                                {  elem: 'counter' }
+                                                                            ],
                                                                             content: 'Кол-во'
                                                                         },
                                                                         {
                                                                             elem   : 'header-item',
-                                                                            mix: [ {  elem: 'price' } ],
+                                                                            mix    : [
+                                                                                {  elem: 'price' }
+                                                                            ],
                                                                             content: 'Цена, руб.'
                                                                         },
                                                                         {
                                                                             elem   : 'header-item',
-                                                                            mix: [ {  elem: 'delete' } ],
+                                                                            mix    : [
+                                                                                {  elem: 'delete' }
+                                                                            ],
                                                                             content: 'Удалить'
                                                                         }
 
@@ -250,7 +260,7 @@
                                                                             elem   : 'item',
                                                                             content: [
                                                                                 {
-                                                                                    elem: 'item-photo',
+                                                                                    elem   : 'item-photo',
                                                                                     content: { elem: 'item-img', src: 'img/catalog/boats/hunter_320_LK_LUX/photos/1_small.jpg' }
                                                                                 },
                                                                                 {
@@ -267,7 +277,7 @@
                                                                                     ]
                                                                                 },
                                                                                 {
-                                                                                    elem : 'counter',
+                                                                                    elem   : 'counter',
                                                                                     content: { block: 'input', value: 10, name: 'delete' }
                                                                                 },
                                                                                 {
@@ -284,7 +294,7 @@
                                                                             elem   : 'item',
                                                                             content: [
                                                                                 {
-                                                                                    elem: 'item-photo',
+                                                                                    elem   : 'item-photo',
                                                                                     content: { elem: 'item-img', src: 'img/catalog/motors/yamaha_rx600/photos/1_small.jpg' }
                                                                                 },
                                                                                 {
@@ -295,12 +305,12 @@
                                                                                             content: { block: 'b-link', content: 'Лодочный мотор HDX T 3.6 BMS', url: '' }
                                                                                         },
                                                                                         {
-                                                                                            elem   : 'item-qualif'
+                                                                                            elem: 'item-qualif'
                                                                                         }
                                                                                     ]
                                                                                 },
                                                                                 {
-                                                                                    elem : 'counter',
+                                                                                    elem   : 'counter',
                                                                                     content: { block: 'input', value: 10, name: 'delete' }
                                                                                 },
                                                                                 {
@@ -317,7 +327,7 @@
                                                                             elem   : 'item',
                                                                             content: [
                                                                                 {
-                                                                                    elem: 'item-photo',
+                                                                                    elem   : 'item-photo',
                                                                                     content: { elem: 'item-img', src: 'img/catalog/boat-addons/jilet_007/1_small.jpg' }
                                                                                 },
                                                                                 {
@@ -328,12 +338,12 @@
                                                                                             content: { block: 'b-link', content: 'Жилет спасательный универсальный Хантер', url: '' }
                                                                                         },
                                                                                         {
-                                                                                            elem   : 'item-qualif'
+                                                                                            elem: 'item-qualif'
                                                                                         }
                                                                                     ]
                                                                                 },
                                                                                 {
-                                                                                    elem : 'counter',
+                                                                                    elem   : 'counter',
                                                                                     content: { block: 'input', value: 10, name: 'delete' }
                                                                                 },
                                                                                 {
@@ -382,7 +392,7 @@
                                                                 {
                                                                     elem   : 'signup',
                                                                     content: {
-                                                                        block: 'signup',
+                                                                        block  : 'signup',
                                                                         content: ''
                                                                     }
                                                                 },
@@ -411,7 +421,7 @@
                                                                     content: 'Способ оплаты'
                                                                 },
                                                                 {
-                                                                    elem   : 'list',
+                                                                    elem: 'list',
 
                                                                     content: [
                                                                         {
@@ -475,93 +485,123 @@
                                                                             elem   : 'tab',
                                                                             content: [
                                                                                 {
-                                                                                    block  : 'fieldset',
-                                                                                    name   : 'Введите информацию для выставления счета',
+                                                                                    block  : 'company-legal-info',
                                                                                     content: [
                                                                                         {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Наименование организации'
-                                                                                        }
-                                                                                    ]
-                                                                                },
-                                                                                {
-                                                                                    block  : 'fieldset',
-                                                                                    name   : 'Юридический адрес:',
-                                                                                    content: [
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Индекс'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Город'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Адрес'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'ИНН'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'КПП'
-                                                                                        }
+                                                                                            elem   : 'orgname',
+                                                                                            content: {
+                                                                                                block  : 'fieldset',
+                                                                                                legend   : 'Введите информацию для выставления счета',
+                                                                                                content: [
+                                                                                                    {
+                                                                                                        block      : 'input',
+                                                                                                        name       : 'orgname',
+                                                                                                        placeholder: 'Наименование организации'
 
-                                                                                    ]
-                                                                                },
-                                                                                {
-                                                                                    block  : 'fieldset',
-                                                                                    name   : 'Банковские реквизиты',
-                                                                                    content: [
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Название банка'
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
                                                                                         },
                                                                                         {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Город (банка)'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'БИК'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Корреспондентский счет'
-                                                                                        },
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Расчетный счет'
-                                                                                        }
+                                                                                            elem   : 'address',
+                                                                                            content: [
+                                                                                                {
+                                                                                                    block  : 'fieldset',
+                                                                                                    legend   : 'Юридический адрес:',
+                                                                                                    content: [
+                                                                                                        {
+                                                                                                            block      : 'input',
+                                                                                                            name       : 'orgname',
+                                                                                                            placeholder: 'Индекс',
+                                                                                                            style: 'width: 218px;'
+                                                                                                        },
+                                                                                                        {
+                                                                                                            block      : 'input',
+                                                                                                            name       : 'orgname',
+                                                                                                            placeholder: 'Город',
+                                                                                                            style: 'width: 217px; margin: 0 0 0 15px;'
+                                                                                                        },
+                                                                                                        {
+                                                                                                            block      : 'input',
+                                                                                                            name       : 'orgname',
+                                                                                                            placeholder: 'Адрес'
+                                                                                                        },
+                                                                                                        {
+                                                                                                            block      : 'input',
+                                                                                                            name       : 'orgname',
+                                                                                                            placeholder: 'ИНН',
+                                                                                                            style: 'width: 218px;'
+                                                                                                        },
+                                                                                                        {
+                                                                                                            block      : 'input',
+                                                                                                            name       : 'orgname',
+                                                                                                            placeholder: 'КПП',
+                                                                                                            style: 'width: 217px; margin: 0 0 0 15px;'
+                                                                                                        }
 
-                                                                                    ]
-                                                                                },
-                                                                                {
-                                                                                    block  : 'fieldset',
-                                                                                    name   : 'Контактное лицо',
-                                                                                    content: [
-                                                                                        {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Телефон '
+                                                                                                    ]
+                                                                                                },
+                                                                                            ]
                                                                                         },
                                                                                         {
-                                                                                            block      : 'input',
-                                                                                            name       : 'orgname',
-                                                                                            placeholder: 'Контактное лицо'
+                                                                                            elem: 'banking-details',
+                                                                                            content: {
+                                                                                                block  : 'fieldset',
+                                                                                                content: [
+                                                                                                    {
+                                                                                                        block      : 'input',
+                                                                                                        name       : 'orgname',
+                                                                                                        placeholder: 'Название банка',
+                                                                                                        style: 'width: 455px;'
+                                                                                                    },
+                                                                                                    {
+                                                                                                        block      : 'input',
+                                                                                                        name       : 'orgname',
+                                                                                                        placeholder: 'Город (банка)',
+                                                                                                        style: 'width: 300px; margin: 0 0 0 15px;'
+                                                                                                    },
+                                                                                                    {
+                                                                                                        block      : 'input',
+                                                                                                        name       : 'orgname',
+                                                                                                        placeholder: 'БИК',
+                                                                                                        style: 'width: 250px;'
+                                                                                                    },
+                                                                                                    {
+                                                                                                        block      : 'input',
+                                                                                                        name       : 'orgname',
+                                                                                                        placeholder: 'Корреспондентский счет',
+                                                                                                        style: 'width: 245px; margin: 0 0 0 15px;'
+                                                                                                    },
+                                                                                                    {
+                                                                                                        block      : 'input',
+                                                                                                        name       : 'orgname',
+                                                                                                        placeholder: 'Расчетный счет',
+                                                                                                        style: 'width: 245px; margin: 0 0 0 15px;'
+                                                                                                    }
+
+                                                                                                ]
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            elem   : 'contact-person',
+                                                                                            content: {
+                                                                                                block  : 'fieldset',
+                                                                                                content: [
+                                                                                                    {
+                                                                                                        block      : 'input',
+                                                                                                        name       : 'orgname',
+                                                                                                        placeholder: 'Телефон ',
+                                                                                                        style: 'width: 275px;'
+                                                                                                    },
+                                                                                                    {
+                                                                                                        block      : 'input',
+                                                                                                        name       : 'orgname',
+                                                                                                        placeholder: 'Контактное лицо',
+                                                                                                        style: 'width: 275px; margin: 0 0 0 15px;'
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+
                                                                                         }
                                                                                     ]
                                                                                 }
@@ -611,7 +651,7 @@
                                                                             elem   : 'tab',
                                                                             content: {
                                                                                 block  : 'fieldset',
-                                                                                name   : 'Где вам удобнее забрать товар?',
+                                                                                legend   : 'Где вам удобнее забрать товар?',
                                                                                 content: [
                                                                                     {
                                                                                         block  : 'select',
