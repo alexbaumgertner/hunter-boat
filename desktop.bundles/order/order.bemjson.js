@@ -217,17 +217,11 @@
                                                                     elem   : 'header',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'header-item',
-                                                                            mix    : [
-                                                                                {  elem: 'item-photo' }
-                                                                            ],
-                                                                            content: 'Товар'
-                                                                        },
-                                                                        {
                                                                             elem: 'header-item',
                                                                             mix : [
                                                                                 {  elem: 'item-desc' }
                                                                             ],
+                                                                            content: 'Товар'
                                                                         },
                                                                         {
                                                                             elem   : 'header-item',
@@ -672,7 +666,77 @@
                                                                         },
                                                                         {
                                                                             elem   : 'tab',
-                                                                            content: ''
+                                                                            content: [
+                                                                                {
+                                                                                    block  : 'fieldset',
+                                                                                    content: [
+                                                                                        {
+                                                                                            block  : 'region-delivery-info',
+                                                                                            content: [
+                                                                                                {
+                                                                                                    elem   : 'fio',
+                                                                                                    content: {
+                                                                                                        block      : 'input',
+                                                                                                        placeholder: 'ФИО',
+                                                                                                        name       : 'fio'
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    elem   : 'phone',
+                                                                                                    content: {
+                                                                                                        block      : 'input',
+                                                                                                        placeholder: 'Телефон',
+                                                                                                        name       : 'phone'
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    elem   : 'passport',
+                                                                                                    content: [
+                                                                                                        {
+                                                                                                            elem   : 'textarea',
+                                                                                                            content: {
+                                                                                                                block      : 'textarea',
+                                                                                                                placeholder: 'Паспортные данные',
+                                                                                                                name       : 'passport'
+                                                                                                            },
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem   : 'label',
+                                                                                                            content: 'Серия и номер паспорта <br> Где, кем и когда выдан. <br> Данные нужны для транспортной компании'
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    elem   : 'address',
+                                                                                                    content: [
+                                                                                                        {
+                                                                                                            elem   : 'textarea',
+                                                                                                            content: {
+                                                                                                                block      : 'textarea',
+                                                                                                                placeholder: 'Полный адрес доставки'
+                                                                                                            },
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem   : 'label',
+                                                                                                            content: 'Укажите индекс, город, улицу, дом и корпус. Адрес необходим для транспортной компании.'
+                                                                                                        }
+                                                                                                    ]
+
+                                                                                                },
+                                                                                                {
+                                                                                                    elem   : 'select',
+                                                                                                    content: {
+                                                                                                        block: 'input',
+                                                                                                        type : 'checkbox',
+                                                                                                        name : 'agree',
+                                                                                                        label: 'Я даю своё согласие компании ООО «Бот-Трейдинг» на обработку и передачу моей личной информации транспортной компании для оформления доставки моего заказа. '
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
                                                                         },
                                                                         {
                                                                             elem   : 'tab',
@@ -763,28 +827,33 @@
                                                     content: [
                                                         {
                                                             block  : 'order-list',
+                                                            mods: { type: 'simple' },
                                                             content: [
                                                                 {
                                                                     elem   : 'header',
                                                                     content: [
+
                                                                         {
-                                                                            elem   : 'header-item',
+                                                                            elem: 'header-item',
+                                                                            mix : [
+                                                                                {  elem: 'item-desc' }
+                                                                            ],
                                                                             content: 'Товар'
-                                                                        },
-                                                                        {
-                                                                            elem: 'header-item'
+
                                                                         },
                                                                         {
                                                                             elem   : 'header-item',
+                                                                            mix    : [
+                                                                                {  elem: 'counter' }
+                                                                            ],
                                                                             content: 'Кол-во'
                                                                         },
                                                                         {
                                                                             elem   : 'header-item',
+                                                                            mix    : [
+                                                                                {  elem: 'price' }
+                                                                            ],
                                                                             content: 'Цена, руб.'
-                                                                        },
-                                                                        {
-                                                                            elem   : 'header-item',
-                                                                            content: 'Удалить'
                                                                         }
 
                                                                     ]
@@ -795,6 +864,7 @@
                                                                         {
                                                                             elem   : 'item',
                                                                             content: [
+
                                                                                 {
                                                                                     elem   : 'item-desc',
                                                                                     content: [
@@ -804,17 +874,65 @@
                                                                                         },
                                                                                         {
                                                                                             elem   : 'item-qualif',
-                                                                                            content: 'цвет'
+                                                                                            content: 'серая'
                                                                                         }
                                                                                     ]
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'item-name',
-                                                                                    content: 'Надувная лодка Хантер 290 Р'
+                                                                                    elem   : 'counter',
+                                                                                    content: 1
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'price',
+                                                                                    content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'item',
+                                                                            content: [
+
+                                                                                {
+                                                                                    elem   : 'item-desc',
+                                                                                    content: [
+                                                                                        {
+                                                                                            elem   : 'item-name',
+                                                                                            content: 'Лодочный мотор HDX T 3.6 BMS'
+                                                                                        },
+                                                                                        {
+                                                                                            elem: 'item-qualif'
+                                                                                        }
+                                                                                    ]
                                                                                 },
                                                                                 {
                                                                                     elem   : 'counter',
-                                                                                    content: 4
+                                                                                    content: 5
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'price',
+                                                                                    content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'item',
+                                                                            content: [
+
+                                                                                {
+                                                                                    elem   : 'item-desc',
+                                                                                    content: [
+                                                                                        {
+                                                                                            elem   : 'item-name',
+                                                                                            content: 'Жилет спасательный универсальный Хантер'
+                                                                                        },
+                                                                                        {
+                                                                                            elem: 'item-qualif'
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'counter',
+                                                                                    content: 10
                                                                                 },
                                                                                 {
                                                                                     elem   : 'price',
@@ -837,15 +955,18 @@
                                                                         }
                                                                     ]
                                                                 }
-
                                                             ]
                                                         },
                                                         {
                                                             block  : 'order-params-info',
                                                             content: [
                                                                 {
+                                                                    elem: 'header',
+                                                                    content: 'Параметры заказа'
+                                                                },
+                                                                {
                                                                     elem   : 'delivery-place',
-                                                                    content: 'самовывоз, Москва, ул. Амурская д.7., 24.03.2013'
+                                                                    content: 'Получение товара: самовывоз, Москва, ул. Амурская д.7., 24.03.2013'
                                                                 },
                                                                 {
                                                                     elem   : 'contact-person',
@@ -860,6 +981,7 @@
                                                         },
                                                         {
                                                             elem   : 'confirm',
+                                                            mix: [{ elem: 'next' }],
                                                             content: { block: 'button', mods: { type: 'submit', state: 'disable' }, content: 'Подтверждаю заказ' }
                                                         }
                                                     ],
