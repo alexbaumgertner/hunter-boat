@@ -426,15 +426,15 @@
                                                                     content: [
                                                                         {
                                                                             elem   : 'item',
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', checked: 'checked', label: 'Наличными' }
+                                                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: 'cash', checked: 'checked', label: 'Наличными' }
                                                                         },
                                                                         {
                                                                             elem   : 'item',
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', label: 'Банковской картой' }
+                                                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: 'cash', label: 'Банковской картой' }
                                                                         },
                                                                         {
                                                                             elem   : 'item',
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'pay-method', value: 'cash', label: 'Выписать счёт' }
+                                                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: 'cash', label: 'Выписать счёт' }
                                                                         }
                                                                     ]
                                                                 },
@@ -628,21 +628,21 @@
                                                                             mix    : [
                                                                                 { elem: 'menu-item' }
                                                                             ],
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'delivery-method', value: 'cash', checked: 'checked', label: 'Самовывоз ' }
+                                                                            content: { block: 'input', type: 'radio', name: 'delivery-method', value: 'cash', checked: 'checked', label: 'Самовывоз ' }
                                                                         },
                                                                         {
                                                                             elem   : 'item',
                                                                             mix    : [
                                                                                 { elem: 'menu-item' }
                                                                             ],
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'delivery-method', value: 'cash', label: 'Доставка по Санкт-Петербургу' }
+                                                                            content: { block: 'input', type: 'radio', name: 'delivery-method', value: 'cash', label: 'Доставка по Санкт-Петербургу' }
                                                                         },
                                                                         {
                                                                             elem   : 'item',
                                                                             mix    : [
                                                                                 { elem: 'menu-item' }
                                                                             ],
-                                                                            content: { block: 'input', mods: { type: 'radio' }, name: 'delivery-method', value: 'cash', label: 'Доставка в регионы' }
+                                                                            content: { block: 'input', type: 'radio', name: 'delivery-method', value: 'cash', label: 'Доставка в регионы' }
                                                                         }
                                                                     ]
                                                                 },
@@ -691,12 +691,12 @@
                                                                                             name       : 'phone'
                                                                                         },
                                                                                         {
-                                                                                            block      : 'input',
+                                                                                            block      : 'textarea',
                                                                                             placeholder: 'Паспортные данные',
                                                                                             name       : 'passport'
                                                                                         },
                                                                                         {
-                                                                                            block      : 'input',
+                                                                                            block      : 'textarea',
                                                                                             placeholder: 'Полный адрес доставки'
                                                                                         },
                                                                                         {

@@ -1,5 +1,12 @@
 block input {
 
+
+        default: {
+             this.ctx.mods = this.ctx.mods || {};
+             this.ctx.mods.type = this.ctx.type || 'text';
+            applyNext();
+        }
+
         tag: 'input',
         attrs: {
             placeholder: this.ctx.placeholder,
@@ -11,37 +18,27 @@ block input {
         }
 
 
-
-    mod type radio {
-
-        attrs: {
-            type: 'radio',
-            name: this.ctx.name,
-            checked: this.ctx.checked
-        }
-
-        !!this.ctx.label {
-            tag: 'span',
-            content: [
-                {
-                    elem: 'input',
-                    tag: 'input',
-                    attrs: {
-                        id: this.generateId(),
-                        type: 'radio',
-                        name: this.ctx.name,
-                        checked: this.ctx.checked
-                    }
-                },
-                {
-                    elem: 'label',
-                    tag: 'label',
-                    content: this.ctx.label,
-                    attrs: {
-                        'for': this.generateId()
-                    }
+    this.ctx.label {
+        tag: 'span',
+        content: [
+            {
+                elem: 'input',
+                tag: 'input',
+                attrs: {
+                    id: this.generateId(),
+                    type: this.ctx.type,
+                    name: this.ctx.name,
+                    checked: this.ctx.checked
                 }
-            ]
-        }
+            },
+            {
+                elem: 'label',
+                tag: 'label',
+                content: this.ctx.label,
+                attrs: {
+                    'for': this.generateId()
+                }
+            }
+        ]
     }
 }
