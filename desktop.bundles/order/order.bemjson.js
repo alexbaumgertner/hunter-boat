@@ -422,7 +422,7 @@
                                                                 },
                                                                 {
                                                                     elem: 'list',
-
+                                                                    mix: [ { block: 'tabbed-pane', js: { id: 'payment-variants' } }, ],
                                                                     content: [
                                                                         {
                                                                             elem   : 'item',
@@ -440,6 +440,7 @@
                                                                 },
                                                                 {
                                                                     elem   : 'tabs',
+                                                                    mix: [ { block: 'tabbed-pane', js: { id: 'payment-variants' } }, ],
                                                                     content: [
                                                                         {
                                                                             elem   : 'tab',
@@ -620,6 +621,7 @@
                                                                 },
                                                                 {
                                                                     elem   : 'list',
+                                                                    mix: [ { block: 'tabbed-pane', js: { id: 'delivery-variants' } }, ],
                                                                     content: [
                                                                         {
                                                                             elem   : 'item',
@@ -646,6 +648,7 @@
                                                                 },
                                                                 {
                                                                     elem   : 'tabs',
+                                                                    mix: [ { block: 'tabbed-pane', js: { id: 'delivery-variants' } }, ],
                                                                     content: [
                                                                         {
                                                                             elem   : 'tab',
