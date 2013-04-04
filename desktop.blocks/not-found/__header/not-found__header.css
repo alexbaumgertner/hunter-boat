@@ -1,0 +1,10 @@
+.not-found__header
+{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: normal;
+    position: absolute;
+    left: 735px;
+    top: 155px;
+    width: 205px;
+}
