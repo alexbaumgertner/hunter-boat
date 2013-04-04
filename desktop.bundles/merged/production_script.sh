@@ -54,4 +54,4 @@ done
 mv templates build/templates
 
 # clean up temporary files
-rm cssrb.js merged.html
+rm cssrb.js
