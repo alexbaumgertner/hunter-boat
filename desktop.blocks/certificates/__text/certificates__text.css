@@ -1,0 +1,9 @@
+.certificates__text
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 35px;
+    line-height: 17px;
+    font-size: 14px;
+    width: 225px;
+}
