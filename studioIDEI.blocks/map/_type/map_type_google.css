@@ -1,7 +1,0 @@
-.map_type_google {
-}
-
-/* infoview ballon */
-#google_map_canvas div div:nth-child(1) div div:nth-child(3) div:nth-child(3) div div:nth-child(12) {
-    border-radius: 15px;
-}
