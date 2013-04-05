@@ -311,7 +311,32 @@
                                                                     content: [
                                                                         {
                                                                             elem: 'value',
-                                                                            content: '34500'
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'value-item',
+                                                                                    content: '3'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'value-item',
+                                                                                    content: '4'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'separator'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'value-item',
+                                                                                    content: '5'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'value-item',
+                                                                                    content: '0'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'value-item',
+                                                                                    elemMods: { position: 'last' },
+                                                                                    content: '0'
+                                                                                }
+                                                                            ]
                                                                         },
                                                                         {
                                                                             elem   : 'text',
