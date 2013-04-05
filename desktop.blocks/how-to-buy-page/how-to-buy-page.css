@@ -1,0 +1,13 @@
+.how-to-buy-page
+{
+    margin: 15px 0 110px 25px;
+}
+
+.how-to-buy-page  .b-link {
+    color: #0095da;
+}
+
+.how-to-buy-page .b-text__p {
+    font-size: 14px;
+    line-height: 19px;
+}
