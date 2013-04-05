@@ -188,120 +188,136 @@
                                             content: [
                                                 {
                                                     elem   : 'section',
+                                                    attrs: { style: 'margin-top: -110px;' },
                                                     content: [
                                                         {
-                                                            block  : 'b-text',
+                                                            elem: 'section-column',
+                                                            attrs: { style: 'width: 385px; margin: 100px 105px 0 35px;'  },
                                                             content: [
                                                                 {
-                                                                    elem   : 'p',
-                                                                    content: '«Производственно Торговая Компания Хантер» - новая организация пришедшая на смену  «Бот-Трэйдинг» в результате расширения производства и подписания дилерских договоров на поставку и продажу подвесных лодочных моторов «HDX» и всемирно известных лодочных моторов «Yamaha» '
-                                                                },
-                                                                {
-                                                                    elem   : 'p',
+                                                                    block  : 'b-text',
                                                                     content: [
                                                                         {
-                                                                            tag    : '',
-                                                                            content: 'Создавая наш '
+                                                                            elem   : 'p',
+                                                                            content: '«Производственно Торговая Компания Хантер» - новая организация пришедшая на смену  «Бот-Трэйдинг» в результате расширения производства и подписания дилерских договоров на поставку и продажу подвесных лодочных моторов «HDX» и всемирно известных лодочных моторов «Yamaha» '
                                                                         },
                                                                         {
-                                                                            block  : 'b-link',
-                                                                            url    : '/catlog/boats/',
-                                                                            content: 'модельный ряд'
-                                                                        },
-                                                                        {
-                                                                            tag    : '',
-                                                                            content: ' надувных лодок, мы в первую очередь учитывали пожелания и опыт многих рыбаков и охотников, отсюда и родилась идея продвигать на рынок надувные лодки под брендом «HUNTERBOAT»'
+                                                                            elem   : 'p',
+                                                                            content: [
+                                                                                {
+                                                                                    tag    : '',
+                                                                                    content: 'Создавая наш '
+                                                                                },
+                                                                                {
+                                                                                    block  : 'b-link',
+                                                                                    url    : '/catlog/boats/',
+                                                                                    content: 'модельный ряд'
+                                                                                },
+                                                                                {
+                                                                                    tag    : '',
+                                                                                    content: ' надувных лодок, мы в первую очередь учитывали пожелания и опыт многих рыбаков и охотников, отсюда и родилась идея продвигать на рынок надувные лодки под брендом «HUNTERBOAT»'
+                                                                                }
+                                                                            ]
                                                                         }
                                                                     ]
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem   : 'certificates',
-                                                            content: {
-                                                                block  : 'certificates',
-                                                                content: [
-                                                                    {
-                                                                        elem   : 'list',
+                                                                },
+                                                                {
+                                                                    elem   : 'certificates',
+                                                                    content: {
+                                                                        block  : 'certificates',
                                                                         content: [
                                                                             {
-                                                                                elem   : 'item',
-                                                                                attrs  : { rel: 'img/content/certificates/1/1_big.png' },
-                                                                                content: { block: 'b-icon', url: 'img/content/certificates/1/1_icon.png', alt: 'сертификат_1' }
+                                                                                elem   : 'list',
+                                                                                content: [
+                                                                                    {
+                                                                                        elem   : 'item',
+                                                                                        attrs  : { rel: 'img/content/certificates/1/1_big.png' },
+                                                                                        content: { block: 'b-icon', url: 'img/content/certificates/1/1_icon.png', alt: 'сертификат_1' }
+                                                                                    },
+                                                                                    {
+                                                                                        elem   : 'item',
+                                                                                        attrs  : { rel: 'img/content/certificates/2/2_big.png' },
+                                                                                        content: { block: 'b-icon', url: 'img/content/certificates/2/2_icon.png', alt: 'сертификат_2' }
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             {
-                                                                                elem   : 'item',
-                                                                                attrs  : { rel: 'img/content/certificates/2/2_big.png' },
-                                                                                content: { block: 'b-icon', url: 'img/content/certificates/2/2_icon.png', alt: 'сертификат_2' }
+                                                                                elem   : 'text',
+                                                                                content: 'Мы продаём качественные сертифицированные товары.'
                                                                             }
                                                                         ]
-                                                                    },
-                                                                    {
-                                                                        elem   : 'text',
-                                                                        content: 'Мы продаём качественные сертифицированные товары.'
                                                                     }
-                                                                ]
-                                                            }
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    elem   : 'section',
-                                                    content: [
-                                                        {
-                                                            elem   : 'section-title',
-                                                            content: [
-                                                                {
-                                                                    elem   : 'section-header',
-                                                                    content: 'Почему люди выбирают именно нас?'
-                                                                },
-                                                                {
-                                                                    block  : 'b-link',
-                                                                    content: 'Стать дилером компании',
-                                                                    url    : '/'
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            block  : 'b-text',
+                                                            elem: 'section-column',
+                                                            attrs: { style: 'width: 430px;'  },
                                                             content: [
                                                                 {
-                                                                    elem    : 'ul',
-                                                                    elemMods: { 'list-type': 'blue-circle' },
-                                                                    content : [
+                                                                    elem   : 'section-title',
+                                                                    attrs: { style: 'width: 330px; text-align: left;' },
+                                                                    content: [
                                                                         {
-                                                                            elem   : 'li',
-                                                                            content: 'Тройная система проверки качества!'
-                                                                        },
-                                                                        {
-                                                                            elem   : 'li',
-                                                                            content: 'Постоянное наличие товара на складе.'
-                                                                        },
-                                                                        {
-                                                                            elem   : 'li',
-                                                                            content: 'Честность и порядочность.'
-                                                                        },
-                                                                        {
-                                                                            elem   : 'li',
-                                                                            content: 'Качественное гарантийное и постгарантийное обслуживание.'
-                                                                        },
-                                                                        {
-                                                                            elem   : 'li',
-                                                                            content: 'Своевременные и бесперебойные отгрузки продукции в любые регионы РФ. '
+                                                                            elem   : 'section-header',
+                                                                            content: [
+                                                                                {
+                                                                                    tag: '',
+                                                                                    content: 'Почему люди выбирают именно нас?'
+                                                                                },
+                                                                                {
+                                                                                    block  : 'b-link',
+                                                                                    attrs: { style: 'font-size: 13px;font-family: Arial, sans-serif; margin: 0 0 0 35px;' },
+                                                                                    content: 'Стать дилером компании',
+                                                                                    url    : '/'
+                                                                                }
+                                                                            ]
                                                                         }
                                                                     ]
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            block  : 'finished-products-counter',
-                                                            content: [
-                                                                {
-                                                                    elem: 'value'
                                                                 },
                                                                 {
-                                                                    elem   : 'text',
-                                                                    content: 'лодок мы уже сделали'
+                                                                    block  : 'b-text',
+                                                                    content: [
+                                                                        {
+                                                                            elem    : 'ul',
+                                                                            elemMods: { 'list-type': 'blue-circle' },
+                                                                            content : [
+                                                                                {
+                                                                                    elem   : 'li',
+                                                                                    content: 'Тройная система проверки качества!'
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'li',
+                                                                                    content: 'Постоянное наличие товара на складе.'
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'li',
+                                                                                    content: 'Честность и порядочность.'
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'li',
+                                                                                    content: 'Качественное гарантийное и постгарантийное обслуживание.'
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'li',
+                                                                                    content: 'Своевременные и бесперебойные отгрузки продукции в любые регионы РФ. '
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    block  : 'finished-products-counter',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'value',
+                                                                            content: '34500'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'text',
+                                                                            content: 'лодок мы уже сделали'
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         }
@@ -315,70 +331,94 @@
                                                     elem   : 'section',
                                                     content: [
                                                         {
-                                                            elem   : 'section-title',
+                                                            elem: 'section-column',
+                                                            attrs: { style: 'width: 205px; vertical-align: middle; margin: 0 0 0 85px;'  },
                                                             content: [
                                                                 {
-                                                                    elem   : 'section-header',
-                                                                    content: 'Где мы находимся'
+                                                                    elem   : 'section-title',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'section-header',
+                                                                            content: 'Где мы находимся'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    block  : 'b-text',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'p',
+                                                                            content: '192019, г. Санкт-Петербург ул. Профессора Качалова, д. 8'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'p',
+                                                                            content: 'Тел.: (812) 654-32-55/57'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'p',
+                                                                            content: {
+                                                                                block  : 'b-link',
+                                                                                url    : 'mailto:mail@hunterboat.ru',
+                                                                                content: 'mail@hunterboat.ru'
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+
+                                                            ]
+                                                        },
+
+                                                        {
+                                                            elem : 'section-column',
+                                                            attrs: { style: 'width: 300px; vertical-align: middle; margin: 0 70px 0 50px;'  },
+                                                            content: [
+                                                                {
+                                                                    block: 'map',
+                                                                    mods : { figure: 'circle', provider: 'yandex' },
+                                                                    js: {
+                                                                        center   : [
+                                                                            59.917565, 30.388754
+                                                                        ],
+                                                                        zoom     : 13,
+                                                                        placemark: {
+                                                                            center : [59.915043, 30.399097],
+                                                                            content: '<div><div>Санкт-Петербург ул. Профессора Качалова, д. 8</div><div>Тел.: (812) 654-32-55/57</div></div>' } }
                                                                 }
                                                             ]
                                                         },
 
                                                         {
-                                                            block  : 'b-text',
+                                                            elem: 'section-column',
+                                                            attrs: { style: 'width: 300px; vertical-align: middle; width: 190px;'  },
                                                             content: [
                                                                 {
-                                                                    elem   : 'p',
-                                                                    content: '192019, г. Санкт-Петербург ул. Профессора Качалова, д. 8'
-                                                                },
-                                                                {
-                                                                    elem   : 'p',
-                                                                    content: 'Тел.: (812) 654-32-55/57'
-                                                                },
-                                                                {
-                                                                    elem   : 'p',
-                                                                    content: {
-                                                                        block  : 'b-link',
-                                                                        url    : 'mailto:mail@hunterboat.ru',
-                                                                        content: 'mail@hunterboat.ru'
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            block: 'map',
-                                                            mods: { figure: 'circle', provider: 'yandex' },
-                                                            js: { center: [59.917565,30.388754], zoom: 14, placemark: { center: [59.915043,30.399097], content: '<div><div>Санкт-Петербург ул. Профессора Качалова, д. 8</div><div>Тел.: (812) 654-32-55/57</div></div>' } }
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    elem   : 'section',
-                                                    content: [
-                                                        {
-                                                            elem   : 'section-title',
-                                                            content: [
-                                                                {
-                                                                    elem   : 'section-header',
-                                                                    content: 'Купить лодку Hunter:'
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            block  : 'b-text',
-                                                            content: [
-                                                                {
-                                                                    elem   : 'p',
+                                                                    elem   : 'section-title',
                                                                     content: [
-                                                                        { tag: '', content: 'В нашем ' },
-                                                                        { block: 'b-link', url: '/', content: 'интернет-магазине' }
+                                                                        {
+                                                                            elem   : 'section-header',
+                                                                            attrs: { style: 'font-size: 20px;' },
+                                                                            content: 'Купить лодку Hunter:'
+                                                                        }
                                                                     ]
                                                                 },
                                                                 {
-                                                                    elem   : 'p',
+                                                                    block  : 'b-text',
                                                                     content: [
-                                                                        { tag: '', content: 'У ' },
-                                                                        { block: 'b-link', url: '/', content: 'дилеров компании' }
+                                                                        {
+                                                                            elem   : 'p',
+                                                                            attrs: { style: 'margin-bottom: 10px' },
+                                                                            content: [
+                                                                                { tag: '', content: 'В нашем ' },
+                                                                                { block: 'b-link', url: '/', content: 'интернет-магазине' }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem   : 'p',
+                                                                            content: [
+                                                                                { tag: '', content: 'У ' },
+                                                                                { block: 'b-link', url: '/', content: 'дилеров компании' }
+                                                                            ]
+                                                                        }
                                                                     ]
                                                                 }
                                                             ]
