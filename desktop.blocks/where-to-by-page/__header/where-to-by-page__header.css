@@ -1,0 +1,11 @@
+.where-to-by-page__header
+{
+    font-weight: normal;
+    font-size: 70px;
+    margin: 0;
+}
+
+.where-to-by-page__column .where-to-by-page__header {
+    font-size: 28px;
+    margin: 0 0 25px 0;
+}

@@ -2,7 +2,11 @@
     mustDeps: [],
     shouldDeps: [
         {
-            elem: 'map'
+            elem: ['map', 'marker']
+        },
+        {
+            elem: 'marker',
+            mods: { hovered: ['yes', 'no'] }
         }
     ]
 })

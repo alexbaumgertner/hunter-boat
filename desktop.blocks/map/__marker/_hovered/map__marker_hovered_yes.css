@@ -1,0 +1,9 @@
+.map__marker_hovered_yes
+{
+
+}
+
+.map__marker_hovered_yes:before {
+    background: #ffffff;
+    border: 2px solid #ff0000;
+}
