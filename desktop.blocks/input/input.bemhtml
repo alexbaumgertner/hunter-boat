@@ -41,4 +41,26 @@ block input {
             }
         ]
     }
+
+    this.ctx.type === 'file' {
+
+        tag: 'span',
+
+        content: [
+            {
+                elem: 'browse-button',
+                tag: 'span',
+                content: this.ctx.content
+            },
+            {
+                elem: 'input',
+                tag: 'input',
+                attrs: {
+                    type: this.ctx.type,
+                    name: this.ctx.name
+                }
+            }
+        ]
+
+    }
 }

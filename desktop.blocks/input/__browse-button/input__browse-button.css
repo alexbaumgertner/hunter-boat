@@ -1,0 +1,10 @@
+.input__browse-button
+{
+    background: url("input_type_file.png") repeat-x;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 6px 9px 7px;
+    border: 1px solid #54b3df;
+    border-radius: 7px;
+}
