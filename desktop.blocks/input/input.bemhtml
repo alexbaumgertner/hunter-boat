@@ -44,6 +44,8 @@ block input {
 
     this.ctx.type === 'file' {
 
+        js: true,
+
         tag: 'span',
 
         content: [
@@ -59,6 +61,11 @@ block input {
                     type: this.ctx.type,
                     name: this.ctx.name
                 }
+            },
+            {
+                elem: 'file-title',
+                tag: 'span',
+                mods: { visibility: 'hidden' }
             }
         ]
 
