@@ -1,0 +1,21 @@
+.about-page__section {
+}
+
+.about-page__section .b-link {
+    color: #0095da;
+}
+
+
+.about-page__section:nth-of-type(2n) {
+}
+
+.about-page__section .b-text__p {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.about-page__section .b-text__ul_list-type_blue-circle .b-text__li {
+    line-height: 16px;
+    font-size: 14px;
+    margin: 0 0 25px 0;
+}

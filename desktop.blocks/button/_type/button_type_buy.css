@@ -1,0 +1,12 @@
+.button_type_buy {
+    background: url("button_type_buy__bg.png") repeat-x #118fc9;
+    padding: 0 25px;
+    height: 40px;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #008bcb;
+    font-size: 23px;
+    text-shadow: 0 1px 0 #000000;
+    -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.57);
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.57);
+}

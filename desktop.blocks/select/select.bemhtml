@@ -1,0 +1,25 @@
+block select {
+
+    tag: 'select',
+    arrts: {
+
+        name: this.ctx.name
+    },
+    content: {
+        var options = this.ctx.options;
+        var content = [];
+
+        content.push({ elem: 'option', content: this.ctx.title, attrs: { selected: 'selected' } });
+
+        for (var i = 0, length = options.length; i < length; i++) {
+            content.push({ elem: 'option', content: options[i].content, attrs: { value: options[i].value } });
+        }
+
+
+        return content;
+
+    }
+
+    elem option, tag: 'option'
+
+}

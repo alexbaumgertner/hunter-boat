@@ -1,0 +1,10 @@
+block photoalbums-item {
+
+    elem carousel {
+        tag: 'span'
+    }
+
+    elem header {
+        tag: 'h3'
+    }
+}

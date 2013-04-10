@@ -1,0 +1,9 @@
+.not-found__content
+{
+    position: absolute;
+    left: 880px;
+    top: 230px;
+    width: 220px;
+    font-size: 14px;
+    line-height: 19px;
+}

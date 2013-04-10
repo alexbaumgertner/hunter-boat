@@ -1,0 +1,12 @@
+.order-list__delete
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 55px;
+}
+
+.order-list__delete .button_type_delete {
+    background: url("order-list__delete-button.png");
+    width: 16px;
+    height: 17px;
+}

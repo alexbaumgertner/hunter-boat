@@ -7,6 +7,12 @@
         },
         { block: 'bemhtml' }
     ],
+    shouldDeps: [
+        {
+            block: 'b-page',
+            elem: 'body'
+        }
+    ],
     noDeps: [
         {
             block: 'i-bem',

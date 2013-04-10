@@ -10,6 +10,7 @@ exports.getConfig = function() {
             '../../bem-bl/blocks-desktop',
             '../../bemhtml/common.blocks',
             '../../common.blocks',
+            '../../studioIDEI.blocks',
             '../../desktop.blocks'
         ])
     });

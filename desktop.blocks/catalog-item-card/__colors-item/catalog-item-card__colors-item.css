@@ -1,0 +1,11 @@
+.catalog-item-card__colors-item
+{
+    font-size: 12px;
+    line-height: 12px;
+    font-style: italic;
+    color: #ffffff;
+    padding: 1px 13px 3px;
+    border-radius: 10px;
+    margin: 0 3px 0 0;
+    border: 1px solid;
+}

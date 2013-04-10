@@ -1,0 +1,9 @@
+block article {
+
+    elem photo {
+        tag: 'img',
+        attrs:{
+            src: this.ctx.src
+        }
+    }
+}

@@ -1,0 +1,15 @@
+block map {
+    attrs: {
+        id: this.generateId()
+    },
+    js: {
+        this.ctx.js.mapID = this.generateId();
+        return this.ctx.js;
+    }
+
+    content: [
+        {
+            elem: 'map'
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+.article-item
+{
+    margin: 0 0 140px 0;
+}
+
+.article-item .b-text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 25px;
+}

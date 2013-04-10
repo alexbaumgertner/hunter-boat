@@ -1,0 +1,17 @@
+.photoalbum-thumb__title
+{
+    color: #0081bc;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 3px auto 5px auto;
+    width: 190px;
+    font-weight: bold;
+}
+
+.photoalbum-thumb__title .b-link {
+    text-decoration: none;
+}
+
+.photoalbum-thumb__title .b-link:hover {
+    border-bottom: 1px solid;
+}

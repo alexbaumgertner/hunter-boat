@@ -1,0 +1,22 @@
+.order-list_type_simple
+{
+}
+
+
+.order-list_type_simple .order-list__list {
+    padding-left: 20px;
+}
+
+.order-list_type_simple .order-list__item
+{
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.order-list_type_simple .order-list__item-desc {
+    width: 630px;
+}
+
+.order-list_type_simple .order-list__item-name {
+    color: #000000;
+}

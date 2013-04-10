@@ -1,0 +1,18 @@
+.product-review__author-address
+{
+    font-size: 15px;
+    margin: 0 0 0 18px;
+}
+
+.product-review__author-address:not(:empty):before {
+    content: '(';
+    position: relative;
+    top: -1px;
+}
+
+
+.product-review__author-address:not(:empty):after {
+    content: ')';
+    position: relative;
+    top: -1px;
+}

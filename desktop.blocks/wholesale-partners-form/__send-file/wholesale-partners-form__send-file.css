@@ -1,0 +1,13 @@
+.wholesale-partners-form__send-file
+{
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 195px;
+}
+
+
+.wholesale-partners-form__send-file .input__file-title_visibility_visible {
+    display: block;
+    margin: 5px 0 10px 0;
+}

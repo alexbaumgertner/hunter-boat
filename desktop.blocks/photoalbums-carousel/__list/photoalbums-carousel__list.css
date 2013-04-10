@@ -1,0 +1,8 @@
+.photoalbums-carousel__list
+{
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0; /* required for js */
+}

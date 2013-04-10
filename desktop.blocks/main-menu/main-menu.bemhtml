@@ -1,0 +1,23 @@
+block main-menu {
+
+    elem section, tag: 'span'
+
+    elem list, tag: 'ul'
+
+    elem item {
+
+        tag: 'li',
+        content: {
+           block: 'b-link',
+           url: this.ctx.url,
+           content: {
+                block: 'main-menu',
+                elem: 'item-selector',
+                tag: 'span',
+                content: this.ctx.name
+           }
+        }
+
+    }
+
+}

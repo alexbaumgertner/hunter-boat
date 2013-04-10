@@ -1,0 +1,22 @@
+.where-to-by-page__shipping {
+    text-align: center;
+    margin: 45px 0 0 0;
+}
+
+.where-to-by-page__shipping .b-text__h3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 30px 0;
+}
+
+.where-to-by-page__shipping .b-text__p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.where-to-by-page__shipping .b-link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #0081bc;
+}

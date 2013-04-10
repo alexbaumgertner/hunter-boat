@@ -1,0 +1,11 @@
+.products-promo-carousel__price-new {
+    font-size: 33px;
+    line-height: 35px;
+    margin: 0 0 0 12px;
+    color: #ff0000;
+    padding: 0px 11px;
+    border: 1px solid #868686;
+    border-radius: 7px;
+    -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.44);
+    box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.44)
+}

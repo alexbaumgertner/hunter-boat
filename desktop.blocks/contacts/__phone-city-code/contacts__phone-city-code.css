@@ -1,0 +1,15 @@
+.contacts__phone-city-code
+{
+}
+
+.contacts__phone-city-code:before {
+    content: '(';
+    position: relative;
+    top: -2px;
+}
+
+.contacts__phone-city-code:after {
+    content: ')';
+    position: relative;
+    top: -2px;
+}

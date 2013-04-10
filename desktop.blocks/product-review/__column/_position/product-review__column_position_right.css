@@ -1,0 +1,9 @@
+.product-review__column_position_right
+{
+}
+
+
+.product-review_style_two-col .product-review__column_position_right
+{
+    width: 660px;
+}

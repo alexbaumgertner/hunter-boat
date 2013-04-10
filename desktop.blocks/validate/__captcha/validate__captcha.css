@@ -1,0 +1,8 @@
+.validate__captcha
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 125px;
+    margin: 4px 0 0 10px;
+    text-align: center;
+}

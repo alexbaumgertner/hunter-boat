@@ -1,0 +1,14 @@
+.catalog-item__info-menu-item
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 17px;
+    margin: 0 40px 0 0;
+    font-size: 22px;
+    line-height: 22px;
+    color: #868686;
+}
+
+.catalog-item__info-menu-item:last-child {
+    margin-right: 0;
+}

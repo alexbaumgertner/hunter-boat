@@ -1,0 +1,25 @@
+.catalog-item__info-content-item
+{
+    display: none;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.catalog-item__info-content-item .b-text__p {
+
+}
+
+.catalog-item__info-content-item .b-text__ul {
+    list-style: none;
+}
+
+.catalog-item__info-content-item .b-text__ul .b-text__li {
+    list-style: none;
+    margin-left: 1.3em;
+}
+
+.catalog-item__info-content-item .b-text__ul .b-text__li:before {
+    position: absolute;
+    margin-left: -1.3em;
+    content: "\2014\a0";
+}

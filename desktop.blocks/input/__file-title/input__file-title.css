@@ -1,0 +1,9 @@
+.input__file-title
+{
+    background: url("input__file-title.png") no-repeat 0 -176px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.8em;
+    padding: 0 0 0 20px;
+    margin: 0 0 0 0.5em;
+}

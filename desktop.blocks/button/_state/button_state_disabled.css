@@ -1,0 +1,10 @@
+.button_state_disabled
+{
+    cursor: default;
+}
+
+.button_type_carousel-horiz.button_state_disabled
+{
+    background-position: -54px 0 !important;
+}
+

@@ -1,0 +1,10 @@
+block cart-info {
+
+    elem link, tag: 'span'
+
+    elem info, tag: 'span'
+
+    elem text, tag: 'span'
+
+    elem total-price, tag: 'span'
+}

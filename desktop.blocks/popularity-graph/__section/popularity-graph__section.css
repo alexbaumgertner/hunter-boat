@@ -1,0 +1,16 @@
+.popularity-graph__section
+{
+    margin: 0 70px 0 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.popularity-graph__section:last-child {
+    margin-right: 0;
+}
+
+.popularity-graph__section .b-link {
+    width: 51px;
+    text-align: center;
+    display: inline-block;
+}

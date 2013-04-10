@@ -1,0 +1,13 @@
+.logo {
+    background: url("logo.png") no-repeat;
+    width: 184px;
+    height: 59px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 12px 0 0 37px;
+
+    /* hide text */
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}

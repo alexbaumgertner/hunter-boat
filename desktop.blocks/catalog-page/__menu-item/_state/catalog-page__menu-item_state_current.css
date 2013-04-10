@@ -1,0 +1,7 @@
+.catalog-page__menu-item_state_current
+{
+    color: #000000;
+    border: 1px solid #aeaeae;
+    background: #ffffff;
+    cursor: default;
+}

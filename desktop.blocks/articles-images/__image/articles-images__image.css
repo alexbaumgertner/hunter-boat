@@ -1,0 +1,9 @@
+.articles-images__image
+{
+    margin: 0 30px 0 0;
+    border: 1px solid #595959;
+}
+
+.articles-images__image:last-child {
+    margin-right: 0;
+}

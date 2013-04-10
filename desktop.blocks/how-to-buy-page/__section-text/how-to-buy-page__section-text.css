@@ -1,0 +1,9 @@
+.how-to-buy-page__section-text
+{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.how-to-buy-page__section-text .b-link {
+    color: #007eb9;
+}

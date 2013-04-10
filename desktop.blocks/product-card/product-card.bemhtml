@@ -1,0 +1,70 @@
+block product-card, (!this.mods || this.mods.type !== 'withFullDesc') {
+
+    content: [
+        {
+            elem: 'icon',
+            content: {
+                block: 'catalog-icon', mods: { type: (function () {
+                    var mods = ['new', 'pop', 'rec'];
+                    var random = Math.floor(Math.random() * mods.length);
+                    return mods[random];
+                }()) }
+            }
+        },
+        {
+            elem: 'photo'
+        },
+        {
+            elem: 'info',
+            tag: 'span',
+            content: [
+                {
+                    elem: 'title',
+                    content: {
+                        block: 'b-link',
+                        content: (function(){
+                            var names = ['Хантер 320 Л ЛЮКС', 'Хантер 159 НР', 'Хантер 777 ЛЮКС', 'Хантер 320 ПВХ'];
+                            var random = Math.floor(Math.random() * names.length);
+                            return names[random];
+                        }()),
+                        url: 'catalog/boats/'
+                    }
+                },
+                {
+                    elem: 'desc',
+                    content: (function(){
+                        var descs = ['Лодка ПВХ', 'Гребная лодка', 'Лодка надувная', 'Лодка моторная ЛЮКС'];
+                        var random = Math.floor(Math.random() * descs.length);
+                        return descs[random];
+                    }())
+                },
+                {
+                    elem: 'price',
+                    content: {
+                        block: 'price',
+                        mods: { currency: 'dot-dash' },
+                        value: Math.floor(Math.random() * 100000)
+                    }
+                }
+            ]
+        }
+    ]
+
+
+    elem photo {
+
+        tag: 'img',
+        attrs: {
+            src: (function(){
+                var photos = ['hunter_250_ML', 'hunter_280_LT', 'hunter_290_L', 'hunter_320_LK_lux'];
+                var random = Math.floor(Math.random() * photos.length);
+
+                return 'img/catalog/boats/' + photos[random] + '.png'
+            }())
+        }
+    }
+}
+
+block product-card, elem info {
+    tag: 'span'
+}

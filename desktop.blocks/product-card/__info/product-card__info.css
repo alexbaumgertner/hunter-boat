@@ -1,0 +1,12 @@
+.product-card__info
+{
+}
+
+
+.product-card_type_withFullDesc .product-card__info
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 345px;
+
+}

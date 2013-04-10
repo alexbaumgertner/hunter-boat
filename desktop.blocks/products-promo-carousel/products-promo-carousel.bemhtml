@@ -1,0 +1,29 @@
+block products-promo-carousel {
+
+    elem header {
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+
+
+    elem price {
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+
+
+    elem price-old {
+        tag: 'span'
+    }
+
+
+    elem price-new {
+        tag: 'span'
+    }
+
+    elem photo {
+        tag: 'img',
+        attrs: {
+            src: this.ctx.src,
+            alt: this.ctx.src
+        }
+    }
+}

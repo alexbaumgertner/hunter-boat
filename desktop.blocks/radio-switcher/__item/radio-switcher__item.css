@@ -1,0 +1,8 @@
+.radio-switcher__item
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 40px;
+    font-size: 14px;
+;
+}

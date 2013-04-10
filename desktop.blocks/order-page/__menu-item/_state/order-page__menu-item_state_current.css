@@ -1,0 +1,13 @@
+.order-page__menu-item_state_current
+{
+    border: 1px solid #43a2ce;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 7px;
+    cursor: default;
+    margin-right: 65px;
+}
+
+.order-page__menu-item_state_current:after {
+    right: -50px;
+}

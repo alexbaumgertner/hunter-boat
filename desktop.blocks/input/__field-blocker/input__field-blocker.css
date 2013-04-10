@@ -1,0 +1,9 @@
+.input__field-blocker
+{
+    position: absolute;
+    z-index: 3;
+    width: 150px;
+    height: 21px;
+    background: url(transparent.gif);
+    margin-left: -155px;
+}

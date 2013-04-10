@@ -1,0 +1,15 @@
+.where-to-by-page
+{
+    margin: 0 0 90px 0;
+}
+
+.where-to-by-page .map_provider_google .map__map {
+    width: 398px;
+    height: 500px;
+    border: 1px solid #000000;
+}
+
+.where-to-by-page .line_type_wavy-0081bd {
+    width: 615px;
+    margin: 0 auto;
+}

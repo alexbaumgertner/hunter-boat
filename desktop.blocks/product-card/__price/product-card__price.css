@@ -1,0 +1,10 @@
+.product-card__price
+{
+    margin: 5px 0 0 0;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.product-card_type_withFullDesc .product-card__price {
+    margin: 20px 0 0 0;
+}

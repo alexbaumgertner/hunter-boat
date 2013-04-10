@@ -1,0 +1,23 @@
+.dealers-page__column
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 420px;
+    margin: 0 60px 0 0;
+}
+
+.dealers-page__column:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.dealers-page__column .b-text__p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.dealers-page__column .b-text__ul {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 15px 20px;
+}

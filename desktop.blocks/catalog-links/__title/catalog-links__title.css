@@ -1,0 +1,13 @@
+.catalog-links__title
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 22px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #a1aeb5;
+}
+
+.catalog-links__title .b-link {
+    color: inherit;
+    text-decoration: none;
+}

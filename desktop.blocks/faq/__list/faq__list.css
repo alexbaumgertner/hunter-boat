@@ -1,0 +1,8 @@
+.faq__list
+{
+    list-style: none;
+    margin: 70px 0 90px 0;
+    padding: 0 0 70px 0;
+    width: 730px;
+    background: url('../../catalog-section/__header-line/catalog-section__header-line__bg.gif') repeat-x 0 bottom;
+}

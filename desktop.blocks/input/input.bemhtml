@@ -1,0 +1,73 @@
+block input {
+
+
+        default: {
+             this.ctx.mods = this.ctx.mods || {};
+             this.ctx.mods.type = this.ctx.type || 'text';
+            applyNext();
+        }
+
+        tag: 'input',
+        attrs: {
+            placeholder: this.ctx.placeholder,
+            name: this.ctx.name,
+            size: this.ctx.size,
+            type: this.ctx.type,
+            value: this.ctx.value,
+            style: this.ctx.style
+        }
+
+
+    this.ctx.label {
+        tag: 'span',
+        content: [
+            {
+                elem: 'input',
+                tag: 'input',
+                attrs: {
+                    id: this.generateId(),
+                    type: this.ctx.type,
+                    name: this.ctx.name,
+                    checked: this.ctx.checked
+                }
+            },
+            {
+                elem: 'label',
+                tag: 'label',
+                content: this.ctx.label,
+                attrs: {
+                    'for': this.generateId()
+                }
+            }
+        ]
+    }
+
+    this.ctx.type === 'file' {
+
+        js: true,
+
+        tag: 'span',
+
+        content: [
+            {
+                elem: 'browse-button',
+                tag: 'span',
+                content: this.ctx.content
+            },
+            {
+                elem: 'input',
+                tag: 'input',
+                attrs: {
+                    type: this.ctx.type,
+                    name: this.ctx.name
+                }
+            },
+            {
+                elem: 'file-title',
+                tag: 'span',
+                mods: { visibility: 'hidden' }
+            }
+        ]
+
+    }
+}

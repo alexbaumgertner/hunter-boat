@@ -1,0 +1,9 @@
+.map__marker_hovered_no
+{
+}
+
+.map__marker_hovered_no:before {
+    background: transparent;
+    border: 2px solid #007eb9;
+}
+

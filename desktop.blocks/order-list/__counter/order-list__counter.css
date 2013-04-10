@@ -1,0 +1,7 @@
+.order-list__counter
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    margin: 0 35px;
+}

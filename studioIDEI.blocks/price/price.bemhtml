@@ -1,0 +1,65 @@
+block price {
+
+    tag: 'span',
+    js: true
+
+    elem value {
+        tag: 'span'
+    }
+
+    elem currency {
+        tag: 'span'
+    }
+
+
+    mod currency empty {
+        content: [
+            {
+                elem: 'value',
+                content: this.ctx.value
+            }
+        ]
+    }
+
+
+    mod currency 'dot-dash' {
+        content: [
+            {
+                elem: 'value',
+                content: this.ctx.value
+            },
+            {
+                elem: 'currency',
+                content: '.–'
+            }
+        ]
+    }
+
+
+    mod currency RUB {
+        content: [
+            {
+                elem: 'value',
+                content: this.ctx.value
+            },
+            {
+                elem: 'currency',
+                content: 'Р' /* russian big P */
+            }
+        ]
+    }
+
+
+    mod currency USD {
+        content: [
+            {
+                elem: 'currency',
+                content: '$'
+            },
+            {
+                elem: 'value',
+                content: this.ctx.value
+            }
+        ]
+    }
+}

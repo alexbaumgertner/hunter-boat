@@ -1,0 +1,18 @@
+.contacts__link
+{
+    color: #005075;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+    padding: 2px 0 0 0;
+}
+
+.i-ua_js_yes .contacts__link .b-link_pseudo_yes .b-link__inner {
+    vertical-align: top;
+    font-size: 12px;
+    margin: 0 0 0 15px;
+}
+
+.i-ua_js_yes .footer  .contacts__link .b-link_pseudo_yes .b-link__inner {
+    font-size: 14px;
+}

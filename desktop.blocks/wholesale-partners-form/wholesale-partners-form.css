@@ -1,0 +1,17 @@
+.wholesale-partners-form
+{
+    margin: 25px 0 0 0;
+    width: 405px;
+}
+
+.wholesale-partners-form .input_type_text {
+    margin: 0 0 13px 0;
+}
+
+.wholesale-partners-form .button_type_submit {
+    margin: 30px 0 0 0;
+}
+
+.wholesale-partners-form .textarea {
+    height: 110px;
+}

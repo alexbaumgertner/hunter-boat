@@ -1,0 +1,8 @@
+.catalog-item-card__photos-list-item
+{
+    margin: 0 25px 0 0;
+}
+
+.catalog-item-card__photos-list-item:last-child {
+    margin-right: 0;
+}

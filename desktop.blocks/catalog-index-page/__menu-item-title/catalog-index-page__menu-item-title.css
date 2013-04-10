@@ -1,0 +1,10 @@
+.catalog-index-page__menu-item-title
+{
+}
+
+
+.i-ua_js_yes .catalog-index-page__menu-item_state_current .b-link_pseudo_yes .b-link__inner
+{
+    border-bottom: none;
+    cursor: default;
+}
