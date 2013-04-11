@@ -2,5 +2,7 @@
 {
     height: 360px;
     background: none;
-    position: relative;
+    position: absolute;
+    top: 120px;
+    width: 100%;
 }

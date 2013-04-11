@@ -1,5 +1,11 @@
 .header__index-title
 {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: 400px;
+    margin: 40px 0 0 120px;
+    text-shadow: 3px 2px 1px #FFF;
+    display: inline-block;
+    vertical-align: top;
 }

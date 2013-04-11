@@ -183,6 +183,7 @@
         },
         {
             block  : 'content',
+            mods: { page: 'index' },
             content: [
                 {
                     block  : 'wrapper-fix-width',
