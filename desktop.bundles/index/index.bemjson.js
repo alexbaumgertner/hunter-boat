@@ -243,6 +243,7 @@
                                                 },
                                                 {
                                                     elem   : 'column',
+                                                    attrs: { style: 'margin: 58px 0 0;' },
                                                     content: [
                                                         {
                                                             block  : 'brands',

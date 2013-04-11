@@ -10,5 +10,7 @@
 }
 
 .brands_style_compact .brands__item-header {
-    margin: 0;
+
+    height: auto;
+    margin: 0 0 5px 0;
 }
