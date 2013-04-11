@@ -1,10 +1,9 @@
-.sale-stock__header
-{
+.sale-stock__header {
     border: 1px solid #ca0000;
     background: #f03131;
     width: 55px;
     height: 55px;
-    margin: -30px auto 50px;
+    margin: -30px auto 20px;
     color: #fdfdfd;
     font-size: 13px;
     line-height: 55px;
@@ -12,7 +11,7 @@
     text-align: center;
     border-radius: 100%;
 
-    -webkit-box-shadow:  2px 2px 7px 1px rgba(91, 98, 101, 0.7);
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(91, 98, 101, 0.7);
 
-            box-shadow:  2px 2px 7px 1px rgba(91, 98, 101, 0.7);
+    box-shadow: 2px 2px 7px 1px rgba(91, 98, 101, 0.7);
 }

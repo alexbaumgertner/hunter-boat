@@ -360,6 +360,7 @@
                                                             content: [
                                                                 {
                                                                     elem   : 'menu-item',
+                                                                    elemMods: { state: 'current' },
                                                                     content: [
                                                                         {
                                                                             elem   : 'menu-item-header',
@@ -412,7 +413,7 @@
                                                                             content: [
                                                                                 {
                                                                                     elem   : 'date',
-                                                                                    content: '21.10.1201'
+                                                                                    content: '21.10.10'
                                                                                 },
                                                                                 {
                                                                                     elem   : 'title',
@@ -425,7 +426,7 @@
                                                                             content: [
                                                                                 {
                                                                                     elem   : 'date',
-                                                                                    content: '04.08.3000'
+                                                                                    content: '04.08.01'
                                                                                 },
                                                                                 {
                                                                                     elem   : 'title',
@@ -438,32 +439,33 @@
                                                                             content: [
                                                                                 {
                                                                                     elem   : 'date',
-                                                                                    content: '23.25.1424'
+                                                                                    content: '23.25.07'
                                                                                 },
                                                                                 {
                                                                                     elem   : 'title',
                                                                                     content: { block: 'b-link', url: '/', content: 'Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
                                                                                 }
                                                                             ]
-                                                                        },
-                                                                        {
-                                                                            block  : 'b-link',
-                                                                            url    : '/news/',
-                                                                            content: 'Все новости'
                                                                         }
                                                                     ]
                                                                 }
                                                             ]
+                                                        },
+                                                        {
+                                                            elem: 'link-to-all',
+                                                            content: {
+                                                                block  : 'b-link',
+                                                                url    : '/news/',
+                                                                content: 'Все новости'
+                                                            }
                                                         }
+
                                                     ]
                                                 },
                                             ]
                                         },
                                         {
                                             elem: 'column',
-                                            attrs: {
-                                                style: 'margin-left: 110px; text-align: center;'
-                                            },
                                             content: [
                                                 {
                                                     block  : 'photoalbum-thumb',
@@ -492,6 +494,9 @@
                                                 },
                                                 {
                                                     block  : 'b-link',
+                                                    attrs: {
+                                                        style: 'margin: 18px 0 0 0; display: block; text-align: center; color: #0081bc;'
+                                                    },
                                                     url    : '/photoalbums/',
                                                     content: 'Фотогалерея'
                                                 }

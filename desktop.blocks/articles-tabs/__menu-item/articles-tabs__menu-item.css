@@ -3,5 +3,7 @@
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin: 0 45px 0 0;
+    margin: 0 48px 0 0;
+    color: #a0a0a0;
+    padding: 7px 0 0 0;
 }

@@ -5,7 +5,9 @@
 
 
 # make builds dirs
-mkdir -p build/css/ build/js/
+mkdir build
+
+mkdir build/css/ build/js/
 
 # copy js
 cp _merged.js build/js/_merged.js

@@ -2,7 +2,8 @@
 {
     display: inline-block;
     margin: 0 0 0 15px;
-    width: 300px;
+    width: 380px;
+    font-weight: bold;
 }
 
 .article-anounce__title .b-link {
