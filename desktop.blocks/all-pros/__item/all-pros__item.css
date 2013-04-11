@@ -5,9 +5,26 @@
     width: 200px;
     margin: 0 50px 0 0;
     font-size: 15px;
+    text-align: center;
     line-height: 17px;
+    position: relative;
 }
 
 .all-pros__item:last-child {
     margin-right: 0;
+}
+
+/* http://htmlbook.ru/faq/kak-izmenit-vid-napisaniya-chisel-v-spiske */
+.all-pros__item:before {
+    content: counter(item);
+    counter-increment: item;
+    position: absolute;
+    top: -30px;
+    text-align: center;
+    width: 100%;
+    color: #73cef4;
+    font-size: 25px;
+    left: 0;
+    line-height: 25px;
+    font-family: hermes;
 }
