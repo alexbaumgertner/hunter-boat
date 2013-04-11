@@ -1,3 +1,8 @@
 .company-brief
 {
 }
+
+.company-brief .b-link {
+    font-size: 14px;
+    color: #0081bc;
+}

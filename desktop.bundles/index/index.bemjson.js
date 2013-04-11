@@ -1,5 +1,6 @@
 ({
     block  : 'b-page',
+    mods: { page: 'index' },
     title  : 'Title of the page',
     favicon: '/favicon.ico',
     head   : [
@@ -198,6 +199,11 @@
                                     block: 'index-page',
                                     content: [
                                         {
+                                            block: 'b-link',
+                                            mods: { linkto: 'catalog' },
+                                            url: '/catalog/'
+                                        },
+                                        {
                                             block  : 'company-brief',
                                             content: [
                                                 {
@@ -248,7 +254,7 @@
                                                                         elem   : 'item',
                                                                         content: {
                                                                             elem   : 'item-header',
-                                                                            content: { block: 'b-icon', alt: 'yamaha', url: 'img/content/brand-icons/yamaha-logo.png' }
+                                                                            content: { block: 'b-icon', alt: 'yamaha', url: 'img/content/brand-icons/yamaha-logo_small.png' }
                                                                         }
                                                                     },
                                                                     {
@@ -256,14 +262,14 @@
                                                                         attrs: { style: 'margin: 5px 0 -5px 15px;' },
                                                                         content: {
                                                                             elem   : 'item-header',
-                                                                            content: { block: 'b-icon', alt: 'hdx', url: 'img/content/brand-icons/hdx-logo.png' }
+                                                                            content: { block: 'b-icon', alt: 'hdx', url: 'img/content/brand-icons/hdx-logo_small.png' }
                                                                         }
                                                                     },
                                                                     {
                                                                         elem   : 'item',
                                                                         content: {
                                                                             elem   : 'item-header',
-                                                                            content: { block: 'b-icon', alt: 'nissamaran', url: 'img/content/brand-icons/nissamaran-logo.png' }
+                                                                            content: { block: 'b-icon', alt: 'nissamaran', url: 'img/content/brand-icons/nissamaran-logo_small.png' }
                                                                         }
                                                                     }
                                                                 ]
@@ -317,19 +323,22 @@
                                                         {
                                                             elem   : 'item',
                                                             content: {
-                                                                block: 'product-card'
+                                                                block: 'product-card',
+                                                                oldPrice: 65400
                                                             }
                                                         },
                                                         {
                                                             elem   : 'item',
                                                             content: {
-                                                                block: 'product-card'
+                                                                block: 'product-card',
+                                                                oldPrice: 5400
                                                             }
                                                         },
                                                         {
                                                             elem   : 'item',
                                                             content: {
-                                                                block: 'product-card'
+                                                                block: 'product-card',
+                                                                oldPrice: 15400
                                                             }
                                                         }
                                                     ]

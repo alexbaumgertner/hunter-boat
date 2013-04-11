@@ -40,11 +40,18 @@ block product-card, (!this.mods || this.mods.type !== 'withFullDesc') {
                 },
                 {
                     elem: 'price',
-                    content: {
-                        block: 'price',
-                        mods: { currency: 'dot-dash' },
-                        value: Math.floor(Math.random() * 100000)
-                    }
+                    content: [
+                        {
+                            block: 'price',
+                            mods: { currency: 'dot-dash', variant: 'old' },
+                            value: this.ctx.oldPrice
+                        },
+                        {
+                            block: 'price',
+                            mods: { currency: 'dot-dash' },
+                            value: Math.floor(Math.random() * 100000)
+                        }
+                    ]
                 }
             ]
         }

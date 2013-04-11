@@ -4,11 +4,15 @@
     background: #f03131;
     width: 55px;
     height: 55px;
-    margin: 0 auto;
+    margin: -30px auto 50px;
     color: #fdfdfd;
     font-size: 13px;
     line-height: 55px;
     text-transform: uppercase;
     text-align: center;
     border-radius: 100%;
+
+    -webkit-box-shadow:  2px 2px 7px 1px rgba(91, 98, 101, 0.7);
+
+            box-shadow:  2px 2px 7px 1px rgba(91, 98, 101, 0.7);
 }
