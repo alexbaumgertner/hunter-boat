@@ -14,6 +14,10 @@
     content: [
         {
             block  : 'header',
+            mods: { page: 'index' },
+            attrs: {
+                style: 'background: url("img/index-page/main-photo-1.jpg") no-repeat;'
+            },
             content: [
                 {
                     block  : 'wrapper-fix-width',
@@ -164,6 +168,15 @@
                                 }
                             ]
                         },
+                        {
+                            block: 'header',
+                            elem: 'index-title',
+                            content: 'Почувствовать природу... легко!'
+                        },
+                        {
+                            block: 'products-promo-carousel',
+                            mods: { style: 'compact' }
+                        }
                     ]
                 },
             ]
@@ -179,7 +192,298 @@
                             block   : 'content',
                             elem    : 'column',
                             elemMods: { position: 'full' },
-                            content : []
+                            content : [
+                                {
+                                    block: 'index-page',
+                                    content: [
+                                        {
+                                            block  : 'company-brief',
+                                            content: [
+                                                {
+                                                    elem   : 'column',
+                                                    content: {
+                                                        elem   : 'work-for-you',
+                                                        content: [
+                                                            {
+                                                                elem   : 'work-for-you-year',
+                                                                content: '4'
+                                                            },
+                                                            {
+                                                                elem   : 'work-for-you-text',
+                                                                content: 'года работаем для вас'
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    elem   : 'column',
+                                                    content: [
+                                                        {
+                                                            elem   : 'header',
+                                                            content: 'Надувные лодки Хантер'
+                                                        },
+                                                        {
+                                                            elem   : 'text',
+                                                            content: '«Производственно Торговая Компания Хантер» - новая организация пришедшая на смену «Бот-Трэйдинг» в результате расширения производства и подписания дилерских договоров на поставку и продажу подвесных лодочных моторов «HDX» и всемирно известных лодочных моторов «Yamaha». '
+                                                        },
+                                                        {
+                                                            elem   : 'b-link',
+                                                            url    : '/about/',
+                                                            content: 'Узнать все о нас'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem   : 'column',
+                                                    content: [
+                                                        {
+                                                            block  : 'brands',
+                                                            mods   : { style: 'compact' },
+                                                            content: {
+                                                                elem   : 'list',
+                                                                content: [
+                                                                    {
+                                                                        elem   : 'item',
+                                                                        content: {
+                                                                            elem   : 'item-header',
+                                                                            content: { block: 'b-icon', alt: 'yamaha', url: 'img/content/brand-icons/yamaha-logo.png' }
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        elem   : 'item',
+                                                                        content: {
+                                                                            elem   : 'item-header',
+                                                                            content: { block: 'b-icon', alt: 'hdx', url: 'img/content/brand-icons/hdx-logo.png' }
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        elem   : 'item',
+                                                                        content: {
+                                                                            elem   : 'item-header',
+                                                                            content: { block: 'b-icon', alt: 'nissamaran', url: 'img/content/brand-icons/nissamaran-logo.png' }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    block  : 'all-pros',
+                                                    content: [
+                                                        {
+                                                            elem   : 'header',
+                                                            content: 'Сплошные плюсы'
+                                                        },
+                                                        {
+                                                            elem   : 'list',
+                                                            content: [
+                                                                {
+                                                                    elem   : 'item',
+                                                                    content: 'Производство в центре Санкт-Петербурга'
+                                                                },
+                                                                {
+                                                                    elem   : 'item',
+                                                                    content: 'Широкий ассортимент: от простых до люксовых'
+                                                                },
+                                                                {
+                                                                    elem   : 'item',
+                                                                    content: 'Немецкая лодочная ткань HEYTEX'
+                                                                },
+                                                                {
+                                                                    elem   : 'item',
+                                                                    content: 'Гарантия качества: сертифицированные лодки'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        { block: 'line', mods: { type: 'wavy-0081bd' } },
+                                        {
+                                            block  : 'sale-stock',
+                                            content: [
+                                                {
+                                                    elem   : 'header',
+                                                    content: 'Акции'
+                                                },
+                                                {
+                                                    elem   : 'list',
+                                                    content: [
+                                                        {
+                                                            elem   : 'item',
+                                                            content: {
+                                                                block: 'product-card'
+                                                            }
+                                                        },
+                                                        {
+                                                            elem   : 'item',
+                                                            content: {
+                                                                block: 'product-card'
+                                                            }
+                                                        },
+                                                        {
+                                                            elem   : 'item',
+                                                            content: {
+                                                                block: 'product-card'
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+
+                                        { block: 'line', mods: { type: 'wavy-0081bd' } },
+
+                                        {
+                                            elem: 'column',
+                                            content: [
+                                                {
+                                                    block  : 'articles-tabs',
+                                                    content: [
+                                                        {
+                                                            elem   : 'menu',
+                                                            content: [
+                                                                {
+                                                                    elem   : 'menu-item',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'menu-item-header',
+                                                                            content: 'Новости'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'menu-item-counter',
+                                                                            content: '21'
+                                                                        }
+                                                                    ]
+                                                                },
+
+                                                                {
+                                                                    elem   : 'menu-item',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'menu-item-header',
+                                                                            content: 'Статьи'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'menu-item-counter',
+                                                                            content: '12'
+                                                                        }
+                                                                    ]
+                                                                },
+
+                                                                {
+                                                                    elem   : 'menu-item',
+                                                                    content: [
+                                                                        {
+                                                                            elem   : 'menu-item-header',
+                                                                            content: 'Отзывы'
+                                                                        },
+                                                                        {
+                                                                            elem   : 'menu-item-counter',
+                                                                            content: '105'
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem   : 'tabs',
+                                                            content: [
+                                                                {
+                                                                    elem   : 'tab',
+                                                                    content: [
+                                                                        {
+                                                                            block  : 'article-anounce',
+                                                                            content: [
+                                                                                {
+                                                                                    elem   : 'date',
+                                                                                    content: '21.10.1201'
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'title',
+                                                                                    content: { block: 'b-link', url: '/', content: 'с Наступающим Новым 2013 годом' }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            block  : 'article-anounce',
+                                                                            content: [
+                                                                                {
+                                                                                    elem   : 'date',
+                                                                                    content: '04.08.3000'
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'title',
+                                                                                    content: { block: 'b-link', url: '/', content: 'Сезонные скидки на надувные лодки Хантер' }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            block  : 'article-anounce',
+                                                                            content: [
+                                                                                {
+                                                                                    elem   : 'date',
+                                                                                    content: '23.25.1424'
+                                                                                },
+                                                                                {
+                                                                                    elem   : 'title',
+                                                                                    content: { block: 'b-link', url: '/', content: 'Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            block  : 'b-link',
+                                                                            url    : '/news/',
+                                                                            content: 'Все новости'
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                            ]
+                                        },
+                                        {
+                                            elem: 'column',
+                                            content: [
+                                                {
+                                                    block  : 'photoalbum-thumb',
+                                                    content: [
+                                                        {
+                                                            elem: 'photo'
+                                                        },
+                                                        {
+                                                            elem   : 'title',
+                                                            content: { block: 'b-link', url: '/', content: 'Тест драйв лодки Хантер 280 Т' }
+                                                        },
+                                                        {
+                                                            elem   : 'counter',
+                                                            content: [
+                                                                {
+                                                                    elem   : 'counter-value',
+                                                                    content: '8'
+                                                                },
+                                                                {
+                                                                    elem   : 'counter-currency',
+                                                                    content: 'фото'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    block  : 'b-link',
+                                                    url    : '/photoalbums/',
+                                                    content: 'Фотогалерея'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
