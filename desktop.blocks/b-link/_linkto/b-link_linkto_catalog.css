@@ -1,0 +1,10 @@
+.b-link_linkto_catalog
+{
+    background: url("b-link_linkto_catalog.png");
+    width: 155px;
+    height: 60px;
+    display: block;
+    position: relative;
+    top: -30px;
+    margin: 0 auto;
+}
