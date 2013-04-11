@@ -1,0 +1,7 @@
+.articles-tabs__menu-item
+{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 45px 0 0;
+}

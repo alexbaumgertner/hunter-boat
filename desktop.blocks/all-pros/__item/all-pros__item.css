@@ -1,0 +1,13 @@
+.all-pros__item
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin: 0 50px 0 0;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.all-pros__item:last-child {
+    margin-right: 0;
+}

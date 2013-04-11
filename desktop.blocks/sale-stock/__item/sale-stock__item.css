@@ -1,0 +1,14 @@
+.sale-stock__item
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 250px;
+    margin: 0 45px 0 0;
+    background: #effaff;
+    border-radius: 100%;
+}
+
+.sale-stock__item:last-child {
+    margin-right: 0;
+}

@@ -218,6 +218,7 @@
                                                 },
                                                 {
                                                     elem   : 'column',
+                                                    elemMods: { position: 'center' },
                                                     content: [
                                                         {
                                                             elem   : 'header',
@@ -228,7 +229,7 @@
                                                             content: '«Производственно Торговая Компания Хантер» - новая организация пришедшая на смену «Бот-Трэйдинг» в результате расширения производства и подписания дилерских договоров на поставку и продажу подвесных лодочных моторов «HDX» и всемирно известных лодочных моторов «Yamaha». '
                                                         },
                                                         {
-                                                            elem   : 'b-link',
+                                                            block   : 'b-link',
                                                             url    : '/about/',
                                                             content: 'Узнать все о нас'
                                                         }
@@ -252,6 +253,7 @@
                                                                     },
                                                                     {
                                                                         elem   : 'item',
+                                                                        attrs: { style: 'margin: 5px 0 -5px 15px;' },
                                                                         content: {
                                                                             elem   : 'item-header',
                                                                             content: { block: 'b-icon', alt: 'hdx', url: 'img/content/brand-icons/hdx-logo.png' }
@@ -274,7 +276,7 @@
                                                     content: [
                                                         {
                                                             elem   : 'header',
-                                                            content: 'Сплошные плюсы'
+                                                            content: 'Сплошные плюсы!'
                                                         },
                                                         {
                                                             elem   : 'list',
@@ -449,6 +451,9 @@
                                         },
                                         {
                                             elem: 'column',
+                                            attrs: {
+                                                style: 'margin-left: 110px; text-align: center;'
+                                            },
                                             content: [
                                                 {
                                                     block  : 'photoalbum-thumb',

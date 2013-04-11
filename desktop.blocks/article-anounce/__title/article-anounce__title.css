@@ -1,0 +1,10 @@
+.article-anounce__title
+{
+    display: inline-block;
+    margin: 0 0 0 15px;
+    width: 300px;
+}
+
+.article-anounce__title .b-link {
+    color: #0081bc;
+}
