@@ -3,4 +3,8 @@ block header {
     elem column {
         tag: 'span'
     }
+
+    elem index-title {
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
 }
