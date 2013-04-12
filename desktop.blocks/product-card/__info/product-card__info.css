@@ -2,10 +2,12 @@
 {
     display: inline-block;
     vertical-align: top;
+    margin: 10px 0 0 0;
 }
 
 
 .product-card_type_withFullDesc .product-card__info
 {
     width: 345px;
+    margin-top: 0;
 }
