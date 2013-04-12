@@ -1,9 +1,10 @@
 .contacts
 {
     float: right;
-    margin: -4px 0 0 0;
+    margin: -4px 20px 0 0;
 }
 
 .footer .contacts {
     float: none;
+    margin-right: 0;
 }
