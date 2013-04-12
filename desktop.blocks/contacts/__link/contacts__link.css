@@ -7,6 +7,10 @@
     padding: 2px 0 0 0;
 }
 
+.footer .contacts__link {
+    color: #0081bc;
+}
+
 .i-ua_js_yes .contacts__link .b-link_pseudo_yes .b-link__inner {
     vertical-align: top;
     font-size: 12px;
