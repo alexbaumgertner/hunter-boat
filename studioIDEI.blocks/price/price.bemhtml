@@ -30,7 +30,7 @@ block price {
             },
             {
                 elem: 'currency',
-                content: '.–'
+                content: '.-'
             }
         ]
     }
@@ -62,4 +62,9 @@ block price {
             }
         ]
     }
+}
+
+block price, !this.ctx.value {
+    tag: '',
+    content: ''
 }
