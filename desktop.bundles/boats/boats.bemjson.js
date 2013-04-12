@@ -716,7 +716,7 @@
                                 content : [
                                     {
                                         block     : 'studio-idei',
-                                        mods      : { color: '865151' },
+                                        mods      : { color: '909090' },
                                         projectUrl: 'project-url'
                                     }
                                 ]
