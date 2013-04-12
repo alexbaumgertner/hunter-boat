@@ -1,7 +1,8 @@
 .catalog-links__title
 {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
+    line-height: 22px;
     font-size: 22px;
     text-transform: uppercase;
     border-bottom: 1px solid #a1aeb5;
