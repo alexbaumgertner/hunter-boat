@@ -25,4 +25,21 @@ block studio-idei {
             ]
         }
     ]
+
+
+    elem name {
+        tag: 'a',
+        attrs: {
+            href: 'http://www.d-idei.ru/'
+        }
+    }
+
+
+    elem process {
+
+        tag: 'a',
+        attrs: {
+            href: this.ctx.url
+        }
+    }
 }

@@ -1,2 +1,6 @@
 .studio-idei__text {
+    border-bottom: 1px solid;
+    display: inline-block;
+    line-height: 15px;
 }
+
