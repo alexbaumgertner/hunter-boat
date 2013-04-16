@@ -4,8 +4,7 @@
     head   : [
         { elem: 'css', url: '_order.css', ie: false},
         { elem: 'css', url: '_order', ie: true },
-        /*{ block: 'i-jquery', elem: 'core'},*/
-        { elem: 'js', url: 'jquery-1.7.2.js'},
+        { block: 'i-jquery', elem: 'core'},
         { elem: 'js', url: '_order.js'},
     ],
     content: [

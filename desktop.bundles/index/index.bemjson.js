@@ -6,8 +6,7 @@
     head   : [
         { elem: 'css', url: '_index.css', ie: false },
         { elem: 'css', url: '_index', ie: true },
-        /*{ block: 'i-jquery', elem: 'core'},*/
-        { elem: 'js', url: 'jquery-1.7.2.js'},
+        { block: 'i-jquery', elem: 'core'},
         { elem: 'js', url: '_index.js' },
         { elem: 'meta', attrs: { name: 'description', content: '' }},
         { elem: 'meta', attrs: { name: 'keywords', content: '' }}
@@ -406,44 +405,133 @@
                                                             elem   : 'tabs',
                                                             content: [
                                                                 {
-                                                                    elem   : 'tab',
+                                                                    elem: 'tab',
+                                                                    elemMods: { state: 'current' },
                                                                     content: [
                                                                         {
-                                                                            block  : 'article-anounce',
+                                                                            block: 'article-anounce',
                                                                             content: [
                                                                                 {
-                                                                                    elem   : 'date',
+                                                                                    elem: 'date',
                                                                                     content: '21.10.10'
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'title',
+                                                                                    elem: 'title',
                                                                                     content: { block: 'b-link', url: '/', content: 'с Наступающим Новым 2013 годом' }
                                                                                 }
                                                                             ]
                                                                         },
                                                                         {
-                                                                            block  : 'article-anounce',
+                                                                            block: 'article-anounce',
                                                                             content: [
                                                                                 {
-                                                                                    elem   : 'date',
+                                                                                    elem: 'date',
                                                                                     content: '04.08.01'
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'title',
+                                                                                    elem: 'title',
                                                                                     content: { block: 'b-link', url: '/', content: 'Сезонные скидки на надувные лодки Хантер' }
                                                                                 }
                                                                             ]
                                                                         },
                                                                         {
-                                                                            block  : 'article-anounce',
+                                                                            block: 'article-anounce',
                                                                             content: [
                                                                                 {
-                                                                                    elem   : 'date',
+                                                                                    elem: 'date',
                                                                                     content: '23.25.07'
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'title',
+                                                                                    elem: 'title',
                                                                                     content: { block: 'b-link', url: '/', content: 'Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'tab',
+                                                                    content: [
+                                                                        {
+                                                                            block: 'article-anounce',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'date',
+                                                                                    content: '21.10.10'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'title',
+                                                                                    content: { block: 'b-link', url: '/', content: 'Статья с Наступающим Новым 2013 годом' }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            block: 'article-anounce',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'date',
+                                                                                    content: '04.08.01'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'title',
+                                                                                    content: { block: 'b-link', url: '/', content: 'Статья Сезонные скидки на надувные лодки Хантер' }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            block: 'article-anounce',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'date',
+                                                                                    content: '23.25.07'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'title',
+                                                                                    content: { block: 'b-link', url: '/', content: 'Статья Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'tab',
+                                                                    content: [
+                                                                        {
+                                                                            block: 'article-anounce',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'date',
+                                                                                    content: '21.10.10'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'title',
+                                                                                    content: { block: 'b-link', url: '/', content: 'Отзыв с Наступающим Новым 2013 годом' }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            block: 'article-anounce',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'date',
+                                                                                    content: '04.08.01'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'title',
+                                                                                    content: { block: 'b-link', url: '/', content: 'Отзыв Сезонные скидки на надувные лодки Хантер' }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            block: 'article-anounce',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'date',
+                                                                                    content: '23.25.07'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'title',
+                                                                                    content: { block: 'b-link', url: '/', content: 'Отзыв Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
                                                                                 }
                                                                             ]
                                                                         }

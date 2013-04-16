@@ -1,24 +1,14 @@
 /** @requires BEM */
 /** @requires BEM.DOM */
 
-(function(undefined) {
+(function (undefined) {
 
-BEM.DOM.decl('articles-tabs', {
+    BEM.DOM.decl({name: 'articles-tabs', baseBlock: 'i-tabbed-pane'}, {}, {
 
-    onSetMod : {
-
-        'js' : function() {
-            /* ... */
+        live: function () {
+            this.__base();
         }
 
-    }
-
-}, {
-
-    live : function() {
-        /* ... */
-    }
-
-});
+    });
 
 })();

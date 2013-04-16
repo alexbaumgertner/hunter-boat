@@ -4,4 +4,6 @@
     border: 1px solid #43a2ce;
     border-radius: 8px;
     padding: 7px 5px 5px 14px;
+    color: #000000;
+    cursor: default;
 }
