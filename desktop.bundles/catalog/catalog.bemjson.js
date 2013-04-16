@@ -91,13 +91,12 @@
                                     content: [
                                         {
                                             elem    : 'section',
-                                            elemMods: { background: 'red' },
                                             content : {
                                                 elem   : 'list',
                                                 content: [
                                                     {
                                                         elem    : 'item',
-                                                        elemMods: { section: 'catalog' },
+                                                        elemMods: { section: 'catalog', state: 'current' },
                                                         name    : 'Каталог',
                                                         url     : '/catalog/'
                                                     }

@@ -1,13 +1,26 @@
 .main-menu__item_section_catalog
 {
-    color: #ffffff;
 }
 
 .main-menu__item_section_catalog .main-menu__item-selector {
-    border-bottom: 1px solid #e88688;
 }
 
 
 .main-menu__item_section_catalog .b-link {
     padding: 8px 25px;
+    background: url("menu_items_catalog_bg_sprite.png") repeat-x;
+}
+
+.main-menu__item_section_catalog .b-link
+{
+    border-radius: 5px!important;
+}
+
+
+.main-menu__item_section_catalog .b-link:hover {
+    background-position: 0 -35px;
+}
+
+.main-menu__item_section_catalog .b-link:active {
+    background-position: 0 -70px;
 }

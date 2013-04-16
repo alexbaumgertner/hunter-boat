@@ -1,0 +1,6 @@
+.main-menu__item_state_current .b-link,
+.main-menu__item_state_current .b-link:hover {
+    background-position: 0 -105px;
+    color: #ffffff;
+    cursor: default;
+}

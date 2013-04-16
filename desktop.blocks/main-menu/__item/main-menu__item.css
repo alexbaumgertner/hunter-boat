@@ -16,10 +16,33 @@
     padding: 8px 20px;
     display: inline-block;
     vertical-align: top;
+    background: url("menu_items_bg_sprite.png") repeat-x;
+}
+
+.main-menu__item:first-child .b-link {
+    border-radius: 5px 0 0 5px;
+}
+
+.main-menu__item:last-child .b-link {
+    border-radius: 0 5px 5px 0;
+}
+
+.main-menu__item .b-link:hover {
+    background-position: 0 -35px;
+}
+
+.main-menu__item .b-link:active {
+    background-position: 0 -70px;
+}
+
+.main-menu__item_state_current {
+
 }
 
 
+
 .main-menu__item:after {
+    z-index: 1;
     content: '';
     position: absolute;
     width: 1px;
@@ -33,8 +56,6 @@
     background: -o-linear-gradient(top,  rgba(224,224,224,1) 0%,rgba(148,148,148,1) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top,  rgba(224,224,224,1) 0%,rgba(148,148,148,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(224,224,224,1) 0%,rgba(148,148,148,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#949494',GradientType=0 ); /* IE6-9 */
-
 }
 
 .main-menu__item:last-child:after {

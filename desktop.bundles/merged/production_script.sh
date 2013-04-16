@@ -5,9 +5,7 @@
 
 
 # make builds dirs
-mkdir build
-
-mkdir build/css/ build/js/
+mkdir -p build/css/ build/js/
 
 # copy js
 cp _merged.js build/js/_merged.js
@@ -19,6 +17,8 @@ cp -R img build/img
 
 # create cssrb config file
 BUILD_DIR=`pwd`/build
+
+echo ${BUILD_DIR}
 
 echo "exports.config = { \
     fromBase: '', \
@@ -48,7 +48,7 @@ done;
 
 
 # copy css img
-find . -name '_*.css' | while read line; do \
+find . -maxdepth 1 -name '_*.css' | while read line; do \
     cssrb -c cssrb.js $line build/css/$line -cp; \
 done
 

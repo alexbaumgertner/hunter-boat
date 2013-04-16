@@ -90,7 +90,6 @@
                                     content: [
                                         {
                                             elem    : 'section',
-                                            elemMods: { background: 'red' },
                                             content : {
                                                 elem   : 'list',
                                                 content: [
@@ -110,6 +109,7 @@
                                                 content: [
                                                     {
                                                         elem: 'item',
+                                                        elemMods: { state: 'current' },
                                                         name: 'О компании',
                                                         url : '/about/'
                                                     },

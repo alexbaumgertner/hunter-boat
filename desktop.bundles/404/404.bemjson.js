@@ -90,7 +90,6 @@
                                     content: [
                                         {
                                             elem    : 'section',
-                                            elemMods: { background: 'red' },
                                             content : {
                                                 elem   : 'list',
                                                 content: [
