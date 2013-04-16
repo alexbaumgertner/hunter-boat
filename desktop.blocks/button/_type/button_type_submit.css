@@ -1,6 +1,6 @@
 .button_type_submit
 {
-    background: url("button_type_buy__bg.png") repeat-x #118fc9;
+    background: url("button_type_submit_sprite.png") repeat-x 0 -48px #118fc9;
     padding: 0 25px;
     height: 40px;
     color: #fff;
@@ -10,4 +10,14 @@
     text-shadow: 0 1px 0 #000000;
     -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.57);
     box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.57);
+}
+
+.button_type_submit:hover {
+    background-position: 0 -97px;
+}
+
+.button_type_submit:focus,
+.button_type_submit:active {
+    background-position: 0 -148px;
+    outline: none;
 }
