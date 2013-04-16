@@ -13,7 +13,7 @@
             content: [
                 {
                     block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    mods   : { width: '962' },
                     content: [
                         {
                             block   : 'header',
@@ -169,7 +169,7 @@
             content: [
                 {
                     block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    mods   : { width: '962' },
                     content: [
                         {
                             block   : 'content',
@@ -192,7 +192,7 @@
                                                     content: [
                                                         {
                                                             elem: 'section-column',
-                                                            attrs: { style: 'width: 385px; margin: 100px 105px 0 35px;'  },
+                                                            attrs: { style: 'width: 385px; margin: 100px 125px 0 30px;'  },
                                                             content: [
                                                                 {
                                                                     block  : 'b-text',
@@ -252,7 +252,7 @@
                                                         },
                                                         {
                                                             elem: 'section-column',
-                                                            attrs: { style: 'width: 430px;'  },
+                                                            attrs: { style: 'width: 410px;'  },
                                                             content: [
                                                                 {
                                                                     elem   : 'section-title',
@@ -340,7 +340,7 @@
                                                                         },
                                                                         {
                                                                             elem   : 'text',
-                                                                            content: 'лодок мы уже сделали'
+                                                                            content: 'лодок <br> мы уже сделали'
                                                                         }
                                                                     ]
                                                                 }
@@ -593,6 +593,9 @@
                                                     content: [
                                                         {
                                                             elem   : 'section-title',
+                                                            attrs: {
+                                                                style: 'margin-top: 65px; margin-bottom: 70px;'
+                                                            },
                                                             content: [
                                                                 {
                                                                     elem   : 'section-header',
@@ -668,7 +671,7 @@
             content: [
                 {
                     block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    mods   : { width: '962' },
                     content: [
                         {
                             block   : 'footer',

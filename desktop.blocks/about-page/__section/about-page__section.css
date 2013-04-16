@@ -1,5 +1,12 @@
 .about-page__section {
+    margin: 0 0 60px 0;
 }
+
+
+.about-page__section:last-child {
+    margin-bottom: 0;
+}
+
 
 .about-page__section .b-link {
     color: #0095da;
@@ -16,10 +23,11 @@
 .about-page__section .b-text__p {
     font-size: 14px;
     line-height: 19px;
+    margin: 0 0 20px 0;
 }
 
 .about-page__section .b-text__ul_list-type_blue-circle .b-text__li {
     line-height: 16px;
     font-size: 14px;
-    margin: 0 0 25px 0;
+    margin: 0 0 21px 0;
 }
