@@ -7,3 +7,7 @@
     text-decoration: none;
     border-bottom: 1px solid #a6b1b5;
 }
+
+.catalog-menu .b-link:hover {
+    color: #0081bc;
+}

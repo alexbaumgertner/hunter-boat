@@ -7,3 +7,7 @@
     line-height: 21px;
     color: #0081bc;
 }
+
+.products-promo-carousel__links .b-link:hover {
+    color: #00aefe;
+}

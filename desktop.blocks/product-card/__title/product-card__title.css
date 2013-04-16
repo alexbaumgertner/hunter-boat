@@ -4,3 +4,7 @@
     font-weight: bold;
     color: #0081bc;
 }
+
+.product-card__title:hover {
+    color: #00aefe;
+}

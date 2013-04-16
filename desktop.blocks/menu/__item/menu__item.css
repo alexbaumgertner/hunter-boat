@@ -5,7 +5,6 @@
     margin: 0 0 5px 0;
 }
 
-.menu__item .b-link {
-/*    text-decoration: none;
-    border-bottom: 1px solid;*/
+.menu__item:hover {
+    color: #00aefe;
 }

@@ -7,3 +7,8 @@
 .info-block__link .b-link {
     color: #0081bc;
 }
+
+
+.info-block__link .b-link:hover {
+    color: #00aefe;
+}

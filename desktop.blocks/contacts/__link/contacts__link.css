@@ -7,8 +7,16 @@
     padding: 2px 0 0 0;
 }
 
+.contacts__link:hover {
+    color: #00aefe;
+}
+
 .footer .contacts__link {
     color: #0081bc;
+}
+
+.footer .contacts__link:hover {
+    color: #00aefe;
 }
 
 .i-ua_js_yes .contacts__link .b-link_pseudo_yes .b-link__inner {
