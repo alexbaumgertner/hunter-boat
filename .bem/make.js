@@ -10,7 +10,6 @@ MAKE.decl('Arch', {
 
     bundlesLevelsRegexp: /^.+?\.bundles$/,
 
-/*
     getLibraries: function() {
 
         return {
@@ -26,7 +25,6 @@ MAKE.decl('Arch', {
         };
 
     }
-*/
 
 });
 
