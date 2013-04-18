@@ -1,9 +1,9 @@
 .wholesale-partners-form__send-file
 {
-    margin: 5px 0 10px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 260px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 195px;
 }
 
 

@@ -8,4 +8,5 @@
     margin: 0 0 0 0.5em;
     max-width: 245px;
     overflow: hidden;
+    white-space: nowrap;
 }

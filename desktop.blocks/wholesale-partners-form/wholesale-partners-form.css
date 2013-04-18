@@ -9,7 +9,8 @@
 }
 
 .wholesale-partners-form .button_type_submit {
-    margin: 30px 0 0 0;
+    margin: 37px 0 0 0;
+    display: inline-block;
 }
 
 .wholesale-partners-form .textarea {
