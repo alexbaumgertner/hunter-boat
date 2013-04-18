@@ -178,6 +178,7 @@
                             content: [
                                 {
                                     block: 'info-page',
+                                    mods: { page: 'about' },
                                     content: [
                                         {
                                             elem: 'header',
@@ -371,6 +372,7 @@
                                                                             elem: 'section-title',
                                                                             content: {
                                                                                 elem: 'section-header',
+                                                                                attrs: { style: 'margin: 15px 0 15px 0;' },
                                                                                 content: 'Где мы находимся'
                                                                             }
                                                                         },
@@ -380,6 +382,7 @@
                                                                         },
                                                                         {
                                                                             elem: 'p',
+                                                                            attrs: { style: 'margin: 10px 0 25px 0;' },
                                                                             content: 'Тел.: (812) 654-32-55/57'
                                                                         },
                                                                         {
@@ -448,6 +451,7 @@
                                                 },
                                                 {
                                                     elem: 'separator',
+                                                    attrs: { style: 'margin:40px -25px 45px;' },
                                                     content: { block: 'line', mods: { type: 'wavy-0081bd' } }
                                                 },
                                                 {
@@ -455,6 +459,9 @@
                                                     content: [
                                                         {
                                                             elem: 'section-title',
+                                                            attrs: {
+                                                                style: 'text-align: center;'
+                                                            },
                                                             content: [
                                                                 {
                                                                     elem: 'section-header',
@@ -592,7 +599,7 @@
                                                         {
                                                             elem: 'section-title',
                                                             attrs: {
-                                                                style: 'margin-top: 65px; margin-bottom: 70px;'
+                                                                style: 'margin-top: 65px; margin-bottom: 70px; text-align: center;'
                                                             },
                                                             content: [
                                                                 {
