@@ -186,6 +186,7 @@
                                             },
                                             {
                                                 elem: 'column',
+                                                elemMods: { position: 'left' },
                                                 content: [
                                                     {
                                                         block  : 'b-text',
@@ -199,7 +200,7 @@
                                                     {
                                                         block: 'b-text',
                                                         attrs: {
-                                                            style: 'width: 230px; margin: 50px 0 0 50px; text-align: center;'
+                                                            style: 'width: 230px;margin: 40px 0 0 50px; text-align: center;'
                                                         },
                                                         content: [
                                                             {
@@ -219,12 +220,14 @@
                                             },
                                             {
                                                 elem: 'column',
+                                                elemMods: { position: 'right' },
+                                                attrs: { style: 'margin: -55px 0 0 0;' },
                                                 content: {
                                                     block: 'b-text',
                                                     content: [
                                                         {
                                                             elem: 'p',
-                                                            attrs: { style: 'font-size: 16px;' },
+                                                            attrs: { style: 'font-size: 16px;margin: 0 0 35px 25px;' },
                                                             content: 'Выгодные условия для партнёров:'
                                                         },
                                                         {
@@ -259,6 +262,7 @@
                                             { block: 'line', mods: { type: 'wavy-0081bd' } },
                                             {
                                                 elem: 'column',
+                                                elemMods: { position: 'left' },
                                                 content: [
                                                     {
                                                         elem: 'section-title',
@@ -346,7 +350,7 @@
                                             },
                                             {
                                                 elem   : 'column',
-                                               attrs: { style: 'margin: 0 0 0 35px;' },
+                                                elemMods: { position: 'right' },
                                                 content: [
                                                     {
                                                         elem   : 'section-title',
