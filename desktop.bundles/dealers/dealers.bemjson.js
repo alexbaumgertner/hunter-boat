@@ -181,6 +181,7 @@
                                         content: [
                                             {
                                                 elem: 'header',
+                                                mix: [{ block: 'text-mask', image: 'template/mask/'}],
                                                 content: 'ОПТОВИКАМ'
                                             },
                                             {

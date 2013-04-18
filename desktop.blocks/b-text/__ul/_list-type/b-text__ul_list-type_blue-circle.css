@@ -10,9 +10,13 @@
 }
 
 .b-text__ul_list-type_blue-circle .b-text__li:before {
-    content: '●';
+    content: '';
+    width: 10px;
+    height: 10px;
     font-size: 20px;
     color: #0095da;
-    margin: 0 0 0 -20px;
+    margin: 4px 0 0 -20px;
     position: absolute;
+    background: #0095da;
+    border-radius: 100%;
 }
