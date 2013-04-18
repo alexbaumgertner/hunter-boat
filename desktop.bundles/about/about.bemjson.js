@@ -358,19 +358,22 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'left' },
+                                                            attrs: { style: 'width: 580px;margin: 0;' },
                                                             content: [
                                                                 {
-                                                                    elem: 'section-title',
+                                                                    block: 'b-text',
+                                                                    attrs: {
+                                                                        style: 'display: inline-block;width: 255px;vertical-align: top;margin: 30px 0 0 50px;'
+                                                                    },
                                                                     content: [
                                                                         {
-                                                                            elem: 'section-header',
-                                                                            content: 'Где мы находимся'
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    block: 'b-text',
-                                                                    content: [
+                                                                            block: 'info-page',
+                                                                            elem: 'section-title',
+                                                                            content: {
+                                                                                elem: 'section-header',
+                                                                                content: 'Где мы находимся'
+                                                                            }
+                                                                        },
                                                                         {
                                                                             elem: 'p',
                                                                             content: '192019, г. Санкт-Петербург ул. Профессора Качалова, д. 8'
@@ -406,6 +409,7 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'right' },
+                                                            attrs: { style: 'width: 375px; margin: 0;' },
                                                             content: [
                                                                 {
                                                                     elem: 'section-title',
@@ -419,6 +423,7 @@
                                                                 },
                                                                 {
                                                                     block: 'b-text',
+                                                                    attrs: { style: 'margin: 0 0 0 70px;' },
                                                                     content: [
                                                                         {
                                                                             elem: 'p',
@@ -453,6 +458,7 @@
                                                             content: [
                                                                 {
                                                                     elem: 'section-header',
+                                                                    attrs: { style: 'margin: 0;' },
                                                                     content: 'Популярность моделей лодок Хантер'
                                                                 },
                                                                 {
@@ -577,7 +583,8 @@
                                                 },
                                                 {
                                                     elem: 'separator',
-                                                    content: { block: 'line', mods: { type: 'wavy-0081bd' } }
+                                                    content: { block: 'line', mods: { type: 'wavy-0081bd' } },
+                                                    attrs: { style: 'margin-top: 65px;' }
                                                 },
                                                 {
                                                     elem: 'section',
