@@ -1,0 +1,10 @@
+block info-page {
+
+    elem header {
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+
+    elem section-header {
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+}

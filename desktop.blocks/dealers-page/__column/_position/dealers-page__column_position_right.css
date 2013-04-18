@@ -2,3 +2,7 @@
 {
     width: 440px;
 }
+
+.dealers-page__column_position_right .dealers-page__section-title {
+    margin: 65px 0 0 70px;
+}

@@ -177,7 +177,7 @@
                                 elemMods: { position: 'full' },
                                 content : [
                                     {
-                                        block: 'dealers-page',
+                                        block: 'info-page',
                                         content: [
                                             {
                                                 elem: 'header',
@@ -354,7 +354,6 @@
                                                 content: [
                                                     {
                                                         elem   : 'section-title',
-                                                        attrs: { style: 'margin: 45px 0 0 40px;' },
                                                         content: [
                                                             {
                                                                 elem   : 'section-header',
@@ -467,7 +466,7 @@
                                                     }
                                                 ]
                                             },
-                                            { block: 'line', mods: { type: 'wavy-0081bd' } },
+                                            { block: 'line', mods: { type: 'wavy-0081bd' }, attrs: { style: 'margin-top: 65px;' } },
                                             {
                                                 block: 'b-text',
                                                 attrs: { style: 'width: 440px; margin: 0 auto 50px; font-size: 14px; line-height: 20px;text-align: center;' },
@@ -484,7 +483,7 @@
                                                 content: [
                                                     {
                                                         elem   : 'section-header',
-                                                        attrs: { style: 'margin: 0 0 10px 0;' },
+                                                        attrs: { style: 'margin: 0 0 5px 0;' },
                                                         content: 'Популярность моделей лодок Хантер'
                                                     },
                                                     {
