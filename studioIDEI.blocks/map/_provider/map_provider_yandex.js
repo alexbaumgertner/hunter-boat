@@ -55,10 +55,7 @@ BEM.DOM.decl({ block: 'map', modName: 'provider', modVal: 'yandex'}, {
         // который откроется при нажатии на эту метку
         this.placemark = new ymaps.Placemark(this.params.placemark.center, {
             // Свойства
-            iconContent         : 'Щелкни по мне',
-            balloonContentHeader: 'Заголовок',
             balloonContentBody  : this.params.placemark.content,
-            balloonContentFooter: 'Подвал'
         }, {
             // Опции
             preset: 'twirl#blueStretchyIcon' // иконка растягивается под контент
