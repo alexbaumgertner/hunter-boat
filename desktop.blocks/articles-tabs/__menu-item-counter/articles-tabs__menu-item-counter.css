@@ -1,9 +1,9 @@
 .articles-tabs__menu-item-counter
 {
     display: inline-block;
-    font-size: 13px;
+    font-size: 11px;
     vertical-align: super;
-    margin: 0 0 0 7px;
+    margin: 0 0 0 4px;
     position: relative;
-    top: -10px;
+    top: -8px;
 }
