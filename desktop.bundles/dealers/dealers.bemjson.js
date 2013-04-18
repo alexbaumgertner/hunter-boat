@@ -238,6 +238,7 @@
                                                                         },
                                                                         {
                                                                             elem: 'ul',
+                                                                            attrs: { style: 'width: 335px;' },
                                                                             elemMods: { 'list-type': 'blue-circle' },
                                                                             content: [
                                                                                 {
