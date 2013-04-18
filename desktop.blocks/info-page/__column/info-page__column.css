@@ -1,0 +1,25 @@
+.info-page__column
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.info-page__column .b-text__p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.info-page__column .b-text__ul {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.info-page__column .b-text__ul_list-type_blue-circle .b-text__li {
+    margin-bottom: 15px;
+}
+
+.info-page__column .b-text__ul_list-type_blue-circle .b-text__li:last-child {
+    margin-bottom: 0;
+}

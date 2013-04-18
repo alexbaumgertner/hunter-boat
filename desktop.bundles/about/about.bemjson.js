@@ -1,7 +1,7 @@
 ({
-    block  : 'b-page',
-    title  : 'about',
-    head   : [
+    block: 'b-page',
+    title: 'about',
+    head: [
         { elem: 'css', url: '_about.css', ie: false},
         { elem: 'css', url: '_about', ie: true },
         { block: 'i-jquery', elem: 'core'},
@@ -9,49 +9,49 @@
     ],
     content: [
         {
-            block  : 'header',
+            block: 'header',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '962' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'header',
-                            elem    : 'column',
+                            block: 'header',
+                            elem: 'column',
                             elemMods: { position: 'left' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'logo',
+                                    block: 'logo',
                                     content: 'HUNTERBOAT'
                                 }
                             ]
                         },
 
                         {
-                            block   : 'header',
-                            elem    : 'column',
+                            block: 'header',
+                            elem: 'column',
                             elemMods: { position: 'right' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'cart-info',
+                                    block: 'cart-info',
                                     content: [
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                url    : 'cart',
+                                                block: 'b-link',
+                                                url: 'cart',
                                                 content: 'В заказе:'
                                             }
                                         },
                                         {
-                                            elem   : 'info',
+                                            elem: 'info',
                                             content: [
                                                 {
-                                                    elem   : 'text',
+                                                    elem: 'text',
                                                     content: '3 товара на сумму'
                                                 },
                                                 {
-                                                    elem   : 'total-price',
+                                                    elem: 'total-price',
                                                     content: { block: 'price', mods: { currency: 'dot-dash' }, value: '95000' }
                                                 }
                                             ]
@@ -59,79 +59,79 @@
                                     ]
                                 },
                                 {
-                                    block  : 'contacts',
-                                    mods   : { color: '000000' },
+                                    block: 'contacts',
+                                    mods: { color: '000000' },
                                     content: [
                                         {
-                                            elem   : 'phone',
+                                            elem: 'phone',
                                             content: [
                                                 {
-                                                    elem   : 'phone-city-code',
+                                                    elem: 'phone-city-code',
                                                     content: '812'
                                                 },
                                                 {
-                                                    elem   : 'phone-number',
+                                                    elem: 'phone-number',
                                                     content: '320-02-60'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                mods   : { pseudo: 'yes' },
+                                                block: 'b-link',
+                                                mods: { pseudo: 'yes' },
                                                 content: 'Обратный звонок'
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    block  : 'main-menu',
+                                    block: 'main-menu',
                                     content: [
                                         {
-                                            elem    : 'section',
-                                            content : {
-                                                elem   : 'list',
+                                            elem: 'section',
+                                            content: {
+                                                elem: 'list',
                                                 content: [
                                                     {
-                                                        elem    : 'item',
+                                                        elem: 'item',
                                                         elemMods: { section: 'catalog' },
-                                                        name    : 'Каталог',
-                                                        url     : '/catalog/'
+                                                        name: 'Каталог',
+                                                        url: '/catalog/'
                                                     }
                                                 ]
                                             }
                                         },
                                         {
-                                            elem   : 'section',
+                                            elem: 'section',
                                             content: {
-                                                elem   : 'list',
+                                                elem: 'list',
                                                 content: [
                                                     {
                                                         elem: 'item',
                                                         elemMods: { state: 'current' },
                                                         name: 'О компании',
-                                                        url : '/about/'
+                                                        url: '/about/'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Отзывы',
-                                                        url : '/feedback/'
+                                                        url: '/feedback/'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Вопрос-ответ',
-                                                        url : '/faq/'
+                                                        url: '/faq/'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Фотографии',
-                                                        url : '/photos/'
+                                                        url: '/photos/'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Оптовикам',
-                                                        url : '/wholesale/'
+                                                        url: '/wholesale/'
                                                     }
                                                 ]
                                             }
@@ -139,22 +139,22 @@
                                     ]
                                 },
                                 {
-                                    block  : 'buyer-menu',
+                                    block: 'buyer-menu',
                                     content: [
                                         {
                                             elem: 'item',
                                             name: 'Как купить',
-                                            url : '/howtobuy/'
+                                            url: '/howtobuy/'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Где купить',
-                                            url : '/wheretobuy/'
+                                            url: '/wheretobuy/'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Доставка',
-                                            url : '/shipping/'
+                                            url: '/shipping/'
                                         }
                                     ]
                                 }
@@ -165,29 +165,29 @@
             ]
         },
         {
-            block  : 'content',
+            block: 'content',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'content',
-                            elem    : 'column',
+                            block: 'content',
+                            elem: 'column',
                             elemMods: { position: 'full' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'about-page',
+                                    block: 'info-page',
                                     content: [
                                         {
-                                            elem   : 'header',
+                                            elem: 'header',
                                             content: 'О Компании'
                                         },
                                         {
-                                            elem   : 'sections',
+                                            elem: 'sections',
                                             content: [
                                                 {
-                                                    elem   : 'section',
+                                                    elem: 'section',
                                                     attrs: { style: 'margin-top: -110px;' },
                                                     content: [
                                                         {
@@ -195,26 +195,26 @@
                                                             attrs: { style: 'width: 385px; margin: 100px 125px 0 30px;'  },
                                                             content: [
                                                                 {
-                                                                    block  : 'b-text',
+                                                                    block: 'b-text',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'p',
+                                                                            elem: 'p',
                                                                             content: '«Производственно Торговая Компания Хантер» - новая организация пришедшая на смену  «Бот-Трэйдинг» в результате расширения производства и подписания дилерских договоров на поставку и продажу подвесных лодочных моторов «HDX» и всемирно известных лодочных моторов «Yamaha» '
                                                                         },
                                                                         {
-                                                                            elem   : 'p',
+                                                                            elem: 'p',
                                                                             content: [
                                                                                 {
-                                                                                    tag    : '',
+                                                                                    tag: '',
                                                                                     content: 'Создавая наш '
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/catlog/boats/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/catlog/boats/',
                                                                                     content: 'модельный ряд'
                                                                                 },
                                                                                 {
-                                                                                    tag    : '',
+                                                                                    tag: '',
                                                                                     content: ' надувных лодок, мы в первую очередь учитывали пожелания и опыт многих рыбаков и охотников, отсюда и родилась идея продвигать на рынок надувные лодки под брендом «HUNTERBOAT»'
                                                                                 }
                                                                             ]
@@ -222,27 +222,27 @@
                                                                     ]
                                                                 },
                                                                 {
-                                                                    elem   : 'certificates',
+                                                                    elem: 'certificates',
                                                                     content: {
-                                                                        block  : 'certificates',
+                                                                        block: 'certificates',
                                                                         content: [
                                                                             {
-                                                                                elem   : 'list',
+                                                                                elem: 'list',
                                                                                 content: [
                                                                                     {
-                                                                                        elem   : 'item',
-                                                                                        attrs  : { rel: 'img/content/certificates/1/1_big.png' },
+                                                                                        elem: 'item',
+                                                                                        attrs: { rel: 'img/content/certificates/1/1_big.png' },
                                                                                         content: { block: 'b-icon', url: 'img/content/certificates/1/1_icon.png', alt: 'сертификат_1' }
                                                                                     },
                                                                                     {
-                                                                                        elem   : 'item',
-                                                                                        attrs  : { rel: 'img/content/certificates/2/2_big.png' },
+                                                                                        elem: 'item',
+                                                                                        attrs: { rel: 'img/content/certificates/2/2_big.png' },
                                                                                         content: { block: 'b-icon', url: 'img/content/certificates/2/2_icon.png', alt: 'сертификат_2' }
                                                                                     }
                                                                                 ]
                                                                             },
                                                                             {
-                                                                                elem   : 'text',
+                                                                                elem: 'text',
                                                                                 content: 'Мы продаём качественные сертифицированные товары.'
                                                                             }
                                                                         ]
@@ -255,51 +255,51 @@
                                                             attrs: { style: 'width: 410px;'  },
                                                             content: [
                                                                 {
-                                                                    elem   : 'section-title',
+                                                                    elem: 'section-title',
                                                                     attrs: { style: 'width: 330px; text-align: left;' },
                                                                     content: [
                                                                         {
-                                                                            elem   : 'section-header',
+                                                                            elem: 'section-header',
                                                                             content: [
                                                                                 {
                                                                                     tag: '',
                                                                                     content: 'Почему люди выбирают именно нас?'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
+                                                                                    block: 'b-link',
                                                                                     attrs: { style: 'font-size: 13px;font-family: Arial, sans-serif; margin: 0 0 0 35px;' },
                                                                                     content: 'Стать дилером компании',
-                                                                                    url    : '/'
+                                                                                    url: '/'
                                                                                 }
                                                                             ]
                                                                         }
                                                                     ]
                                                                 },
                                                                 {
-                                                                    block  : 'b-text',
+                                                                    block: 'b-text',
                                                                     content: [
                                                                         {
-                                                                            elem    : 'ul',
+                                                                            elem: 'ul',
                                                                             elemMods: { 'list-type': 'blue-circle' },
-                                                                            content : [
+                                                                            content: [
                                                                                 {
-                                                                                    elem   : 'li',
+                                                                                    elem: 'li',
                                                                                     content: 'Тройная система проверки качества!'
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'li',
+                                                                                    elem: 'li',
                                                                                     content: 'Постоянное наличие товара на складе.'
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'li',
+                                                                                    elem: 'li',
                                                                                     content: 'Честность и порядочность.'
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'li',
+                                                                                    elem: 'li',
                                                                                     content: 'Качественное гарантийное и постгарантийное обслуживание.'
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'li',
+                                                                                    elem: 'li',
                                                                                     content: 'Своевременные и бесперебойные отгрузки продукции в любые регионы РФ. '
                                                                                 }
                                                                             ]
@@ -307,7 +307,7 @@
                                                                     ]
                                                                 },
                                                                 {
-                                                                    block  : 'finished-products-counter',
+                                                                    block: 'finished-products-counter',
                                                                     content: [
                                                                         {
                                                                             elem: 'value',
@@ -339,7 +339,7 @@
                                                                             ]
                                                                         },
                                                                         {
-                                                                            elem   : 'text',
+                                                                            elem: 'text',
                                                                             content: 'лодок <br> мы уже сделали'
                                                                         }
                                                                     ]
@@ -349,41 +349,41 @@
                                                     ]
                                                 },
                                                 {
-                                                    elem   : 'separator',
+                                                    elem: 'separator',
                                                     content: { block: 'line', mods: { type: 'wavy-0081bd' } }
                                                 },
                                                 {
-                                                    elem   : 'section',
+                                                    elem: 'section',
                                                     content: [
                                                         {
                                                             elem: 'section-column',
                                                             attrs: { style: 'width: 205px; vertical-align: middle; margin: 0 0 0 85px;'  },
                                                             content: [
                                                                 {
-                                                                    elem   : 'section-title',
+                                                                    elem: 'section-title',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'section-header',
+                                                                            elem: 'section-header',
                                                                             content: 'Где мы находимся'
                                                                         }
                                                                     ]
                                                                 },
                                                                 {
-                                                                    block  : 'b-text',
+                                                                    block: 'b-text',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'p',
+                                                                            elem: 'p',
                                                                             content: '192019, г. Санкт-Петербург ул. Профессора Качалова, д. 8'
                                                                         },
                                                                         {
-                                                                            elem   : 'p',
+                                                                            elem: 'p',
                                                                             content: 'Тел.: (812) 654-32-55/57'
                                                                         },
                                                                         {
-                                                                            elem   : 'p',
+                                                                            elem: 'p',
                                                                             content: {
-                                                                                block  : 'b-link',
-                                                                                url    : 'mailto:mail@hunterboat.ru',
+                                                                                block: 'b-link',
+                                                                                url: 'mailto:mail@hunterboat.ru',
                                                                                 content: 'mail@hunterboat.ru'
                                                                             }
                                                                         }
@@ -394,19 +394,19 @@
                                                         },
 
                                                         {
-                                                            elem : 'section-column',
+                                                            elem: 'section-column',
                                                             attrs: { style: 'width: 300px; vertical-align: middle; margin: 0 70px 0 50px;'  },
                                                             content: [
                                                                 {
                                                                     block: 'map',
-                                                                    mods : { figure: 'circle', provider: 'yandex' },
+                                                                    mods: { figure: 'circle', provider: 'yandex' },
                                                                     js: {
-                                                                        center   : [
+                                                                        center: [
                                                                             59.917565, 30.388754
                                                                         ],
-                                                                        zoom     : 13,
+                                                                        zoom: 13,
                                                                         placemark: {
-                                                                            center : [59.915043, 30.399097],
+                                                                            center: [59.915043, 30.399097],
                                                                             content: '<div><div>Санкт-Петербург ул. Профессора Качалова, д. 8</div><div>Тел.: (812) 654-32-55/57</div></div>' } }
                                                                 }
                                                             ]
@@ -417,20 +417,20 @@
                                                             attrs: { style: 'width: 300px; vertical-align: middle; width: 190px;'  },
                                                             content: [
                                                                 {
-                                                                    elem   : 'section-title',
+                                                                    elem: 'section-title',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'section-header',
+                                                                            elem: 'section-header',
                                                                             attrs: { style: 'font-size: 20px;' },
                                                                             content: 'Купить лодку Hunter:'
                                                                         }
                                                                     ]
                                                                 },
                                                                 {
-                                                                    block  : 'b-text',
+                                                                    block: 'b-text',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'p',
+                                                                            elem: 'p',
                                                                             attrs: { style: 'margin-bottom: 10px' },
                                                                             content: [
                                                                                 { tag: '', content: 'В нашем ' },
@@ -438,7 +438,7 @@
                                                                             ]
                                                                         },
                                                                         {
-                                                                            elem   : 'p',
+                                                                            elem: 'p',
                                                                             content: [
                                                                                 { tag: '', content: 'У ' },
                                                                                 { block: 'b-link', url: '/', content: 'дилеров компании' }
@@ -451,125 +451,125 @@
                                                     ]
                                                 },
                                                 {
-                                                    elem   : 'separator',
+                                                    elem: 'separator',
                                                     content: { block: 'line', mods: { type: 'wavy-0081bd' } }
                                                 },
                                                 {
-                                                    elem   : 'section',
+                                                    elem: 'section',
                                                     content: [
                                                         {
-                                                            elem   : 'section-title',
+                                                            elem: 'section-title',
                                                             content: [
                                                                 {
-                                                                    elem   : 'section-header',
+                                                                    elem: 'section-header',
                                                                     content: 'Популярность моделей лодок Хантер'
                                                                 },
                                                                 {
-                                                                    elem   : 'section-sub-header',
+                                                                    elem: 'section-sub-header',
                                                                     content: 'по данным за 2013 год'
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            block  : 'popularity-graph',
+                                                            block: 'popularity-graph',
                                                             content: [
                                                                 {
-                                                                    elem : 'image',
-                                                                    tag  : 'img',
+                                                                    elem: 'image',
+                                                                    tag: 'img',
                                                                     attrs: { src: 'img/content/diagrams/boat_model_hunter_popularity_2013.png' }
                                                                 },
                                                                 {
-                                                                    elem   : 'links',
+                                                                    elem: 'links',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'section',
+                                                                            elem: 'section',
                                                                             content: [
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '335'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '360'
                                                                                 },
                                                                             ]
                                                                         },
 
                                                                         {
-                                                                            elem   : 'section',
+                                                                            elem: 'section',
                                                                             content: [
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '280РТ'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '280Т'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '280ЛТ'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '300Л'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '290Р'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '290Л'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '320Л'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '320ЛК'
                                                                                 },
                                                                             ]
                                                                         },
 
                                                                         {
-                                                                            elem   : 'section',
+                                                                            elem: 'section',
                                                                             content: [
 
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '250м'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '250мл'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '280Р'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '280'
                                                                                 },
                                                                                 {
-                                                                                    block  : 'b-link',
-                                                                                    url    : '/',
+                                                                                    block: 'b-link',
+                                                                                    url: '/',
                                                                                     content: '280Л'
                                                                                 }
                                                                             ]
@@ -585,66 +585,66 @@
                                                     ]
                                                 },
                                                 {
-                                                    elem   : 'separator',
+                                                    elem: 'separator',
                                                     content: { block: 'line', mods: { type: 'wavy-0081bd' } }
                                                 },
                                                 {
-                                                    elem   : 'section',
+                                                    elem: 'section',
                                                     content: [
                                                         {
-                                                            elem   : 'section-title',
+                                                            elem: 'section-title',
                                                             attrs: {
                                                                 style: 'margin-top: 65px; margin-bottom: 70px;'
                                                             },
                                                             content: [
                                                                 {
-                                                                    elem   : 'section-header',
+                                                                    elem: 'section-header',
                                                                     content: 'Бренды, с которыми мы работаем'
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            block  : 'brands',
+                                                            block: 'brands',
                                                             content: [
                                                                 {
-                                                                    elem   : 'list',
+                                                                    elem: 'list',
                                                                     content: [
 
                                                                         {
-                                                                            elem   : 'item',
+                                                                            elem: 'item',
                                                                             content: [
                                                                                 {
-                                                                                    elem   : 'item-header',
+                                                                                    elem: 'item-header',
                                                                                     content: { block: 'b-icon', alt: 'yamaha', url: 'img/content/brand-icons/yamaha-logo.png' }
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'item-text',
+                                                                                    elem: 'item-text',
                                                                                     content: 'Моторы Yamaha заслужили свою никем не оспариваемую репутацию благодаря технической инновационности, превосходным эксплуатационным характеристикам и легендарной надежности с момента установки на лодку.'
                                                                                 }
                                                                             ]
                                                                         },
                                                                         {
-                                                                            elem   : 'item',
+                                                                            elem: 'item',
                                                                             content: [
                                                                                 {
-                                                                                    elem   : 'item-header',
+                                                                                    elem: 'item-header',
                                                                                     content: { block: 'b-icon', alt: 'hdx', url: 'img/content/brand-icons/hdx-logo.png' }
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'item-text',
+                                                                                    elem: 'item-text',
                                                                                     content: 'Лодочные моторы HDX выпускаются специально для российского рынка. При разработке каждой модели большое внимание было уделено соответствию технических параметров двигателей российским условиям эксплуатации. '
                                                                                 }
                                                                             ]
                                                                         },
                                                                         {
-                                                                            elem   : 'item',
+                                                                            elem: 'item',
                                                                             content: [
                                                                                 {
-                                                                                    elem   : 'item-header',
+                                                                                    elem: 'item-header',
                                                                                     content: { block: 'b-icon', alt: 'nissamaran', url: 'img/content/brand-icons/nissamaran-logo.png' }
                                                                                 },
                                                                                 {
-                                                                                    elem   : 'item-text',
+                                                                                    elem: 'item-text',
                                                                                     content: 'В основе популярности электромоторов NISSAMARAN Minn Kota лежит низкий уровень шумности, прочная и легкая конструкция, тяговитость на всех режимах, универсальность и простота установки и снятия.'
                                                                                 }
                                                                             ]
@@ -667,87 +667,87 @@
             ]
         },
         {
-            block  : 'footer',
+            block: 'footer',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'left' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'contacts',
-                                    mods   : { color: 'e5e5e5' },
+                                    block: 'contacts',
+                                    mods: { color: 'e5e5e5' },
                                     content: [
                                         {
-                                            elem   : 'phone',
+                                            elem: 'phone',
                                             content: [
                                                 {
-                                                    elem   : 'phone-city-code',
+                                                    elem: 'phone-city-code',
                                                     content: '812'
                                                 },
                                                 {
-                                                    elem   : 'phone-number',
+                                                    elem: 'phone-number',
                                                     content: '320-02-60'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                mods   : { pseudo: 'yes' },
+                                                block: 'b-link',
+                                                mods: { pseudo: 'yes' },
                                                 content: 'Обратный звонок'
                                             }
                                         },
                                         {
-                                            elem   : 'address',
+                                            elem: 'address',
                                             content: 'Санкт-Петербург, ул. Профессора Качалова, 8'
                                         }
                                     ]
                                 },
                                 {
-                                    block  : 'copyright',
+                                    block: 'copyright',
                                     content: 'ООО «Производственно-торговая Компания Хантер — производство и продажа надувных лодок Хантер» '
                                 }
                             ]
                         },
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'center' },
-                            content : [
+                            content: [
                                 {
                                     block: 'search'
                                 },
                                 {
-                                    block  : 'menu',
+                                    block: 'menu',
                                     content: [
                                         {
                                             elem: 'item',
                                             name: 'Вакансии',
-                                            url : '/vacancies/'
+                                            url: '/vacancies/'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Отзывы',
-                                            url : '/feedback/'
+                                            url: '/feedback/'
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'right' },
-                            content : [
+                            content: [
                                 {
-                                    block     : 'studio-idei',
-                                    mods      : { color: '909090' },
+                                    block: 'studio-idei',
+                                    mods: { color: '909090' },
                                     projectUrl: 'project-url'
                                 }
                             ]

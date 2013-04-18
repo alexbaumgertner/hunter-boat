@@ -1,0 +1,8 @@
+.info-page__column_position_right
+{
+    width: 440px;
+}
+
+.info-page__column_position_right .info-page__section-title {
+    margin: 65px 0 0 70px;
+}
