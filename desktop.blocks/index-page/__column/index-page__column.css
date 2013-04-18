@@ -2,5 +2,9 @@
 {
     display: inline-block;
     vertical-align: top;
-    margin: 55px 0 0 40px;
+    margin: 50px 0 0 40px;
+}
+
+.index-page__column:first-child {
+    margin: 50px 0 0 100px;
 }

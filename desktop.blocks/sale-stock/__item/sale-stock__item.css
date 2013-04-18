@@ -19,6 +19,23 @@
     padding: 0;
 }
 
+.sale-stock__item .product-card .product-card__info {
+    margin: 4px 0 0 0;
+}
+
+.sale-stock__item .product-card .product-card__price {
+
+}
+
+.sale-stock__item .product-card .product-card__title {
+    font-size: 15px;
+}
+
+.sale-stock__item .product-card__desc {
+    margin: 5px 0 0 0;
+}
+
+
 .sale-stock__item .product-card .price {
     display: block;
     color: #ff0000;
@@ -28,6 +45,8 @@
     color: #727272;
     display: inline-block;
     position: relative;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 .sale-stock__item .product-card .price_variant_old:after {

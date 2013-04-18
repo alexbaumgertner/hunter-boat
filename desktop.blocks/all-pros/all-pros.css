@@ -1,5 +1,6 @@
 .all-pros
 {
     margin: 65px auto 75px;
-    width: 910px;
+    position: relative;
+    left: -15px;
 }
