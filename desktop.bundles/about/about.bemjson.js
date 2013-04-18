@@ -188,11 +188,10 @@
                                             content: [
                                                 {
                                                     elem: 'section',
-                                                    attrs: { style: 'margin-top: -110px;' },
                                                     content: [
                                                         {
-                                                            elem: 'section-column',
-                                                            attrs: { style: 'width: 385px; margin: 100px 125px 0 30px;'  },
+                                                            elem: 'column',
+                                                            elemMods: { position: 'left' },
                                                             content: [
                                                                 {
                                                                     block: 'b-text',
@@ -251,12 +250,13 @@
                                                             ]
                                                         },
                                                         {
-                                                            elem: 'section-column',
-                                                            attrs: { style: 'width: 410px;'  },
+                                                            elem: 'column',
+                                                            elemMods: { position: 'right' },
+                                                            attrs: { style: 'margin-top: -85px;' },
                                                             content: [
                                                                 {
                                                                     elem: 'section-title',
-                                                                    attrs: { style: 'width: 330px; text-align: left;' },
+                                                                    attrs: { style: 'width: 330px; text-align: left; margin: 0;' },
                                                                     content: [
                                                                         {
                                                                             elem: 'section-header',
@@ -356,8 +356,8 @@
                                                     elem: 'section',
                                                     content: [
                                                         {
-                                                            elem: 'section-column',
-                                                            attrs: { style: 'width: 205px; vertical-align: middle; margin: 0 0 0 85px;'  },
+                                                            elem: 'column',
+                                                            elemMods: { position: 'left' },
                                                             content: [
                                                                 {
                                                                     elem: 'section-title',
@@ -389,14 +389,6 @@
                                                                         }
                                                                     ]
                                                                 },
-
-                                                            ]
-                                                        },
-
-                                                        {
-                                                            elem: 'section-column',
-                                                            attrs: { style: 'width: 300px; vertical-align: middle; margin: 0 70px 0 50px;'  },
-                                                            content: [
                                                                 {
                                                                     block: 'map',
                                                                     mods: { figure: 'circle', provider: 'yandex' },
@@ -411,10 +403,9 @@
                                                                 }
                                                             ]
                                                         },
-
                                                         {
-                                                            elem: 'section-column',
-                                                            attrs: { style: 'width: 300px; vertical-align: middle; width: 190px;'  },
+                                                            elem: 'column',
+                                                            elemMods: { position: 'right' },
                                                             content: [
                                                                 {
                                                                     elem: 'section-title',
