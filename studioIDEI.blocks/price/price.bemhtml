@@ -44,6 +44,7 @@ block price {
             },
             {
                 elem: 'currency',
+                mix: [ { block: 'i-font', mods: { face: 'ALSRubl' } } ],
                 content: 'Р' /* russian big P */
             }
         ]

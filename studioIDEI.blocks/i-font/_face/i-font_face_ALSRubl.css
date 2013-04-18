@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'ALSRubl-Arial';
+    src: local('ALSRubl-Arial');
+    src: url('alsrubl-arial-regular.woff'),
+         url('alsrubl-arial-regular.ttf');
+}
+
+
+.i-font_face_ALSRubl
+{
+    font-family: 'ALSRubl-Arial' !important;
+}

@@ -7,6 +7,7 @@
         {
             block: 'price',
             elem: 'currency'
-        }
+        },
+        { block: 'i-font', mods: { face: 'ALSRubl' } }
     ]
 })
