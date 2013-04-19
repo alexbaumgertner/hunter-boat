@@ -12,3 +12,7 @@
 
     background-position: -122px 0;
 }
+
+.carousel__control_state_disabled .button_type_carousel-horiz.button_direction_next {
+    background-position: -70px 0;
+}

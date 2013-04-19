@@ -11,7 +11,6 @@
                 this.itemFullWidth = this.elem('item').outerWidth(true);
                 this.frameWidth = this.elem('viewport').width();
                 this.frameTotal = Math.round(this.itemFullWidth * this.elem('item').length / this.frameWidth);
-                this.frameItemsCount = Math.ceil(this.frameWidth / this.itemFullWidth);
                 this.frameCurr = 1; // start by first
             }
 
