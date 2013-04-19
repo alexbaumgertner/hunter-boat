@@ -309,7 +309,9 @@
                                                 }
                                             ]
                                         },
+
                                         { block: 'line', mods: { type: 'wavy-0081bd' } },
+
                                         {
                                             block  : 'sale-stock',
                                             content: [
