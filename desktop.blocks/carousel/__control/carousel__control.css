@@ -1,0 +1,6 @@
+.carousel__control
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+}

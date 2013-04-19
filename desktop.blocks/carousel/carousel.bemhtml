@@ -1,0 +1,13 @@
+block carousel {
+
+    elem control, elemMod direction prev {
+        content: { block: 'button', mods: { direction: 'prev', type: 'carousel-horiz' } }
+    }
+
+
+    elem control, elemMod direction next {
+        content: { block: 'button', mods: { direction: 'next', type: 'carousel-horiz' } }
+    }
+
+
+}
