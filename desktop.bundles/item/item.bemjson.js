@@ -1,58 +1,57 @@
 ({
-    block  : 'b-page',
-    title  : 'item',
-    head   : [
+    block: 'b-page',
+    title: 'item',
+    head: [
         { elem: 'css', url: '_item.css', ie: false},
         { elem: 'css', url: '_item', ie: true },
-        /*{ block: 'i-jquery', elem: 'core'},*/
-        { elem: 'js', url: 'jquery-1.7.2.js'},
+        { block: 'i-jquery', elem: 'core'},
         { elem: 'js', url: '_item.js'}
     ],
     content: [
         {
-            block  : 'header',
+            block: 'header',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'header',
-                            elem    : 'column',
+                            block: 'header',
+                            elem: 'column',
                             elemMods: { position: 'left' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'logo',
+                                    block: 'logo',
                                     content: 'HUNTERBOAT'
                                 }
                             ]
                         },
 
                         {
-                            block   : 'header',
-                            elem    : 'column',
+                            block: 'header',
+                            elem: 'column',
                             elemMods: { position: 'right' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'cart-info',
+                                    block: 'cart-info',
                                     content: [
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                url    : 'cart',
+                                                block: 'b-link',
+                                                url: 'cart',
                                                 content: 'В заказе:'
                                             }
                                         },
                                         {
-                                            elem   : 'info',
+                                            elem: 'info',
                                             content: [
                                                 {
-                                                    elem   : 'text',
+                                                    elem: 'text',
                                                     content: '3 товара на сумму'
                                                 },
                                                 {
-                                                    elem   : 'total-price',
+                                                    elem: 'total-price',
                                                     content: { block: 'price', mods: { currency: 'dot-dash' }, value: '95000' }
                                                 }
                                             ]
@@ -60,79 +59,79 @@
                                     ]
                                 },
                                 {
-                                    block  : 'contacts',
-                                    mods   : { color: '000000' },
+                                    block: 'contacts',
+                                    mods: { color: '000000' },
                                     content: [
                                         {
-                                            elem   : 'phone',
+                                            elem: 'phone',
                                             content: [
                                                 {
-                                                    elem   : 'phone-city-code',
+                                                    elem: 'phone-city-code',
                                                     content: '812'
                                                 },
                                                 {
-                                                    elem   : 'phone-number',
+                                                    elem: 'phone-number',
                                                     content: '320-02-60'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                mods   : { pseudo: 'yes' },
+                                                block: 'b-link',
+                                                mods: { pseudo: 'yes' },
                                                 content: 'Обратный звонок'
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    block  : 'main-menu',
+                                    block: 'main-menu',
                                     content: [
                                         {
-                                            elem    : 'section',
+                                            elem: 'section',
                                             elemMods: { background: 'red' },
-                                            content : {
-                                                elem   : 'list',
+                                            content: {
+                                                elem: 'list',
                                                 content: [
                                                     {
-                                                        elem    : 'item',
+                                                        elem: 'item',
                                                         elemMods: { section: 'catalog' },
-                                                        name    : 'Каталог',
-                                                        url     : '/catalog/'
+                                                        name: 'Каталог',
+                                                        url: '/catalog/'
                                                     }
                                                 ]
                                             }
                                         },
                                         {
-                                            elem   : 'section',
+                                            elem: 'section',
                                             content: {
-                                                elem   : 'list',
+                                                elem: 'list',
                                                 content: [
                                                     {
                                                         elem: 'item',
                                                         name: 'О компании',
-                                                        url : '/about/'
+                                                        url: '/about/'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Отзывы',
-                                                        url : '/feedback/'
+                                                        url: '/feedback/'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Вопрос-ответ',
-                                                        url : '/faq/'
+                                                        url: '/faq/'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Фотографии',
-                                                        url : '/photos/'
+                                                        url: '/photos/'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Оптовикам',
-                                                        url : '/wholesale/'
+                                                        url: '/wholesale/'
                                                     }
                                                 ]
                                             }
@@ -140,22 +139,22 @@
                                     ]
                                 },
                                 {
-                                    block  : 'buyer-menu',
+                                    block: 'buyer-menu',
                                     content: [
                                         {
                                             elem: 'item',
                                             name: 'Как купить',
-                                            url : '/howtobuy/'
+                                            url: '/howtobuy/'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Где купить',
-                                            url : '/wheretobuy/'
+                                            url: '/wheretobuy/'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Доставка',
-                                            url : '/shipping/'
+                                            url: '/shipping/'
                                         }
                                     ]
                                 }
@@ -166,49 +165,49 @@
             ]
         },
         {
-            block  : 'content',
+            block: 'content',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'content',
-                            elem    : 'column',
+                            block: 'content',
+                            elem: 'column',
                             elemMods: { position: 'left' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'catalog-links',
+                                    block: 'catalog-links',
                                     content: [
                                         {
-                                            elem   : 'title',
+                                            elem: 'title',
                                             content: {
-                                                block  : 'b-link',
-                                                url    : '/catalog/',
+                                                block: 'b-link',
+                                                url: '/catalog/',
                                                 content: 'Каталог'
                                             }
                                         },
                                         {
-                                            elem   : 'list',
+                                            elem: 'list',
                                             content: [
                                                 {
-                                                    elem    : 'item',
+                                                    elem: 'item',
                                                     elemMods: { section: 'new' },
-                                                    content : { block: 'b-link', url: '/new/', content: {
+                                                    content: { block: 'b-link', url: '/new/', content: {
                                                         block: 'catalog-icon', mods: { type: 'new' }
                                                     } }
                                                 },
                                                 {
-                                                    elem    : 'item',
+                                                    elem: 'item',
                                                     elemMods: { section: 'pop' },
-                                                    content : { block: 'b-link', url: '/pop/', content: {
+                                                    content: { block: 'b-link', url: '/pop/', content: {
                                                         block: 'catalog-icon', mods: { type: 'pop' }
                                                     } }
                                                 },
                                                 {
-                                                    elem    : 'item',
+                                                    elem: 'item',
                                                     elemMods: { section: 'rec' },
-                                                    content : { block: 'b-link', url: '/rec/', content: {
+                                                    content: { block: 'b-link', url: '/rec/', content: {
                                                         block: 'catalog-icon', mods: { type: 'rec' }
                                                     } }
                                                 }
@@ -217,165 +216,165 @@
                                     ]
                                 },
                                 {
-                                    block  : 'catalog-menu',
+                                    block: 'catalog-menu',
                                     content: [
                                         {
-                                            elem    : 'section',
+                                            elem: 'section',
                                             elemMods: { state: 'current' },
-                                            content : [
+                                            content: [
                                                 {
-                                                    elem   : 'section-header',
+                                                    elem: 'section-header',
                                                     content: 'Надувные лодки',
-                                                    url    : '/catalog/boats/inflatable/'
+                                                    url: '/catalog/boats/inflatable/'
                                                 },
                                                 {
-                                                    elem   : 'list',
+                                                    elem: 'list',
                                                     content: [
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: 'Гребные',
-                                                            url    : '/catalog/boats/inflatable/rowing/'
+                                                            url: '/catalog/boats/inflatable/rowing/'
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: 'Моторные',
-                                                            url    : '/catalog/boats/inflatable/motor/'
+                                                            url: '/catalog/boats/inflatable/motor/'
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: 'Моторно-гребные',
-                                                            url    : '/catalog/boats/inflatable/motor-rowing/'
+                                                            url: '/catalog/boats/inflatable/motor-rowing/'
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: '«Люкс»',
-                                                            url    : '/catalog/boats/inflatable/lux/'
+                                                            url: '/catalog/boats/inflatable/lux/'
                                                         },
                                                         {
-                                                            elem    : 'item',
+                                                            elem: 'item',
                                                             elemMods: { marker: 'percent' },
-                                                            content : 'Уценка',
-                                                            url     : '/catalog/boats/inflatable/markdown/'
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            elem   : 'section',
-                                            content: [
-                                                {
-                                                    elem   : 'section-header',
-                                                    content: 'Подвесные моторы',
-                                                    url    : '/catalog/boats/inflatable/'
-                                                },
-                                                {
-                                                    elem   : 'list',
-                                                    content: [
-                                                        {
-                                                            elem   : 'item',
-                                                            content: 'Гребные',
-                                                            url    : '/catalog/boats/section/inflatable/rowing/'
-                                                        },
-                                                        {
-                                                            elem   : 'item',
-                                                            content: 'Моторные',
-                                                            url    : '/catalog/boats/section/inflatable/motor/'
-                                                        },
-                                                        {
-                                                            elem   : 'item',
-                                                            content: 'Моторно-гребные',
-                                                            url    : '/catalog/boats/section/inflatable/motor-rowing/'
-                                                        },
-                                                        {
-                                                            elem   : 'item',
-                                                            content: '«Люкс»',
-                                                            url    : '/catalog/boats/section/inflatable/lux/'
-                                                        },
-                                                        {
-                                                            elem   : 'item',
                                                             content: 'Уценка',
-                                                            url    : '/catalog/boats/section/inflatable/markdown/'
+                                                            url: '/catalog/boats/inflatable/markdown/'
                                                         }
                                                     ]
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'section',
+                                            elem: 'section',
                                             content: [
                                                 {
-                                                    elem   : 'section-header',
+                                                    elem: 'section-header',
+                                                    content: 'Подвесные моторы',
+                                                    url: '/catalog/boats/inflatable/'
+                                                },
+                                                {
+                                                    elem: 'list',
+                                                    content: [
+                                                        {
+                                                            elem: 'item',
+                                                            content: 'Гребные',
+                                                            url: '/catalog/boats/section/inflatable/rowing/'
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            content: 'Моторные',
+                                                            url: '/catalog/boats/section/inflatable/motor/'
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            content: 'Моторно-гребные',
+                                                            url: '/catalog/boats/section/inflatable/motor-rowing/'
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            content: '«Люкс»',
+                                                            url: '/catalog/boats/section/inflatable/lux/'
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            content: 'Уценка',
+                                                            url: '/catalog/boats/section/inflatable/markdown/'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'section',
+                                            content: [
+                                                {
+                                                    elem: 'section-header',
                                                     content: 'Электромоторы',
-                                                    url    : '/catalog/boats/inflatable/'
+                                                    url: '/catalog/boats/inflatable/'
                                                 },
                                                 {
-                                                    elem   : 'list',
+                                                    elem: 'list',
                                                     content: [
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: 'Nissamaran',
-                                                            url    : '/catalog/boats/section/inflatable/rowing/'
+                                                            url: '/catalog/boats/section/inflatable/rowing/'
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: 'HDX',
-                                                            url    : '/catalog/boats/section/inflatable/motor/'
+                                                            url: '/catalog/boats/section/inflatable/motor/'
                                                         }
                                                     ]
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'section',
+                                            elem: 'section',
                                             content: [
                                                 {
-                                                    elem   : 'section-header',
+                                                    elem: 'section-header',
                                                     content: 'Аксессуары к лодкам',
-                                                    url    : '/catalog/boats/аксессуары/'
+                                                    url: '/catalog/boats/аксессуары/'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'section',
+                                            elem: 'section',
                                             content: [
                                                 {
-                                                    elem   : 'section-header',
+                                                    elem: 'section-header',
                                                     content: 'Спасательные жилеты',
-                                                    url    : '/catalog/boats/спасжилеты/'
+                                                    url: '/catalog/boats/спасжилеты/'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'section',
+                                            elem: 'section',
                                             content: [
                                                 {
-                                                    elem   : 'section-header',
+                                                    elem: 'section-header',
                                                     content: 'Тенты к надувным лодкам',
-                                                    url    : '/catalog/boats/тенты/'
+                                                    url: '/catalog/boats/тенты/'
                                                 },
                                                 {
-                                                    elem   : 'list',
+                                                    elem: 'list',
                                                     content: [
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: 'Носовые',
-                                                            url    : '/catalog/тенты/носовые/'
+                                                            url: '/catalog/тенты/носовые/'
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: 'Трансформеры',
-                                                            url    : '/catalog/тенты/трансформеры/'
+                                                            url: '/catalog/тенты/трансформеры/'
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: 'Транспортировочные',
-                                                            url    : '/catalog/тенты/транспортировочные/'
+                                                            url: '/catalog/тенты/транспортировочные/'
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: 'Тент-крыша',
-                                                            url    : '/catalog/тенты/крыша/'
+                                                            url: '/catalog/тенты/крыша/'
                                                         }
                                                     ]
                                                 }
@@ -384,25 +383,25 @@
                                     ]
                                 },
                                 {
-                                    block  : 'info-block',
-                                    mods   : { type: 'shipping' },
+                                    block: 'info-block',
+                                    mods: { type: 'shipping' },
                                     content: [
                                         {
                                             elem: 'photo'
                                         },
                                         {
-                                            elem   : 'title',
+                                            elem: 'title',
                                             content: 'Доставка'
                                         },
                                         {
-                                            elem   : 'desc',
+                                            elem: 'desc',
                                             content: 'Доставка транспортными компаниями и курьером почтой Росии'
                                         },
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                url    : '/shipping/',
+                                                block: 'b-link',
+                                                url: '/shipping/',
                                                 content: 'Подробнее о доставке'
                                             }
                                         }
@@ -411,46 +410,46 @@
                             ]
                         },
                         {
-                            block   : 'content',
-                            elem    : 'column',
+                            block: 'content',
+                            elem: 'column',
                             elemMods: { position: 'right' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'catalog-item',
+                                    block: 'catalog-item',
                                     js: true,
                                     content: [
                                         {
-                                            elem   : 'card',
+                                            elem: 'card',
                                             content: {
-                                                block  : 'catalog-item-card',
+                                                block: 'catalog-item-card',
                                                 content: [
                                                     {
-                                                        elem   : 'header',
+                                                        elem: 'header',
                                                         content: [
                                                             {
-                                                                elem   : 'header-text',
+                                                                elem: 'header-text',
                                                                 content: 'Надувная лодка Хантер 320 ЛК ЛЮКС'
                                                             },
                                                             {
-                                                                elem   : 'header-icon',
+                                                                elem: 'header-icon',
                                                                 content: { block: 'catalog-icon', mods: { type: 'new' } }
                                                             }
                                                         ]
                                                     },
                                                     {
-                                                        elem   : 'buy-section',
+                                                        elem: 'buy-section',
                                                         content: [
                                                             {
-                                                                elem   : 'price',
+                                                                elem: 'price',
                                                                 content: [
                                                                     {
-                                                                        elem   : 'price-old',
+                                                                        elem: 'price-old',
                                                                         content: {
                                                                             block: 'price', mods: { currency: 'empty' }, value: 41000
                                                                         }
                                                                     },
                                                                     {
-                                                                        elem   : 'price-new',
+                                                                        elem: 'price-new',
                                                                         content: {
                                                                             block: 'price', mods: { currency: 'dot-dash' }, value: 39900
                                                                         }
@@ -458,55 +457,55 @@
                                                                 ]
                                                             },
                                                             {
-                                                                elem   : 'buy-button',
+                                                                elem: 'buy-button',
                                                                 content: { block: 'button', mods: { type: 'buy' }, content: 'Заказать' }
                                                             },
                                                             {
-                                                                elem   : 'markdown-link',
+                                                                elem: 'markdown-link',
                                                                 content: {
-                                                                    block  : 'b-link',
+                                                                    block: 'b-link',
                                                                     content: 'Купить эту лодку с уценкой',
-                                                                    url    : '/catalog/boats/hunter_320_LK_LUX/markdown'
+                                                                    url: '/catalog/boats/hunter_320_LK_LUX/markdown'
                                                                 }
                                                             }
 
                                                         ]
                                                     },
                                                     {
-                                                        elem   : 'photos-list',
+                                                        elem: 'photos-list',
                                                         content: [
                                                             {
                                                                 elem: 'photos-list-item',
                                                                 mods: { state: 'current' },
-                                                                url : 'img/catalog/boats/hunter_320_LK_LUX/photos/1_small.jpg'
+                                                                url: 'img/catalog/boats/hunter_320_LK_LUX/photos/1_small.jpg'
                                                             },
                                                             {
                                                                 elem: 'photos-list-item',
-                                                                url : 'img/catalog/boats/hunter_320_LK_LUX/photos/2_small.jpg'
+                                                                url: 'img/catalog/boats/hunter_320_LK_LUX/photos/2_small.jpg'
                                                             },
                                                             {
                                                                 elem: 'photos-list-item',
-                                                                url : 'img/catalog/boats/hunter_320_LK_LUX/photos/3_small.jpg'
+                                                                url: 'img/catalog/boats/hunter_320_LK_LUX/photos/3_small.jpg'
                                                             }
                                                         ]
                                                     },
                                                     {
                                                         elem: 'photo-big',
-                                                        url : 'img/catalog/boats/hunter_320_LK_LUX/photos/1_medium.jpg'
+                                                        url: 'img/catalog/boats/hunter_320_LK_LUX/photos/1_medium.jpg'
                                                     },
                                                     {
-                                                        elem   : 'colors',
+                                                        elem: 'colors',
                                                         content: [
                                                             { elem: 'colors-item', elemMods: { color: 'a0a0a0', state: 'current' }, content: 'серая' },
                                                             { elem: 'colors-item', elemMods: { color: '377530' }, content: 'зеленая' },
                                                         ]
                                                     },
                                                     {
-                                                        elem   : 'links',
+                                                        elem: 'links',
                                                         content: [
                                                             {
-                                                                block  : 'b-link',
-                                                                url    : '/catalog/boats/hunter_320_LK_LUX/photos',
+                                                                block: 'b-link',
+                                                                url: '/catalog/boats/hunter_320_LK_LUX/photos',
                                                                 content: 'Все фотографии Хантер 320 ЛК ЛЮКС'
                                                             }
                                                         ]
@@ -517,10 +516,10 @@
                                             }
                                         },
                                         {
-                                            elem   : 'info',
+                                            elem: 'info',
                                             content: [
                                                 {
-                                                    elem   : 'info-menu-list',
+                                                    elem: 'info-menu-list',
                                                     content: [
                                                         { elem: 'info-menu-item', js: { section: 'desc' }, content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Описание', url: '/catalog/boats/1#desc' } },
                                                         { elem: 'info-menu-item', js: { section: 'spec' }, elemMods: { state: 'current' }, content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Характеристики', url: '/catalog/boats/1#spec' } },
@@ -533,104 +532,118 @@
 
                                                     content: [
                                                         {
-                                                            elem    : 'info-content-item',
+                                                            elem: 'info-content-item',
                                                             elemMods: { state: 'current', section: 'spec' },
-                                                            content : {
-                                                                block  : 'enumeration-list',
-                                                                mods   : { spaceStyle: 'dotted' },
+                                                            content: {
+                                                                block: 'enumeration-list',
+                                                                mods: { spaceStyle: 'dotted' },
                                                                 content: [
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Вес',
+                                                                        elem: 'item',
+                                                                        key: 'Вес',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Грузоподъемность',
+                                                                        elem: 'item',
+                                                                        key: 'Грузоподъемность',
                                                                         value: '450 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Диаметр баллона',
+                                                                        elem: 'item',
+                                                                        key: 'Диаметр баллона',
                                                                         value: '0543245 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Количество отсеков',
+                                                                        elem: 'item',
+                                                                        key: 'Количество отсеков',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Вес',
+                                                                        elem: 'item',
+                                                                        key: 'Вес',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Крепление банок',
+                                                                        elem: 'item',
+                                                                        key: 'Крепление банок',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Пассажировместимость',
+                                                                        elem: 'item',
+                                                                        key: 'Пассажировместимость',
                                                                         value: '3 человека'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Пол',
+                                                                        elem: 'item',
+                                                                        key: 'Пол',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Транец',
+                                                                        elem: 'item',
+                                                                        key: 'Транец',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Ширина',
+                                                                        elem: 'item',
+                                                                        key: 'Ширина',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Длина',
+                                                                        elem: 'item',
+                                                                        key: 'Длина',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Рекомендованная мощность мотора кг',
+                                                                        elem: 'item',
+                                                                        key: 'Рекомендованная мощность мотора кг',
                                                                         value: '8 лс'
                                                                     }
                                                                 ]
                                                             }
                                                         },
                                                         {
-                                                            elem   : 'info-content-item',
+                                                            elem: 'info-content-item',
                                                             elemMods: { section: 'reviews' },
                                                             content: {
-                                                                block  : 'reviews',
+                                                                block: 'reviews',
                                                                 content: [
                                                                     {
-                                                                        elem   : 'list',
+                                                                        elem: 'list',
                                                                         content: (function () {
                                                                             var content = [];
 
-                                                                            var names = ['Олег', 'Владимир', 'Наталия', 'Степан Никифорович', 'Федор'];
-                                                                            var cities = ['Санкт-Петербург', 'Севастополь', 'Великий Новгород', 'Калининград', 'Москва', 'Екатеринбург', ''];
+                                                                            var names = [
+                                                                                'Олег', 'Владимир', 'Наталия',
+                                                                                'Степан Никифорович', 'Федор'
+                                                                            ];
+                                                                            var cities = [
+                                                                                'Санкт-Петербург',
+                                                                                'Севастополь',
+                                                                                'Великий Новгород',
+                                                                                'Калининград', 'Москва',
+                                                                                'Екатеринбург', ''
+                                                                            ];
 
                                                                             var review = [
-                                                                                'Купил вашу лодку в магазине «Лодки-Питер» - очень порадовало качество изготовления. Но самое главное диаметр баллона – то что нужно для рыбалки. Спасибо ….', 'Заказывал лодку Хантер 280 РТ через сайт. Доставили вовремя, как раз ко дню рождения, менеджеры молодцы – постоянно информируют о движении товара. Так держать – сразу же дозаказал дополнительные полы -передали в Питере (доставили в гостиницу).', 'БОЛЬШОЕ ВАМ СПАСИБО ПОЛУЧИЛ СВОЙ ЗАКАЗ ЛОДКУ БЫСТРО И БЕЗ ПРОБЛЕМ ЖЕЛАЮ ВАМ УДАЧИ И С НАСТУПАЮЩИМ НОВЫМ ГОДОМ. ', 'Здравствуйте! Лодки получили, большое спасибо. Лодки замечательные! Если вашему предприятию это интересно, мы будем рады сотрудничеству с вами по следующим направлениям. Мы могли бы стать вашими представителями у нас в регионе и заняться реализацией Вашей продукции в Сыктывкаре и Республике Коми. Либо вы можете использовать наш производственный потенциал для производства лодок. ', 'Заказывал лодку Хантер 280 РТ через сайт. Доставили вовремя, как раз ко дню рождения, менеджеры молодцы – постоянно информируют о движении товара. Так держать – сразу же дозаказал дополнительные полы -передали в Питере (доставили в гостиницу).', ];
+                                                                                'Купил вашу лодку в магазине «Лодки-Питер» - очень порадовало качество изготовления. Но самое главное диаметр баллона – то что нужно для рыбалки. Спасибо ….',
+                                                                                'Заказывал лодку Хантер 280 РТ через сайт. Доставили вовремя, как раз ко дню рождения, менеджеры молодцы – постоянно информируют о движении товара. Так держать – сразу же дозаказал дополнительные полы -передали в Питере (доставили в гостиницу).',
+                                                                                'БОЛЬШОЕ ВАМ СПАСИБО ПОЛУЧИЛ СВОЙ ЗАКАЗ ЛОДКУ БЫСТРО И БЕЗ ПРОБЛЕМ ЖЕЛАЮ ВАМ УДАЧИ И С НАСТУПАЮЩИМ НОВЫМ ГОДОМ. ',
+                                                                                'Здравствуйте! Лодки получили, большое спасибо. Лодки замечательные! Если вашему предприятию это интересно, мы будем рады сотрудничеству с вами по следующим направлениям. Мы могли бы стать вашими представителями у нас в регионе и заняться реализацией Вашей продукции в Сыктывкаре и Республике Коми. Либо вы можете использовать наш производственный потенциал для производства лодок. ',
+                                                                                'Заказывал лодку Хантер 280 РТ через сайт. Доставили вовремя, как раз ко дню рождения, менеджеры молодцы – постоянно информируют о движении товара. Так держать – сразу же дозаказал дополнительные полы -передали в Питере (доставили в гостиницу).',
+                                                                            ];
 
                                                                             for (var i = 0; i < 7; i++) {
                                                                                 content.push({
-                                                                                    elem   : 'item',
+                                                                                    elem: 'item',
                                                                                     content: {
-                                                                                        block  : 'product-review',
+                                                                                        block: 'product-review',
                                                                                         content: [
                                                                                             {
-                                                                                                elem   : 'date',
+                                                                                                elem: 'date',
                                                                                                 content: '21 октября 2009 года'
                                                                                             },
                                                                                             {
-                                                                                                elem   : 'header',
+                                                                                                elem: 'header',
                                                                                                 content: [
                                                                                                     { elem: 'author', content: names[(Math.floor(Math.random() * names.length))] },
 
@@ -638,7 +651,7 @@
                                                                                                 ]
                                                                                             },
                                                                                             {
-                                                                                                elem   : 'content',
+                                                                                                elem: 'content',
                                                                                                 content: review[(Math.floor(Math.random() * review.length))]
                                                                                             }
                                                                                         ]
@@ -651,10 +664,10 @@
                                                                         }())
                                                                     },
                                                                     {
-                                                                        elem   : 'add',
+                                                                        elem: 'add',
                                                                         content: {
                                                                             block: 'b-link',
-                                                                            url  : '/catalog/boats/hunter_320_LK_LUX/review/add',
+                                                                            url: '/catalog/boats/hunter_320_LK_LUX/review/add',
                                                                             content: 'Оставить отзыв'
                                                                         }
                                                                     }
@@ -662,65 +675,65 @@
                                                             }
                                                         },
                                                         {
-                                                            elem   : 'info-content-item',
+                                                            elem: 'info-content-item',
                                                             elemMods: { section: 'set' },
                                                             content: {
-                                                                block  : 'enumeration-list',
-                                                                mods   : { spaceStyle: 'dotted' },
+                                                                block: 'enumeration-list',
+                                                                mods: { spaceStyle: 'dotted' },
                                                                 content: [
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Лодка надувная Хантер 320 ЛК',
+                                                                        elem: 'item',
+                                                                        key: 'Лодка надувная Хантер 320 ЛК',
                                                                         value: '1 шт'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Весло разборное',
+                                                                        elem: 'item',
+                                                                        key: 'Весло разборное',
                                                                         value: '2 шт'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Помпа воздушная',
+                                                                        elem: 'item',
+                                                                        key: 'Помпа воздушная',
                                                                         value: '1 шт'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Рюкзак + сумка на изделие',
+                                                                        elem: 'item',
+                                                                        key: 'Рюкзак + сумка на изделие',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Паспорт на изделие',
+                                                                        elem: 'item',
+                                                                        key: 'Паспорт на изделие',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Ремкомплект',
+                                                                        elem: 'item',
+                                                                        key: 'Ремкомплект',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Банка (сидение)',
+                                                                        elem: 'item',
+                                                                        key: 'Банка (сидение)',
                                                                         value: '3 человека'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Рюкзак + сумка на изделие',
+                                                                        elem: 'item',
+                                                                        key: 'Рюкзак + сумка на изделие',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Паспорт на изделие',
+                                                                        elem: 'item',
+                                                                        key: 'Паспорт на изделие',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Ремкомплект',
+                                                                        elem: 'item',
+                                                                        key: 'Ремкомплект',
                                                                         value: '35 кг'
                                                                     },
                                                                     {
-                                                                        elem : 'item',
-                                                                        key  : 'Банка (сидение)',
+                                                                        elem: 'item',
+                                                                        key: 'Банка (сидение)',
                                                                         value: '3 человека'
                                                                     }
                                                                 ]
@@ -772,37 +785,51 @@
                                     ]
                                 },
                                 {
-                                    block  : 'catalog-section-carousel',
+                                    block: 'catalog-section-carousel',
+                                    mix: [{ block: 'carousel', js: true }],
                                     content: [
-                                        { elem: 'control', elemMods: { direction: 'prev' }},
-                                        { elem: 'control', elemMods: { direction: 'next' }},
+                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev' }},
+                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
                                         {
-                                            elem   : 'header',
+                                            elem: 'header',
                                             content: [
                                                 { elem: 'title', content: { block: 'b-link', content: 'Рекомендуемые моторы для лодки', url: '/motors' } }
                                             ]
 
                                         },
                                         {
-                                            elem   : 'list',
+                                            block: 'carousel',
+                                            elem: 'viewport',
                                             content: [
                                                 {
-                                                    elem   : 'item',
+                                                    block: 'catalog-section-carousel',
+                                                    elem: 'list',
+                                                    mix: [
+                                                        {block: 'carousel', elem: 'items'}
+                                                    ],
                                                     content: [
-                                                        { block: 'product-card', mods: { type: 'withoutDesc' } }
-                                                    ]
-                                                },
-                                                {
-                                                    elem   : 'item',
-                                                    content: [
-                                                        { block: 'product-card', mods: { type: 'withoutDesc' } },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [ { block: 'carousel', elem: 'item' } ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [ { block: 'carousel', elem: 'item' } ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } },
 
-                                                    ]
-                                                } ,
-                                                {
-                                                    elem   : 'item',
-                                                    content: [
-                                                        { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        } ,
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [ { block: 'carousel', elem: 'item' } ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        }
                                                     ]
                                                 }
                                             ]
@@ -810,38 +837,51 @@
                                     ]
                                 },
                                 {
-                                    block  : 'catalog-section-carousel',
+                                    block: 'catalog-section-carousel',
+                                    mix: [{ block: 'carousel', js: true }],
                                     content: [
-                                        { elem: 'control', elemMods: { direction: 'prev' }},
-                                        { elem: 'control', elemMods: { direction: 'next' }},
+                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev' }},
+                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
                                         {
-                                            elem   : 'header',
+                                            elem: 'header',
                                             content: [
-                                                { elem: 'title', content: { block: 'b-link', content: 'Аксессуары к Хантер 350 ЛК ЛЮКС', url: '/motors' } },
-                                                { elem: 'counter', content: '35' }
+                                                { elem: 'title', content: { block: 'b-link', content: 'Рекомендуемые моторы для лодки', url: '/motors' } }
                                             ]
 
                                         },
                                         {
-                                            elem   : 'list',
+                                            block: 'carousel',
+                                            elem: 'viewport',
                                             content: [
                                                 {
-                                                    elem   : 'item',
+                                                    block: 'catalog-section-carousel',
+                                                    elem: 'list',
+                                                    mix: [
+                                                        {block: 'carousel', elem: 'items'}
+                                                    ],
                                                     content: [
-                                                        { block: 'product-card', mods: { type: 'withoutDesc' } }
-                                                    ]
-                                                },
-                                                {
-                                                    elem   : 'item',
-                                                    content: [
-                                                        { block: 'product-card', mods: { type: 'withoutDesc' } },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [ { block: 'carousel', elem: 'item' } ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [ { block: 'carousel', elem: 'item' } ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } },
 
-                                                    ]
-                                                } ,
-                                                {
-                                                    elem   : 'item',
-                                                    content: [
-                                                        { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        } ,
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [ { block: 'carousel', elem: 'item' } ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        }
                                                     ]
                                                 }
                                             ]
@@ -856,87 +896,87 @@
             ]
         },
         {
-            block  : 'footer',
+            block: 'footer',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'left' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'contacts',
-                                    mods   : { color: 'e5e5e5' },
+                                    block: 'contacts',
+                                    mods: { color: 'e5e5e5' },
                                     content: [
                                         {
-                                            elem   : 'phone',
+                                            elem: 'phone',
                                             content: [
                                                 {
-                                                    elem   : 'phone-city-code',
+                                                    elem: 'phone-city-code',
                                                     content: '812'
                                                 },
                                                 {
-                                                    elem   : 'phone-number',
+                                                    elem: 'phone-number',
                                                     content: '320-02-60'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                mods   : { pseudo: 'yes' },
+                                                block: 'b-link',
+                                                mods: { pseudo: 'yes' },
                                                 content: 'Обратный звонок'
                                             }
                                         },
                                         {
-                                            elem   : 'address',
+                                            elem: 'address',
                                             content: 'Санкт-Петербург, ул. Профессора Качалова, 8'
                                         }
                                     ]
                                 },
                                 {
-                                    block  : 'copyright',
+                                    block: 'copyright',
                                     content: 'ООО «Производственно-торговая Компания Хантер — производство и продажа надувных лодок Хантер» '
                                 }
                             ]
                         },
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'center' },
-                            content : [
+                            content: [
                                 {
                                     block: 'search'
                                 },
                                 {
-                                    block  : 'menu',
+                                    block: 'menu',
                                     content: [
                                         {
                                             elem: 'item',
                                             name: 'Вакансии',
-                                            url : '/vacancies/'
+                                            url: '/vacancies/'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Отзывы',
-                                            url : '/feedback/'
+                                            url: '/feedback/'
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'right' },
-                            content : [
+                            content: [
                                 {
-                                    block     : 'studio-idei',
-                                    mods      : { color: '909090' },
+                                    block: 'studio-idei',
+                                    mods: { color: '909090' },
                                     projectUrl: 'project-url'
                                 }
                             ]
