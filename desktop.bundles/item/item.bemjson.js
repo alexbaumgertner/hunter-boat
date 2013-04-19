@@ -788,7 +788,7 @@
                                     block: 'catalog-section-carousel',
                                     mix: [{ block: 'carousel', js: true }],
                                     content: [
-                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev' }},
+                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled' }},
                                         { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
                                         {
                                             elem: 'header',
@@ -810,22 +810,82 @@
                                                     content: [
                                                         {
                                                             elem: 'item',
-                                                            mix: [ { block: 'carousel', elem: 'item' } ],
+                                                            mix: [
+                                                                { block: 'carousel', elem: 'item' }
+                                                            ],
                                                             content: [
                                                                 { block: 'product-card', mods: { type: 'withoutDesc' } }
                                                             ]
                                                         },
                                                         {
                                                             elem: 'item',
-                                                            mix: [ { block: 'carousel', elem: 'item' } ],
+                                                            mix: [
+                                                                { block: 'carousel', elem: 'item' }
+                                                            ],
                                                             content: [
                                                                 { block: 'product-card', mods: { type: 'withoutDesc' } },
 
                                                             ]
-                                                        } ,
+                                                        },
                                                         {
                                                             elem: 'item',
-                                                            mix: [ { block: 'carousel', elem: 'item' } ],
+                                                            mix: [
+                                                                { block: 'carousel', elem: 'item' }
+                                                            ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [
+                                                                { block: 'carousel', elem: 'item' }
+                                                            ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [
+                                                                { block: 'carousel', elem: 'item' }
+                                                            ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [
+                                                                { block: 'carousel', elem: 'item' }
+                                                            ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [
+                                                                { block: 'carousel', elem: 'item' }
+                                                            ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [
+                                                                { block: 'carousel', elem: 'item' }
+                                                            ],
+                                                            content: [
+                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'item',
+                                                            mix: [
+                                                                { block: 'carousel', elem: 'item' }
+                                                            ],
                                                             content: [
                                                                 { block: 'product-card', mods: { type: 'withoutDesc' } }
                                                             ]
@@ -840,8 +900,8 @@
                                     block: 'catalog-section-carousel',
                                     mix: [{ block: 'carousel', js: true }],
                                     content: [
-                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev' }},
-                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
+                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled'  }},
+                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'next', state: 'disabled'  }},
                                         {
                                             elem: 'header',
                                             content: [
