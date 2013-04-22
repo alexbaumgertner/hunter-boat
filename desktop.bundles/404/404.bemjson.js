@@ -4,8 +4,7 @@
     head   : [
         { elem: 'css', url: '_404.css', ie: false},
         { elem: 'css', url: '_404', ie: true },
-        /*{ block: 'i-jquery', elem: 'core'},*/
-        { elem: 'js', url: 'jquery-1.7.2.js'},
+        { block: 'i-jquery', elem: 'core'},
         { elem: 'js', url: '_404.js'},
     ],
     content: [
@@ -39,7 +38,7 @@
                                             elem   : 'link',
                                             content: {
                                                 block  : 'b-link',
-                                                url    : 'cart',
+                                                url    : '/order.html',
                                                 content: 'В заказе:'
                                             }
                                         },
@@ -97,7 +96,7 @@
                                                         elem    : 'item',
                                                         elemMods: { section: 'catalog' },
                                                         name    : 'Каталог',
-                                                        url     : '/catalog/'
+                                                        url     : '/catalog.html'
                                                     }
                                                 ]
                                             }
@@ -110,27 +109,27 @@
                                                     {
                                                         elem: 'item',
                                                         name: 'О компании',
-                                                        url : '/about/'
+                                                        url : '/about.html'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Отзывы',
-                                                        url : '/feedback/'
+                                                        url : '/reviews.html'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Вопрос-ответ',
-                                                        url : '/faq/'
+                                                        url : '/faq.html'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Фотографии',
-                                                        url : '/photos/'
+                                                        url : '/photoalbums.html'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Оптовикам',
-                                                        url : '/wholesale/'
+                                                        url : '/dealers.html'
                                                     }
                                                 ]
                                             }
@@ -143,17 +142,17 @@
                                         {
                                             elem: 'item',
                                             name: 'Как купить',
-                                            url : '/howtobuy/'
+                                            url : '/how-to-buy.html'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Где купить',
-                                            url : '/wheretobuy/'
+                                            url : '/where-to-buy.html'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Доставка',
-                                            url : '/shipping/'
+                                            url : '/delivery.html'
                                         }
                                     ]
                                 }
