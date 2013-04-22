@@ -96,75 +96,75 @@
                                 {
                                     block  : 'main-menu',
                                     content: [
-                                        {
-                                            elem    : 'section',
-                                            elemMods: { background: 'red' },
-                                            content : {
-                                                elem   : 'list',
-                                                content: [
-                                                    {
-                                                        elem    : 'item',
-                                                        elemMods: { section: 'catalog' },
-                                                        name    : 'Каталог',
-                                                        url     : '/catalog/'
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            elem   : 'section',
-                                            content: {
-                                                elem   : 'list',
-                                                content: [
-                                                    {
-                                                        elem: 'item',
-                                                        name: 'О компании',
-                                                        url : '/about/'
-                                                    },
-                                                    {
-                                                        elem: 'item',
-                                                        name: 'Отзывы',
-                                                        url : '/feedback/'
-                                                    },
-                                                    {
-                                                        elem: 'item',
-                                                        name: 'Вопрос-ответ',
-                                                        url : '/faq/'
-                                                    },
-                                                    {
-                                                        elem: 'item',
-                                                        name: 'Фотографии',
-                                                        url : '/photos/'
-                                                    },
-                                                    {
-                                                        elem: 'item',
-                                                        name: 'Оптовикам',
-                                                        url : '/wholesale/'
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
+                                                                                            {
+                                                                                                elem    : 'section',
+                                                                                                content : {
+                                                                                                    elem   : 'list',
+                                                                                                    content: [
+                                                                                                        {
+                                                                                                            elem    : 'item',
+                                                                                                            elemMods: { section: 'catalog' },
+                                                                                                            name    : 'Каталог',
+                                                                                                            url     : '/catalog.html'
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                elem   : 'section',
+                                                                                                content: {
+                                                                                                    elem   : 'list',
+                                                                                                    content: [
+                                                                                                        {
+                                                                                                            elem: 'item',
+                                                                                                            elemMods: { state: 'current' },
+                                                                                                            name: 'О компании',
+                                                                                                            url : '/about.html'
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem: 'item',
+                                                                                                            name: 'Отзывы',
+                                                                                                            url : '/reviews.html'
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem: 'item',
+                                                                                                            name: 'Вопрос-ответ',
+                                                                                                            url : '/faq.html'
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem: 'item',
+                                                                                                            name: 'Фотографии',
+                                                                                                            url : '/photoalbums.html'
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem: 'item',
+                                                                                                            name: 'Оптовикам',
+                                                                                                            url : '/dealers.html'
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            }
+                                                                                        ]
                                 },
                                 {
                                     block  : 'buyer-menu',
                                     content: [
-                                        {
-                                            elem: 'item',
-                                            name: 'Как купить',
-                                            url : '/howtobuy/'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Где купить',
-                                            url : '/wheretobuy/'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Доставка',
-                                            url : '/shipping/'
-                                        }
-                                    ]
+                                                                                            {
+                                                                                                elem: 'item',
+                                                                                                name: 'Как купить',
+                                                                                                url : '/how-to-buy.html'
+                                                                                            },
+                                                                                            {
+                                                                                                elem: 'item',
+                                                                                                name: 'Где купить',
+                                                                                                url : '/where-to-buy.html'
+                                                                                            },
+                                                                                            {
+                                                                                                elem: 'item',
+                                                                                                name: 'Доставка',
+                                                                                                url : '/delivery.html'
+                                                                                            }
+                                                                                        ]
                                 }
                             ]
                         },
