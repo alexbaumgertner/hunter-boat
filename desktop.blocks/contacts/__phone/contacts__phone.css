@@ -1,8 +1,10 @@
 .contacts__phone
 {
     font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .footer .contacts__phone {
-    font-size: 27px;
+    font-size: 22px;
 }

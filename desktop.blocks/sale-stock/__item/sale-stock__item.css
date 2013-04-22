@@ -19,20 +19,25 @@
     padding: 0;
 }
 
+.sale-stock__item .product-card__info {
+    margin: 25px 0 0 0;
+}
+
 .sale-stock__item .product-card .product-card__price {
-    margin: 10px 0 0 0;
+    margin: 6px 0 0 0;
 }
 
 .sale-stock__item .product-card .product-card__title {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .sale-stock__item .product-card__desc {
-    margin: 5px 0 0 0;
+    margin: 2px 0 0 0;
 }
 
 .sale-stock__item .product-card__photo {
     max-width: 195px;
+    height: 90px;
 }
 
 

@@ -1,65 +1,63 @@
 ({
-    block  : 'b-page',
+    block: 'b-page',
     mods: { page: 'index' },
-    title  : 'Title of the page',
+    title: 'Title of the page',
     favicon: '/favicon.ico',
-    head   : [
+    head: [
         { elem: 'css', url: '_index.css', ie: false },
         { elem: 'css', url: '_index', ie: true },
         { block: 'i-jquery', elem: 'core'},
-        { elem: 'js', url: '_index.js' },
-        { elem: 'meta', attrs: { name: 'description', content: '' }},
-        { elem: 'meta', attrs: { name: 'keywords', content: '' }}
+        { elem: 'js', url: '_index.js' }
     ],
     content: [
         {
-            block  : 'header',
+            block: 'header',
             mods: { page: 'index' },
             attrs: {
                 style: 'background: url("img/index-page/main-photo-1.jpg") no-repeat;'
             },
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'header',
-                            elem    : 'column',
+                            block: 'header',
+                            elem: 'column',
                             elemMods: { position: 'left' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'logo',
+                                    block: 'logo',
                                     content: 'HUNTERBOAT'
                                 }
                             ]
                         },
 
                         {
-                            block   : 'header',
-                            elem    : 'column',
+                            block: 'header',
+                            elem: 'column',
                             elemMods: { position: 'right' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'cart-info',
+                                    block: 'cart-info',
                                     content: [
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                url    : 'cart',
+                                                block: 'b-link',
+                                                url: 'cart',
                                                 content: 'В заказе:'
                                             }
                                         },
                                         {
-                                            elem   : 'info',
+                                            elem: 'info',
                                             content: [
                                                 {
-                                                    elem   : 'text',
+                                                    elem: 'text',
                                                     content: '3 товара на сумму'
                                                 },
                                                 {
-                                                    elem   : 'total-price',
+                                                    elem: 'total-price',
                                                     content: { block: 'price', mods: { currency: 'dot-dash' }, value: '95000' }
                                                 }
                                             ]
@@ -67,104 +65,103 @@
                                     ]
                                 },
                                 {
-                                    block  : 'contacts',
-                                    mods   : { color: '000000' },
+                                    block: 'contacts',
+                                    mods: { color: '000000' },
                                     content: [
                                         {
-                                            elem   : 'phone',
+                                            elem: 'phone',
                                             content: [
                                                 {
-                                                    elem   : 'phone-city-code',
+                                                    elem: 'phone-city-code',
                                                     content: '812'
                                                 },
                                                 {
-                                                    elem   : 'phone-number',
+                                                    elem: 'phone-number',
                                                     content: '320-02-60'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                mods   : { pseudo: 'yes' },
+                                                block: 'b-link',
+                                                mods: { pseudo: 'yes' },
                                                 content: 'Обратный звонок'
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    block  : 'main-menu',
+                                    block: 'main-menu',
                                     content: [
-                                                                                            {
-                                                                                                elem    : 'section',
-                                                                                                content : {
-                                                                                                    elem   : 'list',
-                                                                                                    content: [
-                                                                                                        {
-                                                                                                            elem    : 'item',
-                                                                                                            elemMods: { section: 'catalog' },
-                                                                                                            name    : 'Каталог',
-                                                                                                            url     : '/catalog.html'
-                                                                                                        }
-                                                                                                    ]
-                                                                                                }
-                                                                                            },
-                                                                                            {
-                                                                                                elem   : 'section',
-                                                                                                content: {
-                                                                                                    elem   : 'list',
-                                                                                                    content: [
-                                                                                                        {
-                                                                                                            elem: 'item',
-                                                                                                            elemMods: { state: 'current' },
-                                                                                                            name: 'О компании',
-                                                                                                            url : '/about.html'
-                                                                                                        },
-                                                                                                        {
-                                                                                                            elem: 'item',
-                                                                                                            name: 'Отзывы',
-                                                                                                            url : '/reviews.html'
-                                                                                                        },
-                                                                                                        {
-                                                                                                            elem: 'item',
-                                                                                                            name: 'Вопрос-ответ',
-                                                                                                            url : '/faq.html'
-                                                                                                        },
-                                                                                                        {
-                                                                                                            elem: 'item',
-                                                                                                            name: 'Фотографии',
-                                                                                                            url : '/photoalbums.html'
-                                                                                                        },
-                                                                                                        {
-                                                                                                            elem: 'item',
-                                                                                                            name: 'Оптовикам',
-                                                                                                            url : '/dealers.html'
-                                                                                                        }
-                                                                                                    ]
-                                                                                                }
-                                                                                            }
-                                                                                        ]
+                                        {
+                                            elem: 'section',
+                                            content: {
+                                                elem: 'list',
+                                                content: [
+                                                    {
+                                                        elem: 'item',
+                                                        elemMods: { section: 'catalog' },
+                                                        name: 'Каталог',
+                                                        url: '/catalog.html'
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            elem: 'section',
+                                            content: {
+                                                elem: 'list',
+                                                content: [
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'О компании',
+                                                        url: '/about.html'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Отзывы',
+                                                        url: '/reviews.html'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Вопрос-ответ',
+                                                        url: '/faq.html'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Фотографии',
+                                                        url: '/photoalbums.html'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Оптовикам',
+                                                        url: '/dealers.html'
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
                                 },
                                 {
-                                    block  : 'buyer-menu',
+                                    block: 'buyer-menu',
                                     content: [
-                                                                                            {
-                                                                                                elem: 'item',
-                                                                                                name: 'Как купить',
-                                                                                                url : '/how-to-buy.html'
-                                                                                            },
-                                                                                            {
-                                                                                                elem: 'item',
-                                                                                                name: 'Где купить',
-                                                                                                url : '/where-to-buy.html'
-                                                                                            },
-                                                                                            {
-                                                                                                elem: 'item',
-                                                                                                name: 'Доставка',
-                                                                                                url : '/delivery.html'
-                                                                                            }
-                                                                                        ]
+                                        {
+                                            elem: 'item',
+                                            name: 'Как купить',
+                                            url: '/how-to-buy.html'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            name: 'Где купить',
+                                            url: '/where-to-buy.html'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            name: 'Доставка',
+                                            url: '/delivery.html'
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -182,93 +179,93 @@
             ]
         },
         {
-            block  : 'content',
+            block: 'content',
             mods: { page: 'index' },
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'content',
-                            elem    : 'column',
+                            block: 'content',
+                            elem: 'column',
                             elemMods: { position: 'full' },
-                            content : [
+                            content: [
                                 {
                                     block: 'index-page',
                                     content: [
                                         {
                                             block: 'b-link',
                                             mods: { linkto: 'catalog' },
-                                            url: '/catalog/'
+                                            url: 'catalog.html'
                                         },
                                         {
-                                            block  : 'company-brief',
+                                            block: 'company-brief',
                                             content: [
                                                 {
-                                                    elem   : 'column',
+                                                    elem: 'column',
                                                     content: {
-                                                        elem   : 'work-for-you',
+                                                        elem: 'work-for-you',
                                                         content: [
                                                             {
-                                                                elem   : 'work-for-you-year',
+                                                                elem: 'work-for-you-year',
                                                                 content: '4'
                                                             },
                                                             {
-                                                                elem   : 'work-for-you-text',
+                                                                elem: 'work-for-you-text',
                                                                 content: 'года работаем для вас'
                                                             }
                                                         ]
                                                     }
                                                 },
                                                 {
-                                                    elem   : 'column',
+                                                    elem: 'column',
                                                     elemMods: { position: 'center' },
                                                     content: [
                                                         {
-                                                            elem   : 'header',
+                                                            elem: 'header',
                                                             content: 'Надувные лодки Хантер'
                                                         },
                                                         {
-                                                            elem   : 'text',
+                                                            elem: 'text',
                                                             content: '«Производственно Торговая Компания Хантер» - новая организация пришедшая на смену «Бот-Трэйдинг» в результате расширения производства и подписания дилерских договоров на поставку и продажу подвесных лодочных моторов «HDX» и всемирно известных лодочных моторов «Yamaha». '
                                                         },
                                                         {
-                                                            block   : 'b-link',
-                                                            url    : '/about/',
+                                                            block: 'b-link',
+                                                            url: '/about/',
                                                             content: 'Узнать все о нас'
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    elem   : 'column',
+                                                    elem: 'column',
                                                     attrs: { style: 'margin: 58px 0 0;' },
                                                     content: [
                                                         {
-                                                            block  : 'brands',
-                                                            mods   : { style: 'compact' },
+                                                            block: 'brands',
+                                                            mods: { style: 'compact' },
                                                             content: {
-                                                                elem   : 'list',
+                                                                elem: 'list',
                                                                 content: [
                                                                     {
-                                                                        elem   : 'item',
+                                                                        elem: 'item',
                                                                         content: {
-                                                                            elem   : 'item-header',
+                                                                            elem: 'item-header',
                                                                             content: { block: 'b-icon', alt: 'yamaha', url: 'img/content/brand-icons/yamaha-logo_small.png' }
                                                                         }
                                                                     },
                                                                     {
-                                                                        elem   : 'item',
+                                                                        elem: 'item',
                                                                         attrs: { style: 'margin: 5px 0 -5px 15px;' },
                                                                         content: {
-                                                                            elem   : 'item-header',
+                                                                            elem: 'item-header',
                                                                             content: { block: 'b-icon', alt: 'hdx', url: 'img/content/brand-icons/hdx-logo_small.png' }
                                                                         }
                                                                     },
                                                                     {
-                                                                        elem   : 'item',
+                                                                        elem: 'item',
                                                                         content: {
-                                                                            elem   : 'item-header',
+                                                                            elem: 'item-header',
                                                                             content: { block: 'b-icon', alt: 'nissamaran', url: 'img/content/brand-icons/nissamaran-logo_small.png' }
                                                                         }
                                                                     }
@@ -278,29 +275,29 @@
                                                     ]
                                                 },
                                                 {
-                                                    block  : 'all-pros',
+                                                    block: 'all-pros',
                                                     content: [
                                                         {
-                                                            elem   : 'header',
+                                                            elem: 'header',
                                                             content: 'Сплошные плюсы!'
                                                         },
                                                         {
-                                                            elem   : 'list',
+                                                            elem: 'list',
                                                             content: [
                                                                 {
-                                                                    elem   : 'item',
+                                                                    elem: 'item',
                                                                     content: 'Производство в центре Санкт-Петербурга'
                                                                 },
                                                                 {
-                                                                    elem   : 'item',
+                                                                    elem: 'item',
                                                                     content: 'Широкий ассортимент: от простых до люксовых'
                                                                 },
                                                                 {
-                                                                    elem   : 'item',
+                                                                    elem: 'item',
                                                                     content: 'Немецкая лодочная ткань HEYTEX'
                                                                 },
                                                                 {
-                                                                    elem   : 'item',
+                                                                    elem: 'item',
                                                                     content: 'Гарантия качества: сертифицированные лодки'
                                                                 }
                                                             ]
@@ -313,31 +310,31 @@
                                         { block: 'line', mods: { type: 'wavy-0081bd' } },
 
                                         {
-                                            block  : 'sale-stock',
+                                            block: 'sale-stock',
                                             content: [
                                                 {
-                                                    elem   : 'header',
+                                                    elem: 'header',
                                                     content: 'Акции'
                                                 },
                                                 {
-                                                    elem   : 'list',
+                                                    elem: 'list',
                                                     content: [
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: {
                                                                 block: 'product-card',
                                                                 oldPrice: 65400
                                                             }
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: {
                                                                 block: 'product-card',
                                                                 oldPrice: 5400
                                                             }
                                                         },
                                                         {
-                                                            elem   : 'item',
+                                                            elem: 'item',
                                                             content: {
                                                                 block: 'product-card',
                                                                 oldPrice: 15400
@@ -354,49 +351,49 @@
                                             elem: 'column',
                                             content: [
                                                 {
-                                                    block  : 'articles-tabs',
+                                                    block: 'articles-tabs',
                                                     content: [
                                                         {
-                                                            elem   : 'menu',
+                                                            elem: 'menu',
                                                             content: [
                                                                 {
-                                                                    elem   : 'menu-item',
+                                                                    elem: 'menu-item',
                                                                     elemMods: { state: 'current' },
                                                                     content: [
                                                                         {
-                                                                            elem   : 'menu-item-header',
+                                                                            elem: 'menu-item-header',
                                                                             content: 'Новости'
                                                                         },
                                                                         {
-                                                                            elem   : 'menu-item-counter',
+                                                                            elem: 'menu-item-counter',
                                                                             content: '21'
                                                                         }
                                                                     ]
                                                                 },
 
                                                                 {
-                                                                    elem   : 'menu-item',
+                                                                    elem: 'menu-item',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'menu-item-header',
+                                                                            elem: 'menu-item-header',
                                                                             content: 'Статьи'
                                                                         },
                                                                         {
-                                                                            elem   : 'menu-item-counter',
+                                                                            elem: 'menu-item-counter',
                                                                             content: '12'
                                                                         }
                                                                     ]
                                                                 },
 
                                                                 {
-                                                                    elem   : 'menu-item',
+                                                                    elem: 'menu-item',
                                                                     content: [
                                                                         {
-                                                                            elem   : 'menu-item-header',
+                                                                            elem: 'menu-item-header',
                                                                             content: 'Отзывы'
                                                                         },
                                                                         {
-                                                                            elem   : 'menu-item-counter',
+                                                                            elem: 'menu-item-counter',
                                                                             content: '105'
                                                                         }
                                                                     ]
@@ -404,7 +401,7 @@
                                                             ]
                                                         },
                                                         {
-                                                            elem   : 'tabs',
+                                                            elem: 'tabs',
                                                             content: [
                                                                 {
                                                                     elem: 'tab',
@@ -544,8 +541,8 @@
                                                         {
                                                             elem: 'link-to-all',
                                                             content: {
-                                                                block  : 'b-link',
-                                                                url    : '/news/',
+                                                                block: 'b-link',
+                                                                url: '/news/',
                                                                 content: 'Все новости'
                                                             }
                                                         }
@@ -558,24 +555,24 @@
                                             elem: 'column',
                                             content: [
                                                 {
-                                                    block  : 'photoalbum-thumb',
+                                                    block: 'photoalbum-thumb',
                                                     content: [
                                                         {
                                                             elem: 'photo'
                                                         },
                                                         {
-                                                            elem   : 'title',
+                                                            elem: 'title',
                                                             content: { block: 'b-link', url: '/', content: 'Тест драйв лодки Хантер 280 Т' }
                                                         },
                                                         {
-                                                            elem   : 'counter',
+                                                            elem: 'counter',
                                                             content: [
                                                                 {
-                                                                    elem   : 'counter-value',
+                                                                    elem: 'counter-value',
                                                                     content: '8'
                                                                 },
                                                                 {
-                                                                    elem   : 'counter-currency',
+                                                                    elem: 'counter-currency',
                                                                     content: 'фото'
                                                                 }
                                                             ]
@@ -583,11 +580,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    block  : 'b-link',
+                                                    block: 'b-link',
                                                     attrs: {
-                                                        style: 'margin: 18px 0 0 0; display: block; text-align: center; color: #0081bc;'
+                                                        style: 'margin: 18px 0 0 0; display: block; text-align: center; color: #0081bc; font-size: 14px;'
                                                     },
-                                                    url    : '/photoalbums/',
+                                                    url: '/photoalbums.html',
                                                     content: 'Фотогалерея'
                                                 }
                                             ]
@@ -602,87 +599,87 @@
             ]
         },
         {
-            block  : 'footer',
+            block: 'footer',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'left' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'contacts',
-                                    mods   : { color: 'e5e5e5' },
+                                    block: 'contacts',
+                                    mods: { color: 'e5e5e5' },
                                     content: [
                                         {
-                                            elem   : 'phone',
+                                            elem: 'phone',
                                             content: [
                                                 {
-                                                    elem   : 'phone-city-code',
+                                                    elem: 'phone-city-code',
                                                     content: '812'
                                                 },
                                                 {
-                                                    elem   : 'phone-number',
+                                                    elem: 'phone-number',
                                                     content: '320-02-60'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                mods   : { pseudo: 'yes' },
+                                                block: 'b-link',
+                                                mods: { pseudo: 'yes' },
                                                 content: 'Обратный звонок'
                                             }
                                         },
                                         {
-                                            elem   : 'address',
+                                            elem: 'address',
                                             content: 'Санкт-Петербург, ул. Профессора Качалова, 8'
                                         }
                                     ]
                                 },
                                 {
-                                    block  : 'copyright',
+                                    block: 'copyright',
                                     content: 'ООО «Производственно-торговая Компания Хантер — производство и продажа надувных лодок Хантер» '
                                 }
                             ]
                         },
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'center' },
-                            content : [
+                            content: [
                                 {
                                     block: 'search'
                                 },
                                 {
-                                    block  : 'menu',
+                                    block: 'menu',
                                     content: [
-                                                                            {
-                                                                                elem: 'item',
-                                                                                name: 'Вакансии',
-                                                                                url: '/vacancy.html'
-                                                                            },
-                                                                            {
-                                                                                elem: 'item',
-                                                                                name: 'Отзывы',
-                                                                                url: '/reviews.html'
-                                                                            }
-                                                                        ]
+                                        {
+                                            elem: 'item',
+                                            name: 'Вакансии',
+                                            url: '/vacancy.html'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            name: 'Отзывы',
+                                            url: '/reviews.html'
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'right' },
-                            content : [
+                            content: [
                                 {
-                                    block     : 'studio-idei',
-                                    mods      : { color: '909090' },
+                                    block: 'studio-idei',
+                                    mods: { color: '909090' },
                                     projectUrl: 'project-url'
                                 }
                             ]

@@ -1,0 +1,15 @@
+block box {
+    content: {
+       elem: 'left-top',
+       content: {
+           elem: 'right-top',
+           content: {
+               elem: 'right-bottom',
+               content: {
+                   elem: 'left-bottom',
+                   content: this.ctx.content
+                }
+            }
+        }
+    }
+}
