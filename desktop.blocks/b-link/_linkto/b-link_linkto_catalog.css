@@ -1,6 +1,6 @@
 .b-link_linkto_catalog
 {
-    background: url("b-link_linkto_catalog.png");
+    background: url("b-link_linkto_catalog_sprite.png") no-repeat;
     width: 155px;
     height: 60px;
     display: block;
@@ -8,4 +8,12 @@
     top: -30px;
     margin: 0 auto;
     left: -8px;
+}
+
+.b-link_linkto_catalog:hover {
+    background-position: -156px 0;
+}
+
+.b-link_linkto_catalog:active {
+    background-position: -313px 0;
 }
