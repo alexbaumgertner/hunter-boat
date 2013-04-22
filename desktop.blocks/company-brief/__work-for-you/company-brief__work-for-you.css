@@ -1,0 +1,9 @@
+.company-brief__work-for-you
+{
+    position: relative;
+    width: 96px;
+    border: 7px solid #fff;
+    height: 96px;
+    border-radius: 100%;
+    margin: 43px 0 0 0;
+}
