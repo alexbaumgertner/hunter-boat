@@ -168,7 +168,7 @@
                         {
                             block: 'header',
                             elem: 'index-title',
-                            content: 'Почувствовать природу... легко!'
+                            content: 'Почувствовать природу... <span style="padding: 0 0 0 50px;">легко!</span>'
                         },
                         {
                             block: 'products-promo-carousel',
