@@ -171,8 +171,59 @@
                             content: 'Почувствовать природу... <span style="padding: 0 0 0 50px;">легко!</span>'
                         },
                         {
-                            block: 'products-promo-carousel',
-                            mods: { style: 'compact' }
+                            block: 'index-promo-carousel',
+                            content: [
+                                {
+                                    elem: 'menu',
+                                    content: [
+                                        {
+                                            elem: 'item'
+                                        },
+                                        {
+                                            elem: 'item'
+                                        },
+                                        {
+                                            elem: 'item'
+                                        },
+                                        {
+                                            elem: 'item'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'content',
+                                    content: [
+                                        {
+                                            elem: 'title',
+                                            content: 'Надувные моторные лодки Хантер'
+                                        },
+                                        {
+                                            elem: 'text',
+                                            content: 'позволят добраться до самых заветных мест рыбалки или отдыха.'
+                                        },
+                                        {
+                                            elem: 'su-text',
+                                            content: '12 моделей'
+                                        },
+                                        {
+                                            elem: 'price',
+                                            content: [
+                                                'от',
+                                                {
+                                                    block: 'price',
+                                                    mods: { currency: 'dot-dash' },
+                                                    value: 9800
+
+                                                }
+                                            ]
+                                        },
+
+                                        {
+                                            elem: 'photo'
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

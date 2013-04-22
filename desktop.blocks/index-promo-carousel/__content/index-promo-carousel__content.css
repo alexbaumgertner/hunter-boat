@@ -1,0 +1,13 @@
+.index-promo-carousel__content
+{
+    position: absolute;
+    top: 110px;
+    left: 488px;
+    width: 345px;
+    background: #f2f2f2;
+    height: 345px;
+    border-radius: 100%;
+    padding: 45px 0 0 68px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
