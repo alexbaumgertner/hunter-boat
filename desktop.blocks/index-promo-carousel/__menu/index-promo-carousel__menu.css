@@ -1,3 +1,7 @@
 .index-promo-carousel__menu
 {
+    position: absolute;
+    top: 435px;
+    width: 100%;
+    left: 160px;
 }

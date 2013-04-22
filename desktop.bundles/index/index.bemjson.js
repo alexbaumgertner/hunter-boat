@@ -177,16 +177,17 @@
                                     elem: 'menu',
                                     content: [
                                         {
-                                            elem: 'item'
+                                            elem: 'menu-item'
                                         },
                                         {
-                                            elem: 'item'
+                                            elem: 'menu-item',
+                                            elemMods: { state: 'current' }
                                         },
                                         {
-                                            elem: 'item'
+                                            elem: 'menu-item'
                                         },
                                         {
-                                            elem: 'item'
+                                            elem: 'menu-item'
                                         }
                                     ]
                                 },
@@ -199,7 +200,7 @@
                                         },
                                         {
                                             elem: 'text',
-                                            content: 'позволят добраться до самых заветных мест рыбалки или отдыха.'
+                                            content: 'позволят добраться <br> до самых заветных мест рыбалки или отдыха.'
                                         },
                                         {
                                             elem: 'sub-text',

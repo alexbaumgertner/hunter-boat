@@ -1,3 +1,6 @@
 .index-promo-carousel__photo
 {
+    position: absolute;
+    right: -60px;
+    bottom: -20px;
 }
