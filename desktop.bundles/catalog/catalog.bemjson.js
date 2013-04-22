@@ -230,7 +230,7 @@
                                                                 { elem: 'price-old', content: '41000' },
                                                                 { elem: 'price-new', content: {
                                                                     block: 'price',
-                                                                    mods: { currency: 'RUB'},
+                                                                    mods: { currency: 'dot-dash'},
                                                                     value: '39900'  }
                                                                 }
                                                             ]
@@ -490,7 +490,7 @@
                                                             content: [
                                                                 {
                                                                     elem: 'menu-item-title',
-                                                                    content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Новинки' }
+                                                                    content: 'Новинки'
                                                                 },
                                                                 {
                                                                     elem: 'menu-item-counter',
@@ -504,7 +504,7 @@
                                                             content: [
                                                                 {
                                                                     elem: 'menu-item-title',
-                                                                    content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Популярное' }
+                                                                    content: 'Популярное'
                                                                 },
                                                                 {
                                                                     elem: 'menu-item-counter',
@@ -518,7 +518,7 @@
                                                             content: [
                                                                 {
                                                                     elem: 'menu-item-title',
-                                                                    content: { block: 'b-link', mods: { pseudo: 'yes' }, content: 'Рекомендуемое' }
+                                                                    content: 'Рекомендуемое'
                                                                 },
                                                                 {
                                                                     elem: 'menu-item-counter',

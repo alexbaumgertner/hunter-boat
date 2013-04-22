@@ -1,6 +1,9 @@
 .catalog-index-page__menu-item-counter
 {
-    font-size: 12px;
-    margin: 0 0 0 3px;
+    display: inline-block;
+    font-size: 11px;
     vertical-align: super;
+    margin: 0 0 0 4px;
+    position: relative;
+    top: -8px;
 }
