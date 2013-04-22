@@ -7,6 +7,8 @@
 
 .popularity-graph__section:last-child {
     margin-right: 0;
+    position: relative;
+    left: -8px;
 }
 
 .popularity-graph__section .b-link {

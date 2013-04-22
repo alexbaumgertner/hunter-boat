@@ -371,7 +371,6 @@
                                                                             elem: 'section-title',
                                                                             content: {
                                                                                 elem: 'section-header',
-                                                                                attrs: { style: 'margin: 15px 0 15px 0;' },
                                                                                 content: 'Где мы находимся'
                                                                             }
                                                                         },
@@ -412,7 +411,7 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'right' },
-                                                            attrs: { style: 'width: 375px; margin: 0;' },
+                                                            attrs: { style: 'width: 295px; margin: 0;' },
                                                             content: [
                                                                 {
                                                                     elem: 'section-title',

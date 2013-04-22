@@ -16,4 +16,5 @@
 
 .buyer-menu .b-link:hover {
     color: #0081bc;
+    border-bottom: 1px solid #0081bc;
 }
