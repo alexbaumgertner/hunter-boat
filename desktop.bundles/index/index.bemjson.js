@@ -235,7 +235,7 @@
                                                             content: [
                                                                 {
                                                                     block: 'b-link',
-                                                                    url: '/about/',
+                                                                    url: '/about.html',
                                                                     content: 'Узнать все о нас'
                                                                 }
                                                             ]
