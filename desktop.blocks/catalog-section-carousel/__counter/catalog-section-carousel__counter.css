@@ -1,6 +1,9 @@
 .catalog-section-carousel__counter
 {
-    vertical-align: super;
+    display: inline-block;
     font-size: 12px;
+    vertical-align: super;
     margin: 0 0 0 4px;
+    position: relative;
+    top: -8px;
 }
