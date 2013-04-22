@@ -581,9 +581,7 @@
                                                 },
                                                 {
                                                     block: 'b-link',
-                                                    attrs: {
-                                                        style: 'margin: 18px 0 0 0; display: block; text-align: center; color: #0081bc; font-size: 14px;'
-                                                    },
+                                                    mods: { 'linkto': 'photoalbums' },
                                                     url: '/photoalbums.html',
                                                     content: 'Фотогалерея'
                                                 }
