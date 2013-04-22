@@ -7,6 +7,6 @@
 }
 
 
-.article__link .b-link {
-
+.article__link .b-link:hover {
+    color: #00aefe;
 }

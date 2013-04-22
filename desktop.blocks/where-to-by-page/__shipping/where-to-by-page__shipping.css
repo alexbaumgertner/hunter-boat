@@ -20,3 +20,7 @@
     line-height: 16px;
     color: #0081bc;
 }
+
+.where-to-by-page__shipping .b-link:hover {
+    color: #00aefe;
+}

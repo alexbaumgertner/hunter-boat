@@ -9,3 +9,7 @@
 .article-anounce__title .b-link {
     color: #0081bc;
 }
+
+.article-anounce__title .b-link:hover {
+    color: #00aefe;
+}

@@ -23,4 +23,5 @@
 
 .main-menu__item_section_catalog .b-link:active {
     background-position: 0 -70px;
+    box-shadow: inset 1px 5px 10px rgba(93, 158, 190, 0.8);
 }

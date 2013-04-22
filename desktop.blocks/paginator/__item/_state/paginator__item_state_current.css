@@ -7,3 +7,7 @@
     margin-top: -8px;
     margin-left: -4px;
 }
+
+.paginator__item_state_current:hover {
+    color: #00aefe;
+}

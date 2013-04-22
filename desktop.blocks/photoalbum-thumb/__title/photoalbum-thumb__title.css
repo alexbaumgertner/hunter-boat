@@ -8,6 +8,10 @@
     font-weight: bold;
 }
 
+.photoalbum-thumb__title:hover {
+    color: #00aefe;
+}
+
 .photoalbum-thumb__title .b-link {
 
 }

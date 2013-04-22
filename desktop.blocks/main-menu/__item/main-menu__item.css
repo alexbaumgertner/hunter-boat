@@ -33,6 +33,7 @@
 
 .main-menu__item .b-link:active {
     background-position: 0 -70px;
+    box-shadow: inset 1px 5px 10px rgba(119, 119, 119, 0.58);
 }
 
 .main-menu__item_state_current {

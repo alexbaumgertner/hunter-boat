@@ -7,3 +7,7 @@
     line-height: 17px;
     margin: 0 20px 0 0;
 }
+
+.paginator__item:hover {
+    color: #00aefe;
+}

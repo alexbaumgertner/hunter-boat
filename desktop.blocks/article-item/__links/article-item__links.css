@@ -5,3 +5,7 @@
     color: #0081bc;
     position: relative;
 }
+
+.article-item__links:hover {
+    color: #00aefe;
+}

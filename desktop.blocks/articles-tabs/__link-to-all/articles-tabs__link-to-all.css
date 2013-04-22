@@ -4,3 +4,7 @@
     margin: 0 0 0 70px;
     font-size: 14px;
 }
+
+.articles-tabs__link-to-all:hover {
+    color: #00aefe;
+}

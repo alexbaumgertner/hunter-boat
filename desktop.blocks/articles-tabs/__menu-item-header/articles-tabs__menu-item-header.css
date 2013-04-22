@@ -3,4 +3,6 @@
     font-size: 22px;
     text-transform: uppercase;
     display: inline-block;
+    border-bottom: 1px dashed;
+    line-height: 22px;
 }

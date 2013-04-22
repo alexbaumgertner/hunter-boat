@@ -7,6 +7,6 @@
     margin: 7px 0 12px 0;
 }
 
-.article__title .b-link {
-
+.article__title .b-link:hover {
+    color: #00aefe;
 }

@@ -3,7 +3,11 @@
     background: #f0faff;
     border: 1px solid #43a2ce;
     border-radius: 8px;
-    padding: 7px 5px 5px 14px;
+    padding: 6px 4px 4px 13px;
     color: #000000;
     cursor: default;
+}
+
+.articles-tabs__menu-item_state_current .articles-tabs__menu-item-header {
+    border-bottom: none;
 }
