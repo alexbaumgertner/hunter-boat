@@ -1,0 +1,16 @@
+block index-promo-carousel {
+
+    elem title {
+
+        mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+    }
+
+    elem 'photo' {
+        tag: 'img',
+        attrs: {
+            src: this.ctx.url,
+            alt: ''
+        }
+    }
+
+}

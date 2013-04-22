@@ -202,7 +202,7 @@
                                             content: 'позволят добраться до самых заветных мест рыбалки или отдыха.'
                                         },
                                         {
-                                            elem: 'su-text',
+                                            elem: 'sub-text',
                                             content: '12 моделей'
                                         },
                                         {
@@ -219,7 +219,8 @@
                                         },
 
                                         {
-                                            elem: 'photo'
+                                            elem: 'photo',
+                                            url: 'img/index-page/carousel_1.png'
                                         }
                                     ]
                                 }
