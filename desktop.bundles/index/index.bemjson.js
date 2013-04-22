@@ -196,11 +196,11 @@
                                     content: [
                                         {
                                             elem: 'title',
-                                            content: 'Надувные моторные лодки Хантер'
+                                            content: { block: 'b-link', url: '/', content: 'Надувные моторные лодки Хантер' }
                                         },
                                         {
                                             elem: 'text',
-                                            content: 'позволят добраться <br> до самых заветных мест рыбалки или отдыха.'
+                                            content: { elem: 'text-inner',  content: 'позволят добраться <br> до самых заветных мест рыбалки или отдыха.' }
                                         },
                                         {
                                             elem: 'sub-text',

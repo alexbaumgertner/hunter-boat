@@ -13,4 +13,6 @@ block index-promo-carousel {
         }
     }
 
+    elem text-inner, tag: 'span'
+
 }
