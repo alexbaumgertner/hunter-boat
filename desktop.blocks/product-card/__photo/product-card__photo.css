@@ -1,5 +1,7 @@
 .product-card__photo
 {
+    max-width: 195px;
+    height: 90px;
     display: block;
     margin-left: auto;
     margin-right: auto ;
@@ -8,5 +10,5 @@
 .product-card_type_withFullDesc .product-card__photo {
     display: inline-block;
     vertical-align: top;
-    margin: 0 40px 0 0;
+    margin: 20px 40px 0 0;
 }

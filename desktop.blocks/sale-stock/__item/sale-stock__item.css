@@ -19,27 +19,6 @@
     padding: 0;
 }
 
-.sale-stock__item .product-card__info {
-    margin: 25px 0 0 0;
-}
-
-.sale-stock__item .product-card .product-card__price {
-    margin: 6px 0 0 0;
-}
-
-.sale-stock__item .product-card .product-card__title {
-    font-size: 16px;
-}
-
-.sale-stock__item .product-card__desc {
-    margin: 2px 0 0 0;
-}
-
-.sale-stock__item .product-card__photo {
-    max-width: 195px;
-    height: 90px;
-}
-
 
 .sale-stock__item .product-card .price {
     display: block;

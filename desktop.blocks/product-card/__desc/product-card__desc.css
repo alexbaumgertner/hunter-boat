@@ -3,14 +3,15 @@
     font-size: 11px;
     font-style: italic;
     color: #767676;
-    margin: 10px 0 0 0;
+    margin: 2px 0 0 0;
 }
 
 .product-card_type_withFullDesc .product-card__desc {
     font-style: normal;
     color: #000000;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
     font-size: 13px;
+    line-height: 17px;
 }
 
 .product-card_type_withoutDesc .product-card__desc {

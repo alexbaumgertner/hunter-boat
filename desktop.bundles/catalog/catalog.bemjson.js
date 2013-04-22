@@ -657,7 +657,7 @@
                                                                                                         elem: 'price',
                                                                                                         content: {
                                                                                                             block: 'price',
-                                                                                                            mods: { currency: 'RUB' },
+                                                                                                            mods: { currency: 'dot-dash' },
                                                                                                             value: 66500
                                                                                                         }
                                                                                                     }

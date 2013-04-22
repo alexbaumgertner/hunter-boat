@@ -2,7 +2,7 @@
 {
     display: inline-block;
     vertical-align: top;
-    margin: 10px 0 0 0;
+    margin: 25px 0 0 0;
 }
 
 
@@ -10,4 +10,6 @@
 {
     width: 345px;
     margin-top: 0;
+    white-space: normal;
+    margin-left: 30px;
 }
