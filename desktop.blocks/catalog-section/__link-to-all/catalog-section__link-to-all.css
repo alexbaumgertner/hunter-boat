@@ -1,0 +1,12 @@
+.catalog-section__link-to-all
+{
+    width: 115px;
+    border: 1px solid #0095da;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 12px 15px;
+    background: #f0faff;
+    margin: 32px 0 0 36px;
+    border-radius: 8px;
+}

@@ -222,7 +222,7 @@
                                                     content: [
                                                         {
                                                             elem: 'header',
-                                                            content: 'Надувная лодка Хантер 360'
+                                                            content: 'Надувная лодка Хантер <em>360</em>'
                                                         },
                                                         {
                                                             elem: 'price',
@@ -570,11 +570,15 @@
                                                                         {
                                                                             elem: 'item',
                                                                             content: {
-                                                                                block: 'b-link',
-                                                                                mods: { pseudo: 'yes' },
-                                                                                url: '/catalog/news',
-                                                                                content: 'Показать все новинки'
+                                                                                elem: 'link-to-all',
+                                                                                content: {
+                                                                                    block: 'b-link',
+                                                                                    mods: { pseudo: 'yes' },
+                                                                                    url: '/catalog/news',
+                                                                                    content: 'Показать все новинки'
+                                                                                }
                                                                             }
+
                                                                         }
                                                                     ]
                                                                 }

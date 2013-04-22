@@ -7,3 +7,9 @@
     top: 33px;
     left: 119px;
 }
+
+.products-promo-carousel__header em {
+    font-style: normal;
+    font-size: 140%;
+    vertical-align: middle;
+}
