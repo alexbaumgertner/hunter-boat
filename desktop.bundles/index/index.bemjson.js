@@ -178,7 +178,7 @@
                             mods: { style: 'compact' }
                         }
                     ]
-                },
+                }
             ]
         },
         {
@@ -551,7 +551,7 @@
                                                         }
 
                                                     ]
-                                                },
+                                                }
                                             ]
                                         },
                                         {
@@ -661,17 +661,17 @@
                                 {
                                     block  : 'menu',
                                     content: [
-                                        {
-                                            elem: 'item',
-                                            name: 'Вакансии',
-                                            url : '/vacancies/'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Отзывы',
-                                            url : '/feedback/'
-                                        }
-                                    ]
+                                                                            {
+                                                                                elem: 'item',
+                                                                                name: 'Вакансии',
+                                                                                url: '/vacancy.html'
+                                                                            },
+                                                                            {
+                                                                                elem: 'item',
+                                                                                name: 'Отзывы',
+                                                                                url: '/reviews.html'
+                                                                            }
+                                                                        ]
                                 }
                             ]
                         },

@@ -1,202 +1,199 @@
 ({
-    block  : 'b-page',
-    title  : 'news',
-    head   : [
+    block: 'b-page',
+    title: 'news',
+    head: [
         { elem: 'css', url: '_news.css', ie: false},
         { elem: 'css', url: '_news', ie: true },
-        /*{ block: 'i-jquery', elem: 'core'},*/
-        { elem: 'js', url: 'jquery-1.7.2.js'},
-        { elem: 'js', url: '_news.js'},
+        { block: 'i-jquery', elem: 'core'},
+        { elem: 'js', url: '_news.js'}
     ],
     content: [
         {
-            block  : 'header',
+            block: 'header',
             content: [
                 {
-                                                    block  : 'wrapper-fix-width',
-                                                    mods   : { width: '982' },
-                                                    content: [
-                                                        {
-                                                            block   : 'header',
-                                                            elem    : 'column',
-                                                            elemMods: { position: 'left' },
-                                                            content : [
-                                                                {
-                                                                    block  : 'logo',
-                                                                    content: 'HUNTERBOAT'
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            block   : 'header',
-                                                            elem    : 'column',
-                                                            elemMods: { position: 'right' },
-                                                            content : [
-                                                                {
-                                                                    block  : 'cart-info',
-                                                                    content: [
-                                                                        {
-                                                                            elem   : 'link',
-                                                                            content: {
-                                                                                block  : 'b-link',
-                                                                                url    : '/order.html',
-                                                                                content: 'В заказе:'
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            elem   : 'info',
-                                                                            content: [
-                                                                                {
-                                                                                    elem   : 'text',
-                                                                                    content: '3 товара на сумму'
-                                                                                },
-                                                                                {
-                                                                                    elem   : 'total-price',
-                                                                                    content: { block: 'price', mods: { currency: 'dot-dash' }, value: '95000' }
-                                                                                }
-                                                                            ]
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    block  : 'contacts',
-                                                                    mods   : { color: '000000' },
-                                                                    content: [
-                                                                        {
-                                                                            elem   : 'phone',
-                                                                            content: [
-                                                                                {
-                                                                                    elem   : 'phone-city-code',
-                                                                                    content: '812'
-                                                                                },
-                                                                                {
-                                                                                    elem   : 'phone-number',
-                                                                                    content: '320-02-60'
-                                                                                }
-                                                                            ]
-                                                                        },
-                                                                        {
-                                                                            elem   : 'link',
-                                                                            content: {
-                                                                                block  : 'b-link',
-                                                                                mods   : { pseudo: 'yes' },
-                                                                                content: 'Обратный звонок'
-                                                                            }
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    block  : 'main-menu',
-                                                                    content: [
-                                                                        {
-                                                                            elem    : 'section',
-                                                                            content : {
-                                                                                elem   : 'list',
-                                                                                content: [
-                                                                                    {
-                                                                                        elem    : 'item',
-                                                                                        elemMods: { section: 'catalog' },
-                                                                                        name    : 'Каталог',
-                                                                                        url     : '/catalog.html'
-                                                                                    }
-                                                                                ]
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            elem   : 'section',
-                                                                            content: {
-                                                                                elem   : 'list',
-                                                                                content: [
-                                                                                    {
-                                                                                        elem: 'item',
-
-                                                                                        name: 'О компании',
-                                                                                        url : '/about.html'
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        name: 'Отзывы',
-                                                                                        url : '/reviews.html'
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        name: 'Вопрос-ответ',
-                                                                                        url : '/faq.html'
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        name: 'Фотографии',
-                                                                                        url : '/photoalbums.html'
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        name: 'Оптовикам',
-                                                                                        url : '/dealers.html'
-                                                                                    }
-                                                                                ]
-                                                                            }
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    block  : 'buyer-menu',
-                                                                    content: [
-                                                                        {
-                                                                            elem: 'item',
-                                                                            name: 'Как купить',
-                                                                            url : '/how-to-buy.html'
-                                                                        },
-                                                                        {
-                                                                            elem: 'item',
-                                                                            name: 'Где купить',
-                                                                            url : '/where-to-buy.html'
-                                                                        },
-                                                                        {
-                                                                            elem: 'item',
-                                                                            name: 'Доставка',
-                                                                            url : '/delivery.html'
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            ]
-                                                        },
-                                                    ]
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
+                    content: [
+                        {
+                            block: 'header',
+                            elem: 'column',
+                            elemMods: { position: 'left' },
+                            content: [
+                                {
+                                    block: 'logo',
+                                    content: 'HUNTERBOAT'
+                                }
+                            ]
+                        },
+                        {
+                            block: 'header',
+                            elem: 'column',
+                            elemMods: { position: 'right' },
+                            content: [
+                                {
+                                    block: 'cart-info',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            content: {
+                                                block: 'b-link',
+                                                url: '/order.html',
+                                                content: 'В заказе:'
+                                            }
+                                        },
+                                        {
+                                            elem: 'info',
+                                            content: [
+                                                {
+                                                    elem: 'text',
+                                                    content: '3 товара на сумму'
+                                                },
+                                                {
+                                                    elem: 'total-price',
+                                                    content: { block: 'price', mods: { currency: 'dot-dash' }, value: '95000' }
                                                 }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'contacts',
+                                    mods: { color: '000000' },
+                                    content: [
+                                        {
+                                            elem: 'phone',
+                                            content: [
+                                                {
+                                                    elem: 'phone-city-code',
+                                                    content: '812'
+                                                },
+                                                {
+                                                    elem: 'phone-number',
+                                                    content: '320-02-60'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'link',
+                                            content: {
+                                                block: 'b-link',
+                                                mods: { pseudo: 'yes' },
+                                                content: 'Обратный звонок'
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'main-menu',
+                                    content: [
+                                        {
+                                            elem: 'section',
+                                            content: {
+                                                elem: 'list',
+                                                content: [
+                                                    {
+                                                        elem: 'item',
+                                                        elemMods: { section: 'catalog' },
+                                                        name: 'Каталог',
+                                                        url: '/catalog.html'
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            elem: 'section',
+                                            content: {
+                                                elem: 'list',
+                                                content: [
+                                                    {
+                                                        elem: 'item',
+
+                                                        name: 'О компании',
+                                                        url: '/about.html'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Отзывы',
+                                                        url: '/reviews.html'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Вопрос-ответ',
+                                                        url: '/faq.html'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Фотографии',
+                                                        url: '/photoalbums.html'
+                                                    },
+                                                    {
+                                                        elem: 'item',
+                                                        name: 'Оптовикам',
+                                                        url: '/dealers.html'
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'buyer-menu',
+                                    content: [
+                                        {
+                                            elem: 'item',
+                                            name: 'Как купить',
+                                            url: '/how-to-buy.html'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            name: 'Где купить',
+                                            url: '/where-to-buy.html'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            name: 'Доставка',
+                                            url: '/delivery.html'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
-            block  : 'content',
+            block: 'content',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'content',
-                            elem    : 'column',
+                            block: 'content',
+                            elem: 'column',
                             elemMods: { position: 'full' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'articles',
-                                    mods   : { section: 'news' },
+                                    block: 'articles',
+                                    mods: { section: 'news' },
                                     content: [
                                         {
-                                            elem   : 'header',
-                                            mix    : [
+                                            elem: 'header',
+                                            mix: [
                                                 { block: 'text-mask', image: 'template/mask/'}
                                             ],
                                             content: 'Новости'
                                         },
                                         {
-                                            elem   : 'list',
+                                            elem: 'list',
                                             content: (function () {
                                                 var items = [];
 
                                                 var photos = [
-                                                    '/repair-boat-707/1_small.jpg',
-                                                    '/test-drive-101/1_small.jpg',
-                                                    '/fix-and-replay/1_small.jpg',
-                                                    '/super-tent-1/1_small.jpg',
+                                                    '/repair-boat-707/1_small.jpg', '/test-drive-101/1_small.jpg',
+                                                    '/fix-and-replay/1_small.jpg', '/super-tent-1/1_small.jpg',
                                                     '/develop-505/1_small.jpg'
                                                 ];
 
@@ -221,45 +218,45 @@
                                                 for (var i = 0; i < 7; i++) {
 
                                                     items.push({
-                                                            elem: 'item',
-                                                            content: {
-                                                                block  : 'article',
-                                                                content: [
-                                                                    {
-                                                                        elem    : 'column',
-                                                                        elemMods: { position: 'left' },
-                                                                        content : [
-                                                                            {
-                                                                                elem: 'photo',
-                                                                                src : 'img/news' + photos[(Math.floor(Math.random() * photos.length))]
-                                                                            }
-                                                                        ]
-                                                                    },
-                                                                    {
-                                                                        elem    : 'column',
-                                                                        elemMods: { position: 'right' },
-                                                                        content : [
-                                                                            {
-                                                                                elem   : 'date',
-                                                                                content: '28 марта 2011'
-                                                                            },
-                                                                            {
-                                                                                elem   : 'title',
-                                                                                content: { block: 'b-link', url: '', content: titles[(Math.floor(Math.random() * titles.length))] }
+                                                        elem: 'item',
+                                                        content: {
+                                                            block: 'article',
+                                                            content: [
+                                                                {
+                                                                    elem: 'column',
+                                                                    elemMods: { position: 'left' },
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'photo',
+                                                                            src: 'img/news' + photos[(Math.floor(Math.random() * photos.length))]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'column',
+                                                                    elemMods: { position: 'right' },
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'date',
+                                                                            content: '28 марта 2011'
+                                                                        },
+                                                                        {
+                                                                            elem: 'title',
+                                                                            content: { block: 'b-link', url: '', content: titles[(Math.floor(Math.random() * titles.length))] }
 
-                                                                            },
-                                                                            {
-                                                                                elem   : 'content',
-                                                                                content: contents[(Math.floor(Math.random() * contents.length))]
-                                                                            },
-                                                                            {
-                                                                                elem   : 'link',
-                                                                                content: { block: 'b-link', url: '', content: 'Подробно' }
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                ]
-                                                            }
+                                                                        },
+                                                                        {
+                                                                            elem: 'content',
+                                                                            content: contents[(Math.floor(Math.random() * contents.length))]
+                                                                        },
+                                                                        {
+                                                                            elem: 'link',
+                                                                            content: { block: 'b-link', url: '', content: 'Подробно' }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
                                                     });
                                                 }
 
@@ -267,16 +264,16 @@
 
                                                 return items;
 
-                                            }()),
+                                            }())
                                         },
                                         {
-                                            elem   : 'paginator',
+                                            elem: 'paginator',
                                             content: {
-                                                block         : 'paginator',
-                                                itemsTotal    : 15,
+                                                block: 'paginator',
+                                                itemsTotal: 15,
                                                 itemsUrlPrefix: '/articles/',
-                                                itemsVisible  : 4,
-                                                itemCurr      : 2
+                                                itemsVisible: 4,
+                                                itemCurr: 2
                                             }
                                         }
                                     ]
@@ -290,87 +287,87 @@
             ]
         },
         {
-            block  : 'footer',
+            block: 'footer',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'left' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'contacts',
-                                    mods   : { color: 'e5e5e5' },
+                                    block: 'contacts',
+                                    mods: { color: 'e5e5e5' },
                                     content: [
                                         {
-                                            elem   : 'phone',
+                                            elem: 'phone',
                                             content: [
                                                 {
-                                                    elem   : 'phone-city-code',
+                                                    elem: 'phone-city-code',
                                                     content: '812'
                                                 },
                                                 {
-                                                    elem   : 'phone-number',
+                                                    elem: 'phone-number',
                                                     content: '320-02-60'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                mods   : { pseudo: 'yes' },
+                                                block: 'b-link',
+                                                mods: { pseudo: 'yes' },
                                                 content: 'Обратный звонок'
                                             }
                                         },
                                         {
-                                            elem   : 'address',
+                                            elem: 'address',
                                             content: 'Санкт-Петербург, ул. Профессора Качалова, 8'
                                         }
                                     ]
                                 },
                                 {
-                                    block  : 'copyright',
+                                    block: 'copyright',
                                     content: 'ООО «Производственно-торговая Компания Хантер — производство и продажа надувных лодок Хантер» '
                                 }
                             ]
                         },
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'center' },
-                            content : [
+                            content: [
                                 {
                                     block: 'search'
                                 },
                                 {
-                                    block  : 'menu',
+                                    block: 'menu',
                                     content: [
-                                        {
-                                            elem: 'item',
-                                            name: 'Вакансии',
-                                            url : '/vacancies/'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            name: 'Отзывы',
-                                            url : '/feedback/'
-                                        }
-                                    ]
+                                                                            {
+                                                                                elem: 'item',
+                                                                                name: 'Вакансии',
+                                                                                url: '/vacancy.html'
+                                                                            },
+                                                                            {
+                                                                                elem: 'item',
+                                                                                name: 'Отзывы',
+                                                                                url: '/reviews.html'
+                                                                            }
+                                                                        ]
                                 }
                             ]
                         },
                         {
-                            block   : 'footer',
-                            elem    : 'column',
+                            block: 'footer',
+                            elem: 'column',
                             elemMods: { position: 'right' },
-                            content : [
+                            content: [
                                 {
-                                    block     : 'studio-idei',
-                                    mods      : { color: '909090' },
+                                    block: 'studio-idei',
+                                    mods: { color: '909090' },
                                     projectUrl: 'project-url'
                                 }
                             ]

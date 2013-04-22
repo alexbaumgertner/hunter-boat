@@ -4,8 +4,7 @@
     head   : [
         { elem: 'css', url: '_articlesone.css', ie: false},
         { elem: 'css', url: '_articlesone', ie: true },
-        /*{ block: 'i-jquery', elem: 'core'},*/
-        { elem: 'js', url: 'jquery-1.7.2.js'},
+        { block: 'i-jquery', elem: 'core'},
         { elem: 'js', url: '_articlesone.js'},
     ],
     content: [
@@ -455,12 +454,12 @@
                                         {
                                             elem: 'item',
                                             name: 'Вакансии',
-                                            url : '/vacancies/'
+                                            url: '/vacancy.html'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Отзывы',
-                                            url : '/feedback/'
+                                            url: '/reviews.html'
                                         }
                                     ]
                                 }

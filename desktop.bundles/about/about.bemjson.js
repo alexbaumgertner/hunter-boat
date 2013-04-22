@@ -734,12 +734,12 @@
                                         {
                                             elem: 'item',
                                             name: 'Вакансии',
-                                            url: '/vacancies/'
+                                            url: '/vacancy.html'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Отзывы',
-                                            url: '/feedback/'
+                                            url: '/reviews.html'
                                         }
                                     ]
                                 }

@@ -1,7 +1,7 @@
 ({
-    block  : 'b-page',
-    title  : '404',
-    head   : [
+    block: 'b-page',
+    title: '404',
+    head: [
         { elem: 'css', url: '_404.css', ie: false},
         { elem: 'css', url: '_404', ie: true },
         { block: 'i-jquery', elem: 'core'},
@@ -9,48 +9,48 @@
     ],
     content: [
         {
-            block  : 'header',
+            block: 'header',
             content: [
                 {
-                    block  : 'wrapper-fix-width',
-                    mods   : { width: '982' },
+                    block: 'wrapper-fix-width',
+                    mods: { width: '982' },
                     content: [
                         {
-                            block   : 'header',
-                            elem    : 'column',
+                            block: 'header',
+                            elem: 'column',
                             elemMods: { position: 'left' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'logo',
+                                    block: 'logo',
                                     content: 'HUNTERBOAT'
                                 }
                             ]
                         },
                         {
-                            block   : 'header',
-                            elem    : 'column',
+                            block: 'header',
+                            elem: 'column',
                             elemMods: { position: 'right' },
-                            content : [
+                            content: [
                                 {
-                                    block  : 'cart-info',
+                                    block: 'cart-info',
                                     content: [
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                url    : '/order.html',
+                                                block: 'b-link',
+                                                url: '/order.html',
                                                 content: 'В заказе:'
                                             }
                                         },
                                         {
-                                            elem   : 'info',
+                                            elem: 'info',
                                             content: [
                                                 {
-                                                    elem   : 'text',
+                                                    elem: 'text',
                                                     content: '3 товара на сумму'
                                                 },
                                                 {
-                                                    elem   : 'total-price',
+                                                    elem: 'total-price',
                                                     content: { block: 'price', mods: { currency: 'dot-dash' }, value: '95000' }
                                                 }
                                             ]
@@ -58,78 +58,78 @@
                                     ]
                                 },
                                 {
-                                    block  : 'contacts',
-                                    mods   : { color: '000000' },
+                                    block: 'contacts',
+                                    mods: { color: '000000' },
                                     content: [
                                         {
-                                            elem   : 'phone',
+                                            elem: 'phone',
                                             content: [
                                                 {
-                                                    elem   : 'phone-city-code',
+                                                    elem: 'phone-city-code',
                                                     content: '812'
                                                 },
                                                 {
-                                                    elem   : 'phone-number',
+                                                    elem: 'phone-number',
                                                     content: '320-02-60'
                                                 }
                                             ]
                                         },
                                         {
-                                            elem   : 'link',
+                                            elem: 'link',
                                             content: {
-                                                block  : 'b-link',
-                                                mods   : { pseudo: 'yes' },
+                                                block: 'b-link',
+                                                mods: { pseudo: 'yes' },
                                                 content: 'Обратный звонок'
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    block  : 'main-menu',
+                                    block: 'main-menu',
                                     content: [
                                         {
-                                            elem    : 'section',
-                                            content : {
-                                                elem   : 'list',
+                                            elem: 'section',
+                                            content: {
+                                                elem: 'list',
                                                 content: [
                                                     {
-                                                        elem    : 'item',
+                                                        elem: 'item',
                                                         elemMods: { section: 'catalog' },
-                                                        name    : 'Каталог',
-                                                        url     : '/catalog.html'
+                                                        name: 'Каталог',
+                                                        url: '/catalog.html'
                                                     }
                                                 ]
                                             }
                                         },
                                         {
-                                            elem   : 'section',
+                                            elem: 'section',
                                             content: {
-                                                elem   : 'list',
+                                                elem: 'list',
                                                 content: [
                                                     {
                                                         elem: 'item',
                                                         name: 'О компании',
-                                                        url : '/about.html'
+                                                        url: '/about.html'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Отзывы',
-                                                        url : '/reviews.html'
+                                                        url: '/reviews.html'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Вопрос-ответ',
-                                                        url : '/faq.html'
+                                                        url: '/faq.html'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Фотографии',
-                                                        url : '/photoalbums.html'
+                                                        url: '/photoalbums.html'
                                                     },
                                                     {
                                                         elem: 'item',
                                                         name: 'Оптовикам',
-                                                        url : '/dealers.html'
+                                                        url: '/dealers.html'
                                                     }
                                                 ]
                                             }
@@ -137,22 +137,22 @@
                                     ]
                                 },
                                 {
-                                    block  : 'buyer-menu',
+                                    block: 'buyer-menu',
                                     content: [
                                         {
                                             elem: 'item',
                                             name: 'Как купить',
-                                            url : '/how-to-buy.html'
+                                            url: '/how-to-buy.html'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Где купить',
-                                            url : '/where-to-buy.html'
+                                            url: '/where-to-buy.html'
                                         },
                                         {
                                             elem: 'item',
                                             name: 'Доставка',
-                                            url : '/delivery.html'
+                                            url: '/delivery.html'
                                         }
                                     ]
                                 }
