@@ -9,3 +9,6 @@
     margin-right: 0;
 }
 
+.catalog-section-carousel__item .product-card {
+    width: 215px;
+}

@@ -698,6 +698,9 @@
                                                                 {
                                                                     block: 'catalog-section-carousel',
                                                                     elem: 'list',
+                                                                    attrs: {
+                                                                        style: 'margin: 60px 0 0 0;'
+                                                                    },
                                                                     mix: [
                                                                         {block: 'carousel', elem: 'items'}
                                                                     ],
