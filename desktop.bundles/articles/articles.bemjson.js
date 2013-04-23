@@ -13,7 +13,7 @@
             content: [
                 {
                     block: 'wrapper-fix-width',
-                    mods: { width: '982' },
+                    mods: { width: '962' },
                     content: [
                         {
                             block: 'header',
@@ -167,7 +167,7 @@
             content: [
                 {
                     block: 'wrapper-fix-width',
-                    mods: { width: '982' },
+                    mods: { width: '962' },
                     content: [
                         {
                             block: 'content',
@@ -288,7 +288,7 @@
             content: [
                 {
                     block: 'wrapper-fix-width',
-                    mods: { width: '982' },
+                    mods: { width: '962' },
                     content: [
                         {
                             block: 'footer',

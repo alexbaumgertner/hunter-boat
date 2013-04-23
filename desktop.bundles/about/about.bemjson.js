@@ -13,7 +13,7 @@
             content: [
                 {
                                     block  : 'wrapper-fix-width',
-                                    mods   : { width: '982' },
+                                    mods   : { width: '962' },
                                     content: [
                                         {
                                             block   : 'header',
@@ -168,7 +168,7 @@
             content: [
                 {
                     block: 'wrapper-fix-width',
-                    mods: { width: '982' },
+                    mods: { width: '962' },
                     content: [
                         {
                             block: 'content',
@@ -455,11 +455,12 @@
                                                 },
                                                 {
                                                     elem: 'section',
+                                                    attrs: { style: 'margin-left: -30px;' },
                                                     content: [
                                                         {
                                                             elem: 'section-title',
                                                             attrs: {
-                                                                style: 'text-align: center;'
+                                                                style: 'text-align: center;margin-left: -50px;'
                                                             },
                                                             content: [
                                                                 {
@@ -594,11 +595,14 @@
                                                 },
                                                 {
                                                     elem: 'section',
+                                                    attrs: {
+                                                        style: 'margin-left: -30px;'
+                                                    },
                                                     content: [
                                                         {
                                                             elem: 'section-title',
                                                             attrs: {
-                                                                style: 'margin-top: 65px; margin-bottom: 70px; text-align: center;'
+                                                                style: 'margin-top: 65px; margin-bottom: 70px; margin-left: -25px; text-align: center;'
                                                             },
                                                             content: [
                                                                 {
@@ -675,7 +679,7 @@
             content: [
                 {
                     block: 'wrapper-fix-width',
-                    mods: { width: '982' },
+                    mods: { width: '962' },
                     content: [
                         {
                             block: 'footer',

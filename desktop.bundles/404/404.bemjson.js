@@ -13,7 +13,7 @@
             content: [
                 {
                     block: 'wrapper-fix-width',
-                    mods: { width: '982' },
+                    mods: { width: '962' },
                     content: [
                         {
                             block: 'header',
