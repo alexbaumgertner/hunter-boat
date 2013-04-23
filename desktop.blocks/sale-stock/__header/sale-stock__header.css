@@ -1,4 +1,6 @@
 .sale-stock__header {
+    position: relative;
+    left: 10px;
     border: 1px solid #ca0000;
     background: #f03131;
     width: 55px;

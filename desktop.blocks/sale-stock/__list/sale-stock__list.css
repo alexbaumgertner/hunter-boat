@@ -1,7 +1,6 @@
 .sale-stock__list
 {
-    margin: 0 auto;
+    margin: 0 0 0 55px;
     padding: 0;
     list-style: none;
-    width: 840px;
 }
