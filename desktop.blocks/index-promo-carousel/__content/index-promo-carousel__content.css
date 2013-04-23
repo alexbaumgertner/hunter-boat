@@ -1,13 +1,11 @@
-.index-promo-carousel__content
-{
+.index-promo-carousel__content {
+    background: url("index-promo-carousel__content__bg.png") no-repeat;
     position: absolute;
     top: 110px;
     left: 488px;
-    width: 345px;
-    background: #f2f2f2;
-    height: 345px;
-    border-radius: 100%;
+    width: 343px;
+    height: 343px;
     padding: 45px 0 0 68px;
-    box-sizing: border-box;
     -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
