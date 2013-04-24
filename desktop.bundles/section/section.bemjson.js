@@ -223,8 +223,7 @@
                                             content: [
                                                 {
                                                     elem: 'section-header',
-                                                    content: 'Надувные лодки',
-                                                    url: '/catalog/boats/inflatable/'
+                                                    content: 'Надувные лодки'
                                                 },
                                                 {
                                                     elem: 'list',
