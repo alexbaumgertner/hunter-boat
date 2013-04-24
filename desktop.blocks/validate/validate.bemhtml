@@ -4,7 +4,7 @@ block validate {
         {
             elem: 'input',
             tag: 'span',
-            content: { block: 'input', placeholder: 'Введите код', name: 'captcha' }
+            content: { block: 'input', mods: { reqiured: 'yes' }, placeholder: 'Введите код', name: 'captcha' }
         },
         {
             elem: 'captcha',

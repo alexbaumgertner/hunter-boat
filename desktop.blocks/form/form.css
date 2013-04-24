@@ -1,3 +1,12 @@
 .form
 {
 }
+
+.form .input_type_text {
+     background: #eaf2f5;
+}
+
+.form .input_type_text.input_reqiured_yes,
+.form .input_type_text:focus {
+    background: #fff;
+}

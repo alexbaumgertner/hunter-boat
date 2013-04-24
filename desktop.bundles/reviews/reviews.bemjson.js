@@ -288,16 +288,9 @@
                                                                 elem: 'author-info-item',
                                                                 content: {
                                                                     block: 'input',
+                                                                    mods: { reqiured: 'yes' },
                                                                     name: 'name',
                                                                     placeholder: 'Имя'
-                                                                }
-                                                            },
-                                                            {
-                                                                elem: 'author-info-item',
-                                                                content: {
-                                                                    block: 'input',
-                                                                    name: 'email',
-                                                                    placeholder: 'E-mail'
                                                                 }
                                                             },
                                                             {
@@ -312,6 +305,16 @@
                                                                 elem: 'author-info-item',
                                                                 content: {
                                                                     block: 'input',
+                                                                    mods: { reqiured: 'yes' },
+                                                                    name: 'email',
+                                                                    placeholder: 'E-mail'
+                                                                }
+                                                            },
+
+                                                            {
+                                                                elem: 'author-info-item',
+                                                                content: {
+                                                                    block: 'input',
                                                                     name: 'phone',
                                                                     placeholder: 'Телефон'
                                                                 }
@@ -322,6 +325,7 @@
                                                         elem: 'question',
                                                         content: {
                                                             block: 'textarea',
+                                                            mods: { reqiured: 'yes' },
                                                             name: 'review',
                                                             placeholder: 'Ваш отзыв'
                                                         }
