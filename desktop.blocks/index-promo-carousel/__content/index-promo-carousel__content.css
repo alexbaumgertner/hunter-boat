@@ -9,3 +9,15 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.index-promo-carousel__content:before {
+    content: '';
+    position: absolute;
+    background: url("index-promo-carousel__content__shadow.png") no-repeat;
+    width: 286px;
+    height: 149px;
+    z-index: 0;
+    z-index: 0;
+    bottom: 3px;
+    right: 12px;
+}
