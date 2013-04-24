@@ -5,3 +5,7 @@
 .market-card__site .b-link {
     color: #007eb9;
 }
+
+.market-card__site .b-link:hover {
+    color: #00aefe;
+}
