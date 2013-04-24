@@ -667,7 +667,7 @@
                                                     },
                                                     {
                                                         block: 'b-link',
-                                                        url: '/shipping/',
+                                                        url: '/delivery.html',
                                                         content: 'Подробнее о доставке'
                                                     }
 
