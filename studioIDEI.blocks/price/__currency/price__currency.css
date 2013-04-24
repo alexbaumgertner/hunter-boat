@@ -1,6 +1,6 @@
 .price__currency
 {
-    line-height: normal;
+    line-height: inherit;
     padding: 0 0 0 4px;
 }
 

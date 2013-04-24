@@ -94,7 +94,7 @@
                                                 content: [
                                                     {
                                                         elem: 'item',
-                                                        elemMods: { section: 'catalog' },
+                                                        elemMods: { section: 'catalog',  state: 'current' },
                                                         name: 'Каталог',
                                                         url: '/catalog.html'
                                                     }
@@ -108,7 +108,6 @@
                                                 content: [
                                                     {
                                                         elem: 'item',
-                                                        elemMods: { state: 'current' },
                                                         name: 'О компании',
                                                         url: '/about.html'
                                                     },
@@ -444,7 +443,7 @@
                                                                     {
                                                                         elem: 'price-old',
                                                                         content: {
-                                                                            block: 'price', mods: { currency: 'empty' }, value: 41000
+                                                                            block: 'price', mods: { currency: 'empty', old: 'yes' }, value: 41000
                                                                         }
                                                                     },
                                                                     {
