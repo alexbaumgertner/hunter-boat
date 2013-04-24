@@ -37,17 +37,19 @@ BEM.DOM.decl('catalog-page', {
 
         onItemSelectorClick: function (e) {
             var item = this._getItemByEvent(e);
-            this.setMod(item, 'state', 'current');
+
 
             if (this.hasMod(item, 'sortProperty')) {
                 this.onItemPriceSelectorClick(item);
             }
 
+            this.setMod(item, 'state', 'current');
         },
 
 
         onItemPriceSelectorClick: function (item) {
 
+            // only if already selected
             if (!this.hasMod(item, 'state', 'current'))  return false;
 
             this.toggleMod(item, 'order', 'desc', 'asc');
