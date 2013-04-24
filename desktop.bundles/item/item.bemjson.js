@@ -489,22 +489,30 @@
                                                     },
                                                     {
                                                         elem: 'photo-big',
-                                                        url: 'img/catalog/boats/hunter_320_LK_LUX/photos/1_medium.jpg'
+                                                        content: {
+                                                            elem: 'photo-big-img',
+                                                            url: 'img/catalog/boats/hunter_320_LK_LUX/photos/1_medium.jpg'
+                                                        }
                                                     },
                                                     {
-                                                        elem: 'colors',
-                                                        content: [
-                                                            { elem: 'colors-item', elemMods: { color: 'a0a0a0', state: 'current' }, content: 'серая' },
-                                                            { elem: 'colors-item', elemMods: { color: '377530' }, content: 'зеленая' },
-                                                        ]
-                                                    },
-                                                    {
-                                                        elem: 'links',
+                                                        elem: 'bottom-pad',
                                                         content: [
                                                             {
-                                                                block: 'b-link',
-                                                                url: '/catalog/boats/hunter_320_LK_LUX/photos',
-                                                                content: 'Все фотографии Хантер 320 ЛК ЛЮКС'
+                                                                elem: 'colors',
+                                                                content: [
+                                                                    { elem: 'colors-item', elemMods: { color: 'a0a0a0', state: 'current' }, content: 'серая' },
+                                                                    { elem: 'colors-item', elemMods: { color: '377530' }, content: 'зеленая' },
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'links',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-link',
+                                                                        url: '/catalog/boats/hunter_320_LK_LUX/photos',
+                                                                        content: 'Все фотографии Хантер 320 ЛК ЛЮКС'
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
                                                     },
@@ -664,6 +672,7 @@
                                                                         content: {
                                                                             block: 'b-link',
                                                                             url: '/catalog/boats/hunter_320_LK_LUX/review/add',
+                                                                            mods: { pseudo: 'yes' },
                                                                             content: 'Оставить отзыв'
                                                                         }
                                                                     }

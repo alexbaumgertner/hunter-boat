@@ -15,7 +15,7 @@ block catalog-item-card {
     }
 
 
-    elem photo-big {
+    elem photo-big-img {
         tag: 'img',
         attrs: {
             src: this.ctx.url
@@ -29,6 +29,9 @@ block catalog-item-card {
         }
     }
 
+    elem colors, tag: 'span'
+
+    elem links, tag: 'span'
 
     elem colors-item {
         tag: 'span'

@@ -7,8 +7,8 @@
     border: 1px solid #008bcb;
     font-size: 23px;
     text-shadow: 0 1px 0 #000000;
-    -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.57);
-    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.57);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.57);
 }
 
 .button_type_buy:hover {
@@ -19,5 +19,9 @@
 .button_type_buy:active {
     background-position: 0 -148px;
     outline: none;
+    -webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.57), inset 3px 3px 6px 0 rgba(0, 0, 0, 0.57), inset -1px 0px 6px 0 rgba(0, 0, 0, 0.57);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.57), inset 3px 3px 6px 0 rgba(0, 0, 0, 0.57), inset -1px 0px 6px 0 rgba(0, 0, 0, 0.57);
+    padding-top: 2px;
+    text-shadow: 1px -1px 0px #000000;
 }
 
