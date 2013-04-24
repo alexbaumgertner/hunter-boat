@@ -189,6 +189,10 @@
                                             ]
                                         },
                                         {
+                                            elem: 'link-to-add',
+                                            content: { block: 'b-link', content: 'Оставить отзыв', url: '#add-review' }
+                                        },
+                                        {
                                             elem: 'list',
                                             content: (function () {
                                                 var content = [];
@@ -221,7 +225,7 @@
                                                                     elemMods: { position: 'left' },
                                                                     content: {
                                                                         elem: 'date',
-                                                                        content: '21 октября 2009 года'
+                                                                        content: '21 октября'
                                                                     }
                                                                 },
                                                                 {
@@ -252,11 +256,95 @@
                                             }())
                                         },
                                         {
-                                            elem: 'add',
+                                            elem: 'paginator',
                                             content: {
-                                                block: 'b-link',
-                                                url: '/'
+                                                block: 'paginator',
+                                                itemsTotal: 15,
+                                                itemsUrlPrefix: '/articles/',
+                                                itemsVisible: 4,
+                                                itemCurr: 2
                                             }
+                                        },
+                                        { block: 'line', mods: { type: 'wavy-0081bd' } },
+                                        {
+                                            elem: 'add',
+                                            attrs: {
+                                                id: 'add-review'
+                                            },
+                                            content: {
+                                                block: 'form',
+                                                method: 'post',
+                                                action: '/faq/questions/add',
+                                                mods: { type: 'add-question' },
+                                                content: [
+                                                    {
+                                                        elem: 'header',
+                                                        content: 'Вы можете написать свой отзыв'
+                                                    },
+                                                    {
+                                                        elem: 'author-info',
+                                                        content: [
+                                                            {
+                                                                elem: 'author-info-item',
+                                                                content: {
+                                                                    block: 'input',
+                                                                    name: 'name',
+                                                                    placeholder: 'Имя'
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'author-info-item',
+                                                                content: {
+                                                                    block: 'input',
+                                                                    name: 'email',
+                                                                    placeholder: 'E-mail'
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'author-info-item',
+                                                                content: {
+                                                                    block: 'input',
+                                                                    name: 'city',
+                                                                    placeholder: 'Город'
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'author-info-item',
+                                                                content: {
+                                                                    block: 'input',
+                                                                    name: 'phone',
+                                                                    placeholder: 'Телефон'
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: 'question',
+                                                        content: {
+                                                            block: 'textarea',
+                                                            name: 'review',
+                                                            placeholder: 'Ваш отзыв'
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'send-panel',
+                                                        content: [
+                                                            {
+                                                                elem: 'validate',
+                                                                content: {
+                                                                    block: 'validate',
+                                                                    id: 'captchaID'
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'send-button',
+                                                                content: { block: 'button', mods: { type: 'submit' }, content: 'Добавить отзыв' }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+
                                         }
                                     ]
                                 }
