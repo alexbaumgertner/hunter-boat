@@ -1,10 +1,17 @@
 .not-found__header
 {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 59px;
+    line-height: 59px;
     font-weight: normal;
     position: absolute;
-    left: 735px;
-    top: 155px;
+    left: 680px;
+    top: 175px;
     width: 205px;
+    text-transform: uppercase;
+}
+
+.not-found__header em {
+    font-style: normal;
+    font-size: 93px;
+    line-height: 80px;
 }

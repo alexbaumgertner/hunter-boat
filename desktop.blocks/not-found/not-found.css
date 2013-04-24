@@ -1,8 +1,9 @@
 .not-found
 {
     position: relative;
-    background: url("not-found__bg_transparent.png") no-repeat center 0;
-    width: 1397px;
+    background: url("not-found__bg.jpg") no-repeat center 0;
+    width: 100%;
+    min-width: 962px;
     height: 909px;
     margin: 30px auto 0;
 }

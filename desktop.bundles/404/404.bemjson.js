@@ -168,7 +168,7 @@
             content: [
                 {
                     elem: 'header',
-                    content: 'Ошибка 404'
+                    content: 'Ошибка <em>404</em>'
                 },
                 {
                     elem: 'content',
