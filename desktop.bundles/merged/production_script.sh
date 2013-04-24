@@ -5,7 +5,7 @@
 
 
 # clean prev ()
-rf -rf build/
+rm -rf build/
 
 # make builds dirs
 mkdir -p build/css/ build/js/
