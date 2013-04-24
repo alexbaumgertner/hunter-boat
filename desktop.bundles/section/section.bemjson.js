@@ -486,6 +486,18 @@
                                                                     content: {
                                                                         block: 'product-card'
                                                                     }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'product-card'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'product-card'
+                                                                    }
                                                                 }
                                                             ]
                                                         }

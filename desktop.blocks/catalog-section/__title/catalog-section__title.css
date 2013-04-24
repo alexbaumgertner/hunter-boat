@@ -1,4 +1,6 @@
 .catalog-section__title
 {
-    font-size: 22px;
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 1px;
 }
