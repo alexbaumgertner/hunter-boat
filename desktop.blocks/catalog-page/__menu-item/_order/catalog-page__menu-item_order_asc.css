@@ -1,0 +1,7 @@
+.catalog-page__menu-item_order_asc
+{
+}
+
+.catalog-page__menu-item_order_asc .catalog-page__menu-item-title:after {
+    content: '↑';
+}

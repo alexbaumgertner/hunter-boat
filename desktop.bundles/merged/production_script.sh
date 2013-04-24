@@ -4,6 +4,9 @@
 # depends: npm install cssrb first
 
 
+# clean prev ()
+rf -rf build/
+
 # make builds dirs
 mkdir -p build/css/ build/js/
 

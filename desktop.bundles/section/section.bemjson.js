@@ -426,16 +426,13 @@
                                                 {
                                                     elem: 'menu-item',
                                                     elemMods: { state: 'current' },
-                                                    content: { elem: 'menu-item-title', content: 'по типу', elemMods: {
-                                                        order: 'asc'
-                                                    }  }
+                                                    content: { elem: 'menu-item-title', content: 'по типу' }
                                                 },
 
                                                 {
                                                     elem: 'menu-item',
-                                                    content: { elem: 'menu-item-title', content: 'по цене', elemMods: {
-                                                        order: 'desc'
-                                                    }  }
+                                                    elemMods: { sortProperty: 'price', order: 'desc' },
+                                                    content: { elem: 'menu-item-title', content: 'по цене' }
                                                 }
                                             ]
                                         },

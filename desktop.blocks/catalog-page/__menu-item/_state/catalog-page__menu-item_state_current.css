@@ -6,3 +6,8 @@
     cursor: default;
     padding: 2px 9px 2px;
 }
+
+.catalog-page__menu-item_state_current .catalog-page__menu-item-title
+{
+    border-bottom: none;
+}
