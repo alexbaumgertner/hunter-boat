@@ -15,9 +15,9 @@ BEM.DOM.decl('input', {
 
 }, {
 
-    live : function() {
-        /* ... */
-    }
+/*    live : function() {
+        *//* ... *//*
+    }*/
 
 });
 

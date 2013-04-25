@@ -2,6 +2,7 @@
 {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .input_type_file .input__input {

@@ -58,7 +58,7 @@ block input {
                 elem: 'input',
                 tag: 'input',
                 attrs: {
-                    type: this.ctx.type,
+                    type: 'file',
                     name: this.ctx.name
                 }
             },
