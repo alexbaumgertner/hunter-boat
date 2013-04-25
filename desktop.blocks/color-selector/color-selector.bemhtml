@@ -1,0 +1,19 @@
+block color-selector {
+
+    tag: 'span',
+
+    js: true
+   
+    elem selector {
+
+        default: {
+            this.ctx.mods = this.ctx.mods || {};
+            this.ctx.mods.color = this.ctx.value;
+            this.ctx.mods.checked = this.ctx.checked ? 'yes' : 'no';
+            applyNext();
+        }
+
+        tag: 'span'
+    }
+
+}

@@ -1,0 +1,14 @@
+.color-selector__selector
+{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 12px;
+    font-style: italic;
+    color: #ffffff;
+    padding: 1px 13px 3px;
+    border-radius: 15px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    border: 6px solid;
+}

@@ -499,10 +499,13 @@
                                                         content: [
                                                             {
                                                                 elem: 'colors',
-                                                                content: [
-                                                                    { elem: 'colors-item', elemMods: { color: 'a0a0a0', state: 'current' }, content: 'серая' },
-                                                                    { elem: 'colors-item', elemMods: { color: '377530' }, content: 'зеленая' },
-                                                                ]
+                                                                content: {
+                                                                    block: 'color-selector',
+                                                                    content: [
+                                                                        { elem: 'selector', content: 'серая', value: 'a0a0a0', checked: true },
+                                                                        { elem: 'selector', content: 'зеленая', value: '377530' }
+                                                                    ]
+                                                                }
                                                             },
                                                             {
                                                                 elem: 'links',

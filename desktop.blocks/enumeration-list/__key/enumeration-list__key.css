@@ -1,3 +1,6 @@
 .enumeration-list__key
 {
+    border-bottom: 1px solid #f5fcff;
+    position: relative;
+    bottom: -2px;
 }
