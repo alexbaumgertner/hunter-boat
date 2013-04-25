@@ -2,7 +2,8 @@
 {
     float: right;
     width: 100px;
-    border-bottom: 1px solid #f5fcff;
-    position: relative;
-    bottom: -2px;
+    border-bottom: 3px solid #f5fcff;
+    line-height: 6px;
+    margin-top: 16px;
+    padding-left: 3px;
 }
