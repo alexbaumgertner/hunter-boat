@@ -7,3 +7,20 @@
     position: relative;
 
 }
+
+.catalog-item-card .carousel__control_direction_prev {
+    left: -20px;
+}
+
+.catalog-item-card .carousel__control_direction_next {
+    right: -20px;
+}
+
+
+.catalog-item-card .b-link {
+    color: #006999;
+}
+
+.catalog-item-card .b-link:hover {
+    color: #00aefe;
+}
