@@ -2,13 +2,18 @@
 {
     display: inline-block;
     vertical-align: middle;
-    line-height: 22px;
+    line-height: 20px;
     font-size: 22px;
     text-transform: uppercase;
     border-bottom: 1px solid #a1aeb5;
 }
 
+.catalog-links__title:hover {
+    color: #0081bc;
+    border-bottom: 1px solid #0081bc;
+}
+
 .catalog-links__title .b-link {
-    color: inherit;
     text-decoration: none;
+
 }

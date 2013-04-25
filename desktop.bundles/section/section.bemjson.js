@@ -94,7 +94,7 @@
                                                 content: [
                                                     {
                                                         elem: 'item',
-                                                        elemMods: { section: 'catalog' },
+                                                        elemMods: { section: 'catalog', state: 'current' },
                                                         name: 'Каталог',
                                                         url: '/catalog.html'
                                                     }
@@ -219,11 +219,11 @@
                                     content: [
                                         {
                                             elem: 'section',
-                                            elemMods: { state: 'current' },
                                             content: [
                                                 {
                                                     elem: 'section-header',
-                                                    content: 'Надувные лодки'
+                                                    content: 'Надувные лодки',
+                                                    url: '/catalog/boats/'
                                                 },
                                                 {
                                                     elem: 'list',
