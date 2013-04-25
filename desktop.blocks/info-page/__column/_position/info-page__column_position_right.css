@@ -1,6 +1,7 @@
 .info-page__column_position_right
 {
-    width: 410px;
+    width: 420px;
+    padding: 0 0 0 65px;
 }
 
 .info-page__column_position_right .info-page__section-title {

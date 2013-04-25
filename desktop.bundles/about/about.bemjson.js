@@ -358,7 +358,7 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'left' },
-                                                            attrs: { style: 'width: 580px;margin: 0;' },
+                                                            attrs: { style: 'width: 580px;padding: 0;' },
                                                             content: [
                                                                 {
                                                                     block: 'b-text',
@@ -411,7 +411,7 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'right' },
-                                                            attrs: { style: 'width: 295px; margin: 0;' },
+                                                            attrs: { style: 'width: 295px; padding: 0;' },
                                                             content: [
                                                                 {
                                                                     elem: 'section-title',

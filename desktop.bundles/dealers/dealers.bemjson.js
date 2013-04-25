@@ -232,6 +232,9 @@
                                                             attrs: { style: 'margin: -55px 0 0 0;' },
                                                             content: {
                                                                 block: 'b-text',
+                                                                attrs: {
+                                                                    style: 'font-weight: bold;'
+                                                                },
                                                                 content: [
                                                                     {
                                                                         elem: 'p',
@@ -286,10 +289,14 @@
                                                                     content: [
                                                                         {
                                                                             elem: 'section-header',
+
                                                                             content: 'Заявка для оптовых партнеров'
                                                                         },
                                                                         {
                                                                             elem: 'section-sub-header',
+                                                                            attrs: {
+                                                                                style: 'letter-spacing: -1px;color: black;'
+                                                                            },
                                                                             content: 'Если Вы хотите получить оптовый прайс лист и стать нашим оптовым партнером, пожалуйста, заполните форму заявки.'
                                                                         },
                                                                         {
@@ -367,6 +374,9 @@
                                                         },
                                                         {
                                                             elem: 'column',
+                                                            attrs: {
+                                                                style: 'padding: 0 0 0 45px;'
+                                                            },
                                                             elemMods: { position: 'right' },
                                                             content: [
                                                                 {
