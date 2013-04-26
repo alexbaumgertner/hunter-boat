@@ -1,4 +1,8 @@
 .faq {
-    margin: 55px 0 120px 30px;
+    margin: 55px 0 0 30px;
 }
 
+.faq .line_type_wavy-0081bd {
+    margin: 0 130px 0 90px;
+    width: auto;
+}

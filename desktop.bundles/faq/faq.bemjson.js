@@ -189,7 +189,13 @@
                                                 },
                                                 {
                                                     elem: 'info',
-                                                    content: '<a class="faq__add-link" href="/faq/question/add">Задать вопрос</a> легко'
+                                                    content: [
+                                                        {
+                                                            block: 'b-link', url: '#add-question', content: 'Задать вопрос'
+                                                        }
+                                                        ,
+                                                        ' легко!'
+                                                    ]
                                                 }
                                             ]
                                         },
@@ -294,8 +300,10 @@
                                                 }
                                             ]
                                         },
+                                        { block: 'line', mods: { type: 'wavy-0081bd' } },
                                         {
                                             elem: 'add-question',
+                                            attrs: { id: 'add-question' },
                                             content: [
                                                 {
                                                     block: 'form',
@@ -314,16 +322,9 @@
                                                                     elem: 'author-info-item',
                                                                     content: {
                                                                         block: 'input',
+                                                                        mods: { reqiured: 'yes' },
                                                                         name: 'name',
                                                                         placeholder: 'Имя'
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'author-info-item',
-                                                                    content: {
-                                                                        block: 'input',
-                                                                        name: 'email',
-                                                                        placeholder: 'E-mail'
                                                                     }
                                                                 },
                                                                 {
@@ -334,6 +335,16 @@
                                                                         placeholder: 'Город'
                                                                     }
                                                                 },
+                                                                {
+                                                                    elem: 'author-info-item',
+                                                                    content: {
+                                                                        block: 'input',
+                                                                        mods: { reqiured: 'yes' },
+                                                                        name: 'email',
+                                                                        placeholder: 'E-mail'
+                                                                    }
+                                                                },
+
                                                                 {
                                                                     elem: 'author-info-item',
                                                                     content: {

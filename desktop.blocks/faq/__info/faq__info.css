@@ -5,7 +5,15 @@
     font-size: 17px;
 }
 
-.faq__add-link
+.faq__info .b-link
 {
+    text-decoration: none;
     color: #0d84bc;
+    border-bottom: 1px dashed;
+    line-height: 14px;
+    display: inline-block;
+}
+
+.faq__info .b-link:hover {
+    color: #00aefe;
 }

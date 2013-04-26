@@ -4,6 +4,7 @@
     font-style: italic;
     font-size: 14px;
     line-height: 19px;
+    width: 690px;
 }
 
 .faq__item_state_opened .faq__answer {
