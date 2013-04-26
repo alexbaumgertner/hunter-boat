@@ -1,7 +1,20 @@
 .carousel__control
 {
     position: absolute;
+    z-index: 100;
+}
+
+/* TODO: make separate */
+
+.carousel__control,
+.carousel_type_horiz .carousel__control
+{
     top: 50%;
     margin-top: -16px;
-    z-index: 100;
+}
+
+
+.carousel_type_vert .carousel__control {
+    left: 50%;
+    margin-left: -16px;
 }

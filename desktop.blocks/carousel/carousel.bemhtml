@@ -9,5 +9,18 @@ block carousel {
         content: { block: 'button', mods: { direction: 'next', type: 'carousel-horiz' } }
     }
 
+}
+
+
+block carousel, mod type vert {
+
+    elem control, elemMod direction prev {
+        content: { block: 'button', mods: { direction: 'prev', type: 'carousel-vert' } }
+    }
+
+
+    elem control, elemMod direction next {
+        content: { block: 'button', mods: { direction: 'next', type: 'carousel-vert' } }
+    }
 
 }

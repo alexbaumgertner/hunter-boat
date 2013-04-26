@@ -16,3 +16,26 @@
 .carousel__control_state_disabled .button_type_carousel-horiz.button_direction_prev {
     background-position: -52px 0;
 }
+
+
+/*==========================*/
+
+
+.button_type_carousel-vert.button_direction_prev
+{
+    background-position: 0 -36px;
+}
+
+.button_type_carousel-vert.button_direction_prev:hover
+{
+    background-position: 0 -18px ;
+}
+
+.button_type_carousel-vert.button_direction_prev:active
+{
+    background-position: 0 0;
+}
+
+.carousel__control_state_disabled .button_type_carousel-vert.button_direction_prev {
+    background-position:  0 -52px;
+}

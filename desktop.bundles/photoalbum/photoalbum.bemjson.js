@@ -205,27 +205,25 @@
                                                             },
                                                             {
                                                                 elem: 'carousel',
+                                                                mix: [{ block: 'carousel', mods: { type: 'vert' }, js: true }],
                                                                 content: [
-                                                                    {
-                                                                        elem: 'control',
-                                                                        elemMods: { direction: 'prev' }
-                                                                    },
-                                                                    {
-                                                                        elem: 'control',
-                                                                        elemMods: { direction: 'next' }
-                                                                    },
+                                                                    { block: 'carousel', mods: { type: 'vert' } , elem: 'control', elemMods: { direction: 'prev', state: 'disabled' }},
+                                                                    { block: 'carousel', mods: { type: 'vert' } , elem: 'control', elemMods: { direction: 'next' }},
                                                                     {
                                                                         elem: 'viewport',
+                                                                        mix: [{ block: 'carousel', elem: 'viewport' }],
                                                                         content: [
                                                                             {
                                                                                 elem: 'photo-list',
+                                                                                mix: [{ block: 'carousel', elem: 'items' }],
                                                                                 content: (function () {
                                                                                     var items = [];
 
-                                                                                    for (var i = 0; i < 10; i++) {
+                                                                                    for (var i = 0; i < 14; i++) {
 
                                                                                         items.push({
                                                                                             elem: 'photo',
+                                                                                            mix: [{ block: 'carousel', elem: 'item' }],
                                                                                             tag: 'img',
                                                                                             attrs: {
                                                                                                 src: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg'
@@ -255,17 +253,17 @@
                                             elem: 'other',
                                             content: {
                                                 block: 'photoalbums-carousel',
-                                                mix: [{ block: 'carousel', js: true }],
                                                 content: [
-                                                    { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled' }},
-                                                    { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
                                                     {
                                                         elem: 'header',
                                                         content: 'ДРУГИЕ АЛЬБОМЫ'
                                                     },
                                                     {
-                                                        elem: 'carouser',
+                                                        elem: 'carousel',
+                                                        mix: [{ block: 'carousel', js: true }],
                                                         content: [
+                                                            { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled' }},
+                                                            { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
                                                             {
                                                                 elem: 'viewport',
                                                                 mix: [{ block: 'carousel', elem: 'viewport' }],
@@ -276,7 +274,7 @@
                                                                         content: (function () {
                                                                             var items = [];
 
-                                                                            for (var i = 0; i < 9; i++) {
+                                                                            for (var i = 0; i < 15; i++) {
 
                                                                                 items.push({
                                                                                     elem: 'item',

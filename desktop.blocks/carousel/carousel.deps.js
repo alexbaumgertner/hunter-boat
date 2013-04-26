@@ -6,7 +6,7 @@
         },
         {
             block: 'button',
-            mods: { 'type': 'carousel-horiz', 'direction': ['prev', 'next'] }
+            mods: { 'type': ['carousel-horiz', 'carousel-vert'], 'direction': ['prev', 'next'] }
         }
     ]
 })

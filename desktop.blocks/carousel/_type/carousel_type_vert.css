@@ -1,0 +1,22 @@
+.carousel_type_vert
+{
+}
+
+.carousel_type_vert .carousel__items {
+    white-space: normal;
+}
+
+.carousel_type_vert .carousel__control {
+    left: 50%;
+    margin-left: -16px;
+}
+
+.carousel_type_vert .carousel__control_direction_prev {
+    top: 0;
+}
+
+
+.carousel_type_vert .carousel__control_direction_next {
+    bottom: 0;
+    top: auto;
+}
