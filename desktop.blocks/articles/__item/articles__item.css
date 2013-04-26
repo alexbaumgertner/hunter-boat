@@ -1,4 +1,8 @@
 .articles__item
 {
-    margin: 0 0 60px 0;
+    margin: 0 0 65px 0;
+}
+
+.articles__item:last-child {
+    margin-bottom: 0;
 }

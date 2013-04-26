@@ -213,7 +213,7 @@
                                                 ];
 
 
-                                                for (var i = 0; i < 7; i++) {
+                                                for (var i = 0; i < 5; i++) {
 
                                                     items.push({
                                                         elem: 'item',

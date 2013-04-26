@@ -1,6 +1,8 @@
 .article-item__header
 {
-    font-size: 70px;
-    line-height: 70px;
-    display: inline-block;
+    margin: 0 0 40px 0;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    text-transform: uppercase;
 }
