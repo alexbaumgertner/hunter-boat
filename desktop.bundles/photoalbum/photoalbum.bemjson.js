@@ -255,8 +255,10 @@
                                             elem: 'other',
                                             content: {
                                                 block: 'photoalbums-carousel',
+                                                mix: [{ block: 'carousel', js: true }],
                                                 content: [
-
+                                                    { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled' }},
+                                                    { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
                                                     {
                                                         elem: 'header',
                                                         content: 'ДРУГИЕ АЛЬБОМЫ'
@@ -265,27 +267,20 @@
                                                         elem: 'carouser',
                                                         content: [
                                                             {
-                                                                elem: 'control',
-                                                                elemMods: { direction: 'prev' },
-                                                                content: { block: 'button', mods: { type: 'carousel-horiz', direction: 'prev', state: 'disabled' } }
-                                                            },
-                                                            {
-                                                                elem: 'control',
-                                                                elemMods: { direction: 'next' },
-                                                                content: { block: 'button', mods: { type: 'carousel-horiz', direction: 'next', state: 'enabled' } }
-                                                            },
-                                                            {
                                                                 elem: 'viewport',
+                                                                mix: [{ block: 'carousel', elem: 'viewport' }],
                                                                 content: [
                                                                     {
                                                                         elem: 'list',
+                                                                        mix: [{ block: 'carousel', elem: 'items' }],
                                                                         content: (function () {
                                                                             var items = [];
 
-                                                                            for (var i = 0; i < 10; i++) {
+                                                                            for (var i = 0; i < 9; i++) {
 
                                                                                 items.push({
                                                                                     elem: 'item',
+                                                                                    mix: [{ block: 'carousel', elem: 'item' }],
                                                                                     content: {
                                                                                         block: 'photoalbum-thumb',
                                                                                         content: [
