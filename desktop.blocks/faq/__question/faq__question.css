@@ -3,6 +3,7 @@
     font-size: 18px;
     line-height: 21px;
     width: 680px;
+    font-weight: bold;
 }
 
 .faq__item_state_opened .faq__question {
