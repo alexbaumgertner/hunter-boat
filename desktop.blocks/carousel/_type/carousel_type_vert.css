@@ -12,11 +12,11 @@
 }
 
 .carousel_type_vert .carousel__control_direction_prev {
-    top: 0;
+    top: -6px;
 }
 
 
 .carousel_type_vert .carousel__control_direction_next {
-    bottom: 0;
+    bottom: -18px;
     top: auto;
 }

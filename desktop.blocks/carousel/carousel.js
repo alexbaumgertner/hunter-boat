@@ -3,12 +3,15 @@
 
 (function (undefined) {
 
+    /* TODO: separate horiz / vert */
+
     BEM.DOM.decl('carousel', {
 
         onSetMod: {
 
             'js': function () {
                 this.itemFullWidth = this.elem('item').outerWidth(true);
+
                 this.frameWidth = this.elem('viewport').width();
                 this.frameTotal = Math.round(this.itemFullWidth * this.elem('item').length / this.frameWidth);
                 this.frameCurr = 1; // start by first
@@ -31,6 +34,10 @@
 
 
         switchCarousel: function (direction) {
+
+            var carouselType = this.getMod('type');
+
+            var animateProperty = carouselType === 'horiz' ? 'left' : 'top';
 
             if (direction === 'prev') {
                 this.elem('items').animate({ 'left': '+=' + this.itemFullWidth });
