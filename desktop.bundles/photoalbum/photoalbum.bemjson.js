@@ -226,7 +226,8 @@
                                                                                             mix: [{ block: 'carousel', elem: 'item' }],
                                                                                             tag: 'img',
                                                                                             attrs: {
-                                                                                                src: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg'
+                                                                                                src: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg',
+                                                                                                rel: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg',
                                                                                             }
                                                                                         })
 

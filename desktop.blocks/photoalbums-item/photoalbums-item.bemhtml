@@ -1,5 +1,7 @@
 block photoalbums-item {
 
+    js: true
+
     elem carousel {
         tag: 'span'
     }
