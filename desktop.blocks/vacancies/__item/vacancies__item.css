@@ -1,5 +1,12 @@
 .vacancies__item
 {
-    margin: 0 0 25px 0;
-    padding: 0 0 25px 0;
+    margin: 55px 0 35px 0;
+}
+
+.vacancies__item:first-child {
+    margin-top: 0;
+}
+
+.vacancies__item:last-child {
+    margin-bottom: 0;
 }

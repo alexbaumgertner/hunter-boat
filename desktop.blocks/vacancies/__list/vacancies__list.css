@@ -5,3 +5,9 @@
     padding: 0;
     clear: both;
 }
+
+
+.vacancies__list .line {
+    margin: 0 0 0 -35px;
+    width: 965px;
+}

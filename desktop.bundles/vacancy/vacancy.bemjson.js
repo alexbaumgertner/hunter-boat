@@ -316,6 +316,7 @@
                                                         ]
                                                     }
                                                 },
+                                                { block: 'line', mods: { type: 'wavy-0081bd' } },
                                                 {
                                                     elem: 'item',
                                                     content: {
@@ -417,6 +418,7 @@
                                                         ]
                                                     }
                                                 },
+                                                { block: 'line', mods: { type: 'wavy-0081bd' } },
                                                 {
                                                     elem: 'item',
                                                     content: {
