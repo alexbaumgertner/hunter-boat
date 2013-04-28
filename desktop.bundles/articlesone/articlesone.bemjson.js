@@ -186,7 +186,7 @@
                                                 },
                                                 {
                                                     elem: 'link-to-all',
-                                                    url: 'articles/all',
+                                                    url: 'articles.html',
                                                     content: 'К списку всех статей'
                                                 }
                                             ]

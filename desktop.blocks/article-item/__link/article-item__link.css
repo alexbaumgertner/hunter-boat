@@ -2,4 +2,9 @@
 {
     display: inline-block;
     vertical-align: top;
+    color: #0081bc;
+}
+
+.article-item__link:hover {
+    color: #00aefe;
 }

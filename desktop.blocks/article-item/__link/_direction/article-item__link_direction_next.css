@@ -5,5 +5,5 @@
 }
 
 .article-item__link_direction_next:after {
-    content: '→';
+    content: ' →';
 }
