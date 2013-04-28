@@ -9,6 +9,10 @@
         },
         {
             block: 'b-link'
+        },
+        {
+            block: 'catalog-icon',
+            mods: { type: ['new', 'pop', 'rec'] }
         }
     ]
 })

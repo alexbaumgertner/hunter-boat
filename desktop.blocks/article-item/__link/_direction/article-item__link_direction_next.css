@@ -1,7 +1,7 @@
 .article-item__link_direction_next
 {
     position: absolute;
-    right: 0;
+    right: -20px;
 }
 
 .article-item__link_direction_next:after {

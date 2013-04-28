@@ -1,5 +1,4 @@
-.article-item
-{
+.article-item {
     margin: 55px 25px 0 35px;
 }
 
@@ -7,4 +6,9 @@
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 25px;
+}
+
+.article-item .b-text__p {
+    margin: 0 0 20px 0;
+    line-height: 19px;
 }

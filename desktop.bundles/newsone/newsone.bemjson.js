@@ -187,7 +187,7 @@
                                                 },
                                                 {
                                                     elem: 'link-to-all',
-                                                    url: 'news/all',
+                                                    url: 'news.html',
                                                     content: 'К списку всех статей'
                                                 }
                                             ]
@@ -203,6 +203,7 @@
                                         {
                                             elem: 'content',
                                             content: [
+                                                { block: 'product-card', mods: { background: 'white-shadow' }, attrs: { style: 'float:right;margin: -60px 15px 0 90px;' } },
                                                 {
                                                     block: 'b-text',
                                                     content: [

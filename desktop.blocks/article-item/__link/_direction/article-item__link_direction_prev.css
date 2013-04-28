@@ -1,5 +1,6 @@
 .article-item__link_direction_prev
 {
+    margin: 0 0 0 -20px;
 }
 
 .article-item__link_direction_prev:before {

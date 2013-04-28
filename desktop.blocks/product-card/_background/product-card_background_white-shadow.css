@@ -1,0 +1,13 @@
+.product-card_background_white-shadow {
+    background: #ffffff;
+    -webkit-box-shadow: 3px 3px 9px 0 rgba(0, 149, 218, 0.29);
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px 0 rgba(0, 149, 218, 0.29);
+    width: 210px;
+    padding: 40px 0 25px 0;
+}
+
+.product-card_background_white-shadow .product-card__icon {
+    right: 30px;
+    top: 35px;
+}
