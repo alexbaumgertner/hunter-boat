@@ -6,3 +6,12 @@
     font-size: 14px;
     line-height: 19px;
 }
+
+.vacancies__text .b-link {
+    color: #006999;
+}
+
+
+.vacancies__text .b-link:hover {
+    color: #00aefe;
+}

@@ -1,5 +1,6 @@
 .vacancies__info-phone {
-    margin: 0 0 0 0;
+    font-size: 19px;
+    line-height: 23px;
 }
 
 .vacancies__info-phone:last-child {
