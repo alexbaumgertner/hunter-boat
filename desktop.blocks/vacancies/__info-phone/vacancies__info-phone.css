@@ -1,0 +1,7 @@
+.vacancies__info-phone {
+    margin: 0 0 0 0;
+}
+
+.vacancies__info-phone:last-child {
+    margin-bottom: 0;
+}

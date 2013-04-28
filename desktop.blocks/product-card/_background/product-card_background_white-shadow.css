@@ -1,8 +1,8 @@
 .product-card_background_white-shadow {
+    -webkit-box-shadow: 1px 1px 9px 0 rgba(0, 149, 218, 0.29);
+    box-shadow: 1px 1px 9px 0 rgba(0, 149, 218, 0.29);
     background: #ffffff;
-    -webkit-box-shadow: 3px 3px 9px 0 rgba(0, 149, 218, 0.29);
     border-radius: 10px;
-    box-shadow: 3px 3px 9px 0 rgba(0, 149, 218, 0.29);
     width: 210px;
     padding: 40px 0 25px 0;
 }

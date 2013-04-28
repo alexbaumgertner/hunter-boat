@@ -195,7 +195,20 @@
                                                 },
                                                 {
                                                     elem: 'info',
-                                                    content: 'По вопросу вакансий звоните:  <p>(812) 654-32-55/<p> <p>8 (911) 779-65-59</p>'
+                                                    content: [
+                                                        {
+                                                            elem: 'info-header',
+                                                            content: 'По вопросу вакансий звоните:'
+                                                        },
+                                                        {
+                                                            elem: 'info-phone',
+                                                            content: '8 (812) 654-32-55'
+                                                        },
+                                                        {
+                                                            elem: 'info-phone',
+                                                            content: '8 (911) 779-65-59'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         },
