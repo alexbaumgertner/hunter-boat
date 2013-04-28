@@ -94,7 +94,7 @@
                                                 content: [
                                                     {
                                                         elem: 'item',
-
+                                                        elemMods: { section: 'catalog' },
                                                         name: 'Каталог',
                                                         url: '/catalog.html'
                                                     }
@@ -108,7 +108,7 @@
                                                 content: [
                                                     {
                                                         elem: 'item',
-                                                        elemMods: { state: 'current' },
+
                                                         name: 'О компании',
                                                         url: '/about.html'
                                                     },
@@ -142,7 +142,7 @@
                                     content: [
                                         {
                                             elem: 'item',
-                                            elemMods: { section: 'catalog' },
+                                            elemMods: { section: 'catalog', state: 'current' },
                                             name: 'Как купить',
                                             url: '/how-to-buy.html'
                                         },
@@ -214,10 +214,10 @@
                                                                     },
                                                                     {
                                                                         elem: 'p',
-                                                                        attrs: { style: 'margin-top: 25px;' },
+                                                                        attrs: { style: 'margin-top: 50px;font-size: 17px;' },
                                                                         content: [
                                                                             'Оптовикам ',
-                                                                            { block: 'b-link', url: '/', content: 'сюда' }
+                                                                            { block: 'b-link', url: '/dealers.html', content: 'сюда' }
                                                                         ]
                                                                     },
                                                                     {
@@ -289,7 +289,7 @@
                                                                                 attrs: {
                                                                                     style: 'margin-top: 30px;'
                                                                                 },
-                                                                                content: { block: 'b-link', url: '/', content: 'Адреса магазинов' }
+                                                                                content: { block: 'b-link', url: '/where-to-buy.html', content: 'Адреса магазинов' }
                                                                             }
                                                                         ]
                                                                     }
