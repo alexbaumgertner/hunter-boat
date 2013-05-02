@@ -5,4 +5,5 @@
     display: inline-block;
     border-bottom: 1px dashed;
     line-height: 22px;
+    letter-spacing: -1px;
 }

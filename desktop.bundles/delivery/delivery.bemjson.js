@@ -309,6 +309,11 @@
                                                                                 },
                                                                                 {
                                                                                     block: 'b-link',
+                                                                                    mods: { pseudo: 'yes' },
+                                                                                    mix: [
+                                                                                        { block: 'visibility-toggle', mods: { 'content-visible': 'no' }, js: { id: 'shipping-calc' } },
+                                                                                        { block: 'visibility-toggle', elem: 'trigger' }
+                                                                                    ],
                                                                                     url: '/shipping-calc/',
                                                                                     content: 'транспортными компаниям'
                                                                                 },
@@ -320,6 +325,10 @@
                                                                         },
                                                                         {
                                                                             elem: 'content',
+                                                                            mix: [
+                                                                                { block: 'visibility-toggle', mods: { 'content-visible': 'no' }, js: { id: 'shipping-calc' } },
+                                                                                { block: 'visibility-toggle', elem: 'content' }
+                                                                            ],
                                                                             content: {
                                                                                 block: 'b-text',
                                                                                 content: [

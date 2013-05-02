@@ -1,0 +1,8 @@
+.visibility-toggle_content-visible_no
+{
+}
+
+.i-ua_js_yes .visibility-toggle_content-visible_no.visibility-toggle__content
+{
+    display: none;
+}
