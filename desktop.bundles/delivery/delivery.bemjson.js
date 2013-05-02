@@ -447,7 +447,8 @@
                                                                 },
                                                                 {
                                                                     block: 'shipping-calc',
-                                                                    content: { block: 'b-link', url: '', content: 'Калькулятор доставки EMS' }
+                                                                    attrs: { style: 'margin: 0 0 0 20px;' },
+                                                                    content: { block: 'b-link', url: '/', content: 'Калькулятор доставки EMS' }
                                                                 }
                                                             ]
                                                         }
