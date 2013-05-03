@@ -54,11 +54,11 @@
 
     }, {
 
-        live: function () {
+/*        live: function () {
             this.liveBindTo('control', 'leftclick', function (e) {
                 this.onControlClick(e);
             });
-        }
+        }*/
 
     });
 

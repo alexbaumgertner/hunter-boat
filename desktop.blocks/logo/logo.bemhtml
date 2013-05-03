@@ -1,0 +1,7 @@
+block logo {
+    content: {
+        block: 'b-link',
+        url: '/',
+        content: applyNext()
+    }
+}
