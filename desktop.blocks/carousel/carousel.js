@@ -10,7 +10,6 @@
         onSetMod: {
 
             'js': function () {
-                console.dir(this);
             }
 
         },
@@ -32,8 +31,6 @@
             // TODO: optimize
 
             this.delMod(this.elem('control', 'direction'), 'state');
-
-            console.log(this.frameCurr);
 
             if (this.frameCurr === 1) {
                 this.setMod(this.elem('control', 'direction', 'prev'), 'state', 'disabled');
