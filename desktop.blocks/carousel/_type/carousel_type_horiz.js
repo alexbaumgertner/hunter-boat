@@ -8,9 +8,12 @@
         onSetMod: {
 
             'js': function () {
+                console.dir(this);
                 this.itemFullWidth = this.elem('item').outerWidth(true);
                 this.frameWidth = this.elem('viewport').width();
                 this.frameTotal = Math.round(this.itemFullWidth * this.elem('item').length / this.frameWidth);
+
+                this.frameCurr = this.params.frameCurr;
             }
 
         },
@@ -32,10 +35,11 @@
 
     }, {
 
-        /* live : function() {
-         *//* ... *//*
-         }*/
-
+        live: function () {
+            this.liveBindTo('control', 'leftclick', function (e) {
+                this.onControlClick(e);
+            });
+        }
     });
 
 })();

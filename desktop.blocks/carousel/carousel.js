@@ -10,11 +10,7 @@
         onSetMod: {
 
             'js': function () {
-                this.itemFullWidth = this.elem('item').outerWidth(true);
-
-                this.frameWidth = this.elem('viewport').width();
-                this.frameTotal = Math.round(this.itemFullWidth * this.elem('item').length / this.frameWidth);
-                this.frameCurr = 1; // start by first
+                console.dir(this);
             }
 
         },
@@ -32,30 +28,12 @@
             this.switchCarousel(direction);
         },
 
-
-        switchCarousel: function (direction) {
-
-            var carouselType = this.getMod('type');
-
-            var animateProperty = carouselType === 'horiz' ? 'left' : 'top';
-
-            if (direction === 'prev') {
-                this.elem('items').animate({ 'left': '+=' + this.itemFullWidth });
-                this.frameCurr = this.frameCurr - 1;
-
-            } else {
-                this.elem('items').animate({ 'left': '-=' + this.itemFullWidth });
-                this.frameCurr = this.frameCurr + 1;
-            }
-
-            this.refreshControlsAbility();
-
-        },
-
         refreshControlsAbility: function () {
-            // TODO: optinize
+            // TODO: optimize
 
             this.delMod(this.elem('control', 'direction'), 'state');
+
+            console.log(this.frameCurr);
 
             if (this.frameCurr === 1) {
                 this.setMod(this.elem('control', 'direction', 'prev'), 'state', 'disabled');
