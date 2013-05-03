@@ -612,7 +612,7 @@
                                                                 block: 'carousel',
                                                                 js: {
                                                                     frameCurr: 1,
-                                                                    frameItemsCount: 3,
+                                                                    frameItemsCount: 1,
                                                                     frameItemsStep: 1
                                                                 },
                                                                 content: {
@@ -707,12 +707,9 @@
                                                 },
                                                 {
                                                     block: 'catalog-section-carousel',
-                                                    mix: [
-                                                        { block: 'carousel', js: true }
-                                                    ],
+
                                                     content: [
-                                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled'  }},
-                                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
+
                                                         {
                                                             elem: 'header',
                                                             content: [
@@ -722,70 +719,75 @@
 
                                                         },
                                                         {
-                                                            block: 'carousel',
-                                                            elem: 'viewport',
-                                                            content: [
-                                                                {
-                                                                    block: 'catalog-section-carousel',
-                                                                    elem: 'list',
-                                                                    attrs: {
-                                                                        style: 'margin: 60px 0 0 0;'
-                                                                    },
-                                                                    mix: [
-                                                                        {block: 'carousel', elem: 'items'}
-                                                                    ],
+                                                            elem: 'carousel',
+                                                            content: {
+                                                                block: 'carousel',
+                                                                js: {
+                                                                    frameCurr: 1,
+                                                                    frameItemsCount: 3,
+                                                                    frameItemsStep: 1
+                                                                },
+                                                                content: {
+                                                                    elem: 'items',
                                                                     content: [
                                                                         {
                                                                             elem: 'item',
-                                                                            mix: [
-                                                                                { block: 'carousel', elem: 'item' }
-                                                                            ],
                                                                             content: [
-                                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                                                {
+                                                                                    block: 'product-card',
+                                                                                    mods: { type: 'withoutDesc' }
+                                                                                }
                                                                             ]
                                                                         },
                                                                         {
                                                                             elem: 'item',
-                                                                            mix: [
-                                                                                { block: 'carousel', elem: 'item' }
-                                                                            ],
                                                                             content: [
-                                                                                { block: 'product-card', mods: { type: 'withoutDesc' } },
-
+                                                                                {
+                                                                                    block: 'product-card',
+                                                                                    mods: { type: 'withoutDesc' }
+                                                                                }
                                                                             ]
                                                                         },
                                                                         {
                                                                             elem: 'item',
-                                                                            mix: [
-                                                                                { block: 'carousel', elem: 'item' }
-                                                                            ],
                                                                             content: [
-                                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                                                {
+                                                                                    block: 'product-card',
+                                                                                    mods: { type: 'withoutDesc' }
+                                                                                }
                                                                             ]
                                                                         },
                                                                         {
                                                                             elem: 'item',
-                                                                            mix: [
-                                                                                { block: 'carousel', elem: 'item' }
-                                                                            ],
                                                                             content: [
-                                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                                                {
+                                                                                    block: 'product-card',
+                                                                                    mods: { type: 'withoutDesc' }
+                                                                                }
                                                                             ]
                                                                         },
                                                                         {
                                                                             elem: 'item',
-                                                                            mix: [
-                                                                                { block: 'carousel', elem: 'item' }
-                                                                            ],
                                                                             content: [
-                                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
+                                                                                {
+                                                                                    block: 'product-card',
+                                                                                    mods: { type: 'withoutDesc' }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            content: [
+                                                                                {
+                                                                                    block: 'product-card',
+                                                                                    mods: { type: 'withoutDesc' }
+                                                                                }
                                                                             ]
                                                                         }
                                                                     ]
                                                                 }
-                                                            ]
+                                                            }
                                                         }
-
                                                     ]
                                                 }
                                             ]

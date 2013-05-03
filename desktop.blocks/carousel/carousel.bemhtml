@@ -15,4 +15,10 @@ block carousel {
                     content: applyNext()
                  }
             ]
+
+
+
+    elem items, tag: 'ul'
+
+    elem item, tag: 'li'
 }
