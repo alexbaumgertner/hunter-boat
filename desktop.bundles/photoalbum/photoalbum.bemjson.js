@@ -205,25 +205,29 @@
                                                             },
                                                             {
                                                                 elem: 'carousel',
-                                                                mix: [{ block: 'carousel', mods: { type: 'vert' }, js: true }],
-                                                                content: [
-                                                                    { block: 'carousel', mods: { type: 'vert' } , elem: 'control', elemMods: { direction: 'prev', state: 'disabled' }},
-                                                                    { block: 'carousel', mods: { type: 'vert' } , elem: 'control', elemMods: { direction: 'next' }},
-                                                                    {
-                                                                        elem: 'viewport',
-                                                                        mix: [{ block: 'carousel', elem: 'viewport' }],
-                                                                        content: [
-                                                                            {
-                                                                                elem: 'photo-list',
-                                                                                mix: [{ block: 'carousel', elem: 'items' }],
-                                                                                content: (function () {
+                                                                content: {
+                                                                    block: 'carousel',
+                                                                    mods: { type: 'vert' },
+                                                                    js: {
+                                                                        frameCurr: 1,
+                                                                        frameItemsCount: 6,
+                                                                        frameItemsStep: 1
+                                                                    },
+                                                                    content: {
+                                                                        elem: 'items',
+                                                                        mix: [
+                                                                            { block: 'photoalbums-item', elem: 'photo-list' }
+                                                                        ],
+                                                                        content: (function () {
                                                                                     var items = [];
 
                                                                                     for (var i = 0; i < 14; i++) {
 
                                                                                         items.push({
-                                                                                            elem: 'photo',
-                                                                                            mix: [{ block: 'carousel', elem: 'item' }],
+                                                                                            elem: 'item',
+                                                                                            mix: [
+                                                                                                { block: 'photoalbums-item', elem: 'photo' }
+                                                                                            ],
                                                                                             tag: 'img',
                                                                                             attrs: {
                                                                                                 src: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg',
@@ -238,11 +242,9 @@
 
                                                                                     return items;
                                                                                 }())
-                                                                            }
-                                                                        ]
                                                                     }
+                                                                }
 
-                                                                ]
                                                             }
                                                         ]
                                                     }
@@ -261,60 +263,55 @@
                                                     },
                                                     {
                                                         elem: 'carousel',
-                                                        mix: [{ block: 'carousel', js: true }],
-                                                        content: [
-                                                            { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled' }},
-                                                            { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
-                                                            {
-                                                                elem: 'viewport',
-                                                                mix: [{ block: 'carousel', elem: 'viewport' }],
-                                                                content: [
-                                                                    {
-                                                                        elem: 'list',
-                                                                        mix: [{ block: 'carousel', elem: 'items' }],
-                                                                        content: (function () {
-                                                                            var items = [];
+                                                        content: {
+                                                            block: 'carousel',
+                                                            js: {
+                                                                frameCurr: 1,
+                                                                frameItemsCount: 4,
+                                                                frameItemsStep: 1
+                                                            },
+                                                            content: {
+                                                                elem: 'items',
+                                                                content: (function () {
+                                                                    var items = [];
 
-                                                                            for (var i = 0; i < 15; i++) {
+                                                                    for (var i = 0; i < 15; i++) {
 
-                                                                                items.push({
-                                                                                    elem: 'item',
-                                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                                    content: {
-                                                                                        block: 'photoalbum-thumb',
+                                                                        items.push({
+                                                                            elem: 'item',
+                                                                            content: {
+                                                                                block: 'photoalbum-thumb',
+                                                                                content: [
+                                                                                    {
+                                                                                        elem: 'photo'
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'title',
+                                                                                        content: { block: 'b-link', url: '/', content: 'Тест драйв лодки Хантер 280 Т' }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'counter',
                                                                                         content: [
                                                                                             {
-                                                                                                elem: 'photo'
+                                                                                                elem: 'counter-value',
+                                                                                                content: '8'
                                                                                             },
                                                                                             {
-                                                                                                elem: 'title',
-                                                                                                content: { block: 'b-link', url: '/', content: 'Тест драйв лодки Хантер 280 Т' }
-                                                                                            },
-                                                                                            {
-                                                                                                elem: 'counter',
-                                                                                                content: [
-                                                                                                    {
-                                                                                                        elem: 'counter-value',
-                                                                                                        content: '8'
-                                                                                                    },
-                                                                                                    {
-                                                                                                        elem: 'counter-currency',
-                                                                                                        content: 'фото'
-                                                                                                    }
-                                                                                                ]
+                                                                                                elem: 'counter-currency',
+                                                                                                content: 'фото'
                                                                                             }
                                                                                         ]
                                                                                     }
-                                                                                })
-
+                                                                                ]
                                                                             }
+                                                                        })
 
-                                                                            return items;
-                                                                        }())
                                                                     }
-                                                                ]
+
+                                                                    return items;
+                                                                }())
                                                             }
-                                                        ]
+                                                        }
                                                     }
                                                 ]
                                             }

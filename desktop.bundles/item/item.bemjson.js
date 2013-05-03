@@ -883,7 +883,7 @@
                                         {
                                             elem: 'header',
                                             content: [
-                                                { elem: 'title',  elemMods: { size: 'small' }, content: { block: 'b-link', content: 'Рекомендуемые моторы для лодки', url: '/motors' } }
+                                                { elem: 'title',  elemMods: { size: 'small' }, content: { block: 'b-link', content: 'Ранее просмотренные', url: '/motors' } }
                                             ]
 
                                         },
@@ -959,67 +959,7 @@
                                         }
                                     ]
                                 },
-                                { block: 'line', mods: { type: 'wavy-0081bd' } },
-                                {
-                                    block: 'catalog-section-carousel',
-                                    mix: [
-                                        { block: 'carousel', js: true }
-                                    ],
-                                    content: [
-                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled'  }},
-                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'next'  }},
-                                        {
-                                            elem: 'header',
-                                            content: [
-                                                { elem: 'title',  elemMods: { size: 'small' }, content: 'Ранее просмотренные' }
-                                            ]
-
-                                        },
-                                        {
-                                            block: 'carousel',
-                                            elem: 'viewport',
-                                            content: [
-                                                {
-                                                    block: 'catalog-section-carousel',
-                                                    elem: 'list',
-                                                    mix: [
-                                                        {block: 'carousel', elem: 'items'}
-                                                    ],
-                                                    content: [
-                                                        {
-                                                            elem: 'item',
-                                                            mix: [
-                                                                { block: 'carousel', elem: 'item' }
-                                                            ],
-                                                            content: [
-                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            mix: [
-                                                                { block: 'carousel', elem: 'item' }
-                                                            ],
-                                                            content: [
-                                                                { block: 'product-card', mods: { type: 'withoutDesc' } },
-
-                                                            ]
-                                                        } ,
-                                                        {
-                                                            elem: 'item',
-                                                            mix: [
-                                                                { block: 'carousel', elem: 'item' }
-                                                            ],
-                                                            content: [
-                                                                { block: 'product-card', mods: { type: 'withoutDesc' } }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                                { block: 'line', mods: { type: 'wavy-0081bd' } }
                             ]
                         }
                     ]
