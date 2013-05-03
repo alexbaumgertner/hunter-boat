@@ -7,6 +7,10 @@
     line-height: 20px;
     padding: 10px 12px 15px;
     background: #f0faff;
-    margin: 32px 0 0 36px;
+    margin: 32px auto;
     border-radius: 8px;
+}
+
+.catalog-section__link-to-all .b-link:hover {
+    color: #00aefe;
 }
