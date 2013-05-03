@@ -1,6 +1,6 @@
 .product-card_type_withFullDesc
 {
     text-align: left;
-    width: 100%;
+    width: auto !important;
     padding: 0;
 }

@@ -1,17 +1,9 @@
 .catalog-section-carousel {
     position: relative;
     width: 100%;
-    margin: 50px 0 70px 0;
+    margin: 50px 0 70px 20px;
 }
 
 .catalog-section-carousel:last-child {
     margin-bottom: 0;
-}
-
-.catalog-section-carousel .carousel__control_direction_prev {
-    left: 0;
-}
-
-.catalog-section-carousel .carousel__control_direction_next {
-    right: -16px;
 }

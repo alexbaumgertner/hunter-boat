@@ -2,12 +2,8 @@
 {
     display: inline-block;
     vertical-align: top;
-    margin: 0 25px 0 0;
 }
 
-.catalog-section-carousel__item:last-child {
-    margin-right: 0;
-}
 
 .catalog-section-carousel__item .product-card {
     width: 205px;

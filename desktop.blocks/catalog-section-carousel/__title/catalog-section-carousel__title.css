@@ -1,12 +1,14 @@
 .catalog-section-carousel__title
 {
     font-size: 22px;
+    text-transform: uppercase;
 }
 
 .catalog-section-carousel__title .b-link {
     text-decoration: none;
     line-height: 20px;
     display: inline-block;
+    border-bottom: 1px solid;
 }
 
 .catalog-section-carousel__title .b-link:hover {

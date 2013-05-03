@@ -915,7 +915,7 @@
                                         { block: 'carousel', js: true }
                                     ],
                                     content: [
-                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev'  }},
+                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled' }},
                                         { block: 'carousel', elem: 'control', elemMods: { direction: 'next'  }},
                                         {
                                             elem: 'header',
@@ -976,7 +976,7 @@
                                         { block: 'carousel', js: true }
                                     ],
                                     content: [
-                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev'  }},
+                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled'  }},
                                         { block: 'carousel', elem: 'control', elemMods: { direction: 'next'  }},
                                         {
                                             elem: 'header',
