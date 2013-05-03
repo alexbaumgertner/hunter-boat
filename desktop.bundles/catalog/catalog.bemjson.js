@@ -598,12 +598,7 @@
                                             content: [
                                                 {
                                                     block: 'catalog-section-carousel',
-                                                    mix: [
-                                                        { block: 'carousel', js: true }
-                                                    ],
                                                     content: [
-                                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'prev', state: 'disabled'  }},
-                                                        { block: 'carousel', elem: 'control', elemMods: { direction: 'next'}},
                                                         {
                                                             elem: 'header',
                                                             content: [
@@ -611,111 +606,113 @@
                                                                 { elem: 'counter', content: '35' }
                                                             ]
                                                         },
-
-
                                                         {
-
-                                                            block: 'carousel',
-                                                            elem: 'viewport',
-                                                            content: [
-                                                                {
-                                                                    block: 'catalog-section-carousel',
-                                                                    elem: 'list',
-                                                                    mix: [
-                                                                        {block: 'carousel', elem: 'items'}
-                                                                    ],
-                                                                    content: [
-                                                                        {
-                                                                            elem: 'item',
-                                                                            mix: [
-                                                                                { block: 'carousel', elem: 'item' }
-                                                                            ],
-                                                                            content: [
-                                                                                {
-                                                                                    block: 'product-card',
-                                                                                    mods: { type: 'withFullDesc' },
-                                                                                    content: [
-                                                                                        [
+                                                            elem: 'carousel',
+                                                            content: {
+                                                                block: 'carousel',
+                                                                js: {
+                                                                    frameCurr: 1,
+                                                                    frameItemsCount: 3,
+                                                                    frameItemsStep: 1
+                                                                },
+                                                                content: [
+                                                                    { block: 'carousel', elem: 'control', elemMods: { direction: 'prev' }},
+                                                                    { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }},
+                                                                    {
+                                                                        elem: 'viewport',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'items',
+                                                                                content: [
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: [
                                                                                             {
-                                                                                                elem: 'photo',
-                                                                                                tag: 'img',
-                                                                                                attrs: {
-                                                                                                    src: 'img/catalog/motors/yamaha_06.png'
-                                                                                                }
-                                                                                            },
-                                                                                            {
-                                                                                                elem: 'info',
+                                                                                                block: 'product-card',
+                                                                                                mods: { type: 'withFullDesc' },
                                                                                                 content: [
-                                                                                                    {
-                                                                                                        elem: 'title',
-                                                                                                        content: { block: 'b-link', url: 'catalog/boats/', content: 'Лодочный мотор Yamaha 6CMHS' }
-                                                                                                    },
-                                                                                                    {
-                                                                                                        elem: 'desc',
-                                                                                                        content: 'Yamaha 6CMHS - 2x тактный мотос с 2 цилиндрами при рабочем объеме 165 куб. см. развивает мощность 6 л.с. и весит 27 килограмм. Такое соотношение мощность/вес приводит к улучшению и без того отличных динамичемских характетистик.'                                                                                    },
-                                                                                                    {
-                                                                                                        elem: 'price',
-                                                                                                        content: {
-                                                                                                            block: 'price',
-                                                                                                            mods: { currency: 'dot-dash' },
-                                                                                                            value: 66500
+                                                                                                    [
+                                                                                                        {
+                                                                                                            elem: 'photo',
+                                                                                                            tag: 'img',
+                                                                                                            attrs: {
+                                                                                                                src: 'img/catalog/motors/yamaha_06.png'
+                                                                                                            }
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem: 'info',
+                                                                                                            content: [
+                                                                                                                {
+                                                                                                                    elem: 'title',
+                                                                                                                    content: { block: 'b-link', url: 'catalog/boats/', content: 'Лодочный мотор Yamaha 6CMHS' }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    elem: 'desc',
+                                                                                                                    content: 'Yamaha 6CMHS - 2x тактный мотос с 2 цилиндрами при рабочем объеме 165 куб. см. развивает мощность 6 л.с. и весит 27 килограмм. Такое соотношение мощность/вес приводит к улучшению и без того отличных динамичемских характетистик.'                                                                                    },
+                                                                                                                {
+                                                                                                                    elem: 'price',
+                                                                                                                    content: {
+                                                                                                                        block: 'price',
+                                                                                                                        mods: { currency: 'dot-dash' },
+                                                                                                                        value: 66500
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            ]
                                                                                                         }
-                                                                                                    }
+                                                                                                    ]
                                                                                                 ]
                                                                                             }
                                                                                         ]
-                                                                                    ]
-                                                                                }
-                                                                            ]
-                                                                        },
-                                                                        {
-                                                                            elem: 'item',
-                                                                            mix: [
-                                                                                { block: 'carousel', elem: 'item' }
-                                                                            ],
-                                                                            content: [
-                                                                                {
-                                                                                    block: 'product-card',
-                                                                                    mods: { type: 'withFullDesc' },
-                                                                                    content: [
-                                                                                        [
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: [
                                                                                             {
-                                                                                                elem: 'photo',
-                                                                                                tag: 'img',
-                                                                                                attrs: {
-                                                                                                    src: 'img/catalog/motors/yamaha_06.png'
-                                                                                                }
-                                                                                            },
-                                                                                            {
-                                                                                                elem: 'info',
+                                                                                                block: 'product-card',
+                                                                                                mods: { type: 'withFullDesc' },
                                                                                                 content: [
-                                                                                                    {
-                                                                                                        elem: 'title',
-                                                                                                        content: { block: 'b-link', url: 'catalog/boats/', content: 'Лодочный мотор Yamaha 6CMHS' }
-                                                                                                    },
-                                                                                                    {
-                                                                                                        elem: 'desc',
-                                                                                                        content: 'Yamaha 6CMHS - 2x тактный мотос с 2 цилиндрами при рабочем объеме 165 куб. см. развивает мощность 6 л.с. и весит 27 килограмм. Такое соотношение мощность/вес приводит к улучшению и без того отличных динамичемских характетистик.'                                                                                    },
-                                                                                                    {
-                                                                                                        elem: 'price',
-                                                                                                        content: {
-                                                                                                            block: 'price',
-                                                                                                            mods: { currency: 'dot-dash' },
-                                                                                                            value: 66500
+                                                                                                    [
+                                                                                                        {
+                                                                                                            elem: 'photo',
+                                                                                                            tag: 'img',
+                                                                                                            attrs: {
+                                                                                                                src: 'img/catalog/motors/yamaha_06.png'
+                                                                                                            }
+                                                                                                        },
+                                                                                                        {
+                                                                                                            elem: 'info',
+                                                                                                            content: [
+                                                                                                                {
+                                                                                                                    elem: 'title',
+                                                                                                                    content: { block: 'b-link', url: 'catalog/boats/', content: 'Лодочный мотор Yamaha 6CMHS' }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    elem: 'desc',
+                                                                                                                    content: 'Yamaha 6CMHS - 2x тактный мотос с 2 цилиндрами при рабочем объеме 165 куб. см. развивает мощность 6 л.с. и весит 27 килограмм. Такое соотношение мощность/вес приводит к улучшению и без того отличных динамичемских характетистик.'                                                                                    },
+                                                                                                                {
+                                                                                                                    elem: 'price',
+                                                                                                                    content: {
+                                                                                                                        block: 'price',
+                                                                                                                        mods: { currency: 'dot-dash' },
+                                                                                                                        value: 66500
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            ]
                                                                                                         }
-                                                                                                    }
+                                                                                                    ]
                                                                                                 ]
                                                                                             }
                                                                                         ]
-                                                                                    ]
-                                                                                }
-                                                                            ]
-                                                                        }
-                                                                    ]
-                                                                }
+                                                                                    }
+                                                                                ]
+                                                                            }
 
-                                                            ]
-                                                        },
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+
                                                     ]
                                                 },
                                                 {

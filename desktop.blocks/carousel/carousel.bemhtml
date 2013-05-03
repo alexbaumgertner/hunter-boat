@@ -1,26 +1,19 @@
 block carousel {
 
+    default: {
+         this.ctx.mods || (this.ctx.mods = {});
+         this.ctx.mods.type || (this.ctx.mods.type = 'horiz');
+         this._carouselType = this.ctx.mods.type;
+         applyNext();
+    }
+
     elem control, elemMod direction prev {
-        content: { block: 'button', mods: { direction: 'prev', type: 'carousel-horiz' } }
+        content: { block: 'button', mods: { direction: 'prev', type: 'carousel-' + this._carouselType } }
     }
 
 
     elem control, elemMod direction next {
-        content: { block: 'button', mods: { direction: 'next', type: 'carousel-horiz' } }
-    }
-
-}
-
-
-block carousel, mod type vert {
-
-    elem control, elemMod direction prev {
-        content: { block: 'button', mods: { direction: 'prev', type: 'carousel-vert' } }
-    }
-
-
-    elem control, elemMod direction next {
-        content: { block: 'button', mods: { direction: 'next', type: 'carousel-vert' } }
+        content: { block: 'button', mods: { direction: 'next', type: 'carousel-' + this._carouselType } }
     }
 
 }

@@ -8,3 +8,9 @@
 .catalog-section-carousel__item .product-card {
     width: 205px;
 }
+
+.catalog-section-carousel__item .product-card_type_withFullDesc {
+    width: 715px !important;
+}
+
+

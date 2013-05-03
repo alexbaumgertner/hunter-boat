@@ -1,4 +1,5 @@
 .carousel__viewport
 {
     overflow-x: hidden;
+    margin: 0 30px;
 }
