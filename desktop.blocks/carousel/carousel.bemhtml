@@ -7,13 +7,12 @@ block carousel {
          applyNext();
     }
 
-    elem control, elemMod direction prev {
-        content: { block: 'button', mods: { direction: 'prev', type: 'carousel-' + this._carouselType } }
-    }
-
-
-    elem control, elemMod direction next {
-        content: { block: 'button', mods: { direction: 'next', type: 'carousel-' + this._carouselType } }
-    }
-
+    content:[
+                 { elem: 'control', elemMods: { direction: 'prev' }, content: { block: 'button', mods: { direction: 'prev', type: 'carousel-' + this._carouselType } }},
+                 { elem: 'control', elemMods: { direction: 'next' }, content: { block: 'button', mods: { direction: 'next', type: 'carousel-' + this._carouselType } }},
+                 {
+                    elem: 'viewport',
+                    content: applyNext()
+                 }
+            ]
 }
