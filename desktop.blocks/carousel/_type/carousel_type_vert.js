@@ -18,17 +18,13 @@
 
                 this.itemFullHeight = Math.floor(this.frameHeight / this.params.frameItemsCount);
 
-                var itemCountOnLine = 2; // items by one line TODO: refactor
-
-                this.frameTotal = Math.round(this.itemFullHeight * this.elem('item').length / this.frameHeight) * itemCountOnLine;
+                this.frameTotal = Math.ceil((this.elem('item').length - this.params.frameItemsCount) / this.params.frameItemsStep) + 1; // 1 -- current frame
 
                 // correct viewport width
-                this.frameHeight = this.itemFullHeight * this.params.frameItemsCount; // item with margins
+                this.frameHeight = this.itemFullHeight * this.params.frameItemsCount;
 
                 this.elem('viewport').css({ height: this.frameHeight });
-
-                var itemMarginAndBorderHeight = this.elem('item').outerHeight(true) -  this.elem('item').innerHeight();
-                this.elem('item').css({ height: this.itemFullHeight - itemMarginAndBorderHeight });
+                this.elem('item').css({ height: this.itemFullHeight });
 
                 this.frameCurr = this.params.frameCurr;
             }
@@ -39,11 +35,11 @@
         switchCarousel: function (direction) {
 
             if (direction === 'prev') {
-                this.elem('items').animate({ 'top': '+=' + this.itemFullHeight });
+                this.elem('items').animate({ 'top': '+=' + (this.itemFullHeight * this.params.frameItemsStep) });
                 this.frameCurr = this.frameCurr - 1;
 
             } else {
-                this.elem('items').animate({ 'top': '-=' + this.itemFullHeight });
+                this.elem('items').animate({ 'top': '-=' + (this.itemFullHeight * this.params.frameItemsStep) });
                 this.frameCurr = this.frameCurr + 1;
             }
 

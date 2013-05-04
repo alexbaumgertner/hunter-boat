@@ -24,7 +24,7 @@
                 this.elem('item').css({ width: this.itemFullWidth });
 
 
-                this.frameTotal = Math.round(this.itemFullWidth * this.elem('item').length / this.frameWidth);
+                this.frameTotal = Math.ceil((this.elem('item').length - this.params.frameItemsCount) / this.params.frameItemsStep) + 1; // 1 -- current frame
                 this.frameCurr = this.params.frameCurr;
             }
 
@@ -33,11 +33,11 @@
         switchCarousel: function (direction) {
 
             if (direction === 'prev') {
-                this.elem('items').animate({ 'left': '+=' + this.itemFullWidth });
+                this.elem('items').animate({ 'left': '+=' + (this.itemFullWidth * this.params.frameItemsStep) });
                 this.frameCurr = this.frameCurr - 1;
 
             } else {
-                this.elem('items').animate({ 'left': '-=' + this.itemFullWidth });
+                this.elem('items').animate({ 'left': '-=' + (this.itemFullWidth * this.params.frameItemsStep) });
                 this.frameCurr = this.frameCurr + 1;
             }
 

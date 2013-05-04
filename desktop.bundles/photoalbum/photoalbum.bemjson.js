@@ -211,7 +211,7 @@
                                                                     js: {
                                                                         frameCurr: 1,
                                                                         frameItemsCount: 6,
-                                                                        frameItemsStep: 1
+                                                                        frameItemsStep: 3
                                                                     },
                                                                     content: {
                                                                         elem: 'items',
@@ -280,7 +280,7 @@
                                                             js: {
                                                                 frameCurr: 1,
                                                                 frameItemsCount: 4,
-                                                                frameItemsStep: 1
+                                                                frameItemsStep: 2
                                                             },
                                                             content: {
                                                                 elem: 'items',
