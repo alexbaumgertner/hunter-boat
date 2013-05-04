@@ -265,7 +265,14 @@
                                                                                         },
                                                                                         {
                                                                                             elem: 'item-qualif',
-                                                                                            content: 'серая/зеденая'
+                                                                                            content: {
+                                                                                                block: 'color-selector',
+                                                                                                content: [
+                                                                                                    { elem: 'selector', content: 'серая', value: 'a0a0a0', checked: true },
+                                                                                                    { elem: 'selector', content: 'зеленая', value: '377530' }
+                                                                                                ]
+                                                                                            }
+
                                                                                         }
                                                                                     ]
                                                                                 },
