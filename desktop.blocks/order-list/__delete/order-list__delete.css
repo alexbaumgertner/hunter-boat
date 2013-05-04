@@ -3,6 +3,8 @@
     display: inline-block;
     vertical-align: middle;
     width: 55px;
+    color: #9c9c9c;
+    text-align: right;
 }
 
 .order-list__delete .button_type_delete {

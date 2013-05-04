@@ -5,3 +5,8 @@
     width: 50px;
     margin: 0 35px;
 }
+
+.order-list__counter .input_type_text {
+    padding: 5px;
+    text-align: center;
+}

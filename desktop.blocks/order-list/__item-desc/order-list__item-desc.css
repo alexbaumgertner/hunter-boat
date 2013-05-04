@@ -2,5 +2,9 @@
 {
     display: inline-block;
     vertical-align: middle;
-    width: 475px;
+    width: 450px;
+}
+
+.order-list__header .order-list__item-desc {
+    width: 525px;
 }
