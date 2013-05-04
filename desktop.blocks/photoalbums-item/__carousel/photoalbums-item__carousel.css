@@ -1,5 +1,7 @@
 .photoalbums-item__carousel
 {
     display: inline-block;
+    vertical-align: top;
     width: 200px;
+    height: 452px;
 }

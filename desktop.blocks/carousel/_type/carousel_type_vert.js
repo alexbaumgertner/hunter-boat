@@ -13,17 +13,20 @@
                     this.onControlClick(e);
                 });
 
+                // viewport size
                 this.frameHeight = this.elem('viewport').innerHeight();
 
                 this.itemFullHeight = Math.floor(this.frameHeight / this.params.frameItemsCount);
 
+                this.frameTotal = Math.round(this.itemFullHeight * this.elem('item').length / this.frameHeight);
+
                 // correct viewport width
-                this.frameHeight = this.itemFullHeight * this.params.frameItemsCount;
+                this.frameHeight = this.itemFullHeight * this.params.frameItemsCount; // item with margins
 
                 this.elem('viewport').css({ height: this.frameHeight });
-                this.elem('item').css({ height: this.itemFullHeight });
 
-                this.frameTotal = Math.round(this.itemFullHeight * this.elem('item').length / this.frameHeight);
+                var itemMarginAndBorderHeight = this.elem('item').outerHeight(true) -  this.elem('item').innerHeight();
+                this.elem('item').css({ height: this.itemFullHeight - itemMarginAndBorderHeight });
 
                 this.frameCurr = this.params.frameCurr;
             }
@@ -48,9 +51,9 @@
 
     }, {
 
-/*        live: function () {
-            *//* ... *//*
-        }*/
+        /*        live: function () {
+         *//* ... *//*
+         }*/
 
     });
 

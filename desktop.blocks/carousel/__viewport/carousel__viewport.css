@@ -1,12 +1,15 @@
 .carousel__viewport {
-    overflow-x: hidden;
 
 }
 
 .carousel_type_horiz .carousel__viewport {
     margin: 0 30px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .carousel_type_vert .carousel__viewport {
     margin: 0;
+    height: 100%;
+    overflow-y: hidden;
 }

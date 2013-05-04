@@ -1,5 +1,6 @@
 .carousel_type_vert
 {
+    height: 100%;
 }
 
 .carousel_type_vert .carousel__items {
