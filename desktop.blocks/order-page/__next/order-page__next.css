@@ -1,6 +1,10 @@
 .order-page__next
 {
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    right: 0;
+    bottom: 10px;
+}
+
+.order-page__next .button_type_submit {
+    padding: 0 35px;
 }

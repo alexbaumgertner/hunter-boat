@@ -1,6 +1,7 @@
 .order-list__total
 {
-    margin: 30px 0 30px 610px;
-    font-size: 15px;
+    margin: 30px 0 30px 505px;
+    font-size: 16px;
     font-weight: bold;
+    letter-spacing: -1px;
 }
