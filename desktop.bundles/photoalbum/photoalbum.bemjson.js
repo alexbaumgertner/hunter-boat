@@ -225,16 +225,29 @@
 
                                                                                         items.push({
                                                                                             elem: 'item',
-                                                                                            mix: [
-                                                                                                { block: 'photoalbums-item', elem: 'photo', elemMods: (function(){
-                                                                                                    if (i === 0) return { state: 'current' };
-                                                                                                }()) }
-                                                                                            ],
-                                                                                            tag: 'img',
-                                                                                            attrs: {
-                                                                                                src: 'img/photoalbums/develop-505/' + (i === 0 ? 2 :  Math.floor((Math.random() * 6) + 1)) + '_small.jpg',
-                                                                                                rel: 'img/photoalbums/develop-505/' + (i === 0 ? 2 :  Math.floor((Math.random() * 6) + 1)) + '_small.jpg',
-                                                                                            }
+                                                                                            content: [
+                                                                                                {
+                                                                                                    block: 'photoalbums-item',
+                                                                                                    elem: 'photo',
+                                                                                                    elemMods: (function () {
+                                                                                                        if (i === 0) {return { state: 'current' };}
+                                                                                                    }()),
+                                                                                                    tag: 'img',
+                                                                                                    attrs: {
+                                                                                                        src: 'img/photoalbums/develop-505/' + (i === 0 ? 2 : Math.floor((Math.random() * 6) + 1)) + '_small.jpg',
+                                                                                                        rel: 'img/photoalbums/develop-505/' + (i === 0 ? 2 : Math.floor((Math.random() * 6) + 1)) + '_small.jpg',
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    block: 'photoalbums-item',
+                                                                                                    elem: 'photo',
+                                                                                                    tag: 'img',
+                                                                                                    attrs: {
+                                                                                                        src: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg',
+                                                                                                        rel: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg',
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
                                                                                         })
 
                                                                                     }
