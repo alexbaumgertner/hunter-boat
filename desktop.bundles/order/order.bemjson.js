@@ -390,16 +390,15 @@
                                                             block: 'authorization',
                                                             content: [
                                                                 {
-                                                                    elem: 'signup',
-                                                                    content: {
-                                                                        block: 'signup',
-                                                                        content: ''
-                                                                    }
-                                                                },
-                                                                {
                                                                     elem: 'signin',
                                                                     content: {
                                                                         block: 'signin'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'signup',
+                                                                    content: {
+                                                                        block: 'signup'
                                                                     }
                                                                 }
                                                             ]

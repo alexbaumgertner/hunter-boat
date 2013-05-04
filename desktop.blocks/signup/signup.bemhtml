@@ -27,10 +27,6 @@ block signup {
                     content: { block: 'b-link', url: '/authorization/recovery', content: 'Забыли?' }
                  }
             ]
-        },
-        {
-            elem: 'text',
-            content: 'Наши менеджеры сами перезвонят для уточнения и подтверждения заказа'
         }
     ]
 }

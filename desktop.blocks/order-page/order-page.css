@@ -4,3 +4,7 @@
     display: block;
     width: 920px;
 }
+
+.order-page .b-link:hover {
+    color: #00aefe;
+}
