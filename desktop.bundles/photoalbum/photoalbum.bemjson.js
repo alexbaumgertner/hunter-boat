@@ -226,19 +226,18 @@
                                                                                         items.push({
                                                                                             elem: 'item',
                                                                                             mix: [
-                                                                                                { block: 'photoalbums-item', elem: 'photo' }
+                                                                                                { block: 'photoalbums-item', elem: 'photo', elemMods: (function(){
+                                                                                                    if (i === 0) return { state: 'current' };
+                                                                                                }()) }
                                                                                             ],
                                                                                             tag: 'img',
                                                                                             attrs: {
-                                                                                                src: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg',
-                                                                                                rel: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg',
+                                                                                                src: 'img/photoalbums/develop-505/' + (i === 0 ? 2 :  Math.floor((Math.random() * 6) + 1)) + '_small.jpg',
+                                                                                                rel: 'img/photoalbums/develop-505/' + (i === 0 ? 2 :  Math.floor((Math.random() * 6) + 1)) + '_small.jpg',
                                                                                             }
                                                                                         })
 
                                                                                     }
-
-                                                                                    items[0].elemMods = { state: 'current' };
-                                                                                    items[0].attrs.src = 'img/photoalbums/develop-505/2_small.jpg';
 
                                                                                     return items;
                                                                                 }())
