@@ -5,6 +5,10 @@
     margin-top: -30px;
 }
 
+.photoalbums-carousel .carousel__viewport {
+    margin: 0;
+}
+
 .photoalbums-carousel .carousel__control_direction_next {
     right: -30px;
 }
