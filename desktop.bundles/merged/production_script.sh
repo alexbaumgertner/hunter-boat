@@ -3,6 +3,8 @@
 # put this script to /merged
 # depends: npm install cssrb first
 
+# bem make desktop.bundles/merged/_merged.css desktop.bundles/merged/_merged.js
+
 
 # clean prev ()
 rm -rf build/
