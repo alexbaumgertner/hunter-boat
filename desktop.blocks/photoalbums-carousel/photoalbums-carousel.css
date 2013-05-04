@@ -12,3 +12,7 @@
 .photoalbums-carousel .carousel__control_direction_next {
     right: -30px;
 }
+
+.photoalbums-carousel .carousel__control_direction_prev {
+    left: -32px;
+}

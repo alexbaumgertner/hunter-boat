@@ -18,7 +18,9 @@
 
                 this.itemFullHeight = Math.floor(this.frameHeight / this.params.frameItemsCount);
 
-                this.frameTotal = Math.round(this.itemFullHeight * this.elem('item').length / this.frameHeight);
+                var itemCountOnLine = 2; // items by one line TODO: refactor
+
+                this.frameTotal = Math.round(this.itemFullHeight * this.elem('item').length / this.frameHeight) * itemCountOnLine;
 
                 // correct viewport width
                 this.frameHeight = this.itemFullHeight * this.params.frameItemsCount; // item with margins

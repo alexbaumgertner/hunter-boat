@@ -221,7 +221,7 @@
                                                                         content: (function () {
                                                                                     var items = [];
 
-                                                                                    for (var i = 0; i < 14; i++) {
+                                                                                    for (var i = 0; i < 24; i++) {
 
                                                                                         items.push({
                                                                                             elem: 'item',
