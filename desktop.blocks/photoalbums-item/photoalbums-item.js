@@ -27,7 +27,7 @@ BEM.DOM.decl('photoalbums-item', {
 
                     this.delMod(prev, 'state');
 
-                    this.elem('current').attr('src', prev.attr('rel'));
+                    this.elem('current').attr('src', elem.attr('rel'));
 
                 }
             }
