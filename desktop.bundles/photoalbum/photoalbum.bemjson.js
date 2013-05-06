@@ -200,7 +200,7 @@
                                                                 elem: 'current',
                                                                 tag: 'img',
                                                                 attrs: {
-                                                                    src: 'img/photoalbums/develop-505/1_medium.jpg'
+                                                                    src: 'img/photoalbums/new-hunter-360/1.jpg'
                                                                 }
                                                             },
                                                             {
@@ -221,33 +221,37 @@
                                                                         content: (function () {
                                                                                     var items = [];
 
-                                                                                    for (var i = 0; i < 24; i++) {
+                                                                                    for (var i = 0; i < 16; i++) {
+
+
 
                                                                                         items.push({
                                                                                             elem: 'item',
-                                                                                            content: [
-                                                                                                {
-                                                                                                    block: 'photoalbums-item',
-                                                                                                    elem: 'photo',
-                                                                                                    elemMods: (function () {
-                                                                                                        if (i === 0) {return { state: 'current' };}
-                                                                                                    }()),
-                                                                                                    tag: 'img',
-                                                                                                    attrs: {
-                                                                                                        src: 'img/photoalbums/develop-505/' + (i === 0 ? 2 : Math.floor((Math.random() * 6) + 1)) + '_small.jpg',
-                                                                                                        rel: 'img/photoalbums/develop-505/' + (i === 0 ? 2 : Math.floor((Math.random() * 6) + 1)) + '_small.jpg',
+                                                                                            content: (function () {
+                                                                                                var content = [];
+                                                                                                var isCurr = i === 0;
+
+                                                                                                for (var j = 0; j < 2; j++) {
+
+                                                                                                    content[j] = {
+                                                                                                        block: 'photoalbums-item',
+                                                                                                        elem: 'photo',
+                                                                                                        elemMods: (function () {
+                                                                                                            if (isCurr) { isCurr = false; return { state: 'current' };}
+                                                                                                        }()),
+                                                                                                        tag: 'img',
+                                                                                                        attrs: {
+                                                                                                            src: 'img/photoalbums/new-hunter-360/' + (i + 1 + j) + '.jpg',
+                                                                                                            rel: 'img/photoalbums/new-hunter-360/' + (i + 1 + j) + '.jpg',
+                                                                                                        }
                                                                                                     }
-                                                                                                },
-                                                                                                {
-                                                                                                    block: 'photoalbums-item',
-                                                                                                    elem: 'photo',
-                                                                                                    tag: 'img',
-                                                                                                    attrs: {
-                                                                                                        src: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg',
-                                                                                                        rel: 'img/photoalbums/develop-505/' + Math.floor((Math.random() * 6) + 1) + '_small.jpg',
-                                                                                                    }
+
+
+
                                                                                                 }
-                                                                                            ]
+
+                                                                                                return content;
+                                                                                            }())
                                                                                         })
 
                                                                                     }
