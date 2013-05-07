@@ -426,7 +426,7 @@
                                                         content: [
                                                             {
                                                                 elem: 'header-text',
-                                                                content: 'Надувная лодка Хантер 320 ЛК ЛЮКС'
+                                                                content: 'Надувная лодка Хантер 350 МЛ'
                                                             },
                                                             {
                                                                 elem: 'header-icon',
@@ -474,16 +474,19 @@
                                                         content: [
                                                             {
                                                                 elem: 'photos-list-item',
-                                                                mods: { state: 'current' },
-                                                                url: 'img/catalog/boats/hunter_320_LK_LUX/photos/1_small.jpg'
+                                                                elemMods: { state: 'current' },
+                                                                url: 'img/catalog/boats/hunter_350_ML/01.jpg',
+                                                                attrs: { rel: 'img/catalog/boats/hunter_350_ML/01.jpg' }
                                                             },
                                                             {
                                                                 elem: 'photos-list-item',
-                                                                url: 'img/catalog/boats/hunter_320_LK_LUX/photos/2_small.jpg'
+                                                                url: 'img/catalog/boats/hunter_350_ML/02.jpg',
+                                                                attrs: { rel: 'img/catalog/boats/hunter_350_ML/02.jpg' }
                                                             },
                                                             {
                                                                 elem: 'photos-list-item',
-                                                                url: 'img/catalog/boats/hunter_320_LK_LUX/photos/3_small.jpg'
+                                                                url: 'img/catalog/boats/hunter_350_ML/03.jpg',
+                                                                attrs: { rel: 'img/catalog/boats/hunter_350_ML/03.jpg' }
                                                             }
                                                         ]
                                                     },
@@ -491,7 +494,11 @@
                                                         elem: 'photo-big',
                                                         content: {
                                                             elem: 'photo-big-img',
-                                                            url: 'img/catalog/boats/hunter_320_LK_LUX/photos/1_medium.jpg'
+                                                            url: 'img/catalog/boats/hunter_350_ML/04.jpg',
+                                                            js: {
+                                                                '377530': 'img/catalog/boats/hunter_350_ML/04.jpg',
+                                                                'a0a0a0': 'img/catalog/boats/hunter_350_ML/05.jpg'
+                                                            }
                                                         }
                                                     },
                                                     {
@@ -502,8 +509,8 @@
                                                                 content: {
                                                                     block: 'color-selector',
                                                                     content: [
-                                                                        { elem: 'selector', content: 'серая', value: 'a0a0a0', checked: true },
-                                                                        { elem: 'selector', content: 'зеленая', value: '377530' }
+                                                                        { elem: 'selector', content: 'серая', value: 'a0a0a0', mix: [ { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: 'a0a0a0' } } ] },
+                                                                        { elem: 'selector', content: 'зеленая', value: '377530', mix: [ { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: '377530' } } ], checked: true  }
                                                                     ]
                                                                 }
                                                             },

@@ -1,6 +1,9 @@
 .catalog-item-card__photos-list-item
 {
-    margin: 0 25px 0 0;
+    margin: 0 10px 0 0;
+    height: 55px;
+    cursor: pointer;
+    max-width: 110px
 }
 
 .catalog-item-card__photos-list-item:last-child {
