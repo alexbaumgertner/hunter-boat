@@ -10,6 +10,11 @@
             'js': function () {
                 /* ... */
 
+                this.currItemId = this.elem('menu-item').index(this.elem('menu-item', 'state', 'current')); //
+                this.delayInitTime = 2000; // 2 sec
+                this.durationInitTime = 800; // 0.8 sec of fadeIn
+                this.delayLoopTime = 4000; // 4 sec
+
                 var _this = this;
 
                 this.domElem.hide();
@@ -20,7 +25,7 @@
 
                 setTimeout(function () {
                     _this.startCarousel()
-                }, 2000); // 2 sec
+                }, this.delayInitTime);
 
             }
         },
@@ -49,54 +54,86 @@
 
         startCarousel: function () {
             var _this = this;
-            this.domElem.fadeIn(800, function () {
+            this.domElem.fadeIn(this.durationInitTime, function () {
                 _this.loopCarousel()
             });
         },
 
 
+        /**
+         * show infinity loop of items, modify this.currItemId
+         */
         loopCarousel: function () {
-            this.currItemId = 0;
-
             var _this = this;
 
-            setInterval(function () {
+            // set next item after this.delayLoopTime
+            var timeOut = setTimeout(function () {
                 _this.currItemId = _this.currItemId + 1;
-                _this.setCarouselItem(_this.currItemId);
-            }, 4000);
+                // set curr item
+                _this.setCarouselItem(_this.currItemId, function () {
+                    clearTimeout(timeOut);
+                    _this.loopCarousel();
+                });
+            }, this.delayLoopTime);
 
         },
 
-        setCarouselItem: function (id) {
+        /**
+         *
+         * @param id of slide item
+         * @param callback fire when all modifiable elements done modificate
+         */
+        setCarouselItem: function (id, callback) {
 
-            var slides = this.params['slides'];
+
+            var _this = this;
 
 
-            if (id >= slides.length) {
+            if (id >= this.params['slides'].length) {
                 id = 0;
             }
-
             this.currItemId = id;
+
+            var currSlide = this.params['slides'][id];
 
             this.setMod($(this.elem('menu-item').get(id)), 'state', 'current');
 
-            var currSlide = slides[id];
+            // save modifiable blocks to hide/show them
+            this.modifyContentElems = this.modifyContentElems ||
+                this.elem('title')
+                    .add(this.elem('text-inner'))
+                    .add(this.elem('sub-text'))
+                    .add(this.elem('price'));
 
-            this.elem('title').children('.b-link').html(currSlide['title']);
-            this.elem('text-inner').html(currSlide['text']);
-            this.elem('sub-text').html(currSlide['sub-text']);
+            // use promise+done because fade out/in of collection of elements (callback fire every elem animation)
 
-            this.elem('price').find('.price__value').html(currSlide['start-price']);
+            // hide modifiable. blocks
+            this.modifyContentElems.fadeOut('fast')
+                .promise()
+                .done( function () {
+                        _this.elem('title').children('.b-link').html(currSlide['title']);
+                        _this.elem('text-inner').html(currSlide['text']);
+                        _this.elem('sub-text').html(currSlide['sub-text']);
+                        _this.elem('price').find('.price__value').html(currSlide['start-price']);
+                        _this.elem('photo').attr('src', currSlide['url']);
 
-            this.elem('photo').attr('src', currSlide['url']);
+                    // show modifiable blocks
+                    _this.modifyContentElems.fadeIn('slow')
+                        .promise()
+                        .done(function () {
+                        callback && typeof callback === 'function' && callback();
+                    });
+            });
+
+
 
         }
 
     }, {
 
-        /*    live : function() {
-         *//* ... *//*
-         }*/
+/*        live: function () {
+TODO: live init after elem photo Img loaded
+        }*/
 
     });
 

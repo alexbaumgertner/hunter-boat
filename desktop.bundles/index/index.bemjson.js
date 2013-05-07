@@ -45,7 +45,7 @@
                                             elem: 'link',
                                             content: {
                                                 block: 'b-link',
-                                                url: 'cart',
+                                                url: 'order.html',
                                                 content: 'В заказе:'
                                             }
                                         },
@@ -173,7 +173,36 @@
                         {
                             block: 'index-promo-carousel',
                             js: {
-                                "slides": [{"title":"\u041d\u0430\u0434\u0443\u0432\u043d\u044b\u0435 \u043c\u043e\u0442\u043e\u0440\u043d\u044b\u0435 \u043b\u043e\u0434\u043a\u0438 \u0425\u0430\u043d\u0442\u0435\u0440","text":"\u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0442 \u0434\u043e\u0431\u0440\u0430\u0442\u044c\u0441\u044f <br> \u0434\u043e \u0441\u0430\u043c\u044b\u0445 \u0437\u0430\u0432\u0435\u0442\u043d\u044b\u0445 \u043c\u0435\u0441\u0442 \u0440\u044b\u0431\u0430\u043b\u043a\u0438 \u0438\u043b\u0438 \u043e\u0442\u0434\u044b\u0445\u0430.","sub-text":"7 \u043c\u043e\u0434\u0435\u043b\u0435\u0439","start-price":"9800","url":"\/files\/images\/index-page\/carousel_1.png"},{"title":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043c\u043e\u0442\u043e\u0440\u043d\u044b\u0435 \u043b\u043e\u0434\u043a\u0438 \u0425\u0430\u043d\u0442\u0435\u0440","text":"\u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0442 \u0434\u043e\u043f\u043b\u044b\u0442\u044c <br> \u0434\u043e \u0441\u0430\u043c\u044b\u0445 \u0437\u0430\u0432\u0435\u0442\u043d\u044b\u0445 \u043c\u0435\u0441\u0442 \u0440\u044b\u0431\u0430\u043b\u043a\u0438 \u0438\u043b\u0438 \u043e\u0442\u0434\u044b\u0445\u0430.","sub-text":"15 \u043c\u043e\u0434\u0435\u043b\u0435\u0439","start-price":"7800","url":"\/files\/images\/index-page\/carousel_1.png"},{"title":"\u0421\u0443\u043f\u0435\u0440-\u043c\u043e\u0442\u043e\u0440\u044b \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u044b\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u0435\u0439","text":"\u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0442 \u0434\u043e\u0435\u0445\u0430\u0442\u044c <br> \u0434\u043e \u0441\u0430\u043c\u044b\u0445 \u0437\u0430\u0432\u0435\u0442\u043d\u044b\u0445 \u043c\u0435\u0441\u0442 \u0440\u044b\u0431\u0430\u043b\u043a\u0438 \u0438\u043b\u0438 \u043e\u0442\u0434\u044b\u0445\u0430.","sub-text":"5 \u043c\u043e\u0434\u0435\u043b\u0435\u0439","start-price":"5800","url":"\/files\/images\/index-page\/carousel_1.png"},{"title":"\u042d\u043a\u0441\u0442\u0440\u0430-\u0447\u0443\u0432\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u044d\u0445\u043e\u043b\u043e\u0442","text":"\u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0442 \u043d\u0430\u0439\u0442\u0438 <br> \u0434\u043e \u0441\u0430\u043c\u044b\u0445 \u0437\u0430\u0432\u0435\u0442\u043d\u044b\u0445 \u043c\u0435\u0441\u0442 \u0440\u044b\u0431\u0430\u043b\u043a\u0438 \u0438\u043b\u0438 \u043e\u0442\u0434\u044b\u0445\u0430.","sub-text":"10 \u043c\u043e\u0434\u0435\u043b\u0435\u0439","start-price":"10800","url":"\/files\/images\/index-page\/carousel_1.png"}]
+                                "slides":[
+                                    {
+                                        "title": "Надувные электро лодки Хантер",
+                                        "text": "позволят добраться <br> до самых заветных мест рыбалки или отдыха.",
+                                        "sub-text": "4 модели",
+                                        "start-price": "9800",
+                                        "url": "/img/index-page/carousel_1.png"
+                                    },
+                                    {
+                                        "title": "Супер моторные лодки Хантер",
+                                        "text": "позволят доплыть <br> до самых заветных мест рыбалки или отдыха.",
+                                        "sub-text": "2 модели",
+                                        "start-price": "5400",
+                                        "url": "/img/index-page/carousel_1.png"
+                                    },
+                                    {
+                                        "title": "Надувные лодки Хантер",
+                                        "text": "довезут вас <br> до самых заветных мест рыбалки или отдыха.",
+                                        "sub-text": "7 моделей",
+                                        "start-price": "3500",
+                                        "url": "/img/index-page/carousel_1.png"
+                                    },
+                                    {
+                                        "title": "Быстрые моторные лодки Хантер",
+                                        "text": "позволят хорошо порыбачить и отдохнуть",
+                                        "sub-text": "6 моделей",
+                                        "start-price": "2100",
+                                        "url": "/img/index-page/carousel_1.png"
+                                    }
+                                ]
                             },
                             content: [
                                 {
@@ -478,7 +507,7 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: '/', content: 'с Наступающим Новым 2013 годом' }
+                                                                                    content: { block: 'b-link', url: 'newsone.html', content: 'с Наступающим Новым 2013 годом' }
                                                                                 }
                                                                             ]
                                                                         },
@@ -507,6 +536,14 @@
                                                                                     content: { block: 'b-link', url: '/', content: 'Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
                                                                                 }
                                                                             ]
+                                                                        },
+                                                                        {
+                                                                            elem: 'link-to-all',
+                                                                            content: {
+                                                                                block: 'b-link',
+                                                                                url: 'news.html',
+                                                                                content: 'Все новости'
+                                                                            }
                                                                         }
                                                                     ]
                                                                 },
@@ -522,7 +559,7 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: '/', content: 'Статья с Наступающим Новым 2013 годом' }
+                                                                                    content: { block: 'b-link', url: 'articlesone.html', content: 'Статья с Наступающим Новым 2013 годом' }
                                                                                 }
                                                                             ]
                                                                         },
@@ -551,6 +588,14 @@
                                                                                     content: { block: 'b-link', url: '/', content: 'Статья Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
                                                                                 }
                                                                             ]
+                                                                        },
+                                                                        {
+                                                                            elem: 'link-to-all',
+                                                                            content: {
+                                                                                block: 'b-link',
+                                                                                url: 'articles.html',
+                                                                                content: 'Все статьи'
+                                                                            }
                                                                         }
                                                                     ]
                                                                 },
@@ -566,7 +611,7 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: '/', content: 'Отзыв с Наступающим Новым 2013 годом' }
+                                                                                    content: { block: 'b-link', url: 'reviews.html', content: 'Отзыв с Наступающим Новым 2013 годом' }
                                                                                 }
                                                                             ]
                                                                         },
@@ -595,20 +640,19 @@
                                                                                     content: { block: 'b-link', url: '/', content: 'Отзыв Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
                                                                                 }
                                                                             ]
+                                                                        },
+                                                                        {
+                                                                            elem: 'link-to-all',
+                                                                            content: {
+                                                                                block: 'b-link',
+                                                                                url: 'reviews.html',
+                                                                                content: 'Все отзывы'
+                                                                            }
                                                                         }
                                                                     ]
                                                                 }
                                                             ]
-                                                        },
-                                                        {
-                                                            elem: 'link-to-all',
-                                                            content: {
-                                                                block: 'b-link',
-                                                                url: '/news/',
-                                                                content: 'Все новости'
-                                                            }
                                                         }
-
                                                     ]
                                                 }
                                             ]
@@ -624,7 +668,7 @@
                                                         },
                                                         {
                                                             elem: 'title',
-                                                            content: { block: 'b-link', url: '/', content: 'Тест драйв лодки Хантер 280 Т' }
+                                                            content: { block: 'b-link', url: '/photoalbum.html', content: 'Тест драйв лодки Хантер 280 Т' }
                                                         },
                                                         {
                                                             elem: 'counter',

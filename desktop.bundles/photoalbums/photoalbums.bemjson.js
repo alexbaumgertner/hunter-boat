@@ -200,7 +200,7 @@
                                                                 },
                                                                 {
                                                                     elem: 'title',
-                                                                    content: { block: 'b-link', url: '/', content: 'Тест драйв лодки Хантер 280 Т' }
+                                                                    content: { block: 'b-link', url: '/photoalbum.html', content: 'Тест драйв лодки Хантер 280 Т' }
                                                                 },
                                                                 {
                                                                     elem: 'counter',

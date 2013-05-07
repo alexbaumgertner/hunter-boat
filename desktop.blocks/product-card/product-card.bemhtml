@@ -27,7 +27,7 @@ block product-card, (!this.mods || this.mods.type !== 'withFullDesc') {
                             var random = Math.floor(Math.random() * names.length);
                             return names[random];
                         }()),
-                        url: 'catalog/boats/'
+                        url: '/item.html'
                     }
                 },
                 {
