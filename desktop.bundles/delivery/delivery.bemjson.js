@@ -457,11 +457,10 @@
                                             ]
                                         },
                                         {
-                                            elem: 'links',
+                                            elem: 'tech-tables',
                                             content: [
                                                 {
-                                                    block: 'b-link',
-                                                    mods: { pseudo: 'yes' },
+                                                    elem: 'tech-tables-link',
                                                     mix: [
                                                         { block: 'visibility-toggle', mods: { 'content-visible': 'no' }, js: { id: 'shipping-tech-tables' } },
                                                         { block: 'visibility-toggle', elem: 'trigger' }
@@ -624,8 +623,8 @@
                                                                                 {
                                                                                     elem: 'td',
                                                                                     content: [
-                                                                                        { block: 'b-link', url: '/1564', content: '250 М', title: '250М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '350 М', title: '250М' }
+                                                                                        { block: 'b-link', url: '/1564', content: '250 М', title: '25 0М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '350 М', title: '250 М' }
                                                                                     ]
                                                                                 },
                                                                                 {
@@ -652,10 +651,10 @@
                                                                                 {
                                                                                     elem: 'td',
                                                                                     content: [
-                                                                                        { block: 'b-link', url: '/1564', content: '250М', title: '250М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '350М', title: '250М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '00М', title: '250М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '250Мxgfh ', title: '250М' }
+                                                                                        { block: 'b-link', url: '/1564', content: '250 М', title: '250 М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '350 М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '00 М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '250 Мxgfh ', title: '250М' }
                                                                                     ]
                                                                                 },
                                                                                 {

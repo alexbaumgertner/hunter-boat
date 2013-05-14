@@ -1,0 +1,26 @@
+.delivery-info__tech-tables-link
+{
+    text-align: center;
+    color: #0095da;
+    border-bottom: 1px dashed;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.delivery-info__tech-tables-link.visibility-toggle_content-visible_no {
+    color: #0095da;
+}
+
+.delivery-info__tech-tables-link.visibility-toggle_content-visible_no:hover {
+    color: #000;
+}
+
+.delivery-info__tech-tables-link.visibility-toggle_content-visible_yes {
+    color: #000;
+}
+
+
+.delivery-info__tech-tables-link.visibility-toggle_content-visible_yes:hover {
+    color: #0095da;
+}
