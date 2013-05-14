@@ -1,0 +1,30 @@
+block shipping-tech-table {
+
+    tag: 'table'
+
+
+    elem caption {
+        tag: 'caption'
+    }
+
+    elem thead {
+        tag: 'thead'
+    }
+
+    elem th {
+        tag: 'th'
+    }
+
+    elem tbody {
+        tag: 'tbody'
+    }
+
+
+    elem tr {
+        tag: 'tr'
+    }
+
+    elem td {
+        tag: 'td'
+    }
+}

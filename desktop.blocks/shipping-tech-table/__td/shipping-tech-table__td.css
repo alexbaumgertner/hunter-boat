@@ -1,0 +1,10 @@
+.shipping-tech-table__td
+{
+    background: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.shipping-tech-table__td .b-link {
+    margin: 0 0.5em 0 0;
+}

@@ -462,7 +462,226 @@
                                                 {
                                                     block: 'b-link',
                                                     mods: { pseudo: 'yes' },
+                                                    mix: [
+                                                        { block: 'visibility-toggle', mods: { 'content-visible': 'no' }, js: { id: 'shipping-tech-tables' } },
+                                                        { block: 'visibility-toggle', elem: 'trigger' }
+                                                    ],
                                                     content: 'Технические данные упакованных лодок '
+                                                },
+                                                {
+                                                    block: 'shipping-tech-tables',
+                                                    mix: [
+                                                        { block: 'visibility-toggle', mods: { 'content-visible': 'no' }, js: { id: 'shipping-tech-tables' } },
+                                                        { block: 'visibility-toggle', elem: 'content' }
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'shipping-tech-table',
+                                                            content: [
+                                                                {
+                                                                    elem: 'thead',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'tr',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Модель'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Длина, м'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Ширина, м'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Высота, м'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Объем, м.куб'
+                                                                                }
+                                                                            ]
+                                                                        },
+
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'tbody',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'tr',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: [
+                                                                                        { block: 'b-link', url: '/1564', content: '250М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '350М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '00М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '250Мxgfh ', title: '250М' }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '0.88'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '0.13'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '147'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '145'
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem: 'tr',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: [
+                                                                                        { block: 'b-link', url: '/1564', content: '250 М', title: '250 М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '350 М', title: '250 М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '00 М', title: '250 М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '250 Мxgfh ', title: '250 М' }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '0.88'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '0.13'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '147'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '145'
+                                                                                }
+                                                                            ]
+                                                                        }
+
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            block: 'shipping-tech-table',
+                                                            content: [
+                                                                {
+                                                                    elem: 'caption',
+                                                                    content: 'Габаритные размеры полов к лодкам'
+                                                                },
+                                                                {
+                                                                    elem: 'thead',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'tr',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Модель'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Длина, м'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Ширина, м'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Высота, м'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'th',
+                                                                                    content: 'Объем, м.куб'
+                                                                                }
+                                                                            ]
+                                                                        },
+
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'tbody',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'tr',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: [
+                                                                                        { block: 'b-link', url: '/1564', content: '250 М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '350 М', title: '250М' }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '0.88'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '0.13'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '147'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '145'
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem: 'tr',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: [
+                                                                                        { block: 'b-link', url: '/1564', content: '250М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '350М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '00М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '250Мxgfh ', title: '250М' }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '0.88'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '0.13'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '147'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'td',
+                                                                                    content: '145'
+                                                                                }
+                                                                            ]
+                                                                        }
+
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
