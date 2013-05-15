@@ -13,7 +13,7 @@
                 this.currItemId = this.elem('menu-item').index(this.elem('menu-item', 'state', 'current')); //
                 this.delayInitTime = 2000; // 2 sec
                 this.durationInitTime = 800; // 0.8 sec of fadeIn
-                this.delayLoopTime = 4000; // 4 sec
+                this.delayLoopTime = 2000; // 2 sec
 
                 var _this = this;
 
@@ -55,9 +55,11 @@
         startCarousel: function () {
             var _this = this;
             var pageHeader = this.findBlockOutside('header');
-            pageHeader.setMod(pageHeader.elem('index-title-word'), 'visibility', 'visible');
 
-            this.domElem.fadeIn(this.durationInitTime, function () {
+            this.domElem.add(pageHeader.elem('index-title-word'))
+                .fadeIn(this.durationInitTime)
+                .promise()
+                .done(function () {
                 _this.loopCarousel()
             });
         },
