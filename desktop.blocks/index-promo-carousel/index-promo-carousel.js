@@ -54,6 +54,9 @@
 
         startCarousel: function () {
             var _this = this;
+            var pageHeader = this.findBlockOutside('header');
+            pageHeader.setMod(pageHeader.elem('index-title-word'), 'visibility', 'visible');
+
             this.domElem.fadeIn(this.durationInitTime, function () {
                 _this.loopCarousel()
             });
