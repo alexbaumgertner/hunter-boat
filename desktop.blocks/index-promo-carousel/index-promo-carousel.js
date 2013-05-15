@@ -108,7 +108,8 @@
                 this.elem('title')
                     .add(this.elem('text-inner'))
                     .add(this.elem('sub-text'))
-                    .add(this.elem('price'));
+                    .add(this.elem('price'))
+                    .add(this.elem('photo'));
 
             // use promise+done because fade out/in of collection of elements (callback fire every elem animation)
 
