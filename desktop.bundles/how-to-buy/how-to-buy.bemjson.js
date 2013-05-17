@@ -79,6 +79,10 @@
                                             content: {
                                                 block: 'b-link',
                                                 mods: { pseudo: 'yes' },
+                                                mix: [
+                                                    { block: 'call-request', js: { id: 'call' } },
+                                                    { block: 'call-request', elem: 'opener' }
+                                                ],
                                                 content: 'Обратный звонок'
                                             }
                                         }
