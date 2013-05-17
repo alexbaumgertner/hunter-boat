@@ -1,0 +1,11 @@
+block call-request {
+
+    elem form {
+        tag: 'form',
+        attrs: {
+            method: 'post',
+            arction: '/call-request'
+        }
+    }
+
+}

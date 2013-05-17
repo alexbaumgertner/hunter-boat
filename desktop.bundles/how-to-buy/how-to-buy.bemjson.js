@@ -259,8 +259,17 @@
                                                                             {
                                                                                 elem: 'p',
                                                                                 content: [
-                                                                                    'Или закажите ',
-                                                                                    { block: 'b-link', mods: { pseudo: 'yes' }, content: 'обратный звонок', url: ', и мы сами вам позвоним в удобное для вас время.' }
+                                                                                    'Или закажите ', {
+                                                                                        block: 'b-link',
+                                                                                        mods: { pseudo: 'yes' },
+                                                                                        mix: [
+                                                                                            { block: 'call-request', js: { id: 'call' } },
+                                                                                            { block: 'call-request', elem: 'opener' }
+                                                                                        ],
+                                                                                        content: 'обратный звонок',
+                                                                                        url: ''
+                                                                                    },
+                                                                                    ' и мы сами вам позвоним в удобное для вас время.'
                                                                                 ]
                                                                             }
                                                                         ]
@@ -344,6 +353,10 @@
                                             content: {
                                                 block: 'b-link',
                                                 mods: { pseudo: 'yes' },
+                                                mix: [
+                                                    { block: 'call-request', js: { id: 'call' } },
+                                                    { block: 'call-request', elem: 'opener' }
+                                                ],
                                                 content: 'Обратный звонок'
                                             }
                                         },
@@ -370,17 +383,17 @@
                                 {
                                     block: 'menu',
                                     content: [
-                                                                            {
-                                                                                elem: 'item',
-                                                                                name: 'Вакансии',
-                                                                                url: '/vacancy.html'
-                                                                            },
-                                                                            {
-                                                                                elem: 'item',
-                                                                                name: 'Отзывы',
-                                                                                url: '/reviews.html'
-                                                                            }
-                                                                        ]
+                                        {
+                                            elem: 'item',
+                                            name: 'Вакансии',
+                                            url: '/vacancy.html'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            name: 'Отзывы',
+                                            url: '/reviews.html'
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -399,6 +412,43 @@
                     ]
                 }
             ]
+        },
+
+        {
+            block: 'call-request',
+            js: { id: 'call' },
+            content: {
+                elem: 'form',
+                elemMods: { visibility: 'hidden' },
+                content: [
+                    {
+                        elem: 'closer',
+                        content: 'x'
+                    },
+                    {
+                        elem: 'name',
+                        content: {
+                            block: 'input',
+                            mods: { reqiured: 'yes' },
+                            name: 'name',
+                            placeholder: 'Ваше имя'
+                        }
+                    },
+                    {
+                        elem: 'phone',
+                        content: {
+                            block: 'input',
+                            mods: { reqiured: 'yes' },
+                            name: 'phone',
+                            placeholder: 'Телефон'
+                        }
+                    },
+                    {
+                        elem: 'button',
+                        content: { block: 'button', mods: { type: 'submit' }, content: 'Позвоните мне' }
+                    }
+                ]
+            }
         }
     ]
 })
