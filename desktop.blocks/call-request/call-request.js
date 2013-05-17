@@ -29,9 +29,19 @@ BEM.DOM.decl('call-request', {
 
 
     alignForm: function (e) {
+
+        var positionX = e.pageX - (this.elem('form').width() / 2);
+        var positionY = e.pageY - (this.elem('form').height() / 2);
+
+        // limit min margin at screen
+        var minMargin = 10; // px
+
+        positionX < minMargin && (positionX = minMargin);
+        positionY < minMargin && (positionY = minMargin);
+
         this.elem('form').css({
-            top: e.pageY - (this.elem('form').height() / 2),
-            left: e.pageX - (this.elem('form').width() / 2)
+            left: positionX,
+            top: positionY
         });
     }
 

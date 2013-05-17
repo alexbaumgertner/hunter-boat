@@ -6,6 +6,7 @@
     border: 1px solid #b4b4b4;
     -webkit-box-shadow: 2px 3px 9px 1px rgba(65, 65, 65, 0.42);
     box-shadow: 2px 3px 9px 1px rgba(65, 65, 65, 0.42);
+    z-index: 100;
 }
 
 .call-request__form .input_type_text {
