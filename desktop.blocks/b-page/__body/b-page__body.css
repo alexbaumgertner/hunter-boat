@@ -6,3 +6,9 @@
     font-family: Arial, sans-serif;
     min-width: 1002px;
 }
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}

@@ -2,3 +2,7 @@
 {
     right: -16px;
 }
+
+.catalog-index-page .carousel__control_direction_next {
+    right: 0;
+}

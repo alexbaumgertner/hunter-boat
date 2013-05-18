@@ -30,15 +30,30 @@ BEM.DOM.decl('call-request', {
 
     alignForm: function (e) {
 
-        var positionX = e.pageX - (this.elem('form').width() / 2);
-        var positionY = e.pageY - (this.elem('form').height() / 2);
+        // event init element
+        var targetOffset = $(e.target).offset();
+        // left or right side of screen
+        var targetElemAtCenterPagePosition = $(window).width() / 2 > targetOffset.left ? 'left' : 'right';
 
+
+        // get the X-coordinate
+        var positionX;
+        if (targetElemAtCenterPagePosition === 'left') {
+            // element in left side
+            positionX = targetOffset.left;
+        } else {
+            // element in right side
+            positionX = targetOffset.left - this.elem('form').width();
+        }
+
+        // get the Y-coordinate
+        var positionY = targetOffset.top - this.elem('form').height() / 2;
         // limit min margin at screen
         var minMargin = 10; // px
-
-        positionX < minMargin && (positionX = minMargin);
         positionY < minMargin && (positionY = minMargin);
 
+
+        // set layout position (at window)
         this.elem('form').css({
             left: positionX,
             top: positionY

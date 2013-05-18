@@ -24,4 +24,5 @@
     box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.57), inset 3px 3px 6px 0 rgba(0, 0, 0, 0.57), inset -1px 0px 6px 0 rgba(0, 0, 0, 0.57);
     padding-top: 2px;
     text-shadow: 1px -1px 0px #000000;
+    border: 1px solid #8F8F8F;
 }

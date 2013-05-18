@@ -6,3 +6,7 @@
     cursor: pointer;
     color: #969696;
 }
+
+.call-request__closer:hover {
+    color: #000000;
+}

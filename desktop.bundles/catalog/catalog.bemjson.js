@@ -630,7 +630,7 @@
                                                                                                 elem: 'photo',
                                                                                                 tag: 'img',
                                                                                                 attrs: {
-                                                                                                    src: 'img/catalog/motors/yamaha_06.png'
+                                                                                                    src: 'img/catalog/motors/place-holder.jpg'
                                                                                                 }
                                                                                             },
                                                                                             {
@@ -670,7 +670,7 @@
                                                                                                 elem: 'photo',
                                                                                                 tag: 'img',
                                                                                                 attrs: {
-                                                                                                    src: 'img/catalog/motors/yamaha_06.png'
+                                                                                                    src: 'img/catalog/motors/place-holder.jpg'
                                                                                                 }
                                                                                             },
                                                                                             {

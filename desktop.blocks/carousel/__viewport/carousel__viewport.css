@@ -3,7 +3,7 @@
 }
 
 .carousel_type_horiz .carousel__viewport {
-    margin: 0 30px;
+    margin: 0;
     width: 100%;
     overflow-x: hidden;
 }
