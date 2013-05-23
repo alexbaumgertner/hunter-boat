@@ -203,7 +203,7 @@
                                         {
                                             elem: 'content',
                                             content: [
-                                                { block: 'product-card', mods: { background: 'white-shadow' }, attrs: { style: 'float:right;margin: -60px 15px 0 90px;' } },
+
                                                 {
                                                     block: 'b-text',
                                                     content: [
@@ -252,6 +252,19 @@
                                                             content: 'Прибыв утром на точку испытаний, и достав из «Газели» лодку мы начали готовить ее к спуску на воду и собственно тест-драйву. Для оценки всех мореходных качеств надувной лодки Хантер на тест были привезены три подвесных лодочных мотора – это Mercury 6 л.с 4 такта, Suzuki 15 2 такта (он же форсированная Суза 9,9), и Yamaha 25 л.с 2 такта,  что позволило оттестировать лодку под всеми возможными режимами в разных вариациях.'
                                                         }
                                                     ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'modules',
+                                            content: [
+                                                {
+                                                    elem: 'module',
+                                                    content: { block: 'product-card', mods: { background: 'white-shadow' } },
+                                                },
+                                                {
+                                                    elem: 'module',
+                                                    content: 'место модуля'
                                                 }
                                             ]
                                         },

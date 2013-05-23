@@ -10,3 +10,7 @@
 .form .input_type_text:focus {
     background: #fff;
 }
+
+.form .form__error-marker {
+    background: #e88688;
+}

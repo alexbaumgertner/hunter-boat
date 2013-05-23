@@ -202,7 +202,6 @@
                                         {
                                             elem: 'content',
                                             content: [
-                                                { block: 'product-card', mods: { background: 'white-shadow' }, attrs: { style: 'float:right;margin: -60px 15px 0 90px;' } },
                                                 {
                                                     block: 'b-text',
                                                     content: [
@@ -365,6 +364,19 @@
                                                         }
                                                     ]
                                                 },
+                                            ]
+                                        },
+                                        {
+                                            elem: 'modules',
+                                            content: [
+                                                {
+                                                    elem: 'module',
+                                                    content: { block: 'product-card', mods: { background: 'white-shadow' } },
+                                                },
+                                                {
+                                                    elem: 'module',
+                                                    content: 'место модуля'
+                                                }
                                             ]
                                         },
                                         {
