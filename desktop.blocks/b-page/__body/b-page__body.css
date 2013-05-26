@@ -7,8 +7,10 @@
     min-width: 1002px;
 }
 
+/* global styles (begin) */
 input::-moz-focus-inner,
 button::-moz-focus-inner {
     padding:0;
     border:0;
 }
+/* global styles (end) */
