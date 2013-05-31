@@ -1,5 +1,7 @@
 block catalog-index-page {
 
+    js: true
+
     elem menu-item {
         tag: 'span'
     }

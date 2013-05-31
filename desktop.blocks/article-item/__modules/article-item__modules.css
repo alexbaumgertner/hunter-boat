@@ -1,0 +1,7 @@
+.article-item__modules
+{
+    display: inline-block;
+    width:  250px;
+    margin: 0 0 0 32px;
+    vertical-align: top;
+}

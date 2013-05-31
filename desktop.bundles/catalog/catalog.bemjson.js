@@ -532,55 +532,176 @@
                                                     elem: 'products-content',
                                                     content: [
                                                         {
-                                                            block: 'catalog-section',
+                                                            elem: 'tabs',
                                                             content: [
                                                                 {
-                                                                    elem: 'list',
-                                                                    content: [
-                                                                        {
-                                                                            elem: 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            elem: 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            elem: 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            elem: 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            elem: 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            elem: 'item',
-                                                                            content: {
-                                                                                elem: 'link-to-all',
-                                                                                content: {
-                                                                                    block: 'b-link',
-                                                                                    mods: { pseudo: 'yes' },
-                                                                                    url: '/catalog/news',
-                                                                                    content: 'Показать все новинки'
-                                                                                }
-                                                                            }
+                                                                    elem: 'tab',
+                                                                    elemMods: { state: 'current' },
+                                                                    content: {
+                                                                        block: 'catalog-section',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'list',
+                                                                                content: [
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            elem: 'link-to-all',
+                                                                                            content: {
+                                                                                                block: 'b-link',
+                                                                                                mods: { pseudo: 'yes' },
+                                                                                                url: '/catalog/news',
+                                                                                                content: 'Показать все новинки'
+                                                                                            }
+                                                                                        }
 
-                                                                        }
-                                                                    ]
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'tab',
+                                                                    content: {
+                                                                        block: 'catalog-section',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'list',
+                                                                                content: [
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            elem: 'link-to-all',
+                                                                                            content: {
+                                                                                                block: 'b-link',
+                                                                                                mods: { pseudo: 'yes' },
+                                                                                                url: '/catalog/news',
+                                                                                                content: 'Показать все новинки'
+                                                                                            }
+                                                                                        }
+
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'tab',
+                                                                    content: {
+                                                                        block: 'catalog-section',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'list',
+                                                                                content: [
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            block: 'product-card'
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        content: {
+                                                                                            elem: 'link-to-all',
+                                                                                            content: {
+                                                                                                block: 'b-link',
+                                                                                                mods: { pseudo: 'yes' },
+                                                                                                url: '/catalog/news',
+                                                                                                content: 'Показать все новинки'
+                                                                                            }
+                                                                                        }
+
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
                                                                 }
                                                             ]
                                                         },
