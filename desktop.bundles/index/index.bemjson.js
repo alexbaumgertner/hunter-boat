@@ -179,34 +179,39 @@
                         {
                             block: 'index-promo-carousel',
                             js: {
+                                "settings": {
+                                    'delayInitTime': 2000, // ms
+                                    'durationInitTime': 800,
+                                    'delayLoopTime': 2000
+                                },
                                 "slides":[
                                     {
                                         "title": "Надувные электро лодки Хантер",
                                         "text": "позволят добраться <br> до самых заветных мест рыбалки или отдыха.",
                                         "sub-text": "4 модели",
                                         "start-price": "9800",
-                                        "url": "/img/index-page/01.png"
+                                        "url": "http://hb.d-idei.ru/img/index-page/01.png"
                                     },
                                     {
                                         "title": "Супер моторные лодки Хантер",
                                         "text": "позволят доплыть <br> до самых заветных мест рыбалки или отдыха.",
                                         "sub-text": "2 модели",
                                         "start-price": "5400",
-                                        "url": "/img/index-page/02.png"
+                                        "url": "http://hb.d-idei.ru/img/index-page/02.png"
                                     },
                                     {
                                         "title": "Надувные лодки Хантер",
                                         "text": "довезут вас <br> до самых заветных мест рыбалки или отдыха.",
                                         "sub-text": "7 моделей",
                                         "start-price": "3500",
-                                        "url": "/img/index-page/03.png"
+                                        "url": "http://hb.d-idei.ru/img/index-page/03.png"
                                     },
                                     {
                                         "title": "Быстрые моторные лодки Хантер",
                                         "text": "позволят хорошо порыбачить и отдохнуть",
                                         "sub-text": "6 моделей",
                                         "start-price": "2100",
-                                        "url": "/img/index-page/04.png"
+                                        "url": "http://hb.d-idei.ru/img/index-page/04.png"
                                     }
                                 ]
                             },

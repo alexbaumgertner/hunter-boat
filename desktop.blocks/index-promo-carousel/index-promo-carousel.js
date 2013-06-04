@@ -10,21 +10,26 @@
             'js': function () {
                 /* ... */
 
-                this.currItemId = this.elem('menu-item').index(this.elem('menu-item', 'state', 'current')); //
-                this.delayInitTime = 2000; // 2 sec
-                this.durationInitTime = 800; // 0.8 sec of fadeIn
-                this.delayLoopTime = 2000; // 2 sec
+                this.currItemId = this.elem('menu-item').index(this.elem('menu-item', 'state', 'current'));
+
+                // gets from html
+                var settings = this.params.settings;
+
+                this.delayInitTime = settings.delayInitTime;
+                this.durationInitTime = settings.durationInitTime;
+                this.delayLoopTime = settings.delayLoopTime;
 
                 var _this = this;
 
                 this.domElem.hide();
 
                 this.bindTo('menu-item', 'leftclick', function (e) {
-                    this.setCarouselItem(this.elem('menu-item').index(e.data.domElem));
+                    this.userSetCarouselItem(this.elem('menu-item').index(e.data.domElem));
                 });
 
+                // init carousel
                 setTimeout(function () {
-                    _this.startCarousel()
+                    _this.startCarousel();
                 }, this.delayInitTime);
 
             }
@@ -51,7 +56,7 @@
         },
 
 
-
+        // show carousel and start loopCarousel
         startCarousel: function () {
             var _this = this;
             var pageHeader = this.findBlockOutside('header');
@@ -72,13 +77,17 @@
             var _this = this;
 
             // set next item after this.delayLoopTime
-            var timeOut = setTimeout(function () {
+           this.loopCarousel.timeOut = setTimeout(function () {
                 _this.currItemId = _this.currItemId + 1;
+
                 // set curr item
                 _this.setCarouselItem(_this.currItemId, function () {
-                    clearTimeout(timeOut);
+
+                    clearTimeout(_this.loopCarousel.timeOut);
+
                     _this.loopCarousel();
                 });
+
             }, this.delayLoopTime);
 
         },
@@ -133,13 +142,17 @@
 
 
 
+        },
+
+
+        // user click on menu
+        userSetCarouselItem: function (id, callback) {
+            var _this = this;
+            clearTimeout(_this.loopCarousel.timeOut);
+            this.setCarouselItem(id, function() { _this.loopCarousel(); });
         }
 
     }, {
-
-/*        live: function () {
-TODO: live init after elem photo Img loaded
-        }*/
 
     });
 
