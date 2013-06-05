@@ -2,6 +2,8 @@
 /** @requires BEM.DOM */
 
 (function(undefined) {
+    
+var _this;
 
 BEM.DOM.decl('lightbox', {
 
@@ -9,7 +11,7 @@ BEM.DOM.decl('lightbox', {
 
         'js': function () {
 
-            var _this = thisBlockInstance = this;
+            _this = this;
 
             this.showState = 'never';
 
@@ -24,7 +26,9 @@ BEM.DOM.decl('lightbox', {
             this.elem('control').on('click', function(e){
                 if (_this.getMod($(e.currentTarget), 'disable') === 'yes') return;
 
+
                 var direction = _this.getMod($(e.currentTarget), 'direction');
+
                 _this.switchItem(direction)
             });
 
@@ -186,7 +190,7 @@ BEM.DOM.decl('lightbox', {
         this.showLoader.interval = setInterval(function () {
 
             // TODO: refactor
-            thisBlockInstance.elem('loader').css({
+            _this.elem('loader').css({
                 '-webkit-transform': 'rotateZ(' + i + 'deg)',
                 '-moz-transform': 'rotateZ(' + i + 'deg)',
                 '-ms-transform': 'rotateZ(' + i + 'deg)',
@@ -232,12 +236,12 @@ BEM.DOM.decl('lightbox', {
         (jQuery.type(data) === 'object') && (data = [data]);
 
         // don't modify originally data
-        thisBlockInstance.data = jQuery.extend(true, [], data);
+        _this.data = jQuery.extend(true, [], data);
 
         settings = settings || {};
 
-        thisBlockInstance.setStyle(settings.style);
-        thisBlockInstance.switchItem('init');
+        _this.setStyle(settings.style);
+        _this.switchItem('init');
     }
 
 });

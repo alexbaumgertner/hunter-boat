@@ -1,3 +1,14 @@
 .lightbox__control
 {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 50%;
+    margin: -13px 0 0 0;
+    cursor: pointer;
+    background: gray;
+    color: #fff;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 100%;
 }

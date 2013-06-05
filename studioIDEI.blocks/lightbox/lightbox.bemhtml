@@ -2,18 +2,14 @@ block lightbox {
 
     js: true
 
-    mods: {
-        visibility: 'hidden'
-    }
-
     content: [
         {
             elem: 'box',
             content: [
-                       { elem: 'close' },
-                       { elem: 'control', elemMods: { direction: 'prev' } },
-                       { elem: 'control', elemMods: { direction: 'next' } },
-                       { elem: 'viewport', content: [ { elem: 'img' }, { elem: 'loader' } ] }
+                       { elem: 'close', content: 'x' },
+                       { elem: 'control', elemMods: { direction: 'prev' }, content: '<' },
+                       { elem: 'control', elemMods: { direction: 'next' }, content: '>' },
+                       { elem: 'viewport', content: [ { elem: 'img', tag: 'img' }, { elem: 'loader' } ] }
                      ]
         },
         { elem: 'mask' }

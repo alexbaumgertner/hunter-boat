@@ -1,3 +1,8 @@
 .lightbox__box
 {
+    position: relative;
+    z-index: 100000;
+    top: 50px;
+    margin: 0 auto;
+    width: 400px;
 }

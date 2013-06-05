@@ -1,3 +1,11 @@
 .lightbox__close
 {
+    position: absolute;
+    top: -20px !important;
+    right: -35px !important;
+    cursor: pointer;
+    background: rosybrown;
+    padding: 0 5px;
+    border-radius: 100%;
+    color: #fff;
 }
