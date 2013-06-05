@@ -1,22 +1,9 @@
 .studio-idei__logo {
-    background: no-repeat;
-    height: 40px;
+    background: url('studio-idei__logo_sprite.png') no-repeat;
+    height: 30px;
     width: 90px;
     position: absolute;
     right: 100%;
     top: 5px;
     margin: 0 15px 0 0;
-}
-
-.studio-idei_color_fff1d6 .studio-idei__logo {
-    background-image: url("studio-idei__logo_color_fff1d6.png");
-}
-
-.studio-idei_color_865151 .studio-idei__logo {
-    background-image: url("studio-idei__logo_color_865151.png");
-}
-
-
-.studio-idei_color_909090 .studio-idei__logo {
-    background-image: url("studio-idei__logo_color_865151.png");
 }

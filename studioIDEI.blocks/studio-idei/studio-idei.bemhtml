@@ -1,5 +1,7 @@
 block studio-idei {
 
+    js: true
+
     content: [
         {
             elem   : 'process',
@@ -17,6 +19,10 @@ block studio-idei {
             content: [
                 {
                     elem: 'logo'
+                },
+                {
+                    elem: 'year',
+                    content: (new Date()).getFullYear()
                 },
                 {
                     elem   : 'text',
