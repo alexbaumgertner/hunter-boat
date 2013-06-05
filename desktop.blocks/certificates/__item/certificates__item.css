@@ -8,6 +8,7 @@
     width: 49px;
     -webkit-box-shadow: 0px 3px 4px -1px rgba(0, 0, 0, 0.51);
     box-shadow:  0px 3px 4px -1px rgba(0, 0, 0, 0.51);
+    cursor: pointer;
 }
 
 .certificates__item .b-icon {

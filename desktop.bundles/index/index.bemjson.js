@@ -180,7 +180,7 @@
                             block: 'index-promo-carousel',
                             js: {
                                 "settings": {
-                                    'delayInitTime': 2000, // ms
+                                    'delayInitTime': 1500, // ms
                                     'durationInitTime': 800,
                                     'delayLoopTime': 2000
                                 },

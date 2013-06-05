@@ -9,6 +9,10 @@
     ],
     content: [
         {
+            block: 'lightbox',
+            mods: { visibility: 'hidden' }
+        },
+        {
             block: 'header',
             content: [
                 {
@@ -230,12 +234,12 @@
                                                                                 content: [
                                                                                     {
                                                                                         elem: 'item',
-                                                                                        attrs: { rel: 'img/content/certificates/1/1_big.png' },
+                                                                                        attrs: { rel: 'http://www.bestrol.ru/images/stories/bb_2.jpg' },
                                                                                         content: { block: 'b-icon', url: 'img/content/certificates/1/1_icon.png', alt: 'сертификат_1' }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
-                                                                                        attrs: { rel: 'img/content/certificates/2/2_big.png' },
+                                                                                        attrs: { rel: 'http://www.redbay.ru/published/publicdata/WWWREDBAYRU/attachments/SC/products_pictures/leica_disto_d2_d3_1_800x800_enl.jpg' },
                                                                                         content: { block: 'b-icon', url: 'img/content/certificates/2/2_icon.png', alt: 'сертификат_2' }
                                                                                     }
                                                                                 ]
