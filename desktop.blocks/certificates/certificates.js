@@ -10,9 +10,17 @@
             'js': function () {
 
                 this.certificates = [];
+
+                // styling lightbox
+                this.lightBoxSettings = {
+                    style: {
+                        'border': '1px solid #000'
+                    }
+                };
+
                 var _this = this;
 
-                this.elem('item').each(function(index, Elem){
+                this.elem('item').each(function (index, Elem) {
                     _this.certificates.push({
                         url: $(Elem).attr('rel'),
                         current: index === 0 ? 'current' : ''
@@ -28,7 +36,7 @@
 
             this.certificates[currentIndex].state = 'current';
 
-            BEM.blocks['lightbox'].showData(this.certificates);
+            BEM.blocks['lightbox'].showData(this.certificates, this.lightBoxSettings);
         }
 
     }, {

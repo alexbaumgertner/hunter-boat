@@ -11,6 +11,11 @@
     background: #fff;
 }
 
+.form .input_type_text.input_reqiured_yes:focus {
+    -webkit-box-shadow: inset 0px 4px 4px 1px rgba(0, 0, 0, 0.07);
+    box-shadow: inset 0px 4px 4px 1px rgba(0, 0, 0, 0.07);
+}
+
 .form .form__error-marker {
     background: #e88688;
 }

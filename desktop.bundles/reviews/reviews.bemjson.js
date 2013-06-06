@@ -225,7 +225,7 @@
                                                                     elemMods: { position: 'left' },
                                                                     content: {
                                                                         elem: 'date',
-                                                                        content: '21 октября'
+                                                                        content: '21 октября 2013'
                                                                     }
                                                                 },
                                                                 {
@@ -333,13 +333,6 @@
                                                     {
                                                         elem: 'send-panel',
                                                         content: [
-                                                            {
-                                                                elem: 'validate',
-                                                                content: {
-                                                                    block: 'validate',
-                                                                    id: 'captchaID'
-                                                                }
-                                                            },
                                                             {
                                                                 elem: 'send-button',
                                                                 content: { block: 'button', mods: { type: 'submit' }, content: 'Добавить отзыв' }

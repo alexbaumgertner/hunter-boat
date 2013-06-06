@@ -6,9 +6,9 @@ block lightbox {
         {
             elem: 'box',
             content: [
-                       { elem: 'close', content: 'x' },
-                       { elem: 'control', elemMods: { direction: 'prev' }, content: '<' },
-                       { elem: 'control', elemMods: { direction: 'next' }, content: '>' },
+                       { elem: 'close' },
+                       { elem: 'control', elemMods: { direction: 'prev' } },
+                       { elem: 'control', elemMods: { direction: 'next' } },
                        { elem: 'viewport', content: [ { elem: 'img', tag: 'img' }, { elem: 'loader' } ] }
                      ]
         },
