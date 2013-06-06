@@ -21,15 +21,15 @@ block studio-idei {
                     elem: 'logo'
                 },
                 {
-                    elem: 'year',
-                    content: (new Date()).getFullYear()
-                },
-                {
                     elem   : 'text',
                     content: 'студия «IDEI»'
                 }
             ]
-        }
+        },
+        {
+             elem: 'year',
+             content: (new Date()).getFullYear()
+         }
     ]
 
 
@@ -42,7 +42,6 @@ block studio-idei {
 
 
     elem process {
-
         tag: 'a',
         attrs: {
             href: this.ctx.url
