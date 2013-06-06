@@ -4,8 +4,9 @@
     border-radius: 100%;
     color: #ffffff;
     padding: 7px 11px;
-    margin-top: -6px;
-    margin-left: -4px;
+    margin-top: -7px;
+    margin-left: -11px;
+    margin-right: 6px;
 }
 
 .paginator__item_state_current:hover {

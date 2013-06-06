@@ -181,7 +181,7 @@
                             content: [
                                 {
                                     block: 'info-page',
-                                    mods: { page: 'about' },
+                                    mods: { theme: 'bottom-glow' },
                                     content: [
                                         {
                                             elem: 'header',

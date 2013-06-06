@@ -178,6 +178,7 @@
                             content: [
                                 {
                                     block: 'info-page',
+                                    mods: { theme: 'bottom-glow' },
                                     content: [
                                         {
                                             elem: 'header',
@@ -238,7 +239,7 @@
                                                                 content: [
                                                                     {
                                                                         elem: 'p',
-                                                                        attrs: { style: 'font-size: 16px;margin: 0 0 35px 25px;' },
+                                                                        attrs: { style: 'font-size: 16px;margin: 0 0 35px 5px;' },
                                                                         content: 'Выгодные условия для партнёров:'
                                                                     },
                                                                     {
@@ -529,9 +530,120 @@
                                                             ]
                                                         },
                                                         {
-                                                            elem: 'image',
-                                                            tag: 'img',
-                                                            attrs: { src: 'img/content/diagrams/boat_model_hunter_popularity_2013.png' }
+                                                            elem: 'graph',
+                                                            content: {
+                                                                block: 'popularity-graph',
+                                                                content: [
+                                                                    {
+                                                                        elem: 'image',
+                                                                        tag: 'img',
+                                                                        attrs: { src: 'img/content/diagrams/boat_model_hunter_popularity_2013.png' }
+                                                                    },
+                                                                    {
+                                                                        elem: 'links',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'section',
+                                                                                content: [
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '335'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '360'
+                                                                                    },
+                                                                                ]
+                                                                            },
+
+                                                                            {
+                                                                                elem: 'section',
+                                                                                content: [
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '280РТ'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '280Т'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '280ЛТ'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '300Л'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '290Р'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '290Л'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '320Л'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '320ЛК'
+                                                                                    },
+                                                                                ]
+                                                                            },
+
+                                                                            {
+                                                                                elem: 'section',
+                                                                                content: [
+
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '250м'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '250мл'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '280Р'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '280'
+                                                                                    },
+                                                                                    {
+                                                                                        block: 'b-link',
+                                                                                        url: '/',
+                                                                                        content: '280Л'
+                                                                                    }
+                                                                                ]
+                                                                            },
+
+
+
+                                                                        ]
+                                                                    }
+
+                                                                ]
+                                                            }
+
                                                         }
                                                     ]
                                                 }

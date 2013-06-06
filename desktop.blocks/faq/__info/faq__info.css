@@ -1,8 +1,9 @@
 .faq__info
 {
-    float: right;
-    margin: -70px 70px 0 0;
-    font-size: 17px;
+    font-size: 18px;
+    position: absolute;
+    right: 30px;
+    top: 28px;
 }
 
 .faq__info .b-link
@@ -10,7 +11,7 @@
     text-decoration: none;
     color: #0d84bc;
     border-bottom: 1px dashed;
-    line-height: 14px;
+    line-height: 18px;
     display: inline-block;
 }
 
