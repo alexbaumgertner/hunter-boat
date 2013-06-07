@@ -546,31 +546,36 @@
                                                                                     {
                                                                                         elem: 'item',
                                                                                         content: {
-                                                                                            block: 'product-card'
+                                                                                            block: 'product-card',
+                                                                                            src: 'img/catalog/boats/01.jpg'
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
                                                                                         content: {
-                                                                                            block: 'product-card'
+                                                                                            block: 'product-card',
+                                                                                            src: 'img/catalog/boats/02.jpg'
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
                                                                                         content: {
-                                                                                            block: 'product-card'
+                                                                                            block: 'product-card',
+                                                                                            src: 'img/catalog/boats/03.jpg'
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
                                                                                         content: {
-                                                                                            block: 'product-card'
+                                                                                            block: 'product-card',
+                                                                                            src: 'img/catalog/boats/04.jpg'
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
                                                                                         content: {
-                                                                                            block: 'product-card'
+                                                                                            block: 'product-card',
+                                                                                            src: 'img/catalog/boats/05.jpg'
                                                                                         }
                                                                                     },
                                                                                     {
@@ -751,7 +756,7 @@
                                                                                                 elem: 'photo',
                                                                                                 tag: 'img',
                                                                                                 attrs: {
-                                                                                                    src: 'img/catalog/motors/place-holder.jpg'
+                                                                                                    src: 'img/catalog/motors/06.png'
                                                                                                 }
                                                                                             },
                                                                                             {
@@ -856,7 +861,8 @@
                                                                             content: [
                                                                                 {
                                                                                     block: 'product-card',
-                                                                                    mods: { type: 'withoutDesc' }
+                                                                                    mods: { type: 'withoutDesc' },
+                                                                                    src: 'img/catalog/boat-addons/07.png'
                                                                                 }
                                                                             ]
                                                                         },
@@ -865,7 +871,8 @@
                                                                             content: [
                                                                                 {
                                                                                     block: 'product-card',
-                                                                                    mods: { type: 'withoutDesc' }
+                                                                                    mods: { type: 'withoutDesc' },
+                                                                                    src: 'img/catalog/boat-addons/08.png'
                                                                                 }
                                                                             ]
                                                                         },
@@ -874,7 +881,8 @@
                                                                             content: [
                                                                                 {
                                                                                     block: 'product-card',
-                                                                                    mods: { type: 'withoutDesc' }
+                                                                                    mods: { type: 'withoutDesc' },
+                                                                                    src: 'img/catalog/boat-addons/09.png'
                                                                                 }
                                                                             ]
                                                                         },

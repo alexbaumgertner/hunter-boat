@@ -239,7 +239,7 @@
                                                                 content: [
                                                                     {
                                                                         elem: 'p',
-                                                                        attrs: { style: 'font-size: 16px;margin: 0 0 35px 5px;' },
+                                                                        attrs: { style: 'font-size: 16px;margin: 0 0 35px 0;' },
                                                                         content: 'Выгодные условия для партнёров:'
                                                                     },
                                                                     {
