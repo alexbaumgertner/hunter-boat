@@ -14,3 +14,4 @@ desktop.bundles/merged/build
 !desktop.bundles/merged/js/*
 !desktop.bundles/merged/template/*
 !desktop.bundles/.bem/*
+*.*~
