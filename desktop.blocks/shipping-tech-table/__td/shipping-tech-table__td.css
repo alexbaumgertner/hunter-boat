@@ -3,8 +3,17 @@
     background: #fff;
     padding: 10px;
     text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.shipping-tech-table__td:first-child {
+    width: 115px;
+    font-weight: normal;
 }
 
 .shipping-tech-table__td .b-link {
-    margin: 0 1em 0 0;
+    margin: 0 7px 0 0;
+    font-size: 14px;
+    line-height: 22px;
 }

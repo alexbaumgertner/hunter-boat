@@ -367,13 +367,6 @@
                                                             elem: 'send-panel',
                                                             content: [
                                                                 {
-                                                                    elem: 'validate',
-                                                                    content: {
-                                                                        block: 'validate',
-                                                                        id: 'captchaID'
-                                                                    }
-                                                                },
-                                                                {
                                                                     elem: 'send-button',
                                                                     content: { block: 'button', mods: { type: 'submit' }, content: 'Задать вопрос' }
                                                                 }

@@ -12,4 +12,9 @@ block buyer-menu {
         }
     }
 
+    elem item, elemMod state current {
+        tag: 'li',
+        content: this.ctx.name
+    }
+
 }

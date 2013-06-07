@@ -517,10 +517,14 @@
                                                                                 {
                                                                                     elem: 'td',
                                                                                     content: [
-                                                                                        { block: 'b-link', url: '/1564', content: '250М', title: '250М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '350М', title: '250М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '00М', title: '250М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '250Мxgfh ', title: '250М' }
+                                                                                        { block: 'b-link', url: '/1564', content: '250 М', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: 'МЛ', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '280', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: 'Р', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: 'РТ ', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: 'Л', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: 'ЛТ', title: '250М' },
+                                                                                        { block: 'b-link', url: '/1564', content: '300', title: '250М' }
                                                                                     ]
                                                                                 },
                                                                                 {

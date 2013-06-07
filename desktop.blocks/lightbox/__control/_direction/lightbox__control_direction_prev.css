@@ -1,4 +1,12 @@
 .lightbox__control_direction_prev
 {
-    background-position: 0 -22px;
+    background-position: 5px -20px;
+}
+
+.lightbox__control_direction_prev:hover {
+    background-position: -27px -20px;
+}
+
+.lightbox__control_direction_prev:active {
+    background-position: -59px -20px;
 }

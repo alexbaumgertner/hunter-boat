@@ -11,10 +11,10 @@
 .buyer-menu .b-link {
     color: #000000;
     text-decoration: none;
-    border-bottom: 1px solid #9eacb2;
+    border-bottom: 1px solid #8d8d8d;
 }
 
 .buyer-menu .b-link:hover {
-    color: #6db9dc;
-    border-bottom: 1px solid #9eacb2;
+    color: #0081bc;
+    border-bottom: 1px solid #6ba5bf;
 }

@@ -1,4 +1,12 @@
 .lightbox__control_direction_next
 {
-    background-position: 0 -47px;
+    background-position: -13px -20px;
+}
+
+.lightbox__control_direction_next:hover {
+    background-position: -45px -20px;
+}
+
+.lightbox__control_direction_next:active {
+    background-position: -77px -20px;
 }

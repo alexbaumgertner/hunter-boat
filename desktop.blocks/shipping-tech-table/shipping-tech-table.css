@@ -4,3 +4,7 @@
     max-width: 670px;
     margin: 30px auto 60px;
 }
+
+.shipping-tech-table:last-child {
+    margin-bottom: 0;
+}
