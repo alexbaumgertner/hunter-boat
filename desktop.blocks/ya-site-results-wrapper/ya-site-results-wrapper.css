@@ -1,0 +1,41 @@
+.ya-site-results-wrapper
+{
+
+}
+
+.ya-site-results-wrapper #ya-site-results {
+    background: transparent!important;
+}
+
+.ya-site-results-wrapper .b-head__found {
+    font-size: 13px;
+}
+
+.ya-site-results-wrapper .b-serp-item {
+    margin: 0 0 20px 0;
+}
+
+.ya-site-results-wrapper #ya-site-results .b-serp-item__title-link:link,
+.ya-site-results-wrapper #ya-site-results .b-serp-item__title-link {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.ya-site-results-wrapper #ya-site-results .b-serp-item__text {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.ya-site-results-wrapper .b-head__l {
+    background: url("ya-site-results-wrapper.png");
+    background-repeat: no-repeat;
+    background-position: 37px 18px;
+}
+
+.ya-site-results-wrapper .b-head {
+    margin: 0 0 25px 0;
+}
+
+.ya-site-results-wrapper .b-pager {
+    margin-bottom: 0;
+}
