@@ -1,8 +1,5 @@
 .vacancies__info-phone {
     font-size: 19px;
     line-height: 23px;
-}
-
-.vacancies__info-phone:last-child {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }

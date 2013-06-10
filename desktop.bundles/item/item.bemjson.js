@@ -828,7 +828,8 @@
                                                             content: [
                                                                 {
                                                                     block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
+                                                                    mods: { type: 'withoutDesc' },
+                                                                    src: 'img/catalog/motors/06.png'
                                                                 }
                                                             ]
                                                         },
@@ -837,7 +838,8 @@
                                                             content: [
                                                                 {
                                                                     block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
+                                                                    mods: { type: 'withoutDesc' },
+                                                                    src: 'img/catalog/motors/06.png'
                                                                 }
                                                             ]
                                                         },
@@ -846,7 +848,8 @@
                                                             content: [
                                                                 {
                                                                     block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
+                                                                    mods: { type: 'withoutDesc' },
+                                                                    src: 'img/catalog/motors/06.png'
                                                                 }
                                                             ]
                                                         },
@@ -855,7 +858,8 @@
                                                             content: [
                                                                 {
                                                                     block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
+                                                                    mods: { type: 'withoutDesc' },
+                                                                    src: 'img/catalog/motors/06.png'
                                                                 }
                                                             ]
                                                         },
@@ -864,7 +868,8 @@
                                                             content: [
                                                                 {
                                                                     block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
+                                                                    mods: { type: 'withoutDesc' },
+                                                                    src: 'img/catalog/motors/06.png'
                                                                 }
                                                             ]
                                                         },
@@ -873,7 +878,8 @@
                                                             content: [
                                                                 {
                                                                     block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
+                                                                    mods: { type: 'withoutDesc' },
+                                                                    src: 'img/catalog/motors/06.png'
                                                                 }
                                                             ]
                                                         }
@@ -882,91 +888,7 @@
                                             }
                                         }
                                     ]
-                                },
-                                { block: 'line', mods: { type: 'wavy-0081bd' } },
-                                {
-                                    block: 'catalog-section-carousel',
-                                    content: [
-                                        {
-                                            elem: 'header',
-                                            content: [
-                                                { elem: 'title',  elemMods: { size: 'small' }, content: { block: 'b-link', content: 'Ранее просмотренные', url: '/motors' } }
-                                            ]
-
-                                        },
-                                        {
-                                            elem: 'carousel',
-                                            content: {
-                                                block: 'carousel',
-                                                js: {
-                                                    frameCurr: 1,
-                                                    frameItemsCount: 3,
-                                                    frameItemsStep: 1
-                                                },
-                                                content: {
-                                                    elem: 'items',
-                                                    content: [
-                                                        {
-                                                            elem: 'item',
-                                                            content: [
-                                                                {
-                                                                    block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: [
-                                                                {
-                                                                    block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: [
-                                                                {
-                                                                    block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: [
-                                                                {
-                                                                    block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: [
-                                                                {
-                                                                    block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: [
-                                                                {
-                                                                    block: 'product-card',
-                                                                    mods: { type: 'withoutDesc' }
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        }
-                                    ]
-                                },
-                                { block: 'line', mods: { type: 'wavy-0081bd' } }
+                                }
                             ]
                         }
                     ]

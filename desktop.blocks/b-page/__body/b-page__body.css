@@ -13,4 +13,11 @@ button::-moz-focus-inner {
     padding:0;
     border:0;
 }
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+
 /* global styles (end) */

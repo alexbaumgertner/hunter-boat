@@ -4,6 +4,6 @@
     margin: 50px 0 70px 30px;
 }
 
-.catalog-section-carousel:last-child {
+.catalog-section-carousel:last-of-type {
     margin-bottom: 0;
 }

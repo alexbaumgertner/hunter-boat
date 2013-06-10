@@ -1,13 +1,52 @@
 block search {
-    content: {
-        elem: 'form',
-        tag: 'form',
-        attrs: {
-            action: '/search/'
-        },
-        content: {
-            elem: 'input',
-            tag: 'input'
+
+    js: true,
+
+    content: [
+        {
+            block: 'ya-site-form',
+            mods: { inited: 'no' },
+            js: {
+                 'bg': '#ffcc00',
+                 'target': '_blank',
+                 'language': 'ru',
+                 'suggest': true,
+                 'tld': 'ru',
+                 'site_suggest': true,
+                 'action': '/desktop.bundles/search-result/search-result.html',
+                 'webopt': false,
+                 'fontsize': 12,
+                 'arrow': true,
+                 'fg': '#000000',
+                 'searchid': '2056472',
+                 'logo': 'rb',
+                 'websearch': false,
+                 'type': 2
+            },
+            content: [
+                {
+                    block: 'search',
+                    elem: 'form',
+                    tag: 'form',
+                    attrs: { action: '/desktop.bundles/search-result/search-result.html', method: 'get', target: '_blank' },
+                    content: [
+                        {
+                            tag: 'input', attrs: { type: 'hidden', name: 'searchid', value:'2056472' }
+                        },
+                        {
+                            tag: 'input', attrs: { type: 'hidden', name: 'l10n', value:'ru' }
+                        },
+                        {
+                            tag: 'input', attrs: { type: 'hidden', name: 'reqenc', value:'' }
+                        },
+                        {
+                            elem: 'input',
+                            tag: 'input',
+                            attrs: { name: 'text' }
+                        }
+                    ]
+                }
+            ]
         }
-    }
+    ]
 }
