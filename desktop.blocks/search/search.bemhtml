@@ -28,7 +28,7 @@ block search {
                     block: 'search',
                     elem: 'form',
                     tag: 'form',
-                    attrs: { action: '/desktop.bundles/search-result/search-result.html', method: 'get', target: '_blank' },
+                    attrs: { action: '/search-result.html', method: 'get', target: '_blank' },
                     content: [
                         {
                             tag: 'input', attrs: { type: 'hidden', name: 'searchid', value:'2056472' }

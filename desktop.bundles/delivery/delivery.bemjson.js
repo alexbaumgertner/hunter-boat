@@ -552,9 +552,7 @@
                                                                                     elem: 'td',
                                                                                     content: [
                                                                                         { block: 'b-link', url: '/1564', content: '250 М', title: '250 М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '350 М', title: '250 М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '00 М', title: '250 М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '250 Мxgfh ', title: '250 М' }
+                                                                                        { block: 'b-link', url: '/1564', content: '350 М', title: '250 М' }
                                                                                     ]
                                                                                 },
                                                                                 {
@@ -608,10 +606,6 @@
                                                                                 {
                                                                                     elem: 'th',
                                                                                     content: 'Высота, м'
-                                                                                },
-                                                                                {
-                                                                                    elem: 'th',
-                                                                                    content: 'Объем, м.куб'
                                                                                 }
                                                                             ]
                                                                         },
@@ -642,10 +636,6 @@
                                                                                 {
                                                                                     elem: 'td',
                                                                                     content: '147'
-                                                                                },
-                                                                                {
-                                                                                    elem: 'td',
-                                                                                    content: '145'
                                                                                 }
                                                                             ]
                                                                         },
@@ -656,9 +646,7 @@
                                                                                     elem: 'td',
                                                                                     content: [
                                                                                         { block: 'b-link', url: '/1564', content: '250 М', title: '250 М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '350 М', title: '250М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '00 М', title: '250М' },
-                                                                                        { block: 'b-link', url: '/1564', content: '250 Мxgfh ', title: '250М' }
+                                                                                        { block: 'b-link', url: '/1564', content: '350 М', title: '250М' }
                                                                                     ]
                                                                                 },
                                                                                 {
@@ -672,10 +660,6 @@
                                                                                 {
                                                                                     elem: 'td',
                                                                                     content: '147'
-                                                                                },
-                                                                                {
-                                                                                    elem: 'td',
-                                                                                    content: '145'
                                                                                 }
                                                                             ]
                                                                         }

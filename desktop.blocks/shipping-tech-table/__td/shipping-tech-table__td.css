@@ -1,15 +1,20 @@
 .shipping-tech-table__td
 {
     background: #fff;
-    padding: 10px;
+    padding: 15px 30px 15px;
     text-align: left;
     font-size: 15px;
     font-weight: bold;
 }
 
 .shipping-tech-table__td:first-child {
-    width: 115px;
+    width: 110px;
     font-weight: normal;
+    padding-left: 15px;
+}
+
+.shipping-tech-table__td:last-child {
+    padding-right: 15px;
 }
 
 .shipping-tech-table__td .b-link {
