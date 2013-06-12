@@ -1,7 +1,5 @@
 .enumeration-list__key
 {
-    border-bottom: 3px solid rgb(245, 252, 255);
     position: relative;
-    bottom: -2px;
     display: inline-block;
 }

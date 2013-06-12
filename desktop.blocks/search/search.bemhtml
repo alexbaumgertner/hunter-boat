@@ -1,7 +1,5 @@
 block search {
 
-    js: true,
-
     mix: [
     {
         block: 'ya-site-form',

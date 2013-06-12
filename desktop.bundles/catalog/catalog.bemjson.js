@@ -547,35 +547,35 @@
                                                                                         elem: 'item',
                                                                                         content: {
                                                                                             block: 'product-card',
-                                                                                            src: 'img/catalog/boats/01.jpg'
+                                                                                            src: 'img/catalog/boats/01.png'
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
                                                                                         content: {
                                                                                             block: 'product-card',
-                                                                                            src: 'img/catalog/boats/02.jpg'
+                                                                                            src: 'img/catalog/boats/02.png'
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
                                                                                         content: {
                                                                                             block: 'product-card',
-                                                                                            src: 'img/catalog/boats/03.jpg'
+                                                                                            src: 'img/catalog/boats/03.png'
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
                                                                                         content: {
                                                                                             block: 'product-card',
-                                                                                            src: 'img/catalog/boats/04.jpg'
+                                                                                            src: 'img/catalog/boats/04.png'
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
                                                                                         content: {
                                                                                             block: 'product-card',
-                                                                                            src: 'img/catalog/boats/05.jpg'
+                                                                                            src: 'img/catalog/boats/05.png'
                                                                                         }
                                                                                     },
                                                                                     {

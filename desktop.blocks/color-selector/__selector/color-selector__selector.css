@@ -2,13 +2,13 @@
 {
     display: inline-block;
     vertical-align: middle;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 11px;
     font-style: italic;
     color: #ffffff;
-    padding: 1px 13px 3px;
-    border-radius: 15px;
+    padding: 2px 11px 3px;
+    border-radius: 8px;
     margin: 0 10px 0 0;
     cursor: pointer;
-    border: 6px solid;
+    border: 3px solid white;
 }
