@@ -1,7 +1,7 @@
 .catalog-item-card__header-icon
 {
     display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 3px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
 }
