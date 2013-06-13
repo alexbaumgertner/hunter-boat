@@ -2,6 +2,8 @@ block search {
 
     js: true,
 
+    attrs: { id: 'search' },
+
     content: [
     {
         block: 'ya-site-form',
