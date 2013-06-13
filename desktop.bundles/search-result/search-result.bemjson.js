@@ -160,6 +160,7 @@
                                     content: [
                                         {
                                             elem: 'header',
+                                            mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/Search.jpg' } }],
                                             content: 'Результаты поиска'
                                         },
                                         {

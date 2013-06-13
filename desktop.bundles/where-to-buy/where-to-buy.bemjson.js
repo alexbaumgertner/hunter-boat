@@ -181,6 +181,7 @@
                                     content: [
                                         {
                                             elem: 'header',
+                                            mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/Where-to-buy.jpg' } }],
                                             content: 'ГДЕ КУПИТЬ'
                                         },
                                         {

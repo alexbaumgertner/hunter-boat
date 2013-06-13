@@ -181,6 +181,7 @@
                                     content: [
                                         {
                                             elem: 'header',
+                                            mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/Photos.jpg' } }],
                                             content: 'Фотографии'
                                         },
                                         {

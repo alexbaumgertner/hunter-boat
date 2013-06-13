@@ -182,9 +182,7 @@
                                     content: [
                                         {
                                             elem: 'header',
-                                            mix: [
-                                                { block: 'text-mask', image: 'template/mask/'}
-                                            ],
+                                            mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/Dealers.jpg' } }],
                                             content: 'ОПТОВИКАМ'
                                         },
                                         {

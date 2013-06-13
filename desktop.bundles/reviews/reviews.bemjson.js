@@ -182,11 +182,8 @@
                                     content: [
                                         {
                                             elem: 'header',
-
+                                            mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/Reviews.jpg' } }],
                                             content: 'Отзывы',
-                                            mix: [
-                                                { block: 'text-mask', image: 'template/mask/'}
-                                            ]
                                         },
                                         {
                                             elem: 'link-to-add',

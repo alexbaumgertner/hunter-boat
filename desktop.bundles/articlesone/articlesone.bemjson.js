@@ -182,6 +182,7 @@
                                             content: [
                                                 {
                                                     elem: 'header',
+                                                    mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/Article-one.jpg' } }],
                                                     content: 'Статьи'
                                                 },
                                                 {

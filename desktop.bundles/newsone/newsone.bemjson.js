@@ -183,6 +183,7 @@
                                             content: [
                                                 {
                                                     elem: 'header',
+                                                    mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/News-one.jpg' } }],
                                                     content: 'Новости'
                                                 },
                                                 {

@@ -185,6 +185,7 @@
                                     content: [
                                         {
                                             elem: 'header',
+                                            mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/How-to-buy.jpg' } }],
                                             content: 'Как купить лодку'
                                         },
                                         {
