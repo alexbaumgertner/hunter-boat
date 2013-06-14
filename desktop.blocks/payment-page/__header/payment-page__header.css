@@ -1,0 +1,10 @@
+.payment-page__header
+{
+    text-transform: uppercase;
+    font-size: 33px;
+    line-height: 36px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: normal;
+}

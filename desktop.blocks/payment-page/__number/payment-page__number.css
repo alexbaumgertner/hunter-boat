@@ -1,0 +1,7 @@
+.payment-page__number
+{
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 26px;
+    margin: 0 0 0 15px;
+}

@@ -4,17 +4,17 @@
 
 
 .order-list_type_simple .order-list__list {
-    padding-left: 20px;
+    padding: 15px 0 15px 20px;
 }
 
 .order-list_type_simple .order-list__item
 {
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 14px;
 }
 
 .order-list_type_simple .order-list__item-desc {
-    width: 630px;
+    width: 530px;
 }
 
 .order-list_type_simple .order-list__item-name {

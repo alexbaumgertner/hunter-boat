@@ -1,0 +1,25 @@
+.payment-form__code
+{
+    position: absolute;
+    right: 82px;
+    top: 154px;
+    line-height: 14px;
+}
+
+.payment-form__code .payment-form__input-title {
+    display: inline-block;
+    vertical-align: middle;
+    width: 65px;
+    margin: 0 0 0 0;
+}
+
+.payment-form__code .payment-form__input-value {
+    display: inline-block;
+    vertical-align: middle;
+    width: 65px;
+    margin: 0 5px 0 0;
+}
+
+.payment-form__code .payment-form__input-info {
+    margin: 15px 0 0 0;
+}

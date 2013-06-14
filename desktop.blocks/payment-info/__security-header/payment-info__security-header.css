@@ -1,0 +1,7 @@
+.payment-info__security-header
+{
+    margin: 20px 0 0 0;
+    font-size: 13px;
+    padding: 0 0 0 20px;
+    background: url('payment-info__security-header.png') no-repeat 2px 5px;
+}

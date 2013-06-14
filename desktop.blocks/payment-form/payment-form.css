@@ -1,0 +1,9 @@
+.payment-form
+{
+    background: url("payment-form.png") no-repeat;
+    font-size: 13px;
+    height: 315px;
+    width: 650px;
+    padding: 35px 0 0 40px;
+    position: relative;
+}
