@@ -1,10 +1,9 @@
-.ya-site-results-wrapper
-{
+.ya-site-results-wrapper {
 
 }
 
 .ya-site-results-wrapper #ya-site-results {
-    background: transparent!important;
+    background: transparent !important;
 }
 
 .ya-site-results-wrapper .b-head__found {
@@ -19,6 +18,25 @@
 .ya-site-results-wrapper #ya-site-results .b-serp-item__title-link {
     font-size: 16px;
     line-height: 18px;
+}
+
+.ya-site-results-wrapper #ya-site-results .b-serp-item__title-link:link:hover,
+.ya-site-results-wrapper #ya-site-results .b-serp-item__title-link:hover,
+#ya-site-results a:link:hover,
+#ya-site-results a:hover,
+#ya-site-results .b-pseudo-link:hover,
+#ya-site-results .b-head-tabs__link:hover,
+#ya-site-results .b-head-tabs__link:link:hover,
+#ya-site-results .b-head-tabs__link:visited:hover,
+#ya-site-results .b-dropdown__list .b-pseudo-link:hover,
+#ya-site-results .b-dropdowna__switcher .b-pseudo-link:hover,
+#ya-site-results .b-popupa .b-popupa__content .b-menu__item:hover,
+#ya-site-results .b-foot__link:link:hover,
+#ya-site-results .b-copyright__link:link:hover,
+#ya-site-results .b-serp-item__mime:hover,
+#ya-site-results .b-pager :link:hover {
+
+    color: #00aefe;
 }
 
 .ya-site-results-wrapper #ya-site-results .b-serp-item__text {
