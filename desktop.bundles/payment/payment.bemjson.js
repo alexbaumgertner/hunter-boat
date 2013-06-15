@@ -71,7 +71,7 @@
                                                     content: [
                                                         {
                                                             elem: 'info',
-                                                            content: 'Сумма платежа: 570.00 RUR'
+                                                            content: 'Сумма платежа: <strong>570.00 RUR</strong>'
                                                         },
                                                         {
                                                             elem: 'number',
