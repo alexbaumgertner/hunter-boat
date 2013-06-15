@@ -1,6 +1,13 @@
 block payment-form {
 
-    elem number-input, tag: 'input'
+    elem number-input {
+         tag: 'input',
+         attrs: {
+            maxlength: 4
+         }
+    }
+
+
     elem owner-input, tag: 'input'
     elem code-input, tag: 'input'
 
