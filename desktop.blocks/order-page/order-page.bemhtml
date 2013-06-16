@@ -16,6 +16,11 @@ block order-page {
         mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
     }
 
+    elem menu-limiter {
+        tag: 'li',
+        content: '→'
+    }
+
     elem tab {
         tag: 'div'
     }

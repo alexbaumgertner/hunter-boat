@@ -188,13 +188,21 @@
                                                     content: 'Уточнение заказа'
                                                 },
                                                 {
+                                                    elem: 'menu-limiter'
+                                                },
+                                                {
                                                     elem: 'menu-item',
-
                                                     content: 'Авторизация'
+                                                },
+                                                {
+                                                    elem: 'menu-limiter'
                                                 },
                                                 {
                                                     elem: 'menu-item',
                                                     content: 'Параметры заказа'
+                                                },
+                                                {
+                                                    elem: 'menu-limiter'
                                                 },
                                                 {
                                                     elem: 'menu-item',
@@ -218,9 +226,16 @@
                                                                         {
                                                                             elem: 'header-item',
                                                                             mix: [
-                                                                                {  elem: 'item-desc' }
+                                                                                {  elem: 'item-photo' }
                                                                             ],
                                                                             content: 'Товар'
+                                                                        },
+                                                                        {
+                                                                            elem: 'header-item',
+                                                                            mix: [
+                                                                                {  elem: 'item-desc' }
+                                                                            ],
+                                                                            content: ''
                                                                         },
                                                                         {
                                                                             elem: 'header-item',
@@ -348,7 +363,7 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'price',
-                                                                                    content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
+                                                                                    content: { block: 'price', value: 850, mods: { currency: 'empty' } }
                                                                                 },
                                                                                 {
                                                                                     elem: 'delete',
@@ -845,7 +860,14 @@
                                                                 {
                                                                     elem: 'header',
                                                                     content: [
+                                                                        {
+                                                                            elem: 'header-item',
+                                                                            mix: [
+                                                                                {  elem: 'item-photo' }
+                                                                            ],
+                                                                            content: ''
 
+                                                                        },
                                                                         {
                                                                             elem: 'header-item',
                                                                             mix: [
@@ -949,7 +971,7 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'price',
-                                                                                    content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
+                                                                                    content: { block: 'price', value: 850, mods: { currency: 'empty' } }
                                                                                 }
                                                                             ]
                                                                         }

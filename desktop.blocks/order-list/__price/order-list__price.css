@@ -2,5 +2,11 @@
 {
     display: inline-block;
     vertical-align: middle;
-    width: 85px;
+    width: 75px;
+    margin: 0 0 0 40px;
+    text-align: left;
+}
+
+.order-list__price .price {
+    padding: 0 0 0 10px;
 }

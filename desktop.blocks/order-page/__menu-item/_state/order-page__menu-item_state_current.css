@@ -5,9 +5,5 @@
     color: #000000;
     border-radius: 7px;
     cursor: default;
-    margin-right: 65px;
-}
-
-.order-page__menu-item_state_current:after {
-    right: -50px;
+    padding: 7px 16px;
 }

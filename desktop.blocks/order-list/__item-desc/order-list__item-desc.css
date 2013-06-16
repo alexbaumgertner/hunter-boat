@@ -2,9 +2,6 @@
 {
     display: inline-block;
     vertical-align: middle;
-    width: 450px;
-}
-
-.order-list__header .order-list__item-desc {
-    width: 525px;
+    width: 485px;
+    margin: 0 0 0 20px;
 }

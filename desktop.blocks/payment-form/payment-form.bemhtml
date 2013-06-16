@@ -1,5 +1,7 @@
 block payment-form {
 
+    js: true,
+
     elem number-input {
          tag: 'input',
          attrs: {

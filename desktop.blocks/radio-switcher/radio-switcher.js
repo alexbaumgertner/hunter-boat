@@ -8,7 +8,7 @@ BEM.DOM.decl('radio-switcher', {
     onSetMod : {
 
         'js' : function() {
-           console.log(this.findBlocksInside('tabbed-pane'));
+           //console.log(this.findBlocksInside('tabbed-pane'));
         }
 
     }

@@ -3,10 +3,12 @@
     display: inline-block;
     vertical-align: middle;
     width: 50px;
-    margin: 0 35px;
+    text-align: center;
 }
 
 .order-list__counter .input_type_text {
     padding: 5px;
     text-align: center;
+    width: 40px;
+    background: #eeeeee;
 }
