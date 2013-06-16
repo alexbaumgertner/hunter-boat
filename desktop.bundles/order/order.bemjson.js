@@ -865,7 +865,7 @@
                                                                             mix: [
                                                                                 {  elem: 'item-photo' }
                                                                             ],
-                                                                            content: ''
+                                                                            content: 'Товар'
 
                                                                         },
                                                                         {
@@ -873,7 +873,7 @@
                                                                             mix: [
                                                                                 {  elem: 'item-desc' }
                                                                             ],
-                                                                            content: 'Товар'
+                                                                            content: ''
 
                                                                         },
                                                                         {

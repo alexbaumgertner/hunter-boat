@@ -8,3 +8,8 @@
 .order-page .b-link:hover {
     color: #00aefe;
 }
+
+.order-page .input_type_text,
+.order-page .textarea {
+    background: #eeeeee;
+}
