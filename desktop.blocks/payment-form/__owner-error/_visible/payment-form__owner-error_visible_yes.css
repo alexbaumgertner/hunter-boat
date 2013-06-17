@@ -1,0 +1,7 @@
+.payment-form__owner-error_visible_yes
+{
+    display: inline-block;
+    background: rgba(200, 0, 0, 0.7);
+    padding: 4px 10px;
+    color: #fff;
+}

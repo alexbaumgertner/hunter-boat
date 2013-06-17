@@ -14,7 +14,7 @@
         },
 
         /**
-         *
+         * Переключение текущего поля ввода при заполнении предыдущего
          * @param e
          */
         switchField: function (e) {
@@ -26,11 +26,12 @@
                 selection = this.__self.getSelectionRange(field[0]),
                 lastNumberInputIndex = 3;
 
-/*          console.log('cur_length: ' + cur_length);
-            console.log('last_length: ' + last_length);
-            console.log('max_length: ' + max_length);
-            console.log('selection: ' + selection);
-            console.log('selection.start: ' + selection.start);*/
+                    /*          console.log('cur_length: ' + cur_length);
+                                console.log('last_length: ' + last_length);
+                                console.log('max_length: ' + max_length);
+                                console.log('selection: ' + selection);
+                                console.log('selection.start: ' + selection.start);
+                    */
 
             if (cur_length > last_length &&
                 cur_length == max_length &&
@@ -48,20 +49,45 @@
             }
             field.data('last_length', cur_length);
 
+        },
+
+
+        /**
+         * Проверка раскладки клавиатуры
+         * @param e event
+         */
+        checkKeyboardLayout: function (e) {
+            var rusLayoutREGX = /([а-яА-Я]+)/;
+            var inputElemVal  = e.data.domElem.val();
+
+            if (inputElemVal.match(rusLayoutREGX)) {
+                this.elem('owner-error').html(this.params['keyboardLayoutError']);
+                this.setMod(this.elem('owner-error'), 'visible', 'yes');
+
+            } else {
+                this.delMod(this.elem('owner-error'), 'visible');
+            }
         }
 
     }, {
 
         live: function () {
+
             this.liveBindTo('number-input', 'keyup change', function (e) {
                 this.switchField(e);
             });
+
+            this.liveBindTo('owner-input', 'keyup change', function (e) {
+                this.checkKeyboardLayout(e);
+            });
+
+
 
         },
 
         /**
          * @url: http://chikuyonok.ru/2010/07/simple-things/
-         * @param elem
+         * @param elem jQuery
          * @returns {*}
          */
         getSelectionRange: function (elem) {
@@ -95,6 +121,7 @@
                 return null;
             }
         }
+
 
     });
 

@@ -133,6 +133,9 @@
                                                                             elem: 'owner-input'
                                                                         },
                                                                         {
+                                                                            elem: 'owner-error'
+                                                                        },
+                                                                        {
                                                                             elem: 'input-info',
                                                                             content: 'латинскими буквами (как на карте)'
                                                                         }

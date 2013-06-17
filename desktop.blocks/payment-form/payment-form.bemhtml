@@ -1,6 +1,6 @@
 block payment-form {
 
-    js: true,
+    js: { keyboardLayoutError: 'Смените раскладку' },
 
     elem number-input {
          tag: 'input',
@@ -11,7 +11,13 @@ block payment-form {
 
 
     elem owner-input, tag: 'input'
-    elem code-input, tag: 'input'
+
+    elem code-input {
+        tag: 'input',
+        attrs: {
+           maxlength: 3
+        }
+    }
 
     elem valid-period-select-day-month  {
         tag: 'select',
