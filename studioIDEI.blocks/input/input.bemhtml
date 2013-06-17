@@ -19,6 +19,8 @@ block input {
 
 
     this.ctx.label {
+
+        js: { id: this.ctx.name },
         tag: 'span',
         content: [
             {
@@ -28,8 +30,13 @@ block input {
                     id: this.generateId(),
                     type: this.ctx.type,
                     name: this.ctx.name,
+                    value: this.ctx.value,
                     checked: this.ctx.checked
                 }
+            },
+            {
+                elem: 'control',
+                tag: 'span'
             },
             {
                 elem: 'label',
@@ -70,4 +77,5 @@ block input {
         ]
 
     }
+
 }

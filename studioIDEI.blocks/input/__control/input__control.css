@@ -1,0 +1,12 @@
+.input__control
+{
+    background: url("input__control.png") no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input:hover .input__control {
+    background-position: 0 -25px;
+}

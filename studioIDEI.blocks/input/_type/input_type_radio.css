@@ -9,3 +9,7 @@
     box-shadow: none;
     cursor: pointer;
 }
+
+.input_type_radio .input__input {
+    opacity: 0;
+}
