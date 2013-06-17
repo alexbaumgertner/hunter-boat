@@ -5,6 +5,7 @@
         }
     ],
     shouldDeps: [
-        { block: 'i-font', mods: { face: 'hermes' } }
+        { block: 'i-font', mods: { face: 'hermes' } },
+        { elem: 'menu-item', mods: { filled: 'yes' } }
     ]
 })

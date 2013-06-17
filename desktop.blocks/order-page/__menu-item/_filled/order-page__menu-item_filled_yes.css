@@ -1,0 +1,19 @@
+.order-page__menu-item_filled_yes
+{
+    color: #000000;
+    position: relative;
+}
+
+.order-page__menu-item_filled_yes:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background: #000000;
+    left: 17px;
+    right: 17px;
+    bottom: 7px;
+}
+
+.order-page__menu-item_state_current.order-page__menu-item_filled_yes:after {
+    display: none;
+}
