@@ -420,7 +420,7 @@
                                                         },
                                                         {
                                                             elem: 'next',
-                                                            content: { block: 'button', mods: { type: 'submit', state: 'disable' }, content: 'Далее' }
+                                                            content: { block: 'button', mods: { type: 'submit', state: 'disabled' }, content: 'Далее' }
                                                         }
                                                     ]
                                                 },
@@ -846,7 +846,7 @@
                                                         },
                                                         {
                                                             elem: 'next',
-                                                            content: { block: 'button', mods: { type: 'submit', state: 'disable' }, content: 'Далее' }
+                                                            content: { block: 'button', mods: { type: 'submit', state: 'disabled' }, content: 'Далее' }
                                                         }
                                                     ]
                                                 },
@@ -1019,7 +1019,7 @@
                                                             mix: [
                                                                 { elem: 'next' }
                                                             ],
-                                                            content: { block: 'button', mods: { type: 'submit', state: 'disable' }, content: 'Подтверждаю заказ' }
+                                                            content: { block: 'button', mods: { type: 'submit', state: 'disabled' }, content: 'Подтверждаю заказ' }
                                                         }
                                                     ]
                                                 }
