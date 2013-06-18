@@ -1,0 +1,11 @@
+.select__title
+{
+    padding: 10px 30px 10px 10px;
+    background: url("select__title.png") no-repeat right 14px;
+    margin: 0 10px 0 0;
+    color: #868686;
+}
+
+.select__custom-control_active_yes .select__title {
+    background-position: right -29px;
+}

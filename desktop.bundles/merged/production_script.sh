@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# put this script to /merged
 # depends: npm install cssrb first
 
-# bem make desktop.bundles/merged/_merged.css desktop.bundles/merged/_merged.js
+# put this script to desktop.bundles/merged
+# run bem make desktop.bundles/merged/_merged.css desktop.bundles/merged/_merged.js
 
 
 # clean prev ()
@@ -15,16 +15,12 @@ mkdir -p build/css/ build/js/
 # copy js
 cp _merged.js build/js/_merged.js
 
-# copy imgs
+# copy content imgs
 cp -R img build/img
-
 
 
 # create cssrb config file
 BUILD_DIR=`pwd`/build
-
-echo ${BUILD_DIR}
-
 echo "exports.config = { \
     fromBase: '', \
     toBase:  '${BUILD_DIR}/', \
@@ -33,16 +29,19 @@ echo "exports.config = { \
     } \
 };" > cssrb.js
 
+# collect all css  style images (backgrounds, etc)
+find . -maxdepth 1 -name '_*.css' | while read line; do \
+    cssrb -c cssrb.js $line build/css/$line -cp; \
+done
+
+# cssrb.js dont
+mv templates build/templates
 
 
-# save build date
-echo `date` >>  merged.html
-
-
-
-# copy (and some content replaces) html files
+# collect pages html files and replace css and js links
 ls ../ | while read line; do
 
+    # copy
     cp ../$line/$line.html build;
 
     # replace css/js source url
@@ -50,15 +49,6 @@ ls ../ | while read line; do
     cat build/$line.html | sed -i "s!_${line}\(\S*\).css!css/_merged\1.css!g" build/$line.html;
 done;
 
-
-
-# copy css img
-find . -maxdepth 1 -name '_*.css' | while read line; do \
-    cssrb -c cssrb.js $line build/css/$line -cp; \
-done
-
-
-mv templates build/templates
 
 # clean up temporary files
 rm cssrb.js

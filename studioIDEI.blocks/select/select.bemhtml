@@ -1,0 +1,69 @@
+block select {
+
+    js: true,
+
+    content: {
+
+    var content = [];
+
+
+        var nativeControl = {
+            elem: 'native-control',
+            tag: 'select',
+            attrs: {
+                name: this.ctx.name
+             }
+        };
+
+        var options = [];
+
+        for (var i = 0, length = this.ctx.options.length; i < length; i++) {
+            options.push({
+                elem: 'option',
+                tag: 'option',
+                content: this.ctx.options[i].content,
+                attrs: { value: this.ctx.options[i].value }
+            });
+        }
+
+        nativeControl.content = options;
+
+        content.push(nativeControl);
+
+
+        var customControl = {
+            elem: 'custom-control',
+            attrs: {
+                name: this.ctx.name
+             }
+        };
+
+        options = [];
+
+        for (var i = 1, length = this.ctx.options.length; i < length; i++) {
+            options.push({
+                elem: 'custom-option',
+                tag: 'li',
+                content: this.ctx.options[i].content
+            });
+        }
+
+        customControl.content = [
+            {
+                elem: 'title',
+                content: this.ctx.options[0].content
+            },
+            {
+                elem: 'custom-options',
+                tag: 'ul',
+                content: options
+            }
+        ];
+
+        content.push(customControl);
+
+        return content;
+
+     }
+
+}

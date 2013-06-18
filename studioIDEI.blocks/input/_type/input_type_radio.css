@@ -10,6 +10,10 @@
     cursor: pointer;
 }
 
-.input_type_radio .input__input {
+.i-ua_js_yes .input_type_radio .input__input {
     opacity: 0;
+}
+
+.i-ua_js_no .input_type_radio .input__control {
+    display: none;
 }

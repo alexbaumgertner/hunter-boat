@@ -1,0 +1,12 @@
+.select__custom-control {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #878787;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.i-ua-js_no .select__custom-control {
+    display: none;
+}

@@ -1,0 +1,9 @@
+.select__native-control {
+    background: #ffffff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.i-ua_js_yes .select__native-control {
+    display: none;
+}

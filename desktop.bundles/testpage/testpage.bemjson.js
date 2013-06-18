@@ -193,6 +193,22 @@
                                     {
                                         elem: 'item',
                                         content: { block: 'input', type: 'radio', name: 'pay-method', value: '3', label: 'Выписать счёт' }
+                                    },
+                                    {
+                                        attrs: {
+                                            style: 'margin: 50px;'
+                                        }
+                                    },
+                                    {
+                                        block: 'select',
+                                        name: 'market',
+                                        title: 'Выберите магазин',
+                                        options: [
+                                            { content: 'Главный магазин', value: 0 },
+                                            { content: 'Польстровский проспект дом 1', value: 1},
+                                            { content: 'Сенная площать, строение 2', value: 2 },
+                                            { content: 'Новгородская 3', value: 3 }
+                                        ]
                                     }
                                 ]
                             }

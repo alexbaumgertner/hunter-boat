@@ -1,0 +1,9 @@
+.select__custom-options
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 0;
+    z-index: 1;
+}
