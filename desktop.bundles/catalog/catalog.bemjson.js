@@ -215,20 +215,60 @@
                                     content: [
                                         {
                                             block: 'products-promo-carousel',
-                                            js: true,
+                                            js: {
+                                                "settings": {
+                                                    'delayInitTime': 0, // ms
+                                                    'durationInitTime': 0,
+                                                    'delayLoopTime': 0
+                                                },
+                                                "slides":[
+                                                    {
+                                                        "title": "Надувные электро лодки Хантер",
+                                                        "text": "позволят добраться <br> до самых заветных мест рыбалки или отдыха.",
+                                                        "sub-text": "4 модели",
+                                                        "start-price": "9800",
+                                                        "url": "http://hb.d-idei.ru/img/index-page/01.png"
+                                                    },
+                                                    {
+                                                        "title": "Супер моторные лодки Хантер",
+                                                        "text": "позволят доплыть <br> до самых заветных мест рыбалки или отдыха.",
+                                                        "sub-text": "2 модели",
+                                                        "start-price": "5400",
+                                                        "url": "http://hb.d-idei.ru/img/index-page/02.png"
+                                                    },
+                                                    {
+                                                        "title": "Надувные лодки Хантер",
+                                                        "text": "довезут вас <br> до самых заветных мест рыбалки или отдыха.",
+                                                        "sub-text": "7 моделей",
+                                                        "start-price": "3500",
+                                                        "url": "http://hb.d-idei.ru/img/index-page/03.png"
+                                                    },
+                                                    {
+                                                        "title": "Быстрые моторные лодки Хантер",
+                                                        "text": "позволят хорошо порыбачить и отдохнуть",
+                                                        "sub-text": "6 моделей",
+                                                        "start-price": "2100",
+                                                        "url": "http://hb.d-idei.ru/img/index-page/04.png"
+                                                    }
+                                                ]
+                                            },
                                             content: [
                                                 {
                                                     elem: 'item',
                                                     content: [
                                                         {
                                                             elem: 'header',
-                                                            content: 'Надувная лодка Хантер <em>360</em>'
+                                                            mix: [ { elem: 'title' } ],
+                                                            content: { block: 'b-link', content: 'Надувная лодка Хантер <em>360</em>' }
                                                         },
                                                         {
-                                                            elem: 'price',
+                                                            elem: 'prices',
                                                             content: [
                                                                 { elem: 'price-old', content: '41000' },
-                                                                { elem: 'price-new', content: {
+                                                                {
+                                                                    elem: 'price-new',
+                                                                    mix: [ { elem: 'price' } ],
+                                                                    content: {
                                                                     block: 'price',
                                                                     mods: { currency: 'dot-dash'},
                                                                     value: '39900'  }
@@ -253,11 +293,11 @@
                                                             ]
                                                         },
                                                         {
-                                                            elem: 'controlls',
+                                                            elem: 'menu',
                                                             content: [
-                                                                { elem: 'switch', elemMods: { state: 'current' } },
-                                                                { elem: 'switch' },
-                                                                { elem: 'switch' }
+                                                                { elem: 'menu-item', elemMods: { state: 'current' } },
+                                                                { elem: 'menu-item' },
+                                                                { elem: 'menu-item' }
                                                             ]
                                                         }
                                                     ]

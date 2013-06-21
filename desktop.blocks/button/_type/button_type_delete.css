@@ -1,0 +1,10 @@
+.button_type_delete
+{
+    background: url("button_type_delete.png") no-repeat;
+    width: 16px;
+    height: 17px;
+}
+
+.button_type_delete:hover {
+    background-position: 0 -22px ;
+}

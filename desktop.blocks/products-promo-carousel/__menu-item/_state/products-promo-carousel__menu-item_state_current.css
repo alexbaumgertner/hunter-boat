@@ -1,10 +1,11 @@
-.products-promo-carousel__switch_state_current
+.products-promo-carousel__menu-item_state_current
 {
     background: #ffffff;
     border-color: #0095da;
 }
 
-.products-promo-carousel__switch_state_current:after {
+
+.products-promo-carousel__menu-item_state_current:after {
     content: '';
     font: 0/0 a;
     position: absolute;

@@ -11,3 +11,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.carousel__item .product-card__icon {
+    display: none;
+}

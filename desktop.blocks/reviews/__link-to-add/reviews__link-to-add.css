@@ -5,6 +5,7 @@
     top: 28px;
     font-size: 18px;
     color: #0d84bc;
+    z-index: 10;
 }
 
 .reviews__link-to-add:hover {

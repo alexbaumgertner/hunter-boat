@@ -1,7 +1,13 @@
 .payment-form__owner-error_visible_yes
 {
     display: inline-block;
-    background: rgba(200, 0, 0, 0.7);
-    padding: 4px 10px;
-    color: #fff;
+    color: red;
+    width: 57px;
+    font-size: 12px;
+    line-height: 11px;
+    vertical-align: top;
+    margin: 1px 0 0 20px;
+    background: rgba(255,255,255, 0.8);
+    box-shadow: 0px 0px 9px 5px rgba(255,255,255, 0.8);
+    border-radius: 40px;
 }

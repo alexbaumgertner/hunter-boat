@@ -5,7 +5,7 @@ block products-promo-carousel {
     }
 
 
-    elem price {
+    elem prices {
         mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
     }
 

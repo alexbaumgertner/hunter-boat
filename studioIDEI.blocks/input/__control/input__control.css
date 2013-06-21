@@ -10,3 +10,7 @@
 .input:hover .input__control {
     background-position: 0 -25px;
 }
+
+.input_type_checkbox .input__control {
+    display: none;
+}

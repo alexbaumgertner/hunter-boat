@@ -6,6 +6,7 @@
     color: #868686;
 }
 
+.select__custom-control:hover .select__title,
 .select__custom-control_active_yes .select__title {
     background-position: right -29px;
 }
