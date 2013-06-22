@@ -227,6 +227,7 @@
                                                         "text": "позволят добраться <br> до самых заветных мест рыбалки или отдыха.",
                                                         "sub-text": "4 модели",
                                                         "price-old": "9800",
+                                                        "price-current": "1500",
                                                         "src": "http://hb.d-idei.ru/img/index-page/01.png",
                                                         "url": "http://hb.d-idei.ru/img/index-page/01.png"
                                                     },
@@ -235,6 +236,7 @@
                                                         "text": "позволят доплыть <br> до самых заветных мест рыбалки или отдыха.",
                                                         "sub-text": "2 модели",
                                                         "price-old": "5400",
+                                                        "price-current": "2500",
                                                         "src": "http://hb.d-idei.ru/img/index-page/02.png",
                                                         "url": "http://hb.d-idei.ru/img/index-page/02.png"
                                                     },
@@ -243,6 +245,7 @@
                                                         "text": "довезут вас <br> до самых заветных мест рыбалки или отдыха.",
                                                         "sub-text": "7 моделей",
                                                         "price-old": "3500",
+                                                        "price-current": "3500",
                                                         "src": "http://hb.d-idei.ru/img/index-page/03.png",
                                                         "url": "http://hb.d-idei.ru/img/index-page/03.png"
                                                     },
@@ -251,6 +254,7 @@
                                                         "text": "позволят хорошо порыбачить и отдохнуть",
                                                         "sub-text": "6 моделей",
                                                         "price-old": "2100",
+                                                        "price-current": "4500",
                                                         "src": "http://hb.d-idei.ru/img/index-page/04.png",
                                                         "url": "http://hb.d-idei.ru/img/index-page/04.png"
                                                     }
