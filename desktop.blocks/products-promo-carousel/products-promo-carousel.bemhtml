@@ -15,7 +15,7 @@ block products-promo-carousel {
     }
 
 
-    elem price-new {
+    elem price-current {
         tag: 'span'
     }
 

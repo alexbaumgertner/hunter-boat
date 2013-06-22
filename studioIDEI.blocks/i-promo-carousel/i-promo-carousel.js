@@ -125,7 +125,8 @@
                 this.elem('title')
                     .add(this.elem('text-inner'))
                     .add(this.elem('sub-text'))
-                    .add(this.elem('price'))
+                    .add(this.elem('price-old'))
+                    .add(this.elem('price-current'))
                     .add(this.elem('photo'));
 
             // use promise+done because fade out/in of collection of elements (callback fire every elem animation)
@@ -137,7 +138,8 @@
                         _this.elem('title').children('.b-link').html(currSlide['title']);
                         _this.elem('text-inner').html(currSlide['text']);
                         _this.elem('sub-text').html(currSlide['sub-text']);
-                        _this.elem('price').find('.price__value').html(currSlide['start-price']);
+                        _this.elem('price-old').find('.price__value').html(currSlide['price-old']);
+                        _this.elem('price-current').find('.price__value').html(currSlide['price-current']);
                         _this.elem('photo').attr('src', currSlide['src']);
 
                     // show modifiable blocks
