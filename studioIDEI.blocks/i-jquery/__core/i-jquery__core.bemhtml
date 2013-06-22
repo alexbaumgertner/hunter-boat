@@ -1,0 +1,10 @@
+block i-jquery, elem core, default: {
+    return apply(
+        this._mode = '',
+        this.ctx = {
+            block: 'b-page',
+            elem: 'js',
+            url: 'img/jquery.min.js'
+        }
+    );
+}
