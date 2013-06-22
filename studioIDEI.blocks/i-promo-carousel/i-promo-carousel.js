@@ -138,7 +138,7 @@
                         _this.elem('text-inner').html(currSlide['text']);
                         _this.elem('sub-text').html(currSlide['sub-text']);
                         _this.elem('price').find('.price__value').html(currSlide['start-price']);
-                        _this.elem('photo').attr('src', currSlide['url']);
+                        _this.elem('photo').attr('src', currSlide['src']);
 
                     // show modifiable blocks
                     _this.modifyContentElems.fadeIn('slow')

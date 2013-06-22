@@ -227,6 +227,7 @@
                                                         "text": "позволят добраться <br> до самых заветных мест рыбалки или отдыха.",
                                                         "sub-text": "4 модели",
                                                         "start-price": "9800",
+                                                        "src": "http://hb.d-idei.ru/img/index-page/01.png",
                                                         "url": "http://hb.d-idei.ru/img/index-page/01.png"
                                                     },
                                                     {
@@ -234,6 +235,7 @@
                                                         "text": "позволят доплыть <br> до самых заветных мест рыбалки или отдыха.",
                                                         "sub-text": "2 модели",
                                                         "start-price": "5400",
+                                                        "src": "http://hb.d-idei.ru/img/index-page/02.png",
                                                         "url": "http://hb.d-idei.ru/img/index-page/02.png"
                                                     },
                                                     {
@@ -241,6 +243,7 @@
                                                         "text": "довезут вас <br> до самых заветных мест рыбалки или отдыха.",
                                                         "sub-text": "7 моделей",
                                                         "start-price": "3500",
+                                                        "src": "http://hb.d-idei.ru/img/index-page/03.png",
                                                         "url": "http://hb.d-idei.ru/img/index-page/03.png"
                                                     },
                                                     {
@@ -248,6 +251,7 @@
                                                         "text": "позволят хорошо порыбачить и отдохнуть",
                                                         "sub-text": "6 моделей",
                                                         "start-price": "2100",
+                                                        "src": "http://hb.d-idei.ru/img/index-page/04.png",
                                                         "url": "http://hb.d-idei.ru/img/index-page/04.png"
                                                     }
                                                 ]
