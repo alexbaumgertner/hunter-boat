@@ -142,6 +142,12 @@
                         _this.elem('price-current').find('.price__value').html(currSlide['price-current']);
                         _this.elem('photo').attr('src', currSlide['src']);
 
+                    // update url
+                    if (currSlide.url) {
+                        _this.elem('text-inner').attr('href', currSlide.url);
+                        _this.elem('sub-text').attr('href', currSlide.url + '#order');
+                    }
+
                     // show modifiable blocks
                     _this.modifyContentElems.fadeIn('slow')
                         .promise()

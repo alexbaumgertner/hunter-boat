@@ -224,39 +224,39 @@
                                                 "slides": [
                                                     {
                                                         "title": "Надувные электро лодки Хантер",
-                                                        "text": "позволят добраться <br> до самых заветных мест рыбалки или отдыха.",
-                                                        "sub-text": "4 модели",
+                                                        "text": "Узнать все для этой лодки",
+                                                        "sub-text": "заказать",
                                                         "price-old": "9800",
                                                         "price-current": "1500",
                                                         "src": "http://hb.d-idei.ru/img/index-page/01.png",
-                                                        "url": "http://hb.d-idei.ru/img/index-page/01.png"
+                                                        "url": "/boats/1"
                                                     },
                                                     {
                                                         "title": "Супер моторные лодки Хантер",
-                                                        "text": "позволят доплыть <br> до самых заветных мест рыбалки или отдыха.",
-                                                        "sub-text": "2 модели",
+                                                        "text": "Посмотреть карточку товара Лодки",
+                                                        "sub-text": "Приобрести",
                                                         "price-old": "5400",
                                                         "price-current": "2500",
                                                         "src": "http://hb.d-idei.ru/img/index-page/02.png",
-                                                        "url": "http://hb.d-idei.ru/img/index-page/02.png"
+                                                        "url": "/boats/2"
                                                     },
                                                     {
                                                         "title": "Надувные лодки Хантер",
-                                                        "text": "довезут вас <br> до самых заветных мест рыбалки или отдыха.",
-                                                        "sub-text": "7 моделей",
+                                                        "text": "Взглянуть на фотографии Лодки",
+                                                        "sub-text": "купить",
                                                         "price-old": "3500",
                                                         "price-current": "3500",
                                                         "src": "http://hb.d-idei.ru/img/index-page/03.png",
-                                                        "url": "http://hb.d-idei.ru/img/index-page/03.png"
+                                                        "url": "/boats/3"
                                                     },
                                                     {
                                                         "title": "Быстрые моторные лодки Хантер",
-                                                        "text": "позволят хорошо порыбачить и отдохнуть",
-                                                        "sub-text": "6 моделей",
+                                                        "text": "Посетить страницу лодки",
+                                                        "sub-text": "В корзину",
                                                         "price-old": "2100",
                                                         "price-current": "4500",
                                                         "src": "http://hb.d-idei.ru/img/index-page/04.png",
-                                                        "url": "http://hb.d-idei.ru/img/index-page/04.png"
+                                                        "url": "/boats/4"
                                                     }
                                                 ]
                                             },
@@ -301,11 +301,21 @@
                                                             content: [
                                                                 {
                                                                     elem: 'link-to-info',
-                                                                    content: { block: 'b-link', content: 'Узнать все о Хантер 360', url: '/catalog/111#all-info' }
+                                                                    content: {
+                                                                        block: 'b-link',
+                                                                        mix: [ { block: 'products-promo-carousel', elem: 'text-inner' } ],
+                                                                        content: 'Узнать все о Хантер 360',
+                                                                        url: 'initUrl'
+                                                                    }
                                                                 },
                                                                 {
                                                                     elem: 'link-to-order',
-                                                                    content: { block: 'b-link', content: 'Заказать', url: '/catalog/111/order' }
+                                                                    content: {
+                                                                        block: 'b-link',
+                                                                        mix: [ { block: 'products-promo-carousel', elem: 'sub-text' } ],
+                                                                        content: 'Заказать',
+                                                                        url: 'initUrl#order'
+                                                                    }
                                                                 }
                                                             ]
                                                         },
