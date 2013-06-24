@@ -71,6 +71,7 @@
                 .fadeIn(this.durationInitTime)
                 .promise()
                 .done(function () {
+                    _this.loopCarousel();
             });
         },
 

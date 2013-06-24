@@ -268,7 +268,7 @@
 
                                         {
                                             elem: 'photo',
-                                            url: 'img/index-page/carousel_1.png'
+                                            url: 'img/index-page/01.png'
                                         }
                                     ]
                                 }
