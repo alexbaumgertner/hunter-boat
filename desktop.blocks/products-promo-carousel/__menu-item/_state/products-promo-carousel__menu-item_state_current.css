@@ -9,10 +9,10 @@
     content: '';
     font: 0/0 a;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 3px;
+    left: 3px;
     background: #0095da;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border-radius: 100%;
 }

@@ -223,7 +223,7 @@
                                                 },
                                                 "slides": [
                                                     {
-                                                        "title": "Надувные электро лодки Хантер",
+                                                        "title": "Надувные лодки Хантер",
                                                         "text": "Узнать все для этой лодки",
                                                         "sub-text": "заказать",
                                                         "price-old": "9800",
@@ -293,8 +293,13 @@
                                                             ]
                                                         },
                                                         {
-                                                            elem: 'photo',
-                                                            src: 'img/catalog/boats/hunter_big.png'
+                                                            elem: 'photo-wrapper',
+                                                            content: [
+                                                                {
+                                                                    elem: 'photo',
+                                                                    src: 'img/catalog/boats/hunter_big.png'
+                                                                }
+                                                            ]
                                                         },
                                                         {
                                                             elem: 'links',
@@ -303,7 +308,9 @@
                                                                     elem: 'link-to-info',
                                                                     content: {
                                                                         block: 'b-link',
-                                                                        mix: [ { block: 'products-promo-carousel', elem: 'text-inner' } ],
+                                                                        mix: [
+                                                                            { block: 'products-promo-carousel', elem: 'text-inner' }
+                                                                        ],
                                                                         content: 'Узнать все о Хантер 360',
                                                                         url: 'initUrl'
                                                                     }
@@ -312,7 +319,9 @@
                                                                     elem: 'link-to-order',
                                                                     content: {
                                                                         block: 'b-link',
-                                                                        mix: [ { block: 'products-promo-carousel', elem: 'sub-text' } ],
+                                                                        mix: [
+                                                                            { block: 'products-promo-carousel', elem: 'sub-text' }
+                                                                        ],
                                                                         content: 'Заказать',
                                                                         url: 'initUrl#order'
                                                                     }
