@@ -13,3 +13,7 @@
 .article-anounce__title .b-link:hover {
     color: #00aefe;
 }
+
+.article-anounce__title p {
+    margin: 0;
+}
