@@ -14,7 +14,12 @@
                 this.currItemId = this.elem('menu-item').index(this.elem('menu-item', 'state', 'current'));
 
                 // gets from html
-                var settings = this.params.settings;
+                var settings = this.params.settings ||
+                {
+                    'delayInitTime': 1500, // ms
+                    'durationInitTime': 800,
+                    'delayLoopTime': 2000
+                };
 
                 this.delayInitTime = settings.delayInitTime;
                 this.durationInitTime = settings.durationInitTime;
