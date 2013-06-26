@@ -20,6 +20,9 @@
             elem: 'password-recovery'
         },
         {
+            elem: 'error'
+        },
+        {
             block: 'input'
         },
         {

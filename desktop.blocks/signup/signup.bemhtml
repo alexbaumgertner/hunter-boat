@@ -23,6 +23,10 @@ block signup {
                     content: { block: 'b-link', mods: { pseudo: 'yes' }, url: '/authorization/recovery', content: 'Забыли?' }
                  }
             ]
+        },
+        {
+            elem: 'error',
+            content: 'Почта или пароль указаны неверно'
         }
     ]
 }
