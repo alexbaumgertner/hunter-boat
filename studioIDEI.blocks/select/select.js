@@ -37,6 +37,7 @@
             optionsDomElems.eq(optionIndex).prop('selected', 'selected');
 
             this.elem('title').html(e.data.domElem.text());
+            this.setMod(this.elem('title'), 'changed', 'yes');
         }
 
     }, {

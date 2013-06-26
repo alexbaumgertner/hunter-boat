@@ -16,6 +16,10 @@
         {
             elem: 'custom-control',
             mods: { 'active': 'yes' }
+        },
+        {
+            elem: 'title',
+            mods: { 'changed': 'yes' }
         }
     ]
 })
