@@ -20,6 +20,9 @@
             elem: 'phone'
         },
         {
+            elem: 'error'
+        },
+        {
             block: 'input'
         }
     ]

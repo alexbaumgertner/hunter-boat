@@ -28,6 +28,19 @@ block signin {
         {
             elem: 'text',
             content: 'Наши менеджеры сами перезвонят для уточнения и подтверждения заказа'
+        },
+        {
+            elem: 'error',
+            content: [
+                'Пользователь с такой почтой уже зарегистрирован.<br> Если это вы — ',
+                {
+                    block: 'b-link',
+                    mix: [ { block: 'authorization', elem: 'password-recovery' } ],
+                    mods: { pseudo: 'yes' },
+                    content: 'воспользуйтесь восстановлением пароля'
+                },
+                '.'
+            ]
         }
     ]
 }
