@@ -235,8 +235,9 @@
                                                                 },
                                                                 {
                                                                     elem: 'recovery',
+                                                                    mix: [ { elem: 'info' } ],
                                                                     content: {
-                                                                        block: 'auth-recovery',
+                                                                        block: 'authorization-info',
                                                                         content: [
                                                                             {
                                                                                 elem: 'header',
@@ -249,6 +250,83 @@
                                                                             {
                                                                                 elem: 'input',
                                                                                 content: { block: 'input', placeholder: 'E-mail', name: 'email' }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'successful-registration',
+                                                                    mix: [ { elem: 'info' } ],
+                                                                    content: {
+                                                                        block: 'authorization-info',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'header',
+                                                                                content: 'Вы успешно зарегистрированы на сайте hunterboat.ru'
+                                                                            },
+                                                                            {
+                                                                                elem: 'text',
+                                                                                content: [
+                                                                                    {
+                                                                                        tag: 'p',
+                                                                                        content: 'Вы можете продолжить оформление заказа прямо сейчас, без дополнительных подтверждений.'
+                                                                                    },
+                                                                                    {
+                                                                                        tag: 'p',
+                                                                                        content: 'Данные, указанные вами при регистрации, а также пароль для авторизации на сайте в будущем отправлены на почтовый ящик, который вы указали при регистрации.'
+                                                                                    },
+                                                                                    {
+                                                                                        tag: 'p',
+                                                                                        content: 'Спасибо!'
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'mail-send',
+                                                                    mix: [ { elem: 'info' } ],
+                                                                    content: {
+                                                                        block: 'authorization-info',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'header',
+                                                                                content: 'Письмо успешно отправлено'
+                                                                            },
+                                                                            {
+                                                                                elem: 'text',
+                                                                                content: 'Вам на почту выслан новый пароль. <br> Используйте его при авторизации на сайте.'
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'unregistered-user',
+                                                                    mix: [ { elem: 'info' } ],
+                                                                    content: {
+                                                                        block: 'authorization-info',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'header',
+                                                                                content: 'Пользователь с таким почтовым ящиком не зарегистрирован.'
+                                                                            },
+                                                                            {
+                                                                                elem: 'text',
+                                                                                content: [
+                                                                                    {
+                                                                                        tag: 'p',
+                                                                                        content: [
+                                                                                            'Может быть, вы ошиблись при вводе почтового ящика. Вы можете ',
+                                                                                            { block: 'b-link', mods: { pseudo: 'yes'}, mix:[{ block: 'authorization', elem: 'initial' }], url: '#initial', content: 'попробовать'},
+                                                                                            ' снова.'
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        tag: 'p',
+                                                                                        content: 'Либо зарегистрироваться на сайте прямо сейчас. Это займёт не более 1 минуты.'
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ]
                                                                     }

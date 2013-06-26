@@ -7,7 +7,7 @@
     ],
     shouldDeps: [
         {
-            mods: { state: 'recovery' }
+            mods: { 'state': ['mail-send', 'recovery', 'successful-registration', 'unregistered-user'] }
         }
     ]
 })
