@@ -22,7 +22,7 @@ block order-page {
     }
 
     elem tab {
-        tag: 'div'
+        tag: 'form'
     }
 
 }

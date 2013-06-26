@@ -1,10 +1,5 @@
 block signin {
 
-    tag: 'form',
-    attrs: {
-        action: '/'
-    }
-
     content: [
         {
             elem: 'header',

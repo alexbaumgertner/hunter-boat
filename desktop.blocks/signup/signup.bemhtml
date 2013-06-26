@@ -1,10 +1,5 @@
 block signup {
 
-    tag: 'form',
-    attrs: {
-        action: '/'
-    }
-
     content: [
         {
             elem: 'header',
@@ -24,7 +19,8 @@ block signup {
                 {   block: 'input', placeholder: 'Пароль', name: 'password' },
                 {
                     elem: 'password-recovery',
-                    content: { block: 'b-link', url: '/authorization/recovery', content: 'Забыли?' }
+                    mix: [ { block: 'authorization', elem: 'password-recovery' } ],
+                    content: { block: 'b-link', mods: { pseudo: 'yes' }, url: '/authorization/recovery', content: 'Забыли?' }
                  }
             ]
         }

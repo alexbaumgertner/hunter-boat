@@ -1,0 +1,12 @@
+.authorization_state_recovery
+{
+}
+
+.authorization_state_recovery .authorization__signin,
+.authorization_state_recovery .authorization__signup {
+    display: none;
+}
+
+.authorization_state_recovery .authorization__recovery {
+    display: block;
+}

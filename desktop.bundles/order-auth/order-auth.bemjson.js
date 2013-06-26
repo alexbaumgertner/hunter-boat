@@ -5,7 +5,7 @@
         { elem: 'css', url: '_order-auth.css', ie: false},
         { elem: 'css', url: '_order-auth', ie: true },
         { block: 'i-jquery', elem: 'core'},
-        { elem: 'js', url:'_order-auth.js'},
+        { elem: 'js', url: '_order-auth.js'},
     ],
     content: [
         {
@@ -219,6 +219,7 @@
                                                     content: [
                                                         {
                                                             block: 'authorization',
+                                                            js: true,
                                                             content: [
                                                                 {
                                                                     elem: 'signin',
@@ -231,12 +232,32 @@
                                                                     content: {
                                                                         block: 'signup'
                                                                     }
+                                                                },
+                                                                {
+                                                                    elem: 'recovery',
+                                                                    content: {
+                                                                        block: 'auth-recovery',
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'header',
+                                                                                content: 'Восстановление пароля'
+                                                                            },
+                                                                            {
+                                                                                elem: 'text',
+                                                                                content: 'Введите почтовый ящик, указанный при регистрации. На него будет отправлен новый пароль.'
+                                                                            },
+                                                                            {
+                                                                                elem: 'input',
+                                                                                content: { block: 'input', placeholder: 'E-mail', name: 'email' }
+                                                                            }
+                                                                        ]
+                                                                    }
                                                                 }
                                                             ]
                                                         },
                                                         {
                                                             elem: 'next',
-                                                            content: { block: 'button', mods: { type: 'submit', state: 'disabled' }, content: 'Далее' }
+                                                            content: { block: 'button', mods: { type: 'submit' }, content: 'Далее' }
                                                         }
                                                     ]
                                                 }

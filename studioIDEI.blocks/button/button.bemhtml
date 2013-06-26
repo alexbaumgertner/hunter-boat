@@ -7,6 +7,9 @@ block button {
 
     mod type submit {
         mix: [ { block: 'i-font', mods: { face: 'hermes' } } ]
+        attrs: {
+            type: 'submit'
+        }
     }
 
     mod state disabled {
