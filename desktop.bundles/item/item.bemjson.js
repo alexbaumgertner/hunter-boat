@@ -465,8 +465,11 @@
                                                                     content: 'Купить эту лодку с уценкой',
                                                                     url: '/catalog/boats/hunter_320_LK_LUX/markdown'
                                                                 }
+                                                            },
+                                                            {
+                                                                elem: 'added-in-cart',
+                                                                content: 'Добавлено в заказ'
                                                             }
-
                                                         ]
                                                     },
                                                     {
