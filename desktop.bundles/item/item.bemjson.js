@@ -9,6 +9,14 @@
     ],
     content: [
         {
+            block: 'catalog-item-card',
+            mods: { elem: 'added-in-cart' },
+            content: {
+                elem: 'added-in-cart',
+                content: 'Добавлено в заказ'
+            }
+        },
+        {
             block: 'header',
             content: [
                 {
@@ -420,6 +428,7 @@
                                             elem: 'card',
                                             content: {
                                                 block: 'catalog-item-card',
+
                                                 content: [
                                                     {
                                                         elem: 'header',
@@ -465,10 +474,6 @@
                                                                     content: 'Купить эту лодку с уценкой',
                                                                     url: '/catalog/boats/hunter_320_LK_LUX/markdown'
                                                                 }
-                                                            },
-                                                            {
-                                                                elem: 'added-in-cart',
-                                                                content: 'Добавлено в заказ'
                                                             }
                                                         ]
                                                     },
@@ -512,8 +517,12 @@
                                                                 content: {
                                                                     block: 'color-selector',
                                                                     content: [
-                                                                        { elem: 'selector', content: 'серая', value: 'a0a0a0', mix: [ { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: 'a0a0a0' } } ] },
-                                                                        { elem: 'selector', content: 'зеленая', value: '377530', mix: [ { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: '377530' } } ], checked: true  }
+                                                                        { elem: 'selector', content: 'серая', value: 'a0a0a0', mix: [
+                                                                            { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: 'a0a0a0' } }
+                                                                        ] },
+                                                                        { elem: 'selector', content: 'зеленая', value: '377530', mix: [
+                                                                            { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: '377530' } }
+                                                                        ], checked: true  }
                                                                     ]
                                                                 }
                                                             },
@@ -632,13 +641,10 @@
                                                                             var content = [];
 
                                                                             var names = [
-                                                                                'Олег', 'Владимир', 'Наталия',
-                                                                                'Степан Никифорович', 'Федор'
+                                                                                'Олег', 'Владимир', 'Наталия', 'Степан Никифорович', 'Федор'
                                                                             ];
                                                                             var cities = [
-                                                                                'Санкт-Петербург', 'Севастополь',
-                                                                                'Великий Новгород', 'Калининград',
-                                                                                'Москва', 'Екатеринбург', ''
+                                                                                'Санкт-Петербург', 'Севастополь', 'Великий Новгород', 'Калининград', 'Москва', 'Екатеринбург', ''
                                                                             ];
 
                                                                             var review = [

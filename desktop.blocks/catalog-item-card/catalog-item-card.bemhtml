@@ -1,6 +1,6 @@
 block catalog-item-card {
 
-    js: true
+    js: { id: 'catalog-item-card' }
 
     elem header-text {
         tag: 'h3',

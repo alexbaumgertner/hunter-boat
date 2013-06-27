@@ -3,8 +3,7 @@
     background: url("catalog-item-card__added-in-cart.png") no-repeat 0 0;
     display: none;
     position: absolute;
-    top: 40px;
-    left: -25px;
+    z-index: 10;
     box-shadow: 0 0 60px 10px #ffffff;
     width: 210px;
     height: 47px;
@@ -15,5 +14,4 @@
     line-height: 17px;
     border-radius: 10px;
     text-shadow: 1px 1px 1px #00354e;
-    border-top: 15px solid #fff;
 }

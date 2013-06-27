@@ -30,7 +30,32 @@ BEM.DOM.decl('catalog-item-card', {
         'added-in-cart': {
             'visible': {
                 'yes': function (elem, modName, modVal, oldModVal) {
-                    console.log(elem);
+                    var _this = this;
+
+                    var beforeAnimateTime = 1000; // ms
+
+                    var offsetBuyButton = this.elem('buy-button').offset();
+                    var positionX = offsetBuyButton.left + (this.elem('buy-button').outerWidth() / 2) - (elem.outerWidth() / 2);
+                    var positionY = offsetBuyButton.top + (this.elem('buy-button').outerHeight() / 2) - (elem.outerHeight() / 2);
+
+
+                    elem.css({ left: positionX, top: positionY })
+                        .promise()
+                        .done(function(){
+                            var targetDOMElem = _this.findBlockOutside('b-page').findBlockInside('cart-info').domElem;
+
+                            setTimeout(function () {
+                                elem.animate(
+                                    {   left:targetDOMElem.offset().left,
+                                        top: (targetDOMElem.offset().top - elem.outerHeight()),
+                                        width: 0,
+                                        height: 0
+                                    }, function () {
+                                        _this.delMod(elem, 'visible');
+                                        elem.css({ width: '', height: '' })
+                                    });
+                            }, beforeAnimateTime);
+                        });
                 }
             }
         }
