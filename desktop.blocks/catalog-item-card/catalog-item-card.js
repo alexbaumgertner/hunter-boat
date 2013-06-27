@@ -42,19 +42,27 @@ BEM.DOM.decl('catalog-item-card', {
                     elem.css({ left: positionX, top: positionY })
                         .promise()
                         .done(function(){
-                            var targetDOMElem = _this.findBlockOutside('b-page').findBlockInside('cart-info').domElem;
+                            var targetDOMElem = _this.findBlockOutside('b-page').findBlockInside('cart-info').elem('link');
 
+                            // animation
                             setTimeout(function () {
                                 elem.animate(
                                     {   left:targetDOMElem.offset().left,
-                                        top: (targetDOMElem.offset().top - elem.outerHeight()),
+                                        top: targetDOMElem.offset().top,
                                         width: 0,
-                                        height: 0
+                                        height: 0,
+                                        padding: 0,
+                                        'font-size': 0,
+                                        'line-height': 0
                                     }, function () {
                                         _this.delMod(elem, 'visible');
-                                        elem.css({ width: '', height: '' })
+
+                                        // clear
+                                        elem.css({ width: '', height: '', 'font-size': '', 'line-height': '', padding: '' })
                                     });
                             }, beforeAnimateTime);
+
+
                         });
                 }
             }
