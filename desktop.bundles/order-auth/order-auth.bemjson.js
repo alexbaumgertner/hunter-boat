@@ -324,7 +324,7 @@
                                                                                     },
                                                                                     {
                                                                                         tag: 'p',
-                                                                                        content: 'Либо зарегистрироваться на сайте прямо сейчас. Это займёт не более 1 минуты.'
+                                                                                        content: 'Либо зарегистрироваться на сайте прямо сейчас. <br> Это займёт не более 1 минуты.'
                                                                                     }
                                                                                 ]
                                                                             }
@@ -335,7 +335,7 @@
                                                         },
                                                         {
                                                             elem: 'next',
-                                                            content: { block: 'button', mods: { type: 'submit' }, content: 'Далее' }
+                                                            content: { block: 'button', mods: { type: 'submit' }, content: 'Продолжить' }
                                                         }
                                                     ]
                                                 }

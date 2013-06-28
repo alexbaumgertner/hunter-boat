@@ -12,3 +12,7 @@
     border-bottom-style: solid;
     color: #890000;
 }
+
+.i-ua_js_yes .signin__error .b-link_pseudo_yes:hover .b-link__inner {
+    color: #ff0000;
+}

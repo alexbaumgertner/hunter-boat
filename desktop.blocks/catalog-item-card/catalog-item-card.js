@@ -31,6 +31,7 @@ BEM.DOM.decl('catalog-item-card', {
             'visible': {
                 'yes': function (elem, modName, modVal, oldModVal) {
                     var _this = this;
+                    var targetTopMargin = 16;
 
                     var beforeAnimateTime = 1000; // ms
 
@@ -48,7 +49,7 @@ BEM.DOM.decl('catalog-item-card', {
                             setTimeout(function () {
                                 elem.animate(
                                     {   left:targetDOMElem.offset().left,
-                                        top: targetDOMElem.offset().top,
+                                        top: targetDOMElem.offset().top - targetTopMargin,
                                         width: 0,
                                         height: 0,
                                         padding: 0,

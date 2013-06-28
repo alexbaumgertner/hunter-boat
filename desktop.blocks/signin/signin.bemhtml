@@ -32,12 +32,12 @@ block signin {
         {
             elem: 'error',
             content: [
-                'Пользователь с такой почтой уже зарегистрирован.<br> Если это вы — ',
+                'Пользователь с такой почтой уже зарегистрирован.<br> Если это вы — воспользуйтесь ',
                 {
                     block: 'b-link',
                     mix: [ { block: 'authorization', elem: 'password-recovery' } ],
                     mods: { pseudo: 'yes' },
-                    content: 'воспользуйтесь восстановлением пароля'
+                    content: 'восстановлением пароля'
                 },
                 '.'
             ]
