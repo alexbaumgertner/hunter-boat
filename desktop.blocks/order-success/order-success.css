@@ -1,0 +1,9 @@
+.order-success
+{
+    background: #fff;
+    border: 1px solid #b8e9ff;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 9px 0px rgba(0, 149, 218, 0.29);
+    box-shadow: 3px 3px 9px 0px rgba(0, 149, 218, 0.29);
+    padding: 30px 25px;
+}

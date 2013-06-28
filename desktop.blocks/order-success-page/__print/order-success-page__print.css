@@ -1,0 +1,14 @@
+.order-success-page__print
+{
+    margin: 25px 0 0 0;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.order-success-page__print .b-link {
+    color: #0081bc;
+}
+
+.order-success-page__print .b-link:hover {
+    color: #00aefe;
+}

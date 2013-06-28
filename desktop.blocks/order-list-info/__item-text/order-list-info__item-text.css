@@ -1,0 +1,9 @@
+.order-list-info__item-text
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    font-style: normal;
+    color: #000000;
+}

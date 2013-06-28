@@ -1,11 +1,11 @@
 ({
     block: 'b-page',
-    title: 'how-to-buy',
+    title: 'order-success',
     head: [
-        { elem: 'css', url: '_how-to-buy.css', ie: false},
-        { elem: 'css', url: '_how-to-buy', ie: true },
+        { elem: 'css', url: '_order-success.css', ie: false},
+        { elem: 'css', url: '_order-success', ie: true },
         { block: 'i-jquery', elem: 'core'},
-        { elem: 'js', url: '_how-to-buy.js'}
+        { elem: 'js', url: '_order-success.js'},
     ],
     content: [
         {
@@ -181,137 +181,207 @@
                             elemMods: { position: 'full' },
                             content: [
                                 {
-                                    block: 'how-to-buy-page',
+                                    block: 'order-success-page',
                                     content: [
                                         {
-                                            elem: 'header',
-                                            mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/How-to-buy.jpg' } }],
-                                            content: 'Как купить лодку'
-                                        },
-                                        {
-                                            elem: 'content',
-                                            content: [
-                                                {
-                                                    elem: 'section',
-                                                    attrs: { style: 'height: 440px; position: relative;' },
-                                                    content: [
-                                                        {
-                                                            elem: 'section-header',
-                                                            content: 'Сделать заказ на сайте'
-                                                        },
-                                                        {
-                                                            elem: 'section-text',
-                                                            attrs: { style: 'width: 240px;' },
-                                                            content: {
-                                                                block: 'b-text',
+                                            elem: 'column',
+                                            elemMods: { position: 'left' },
+                                            content: {
+                                                block: 'order-success',
+                                                content: [
+                                                    {
+                                                        elem: 'header',
+                                                        content: [
+                                                            'Заказ ', { elem: 'number', content: '№ 0001' }, ' успешно оформлен'
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: 'content',
+                                                        content: [
+                                                            {
+                                                                block: 'order-list',
+                                                                mods: { type: 'check' },
                                                                 content: [
                                                                     {
-                                                                        elem: 'p',
+                                                                        elem: 'header',
                                                                         content: [
-                                                                            'Выбирайте товары в каталоге, добавляйте их в заказ и оформляйте его без регистрации в, ',
-                                                                            { block: 'b-link', url: '/', content: 'интернет-магазине' },
-                                                                            ' «HunterBoat». '
+                                                                            {
+                                                                                elem: 'header-item',
+                                                                                mix: [
+                                                                                    {  elem: 'item-desc' }
+                                                                                ],
+                                                                                content: 'Товар'
+                                                                            },
+                                                                            {
+                                                                                elem: 'header-item',
+                                                                                mix: [
+                                                                                    {  elem: 'price' }
+                                                                                ],
+                                                                                content: 'Цена, руб.'
+                                                                            }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        elem: 'p',
-                                                                        content: 'Наши менеджеры отреагируют на ваш заказ в течение одного рабочего дня и обязательно свяжутся с вами!'
-                                                                    },
-                                                                    {
-                                                                        elem: 'p',
-                                                                        attrs: { style: 'margin-top: 50px;font-size: 17px;' },
+                                                                        elem: 'list',
                                                                         content: [
-                                                                            'Оптовикам ',
-                                                                            { block: 'b-link', url: '/dealers.html', content: 'сюда' }
+                                                                            {
+                                                                                elem: 'item',
+                                                                                content: [
+                                                                                    {
+                                                                                        elem: 'item-desc',
+                                                                                        content: [
+                                                                                            {
+                                                                                                elem: 'item-name',
+                                                                                                content: 'Надувная лодка Хантер 290 Р'
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'price',
+                                                                                        content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                elem: 'item',
+                                                                                content: [
+                                                                                    {
+                                                                                        elem: 'item-desc',
+                                                                                        content: [
+                                                                                            {
+                                                                                                elem: 'item-name',
+                                                                                                content: 'Лодочный мотор HDX T 3.6 BMS'
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'price',
+                                                                                        content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                elem: 'item',
+                                                                                content: [
+                                                                                    {
+                                                                                        elem: 'item-desc',
+                                                                                        content: [
+                                                                                            {
+                                                                                                elem: 'item-name',
+                                                                                                content: 'Жилет спасательный универсальный Хантер'
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'price',
+                                                                                        content: { block: 'price', value: 850, mods: { currency: 'empty' } }
+                                                                                    }
+                                                                                ]
+                                                                            }
                                                                         ]
                                                                     },
                                                                     {
-                                                                        elem: 'img',
-                                                                        attrs: {
-                                                                            src: 'img/content/how-to-buy/how-to-buy.png',
-                                                                            alt: 'В карточке товара нажмите Заказать, потом перейдите в корзину',
-                                                                            style: 'position: absolute; top: -50px; left: 203px;'
+                                                                        elem: 'total',
+                                                                        mix: [
+                                                                            { block: 'order-success', elem: 'total' }
+                                                                        ],
+                                                                        content: [
+                                                                            {
+                                                                                elem: 'total-text',
+                                                                                content: 'Сумма:'
+                                                                            },
+                                                                            {
+                                                                                elem: 'total-value',
+                                                                                content: { block: 'price', value: 999999, mods: { currency: 'empty' } }
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        elem: 'info',
+                                                                        content: {
+                                                                            block: 'order-list-info',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'item',
+                                                                                    content: [
+                                                                                        {
+                                                                                            elem: 'item-title',
+                                                                                            content: 'Оплата товара:'
+                                                                                        },
+                                                                                        {
+                                                                                            elem: 'item-text',
+                                                                                            content: 'оплата по карте успешно проведена'
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'item',
+                                                                                    content: [
+                                                                                        {
+                                                                                            elem: 'item-title',
+                                                                                            content: 'Получение товара:'
+                                                                                        },
+                                                                                        {
+                                                                                            elem: 'item-text',
+                                                                                            content: 'самовывоз, Москва, ул. Амурская д.7., 24.03.2013'
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'item',
+                                                                                    content: [
+                                                                                        {
+                                                                                            elem: 'item-title',
+                                                                                            content: 'Контактное лицо:'
+                                                                                        },
+                                                                                        {
+                                                                                            elem: 'item-text',
+                                                                                            content: 'Елизаров Максим'
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'item',
+                                                                                    content: [
+                                                                                        {
+                                                                                            elem: 'item-title',
+                                                                                            content: 'Мобильный телефон:'
+                                                                                        },
+                                                                                        {
+                                                                                            elem: 'item-text',
+                                                                                            content: '+7 (906) 229-73-36'
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
                                                                         }
                                                                     }
                                                                 ]
                                                             }
-                                                        }
-                                                    ]
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: 'footer',
+                                                        content: 'Спасибо!'
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            elem: 'column',
+                                            elemMods: { position: 'right' },
+                                            content: [
+                                                {
+                                                    elem: 'info',
+                                                    content: 'Ваш заказ обработан. Наши менедженры свяжутся с вами.'
                                                 },
                                                 {
-                                                    elem: 'section',
-                                                    content: [
-                                                        {
-                                                            elem: 'section-column',
-                                                            content: [
-                                                                {
-                                                                    elem: 'section-header',
-                                                                    content: 'или по телефону'
-                                                                },
-                                                                {
-                                                                    elem: 'section-text',
-                                                                    content: {
-                                                                        block: 'b-text',
-                                                                        content: [
-                                                                            {
-                                                                                elem: 'p',
-                                                                                content: [
-                                                                                    'Позвоните по телефону ',
-                                                                                    { elem: 'strong', content: '+7(812) 320-02-60' },
-                                                                                    ' и сделайте заказ у наших менеджеров.'
-                                                                                ]
-                                                                            },
-                                                                            {
-                                                                                elem: 'p',
-                                                                                content: [
-                                                                                    'Или закажите ', {
-                                                                                        block: 'b-link',
-                                                                                        mods: { pseudo: 'yes' },
-                                                                                        mix: [
-                                                                                            { block: 'call-request', js: { id: 'call' } },
-                                                                                            { block: 'call-request', elem: 'opener' }
-                                                                                        ],
-                                                                                        content: 'обратный звонок',
-                                                                                        url: ''
-                                                                                    },
-                                                                                    ' и мы сами вам позвоним в удобное для вас время.'
-                                                                                ]
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'section-column',
-                                                            content: [
-                                                                {
-                                                                    elem: 'section-header',
-                                                                    content: '..или купить в магазине '
-                                                                },
-                                                                {
-                                                                    elem: 'section-text',
-                                                                    content: {
-                                                                        block: 'b-text',
-                                                                        content: [
-                                                                            {
-                                                                                elem: 'p',
-                                                                                content: 'Купить лодки «Хантер» можно в магазинах Санкт-Петербурга и Москвы.'
-                                                                            },
-                                                                            {
-                                                                                elem: 'p',
-                                                                                attrs: {
-                                                                                    style: 'margin-top: 30px;'
-                                                                                },
-                                                                                content: { block: 'b-link', url: '/where-to-buy.html', content: 'Адреса магазинов' }
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-
-                                                    ]
+                                                    elem: 'print',
+                                                    content: {
+                                                        block: 'b-link',
+                                                        url: '#print',
+                                                        content: 'распечатать чек'
+                                                    }
                                                 }
                                             ]
                                         }
@@ -321,7 +391,6 @@
                         }
                     ]
                 }
-
             ]
         },
         {

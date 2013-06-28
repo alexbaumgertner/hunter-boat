@@ -1,0 +1,72 @@
+.order-list_type_check {
+}
+
+.order-list_type_check .order-list__total {
+    font-size: 20px;
+    line-height: normal;
+    margin: 0;
+    font-weight: normal;
+}
+
+
+.order-list_type_check .order-list__header-item.order-list__item-desc {
+    text-align: left;
+}
+
+.order-list_type_check .order-list__list {
+    margin: 20px 0 0 0;
+    padding: 0;
+    border: none;
+}
+
+.order-list_type_check .order-list__item {
+    margin: 0 0 10px 0;
+}
+
+.order-list_type_check .order-list__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.order-list_type_check .order-list__item-desc {
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    width: 415px;
+    margin: 0;
+}
+
+.order-list_type_check .order-list__item-name {
+    color: #000000;
+}
+
+.order-list_type_check .order-list__header {
+    font-size: 13px;
+}
+
+.order-list_type_check .order-list__price .price {
+    padding: 0;
+}
+
+
+
+.order-list_type_check .order-list__total-text {
+    width: 380px;
+}
+
+
+
+
+.order-list_type_check .order-list__price {
+    margin: 0;
+}
+
+
+.order-list_type_check .order-list__info {
+    display: block;
+    width: auto;
+}
+
+
+
+.order-list_type_check {
+}
