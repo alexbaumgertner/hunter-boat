@@ -7,3 +7,13 @@
     box-shadow: 3px 3px 9px 0px rgba(0, 149, 218, 0.29);
     padding: 30px 25px;
 }
+
+
+@media print {
+
+    .order-success {
+        box-shadow: none!important;
+    }
+
+
+}
