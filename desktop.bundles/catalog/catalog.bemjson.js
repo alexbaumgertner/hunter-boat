@@ -812,6 +812,7 @@
                                                             elem: 'carousel',
                                                             content: {
                                                                 block: 'carousel',
+                                                                mods: { 'product-category': 'motors' },
                                                                 js: {
                                                                     frameCurr: 1,
                                                                     frameItemsCount: 1,
