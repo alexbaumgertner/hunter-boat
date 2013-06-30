@@ -184,7 +184,7 @@ BEM.DOM.decl('lightbox', {
     showLoader: function () {
         this.elem('loader').show();
         var i = 0;
-        var step = 10; // deg
+        var step = 6; // deg
         var interval = 10; // ms
 
         this.showLoader.interval = setInterval(function () {
@@ -198,7 +198,7 @@ BEM.DOM.decl('lightbox', {
                 'transform': 'rotateZ(' + i + 'deg)'
             });
 
-            i = i + step;
+            i = i - step;
 
         }, interval);
     },
