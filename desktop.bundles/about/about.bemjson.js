@@ -240,7 +240,7 @@
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
-                                                                                        attrs: { rel: 'http://www.redbay.ru/published/publicdata/WWWREDBAYRU/attachments/SC/products_pictures/leica_disto_d2_d3_1_800x800_enl.jpg' },
+                                                                                        attrs: { rel: 'badurl.jpg' },
                                                                                         content: { block: 'b-icon', url: 'img/content/certificates/2/2_icon.png', alt: 'сертификат_2' }
                                                                                     }
                                                                                 ]

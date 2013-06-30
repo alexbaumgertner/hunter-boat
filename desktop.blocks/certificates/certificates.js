@@ -10,6 +10,7 @@
             'js': function () {
 
                 this.certificates = [];
+                this.currentIndex = 0;
 
                 // styling lightbox
                 this.lightBoxSettings = {
@@ -23,7 +24,7 @@
                 this.elem('item').each(function (index, Elem) {
                     _this.certificates.push({
                         url: $(Elem).attr('rel'),
-                        current: index === 0 ? 'current' : ''
+                        current: false
                     });
                 });
             }
@@ -32,9 +33,11 @@
 
         showLightbox: function (e) {
 
-            var currentIndex = this.elem('item').index(e.data.domElem);
+            this.certificates[this.currentIndex].current = false;
 
-            this.certificates[currentIndex].state = 'current';
+            this.currentIndex = this.elem('item').index(e.data.domElem);
+
+            this.certificates[this.currentIndex].current = 'current';
 
             BEM.blocks['lightbox'].showData(this.certificates, this.lightBoxSettings);
         }
