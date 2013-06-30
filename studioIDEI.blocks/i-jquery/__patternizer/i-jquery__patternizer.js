@@ -208,7 +208,7 @@
 			svgText.attr("dominant-baseline", "text-before-edge");
 			if (opera) { /*hack for simulating dominant-baseline: text-before-edge*/
 				svgText.attr("y",  textFontsize);
-				svgText[0].setAttribute("textLength", textWidth)
+				/*svgText[0].setAttribute("textLength", textWidth)*/
 			}
 
 			svgText.attr("fill", "url(#" + svgPatternPrefix + svgPatternValue + ")");
