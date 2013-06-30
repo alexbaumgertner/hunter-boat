@@ -235,7 +235,7 @@
                                                                                 content: [
                                                                                     {
                                                                                         elem: 'item',
-                                                                                        attrs: { rel: 'http://www.bestrol.ru/images/stories/bb_2.jpg' },
+                                                                                        attrs: { rel: 'http://teplomontaz-dp.narod.ru/index.files/licence.JPG' },
                                                                                         content: { block: 'b-icon', url: 'img/content/certificates/1/1_icon.png', alt: 'сертификат_1' }
                                                                                     },
                                                                                     {
