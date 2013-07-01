@@ -33,7 +33,7 @@ block product-card, (!this.mods || this.mods.type !== 'withFullDesc') {
                   },
                   {
                       elem: 'desc',
-                      content: (function(){
+                      content: this.ctx.desc || (function(){
                           var descs = ['Лодка ПВХ', 'Гребная лодка', 'Лодка надувная', 'Лодка моторная ЛЮКС'];
                           var random = Math.floor(Math.random() * descs.length);
                           return descs[random];
@@ -50,7 +50,7 @@ block product-card, (!this.mods || this.mods.type !== 'withFullDesc') {
                           {
                               block: 'price',
                               mods: { currency: 'dot-dash' },
-                              value: Math.floor(Math.random() * 100000)
+                              value: this.ctx.price || Math.floor(Math.random() * 100000)
                           }
                       ]
                   }

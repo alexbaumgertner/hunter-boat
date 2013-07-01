@@ -8,7 +8,6 @@ BEM.DOM.decl('catalog-page', {
         onSetMod: {
 
             'js': function () {
-                console.dir(this);
             }
 
         },

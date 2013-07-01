@@ -19,7 +19,12 @@ block catalog-section {
     elem counter, tag: 'span'
 
 
-    elem list, tag: 'ul'
+    elem list {
+        tag: 'ul',
+        mix: [ { block: 'i-sortable', js: true } ]
+    }
 
-    elem item, tag: 'li'
+    elem item {
+        tag: 'li'
+    }
 }
