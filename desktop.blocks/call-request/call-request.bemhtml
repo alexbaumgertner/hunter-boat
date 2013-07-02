@@ -4,7 +4,7 @@ block call-request {
         tag: 'form',
         attrs: {
             method: 'post',
-            arction: '/call-request'
+            action: '/call-request'
         }
     }
 
