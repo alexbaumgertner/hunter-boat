@@ -13,9 +13,6 @@
         {
             block: 'header',
             mods: { page: 'index' },
-            attrs: {
-                style: 'background: url("img/index-page/main-photo-1.jpg") no-repeat;'
-            },
             content: [
                 {
                     block: 'wrapper-fix-width',
