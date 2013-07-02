@@ -150,8 +150,7 @@
 
                     // update url
                     if (currSlide.url) {
-                        _this.elem('text-inner').attr('href', currSlide.url);
-                        _this.elem('sub-text').attr('href', currSlide.url + '#order');
+                        _this.elem('url').attr('href', currSlide.url + '#order');
                     }
 
                     // show modifiable blocks

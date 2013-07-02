@@ -240,7 +240,7 @@
                                     content: [
                                         {
                                             elem: 'title',
-                                            content: { block: 'b-link', url: '/', content: 'Надувные моторные лодки Хантер' }
+                                            content: { block: 'b-link', mix: [ { block: 'index-promo-carousel', elem: 'url' } ], url: '/', content: 'Надувные моторные лодки Хантер' }
                                         },
                                         {
                                             elem: 'text',
