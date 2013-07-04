@@ -26,10 +26,16 @@ BEM.DOM.decl('i-sortable', {
 
         'sorted-by': {
 
-            '*':function () {
-                this.domElem.html(this.getItemsNodes().join(''));
+            '*':function (modName, modVal, oldModVal) {
+                this.sortElemsBy(modVal, this.getMod('sorted-direction'));
             }
+        },
 
+        'sorted-direction': {
+
+            '*':function (modName, modVal, oldModVal) {
+                this.sortElemsBy(this.getMod('sorted-by'), modVal);
+            }
         }
 
     },
@@ -44,34 +50,32 @@ BEM.DOM.decl('i-sortable', {
     },
 
     /**
-     * Sort this.extractedElems
+     * Sort this.extractedElems and update html
      * @param sortParam
      * @param direction
      * @returns {Array}
      */
     sortElemsBy: function(sortParam, direction) {
+
         direction || (direction = 'asc');
         var compareResult;
 
+        /* Sort elems (begin) */
         this.extractedElems.sort(function (prev, next) {
-
             if (typeof prev['params'][sortParam] === 'number') {
                 compareResult =  prev['params'][sortParam] - next['params'][sortParam];
-
             // string
             } else {
                 compareResult = prev['params'][sortParam].localeCompare(next['params'][sortParam]);
             }
-
             // change sort direction
             direction === 'asc' || (compareResult = -compareResult);
-
             return compareResult;
-
         });
+        /* Sort elems (end) */
 
-        this.setMod('sorted-by', sortParam);
-        this.setMod('sorted-direction', direction);
+        // update html
+        this.domElem.html(this.getItemsNodes().join(''));
         return this.extractedElems;
     }
 
@@ -80,10 +84,6 @@ BEM.DOM.decl('i-sortable', {
 /*    live : function() {
         *//* ... *//*
     }*/
-
-    sortElemsBy: function(sortParam, direction) {
-        this.sortElemsBy(sortParam, direction);
-    }
 
 });
 

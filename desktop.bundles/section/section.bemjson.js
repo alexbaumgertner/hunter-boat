@@ -425,7 +425,7 @@
                                             content: [
                                                 {
                                                     elem: 'menu-item',
-                                                    elemMods: { state: 'current' },
+                                                    elemMods: { state: 'current', sortProperty: 'type' },
                                                     content: { elem: 'menu-item-title', content: 'по типу' }
                                                 },
 
@@ -554,20 +554,118 @@
                                                         {
                                                             elem: 'list',
                                                             content: [
-                                                                (function () {
-                                                                    var content = [];
-
-                                                                    for (var i = 0; i < 7; i++) {
-                                                                        content.push({
-                                                                            elem: 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        });
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка моторная ЛЮКС', price: 82326 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка моторная ЛЮКС',
+                                                                        price: 82326
                                                                     }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка надувная', price: 98965 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка надувная',
+                                                                        price: 98965
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Гребная лодка', price: 46566 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Гребная лодка',
+                                                                        price: 46566
 
-                                                                    return content;
-                                                                }())
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка ПВХ', price: 75799 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка ПВХ',
+                                                                        price: 75799
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка моторная ЛЮКС', price: 85876 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка моторная ЛЮКС',
+                                                                        price: 85876
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка моторная ЛЮКС', price: 82326 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка моторная ЛЮКС',
+                                                                        price: 82326
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка надувная', price: 98965 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка надувная',
+                                                                        price: 98965
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Гребная лодка', price: 46566 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Гребная лодка',
+                                                                        price: 46566
+
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка ПВХ', price: 75799 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка ПВХ',
+                                                                        price: 75799
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка моторная ЛЮКС', price: 85876 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка моторная ЛЮКС',
+                                                                        price: 85876
+                                                                    }
+                                                                }
                                                             ]
                                                         }
                                                     ]
@@ -599,20 +697,62 @@
                                                         {
                                                             elem: 'list',
                                                             content: [
-                                                                (function () {
-                                                                    var content = [];
-
-                                                                    for (var i = 0; i < 4; i++) {
-                                                                        content.push({
-                                                                            elem: 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        });
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка моторная ЛЮКС', price: 82326 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка моторная ЛЮКС',
+                                                                        price: 82326
                                                                     }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка надувная', price: 98965 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка надувная',
+                                                                        price: 98965
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Гребная лодка', price: 46566 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Гребная лодка',
+                                                                        price: 46566
 
-                                                                    return content;
-                                                                }())
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка ПВХ', price: 75799 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка ПВХ',
+                                                                        price: 75799
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка моторная ЛЮКС', price: 85876 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка моторная ЛЮКС',
+                                                                        price: 85876
+                                                                    }
+                                                                }
                                                             ]
                                                         }
                                                     ]
@@ -640,24 +780,67 @@
                                                                     elem: 'header-line'
                                                                 }
 
-                                                            ]                                                        },
+                                                            ]
+                                                        },
                                                         {
                                                             elem: 'list',
                                                             content: [
-                                                                (function () {
-                                                                    var content = [];
-
-                                                                    for (var i = 0; i < 2; i++) {
-                                                                        content.push({
-                                                                            elem: 'item',
-                                                                            content: {
-                                                                                block: 'product-card'
-                                                                            }
-                                                                        });
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка моторная ЛЮКС', price: 82326 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка моторная ЛЮКС',
+                                                                        price: 82326
                                                                     }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка надувная', price: 98965 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка надувная',
+                                                                        price: 98965
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Гребная лодка', price: 46566 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Гребная лодка',
+                                                                        price: 46566
 
-                                                                    return content;
-                                                                }())
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка ПВХ', price: 75799 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка ПВХ',
+                                                                        price: 75799
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [
+                                                                        { block: 'i-sortable', elem: 'item', js: { 'type': 'Лодка моторная ЛЮКС', price: 85876 } }
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        desc: 'Лодка моторная ЛЮКС',
+                                                                        price: 85876
+                                                                    }
+                                                                }
                                                             ]
                                                         }
                                                     ]

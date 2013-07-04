@@ -1,6 +1,5 @@
 /** @requires BEM */
 /** @requires BEM.DOM */
-
 (function (undefined) {
 
 BEM.DOM.decl('catalog-page', {
@@ -8,6 +7,19 @@ BEM.DOM.decl('catalog-page', {
         onSetMod: {
 
             'js': function () {
+                this.sortableBlocks = this.findBlocksInside('i-sortable');
+            },
+
+            'sortProperty': function (modName, modVal, oldModVal) {
+                $.each(this.sortableBlocks, function (key, value) {
+                    value.setMod('sorted-by', modVal);
+                });
+            },
+
+            'order': function (modName, modVal, oldModVal) {
+                $.each(this.sortableBlocks, function (key, value) {
+                    value.setMod('sorted-direction', modVal);
+                });
             }
 
         },
@@ -19,17 +31,29 @@ BEM.DOM.decl('catalog-page', {
                 'state': {
 
                     'current': function (elem, modName, modVal, oldModVal) {
-
-                        if (oldModVal == 'disabled') {
-                            return false;
-                        }
+                        if (oldModVal == 'disabled') return false;
 
                         var prev = this.elem('menu-item', 'state', 'current');
+
                         this.delMod(prev, 'state').trigger('current', {
                             prev: prev,
                             current: elem
                         });
+
+                        this.afterCurrentEvent(function(){
+                            this.setMod('sortProperty', this.getMod(elem, 'sortProperty'));
+                            this.setMod('order', this.getMod(elem, 'order'));
+                        });
+
                     }
+                },
+
+                // для определения смены порядка сортировки
+                'order': function (elem, modName, modVal, oldModVal) {
+                    this.afterCurrentEvent(function(){
+                        this.setMod('sortProperty', this.getMod(elem, 'sortProperty'));
+                        this.setMod('order', modVal);
+                    });
                 }
             }
         },
@@ -52,9 +76,6 @@ BEM.DOM.decl('catalog-page', {
             if (!this.hasMod(item, 'state', 'current'))  return false;
 
             this.toggleMod(item, 'order', 'desc', 'asc');
-
-            console.log('todo sorting');
-
         },
 
 
