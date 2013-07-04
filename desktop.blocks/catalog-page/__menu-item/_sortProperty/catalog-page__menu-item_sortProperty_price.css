@@ -1,4 +1,5 @@
 .catalog-page__menu-item_sortProperty_price
 {
     padding: 2px 20px 2px 9px;
+    cursor: pointer;
 }
