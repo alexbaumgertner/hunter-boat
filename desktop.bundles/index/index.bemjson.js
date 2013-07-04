@@ -13,6 +13,7 @@
         {
             block: 'header',
             mods: { page: 'index' },
+            js: { logoImagesLength: 4 },
             content: [
                 {
                     block: 'wrapper-fix-width',

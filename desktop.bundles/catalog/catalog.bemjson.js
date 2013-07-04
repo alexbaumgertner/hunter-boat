@@ -309,7 +309,8 @@
                                                                     content: {
                                                                         block: 'b-link',
                                                                         mix: [
-                                                                            { block: 'products-promo-carousel', elem: 'text-inner' }
+                                                                            { block: 'products-promo-carousel', elem: 'text-inner' },
+                                                                            { block: 'products-promo-carousel', elem: 'url' }
                                                                         ],
                                                                         content: 'Узнать все о Хантер 360',
                                                                         url: 'initUrl'
@@ -320,7 +321,8 @@
                                                                     content: {
                                                                         block: 'b-link',
                                                                         mix: [
-                                                                            { block: 'products-promo-carousel', elem: 'sub-text' }
+                                                                            { block: 'products-promo-carousel', elem: 'sub-text' },
+                                                                            { block: 'products-promo-carousel', elem: 'url' }
                                                                         ],
                                                                         content: 'Заказать',
                                                                         url: 'initUrl#order'

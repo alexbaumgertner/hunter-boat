@@ -3,6 +3,7 @@
     background: url("button_type_delete.png") no-repeat;
     width: 16px;
     height: 17px;
+    display: inline-block;
 }
 
 .button_type_delete:hover {
