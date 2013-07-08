@@ -2,7 +2,7 @@
 {
     display: inline-block;
     vertical-align: top;
-    width: 250px;
+    width: 250px!important;
     height: 250px;
     margin: 0 45px 0 0;
     background: #effaff;
