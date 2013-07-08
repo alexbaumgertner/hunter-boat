@@ -1,28 +1,34 @@
 /** @requires BEM */
 /** @requires BEM.DOM */
 
-(function(undefined) {
+(function (undefined) {
 
-BEM.DOM.decl('faq', {
+    BEM.DOM.decl('faq', {
 
-    onSetMod : {
+        onElemSetMod: {
 
-        'js' : function() {
-            var _this = this;
+            'item': {
 
-            this.elem('item').on('click', function () {
-                _this.toggleMod($(this), 'state', 'opened', 'closed');
+                'state': {
+                    'opened': function (elem) {
+                        elem.find(this.buildSelector('answer')).slideDown();
+                    },
+
+                    'closed': function (elem) {
+                        elem.find(this.buildSelector('answer')).slideUp();
+                    }
+                }
+
+            }
+        }
+
+    }, {
+        live: function () {
+            this.liveBindTo('item', 'leftclick', function (e) {
+                this.toggleMod(e.data.domElem, 'state', 'opened', 'closed');
             });
         }
 
-    }
-
-}, {
-/*
-    live : function() {
-        *//* ... *//*
-    }*/
-
-});
+    });
 
 })();
