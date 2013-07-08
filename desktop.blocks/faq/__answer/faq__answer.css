@@ -6,11 +6,3 @@
     line-height: 19px;
     width: 690px;
 }
-
-.faq__item_state_opened .faq__answer {
-    display: block;
-}
-
-.faq__item_state_closed .faq__answer {
-    display: none;
-}
