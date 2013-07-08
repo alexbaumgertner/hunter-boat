@@ -205,22 +205,6 @@
                                             content: [
                                                 {
                                                     elem: 'item',
-                                                    elemMods: { state: 'opened' },
-                                                    content: [
-                                                        {
-                                                            elem: 'question',
-                                                            content: {
-                                                                block: 'b-link', mods: { pseudo: 'yes' }, content: 'Какую ткань используете вы в производстве ваших лодок, а то поступает очень противоречивая информация?'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'answer',
-                                                            content: 'Компания "Бот-Трэйдинг" в производстве надувных лодок Хантер использует немецкую лодочную ткань компании HEYTEX одного из мировых лидеров в производстве ПВХ тканей. Плотность ткани  составляет 750 гр/м.'
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    elem: 'item',
                                                     elemMods: { state: 'closed' },
                                                     content: [
                                                         {
@@ -269,7 +253,23 @@
                                                 },
                                                 {
                                                     elem: 'item',
-                                                    elemMods: { state: 'opened' },
+                                                    elemMods: { state: 'closed' },
+                                                    content: [
+                                                        {
+                                                            elem: 'question',
+                                                            content: {
+                                                                block: 'b-link', mods: { pseudo: 'yes' }, content: 'Какую ткань используете вы в производстве ваших лодок, а то поступает очень противоречивая информация?'
+                                                            }
+                                                        },
+                                                        {
+                                                            elem: 'answer',
+                                                            content: 'Компания "Бот-Трэйдинг" в производстве надувных лодок Хантер использует немецкую лодочную ткань компании HEYTEX одного из мировых лидеров в производстве ПВХ тканей. Плотность ткани  составляет 750 гр/м.'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    elemMods: { state: 'closed' },
                                                     content: [
                                                         {
                                                             elem: 'question',

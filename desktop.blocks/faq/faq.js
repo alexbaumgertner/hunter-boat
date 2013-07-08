@@ -38,9 +38,10 @@
             var answer =  elem.children(this.buildSelector('answer'));
 
             if (state === 'opened') {
-                answer.slideDown();
+                answer.animate({ opacity: 1, height: answer.data('initHeight') });
             } else {
-                answer.slideUp();
+                answer.data('initHeight') || answer.data('initHeight', answer.height());
+                answer.animate({ opacity: 0, height: 0 });
             }
         }
 
