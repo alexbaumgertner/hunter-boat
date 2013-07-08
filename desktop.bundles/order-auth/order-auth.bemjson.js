@@ -323,7 +323,7 @@
                                                                                         tag: 'p',
                                                                                         content: [
                                                                                             'Может быть, вы ошиблись при вводе почтового ящика. Вы можете ',
-                                                                                            { block: 'b-link', mods: { pseudo: 'yes'}, mix:[{ block: 'authorization', elem: 'initial' }], url: '#initial', content: 'попробовать'},
+                                                                                            { block: 'b-link', mods: { pseudo: 'yes'}, mix:[{ block: 'authorization', elem: 'initial' }], content: 'попробовать'},
                                                                                             ' снова.'
                                                                                         ]
                                                                                     },
