@@ -222,16 +222,21 @@
                                                             js: true,
                                                             content: [
                                                                 {
-                                                                    elem: 'signin',
-                                                                    content: {
-                                                                        block: 'signin'
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'signup',
-                                                                    content: {
-                                                                        block: 'signup'
-                                                                    }
+                                                                    elem: 'entrance',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'signin',
+                                                                            content: {
+                                                                                block: 'signin'
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            elem: 'signup',
+                                                                            content: {
+                                                                                block: 'signup'
+                                                                            }
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
                                                                     elem: 'recovery',

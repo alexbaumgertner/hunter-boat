@@ -9,7 +9,7 @@ BEM.DOM.decl('authorization', {
 
         'js' : function() {
 
-            var currentState = window.location.hash.split('#')[1];
+            var currentState = this.getMod('state');
 
             if (currentState) {
                 this.setMod('state', currentState);
@@ -20,21 +20,18 @@ BEM.DOM.decl('authorization', {
             this.__self.liveBinds();
         },
 
-        'state': {
+        'state': function (modName, modVal, oldModVal) {
 
-            '*': function (modName, modVal, curModVal) {
+            this.elem('info').hide();
 
-                this.elem('info').hide();
+            if (modVal !== 'initial') {
+                this.elem('entrance').hide();
+                this.elem(modVal).show();
 
-                if (modVal !== 'initial') {
-                    this.elem('signin').add(this.elem('signup')).hide();
-                    this.elem(modVal).show();
-
-                } else {
-                    this.elem('signin').add(this.elem('signup')).show();
-                }
-
+            } else {
+                this.elem('entrance').show();
             }
+
         }
 
     }
@@ -44,12 +41,10 @@ BEM.DOM.decl('authorization', {
     liveBinds: function () {
 
         this.liveBindTo('password-recovery', 'leftclick', function () {
-            window.location.hash = 'recovery';
             this.setMod('state', 'recovery');
         });
 
         this.liveBindTo('initial', 'leftclick', function () {
-            window.location.hash = 'initial';
             this.setMod('state', 'initial');
         });
     }
