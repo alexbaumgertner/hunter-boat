@@ -1,5 +1,7 @@
 block catalog-item-card {
 
+    tag: 'form',
+
     js: { id: 'catalog-item-card' }
 
     elem header-text {
