@@ -30,7 +30,7 @@ BEM.DOM.decl('catalog-item-card', {
         'added-in-cart': {
             'visible': {
                 'yes': function (elem, modName, modVal, oldModVal) {
-                    this.showAddToCardAnimation(elem);
+                    this.showAddToCartAnimation(elem);
                 },
 
                 'no': function (elem, modName, modVal, oldModVal) {
@@ -45,7 +45,7 @@ BEM.DOM.decl('catalog-item-card', {
         }
     },
 
-    showAddToCardAnimation: function (elem) {
+    showAddToCartAnimation: function (elem) {
         var _this = this;
         var targetTopMargin = 16; // px
         var beforeAnimateTime = 1000; // ms
