@@ -26,6 +26,8 @@
 
                 this.frameTotal = Math.ceil((this.elem('item').length - this.params.frameItemsCount) / this.params.frameItemsStep) + 1; // 1 -- current frame
                 this.frameCurr = this.params.frameCurr;
+                
+                this.refreshControlsAbility();
             }
 
         },

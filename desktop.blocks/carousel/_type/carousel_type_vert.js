@@ -27,6 +27,8 @@
                 this.elem('item').css({ height: this.itemFullHeight });
 
                 this.frameCurr = this.params.frameCurr;
+                
+                this.refreshControlsAbility();
             }
 
         },
