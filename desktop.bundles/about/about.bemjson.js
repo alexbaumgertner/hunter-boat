@@ -235,13 +235,23 @@
                                                                                 content: [
                                                                                     {
                                                                                         elem: 'item',
-                                                                                        attrs: { rel: 'http://teplomontaz-dp.narod.ru/index.files/licence.JPG' },
+                                                                                        attrs: { rel: 'img/content/certificates/1/Sertificate01.jpg' },
                                                                                         content: { block: 'b-icon', url: 'img/content/certificates/1/1_icon.png', alt: 'сертификат_1' }
                                                                                     },
                                                                                     {
                                                                                         elem: 'item',
-                                                                                        attrs: { rel: 'badurl.jpg' },
+                                                                                        attrs: { rel: 'img/content/certificates/2/Sertificate02.jpg' },
                                                                                         content: { block: 'b-icon', url: 'img/content/certificates/2/2_icon.png', alt: 'сертификат_2' }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        attrs: { rel: 'img/content/certificates/3/Sertificate03.jpg' },
+                                                                                        content: { block: 'b-icon', url: 'img/content/certificates/3/3_icon.png', alt: 'сертификат_3' }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'item',
+                                                                                        attrs: { rel: 'img/content/certificates/4/Sertificate04.jpg' },
+                                                                                        content: { block: 'b-icon', url: 'img/content/certificates/4/4_icon.png', alt: 'сертификат_3' }
                                                                                     }
                                                                                 ]
                                                                             },
