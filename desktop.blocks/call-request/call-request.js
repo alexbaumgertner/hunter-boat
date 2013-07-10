@@ -10,10 +10,21 @@ BEM.DOM.decl('call-request', {
         'js' : function() {
 
             var _this = this;
+            this.statusHiddenDelay = 4000; // ms
+
+            this.textStatuses = {
+                'ok': 'Ваша заявка принята. <br> Спасибо!',
+                'error': 'Ошибка запроса. <br> Попробуйте пожалуйста позже'
+            };
 
             this.elem('closer').click(function () {
                 _this.setHidden();
             });
+        },
+
+        'status': function (modName, modVal, oldModVal) {
+            this.elem('status').html(this.textStatuses[modVal]);
+
         }
 
     },
@@ -24,9 +35,39 @@ BEM.DOM.decl('call-request', {
     },
 
     setHidden: function () {
-        this.setMod(this.elem('form'), 'visibility', 'hidden');
+
+        this.hiddenTimeout && clearTimeout(this.hiddenTimeout);
+
+        this
+            .setMod(this.elem('form'), 'visibility', 'hidden')
+            .delMod('status');
     },
 
+    sendRequest: function () {
+
+        var button = this.findBlockInside('button');
+
+        button.setMod('state', 'disabled');
+
+        var data = this.elem('form').serialize();
+        var action = this.elem('form').attr('action');
+        var _this = this;
+
+        $.post(action, data, function (data) {
+            button.delMod('state');
+            _this.showStatus(data);
+        });
+    },
+
+    showStatus:function (data) {
+        this.setMod('status', data);
+
+        var _this = this;
+        this.hiddenTimeout = setTimeout(function (){
+            _this.setHidden();
+
+        }, _this.statusHiddenDelay)
+    },
 
     alignForm: function (e) {
 
@@ -35,9 +76,11 @@ BEM.DOM.decl('call-request', {
         // left or right side of screen
         var targetElemAtCenterPagePosition = $(window).width() / 2 > targetOffset.left ? 'left' : 'right';
 
+        var minMargin = 10; // px
+        var positionX;
+        var positionY;
 
         // get the X-coordinate
-        var positionX;
         if (targetElemAtCenterPagePosition === 'left') {
             // element in left side
             positionX = targetOffset.left;
@@ -47,9 +90,9 @@ BEM.DOM.decl('call-request', {
         }
 
         // get the Y-coordinate
-        var positionY = targetOffset.top - this.elem('form').height() / 2;
+        positionY = targetOffset.top - this.elem('form').height() / 2;
         // limit min margin at screen
-        var minMargin = 10; // px
+
         positionY < minMargin && (positionY = minMargin);
 
 
@@ -66,6 +109,11 @@ BEM.DOM.decl('call-request', {
          this.liveBindTo('opener', 'click', function (e) {
              this.setVisible(e);
          });
+
+        this.liveBindTo('submit', function (e) {
+            e.preventDefault();
+            this.sendRequest();
+        });
     }
 
 });
