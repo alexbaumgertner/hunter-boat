@@ -11,6 +11,10 @@
     cursor: pointer;
 }
 
+.certificates__item:hover {
+    border-color: #000000;
+}
+
 .certificates__item:last-of-type {
     margin-right: 0;
 }

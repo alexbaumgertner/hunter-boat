@@ -433,18 +433,21 @@
                                                                     content: [
                                                                         {
                                                                             elem: 'section-header',
-                                                                            attrs: { style: 'font-size: 20px;' },
                                                                             content: 'Купить лодку Hunter:'
                                                                         }
                                                                     ]
                                                                 },
                                                                 {
                                                                     block: 'b-text',
-                                                                    attrs: { style: 'margin: 0 0 0 70px;' },
+                                                                    attrs: { style: 'margin: 0 0 0 60px;' },
                                                                     content: [
                                                                         {
                                                                             elem: 'p',
-                                                                            attrs: { style: 'margin-bottom: 10px' },
+                                                                            content: [
+                                                                                { tag: '', content: 'В офисе компании ' }
+                                                                            ]
+                                                                        },{
+                                                                            elem: 'p',
                                                                             content: [
                                                                                 { tag: '', content: 'В нашем ' },
                                                                                 { block: 'b-link', url: '/', content: 'интернет-магазине' }
@@ -453,8 +456,15 @@
                                                                         {
                                                                             elem: 'p',
                                                                             content: [
-                                                                                { tag: '', content: 'У ' },
-                                                                                { block: 'b-link', url: '/', content: 'дилеров компании' }
+                                                                                { tag: '', content: 'У официальных' },
+                                                                                { block: 'b-link', url: '/', content: 'представителей' }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem: 'p',
+                                                                            content: [
+                                                                                { block: 'b-link', url: '/', content: 'Оптовые поставки' },
+                                                                                { tag: '', content: ' лодок Хантер' }
                                                                             ]
                                                                         }
                                                                     ]

@@ -83,6 +83,10 @@
                                             content: {
                                                 block: 'b-link',
                                                 mods: { pseudo: 'yes' },
+                                                mix: [
+                                                    { block: 'call-request', js: { id: 'call' }, mods: { status: 'ok' } },
+                                                    { block: 'call-request', elem: 'opener' }
+                                                ],
                                                 content: 'Обратный звонок'
                                             }
                                         }
@@ -307,6 +311,48 @@
                     ]
                 }
             ]
+        },
+        {
+            block: 'call-request',
+            mods: { status: 'ok' },
+            js: { id: 'call' },
+            content: {
+                elem: 'form',
+                elemMods: { visibility: 'hidden' },
+                content: [
+                    {
+                        elem: 'closer',
+                        content: 'x'
+                    },
+                    {
+                        elem: 'status',
+                        content: 'Статус отправки формы'
+                    },
+                    {
+                        elem: 'name',
+                        content: {
+                            block: 'input',
+                            mods: { reqiured: 'yes' },
+                            name: 'name',
+                            placeholder: 'Ваше имя'
+                        }
+                    },
+                    {
+                        elem: 'phone',
+                        content: {
+                            block: 'input',
+                            mods: { reqiured: 'yes' },
+                            name: 'phone',
+                            placeholder: 'Телефон'
+                        }
+                    },
+                    {
+                        elem: 'button',
+                        content: { block: 'button', mods: { type: 'submit' }, content: 'Позвоните мне' }
+                    }
+                ]
+            }
         }
+
     ]
 })
