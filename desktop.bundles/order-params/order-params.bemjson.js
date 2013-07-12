@@ -233,11 +233,11 @@
                                                                     content: [
                                                                         {
                                                                             elem: 'item',
-                                                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: 'cash', checked: 'checked', label: 'Наличными' }
+                                                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: 'cash', label: 'Наличными' }
                                                                         },
                                                                         {
                                                                             elem: 'item',
-                                                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: 'cash', label: 'Банковской картой' }
+                                                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: 'cash', checked: 'checked', label: 'Банковской картой' }
                                                                         },
                                                                         {
                                                                             elem: 'item',

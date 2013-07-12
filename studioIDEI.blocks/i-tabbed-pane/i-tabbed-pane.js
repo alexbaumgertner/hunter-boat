@@ -17,6 +17,10 @@ BEM.DOM.decl('i-tabbed-pane', {
                 _this._setCurrentTab(_this.findElem('menu-item').index(data.current));
             });
 
+            this.elem('menu-item').on('leftclick', function (e) {
+                _this._onMenuItemClick($(e.currentTarget));
+            });
+
         }
 
     },
@@ -60,8 +64,8 @@ BEM.DOM.decl('i-tabbed-pane', {
     },
 
 
-    _onMenuItemClick: function (e) {
-        this.setMod(e.data.domElem, 'state', 'current');
+    _onMenuItemClick: function ($elem) {
+        this.setMod($elem, 'state', 'current');
     },
 
 
@@ -70,12 +74,10 @@ BEM.DOM.decl('i-tabbed-pane', {
     }
 
 }, {
-
+/*
     live : function() {
-        this.liveBindTo('menu-item', 'leftclick', function (e) {
-           this._onMenuItemClick(e);
-        });
-    }
+
+    }*/
 
 });
 
