@@ -2,6 +2,7 @@
     background: #ffffff;
     border-radius: 5px;
     outline: none;
+    padding: 10px 30px 10px 10px;
 }
 
 .i-ua_js_yes .select__native-control {

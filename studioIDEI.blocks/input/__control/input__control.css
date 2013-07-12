@@ -5,6 +5,7 @@
     height: 20px;
     display: inline-block;
     vertical-align: middle;
+    margin: 0 -20px 0 0;
 }
 
 .input:hover .input__control {

@@ -2,7 +2,7 @@
 {
     display: inline-block;
     vertical-align: top;
-    margin: 0 0 0 8px;
-    cursor:pointer;
+    cursor: pointer;
     line-height: 20px;
+    padding: 0 0 0 28px;
 }
