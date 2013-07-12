@@ -12,25 +12,29 @@ block product-card, (!this.mods || this.mods.type !== 'withFullDesc') {
               }
           },
           {
-              elem: 'photo',
-              src: this.ctx.src
+            elem: 'link-wrapper',
+            tag: 'a',
+            attrs: { href: '/item.html' },
+            content: [
+                {
+                    elem: 'photo',
+                    src: this.ctx.src
+                },
+                {
+                    elem: 'title',
+                    tag: 'span',
+                    content: (function() {
+                        var names = ['Хантер 320 Л ЛЮКС', 'Хантер 159 НР', 'Хантер 777 ЛЮКС', 'Хантер 320 ПВХ'];
+                        var random = Math.floor(Math.random() * names.length);
+                        return names[random];
+                    }())
+                }
+            ]
           },
           {
               elem: 'info',
               tag: 'span',
               content: [
-                  {
-                      elem: 'title',
-                      content: {
-                          block: 'b-link',
-                          content: (function(){
-                              var names = ['Хантер 320 Л ЛЮКС', 'Хантер 159 НР', 'Хантер 777 ЛЮКС', 'Хантер 320 ПВХ'];
-                              var random = Math.floor(Math.random() * names.length);
-                              return names[random];
-                          }()),
-                          url: '/item.html'
-                      }
-                  },
                   {
                       elem: 'desc',
                       content: this.ctx.desc || (function(){

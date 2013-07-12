@@ -2,13 +2,10 @@
     shouldDeps: [
         {
             block: 'product-card',
-            elems: [ 'info', 'photo', 'title', 'desc', 'price', 'icon' ]
+            elems: [ 'info', 'photo', 'title', 'desc', 'price', 'icon', 'link-wrapper' ]
         },
         {
             block: 'price'
-        },
-        {
-            block: 'b-link'
         },
         {
             block: 'catalog-icon',

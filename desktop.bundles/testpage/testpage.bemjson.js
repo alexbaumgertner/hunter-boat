@@ -182,40 +182,59 @@
                             block: 'content',
                             elem: 'column',
                             elemMods: { position: 'full' },
-                            content: {
-                                block: 'test',
-                                tag: 'form',
-                                content: [
-                                    {
-                                        elem: 'item',
-                                        content: { block: 'input', type: 'radio', name: 'pay-method', value: '1', label: 'Наличными' }
-                                    },
-                                    {
-                                        elem: 'item',
-                                        content: { block: 'input', type: 'radio', name: 'pay-method', value: '2', checked: 'checked', label: 'Банковской картой' }
-                                    },
-                                    {
-                                        elem: 'item',
-                                        content: { block: 'input', type: 'radio', name: 'pay-method', value: '3', label: 'Выписать счёт' }
-                                    },
-                                    {
-                                        attrs: {
-                                            style: 'margin: 50px;'
+                            content: [
+                                {
+                                    block: 'test',
+                                    tag: 'form',
+                                    content: [
+                                        {
+                                            elem: 'item',
+                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: '1', label: 'Наличными' }
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: '2', checked: 'checked', label: 'Банковской картой' }
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: { block: 'input', type: 'radio', name: 'pay-method', value: '3', label: 'Выписать счёт' }
+                                        },
+                                        {
+                                            attrs: {
+                                                style: 'margin: 50px;'
+                                            }
+                                        },
+                                        {
+                                            block: 'select',
+                                            name: 'market',
+                                            title: 'Выберите магазин',
+                                            options: [
+                                                { content: 'Главный магазин', value: 0 },
+                                                { content: 'Польстровский проспект дом 1', value: 1, selected: 'selected' },
+                                                { content: 'Сенная площать, строение 2', value: 2, selected: true },
+                                                { content: 'Новгородская 3', value: 3 }
+                                            ]
                                         }
-                                    },
-                                    {
-                                        block: 'select',
-                                        name: 'market',
-                                        title: 'Выберите магазин',
-                                        options: [
-                                            { content: 'Главный магазин', value: 0 },
-                                            { content: 'Польстровский проспект дом 1', value: 1, selected: 'selected' },
-                                            { content: 'Сенная площать, строение 2', value: 2, selected: true },
-                                            { content: 'Новгородская 3', value: 3 }
-                                        ]
+                                    ]
+                                },
+                                {
+                                    attrs: {
+                                        style: 'margin: 150px 0 0 0; '
                                     }
-                                ]
-                            }
+                                },
+                                {
+                                    block: 'product-card'
+                                },
+                                {
+                                    attrs: {
+                                        style: 'margin: 150px 0 0 0; '
+                                    }
+                                },
+                                {
+                                    block: 'product-card',
+                                    mods: { type: 'withoutDesc' }
+                                }
+                            ]
                         }
                     ]
                 }
