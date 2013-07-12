@@ -188,6 +188,23 @@ var _this;
             _this.rotateLoader(initAngle, step);
         },
 
+
+        hideLoader: function () {
+            this.elem('loader').hide();
+            this.showLoader.timeout && clearTimeout(this.showLoader.timeout);
+            
+            // clear style
+            this.elem('loader').css({
+                '-webkit-transform': '',
+                '-moz-transform': '',
+                '-ms-transform': '',
+                '-o-transform': '',
+                'transform': ''
+            });
+        },
+        
+        
+        
         /**
          * Loop rotation 'loader' elem
          * @param angle
@@ -214,11 +231,7 @@ var _this;
             }, 0);
         },
 
-
-        hideLoader: function () {
-            this.elem('loader').hide();
-            this.showLoader.timeout && clearTimeout(this.showLoader.timeout);
-        },
+        
 
         /**
          * Styling img element

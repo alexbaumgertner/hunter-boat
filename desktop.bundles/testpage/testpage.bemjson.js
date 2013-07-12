@@ -84,7 +84,7 @@
                                                 block: 'b-link',
                                                 mods: { pseudo: 'yes' },
                                                 mix: [
-                                                    { block: 'call-request', js: { id: 'call' }, mods: { status: 'ok' } },
+                                                    { block: 'call-request', js: { id: 'call' } },
                                                     { block: 'call-request', elem: 'opener' }
                                                 ],
                                                 content: 'Обратный звонок'
@@ -209,8 +209,8 @@
                                         title: 'Выберите магазин',
                                         options: [
                                             { content: 'Главный магазин', value: 0 },
-                                            { content: 'Польстровский проспект дом 1', value: 1},
-                                            { content: 'Сенная площать, строение 2', value: 2 },
+                                            { content: 'Польстровский проспект дом 1', value: 1, selected: 'selected'},
+                                            { content: 'Сенная площать, строение 2', value: 2, selected: true },
                                             { content: 'Новгородская 3', value: 3 }
                                         ]
                                     }
@@ -314,7 +314,6 @@
         },
         {
             block: 'call-request',
-            mods: { status: 'ok' },
             js: { id: 'call' },
             content: {
                 elem: 'form',

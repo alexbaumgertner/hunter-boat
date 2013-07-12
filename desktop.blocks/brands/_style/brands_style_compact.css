@@ -4,6 +4,12 @@
     text-align: center;
 }
 
+.brands_style_compact .brands__list {
+    width: auto;
+    margin: 0;
+}
+
+
 .brands_style_compact .brands__item {
     width: auto;
     margin: 0;

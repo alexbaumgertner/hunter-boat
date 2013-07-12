@@ -116,6 +116,8 @@
 
 				fontsizeMeasurerValue = fontsizeMeasurerValueCurrent;
 			}
+			
+			opera && fontsizeMeasurer.hide();
 
 			setTimeout(updater, 100);
 		})();
