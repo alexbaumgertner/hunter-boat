@@ -2,3 +2,10 @@
 {
     display: block;
 }
+
+
+.product-card_type_withFullDesc .product-card__link-wrapper {
+    display: inline-block;
+    width: 228px;
+    margin: 0 0 0 10px;
+}

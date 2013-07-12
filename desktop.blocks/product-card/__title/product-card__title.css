@@ -10,3 +10,10 @@
 .product-card__title:hover {
     color: #00aefe;
 }
+
+.product-card_type_withFullDesc .product-card__title {
+    position: absolute;
+    top: 0;
+    left: 272px;
+    margin-top: 0;
+}
