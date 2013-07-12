@@ -188,11 +188,11 @@
                                 content: [
                                     {
                                         elem: 'item',
-                                        content: { block: 'input', type: 'radio', name: 'pay-method', value: '1', checked: 'checked', label: 'Наличными' }
+                                        content: { block: 'input', type: 'radio', name: 'pay-method', value: '1', label: 'Наличными' }
                                     },
                                     {
                                         elem: 'item',
-                                        content: { block: 'input', type: 'radio', name: 'pay-method', value: '2', label: 'Банковской картой' }
+                                        content: { block: 'input', type: 'radio', name: 'pay-method', value: '2', checked: 'checked', label: 'Банковской картой' }
                                     },
                                     {
                                         elem: 'item',
@@ -209,7 +209,7 @@
                                         title: 'Выберите магазин',
                                         options: [
                                             { content: 'Главный магазин', value: 0 },
-                                            { content: 'Польстровский проспект дом 1', value: 1, selected: 'selected'},
+                                            { content: 'Польстровский проспект дом 1', value: 1, selected: 'selected' },
                                             { content: 'Сенная площать, строение 2', value: 2, selected: true },
                                             { content: 'Новгородская 3', value: 3 }
                                         ]
