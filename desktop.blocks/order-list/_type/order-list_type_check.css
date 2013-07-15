@@ -31,8 +31,13 @@
     font-size: 14px;
     line-height: 19px;
     color: #000000;
-    width: 415px;
+    width: 350px;
     margin: 0;
+}
+
+
+.order-list_type_check  .order-list__counter {
+    margin: 0 10px;
 }
 
 .order-list_type_check .order-list__item-name {
@@ -50,7 +55,7 @@
 
 
 .order-list_type_check .order-list__total-text {
-    width: 375px;
+    width: 380px;
 }
 
 

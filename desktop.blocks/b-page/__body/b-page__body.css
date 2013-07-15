@@ -8,6 +8,11 @@
 }
 
 /* global styles (begin) */
+
+html {
+    background: #000;
+}
+
 input::-moz-focus-inner,
 button::-moz-focus-inner {
     padding:0;

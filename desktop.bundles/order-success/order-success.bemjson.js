@@ -215,6 +215,13 @@
                                                                             {
                                                                                 elem: 'header-item',
                                                                                 mix: [
+                                                                                    {  elem: 'counter' }
+                                                                                ],
+                                                                                content: 'Кол-во'
+                                                                            },
+                                                                            {
+                                                                                elem: 'header-item',
+                                                                                mix: [
                                                                                     {  elem: 'price' }
                                                                                 ],
                                                                                 content: 'Цена, руб.'
@@ -233,12 +240,20 @@
                                                                                             {
                                                                                                 elem: 'item-name',
                                                                                                 content: 'Надувная лодка Хантер 290 Р'
+                                                                                            },
+                                                                                            {
+                                                                                                elem: 'item-qualif',
+                                                                                                content: 'зеленая'
                                                                                             }
                                                                                         ]
                                                                                     },
                                                                                     {
+                                                                                        elem: 'counter',
+                                                                                        content: '1'
+                                                                                    },
+                                                                                    {
                                                                                         elem: 'price',
-                                                                                        content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
+                                                                                        content: { block: 'price', value: 308790, mods: { currency: 'empty' } }
                                                                                     }
                                                                                 ]
                                                                             },
@@ -255,6 +270,10 @@
                                                                                         ]
                                                                                     },
                                                                                     {
+                                                                                        elem: 'counter',
+                                                                                        content: '3'
+                                                                                    },
+                                                                                    {
                                                                                         elem: 'price',
                                                                                         content: { block: 'price', value: 38790, mods: { currency: 'empty' } }
                                                                                     }
@@ -268,9 +287,13 @@
                                                                                         content: [
                                                                                             {
                                                                                                 elem: 'item-name',
-                                                                                                content: 'Жилет спасательный универсальный Хантер'
+                                                                                                content: 'Жилет спасательный пылевлагосвето-защищенный универсальный Хантер'
                                                                                             }
                                                                                         ]
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'counter',
+                                                                                        content: '10'
                                                                                     },
                                                                                     {
                                                                                         elem: 'price',
