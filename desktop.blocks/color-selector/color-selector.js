@@ -23,8 +23,7 @@ BEM.DOM.decl('color-selector', {
 
                     var prev = this.elem('selector', 'checked', 'yes');
 
-                    this.delMod(prev, 'checked').trigger('setColor', modVal);
-                    
+                    this.delMod(prev, 'checked');
                 }
             }
         }
@@ -33,7 +32,9 @@ BEM.DOM.decl('color-selector', {
 
     onItemSelectorClick: function (e) {
         var item = e.data.domElem;
-        this.setMod(item, 'checked', 'yes');
+        this
+            .setMod(item, 'checked', 'yes')
+            .trigger('setColor', this.getMod(item, 'color'));
 
     }
 

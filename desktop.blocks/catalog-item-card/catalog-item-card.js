@@ -92,6 +92,7 @@ BEM.DOM.decl('catalog-item-card', {
 
     selectColor: function (color) {
         this.elem('photo-big-img').attr('src', this.photoBigColors[color]);
+        this.elem('color-input').val(color);
     }
 
 }, {
@@ -104,8 +105,8 @@ BEM.DOM.decl('catalog-item-card', {
         });
 
         // set current color
-        this.liveBindTo('color-selector', 'click', function (e) {
-            this.selectColor(this.getMod(e.data.domElem, 'color'));
+        this.liveInitOnBlockInsideEvent('setColor', 'color-selector', function (event, data) {
+            this.selectColor(data);
         });
 
         // add to cart
