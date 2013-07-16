@@ -6,14 +6,9 @@
     font-size: 22px;
     line-height: 22px;
     color: #9c9c9c;
-    cursor: pointer;
     box-sizing: border-box;
 }
 
 .order-page__menu-item:last-of-type {
     margin-right: 0;
-}
-
-.order-page__menu-item:hover {
-    color: #000000;
 }

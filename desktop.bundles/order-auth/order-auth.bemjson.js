@@ -184,6 +184,7 @@
                                             content: [
                                                 {
                                                     elem: 'menu-item',
+                                                    elemMods: { filled: 'yes' },
                                                     content: 'Уточнение заказа'
                                                 },
                                                 {
