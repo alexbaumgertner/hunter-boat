@@ -21,8 +21,4 @@ block order-page {
         content: '→'
     }
 
-    elem tab {
-        tag: 'form'
-    }
-
 }

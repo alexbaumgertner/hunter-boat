@@ -2,13 +2,13 @@
 .button_state_disabled:hover,
 .button_state_disabled:focus,
 .button_state_disabled:active {
-    cursor: default;
-    background-position: 0 0;
-    background-color: #d2d2d2;
-    border-color: #bebebe;
-    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.57);
-    text-shadow: 0 1px 0 #000000;
-    padding-top: 0;
+    cursor: default!important;
+    background-position: 0 0!important;
+    background-color: #d2d2d2!important;
+    border-color: #bebebe!important;
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.57)!important;
+    text-shadow: 0 1px 0 #000000!important;
+    padding-top: 0!important;
 }
 
 .button_type_carousel-horiz.button_state_disabled {

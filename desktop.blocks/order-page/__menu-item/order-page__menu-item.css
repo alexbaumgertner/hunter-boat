@@ -12,3 +12,11 @@
 .order-page__menu-item:last-of-type {
     margin-right: 0;
 }
+
+.order-page__menu-item .b-link {
+    text-decoration: none;
+}
+
+.order-page__menu-item .b-link:hover {
+    color: #000000;
+}

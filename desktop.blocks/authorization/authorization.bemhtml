@@ -1,0 +1,6 @@
+block authorization {
+
+    elem recovery {
+        tag: 'form'
+    }
+}
