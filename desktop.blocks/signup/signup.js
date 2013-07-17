@@ -3,22 +3,6 @@
 
 (function(undefined) {
 
-BEM.DOM.decl('signup', {
-
-    onSetMod : {
-
-        'js' : function() {
-            /* ... */
-        }
-
-    }
-
-}, {
-
-    live : function() {
-        /* ... */
-    }
-
-});
+    BEM.DOM.decl( { name: 'signup', baseBlock: 'i-validate' }, {}, {});
 
 })();

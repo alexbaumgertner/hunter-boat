@@ -1,5 +1,7 @@
 ({
-    mustDeps  : [],
+    mustDeps  : [
+        { block: 'i-validate' }
+    ],
     shouldDeps: [
         {
             elem: 'header'

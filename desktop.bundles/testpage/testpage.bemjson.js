@@ -217,10 +217,41 @@
                                                     content: { block: 'button', mods: { type: 'submit' }, content: 'Восстановить' }
                                                 }
                                             ]
-                                         }
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'authorization',
+                                    mods: { 'state': 'init' },
+                                    js: true,
+                                    content: [
+                                        {
+                                            elem: 'entrance',
+                                            content: [
+                                                {
+                                                    elem: 'signin',
+                                                    content: {
+                                                        block: 'signin',
+                                                        js: { required: 'name, email, phone' }
+                                                    }
+                                                },
+                                                {
+                                                    elem: 'signup',
+                                                    content: {
+                                                        block: 'signup',
+                                                        js: { required: 'email, password' }
+                                                    }
+                                                },
+                                                {
+                                                    block: 'order-page',
+                                                    elem: 'next',
+                                                    content: { block: 'button', mods: { type: 'submit' }, content: 'Восстановить' }
+                                                }
+                                            ]
+                                        }
+
                                     ]
                                 }
-
                             ]
                         }
                     ]
