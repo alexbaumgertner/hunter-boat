@@ -13,17 +13,17 @@ BEM.DOM.decl({ block: 'authorization', modName: 'state', modVal: 'recovery'}, {
             this.recoveryInput = this.findBlockInside('authorization-info').findBlockInside('input');
             this.submitButton = this.findBlockInside({ block: 'button', modName: 'type', modVal: 'submit' });
 
-            this.switchActivitySubmitButton(this.recoveryInput.domElem.val());
+            this.setSubmitButtonState(this.recoveryInput.domElem.val());
 
             this.recoveryInput.domElem.on('keyup change', function () {
-                _this.switchActivitySubmitButton($(this).val())
+                _this.setSubmitButtonState($(this).val())
             });
         }
     },
 
 
 
-    switchActivitySubmitButton: function (email) {
+    setSubmitButtonState: function (email) {
         var simpleEmailRE = /^\S+@\S+$/;
 
         if (simpleEmailRE.test(email)) {

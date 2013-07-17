@@ -14,11 +14,15 @@ BEM.DOM.decl('i-validate', {
             this.requiredFields = this.params.required.split(', ');
             this.isHandlersBinded = false;
             this.checkCompleted();
+        },
+
+        completed: function (modName, modVal, oldModVal) {
+            this.trigger('completed', modVal);
         }
 
     },
 
-    switchActivitySubmitButton: function (values) {
+    setSubmitButtonState: function (values) {
         var isCompleted = this.validateValues(values);
 
         if (isCompleted) {
@@ -27,7 +31,6 @@ BEM.DOM.decl('i-validate', {
         } else {
             this.setMod('completed', 'no');
         }
-
 
     },
 
@@ -49,7 +52,7 @@ BEM.DOM.decl('i-validate', {
             currentValues[value] = inputElem.val();
         });
 
-        this.switchActivitySubmitButton(currentValues);
+        this.setSubmitButtonState(currentValues);
         this.isHandlersBinded = true;
     },
 
@@ -62,7 +65,6 @@ BEM.DOM.decl('i-validate', {
             }
 
         });
-        console.log(result);
         return result;
     }
 

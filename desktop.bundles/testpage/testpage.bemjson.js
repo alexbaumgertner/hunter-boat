@@ -222,7 +222,7 @@
                                 },
                                 {
                                     block: 'authorization',
-                                    mods: { 'state': 'init' },
+                                    mods: { 'state': 'initial' },
                                     js: true,
                                     content: [
                                         {
