@@ -5,7 +5,9 @@
     color: #0081bc;
     margin: 25px 0 0 0;
     display: inline-block;
+    width: 90%;
 }
+
 .product-card__link-wrapper:hover .product-card__title,
 .product-card__title:hover {
     color: #00aefe;
