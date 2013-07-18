@@ -1,6 +1,7 @@
 .where-to-by-page__shipping {
     text-align: center;
-    margin: 40px 0 0 0;
+    margin: 40px auto 0;
+    width: 420px;
 }
 
 .where-to-by-page__shipping .b-text__h3 {
@@ -12,7 +13,7 @@
 .where-to-by-page__shipping .b-text__p {
     font-size: 14px;
     line-height: 20px;
-    margin: 0;
+    margin: 30px 0 0 0;
 }
 
 .where-to-by-page__shipping .b-link {

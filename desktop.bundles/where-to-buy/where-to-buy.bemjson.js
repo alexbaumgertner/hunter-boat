@@ -181,7 +181,9 @@
                                     content: [
                                         {
                                             elem: 'header',
-                                            mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/Where-to-buy.jpg' } }],
+                                            mix: [
+                                                { block: 'patternizer', js: { 'data-pattern': 'img/headers/Where-to-buy.jpg' } }
+                                            ],
                                             content: 'ГДЕ КУПИТЬ'
                                         },
                                         {
@@ -526,6 +528,7 @@
                                                 },
                                                 {
                                                     elem: 'column',
+                                                    attrs: { style: 'margin-top: -60px;' },
                                                     content: [
                                                         {
                                                             elem: 'header',
@@ -547,6 +550,118 @@
                                             ]
                                         },
 
+                                        {
+                                            elem: 'affiliates',
+                                            content: [
+                                                {
+                                                    elem: 'column',
+                                                    content: [
+                                                        {
+                                                            elem: 'header',
+                                                            content: 'Москва'
+                                                        },
+                                                        {
+                                                            block: 'markets-list',
+                                                            content: [
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: [
+                                                                        {
+                                                                            block: 'market-card',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'title',
+                                                                                    content: 'Магазин «Лодки & Палатки»'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'address',
+                                                                                    content: '14 км МКАД, Птичий рынок, павильон 34-35A'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'phones',
+                                                                                    content: [
+                                                                                        'Тел: ', {
+                                                                                            elem: 'phone',
+                                                                                            content: '8-906-725-50-44'
+                                                                                        }, '; ', {
+                                                                                            elem: 'phone',
+                                                                                            content: '8 (495) 782-33-64'
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'site',
+                                                                                    content: {
+                                                                                        block: 'b-link',
+                                                                                        content: 'www.lodki-palatki.ru',
+                                                                                        url: 'http://www.lodki-palatki.ru'
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        }
+
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'column',
+                                                    content: [
+                                                        {
+                                                            elem: 'header',
+                                                            content: 'Уральский и Сибирский округ'
+                                                        },
+                                                        {
+                                                            block: 'markets-list',
+                                                            content: [
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: [
+                                                                        {
+                                                                            block: 'market-card',
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'title',
+                                                                                    content: 'Спортивный магазин «СпортЕсть»'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'address',
+                                                                                    content: 'Екатеринбург, улича Первомайская, дом 71, корпус «Б», офис 1'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'phones',
+                                                                                    content: [
+                                                                                        'Тел: ', {
+                                                                                            elem: 'phone',
+                                                                                            content: '+7 (343) 204-97-77'
+                                                                                        }, '; ', {
+                                                                                            elem: 'phone',
+                                                                                            content: '+7 (343) 375-20-38'
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'site',
+                                                                                    content: {
+                                                                                        block: 'b-link',
+                                                                                        content: 'www.sportest.ru',
+                                                                                        url: 'http://www.sportest.ru'
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        }
+
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+
                                         { block: 'line', mods: { type: 'wavy-0081bd' } },
 
                                         {
@@ -555,17 +670,23 @@
                                                 block: 'b-text',
                                                 content: [
                                                     {
-                                                        elem: 'h3',
-                                                        content: 'Не можете найти лодку Хантер в вашем городе?'
+                                                        elem: 'p',
+                                                        content: [
+                                                            'Информацию об официальном представителе в вашем городе вы можете уточнить по телефону +7 (812) 677 82 55 или по электронной почте ',
+                                                            {  block: 'b-link', url: 'mailto:sales@hunterboat.ru', content: 'sales@hunterboat.ru' },
+                                                            ' и ',
+                                                            {  block: 'b-link', url: 'mailto:hunter@hunterboat.ru', content: 'hunter@hunterboat.ru' }
+                                                        ]
                                                     },
                                                     {
                                                         elem: 'p',
-                                                        content: 'Мы осуществляем доставку во все регионы России'
-                                                    },
-                                                    {
-                                                        block: 'b-link',
-                                                        url: '/delivery.html',
-                                                        content: 'Подробнее о доставке'
+                                                        content: [
+                                                            'Мы осуществляем доставку лодок «Хантер» во все регионы России, Подробнее в разделе ',
+                                                            {
+                                                                block: 'b-link',
+                                                                url: '/delivery',
+                                                                content: 'Доставка' }
+                                                        ]
                                                     }
 
                                                 ]
