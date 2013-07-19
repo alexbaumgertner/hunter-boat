@@ -8,35 +8,26 @@ BEM.DOM.decl({ block: 'authorization', modName: 'state', modVal: 'recovery'}, {
     onSetMod : {
 
         'js' : function() {
-            var _this = this;
-
             this.submitButton = this.findBlockInside({ block: 'button', modName: 'type', modVal: 'submit' });
-            this.recoveryInput = this.findBlockInside('authorization-info').findBlockInside('input');
-
-            this.setSubmitButtonState(this.recoveryInput.domElem.val());
-
-            this.recoveryInput.domElem.on('keyup change input', function () {
-                _this.setSubmitButtonState($(this).val())
-            });
         }
     },
 
 
 
     setSubmitButtonState: function (enable) {
-        console.log(enable);
-
         if (enable === 'yes') {
             this.submitButton.setMod('state', 'enabled');
 
         } else {
             this.submitButton.setMod('state', 'disabled');
         }
-
     }
 
 }, {
+
     live: function () {
+
+        /* TODO: refactor with other mods of this block */
         // set current state
         this.liveInitOnBlockInsideEvent('completed', 'signin', function (event, data) {
             this.setSubmitButtonState(data);

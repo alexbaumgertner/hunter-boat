@@ -27,7 +27,8 @@ BEM.DOM.decl({ block: 'authorization', modName: 'state', modVal: 'initial'}, {
 }, {
 
     live : function() {
-                // set current state
+        /* TODO: refactor with other mods of this block */
+        // set current state
         this.liveInitOnBlockInsideEvent('completed', 'signin', function (event, data) {
             this.setSubmitButtonState(data);
         });
