@@ -11,9 +11,10 @@ BEM.DOM.decl('i-validate', {
     onSetMod : {
 
         'js' : function() {
+            var _this = this;
             this.requiredFields = this.params.required.split(', ');
             this.isHandlersBinded = false;
-            this.checkCompleted();
+            setTimeout(function () { _this.checkCompleted(); }, 0)
         },
 
         completed: function (modName, modVal, oldModVal) {
@@ -43,7 +44,7 @@ BEM.DOM.decl('i-validate', {
             var inputElem = _this.elem(value).children('input');
             // register required inputs changes
             if (!_this.isHandlersBinded) {
-                inputElem.on('keyup change', function () {
+                inputElem.on('keyup change input', function () {
                     _this.checkCompleted();
                 });
             }

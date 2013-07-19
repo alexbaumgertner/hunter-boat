@@ -25,14 +25,19 @@ BEM.DOM.decl({ block: 'authorization', modName: 'state', modVal: 'initial'}, {
     }
 
 }, {
+
     live : function() {
-         // set current color
+                // set current state
         this.liveInitOnBlockInsideEvent('completed', 'signin', function (event, data) {
             this.setSubmitButtonState(data);
         });
         this.liveInitOnBlockInsideEvent('completed', 'signup', function (event, data) {
             this.setSubmitButtonState(data);
         });
+        this.liveInitOnBlockInsideEvent('completed', 'input', function (event, data) {
+            this.setSubmitButtonState(data);
+        });
+
     }
 
 });

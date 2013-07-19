@@ -185,6 +185,7 @@
                             content: [
                                 {
                                     block: 'authorization',
+                                    attrs: { style: 'position: relative;' },
                                     mods: { 'state': 'recovery' },
                                     js: true,
                                     content: [
@@ -207,7 +208,7 @@
                                                         },
                                                         {
                                                             elem: 'input',
-                                                            content: { block: 'input', placeholder: 'E-mail', name: 'email' }
+                                                            content: { block: 'input', placeholder: 'E-mail', name: 'email', mods: { validate: 'yes' }, js: { pattern: 'email' } }
                                                         }
                                                     ]
                                                 },
@@ -219,8 +220,8 @@
                                             ]
                                         }
                                     ]
-                                },
-                                {
+                                }
+                                ,{
                                     block: 'authorization',
                                     mods: { 'state': 'initial' },
                                     js: true,
