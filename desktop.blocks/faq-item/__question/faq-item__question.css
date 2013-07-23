@@ -1,0 +1,8 @@
+.faq-item__question
+{
+    margin: 0 0 15px 0;
+    font-size: 17px;
+    line-height: 21px;
+    width: 680px;
+    font-weight: bold;
+}

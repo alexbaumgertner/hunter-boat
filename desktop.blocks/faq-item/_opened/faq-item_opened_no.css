@@ -1,0 +1,19 @@
+.faq-item_opened_no
+{
+}
+
+.faq-item_opened_no .faq-item__answer {
+    display: none;
+}
+
+
+.faq-item_opened_no .faq-item__question
+{
+    color: #0081bc;
+}
+
+.faq-item_opened_no .faq-item__question:hover
+{
+    color: #00aefe;
+}
+

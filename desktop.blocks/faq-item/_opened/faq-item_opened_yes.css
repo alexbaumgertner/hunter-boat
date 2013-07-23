@@ -1,0 +1,9 @@
+.faq-item_opened_yes
+{
+}
+
+
+.faq-item_opened_yes .faq-item__question
+{
+    color: #000000;
+}
