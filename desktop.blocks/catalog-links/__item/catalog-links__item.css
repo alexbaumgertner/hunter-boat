@@ -6,9 +6,11 @@
 }
 
 .catalog-links__item .catalog-icon__img {
-    opacity: 0.5;
+    opacity: 0.35;
 }
 
 .catalog-links__item  .catalog-icon:hover .catalog-icon__img {
     opacity: 1;
 }
+
+

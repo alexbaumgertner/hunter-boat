@@ -5,6 +5,7 @@
     font-size: 14px;
     cursor: pointer;
     position: absolute;
+    z-index: 100;
 }
 
 .i-ua_js_no .select__custom-control {
