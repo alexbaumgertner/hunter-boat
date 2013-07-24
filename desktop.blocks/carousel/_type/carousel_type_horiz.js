@@ -25,6 +25,12 @@
 
 
                 this.frameTotal = Math.ceil((this.elem('item').length - this.params.frameItemsCount) / this.params.frameItemsStep) + 1; // 1 -- current frame
+                
+                // In case when frameItemsCount > elems length
+                if (this.frameTotal < 1) {
+                    this.frameTotal = 1;
+                }
+                
                 this.frameCurr = this.params.frameCurr;
                 
                 this.refreshControlsAbility();
