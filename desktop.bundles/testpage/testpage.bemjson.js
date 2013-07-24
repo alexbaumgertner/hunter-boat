@@ -184,74 +184,9 @@
                             elemMods: { position: 'full' },
                             content: [
                                 {
-                                    block: 'authorization',
-                                    attrs: { style: 'position: relative;' },
-                                    mods: { 'state': 'recovery' },
-                                    js: true,
-                                    content: [
-                                        {
-                                            elem: 'recovery',
-                                            mix: [
-                                                { elem: 'info' }
-                                            ],
-                                            content: [
-                                                {
-                                                    block: 'authorization-info',
-                                                    content: [
-                                                        {
-                                                            elem: 'header',
-                                                            content: 'Восстановление пароля'
-                                                        },
-                                                        {
-                                                            elem: 'text',
-                                                            content: 'Введите почтовый ящик, указанный при регистрации. На него будет отправлен новый пароль.'
-                                                        },
-                                                        {
-                                                            elem: 'input',
-                                                            content: { block: 'input', placeholder: 'E-mail', name: 'email', mods: { validate: 'yes' }, js: { pattern: 'email' } }
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    block: 'order-page',
-                                                    elem: 'next',
-                                                    content: { block: 'button', mods: { type: 'submit' }, content: 'Восстановить' }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                                ,{
-                                    block: 'authorization',
-                                    mods: { 'state': 'initial' },
-                                    js: true,
-                                    content: [
-                                        {
-                                            elem: 'entrance',
-                                            content: [
-                                                {
-                                                    elem: 'signin',
-                                                    content: {
-                                                        block: 'signin',
-                                                        js: { required: 'name, email, phone' }
-                                                    }
-                                                },
-                                                {
-                                                    elem: 'signup',
-                                                    content: {
-                                                        block: 'signup',
-                                                        js: { required: 'email, password' }
-                                                    }
-                                                },
-                                                {
-                                                    block: 'order-page',
-                                                    elem: 'next',
-                                                    content: { block: 'button', mods: { type: 'submit' }, content: 'Восстановить' }
-                                                }
-                                            ]
-                                        }
-
-                                    ]
+                                    block: 'b-link',
+                                    mix: [ { block: 'text-truncate', js: { letterLength: 800 } } ],
+                                    content: '<p></p><p class="MsoNormal" style="text-align: -webkit-auto; "><em style="background-color: rgba(255, 255, 255, 0);">Заказывал лодку Хантер 280 РТ через сайт. Доставили вовремя, как раз ко дню рождения, менеджеры молодцы – постоянно информируют о движении товара. Так держать – сразу же дозаказал дополнительные полы -передали в Питере (доставили в гостиницу).</em></p>'
                                 }
                             ]
                         }
