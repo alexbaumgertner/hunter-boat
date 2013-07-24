@@ -271,6 +271,16 @@
                                                 }
                                             ]
                                         },
+                                        {
+                                            elem: 'paginator',
+                                            content: {
+                                                block: 'paginator',
+                                                itemsTotal: 15,
+                                                itemsUrlPrefix: '/articles/',
+                                                itemsVisible: 4,
+                                                itemCurr: 2
+                                            }
+                                        },
                                         { block: 'line', mods: { type: 'wavy-0081bd' } },
                                         {
                                             elem: 'add-question',
