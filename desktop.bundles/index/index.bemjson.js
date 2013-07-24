@@ -167,8 +167,7 @@
                             block: 'header',
                             elem: 'index-title',
                             content: [
-                                'Почувствовать природу...',
-                                {
+                                'Почувствовать природу...', {
                                     elem: 'index-title-word',
                                     content: 'легко!'
                                 }
@@ -182,7 +181,7 @@
                                     'durationInitTime': 800,
                                     'delayLoopTime': 2000
                                 },
-                                "slides":[
+                                "slides": [
                                     {
                                         "title": "Надувные электро лодки Хантер",
                                         "text": "позволят добраться <br> до самых заветных мест рыбалки или отдыха.",
@@ -241,11 +240,13 @@
                                     content: [
                                         {
                                             elem: 'title',
-                                            content: { block: 'b-link', mix: [ { block: 'index-promo-carousel', elem: 'url' } ], url: '/', content: 'Надувные моторные лодки Хантер' }
+                                            content: { block: 'b-link', mix: [
+                                                { block: 'index-promo-carousel', elem: 'url' }
+                                            ], url: '/', content: 'Надувные моторные лодки Хантер' }
                                         },
                                         {
                                             elem: 'text',
-                                            content: { elem: 'text-inner',  content: 'позволят добраться <br> до самых заветных мест рыбалки или отдыха.' }
+                                            content: { elem: 'text-inner', content: 'позволят добраться <br> до самых заветных мест рыбалки или отдыха.' }
                                         },
                                         {
                                             elem: 'sub-text',
@@ -254,8 +255,7 @@
                                         {
                                             elem: 'price-current',
                                             content: [
-                                                'от',
-                                                {
+                                                'от', {
                                                     block: 'price',
                                                     mods: { currency: 'dot-dash' },
                                                     value: 9800
@@ -415,36 +415,109 @@
 
                                         {
                                             block: 'sale-stock',
+                                            mix: [
+                                                { block: 'carousel', mods: { type: 'horiz' }, js: { frameCurr: 1, frameItemsCount: 3, frameItemsStep: 3 } }
+                                            ],
                                             content: [
+                                                { block: 'carousel', elem: 'control', elemMods: { direction: 'prev' }, content: { block: 'button', mods: { direction: 'prev', type: 'carousel-horiz' } }},
+                                                { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }, content: { block: 'button', mods: { direction: 'next', type: 'carousel-horiz' } }},
                                                 {
                                                     elem: 'header',
                                                     content: 'Акции'
                                                 },
                                                 {
-                                                    elem: 'list',
-                                                    content: [
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'product-card',
-                                                                oldPrice: 65400
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'product-card',
-                                                                oldPrice: 5400
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'product-card',
-                                                                oldPrice: 15400
-                                                            }
+                                                    block: 'carousel',
+                                                    elem: 'viewport',
+                                                    content: {
+                                                        block: 'carousel',
+                                                        elem: 'items',
+                                                        content: {
+                                                            block: 'sale-stock',
+                                                            elem: 'list',
+                                                            content: [
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 65400
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 5400
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 15400
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 15400
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 15400
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 15400
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 15400
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 15400
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 15400
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: [{ block: 'carousel', elem: 'item' }],
+                                                                    content: {
+                                                                        block: 'product-card',
+                                                                        oldPrice: 15400
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
-                                                    ]
+                                                    }
                                                 }
                                             ]
                                         },
