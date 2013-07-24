@@ -11,9 +11,9 @@ BEM.DOM.decl('text-truncate', {
 
             var text = this.domElem.text();
 
-            if (text.length > this.params.letterLength) {
+            if (text.length > this.params.stringLength) {
 
-                this.domElem.html(text.substring(0, this.params.letterLength) + "&hellip;" );
+                this.domElem.html(text.substring(0, this.params.stringLength) + "&hellip;" );
             }
         }
 

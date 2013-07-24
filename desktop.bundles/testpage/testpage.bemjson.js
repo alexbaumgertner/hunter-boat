@@ -185,7 +185,7 @@
                             content: [
                                 {
                                     block: 'b-link',
-                                    mix: [ { block: 'text-truncate', js: { letterLength: 800 } } ],
+                                    mix: [ { block: 'text-truncate', js: { stringLength: 800 } } ],
                                     content: '<p></p><p class="MsoNormal" style="text-align: -webkit-auto; "><em style="background-color: rgba(255, 255, 255, 0);">Заказывал лодку Хантер 280 РТ через сайт. Доставили вовремя, как раз ко дню рождения, менеджеры молодцы – постоянно информируют о движении товара. Так держать – сразу же дозаказал дополнительные полы -передали в Питере (доставили в гостиницу).</em></p>'
                                 }
                             ]
