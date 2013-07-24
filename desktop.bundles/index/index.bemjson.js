@@ -429,94 +429,113 @@
                                                     block: 'carousel',
                                                     elem: 'viewport',
                                                     content: {
-                                                        block: 'carousel',
-                                                        elem: 'items',
-                                                        content: {
-                                                            block: 'sale-stock',
-                                                            elem: 'list',
-                                                            content: [
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 65400
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 5400
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 15400
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 15400
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 15400
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 15400
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 15400
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 15400
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 15400
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'item',
-                                                                    mix: [{ block: 'carousel', elem: 'item' }],
-                                                                    content: {
-                                                                        block: 'product-card',
-                                                                        oldPrice: 15400
-                                                                    }
+                                                        block: 'sale-stock',
+                                                        elem: 'list',
+                                                        mix: [
+                                                            { block: 'carousel', elem: 'items' }
+                                                        ],
+                                                        content: [
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 65400
                                                                 }
-                                                            ]
-                                                        }
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 5400
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 15400
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 15400
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 15400
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 15400
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 15400
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 15400
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 15400
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'item',
+                                                                mix: [
+                                                                    { block: 'carousel', elem: 'item' }
+                                                                ],
+                                                                content: {
+                                                                    block: 'product-card',
+                                                                    oldPrice: 15400
+                                                                }
+                                                            }
+                                                        ]
                                                     }
                                                 }
                                             ]
