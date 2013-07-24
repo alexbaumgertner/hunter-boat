@@ -3,6 +3,13 @@ block sale-stock {
     elem list, tag: 'ul'
 
 
-    elem item, tag: 'li'
+    elem item {
+        tag: 'li',
+        content: {
+            elem: 'item-inner',
+            content: applyNext()
+        }
+
+    }
 
 }
