@@ -265,30 +265,60 @@
                                                     elem: 'item',
                                                     content: [
                                                         {
-                                                            elem: 'header',
-                                                            mix: [
-                                                                { elem: 'title' }
-                                                            ],
-                                                            content: { block: 'b-link', content: 'Надувная лодка Хантер <em>360</em>' }
-                                                        },
-                                                        {
-                                                            elem: 'prices',
+                                                            elem: 'info-wrapper',
                                                             content: [
                                                                 {
-                                                                    elem: 'price-old',
-                                                                    content: {
-                                                                        block: 'price',
-                                                                        mods: { currency: 'empty'},
-                                                                        value: '2000'
-                                                                    }
+                                                                    elem: 'header',
+                                                                    mix: [
+                                                                        { elem: 'title' }
+                                                                    ],
+                                                                    content: { block: 'b-link', content: 'Надувная лодка Хантер <em>360</em>' }
                                                                 },
                                                                 {
-                                                                    elem: 'price-current',
-                                                                    content: {
-                                                                        block: 'price',
-                                                                        mods: { currency: 'dot-dash'},
-                                                                        value: '1500'
-                                                                    }
+                                                                    elem: 'prices',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'price-old',
+                                                                            content: {
+                                                                                block: 'price',
+                                                                                mods: { currency: 'empty'},
+                                                                                value: '2000'
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            elem: 'price-current',
+                                                                            content: {
+                                                                                block: 'price',
+                                                                                mods: { currency: 'dot-dash'},
+                                                                                value: '1500'
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'links',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'link-to-info',
+                                                                            content: {
+                                                                                block: 'b-link',
+                                                                                mix: [
+                                                                                    { block: 'products-promo-carousel', elem: 'text-inner' },
+                                                                                    { block: 'products-promo-carousel', elem: 'url' }
+                                                                                ],
+                                                                                content: 'Узнать все о Хантер 360',
+                                                                                url: 'initUrl'
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'menu',
+                                                                    content: [
+                                                                        { elem: 'menu-item', elemMods: { state: 'current' } },
+                                                                        { elem: 'menu-item' },
+                                                                        { elem: 'menu-item' }
+                                                                    ]
                                                                 }
                                                             ]
                                                         },
@@ -299,43 +329,6 @@
                                                                     elem: 'photo',
                                                                     src: 'img/catalog/boats/hunter_big.png'
                                                                 }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'links',
-                                                            content: [
-                                                                {
-                                                                    elem: 'link-to-info',
-                                                                    content: {
-                                                                        block: 'b-link',
-                                                                        mix: [
-                                                                            { block: 'products-promo-carousel', elem: 'text-inner' },
-                                                                            { block: 'products-promo-carousel', elem: 'url' }
-                                                                        ],
-                                                                        content: 'Узнать все о Хантер 360',
-                                                                        url: 'initUrl'
-                                                                    }
-                                                                },
-                                                                {
-                                                                    elem: 'link-to-order',
-                                                                    content: {
-                                                                        block: 'b-link',
-                                                                        mix: [
-                                                                            { block: 'products-promo-carousel', elem: 'sub-text' },
-                                                                            { block: 'products-promo-carousel', elem: 'url' }
-                                                                        ],
-                                                                        content: 'Заказать',
-                                                                        url: 'initUrl#order'
-                                                                    }
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'menu',
-                                                            content: [
-                                                                { elem: 'menu-item', elemMods: { state: 'current' } },
-                                                                { elem: 'menu-item' },
-                                                                { elem: 'menu-item' }
                                                             ]
                                                         }
                                                     ]

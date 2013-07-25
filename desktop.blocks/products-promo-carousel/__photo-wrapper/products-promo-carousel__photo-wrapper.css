@@ -1,9 +1,9 @@
 .products-promo-carousel__photo-wrapper
 {
     position: absolute;
-    top: 100px;
-    width: 560px;
-    left: 250px;
+    top: 55px;
+    width: 380px;
+    left: 420px;
     text-align: center;
-    height: 215px;
+    height: 195px;
 }

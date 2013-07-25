@@ -1,6 +1,4 @@
 .products-promo-carousel__prices
 {
-    position: absolute;
-    left: 423px;
-    top: 55px;
+    margin: 15px 0 0 0;
 }

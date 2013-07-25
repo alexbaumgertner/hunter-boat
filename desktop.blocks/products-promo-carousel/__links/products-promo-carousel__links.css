@@ -1,11 +1,9 @@
 .products-promo-carousel__links
 {
-    position: absolute;
-    top: 155px;
-    left: 120px;
     font-size: 14px;
     line-height: 21px;
     color: #0081bc;
+    margin: 10px 0 0 0;
 }
 
 .products-promo-carousel__links .b-link:hover {
