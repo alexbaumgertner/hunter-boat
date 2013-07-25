@@ -1,0 +1,8 @@
+.color-selector__selector_color_gray
+{
+    background: #a0a0a0;
+}
+
+.color-selector__selector_color_gray:hover {
+    background: #b8b3b3;
+}

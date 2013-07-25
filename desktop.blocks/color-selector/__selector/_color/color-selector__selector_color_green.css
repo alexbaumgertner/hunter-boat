@@ -1,0 +1,8 @@
+.color-selector__selector_color_green {
+    background: #377530;
+}
+
+.color-selector__selector_color_green:hover {
+    background: #36a929;
+}
+

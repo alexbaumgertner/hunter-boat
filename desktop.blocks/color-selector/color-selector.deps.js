@@ -6,7 +6,7 @@
         },
         {
             elem: 'selector',
-            mods: { color: [ '377530', 'a0a0a0' ], checked: ['yes', 'no'] }
+            mods: { color: [ 'green', 'gray' ], checked: ['yes', 'no'] }
         },
         
         {
