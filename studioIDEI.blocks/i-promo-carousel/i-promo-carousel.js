@@ -152,6 +152,16 @@
                     if (currSlide.url) {
                         _this.elem('url').attr('href', currSlide.url + '#order');
                     }
+                    
+                    
+                    // hide zero price value
+                    if (currSlide['price-old'] == 0) {
+                        _this.setMod(_this.elem('price-old'), 'visible', 'no');
+
+                    } else {
+                        _this.delMod(_this.elem('price-old'), 'visible');
+                    }
+                    
 
                     // show modifiable blocks
                     _this.modifyContentElems.fadeIn('slow')
