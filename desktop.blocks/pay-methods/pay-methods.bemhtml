@@ -1,0 +1,13 @@
+block pay-methods {
+
+    tag: 'ul'
+
+    elem method, tag: 'li'
+
+    elem method-img {
+        tag: 'img',
+        attrs: {
+            src: this.ctx.url
+        }
+    }
+}
