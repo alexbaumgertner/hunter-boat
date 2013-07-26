@@ -263,9 +263,11 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'left' },
+                                                            attrs: { style: 'width: 410px; margin: 0 0 0 55px;' },
                                                             content: [
                                                                 {
                                                                     elem: 'section-title',
+                                                                    attrs: { style: 'margin: 0 0 35px 0;' },
                                                                     content: [
                                                                         {
                                                                             elem: 'section-header',
@@ -292,10 +294,11 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'right' },
+                                                            attrs: { style: 'width: 300px; padding: 0 0 0 50px;' },
                                                             content: [
                                                                 {
                                                                     elem: 'section-title',
-                                                                    attrs: { style: 'margin: 0 0 0 30px;' },
+                                                                    attrs: { style: 'margin: 0 0 35px 30px;' },
                                                                     content: [
                                                                         {
                                                                             elem: 'section-header',
