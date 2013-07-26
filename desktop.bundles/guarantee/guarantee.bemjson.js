@@ -177,7 +177,6 @@
                             content: [
                                 {
                                     block: 'info-page',
-                                    mods: { theme: 'bottom-glow' },
                                     content: [
                                         {
                                             elem: 'header',

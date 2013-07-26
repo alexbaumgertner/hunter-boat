@@ -1,0 +1,14 @@
+.catalog-section-carousel_type_motors
+{
+}
+
+
+.catalog-section-carousel_type_motors .product-card .product-card__photo {
+    width: 227px;
+    height: auto;
+    max-height: none;
+}
+
+.catalog-section-carousel_type_motors .carousel__items {
+    height: 170px;
+}

@@ -1,5 +1,6 @@
 ({
     shouldDeps: [
-        { block: 'i-font', mods: { face: 'hermes' } }
+        { block: 'i-font', mods: { face: 'hermes' } },
+        { mods: {'type': ['previouslyViewedProducts', 'motors'] } }
     ]
 })
