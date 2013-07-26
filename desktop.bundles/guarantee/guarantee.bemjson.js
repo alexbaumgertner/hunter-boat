@@ -181,9 +181,9 @@
                                     content: [
                                         {
                                             elem: 'header',
-                                            mix: [
+                                            /*mix: [
                                                 { block: 'patternizer', js: { 'data-pattern': 'img/headers/About-company.jpg' } }
-                                            ],
+                                            ],*/
                                             content: 'Гарантия'
                                         },
                                         {
@@ -205,18 +205,22 @@
                                                                         },
                                                                         {
                                                                             elem: 'ul',
+                                                                            attrs: { style: 'margin: 25px 0 0 20px; width: 370px;' },
                                                                             elemMods: { 'list-type': 'blue-circle' },
                                                                             content: [
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'В ходе эксплуатации надувной лодки «Хантер» старайтесь не допускать механических повреждений ткани ПВХ, воздействия на поверхность ткани кислот и сильнодействующих растворителей.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Руководствуйтесь только паспортными данными при выборе подвесного лодочного мотора и не используйте лодку в режимах превышающих установленных производителем.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'При соблюдении всех рекомендаций, а так же бережном и внимательном отношении, надувные лодки «Хантер» прослужат Вам долгое время.'
                                                                                 }
                                                                             ]
@@ -228,12 +232,19 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'right' },
+                                                            attrs: {
+                                                                style: 'font-style: italic;  width: 310px;'
+                                                            },
                                                             content: [
                                                                 {
                                                                     block: 'b-text',
                                                                     content: [
                                                                         {
-                                                                            elem: 'img'
+                                                                            elem: 'img',
+                                                                            attrs: {
+                                                                                src: 'img/content/guarantee/ros-test.png',
+                                                                                style: 'margin: -70px 0 30px 0;'
+                                                                            }
                                                                         },
                                                                         {
                                                                             elem: 'p',
@@ -258,6 +269,9 @@
                                                     content: [
                                                         {
                                                             elem: 'section-title',
+                                                            attrs: {
+                                                                style: 'text-align:center;'
+                                                            },
                                                             content: [
                                                                 {
                                                                     elem: 'section-header',
@@ -267,7 +281,13 @@
                                                             ]
                                                         },
                                                         {
-                                                            block: 'guarantee-diagram'
+                                                            block: 'guarantee-diagram',
+                                                            content: {
+                                                                tag: 'img',
+                                                                attrs: {
+                                                                    src: 'img/content/guarantee/guarantee-diagram.png'
+                                                                }
+                                                            }
                                                         }
                                                     ]
                                                 },
@@ -281,7 +301,6 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'left' },
-                                                            attrs: { style: 'width: 580px;padding: 0;' },
                                                             content: [
                                                                 {
                                                                     block: 'b-text',
@@ -289,29 +308,38 @@
                                                                         {
                                                                             block: 'info-page',
                                                                             elem: 'section-title',
+                                                                            attrs: { style: 'margin: 0 0 0 22px;' },
                                                                             content: {
                                                                                 elem: 'section-header',
+                                                                                attrs: { style: 'font-size: 25px;' },
                                                                                 content: 'Гарантийное обслуживание'
                                                                             }
                                                                         },
                                                                         {
                                                                             elem: 'ul',
                                                                             elemMods: { 'list-type': 'blue-circle' },
+                                                                            attrs: {
+                                                                                style: 'margin: 40px 0 0 20px;'
+                                                                            },
                                                                             content: [
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Если обнаруженный дефект соответствует условиям гарантийных обязательств, то он будет устранён за счёт изготовителя, а если дефект был получен по вине покупателя, то ремонт будет произведен за его счет.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'В случае возникновения гарантийных обязательств доставка лодки от терминала транспортной компании в г.Санкт Петербург за счет производителя. Если случай признан не гарантийным транспортировка в сервис центр ООО «ПТК Хантер» осуществляется за счет покупателя.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Лодка и её комплектующие сдаются на ремонт в чистом и просушенном виде. Рассмотрения гарантийного случая и гарантийный ремонт осуществляется в установленные законом сроки.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'При наступлении гарантийного случая - незамедлительно свяжитесь для консультации с продавцом Вашей лодки. Отправка лодки на гарантийный ремонт осуществляется строго через уполномоченного продавца.'
                                                                                 }
                                                                             ]
@@ -323,53 +351,72 @@
                                                         {
                                                             elem: 'column',
                                                             elemMods: { position: 'right' },
+                                                            attrs: { style: 'padding: 0 0 0 40px;' },
                                                             content: [
                                                                 {
                                                                     elem: 'section-title',
+                                                                    attrs: {
+                                                                        style: 'margin: 0 0 0 20px;'
+                                                                    },
                                                                     content: [
                                                                         {
                                                                             elem: 'section-header',
-                                                                            content: 'Гарантия <span style="color: red;">не</span> распостраняется в случаях::'
+                                                                            attrs: { style: 'font-size: 25px;' },
+                                                                            content: 'Гарантия <span style="color: red;">не</span> распостраняется в случаях:'
                                                                         }
                                                                     ]
                                                                 },
                                                                 {
                                                                     block: 'b-text',
+                                                                    attrs: {
+                                                                        style: 'margin: 0 0 0 30px;'
+                                                                    },
                                                                     content: [
                                                                         {
                                                                             elem: 'ul',
                                                                             elemMods: { 'list-type': 'dash' },
+                                                                            attrs: {
+                                                                                style: 'font-size: 14px; line-height: 20px;'
+                                                                            },
                                                                             content: [
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Нарушения инструкции по уходу и эксплуатации.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Несчастного случая или аварии.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Использовании не оригинальных деталей и аксессуаров.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Вследствие самостоятельного ремонта или ремонт неспециализированным сервисом.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Механических повреждений, возникших в процессе эксплуатации надувной лодки или ее компонентов '
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Если изделие хранилось, было собрано или установлено неправильно, использовалось с нарушением норм эксплуатации или не по назначению'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Гарантия не распространяется на случайные повреждения, связанные со спуском лодки на воду, буксировкой, хранением и транспортировкой.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
+                                                                                    attrs: { style: 'line-height: 20px;' },
                                                                                     content: 'Гарантия не распространяется на естественный износ изделий и старение материала. '
                                                                                 }
                                                                             ]
@@ -380,6 +427,94 @@
                                                         }
                                                     ]
                                                 },
+                                                {
+                                                    elem: 'separator',
+                                                    content: { block: 'line', mods: { type: 'wavy-0081bd' } }
+                                                },
+                                                {
+                                                    elem: 'section',
+                                                    content: [
+                                                        {
+                                                            elem: 'info-box',
+                                                            attrs: {
+                                                                style: 'width: 560px;'
+                                                            },
+                                                            content: [
+                                                                {
+                                                                    elem: 'section-title',
+                                                                    attrs: { style: 'margin: 0 0 0 30px;' },
+                                                                    content: {
+                                                                        elem: 'section-header',
+                                                                        attrs: { style: 'font-size: 26px;' },
+                                                                        content: 'Обмен и возврат товара'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    block: 'b-text',
+                                                                    attrs: { style: 'margin: 30px 0 0 30px;' },
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'p',
+                                                                            content: 'При возникновении гарантийного случая обмен лодки на новую производится только при соблюдении следующих условий:'
+                                                                        },
+                                                                        {
+                                                                            elem: 'ol',
+                                                                            attrs: {
+                                                                                style: 'margin: 0;font-size: 14px;margin: 20px 0 0 0;'
+                                                                            },
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'li',
+                                                                                    attrs: { style: 'margin: 0 0 0 20px;line-height: 20px;' },
+                                                                                    content: 'Лодка не была на воде'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'li',
+                                                                                    attrs: { style: 'margin: 0 0 0 20px;line-height: 20px;' },
+                                                                                    content: 'Лодка и комплектующие не имеют никаких механических повреждений'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'li',
+                                                                                    attrs: { style: 'margin: 0 0 0 20px;line-height: 20px;' },
+                                                                                    content: 'Комплектация лодки соответствует паспорту изделия'
+                                                                                },
+                                                                                {
+                                                                                    elem: 'li',
+                                                                                    attrs: { style: 'margin: 0 0 0 20px;line-height: 20px;' },
+                                                                                    content: 'Лодка имеет не устранимый дефект'
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            elem: 'p',
+                                                                            attrs: { style: 'margin: 30px 0 20px 0;' },
+                                                                            content: 'Во всех остальных случаях осуществляется гарантийный ремонт.'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                            ]
+                                                        },
+                                                        {
+                                                            block: 'b-text',
+                                                            attrs: {
+                                                                style: 'margin: 50px auto 0;width: 410px;text-align: center;'
+                                                            },
+                                                            content: [
+                                                                {
+                                                                    elem: 'p',
+                                                                    content: 'При наступлении гарантийного случая Вы всегда можете обратиться к нам за помощью, квалифицированные менеджеры нашей компании всегда проконсультируют Вас.'
+                                                                },
+                                                                {
+                                                                    elem: 'p',
+                                                                    attrs: {
+                                                                        style: 'margin: 20px 0 0 0;font-size: 17px;'
+                                                                    },
+                                                                    content: 'пн-пт 9:00-18:00 &nbsp; &nbsp; +7 (812) 654-32-55'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
                                             ]
                                         }
                                     ]
