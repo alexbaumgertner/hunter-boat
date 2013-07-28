@@ -247,10 +247,12 @@
                                                                         },
                                                                         {
                                                                             elem: 'p',
+                                                                            attrs: { style: 'font-size: 13px;' },
                                                                             content: 'Перед началом эксплуатации надувной лодки «Хантер» рекомендуем Вам изучит паспорт изделия и проверить правильность заполнения данных о продаже.'
                                                                         },
                                                                         {
                                                                             elem: 'p',
+                                                                            attrs: { style: 'font-size: 13px;' },
                                                                             content: 'Гарантия на лодку распространяется только в том случае, если в паспорте указана дата продажи и стоит печать продавца.'
                                                                         }
                                                                     ]
@@ -269,24 +271,83 @@
                                                         {
                                                             elem: 'section-title',
                                                             attrs: {
-                                                                style: 'text-align:center;'
+                                                                style: 'text-align:center;margin: 0 0 45px 0;'
                                                             },
                                                             content: [
                                                                 {
                                                                     elem: 'section-header',
                                                                     attrs: { style: 'margin: 0;' },
-                                                                    content: 'Гарантийные сроки'
+                                                                    content: 'Гарантийные сроки:'
                                                                 }
                                                             ]
                                                         },
                                                         {
                                                             block: 'guarantee-diagram',
-                                                            content: {
-                                                                tag: 'img',
-                                                                attrs: {
-                                                                    src: 'img/content/guarantee/guarantee-diagram.png'
+                                                            content: [
+                                                                {
+                                                                    elem: 'picture',
+                                                                    tag: 'img',
+                                                                    attrs: {
+                                                                        src: 'img/content/guarantee/guarantee-diagram.png'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'legend',
+                                                                    attrs: { style: 'top: 10px;left:110px;' },
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'legend-header',
+                                                                            content: '60 месяцев'
+                                                                        },
+                                                                        {
+                                                                            elem: 'legend-text',
+                                                                            content: 'со дня продажи на материал ПВХ в случае образования естественных трещин, пористости и следов гниения.'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'legend',
+                                                                    attrs: { style: 'top: 10px;left: 615px;' },
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'legend-header',
+                                                                            content: '24 месяцев'
+                                                                        },
+                                                                        {
+                                                                            elem: 'legend-text',
+                                                                            content: 'на клееные швы надувной лодки в случае их расклеивания или травления.'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'legend',
+                                                                    attrs: { style: 'top: 140px;left: 615px;' },
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'legend-header',
+                                                                            content: '12 месяцев'
+                                                                        },
+                                                                        {
+                                                                            elem: 'legend-text',
+                                                                            content: 'на фурнитуру, включая клапана, уключины, фиксаторы весел, держатели банок, леерные и транспортировочные рамы — для всех моделей.'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'legend',
+                                                                    attrs: { style: 'top: 285px;left: 615px;' },
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'legend-header',
+                                                                            content: '6 месяцев'
+                                                                        },
+                                                                        {
+                                                                            elem: 'legend-text',
+                                                                            content: 'на транспортировочные сумки, полы, реечный настил, весла, банки и помпы для всех моделей надувных лодок «Хантер».'
+                                                                        }
+                                                                    ]
                                                                 }
-                                                            }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -380,42 +441,42 @@
                                                                             content: [
                                                                                 {
                                                                                     elem: 'li',
-                                                                                    attrs: { style: 'line-height: 20px;' },
+                                                                                    attrs: { style: 'line-height: 20px;margin: 0 0 15px 0;' },
                                                                                     content: 'Нарушения инструкции по уходу и эксплуатации.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
-                                                                                    attrs: { style: 'line-height: 20px;' },
+                                                                                    attrs: { style: 'line-height: 20px;margin: 0 0 15px 0;' },
                                                                                     content: 'Несчастного случая или аварии.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
-                                                                                    attrs: { style: 'line-height: 20px;' },
+                                                                                    attrs: { style: 'line-height: 20px;margin: 0 0 15px 0;' },
                                                                                     content: 'Использовании не оригинальных деталей и аксессуаров.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
-                                                                                    attrs: { style: 'line-height: 20px;' },
+                                                                                    attrs: { style: 'line-height: 20px;margin: 0 0 15px 0;' },
                                                                                     content: 'Вследствие самостоятельного ремонта или ремонт неспециализированным сервисом.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
-                                                                                    attrs: { style: 'line-height: 20px;' },
+                                                                                    attrs: { style: 'line-height: 20px;margin: 0 0 15px 0;' },
                                                                                     content: 'Механических повреждений, возникших в процессе эксплуатации надувной лодки или ее компонентов '
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
-                                                                                    attrs: { style: 'line-height: 20px;' },
+                                                                                    attrs: { style: 'line-height: 20px;margin: 0 0 15px 0;' },
                                                                                     content: 'Если изделие хранилось, было собрано или установлено неправильно, использовалось с нарушением норм эксплуатации или не по назначению'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
-                                                                                    attrs: { style: 'line-height: 20px;' },
+                                                                                    attrs: { style: 'line-height: 20px;margin: 0 0 15px 0;' },
                                                                                     content: 'Гарантия не распространяется на случайные повреждения, связанные со спуском лодки на воду, буксировкой, хранением и транспортировкой.'
                                                                                 },
                                                                                 {
                                                                                     elem: 'li',
-                                                                                    attrs: { style: 'line-height: 20px;' },
+                                                                                    attrs: { style: 'line-height: 20px;margin: 0 0 15px 0;' },
                                                                                     content: 'Гарантия не распространяется на естественный износ изделий и старение материала. '
                                                                                 }
                                                                             ]
@@ -459,7 +520,7 @@
                                                                         {
                                                                             elem: 'ol',
                                                                             attrs: {
-                                                                                style: 'margin: 0;font-size: 14px;margin: 20px 0 0 0;'
+                                                                                style: 'margin: 0;font-size: 14px;margin: 20px 0 0 0;font-weight: bold;'
                                                                             },
                                                                             content: [
                                                                                 {
@@ -496,7 +557,7 @@
                                                         {
                                                             block: 'b-text',
                                                             attrs: {
-                                                                style: 'margin: 50px auto 0;width: 410px;text-align: center;'
+                                                                style: 'margin: 50px auto 0;width: 490px;text-align: center;font-weight: bold;'
                                                             },
                                                             content: [
                                                                 {
