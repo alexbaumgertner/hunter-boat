@@ -180,9 +180,9 @@
                                     content: [
                                         {
                                             elem: 'header',
-                                            /*mix: [
-                                             { block: 'patternizer', js: { 'data-pattern': 'img/headers/About-company.jpg' } }
-                                             ],*/
+                                            mix: [
+                                             { block: 'patternizer', js: { 'data-pattern': 'img/headers/How-to-pay.jpg' } }
+                                             ],
                                             content: 'Способы оплаты'
                                         },
                                         {
@@ -255,6 +255,7 @@
                                                 },
                                                 {
                                                     elem: 'separator',
+                                                    attrs: { 'style': 'width: 940px;' },
                                                     content: { block: 'line', mods: { type: 'wavy-0081bd' } }
                                                 },
                                                 {
