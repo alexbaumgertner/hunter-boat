@@ -4,5 +4,10 @@
             block: 'i-promo-carousel'
         }
     ],
-    shouldDeps: []
+    shouldDeps: [
+        {
+            elem: 'price-old',
+            mods: { 'visible': 'no' }
+        }
+    ]
 })

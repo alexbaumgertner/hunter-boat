@@ -22,19 +22,20 @@
 
 .button_type_carousel-vert.button_direction_next
 {
-    background-position:  0 -86px;
+    background-position: 0 -61px
 }
 
 .button_type_carousel-vert.button_direction_next:hover {
-    background-position: 0 -104px;
+    background-position: 0 -73px;
 }
 
 
 .button_type_carousel-vert.button_direction_next:active {
 
-    background-position: 0 -122px;
+    background-position: 0 -85px;
 }
 
-.carousel__control_state_disabled .button_type_carousel-vert.button_direction_next {
-    background-position: 0 -70px;
+.carousel__control_state_disabled .button_type_carousel-vert.button_direction_next,
+.carousel__control_state_disabled .button_type_carousel-vert.button_direction_next:hover {
+    background-position: 0 -50px;
 }

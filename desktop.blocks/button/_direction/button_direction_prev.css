@@ -23,12 +23,12 @@
 
 .button_type_carousel-vert.button_direction_prev
 {
-    background-position: 0 -36px;
+    background-position: 0 -26px;
 }
 
 .button_type_carousel-vert.button_direction_prev:hover
 {
-    background-position: 0 -18px ;
+    background-position: 0 -13px ;
 }
 
 .button_type_carousel-vert.button_direction_prev:active
@@ -36,6 +36,8 @@
     background-position: 0 0;
 }
 
-.carousel__control_state_disabled .button_type_carousel-vert.button_direction_prev {
-    background-position:  0 -52px;
+.carousel__control_state_disabled .button_type_carousel-vert.button_direction_prev,
+.carousel__control_state_disabled .button_type_carousel-vert.button_direction_prev:hover {
+    background-position: 0 -39px;
+    cursor: default;
 }

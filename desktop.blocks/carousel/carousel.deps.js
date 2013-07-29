@@ -13,7 +13,7 @@
         },
         {
             block: 'button',
-            mods: { 'type': ['carousel-horiz', 'carousel-vert'], 'direction': ['prev', 'next'] }
+            mods: { 'type': ['carousel-horiz', 'carousel-vert'], 'direction': ['prev', 'next'], state: ['disabled'] }
         },
         {
             elem: 'control',
