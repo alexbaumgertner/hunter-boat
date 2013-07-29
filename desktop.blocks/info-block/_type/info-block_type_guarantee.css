@@ -1,0 +1,11 @@
+.info-block_type_guarantee
+{
+}
+
+
+.info-block_type_guarantee .info-block__photo
+{
+    background: url("../__photo/guarantee.png");
+    width: 59px;
+    height: 71px;
+}

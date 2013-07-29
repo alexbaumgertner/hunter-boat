@@ -1,0 +1,11 @@
+.info-block_type_how-to-pay
+{
+}
+
+
+.info-block_type_how-to-pay .info-block__photo
+{
+    background: url("../__photo/how-to-pay.png");
+    width: 66px;
+    height: 57px;
+}
