@@ -1,10 +1,14 @@
 .photoalbums-item__photo
 {
     width: 92px;
-    height: 64px;
+    height: 65px;
     border: 1px solid #b2b2b2;
     cursor: pointer;
     margin: 0 10px 7px 0;
+}
+
+.photoalbums-item__photo:hover {
+    border-color: #000;
 }
 
 .photoalbums-item__photo:nth-child(2n) {
