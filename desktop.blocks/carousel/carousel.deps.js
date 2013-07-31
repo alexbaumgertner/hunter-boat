@@ -17,7 +17,7 @@
         },
         {
             elem: 'control',
-            mods: { 'direction': ['prev', 'next'] }
+            mods: { 'direction': ['prev', 'next'], state: ['disabled'] }
         },
         {
             elems: ['viewport']
