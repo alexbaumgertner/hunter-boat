@@ -9,19 +9,24 @@ block photoalbum-thumb {
         tag: 'span'
     }
 
+    elem  'link' {
+        tag: 'a',
+        mix: [ { block: 'b-link' } ],
+        attrs: { href: this.ctx.url }
+    }
+
     elem title {
         content: (function(){
+         var titles = [
+             'Надувные лодки Хантер',
+             'Тест драйв лодки Хантер 280 Т',
+             'Фото-отчет с теста лодки Хантер 280 RT',
+             'Рыбалка с лодкой Хантер 280 Р',
+             'Долгожданная премьера лодка Хантер 320 Л',
+             'Надувная лодка Хантер 320 - зеленый цвет'
+         ];
 
-            var titles = [
-                'Надувные лодки Хантер',
-                'Тест драйв лодки Хантер 280 Т',
-                'Фото-отчет с теста лодки Хантер 280 RT',
-                'Рыбалка с лодкой Хантер 280 Р',
-                'Долгожданная премьера лодка Хантер 320 Л',
-                'Надувная лодка Хантер 320 - зеленый цвет'
-            ];
-
-            return { block: 'b-link', content: titles[(Math.floor(Math.random() * titles.length))], url: '/photoalbum.html' }
+         return titles[(Math.floor(Math.random() * titles.length))];
 
         }())
     }

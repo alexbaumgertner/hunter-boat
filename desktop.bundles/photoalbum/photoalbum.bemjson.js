@@ -181,7 +181,9 @@
                                     content: [
                                         {
                                             elem: 'header',
-                                            mix: [{ block: 'patternizer', js: { 'data-pattern': 'img/headers/Photos.jpg' } }],
+                                            mix: [
+                                                { block: 'patternizer', js: { 'data-pattern': 'img/headers/Photos.jpg' } }
+                                            ],
                                             content: 'Фотографии'
                                         },
                                         {
@@ -220,45 +222,48 @@
                                                                             { block: 'photoalbums-item', elem: 'photo-list' }
                                                                         ],
                                                                         content: (function () {
-                                                                                    var items = [];
+                                                                            var items = [];
 
-                                                                                    for (var i = 0; i < 15; i++) {
+                                                                            for (var i = 0; i < 15; i++) {
 
 
 
-                                                                                        items.push({
-                                                                                            elem: 'item',
-                                                                                            content: (function () {
-                                                                                                var content = [];
-                                                                                                var isCurr = i === 0;
+                                                                                items.push({
+                                                                                    elem: 'item',
+                                                                                    content: (function () {
+                                                                                        var content = [];
+                                                                                        var isCurr = i === 0;
 
-                                                                                                for (var j = 0; j < 2; j++) {
+                                                                                        for (var j = 0; j < 2; j++) {
 
-                                                                                                    content[j] = {
-                                                                                                        block: 'photoalbums-item',
-                                                                                                        elem: 'photo',
-                                                                                                        elemMods: (function () {
-                                                                                                            if (isCurr) { isCurr = false; return { state: 'current' };}
-                                                                                                        }()),
-                                                                                                        tag: 'img',
-                                                                                                        attrs: {
-                                                                                                            src: 'img/photoalbums/new-hunter-360/' + (i + 1 + j) + '.jpg',
-                                                                                                            rel: 'img/photoalbums/new-hunter-360/' + (i + 1 + j) + '.jpg',
-                                                                                                        }
+                                                                                            content[j] = {
+                                                                                                block: 'photoalbums-item',
+                                                                                                elem: 'photo',
+                                                                                                elemMods: (function () {
+                                                                                                    if (isCurr) {
+                                                                                                        isCurr = false;
+                                                                                                        return { state: 'current' };
                                                                                                     }
-
-
-
+                                                                                                }()),
+                                                                                                tag: 'img',
+                                                                                                attrs: {
+                                                                                                    src: 'img/photoalbums/new-hunter-360/' + (i + 1 + j) + '.jpg',
+                                                                                                    rel: 'img/photoalbums/new-hunter-360/' + (i + 1 + j) + '.jpg',
                                                                                                 }
+                                                                                            }
 
-                                                                                                return content;
-                                                                                            }())
-                                                                                        })
 
-                                                                                    }
 
-                                                                                    return items;
-                                                                                }())
+                                                                                        }
+
+                                                                                        return content;
+                                                                                    }())
+                                                                                })
+
+                                                                            }
+
+                                                                            return items;
+                                                                        }())
                                                                     }
                                                                 }
 
@@ -300,11 +305,17 @@
                                                                                 block: 'photoalbum-thumb',
                                                                                 content: [
                                                                                     {
-                                                                                        elem: 'photo'
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'title',
-                                                                                        content: { block: 'b-link', url: '/', content: 'Тест драйв лодки Хантер 280 Т' }
+                                                                                        elem: 'link',
+                                                                                        url: '/item.html',
+                                                                                        content: [
+                                                                                            {
+                                                                                                elem: 'photo'
+                                                                                            },
+                                                                                            {
+                                                                                                elem: 'title',
+                                                                                                content: 'Тест драйв лодки Хантер 280 Т'
+                                                                                            }
+                                                                                        ]
                                                                                     },
                                                                                     {
                                                                                         elem: 'counter',
