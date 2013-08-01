@@ -3,11 +3,11 @@
     font-size: 59px;
     line-height: 59px;
     font-weight: normal;
-    position: absolute;
-    left: 680px;
-    top: 175px;
+    position: relative;
+    left: 110px;
     width: 205px;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 
 .not-found__header em {

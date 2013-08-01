@@ -1,9 +1,14 @@
 .not-found
 {
-    position: relative;
     background: url("not-found__bg.jpg") no-repeat center 0;
-    width: 100%;
-    min-width: 962px;
+    position: relative;
     height: 909px;
     margin: 30px auto 0;
+    padding: 170px 0 0 0;
+    max-height: 740px!important;
+}
+
+
+body {
+    overflow-y: hidden;
 }
