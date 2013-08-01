@@ -1,3 +1,10 @@
 .photoalbums-item__content
 {
+    position: relative;
+}
+
+.photoalbums-item__content .content-loader {
+    position: absolute;
+    top: 199px;
+    left: 303px;
 }

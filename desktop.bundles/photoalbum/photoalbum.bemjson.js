@@ -200,6 +200,9 @@
                                                         elem: 'content',
                                                         content: [
                                                             {
+                                                                block: 'content-loader'
+                                                            },
+                                                            {
                                                                 elem: 'current',
                                                                 tag: 'img',
                                                                 attrs: {
