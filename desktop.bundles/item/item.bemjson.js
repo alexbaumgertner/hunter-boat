@@ -500,14 +500,19 @@
                                                     },
                                                     {
                                                         elem: 'photo-big',
-                                                        content: {
-                                                            elem: 'photo-big-img',
-                                                            url: 'img/catalog/boats/hunter_350_ML/04.jpg',
-                                                            js: {
-                                                                'green': 'img/catalog/boats/hunter_350_ML/04.jpg',
-                                                                'gray': 'img/catalog/boats/hunter_350_ML/05.jpg'
+                                                        content: [
+                                                            {
+                                                                block: 'content-loader'
+                                                            },
+                                                            {
+                                                                elem: 'photo-big-img',
+                                                                url: 'img/catalog/boats/hunter_350_ML/04.jpg',
+                                                                js: {
+                                                                    'green': 'img/catalog/boats/hunter_350_ML/04.jpg',
+                                                                    'gray': 'img/catalog/boats/hunter_350_ML/05.jpg'
+                                                                }
                                                             }
-                                                        }
+                                                        ]
                                                     },
                                                     {
                                                         elem: 'bottom-pad',
