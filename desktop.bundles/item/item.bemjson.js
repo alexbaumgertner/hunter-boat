@@ -504,8 +504,8 @@
                                                             elem: 'photo-big-img',
                                                             url: 'img/catalog/boats/hunter_350_ML/04.jpg',
                                                             js: {
-                                                                '377530': 'img/catalog/boats/hunter_350_ML/04.jpg',
-                                                                'a0a0a0': 'img/catalog/boats/hunter_350_ML/05.jpg'
+                                                                'green': 'img/catalog/boats/hunter_350_ML/04.jpg',
+                                                                'gray': 'img/catalog/boats/hunter_350_ML/05.jpg'
                                                             }
                                                         }
                                                     },
@@ -517,11 +517,11 @@
                                                                 content: {
                                                                     block: 'color-selector',
                                                                     content: [
-                                                                        { elem: 'selector', content: 'серая', value: 'a0a0a0', mix: [
-                                                                            { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: 'a0a0a0' } }
+                                                                        { elem: 'selector', content: 'серая', value: 'gray', mix: [
+                                                                            { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: 'gray' } }
                                                                         ] },
-                                                                        { elem: 'selector', content: 'зеленая', value: '377530', mix: [
-                                                                            { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: '377530' } }
+                                                                        { elem: 'selector', content: 'зеленая', value: 'green', mix: [
+                                                                            { block: 'catalog-item-card', elem: 'color-selector', elemMods: { color: 'green' } }
                                                                         ], checked: true  }
                                                                     ]
                                                                 }
