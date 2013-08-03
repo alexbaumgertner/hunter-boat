@@ -8,6 +8,38 @@ BEM.DOM.decl('catalog-item-card', {
     onSetMod : {
 
         'js' : function() {
+
+            var _this = this;
+
+            this.loader = this.findBlockInside('content-loader');
+
+            /* show init photo loading */
+            this.loader.setMod('state', 'processing');
+
+
+            /* bind events */
+
+            // set current photo
+            this.elem('photos-list-item').bind('click', function (e) {
+                _this.setMod($(e.currentTarget), 'state', 'current');
+            });
+
+            // set current color
+            this.findBlockInside('color-selector').on('setColor', function (event, data) {
+                _this.selectColor(data);
+            });
+
+            // add to cart
+            this.elem('buy-button').bind('click', function (e) {
+                e.preventDefault();
+                _this.setMod(_this.elem('added-in-cart'), 'visible', 'yes');
+            });
+
+            this.elem('photo-big-img').load(function () {
+                _this.loader.setMod('state', 'done');
+            });
+
+
             this.photoBigColors = this.elemParams('photo-big-img');
         }
 
@@ -22,6 +54,7 @@ BEM.DOM.decl('catalog-item-card', {
                     this.delMod(prev, 'state');
 
                     // set current big photo
+                    this.loader.setMod('state', 'processing');
                     this.elem('photo-big-img').attr('src', elem.attr('rel'));
                 }
             }
@@ -91,13 +124,14 @@ BEM.DOM.decl('catalog-item-card', {
     },
 
     selectColor: function (color) {
+        this.loader.setMod('state', 'processing');
         this.elem('photo-big-img').attr('src', this.photoBigColors[color]);
         this.elem('color-input').val(color);
     }
 
 }, {
 
-    live : function() {
+/*    live : function() {
 
         // set current photo
         this.liveBindTo('photos-list-item', 'click', function (e) {
@@ -114,7 +148,7 @@ BEM.DOM.decl('catalog-item-card', {
             e.preventDefault();
             this.setMod(this.elem('added-in-cart'), 'visible', 'yes');
         });
-    }
+    }*/
 
 });
 
