@@ -40,7 +40,7 @@
             this.showLoader.timeout && clearTimeout(this.showLoader.timeout);
 
             // clear style
-            this.domElem.css({
+            this.elem('icon').css({
                 '-webkit-transform': '',
                 '-moz-transform': '',
                 '-ms-transform': '',
@@ -61,7 +61,7 @@
 
             this.showLoader.timeout = setTimeout(function () {
                 // set css style
-                _this.domElem.css({
+                _this.elem('icon').css({
                     '-webkit-transform': 'rotateZ(' + angle + 'deg)',
                     '-moz-transform': 'rotateZ(' + angle + 'deg)',
                     '-ms-transform': 'rotateZ(' + angle + 'deg)',

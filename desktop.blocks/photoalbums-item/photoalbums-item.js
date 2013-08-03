@@ -1,60 +1,71 @@
 /** @requires BEM */
 /** @requires BEM.DOM */
 
-(function(undefined) {
+(function (undefined) {
 
-BEM.DOM.decl('photoalbums-item', {
+    BEM.DOM.decl('photoalbums-item', {
 
-    onSetMod : {
+        onSetMod: {
 
-        'js' : function() {
-            this.loader = this.findBlockInside('content-loader');
+            'js': function () {
+                var _this = this;
 
-            var _this = this;
+                this.loader = this.findBlockInside('content-loader');
 
-            this.elem('current').load(function() {
-                _this.loader.setMod('state', 'done');
-            });
+                /* show init photo loading */
+                this.loader.setMod('state', 'processing');
 
-        }
+                /* bind to photo choose */
+                this.elem('photo').click(function (e) {
+                    _this.setCurrFullPhoto(e);
+                });
 
-    },
+                /* bind to photo loaded */
+                this.elem('current').load(function () {
+                    _this.loader.setMod('state', 'done');
+                });
 
-    onElemSetMod: {
+            }
 
-        'photo': {
+        },
 
-            'state': {
+        onElemSetMod: {
 
-                'current': function (elem, modName, modVal, oldModVal) {
+            'photo': {
 
-                    if (oldModVal == 'disabled') return false;
+                'state': {
 
-                    var prev = this.elem('photo', 'state', 'current');
+                    'current': function (elem, modName, modVal, oldModVal) {
 
-                    this.delMod(prev, 'state');
+                        if (oldModVal == 'disabled') {
+                            return false;
+                        }
 
-                    this.loader.setMod('state', 'processing');
+                        var prev = this.elem('photo', 'state', 'current');
 
-                    this.elem('current').attr('src', elem.attr('rel'));
+                        this.delMod(prev, 'state');
 
+                        this.loader.setMod('state', 'processing');
+
+                        this.elem('current').attr('src', elem.attr('rel'));
+
+                    }
                 }
             }
+        },
+
+        setCurrFullPhoto: function (e) {
+            this.setMod($(e.currentTarget), 'state', 'current');
         }
-    },
 
-    setCurrFullPhoto: function (e) {
-        this.setMod(e.data.domElem, 'state', 'current');
-    }
+    }, {
 
-}, {
+/*        live: function () {
+            this.liveBindTo('photo', 'click', function (e) {
+                this.setCurrFullPhoto(e);
+            });
+        }*/
 
-    live : function() {
-        this.liveBindTo('photo', 'click', function (e) {
-            this.setCurrFullPhoto(e);
-        });
-    }
-
-});
+    });
 
 })();

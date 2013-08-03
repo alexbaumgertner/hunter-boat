@@ -5,6 +5,8 @@
 
 .photoalbums-item__content .content-loader {
     position: absolute;
-    top: 199px;
-    left: 303px;
+    left: 0;
+    top: 0;
+    width: 650px;
+    height: 442px;
 }
