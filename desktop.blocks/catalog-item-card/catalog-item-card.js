@@ -12,6 +12,7 @@ BEM.DOM.decl('catalog-item-card', {
             var _this = this;
 
             this.loader = this.findBlockInside('content-loader');
+            this.addToCartAnime  = this.findBlockOutside('b-page').findBlockInside('add-to-cart-anime');
 
             /* show init photo loading */
             this.loader.setMod('state', 'processing');
@@ -32,7 +33,7 @@ BEM.DOM.decl('catalog-item-card', {
             // add to cart
             this.elem('buy-button').bind('click', function (e) {
                 e.preventDefault();
-                _this.setMod(_this.elem('added-in-cart'), 'visible', 'yes');
+                _this.addToCartAnime.setMod('visible', 'yes');
             });
 
             this.elem('photo-big-img').load(function () {
@@ -58,70 +59,9 @@ BEM.DOM.decl('catalog-item-card', {
                     this.elem('photo-big-img').attr('src', elem.attr('rel'));
                 }
             }
-        },
-
-        'added-in-cart': {
-            'visible': {
-                'yes': function (elem, modName, modVal, oldModVal) {
-                    this.showAddToCartAnimation(elem);
-                },
-
-                'no': function (elem, modName, modVal, oldModVal) {
-                    this.afterCurrentEvent(
-                        function(){
-                            this.domElem.submit();
-                        }
-                    );
-
-                }
-            }
         }
     },
 
-    showAddToCartAnimation: function (elem) {
-        var _this = this;
-        var targetTopMargin = 16; // px
-        var beforeAnimateTime = 1000; // ms
-        var offsetBuyButton = this.elem('buy-button').offset();
-        var positionX = offsetBuyButton.left + (this.elem('buy-button').outerWidth() / 2) - (elem.outerWidth() / 2);
-        var positionY = offsetBuyButton.top + (this.elem('buy-button').outerHeight() / 2) - (elem.outerHeight() / 2);
-        var targetDOMElem = _this.findBlockOutside('b-page').findBlockInside('cart-info').elem('link');
-
-        // Show elem and..
-        elem.css(
-            {
-                left: positionX,
-                top: positionY
-            })
-            .promise()
-            // ..after show wait beforeAnimateTime, then animate.
-            .done(function(){
-                elem.delay(beforeAnimateTime)
-                    .animate({   left: targetDOMElem.offset().left,
-                        'top': targetDOMElem.offset().top - targetTopMargin,
-                        'width': 0,
-                        'height': 0,
-                        'padding': 0,
-                        'font-size': 0,
-                        'line-height': 0
-                    },
-
-                    // After animate hide this block..
-                    function () {
-
-                        _this.setMod(elem, 'visible', 'no');
-
-                        // .. and clear styles
-                        elem.css({
-                            'width': '',
-                            'height': '',
-                            'padding': '',
-                            'font-size': '',
-                            'line-height': ''
-                        });
-                    });
-            });
-    },
 
     selectColor: function (color) {
         this.loader.setMod('state', 'processing');

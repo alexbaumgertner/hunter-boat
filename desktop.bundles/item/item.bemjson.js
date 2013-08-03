@@ -9,12 +9,8 @@
     ],
     content: [
         {
-            block: 'catalog-item-card',
-            mods: { elem: 'added-in-cart' },
-            content: {
-                elem: 'added-in-cart',
-                content: 'Добавлено в заказ'
-            }
+            block: 'add-to-cart-anime',
+            content: 'Добавлено в заказ'
         },
         {
             block: 'header',
