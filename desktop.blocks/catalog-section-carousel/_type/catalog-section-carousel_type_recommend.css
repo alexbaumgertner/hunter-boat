@@ -1,0 +1,13 @@
+.catalog-section-carousel_type_recommend
+{
+        margin: 50px 0 70px 0;
+}
+
+.catalog-section-carousel_type_recommend .catalog-section-carousel__header {
+    margin-left: 30px;
+}
+
+.catalog-section-carousel_type_recommend .product-card__desc
+{
+    display: none;
+}

@@ -1,5 +1,10 @@
 .catalog-section-carousel_type_previouslyViewedProducts
 {
+    margin: 50px 0 70px 0;
+}
+
+.catalog-section-carousel_type_previouslyViewedProducts .catalog-section-carousel__header {
+    margin-left: 30px;
 }
 
 .catalog-section-carousel_type_previouslyViewedProducts .product-card {

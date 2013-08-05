@@ -1,0 +1,12 @@
+.catalog-section-carousel_type_accessories
+{
+        margin: 50px 0 70px 0;
+}
+
+.catalog-section-carousel_type_accessories .catalog-section-carousel__header {
+    margin-left: 30px;
+}
+
+.catalog-section-carousel_type_accessories .product-card__desc {
+    display: none;
+}
