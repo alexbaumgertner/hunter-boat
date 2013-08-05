@@ -26,7 +26,9 @@ BEM.DOM.decl('catalog-item-card', {
             });
 
             // set current color
-            this.findBlockInside('color-selector').on('setColor', function (event, data) {
+            this.colorSelector = this.findBlockInside('color-selector');
+
+            this.colorSelector && this.colorSelector.on('setColor', function (event, data) {
                 _this.selectColor(data);
             });
 
