@@ -285,11 +285,7 @@
                                                             block: 'guarantee-diagram',
                                                             content: [
                                                                 {
-                                                                    elem: 'picture',
-                                                                    tag: 'img',
-                                                                    attrs: {
-                                                                        src: 'img/content/guarantee/guarantee-diagram.png'
-                                                                    }
+                                                                    elem: 'picture'
                                                                 },
                                                                 {
                                                                     elem: 'legend',
