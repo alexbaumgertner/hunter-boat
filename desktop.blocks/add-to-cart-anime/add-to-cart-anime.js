@@ -72,9 +72,10 @@
 
     }, {
 
-/*        live: function () {
-            *//* ... *//*
-        }*/
+
+        live: function () {
+            /* init by catalog-card-item */
+        }
 
     });
 
