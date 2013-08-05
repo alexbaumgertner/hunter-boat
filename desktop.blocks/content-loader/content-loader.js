@@ -30,7 +30,7 @@
         showLoader: function () {
             this.domElem.show();
             var initAngle = 0; // deg
-            var step = -2; // deg
+            var step = 2; // deg, clockwise
             this.rotateLoader(initAngle, step);
         },
 
