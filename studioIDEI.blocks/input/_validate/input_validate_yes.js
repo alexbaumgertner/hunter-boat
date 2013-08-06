@@ -13,10 +13,12 @@
                 /* RexExp patterns */
                 this.validatePatterns = {
 
-                    'email': /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/
+                    'email': /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+                    'string': /.+/
                 };
 
                 this.currentPattern = this.validatePatterns[this.params.pattern];
+                this.minLength = this.params.minLength;
 
                 setTimeout(
                     function () {
@@ -42,6 +44,9 @@
         validate: function (val) {
 
             var isCompleted = this.currentPattern.test(val);
+
+            /* check min length */
+            this.minLength && ( val.length < this.minLength && (isCompleted = false) );
 
             if (isCompleted) {
                 this.setMod('completed', 'yes');

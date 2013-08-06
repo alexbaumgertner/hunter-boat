@@ -17,6 +17,16 @@ BEM.DOM.decl('call-request', {
                 'error': 'Ошибка запроса. <br> Попробуйте пожалуйста позже'
             };
 
+            /* find control elems */
+            this.reqiuredField = this.findBlockInside({ block: 'input', modName: 'name', modVal: 'phone' });
+            this.submitButton = this.findBlockInside({ block: 'button', modName: 'type', modVal: 'submit' });
+
+            this.submitButton.setMod('state', 'disabled');
+
+            this.reqiuredField.on('completed', function(event, data) {
+                _this.toggleSendButton(data)
+            });
+
             this.elem('closer').click(function () {
                 _this.setHidden();
             });
@@ -24,7 +34,6 @@ BEM.DOM.decl('call-request', {
 
         'status': function (modName, modVal, oldModVal) {
             this.elem('status').html(this.textStatuses[modVal]);
-
         }
 
     },
@@ -101,6 +110,14 @@ BEM.DOM.decl('call-request', {
             left: positionX,
             top: positionY
         });
+    },
+
+    toggleSendButton: function (data) {
+        if (data == 'yes') {
+            this.submitButton.setMod('state', 'enabled');
+        } else {
+            this.submitButton.setMod('state', 'disabled');
+        }
     }
 
 }, {

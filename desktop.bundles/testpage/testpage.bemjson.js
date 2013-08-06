@@ -304,7 +304,8 @@
                         elem: 'name',
                         content: {
                             block: 'input',
-                            mods: { reqiured: 'yes' },
+                            mods: { reqiured: 'yes', validate: 'yes' },
+                            js: { pattern: 'string' },
                             name: 'name',
                             placeholder: 'Ваше имя'
                         }
@@ -313,7 +314,8 @@
                         elem: 'phone',
                         content: {
                             block: 'input',
-                            mods: { reqiured: 'yes' },
+                            mods: { reqiured: 'yes', validate: 'yes', name: 'phone' },
+                            js: { pattern: 'string', minLength: 6 },
                             name: 'phone',
                             placeholder: 'Телефон'
                         }
