@@ -13,6 +13,8 @@ var _this;
 
                 _this = this;
 
+                this.loader = this.findBlockInside('content-loader');
+
                 this.showState = 'never';
 
                 this.elem('close').on('click', function () {
@@ -182,53 +184,12 @@ var _this;
 
 
         showLoader: function () {
-            this.elem('loader').show();
-            var initAngle = 0; // deg
-            var step = -2; // deg
-            _this.rotateLoader(initAngle, step);
+            this.loader.setMod('state', 'processing');
         },
 
 
         hideLoader: function () {
-            this.elem('loader').hide();
-            this.showLoader.timeout && clearTimeout(this.showLoader.timeout);
-            
-            // clear style
-            this.elem('loader').css({
-                '-webkit-transform': '',
-                '-moz-transform': '',
-                '-ms-transform': '',
-                '-o-transform': '',
-                'transform': ''
-            });
-        },
-        
-        
-        
-        /**
-         * Loop rotation 'loader' elem
-         * @param angle
-         * @param step
-         */
-        rotateLoader: function (angle, step) {
-            var _this = this;
-
-            this.showLoader.timeout = setTimeout(function () {
-                // set css style
-                _this.elem('loader').css({
-                        '-webkit-transform': 'rotateZ(' + angle + 'deg)',
-                        '-moz-transform': 'rotateZ(' + angle + 'deg)',
-                        '-ms-transform': 'rotateZ(' + angle + 'deg)',
-                        '-o-transform': 'rotateZ(' + angle + 'deg)',
-                        'transform': 'rotateZ(' + angle + 'deg)'
-                    })
-                    .promise()
-                    // after css applied
-                    .done(function () {
-                        // fire next step css style setter
-                        _this.rotateLoader(angle + step, step);
-                    });
-            }, 0);
+            _this.loader.setMod('state', 'done');
         },
 
         

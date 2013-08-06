@@ -1,4 +1,9 @@
 ({
+    mustDeps: [
+        {
+            block: 'content-loader'
+        }
+    ],
     shouldDeps: [
         { mods: { visibility: [ 'visible', 'hidden' ] } },
         {
