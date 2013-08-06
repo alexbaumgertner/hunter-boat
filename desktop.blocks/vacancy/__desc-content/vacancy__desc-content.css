@@ -3,3 +3,8 @@
     display: inline-block;
     width: 610px;
 }
+
+.vacancy__desc-content p {
+    margin-top: 0;
+}
+
