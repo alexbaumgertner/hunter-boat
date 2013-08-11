@@ -1,4 +1,6 @@
-.color-selector__selector_color_green {
+.color-selector__selector_color_green,
+.color-selector__selector_checked_yes.color-selector__selector_color_green:hover
+{
     background: #377530;
 }
 

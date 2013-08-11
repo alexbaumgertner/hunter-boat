@@ -8,17 +8,21 @@
         onSetMod: {
 
             'js': function () {
+            
                 var _this = this;
 
                 this.loader = this.findBlockInside('content-loader');
 
-                /* show init photo loading */
-                this.loader.setMod('state', 'processing');
 
                 /* bind to photo choose */
                 this.elem('photo').click(function (e) {
                     _this.setCurrFullPhoto(e);
                 });
+
+                /* show init photo loading */
+                this.loader.setMod('state', 'processing');
+
+                this.elem('current').width() > 0 && this.loader.setMod('state', 'done');
 
                 /* bind to photo loaded */
                 this.elem('current').load(function () {

@@ -9,13 +9,11 @@ BEM.DOM.decl('catalog-item-card', {
 
         'js' : function() {
 
+
             var _this = this;
 
             this.loader = this.findBlockInside('content-loader');
             this.addToCartAnime  = this.findBlockOutside('b-page').findBlockInside('add-to-cart-anime');
-
-            /* show init photo loading */
-            this.loader.setMod('state', 'processing');
 
 
             /* bind events */
@@ -38,10 +36,15 @@ BEM.DOM.decl('catalog-item-card', {
                 _this.addToCartAnime.setMod('visible', 'yes');
             });
 
+
+            /* show init photo loading */
+            this.loader.setMod('state', 'processing');
+
+            this.elem('photo-big-img').width() > 0 && this.loader.setMod('state', 'processing');
+
             this.elem('photo-big-img').load(function () {
                 _this.loader.setMod('state', 'done');
             });
-
 
             this.photoBigColors = this.elemParams('photo-big-img');
         }

@@ -11,4 +11,9 @@
     margin: 0 10px 0 0;
     cursor: pointer;
     border: 3px solid white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }

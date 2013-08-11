@@ -32,6 +32,9 @@ BEM.DOM.decl('color-selector', {
 
     onItemSelectorClick: function (e) {
         var item = e.data.domElem;
+
+        if (this.hasMod(item, 'checked', 'yes')) return false;
+
         this
             .setMod(item, 'checked', 'yes')
             .trigger('setColor', this.getMod(item, 'color'));

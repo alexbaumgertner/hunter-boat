@@ -9,7 +9,7 @@
 .product-card_type_withFullDesc .product-card__info
 {
     width: 345px;
-    margin-top: 0;
+    margin-top: 10px;
     white-space: normal;
     margin-left: 35px;
 }

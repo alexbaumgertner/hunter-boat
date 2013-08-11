@@ -9,3 +9,15 @@
     width: 228px;
     margin: 0 0 0 10px;
 }
+
+
+.product-card__link {
+    display: inline;
+    border-bottom: 1px solid #6ba5bf;
+}
+
+.product-card__link-wrapper:hover .product-card__link,
+.product-card__link:hover {
+    border-bottom: 1px solid #00aefe;
+}
+
