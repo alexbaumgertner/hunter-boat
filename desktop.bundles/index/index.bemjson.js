@@ -716,7 +716,8 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: 'reviews.html', content: 'Отзыв с Наступающим Новым 2013 годом' }
+                                                                                    mix: [ { block: 'text-truncate', js: { stringLength: 50 } } ],
+                                                                                    content: { block: 'b-link', url: 'reviews.html', content: 'Отзыв с Наступающим Новым 2013 годом Отзыв с Наступающим Новым 2013 годом' }
                                                                                 }
                                                                             ]
                                                                         },
