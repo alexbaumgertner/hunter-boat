@@ -1,6 +1,3 @@
-/** @requires BEM */
-/** @requires BEM.DOM */
-
 (function(undefined) {
 
 BEM.DOM.decl('catalog-item-card', {
@@ -39,23 +36,12 @@ BEM.DOM.decl('catalog-item-card', {
                 _this.addToCartAnime.setMod('visible', 'yes');
 
                 /* if addToCartAnime doesn't exist, then send request */
-                !_this.addToCartAnime && jQuery.post($(this.domElem).attr('action'), $(this.domElem).serialize(), function(response) {
-                    var response = JSON.parse(response);
-                    _this.cartInfo.elem('total-products').html(response['total-products']);
-                    _this.cartInfo.elem('total-price').html(response['total-price']);
-                    _this.cartInfo.domElem.css({ opacity: 1 });
-                });
+                !_this.addToCartAnime && _this.addToCart();
             });
 
 
             this.addToCartAnime.on('completed', function (event, data) {
-                /* send request */
-                jQuery.post($(this.domElem).attr('action'), $(this.domElem).serialize(), function(response) {
-/*                    var response = JSON.parse(response);
-                    _this.cartInfo.elem('total-products').html(response['total-products']);
-                    _this.cartInfo.elem('total-price').html(response['total-price']);*/
-                    _this.cartInfo.domElem.css({ opacity: 1 });
-                });
+                _this.addToCart();
             });
 
 
@@ -88,6 +74,19 @@ BEM.DOM.decl('catalog-item-card', {
                 }
             }
         }
+    },
+
+
+    addToCart: function () {
+        var _this = this;
+
+        jQuery.post(_this.domElem.attr('action'), _this.domElem.serialize(), function(response) {
+            var response = JSON.parse(response);
+            _this.cartInfo.elem('total-products').html(response['total-products']);
+            _this.cartInfo.elem('total-price').html(response['total-price']);
+            _this.cartInfo.domElem.css({ opacity: 1 });
+            _this.addToCartAnime.setMod('visible', 'no');
+        });
     },
 
 
