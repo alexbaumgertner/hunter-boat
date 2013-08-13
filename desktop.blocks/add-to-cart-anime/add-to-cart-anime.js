@@ -18,8 +18,16 @@
                 },
 
                 'no': function (elem, modName, modVal, oldModVal) {
+
                     this.afterCurrentEvent(function () {
-                        this.formToSubmit.domElem.submit();
+                        // Clear styles
+                        this.domElem.css({
+                            'width': '',
+                            'height': '',
+                            'padding': '',
+                            'font-size': '',
+                            'line-height': ''
+                        });
                     });
 
                 }
@@ -54,17 +62,7 @@
 
                         // After animate hide this block..
                         function () {
-
                             _this.setMod(elem, 'visible', 'no');
-
-                            // .. and clear styles
-                            elem.css({
-                                'width': '',
-                                'height': '',
-                                'padding': '',
-                                'font-size': '',
-                                'line-height': ''
-                            });
                         });
                 });
         }

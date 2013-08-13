@@ -14,6 +14,7 @@ BEM.DOM.decl('catalog-item-card', {
 
             this.loader = this.findBlockInside('content-loader');
             this.addToCartAnime  = this.findBlockOutside('b-page').findBlockInside('add-to-cart-anime');
+            this.cartInfo = this.findBlockOutside('b-page').findBlockInside('cart-info');
 
 
             /* bind events */
@@ -32,8 +33,21 @@ BEM.DOM.decl('catalog-item-card', {
 
             // add to cart
             this.elem('buy-button').bind('click', function (e) {
-                e.preventDefault();
                 _this.addToCartAnime.setMod('visible', 'yes');
+            });
+
+
+
+            // bind to submit
+            this.bindTo('submit', function (e) {
+                e.preventDefault();
+
+                jQuery.post($(this.domElem).attr('action'), $(this.domElem).serialize(), function(response) {
+                    var response = JSON.parse(response);
+                    _this.cartInfo.elem('total-products').html(response['total-products']);
+                    _this.cartInfo.elem('total-price').html(response['total-price']);
+                    _this.cartInfo.domElem.css({ opacity: 1 });
+                });
             });
 
 

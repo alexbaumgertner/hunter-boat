@@ -380,30 +380,36 @@
                                         }
                                     ]
                                 },
-                                {
-                                    block: 'info-block',
-                                    mods: { type: 'shipping' },
+                                { 
+                                    block: 'info-blocks', 
                                     content: [
-                                        {
-                                            elem: 'photo'
-                                        },
-                                        {
-                                            elem: 'title',
-                                            content: 'Доставка'
-                                        },
-                                        {
-                                            elem: 'desc',
-                                            content: 'Доставка транспортными компаниями и курьером почтой Росии'
-                                        },
-                                        {
-                                            elem: 'link',
-                                            content: {
-                                                block: 'b-link',
-                                                url: '/shipping/',
-                                                content: 'Подробнее о доставке'
+                                   
+                                    {
+                                        block: 'info-block',
+                                        mods: { type: 'shipping' },
+                                        content: [
+                                            {
+                                                elem: 'photo'
+                                            },
+                                            {
+                                                elem: 'title',
+                                                content: 'Доставка'
+                                            },
+                                            {
+                                                elem: 'desc',
+                                                content: 'Доставка транспортными компаниями и курьером почтой Росии'
+                                            },
+                                            {
+                                                elem: 'link',
+                                                content: {
+                                                    block: 'b-link',
+                                                    url: '/shipping/',
+                                                    content: 'Подробнее о доставке'
+                                                }
                                             }
-                                        }
-                                    ]
+                                        ]
+                                }
+                                    ] 
                                 }
                             ]
                         },
