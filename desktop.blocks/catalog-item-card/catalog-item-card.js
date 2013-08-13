@@ -13,7 +13,7 @@ BEM.DOM.decl('catalog-item-card', {
             var _this = this;
 
             this.loader = this.findBlockInside('content-loader');
-            this.addToCartAnime  = this.findBlockOutside('b-page').findBlockInside('add-to-cart-anime');
+            this.addToCartAnime = this.findBlockOutside('b-page').findBlockInside('add-to-cart-anime');
             this.cartInfo = this.findBlockOutside('b-page').findBlockInside('cart-info');
 
 
@@ -31,18 +31,15 @@ BEM.DOM.decl('catalog-item-card', {
                 _this.selectColor(data);
             });
 
-            // add to cart
-            this.elem('buy-button').bind('click', function (e) {
-                _this.addToCartAnime.setMod('visible', 'yes');
-            });
-
-
-
             // bind to submit
             this.bindTo('submit', function (e) {
                 e.preventDefault();
 
-                jQuery.post($(this.domElem).attr('action'), $(this.domElem).serialize(), function(response) {
+                /* show animate */
+                _this.addToCartAnime.setMod('visible', 'yes');
+
+                /* if addToCartAnime doesn't exist, then send request */
+                !_this.addToCartAnime && jQuery.post($(this.domElem).attr('action'), $(this.domElem).serialize(), function(response) {
                     var response = JSON.parse(response);
                     _this.cartInfo.elem('total-products').html(response['total-products']);
                     _this.cartInfo.elem('total-price').html(response['total-price']);
@@ -51,10 +48,22 @@ BEM.DOM.decl('catalog-item-card', {
             });
 
 
+            this.addToCartAnime.on('completed', function (event, data) {
+                /* send request */
+                jQuery.post($(this.domElem).attr('action'), $(this.domElem).serialize(), function(response) {
+/*                    var response = JSON.parse(response);
+                    _this.cartInfo.elem('total-products').html(response['total-products']);
+                    _this.cartInfo.elem('total-price').html(response['total-price']);*/
+                    _this.cartInfo.domElem.css({ opacity: 1 });
+                });
+            });
+
+
             /* show init photo loading */
             this.loader.setMod('state', 'processing');
 
-            this.elem('photo-big-img').width() > 0 && this.loader.setMod('state', 'processing');
+            /* if photo cached, done */
+            this.elem('photo-big-img').width() > 0 && this.loader.setMod('state', 'done');
 
             this.elem('photo-big-img').load(function () {
                 _this.loader.setMod('state', 'done');

@@ -62,6 +62,7 @@
 
                         // After animate hide this block..
                         function () {
+                            _this.trigger('completed', { elem: elem });
                             _this.setMod(elem, 'visible', 'no');
                         });
                 });
