@@ -1,5 +1,7 @@
 block order-list {
 
+    js: true
+
 
     elem header {
         tag: 'ul'
