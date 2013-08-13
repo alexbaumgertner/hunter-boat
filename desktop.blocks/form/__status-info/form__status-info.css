@@ -1,0 +1,9 @@
+.form__status-info
+{
+    font-size: 14px;
+    line-height: 17px;
+    font-style: italic;
+    width: 510px;
+    margin: 0 0 20px 0;
+    opacity: 0;
+}

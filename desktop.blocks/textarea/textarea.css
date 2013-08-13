@@ -12,6 +12,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: inherit;
+    resize: none; 
 }
 
 .textarea:focus {
