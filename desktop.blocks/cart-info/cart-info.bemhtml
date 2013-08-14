@@ -1,5 +1,7 @@
 block cart-info {
 
+    js: true
+
     elem link, tag: 'span'
 
     elem info, tag: 'span'
@@ -7,4 +9,7 @@ block cart-info {
     elem text, tag: 'span'
 
     elem total-price, tag: 'span'
+
+    elem total-products, tag: 'span'
+
 }

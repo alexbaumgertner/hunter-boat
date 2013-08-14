@@ -51,7 +51,7 @@
                                             content: [
                                                 {
                                                     elem: 'text',
-                                                    content: '3 товара на сумму'
+                                                    content: ['товаров', { elem: 'total-products', content: 3 },  'на сумму']
                                                 },
                                                 {
                                                     elem: 'total-price',

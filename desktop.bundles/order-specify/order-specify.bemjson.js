@@ -48,7 +48,7 @@
                                             content: [
                                                 {
                                                     elem: 'text',
-                                                    content: '3 товара на сумму'
+                                                    content: ['товаров', { elem: 'total-products', content: 3 },  'на сумму']
                                                 },
                                                 {
                                                     elem: 'total-price',
@@ -301,7 +301,7 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'delete',
-                                                                                    content: { block: 'button', mods: { type: 'delete' } }
+                                                                                    content: { block: 'button', attrs: { href: 'remove?orderid=7_gray' }, mods: { type: 'delete' } }
                                                                                 }
                                                                             ]
                                                                         },

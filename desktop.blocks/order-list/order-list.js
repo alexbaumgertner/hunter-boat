@@ -23,8 +23,7 @@ BEM.DOM.decl('order-list', {
             // delete item
             $.each(this.findBlocksInside('delete', 'button'), function (indexInArray, valueOfElement) {
                 valueOfElement.bindTo('click', function (e) {
-                    e.preventDefault();
-                    _this.deleteItem(_this._getItemByEvent(e));
+                    _this.deleteItem(e);
                 });
             });
 
@@ -32,24 +31,41 @@ BEM.DOM.decl('order-list', {
 
     },
 
-    deleteItem: function (item) {
-        item.remove();
-        this.updateTotalPrice();
+    deleteItem: function (e) {
+        e.preventDefault();
+
+        var _this = this;
+
+        var item = this._getItemByEvent(e);
+        var url = $(e.currentTarget).attr('href');
+
+        $.get(url, function () {
+            item.remove();
+            _this.updateTotalPrice();
+        });
+
+
 
     },
 
+    /**
+     * update total price
+     * trigger window event 'cart:update' with total price and count
+     */
     updateTotalPrice: function () {
         var _this = this;
         var totalPrice = 0;
+        var totalProducts = 0;
 
         $.each(this.findBlocksInside('counter', 'input'), function (indexInArray, valueOfElement) {
 
-            var count = valueOfElement.domElem.val();
+            var count = parseInt(valueOfElement.domElem.val(), 10);
             var item = valueOfElement.domElem.closest(_this.buildSelector('item'));
 
             var price = _this.findBlockInside(item, 'price').findElem('value').text().replace(/\D+/, '');
 
             totalPrice = totalPrice + count * price;
+            totalProducts = totalProducts + count;
         });
 
         var thinSpace = '&thinsp;';
@@ -57,6 +73,8 @@ BEM.DOM.decl('order-list', {
         var totalPriceFormatted =  (totalPrice + '').replace(every3DigitRE, '$1' + thinSpace);
 
         this.totalPriceValue.html(totalPriceFormatted);
+
+        $(window).trigger('cart:update', { totalPrice: totalPriceFormatted, totalProducts: totalProducts });
     },
 
 
