@@ -1,0 +1,8 @@
+.product-review__product-link {
+    color: #0d84bc;
+    margin: 0 0 0 20px;
+}
+
+.product-review__product-link:hover {
+    color: #00aefe;
+}

@@ -2,6 +2,19 @@
 .main-menu__item_state_current .b-link:hover {
     background-position: 0 -105px;
     color: #ffffff;
-    cursor: default;
     box-shadow: none;
+}
+
+.main-menu_currSection_view .main-menu__item_state_current .b-link .main-menu__item-selector {
+    border-bottom: 1px solid;
+}
+
+.main-menu_currSection_view .main-menu__item_state_current .b-link:hover .main-menu__item-selector {
+    border-bottom: none;
+}
+
+
+.main-menu_currSection_index .main-menu__item_state_current .b-link .main-menu__item-selector {
+    cursor: default;
+    border-bottom: none;
 }

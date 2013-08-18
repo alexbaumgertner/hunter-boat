@@ -14,6 +14,10 @@ BEM.DOM.decl('cart-info', {
             // event by order-list $(window).trigger('cart:update', { totalPrice: totalPrice, totalProducts: totalProducts });
 
             $(window).bind('cart:update', function(event, data) {
+            
+                 // show or hide block
+                 _this.domElem.css('opacity', data.totalProducts == 0 ? 0 : 1);
+            
                 _this.elem('total-products').html(data.totalProducts);
                 _this.totalPriceValue.html(data.totalPrice);
             });

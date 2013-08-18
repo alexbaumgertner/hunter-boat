@@ -37,13 +37,11 @@ BEM.DOM.decl('order-list', {
         var _this = this;
 
         var item = this._getItemByEvent(e);
-        var url = $(e.currentTarget).attr('href');
-
-        $.get(url, function () {
+        
+        $.get($(e.currentTarget).attr('href'), function () {
             item.remove();
             _this.updateTotalPrice();
         });
-
 
 
     },

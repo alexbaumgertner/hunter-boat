@@ -2,14 +2,14 @@
 {
 }
 
-.main-menu__item_section_catalog.main-menu__item_state_current  .main-menu__item-selector {
-    border-bottom: 1px solid #e88688;
+.main-menu__item_section_catalog .main-menu__item-selector {
+    border-bottom-color: #e88688;
 }
 
 
 .main-menu__item_section_catalog .b-link {
     padding: 8px 25px;
-    background: url("menu_items_catalog_bg_sprite.png") repeat-x;
+    background: url('../templates/menu_items_catalog_bg_sprite.png') repeat-x;
 }
 
 .main-menu__item_section_catalog .b-link
