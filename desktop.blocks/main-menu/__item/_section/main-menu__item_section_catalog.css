@@ -9,7 +9,7 @@
 
 .main-menu__item_section_catalog .b-link {
     padding: 8px 25px;
-    background: url('../templates/menu_items_catalog_bg_sprite.png') repeat-x;
+    background: url('menu_items_catalog_bg_sprite.png') repeat-x;
 }
 
 .main-menu__item_section_catalog .b-link

@@ -40,10 +40,10 @@ MAKE.decl('BundleNode', {
             'js',
             'css',
             'ie.css',
-/*           'ie6.css',
+            'ie6.css',
             'ie7.css',
             'ie8.css',
-            'ie9.css',*/
+            'ie9.css',
             'html'
         ];
     }
