@@ -15,7 +15,7 @@
 
 
 .input_type_text.error {
-    background: rgba(255, 0, 0, 0.15)!important;
+    border: 1px solid #e88688!important;
 }
 
 .input_type_text:focus {
