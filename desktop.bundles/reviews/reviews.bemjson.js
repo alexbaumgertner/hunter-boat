@@ -125,7 +125,7 @@
                                                     },
                                                     {
                                                         elem: 'item',
-                                                        name: 'Фотографии',
+                                                        name: 'Фотоальбомы',
                                                         url: '/photoalbums.html'
                                                     },
                                                     {
@@ -234,7 +234,8 @@
                                                                             content: [
                                                                                 { elem: 'author', content: names[(Math.floor(Math.random() * names.length))] },
 
-                                                                                { elem: 'author-address', content: cities[(Math.floor(Math.random() * cities.length))] }
+                                                                                { elem: 'author-address', content: cities[(Math.floor(Math.random() * cities.length))] },
+																				{ elem: 'product-link', content: 'ссылка на продукт' }
                                                                             ]
                                                                         },
                                                                         {

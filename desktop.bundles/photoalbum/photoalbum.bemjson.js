@@ -125,7 +125,7 @@
                                                     {
                                                         elem: 'item',
                                                         elemMods: { state: 'current' },
-                                                        name: 'Фотографии',
+                                                        name: 'Фотоальбомы',
                                                         url: '/photoalbums.html'
                                                     },
                                                     {
@@ -184,7 +184,7 @@
                                             mix: [
                                                 { block: 'patternizer', js: { 'data-pattern': 'img/headers/Photos.jpg' } }
                                             ],
-                                            content: 'Фотографии'
+                                            content: 'Фотоальбомы'
                                         },
                                         {
                                             elem: 'item',

@@ -108,6 +108,9 @@
                                         },
                                         {
                                             elem: 'section',
+                                            attrs: {
+                                                style: 'margin-right: 0;'
+                                            },
                                             content: {
                                                 elem: 'list',
                                                 content: [
@@ -128,7 +131,7 @@
                                                     },
                                                     {
                                                         elem: 'item',
-                                                        name: 'Фотографии',
+                                                        name: 'Фотоальбомы',
                                                         url: '/photoalbums.html'
                                                     },
                                                     {
@@ -402,6 +405,9 @@
                                                                 },
                                                                 {
                                                                     elem: 'item',
+                                                                    attrs: {
+                                                                        style: 'margin-right: 0;width: 210px;'
+                                                                    },
                                                                     content: 'Гарантия качества: сертифицированные лодки'
                                                                 }
                                                             ]

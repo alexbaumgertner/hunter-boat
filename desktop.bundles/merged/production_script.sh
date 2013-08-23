@@ -45,8 +45,8 @@ ls ../ | while read line; do
     cp ../$line/$line.html build;
 
     # replace css/js source url
-    cat build/$line.html | sed -i "s!_${line}\(\S*\).js!js/_merged\1.js!g" build/$line.html;
-    cat build/$line.html | sed -i "s!_${line}\(\S*\).css!css/_merged\1.css!g" build/$line.html;
+    cat build/$line.html | sed -i -e "s!_${line}\(\S*\).js!js/_merged\1.js!g" build/$line.html;
+    cat build/$line.html | sed -i -e "s!_${line}\(\S*\).css!css/_merged\1.css!g" build/$line.html;
 done;
 
 

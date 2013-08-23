@@ -132,7 +132,7 @@
                                                     },
                                                     {
                                                         elem: 'item',
-                                                        name: 'Фотографии',
+                                                        name: 'Фотоальбомы',
                                                         url: '/photoalbums.html'
                                                     },
                                                     {
