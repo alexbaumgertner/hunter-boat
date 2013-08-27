@@ -1,0 +1,10 @@
+.accessories-list__item
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 15px;
+}
+
+.accessories-list__item:first-child {
+    margin-left: 0;
+}

@@ -51,7 +51,7 @@
                                             content: [
                                                 {
                                                     elem: 'text',
-                                                    content: ['товаров', { elem: 'total-products', content: 3 },  'на сумму']
+                                                    content: ['товаров', { elem: 'total-products', content: 3 }, 'на сумму']
                                                 },
                                                 {
                                                     elem: 'total-price',
@@ -703,67 +703,96 @@
                                                         {
                                                             elem: 'info-content-item',
                                                             elemMods: { section: 'set' },
-                                                            content: {
-                                                                block: 'enumeration-list',
-                                                                mods: { spaceStyle: 'dotted' },
-                                                                content: [
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Лодка надувная Хантер 320 ЛК',
-                                                                        value: '1 шт'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Весло разборное',
-                                                                        value: '2 шт'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Помпа воздушная',
-                                                                        value: '1 шт'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Рюкзак + сумка на изделие',
-                                                                        value: '35 кг'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Паспорт на изделие',
-                                                                        value: '35 кг'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Ремкомплект',
-                                                                        value: '35 кг'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Банка (сидение)',
-                                                                        value: '3 человека'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Рюкзак + сумка на изделие',
-                                                                        value: '35 кг'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Паспорт на изделие',
-                                                                        value: '35 кг'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Ремкомплект',
-                                                                        value: '35 кг'
-                                                                    },
-                                                                    {
-                                                                        elem: 'item',
-                                                                        key: 'Банка (сидение)',
-                                                                        value: '3 человека'
-                                                                    }
-                                                                ]
-                                                            }
+                                                            content: [
+                                                                {
+                                                                    block: 'enumeration-list',
+                                                                    mods: { spaceStyle: 'dotted' },
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Лодка надувная Хантер 320 ЛК',
+                                                                            value: '1 шт'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Весло разборное',
+                                                                            value: '2 шт'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Помпа воздушная',
+                                                                            value: '1 шт'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Рюкзак + сумка на изделие',
+                                                                            value: '35 кг'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Паспорт на изделие',
+                                                                            value: '35 кг'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Ремкомплект',
+                                                                            value: '35 кг'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Банка (сидение)',
+                                                                            value: '3 человека'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Рюкзак + сумка на изделие',
+                                                                            value: '35 кг'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Паспорт на изделие',
+                                                                            value: '35 кг'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Ремкомплект',
+                                                                            value: '35 кг'
+                                                                        },
+                                                                        {
+                                                                            elem: 'item',
+                                                                            key: 'Банка (сидение)',
+                                                                            value: '3 человека'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    block: 'accessories-list',
+                                                                    content: [
+                                                                        (function () {
+                                                                            var content = [];
+
+                                                                            for (var i = 0; i < 5; i++) {
+                                                                                content.push({
+                                                                                    elem: 'item',
+                                                                                    content: {
+                                                                                        elem: 'item-link',
+                                                                                        tag: 'a',
+                                                                                        attrs: { href: '/' },
+                                                                                        content: {
+                                                                                            elem: 'item-photo',
+                                                                                            tag: 'img',
+                                                                                            attrs: {
+                                                                                                src: 'img/catalog/motors/place-holder_small.png'
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                });
+                                                                            }
+                                                                            return content;
+                                                                        }())
+                                                                    ]
+                                                                }
+                                                            ]
 
                                                         },
                                                         {
