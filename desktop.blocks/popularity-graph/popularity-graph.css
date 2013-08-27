@@ -2,4 +2,5 @@
 {
     position: relative;
     margin: 50px 0 65px -13px;
+	overflow: hidden;
 }

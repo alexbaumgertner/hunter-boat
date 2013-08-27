@@ -1,8 +1,8 @@
 .info-page__separator
 {
-    margin: 35px -25px 45px;
+    margin: 35px -0 45px;
 }
 
 .info-page__separator:nth-of-type(odd) {
-    margin: 60px -25px 40px;
+    margin: 60px 0 40px;
 }

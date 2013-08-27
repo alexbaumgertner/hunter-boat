@@ -24,7 +24,7 @@ BEM.DOM.decl({ block: 'map', modName: 'provider', modVal: 'yandex'}, {
 
                 window[apiCallback] = function () {
                     _this.onAPILoaded();
-                }
+                };
 
                 apiScript.src = 'http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU&&onload=' + apiCallback;
 
@@ -55,7 +55,7 @@ BEM.DOM.decl({ block: 'map', modName: 'provider', modVal: 'yandex'}, {
         // который откроется при нажатии на эту метку
         this.placemark = new ymaps.Placemark(this.params.placemark.center, {
             // Свойства
-            balloonContentBody  : this.params.placemark.content,
+            balloonContentBody  : this.params.placemark.content
         }, {
             // Опции
             preset: 'twirl#blueStretchyIcon' // иконка растягивается под контент

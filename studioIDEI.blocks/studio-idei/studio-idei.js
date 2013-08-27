@@ -15,19 +15,20 @@ BEM.DOM.decl('studio-idei', {
     },
 
     setCurrentImage: function() {
-        if (!localStorage) return;
+        if (window.localStorage) {
 
-        var currentImage = parseInt(localStorage.getItem('studio-idei-logo'));
+            var currentImage = parseInt(localStorage.getItem('studio-idei-logo'));
 
-        if (!currentImage || currentImage > this.logoImagesLength) {
-            currentImage = 1;
+            if (!currentImage || currentImage > this.logoImagesLength) {
+                currentImage = 1;
+            }
+
+            this.setMod(this.elem('logo'), 'image', currentImage);
+
+            currentImage = 1 + currentImage;
+
+            localStorage.setItem('studio-idei-logo', currentImage);
         }
-
-        this.setMod(this.elem('logo'), 'image', currentImage);
-
-        currentImage = 1 + currentImage;
-
-        localStorage.setItem('studio-idei-logo', currentImage);
     }
 
 }, {

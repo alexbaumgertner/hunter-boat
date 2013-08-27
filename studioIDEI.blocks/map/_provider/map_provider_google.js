@@ -28,7 +28,8 @@ BEM.DOM.decl({ block: 'map', modName: 'provider', modVal: 'google'}, {
 
             window[apiCallback] = function () {
                 _this.onAPILoaded();
-            }
+            };
+
             apiScript.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=" + apiCallback;
             document.getElementsByTagName('head')[0].appendChild(apiScript);
 
