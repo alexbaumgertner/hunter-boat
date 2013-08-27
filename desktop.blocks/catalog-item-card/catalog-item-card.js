@@ -16,9 +16,25 @@ BEM.DOM.decl('catalog-item-card', {
 
             /* bind events */
 
-            // set current photo
+            // set current photos-list-item
             this.elem('photos-list-item').bind('click', function (e) {
                 _this.setMod($(e.currentTarget), 'state', 'current');
+            });
+
+            // set current photo
+            this.elem('photos-list-photo').bind('click', function (e) {
+                // set current big photo
+                _this.loader.setMod('state', 'processing');
+                _this.elem('photo-big-img').attr('src', $(e.currentTarget).attr('rel'));
+
+
+                if (_this.hasMod($(e.currentTarget), 'section', 'color')) {
+                    _this.colorSelector.domElem.hide();
+
+                } else {
+                    _this.colorSelector.domElem.show();
+                }
+
             });
 
             // set current color
@@ -67,10 +83,6 @@ BEM.DOM.decl('catalog-item-card', {
                 'current': function (elem, modName, modVal, oldModVal) {
                     var prev = this.elem('photos-list-item', 'state', 'current');
                     this.delMod(prev, 'state');
-
-                    // set current big photo
-                    this.loader.setMod('state', 'processing');
-                    this.elem('photo-big-img').attr('src', elem.attr('rel'));
                 }
             }
         }

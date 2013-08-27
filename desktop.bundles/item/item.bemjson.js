@@ -479,18 +479,40 @@
                                                             {
                                                                 elem: 'photos-list-item',
                                                                 elemMods: { state: 'current' },
-                                                                url: 'img/catalog/boats/hunter_350_ML/01.jpg',
-                                                                attrs: { rel: 'img/catalog/boats/hunter_350_ML/01.jpg' }
+                                                                content: [
+                                                                    {
+                                                                        elem: 'photos-list-photo',
+                                                                        elemMods: { section: 'color' },
+                                                                        url: 'img/catalog/boats/hunter_350_ML/04.jpg',
+                                                                        attrs: { rel: 'img/catalog/boats/hunter_350_ML/04.jpg' }
+                                                                    },
+                                                                    {
+                                                                        elem: 'photos-list-photo',
+                                                                        elemMods: { section: 'color' },
+                                                                        url: 'img/catalog/boats/hunter_350_ML/011.jpg',
+                                                                        attrs: { rel: 'img/catalog/boats/hunter_350_ML/011.jpg' }
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 elem: 'photos-list-item',
-                                                                url: 'img/catalog/boats/hunter_350_ML/02.jpg',
-                                                                attrs: { rel: 'img/catalog/boats/hunter_350_ML/02.jpg' }
+                                                                content: [
+                                                                    {
+                                                                        elem: 'photos-list-photo',
+                                                                        url: 'img/catalog/boats/hunter_350_ML/02.jpg',
+                                                                        attrs: { rel: 'img/catalog/boats/hunter_350_ML/02.jpg' }
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 elem: 'photos-list-item',
-                                                                url: 'img/catalog/boats/hunter_350_ML/03.jpg',
-                                                                attrs: { rel: 'img/catalog/boats/hunter_350_ML/03.jpg' }
+                                                                content: [
+                                                                    {
+                                                                        elem: 'photos-list-photo',
+                                                                        url: 'img/catalog/boats/hunter_350_ML/03.jpg',
+                                                                        attrs: { rel: 'img/catalog/boats/hunter_350_ML/03.jpg' }
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
                                                     },

@@ -27,9 +27,22 @@ block catalog-item-card {
     }
 
     elem photos-list-item {
+        tag: 'span'
+    }
+
+    elem photos-list-photo {
         tag: 'img',
         attrs: {
-            src: this.ctx.url
+            src: this.ctx.url,
+            style: 'height: 55px;'
+        }
+    }
+
+    elem photos-list-photo, elemMod section color {
+        tag: 'img',
+        attrs: {
+            src: this.ctx.url,
+            style: 'height: 27px;'
         }
     }
 
