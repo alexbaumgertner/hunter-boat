@@ -27,12 +27,17 @@ BEM.DOM.decl('catalog-item-card', {
                 _this.loader.setMod('state', 'processing');
                 _this.elem('photo-big-img').attr('src', $(e.currentTarget).attr('rel'));
 
+                // show/hide color selector
+                var color = _this.getMod($(e.currentTarget), 'color');
 
-                if (_this.hasMod($(e.currentTarget), 'section', 'color')) {
-                    _this.colorSelector.domElem.hide();
+                if (color) {
+                    var selector = _this.colorSelector.elem('selector', 'color', color);
+
+                    _this.colorSelector.setMod(selector, 'checked', 'yes');
+                    _this.colorSelector.domElem.show();
 
                 } else {
-                    _this.colorSelector.domElem.show();
+                    _this.colorSelector.domElem.hide();
                 }
 
             });

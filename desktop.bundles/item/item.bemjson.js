@@ -484,7 +484,7 @@
                                                                         elem: 'photos-list-photo-wrapper',
                                                                         content: {
                                                                             elem: 'photos-list-photo',
-                                                                            elemMods: { section: 'color' },
+                                                                            elemMods: { section: 'color', color: 'green' },
                                                                             url: 'img/catalog/boats/hunter_350_ML/04.jpg',
                                                                             attrs: { rel: 'img/catalog/boats/hunter_350_ML/04.jpg' }
                                                                         }
@@ -493,7 +493,7 @@
                                                                         elem: 'photos-list-photo-wrapper',
                                                                         content: {
                                                                             elem: 'photos-list-photo',
-                                                                            elemMods: { section: 'color' },
+                                                                            elemMods: { section: 'color', color: 'gray' },
                                                                             url: 'img/catalog/boats/hunter_350_ML/05.jpg',
                                                                             attrs: { rel: 'img/catalog/boats/hunter_350_ML/05.jpg' }
                                                                         }
@@ -813,15 +813,11 @@
                                                                                 content.push({
                                                                                     elem: 'item',
                                                                                     content: {
-                                                                                        elem: 'item-link',
-                                                                                        tag: 'a',
-                                                                                        attrs: { href: '/' },
-                                                                                        content: {
-                                                                                            elem: 'item-photo',
-                                                                                            tag: 'img',
-                                                                                            attrs: {
-                                                                                                src: 'img/catalog/motors/place-holder_small.png'
-                                                                                            }
+                                                                                        elem: 'item-photo',
+                                                                                        tag: 'img',
+                                                                                        attrs: {
+                                                                                            src: 'img/catalog/motors/place-holder_small.png',
+                                                                                            title: 'аксессуар'
                                                                                         }
                                                                                     }
                                                                                 });

@@ -8,6 +8,7 @@ node_modules
 .bem/cache
 desktop.bundles/*/*.*
 desktop.bundles/merged/build
+
 !desktop.bundles/*/*.bemjson.js
 !desktop.bundles/merged/*.sh
 !desktop.bundles/merged/img/*
