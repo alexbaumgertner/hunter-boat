@@ -1,0 +1,16 @@
+.catalog-item-card__photos-list-photo-wrapper
+{
+    position: absolute;
+    width: 50%;
+    overflow-x: hidden;
+}
+
+.catalog-item-card__photos-list-photo-wrapper:nth-child(2n) {
+    right: 0;
+}
+
+
+.catalog-item-card__photos-list-photo-wrapper:nth-child(2n) .catalog-item-card__photos-list-photo_section_color {
+    position: relative;
+    left: -100%;
+}

@@ -6,6 +6,8 @@
     display: inline-block;
     min-width: 100px;
     vertical-align: middle;
+    height: 55px;
+    position: relative;
 }
 
 .catalog-item-card__photos-list-item:last-child {

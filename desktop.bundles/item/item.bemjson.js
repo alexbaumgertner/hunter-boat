@@ -481,16 +481,22 @@
                                                                 elemMods: { state: 'current' },
                                                                 content: [
                                                                     {
-                                                                        elem: 'photos-list-photo',
-                                                                        elemMods: { section: 'color' },
-                                                                        url: 'img/catalog/boats/hunter_350_ML/04.jpg',
-                                                                        attrs: { rel: 'img/catalog/boats/hunter_350_ML/04.jpg' }
+                                                                        elem: 'photos-list-photo-wrapper',
+                                                                        content: {
+                                                                            elem: 'photos-list-photo',
+                                                                            elemMods: { section: 'color' },
+                                                                            url: 'img/catalog/boats/hunter_350_ML/04.jpg',
+                                                                            attrs: { rel: 'img/catalog/boats/hunter_350_ML/04.jpg' }
+                                                                        }
                                                                     },
                                                                     {
-                                                                        elem: 'photos-list-photo',
-                                                                        elemMods: { section: 'color' },
-                                                                        url: 'img/catalog/boats/hunter_350_ML/011.jpg',
-                                                                        attrs: { rel: 'img/catalog/boats/hunter_350_ML/011.jpg' }
+                                                                        elem: 'photos-list-photo-wrapper',
+                                                                        content: {
+                                                                            elem: 'photos-list-photo',
+                                                                            elemMods: { section: 'color' },
+                                                                            url: 'img/catalog/boats/hunter_350_ML/05.jpg',
+                                                                            attrs: { rel: 'img/catalog/boats/hunter_350_ML/05.jpg' }
+                                                                        }
                                                                     }
                                                                 ]
                                                             },
@@ -511,6 +517,16 @@
                                                                         elem: 'photos-list-photo',
                                                                         url: 'img/catalog/boats/hunter_350_ML/03.jpg',
                                                                         attrs: { rel: 'img/catalog/boats/hunter_350_ML/03.jpg' }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                elem: 'photos-list-item',
+                                                                content: [
+                                                                    {
+                                                                        elem: 'photos-list-photo',
+                                                                        url: 'img/catalog/boats/hunter_350_ML/01.jpg',
+                                                                        attrs: { rel: 'img/catalog/boats/hunter_350_ML/01.jpg' }
                                                                     }
                                                                 ]
                                                             }
