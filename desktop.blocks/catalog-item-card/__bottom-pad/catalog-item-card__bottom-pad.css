@@ -1,4 +1,6 @@
 .catalog-item-card__bottom-pad
 {
     margin: 20px 0 0 0;
+    min-height: 22px;
+    position: relative;
 }

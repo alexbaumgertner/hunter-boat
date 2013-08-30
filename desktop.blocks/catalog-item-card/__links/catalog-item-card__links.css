@@ -1,5 +1,6 @@
 .catalog-item-card__links
 {
     font-size: 14px;
-    margin: 0 0 0 45px;
+    position: absolute;
+    left: 195px;
 }
