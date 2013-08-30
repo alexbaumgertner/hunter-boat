@@ -37,6 +37,7 @@
                             content: [
                                 {
                                     block: 'cart-info',
+                                    mods: { empty: 'yes' },
                                     content: [
                                         {
                                             elem: 'link',
@@ -51,7 +52,7 @@
                                             content: [
                                                 {
                                                     elem: 'text',
-                                                    content: ['товаров', { elem: 'total-products', content: 3 }, 'на сумму']
+                                                    content: [' товаров ', { elem: 'total-products', content: 3 }, '&nbsp; на сумму']
                                                 },
                                                 {
                                                     elem: 'total-price',

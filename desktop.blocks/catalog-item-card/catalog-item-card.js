@@ -101,7 +101,7 @@ BEM.DOM.decl('catalog-item-card', {
             var response = JSON.parse(response);
             _this.cartInfo.elem('total-products').html(response['total-products']);
             _this.cartInfo.elem('total-price').html(response['total-price']);
-            _this.cartInfo.domElem.css({ opacity: 1 });
+            _this.cartInfo.delMod('empty');
             _this.addToCartAnime.setMod('visible', 'no');
         });
     },
