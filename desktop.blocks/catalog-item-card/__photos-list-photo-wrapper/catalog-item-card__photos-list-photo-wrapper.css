@@ -6,7 +6,7 @@
 }
 
 .catalog-item-card__photos-list-photo-wrapper:nth-child(2n) {
-    right: 0;
+    right: -1px;
 }
 
 

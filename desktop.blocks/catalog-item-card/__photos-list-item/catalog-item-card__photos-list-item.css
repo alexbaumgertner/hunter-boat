@@ -2,9 +2,8 @@
 {
     margin: 0 10px 0 0;
     cursor: pointer;
-    max-width: 110px;
+    width: 110px;
     display: inline-block;
-    min-width: 100px;
     vertical-align: middle;
     height: 55px;
     position: relative;
