@@ -1,8 +1,12 @@
 block pay-methods {
 
+    js: true,
+
     tag: 'ul'
 
     elem method, tag: 'li'
+
+    elem method-more, tag: 'li'
 
     elem method-img {
         tag: 'img',
