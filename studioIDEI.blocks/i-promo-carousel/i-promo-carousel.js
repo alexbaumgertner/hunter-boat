@@ -150,7 +150,7 @@
 
                     // update url
                     if (currSlide.url) {
-                        _this.elem('url').attr('href', currSlide.url + '#order');
+                        _this.elem('url').attr('href', currSlide.url);
                     }
                     
                     
