@@ -4,9 +4,15 @@
     width: 80%;
 }
 
+.pay-methods__more-link_state_current:after {
+    content: '↓';
+    position: relative;
+    left: 5px;
+    top: -1px;
+}
+
 .pay-methods__more-link_state_current .b-link {
     color: #000000!important;
-    font-weight: bold;
     cursor: default;
 }
 
