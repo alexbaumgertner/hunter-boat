@@ -8,11 +8,11 @@
 }
 
 
-.order-list__item-qualif .color-selector__selector_color_377530:hover {
+.order-list__item-qualif .color-selector__selector_color_green:hover {
     background: #377530;
 }
 
-.order-list__item-qualif .color-selector__selector_color_a0a0a0:hover {
+.order-list__item-qualif .color-selector__selector_color_gray:hover {
     background: #a0a0a0;
 }
 

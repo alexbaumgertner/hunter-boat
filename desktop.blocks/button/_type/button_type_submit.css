@@ -15,6 +15,10 @@
     text-decoration: none;
 }
 
+a.button_type_submit {
+    padding: 7px 15px 10px 35px;
+}
+
 .button_type_submit:hover {
     background-position: 0 -97px;
 }

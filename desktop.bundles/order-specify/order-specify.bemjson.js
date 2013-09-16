@@ -283,8 +283,7 @@
                                                                                             content: {
                                                                                                 block: 'color-selector',
                                                                                                 content: [
-                                                                                                    { elem: 'selector', content: 'серая', value: 'a0a0a0', checked: true },
-                                                                                                    { elem: 'selector', content: 'зеленая', value: '377530' }
+                                                                                                    { elem: 'selector', content: 'серая', value: 'gray' }
                                                                                                 ]
                                                                                             }
 
@@ -320,7 +319,14 @@
                                                                                             content: { block: 'b-link', content: 'Лодочный мотор HDX T 3.6 BMS', url: '' }
                                                                                         },
                                                                                         {
-                                                                                            elem: 'item-qualif'
+                                                                                            elem: 'item-qualif',
+                                                                                            content: {
+                                                                                                block: 'color-selector',
+                                                                                                content: [
+                                                                                                    { elem: 'selector', content: 'зеленая', value: 'green' }
+                                                                                                ]
+                                                                                            }
+
                                                                                         }
                                                                                     ]
                                                                                 },
