@@ -10,7 +10,10 @@
     position: relative;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: inherit;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    word-spacing: -1;
 }
 
 
