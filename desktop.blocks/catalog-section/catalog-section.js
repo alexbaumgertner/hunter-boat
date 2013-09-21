@@ -8,7 +8,10 @@ BEM.DOM.decl('catalog-section', {
     onSetMod : {
 
         'js' : function() {
-            this.elem('header-line').width(this.elem('header').width() - this.elem('header-inner').outerWidth(true));
+            var headerLineWidth = Math.floor(this.elem('header').width() - this.elem('header-inner').outerWidth(true));
+
+            this.elem('header-line')
+                .width(headerLineWidth);
         }
 
     }
