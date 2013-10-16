@@ -26,4 +26,11 @@ block products-promo-carousel {
             alt: this.ctx.src
         }
     }
+
+    elem url {
+        tag: 'a',
+        attrs: {
+            href: this.ctx.url
+        }
+    }
 }

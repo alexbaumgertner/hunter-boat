@@ -3,28 +3,31 @@
 
 (function(undefined) {
 
-BEM.DOM.decl('price', {
+                BEM.DOM.decl('price', {
 
-    onSetMod : {
+                    onSetMod : {
 
-        'js' : function() {
+                        'js' : function() {
 
-            var thinSpace = '&thinsp;';
-            var every3DigitRE = /(\d)(?=(\d{3})+(?!\d))/g;
-            var formattedValue =  this.elem('value').html() && this.elem('value').html().replace(every3DigitRE, '$1' + thinSpace);
+                            var thinSpace = '&thinsp;';
+                            var every3DigitRE = /(\d)(?=(\d{3})+(?!\d))/g;
+                            var formattedValue =  this.elem('value').html() &&
+                                this.elem('value')
+                                    .html()
+                                    .replace(every3DigitRE, '$1' + thinSpace);
 
-            this.elem('value').html(formattedValue);
-        }
+                            this.elem('value').html(formattedValue);
+                        }
 
-    }
+                    }
 
-}, {
+                }, {
 
-/*    live : function() {
+                /*    live : function() {
 
-    }
-*/
+                    }
+                */
 
-});
+                });
 
 })();

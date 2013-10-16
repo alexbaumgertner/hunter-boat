@@ -326,8 +326,14 @@
                                                             elem: 'photo-wrapper',
                                                             content: [
                                                                 {
-                                                                    elem: 'photo',
-                                                                    src: 'img/catalog/boats/hunter_big.png'
+                                                                    elem: 'url',
+                                                                    url: 'initUrl',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'photo',
+                                                                            src: 'img/catalog/boats/hunter_big.png'
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         }
@@ -613,56 +619,25 @@
                                                                         content: [
                                                                             {
                                                                                 elem: 'list',
-                                                                                content: [
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        content: {
-                                                                                            block: 'product-card',
-                                                                                            src: 'img/catalog/boats/01.png'
-                                                                                        }
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        content: {
-                                                                                            block: 'product-card',
-                                                                                            src: 'img/catalog/boats/02.png'
-                                                                                        }
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        content: {
-                                                                                            block: 'product-card',
-                                                                                            src: 'img/catalog/boats/03.png'
-                                                                                        }
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        content: {
-                                                                                            block: 'product-card',
-                                                                                            src: 'img/catalog/boats/04.png'
-                                                                                        }
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        content: {
-                                                                                            block: 'product-card',
-                                                                                            src: 'img/catalog/boats/05.png'
-                                                                                        }
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'item',
-                                                                                        content: {
-                                                                                            elem: 'link-to-all',
-                                                                                            content: {
-                                                                                                block: 'b-link',
-                                                                                                mods: { pseudo: 'yes' },
-                                                                                                url: '/catalog/news',
-                                                                                                content: 'Показать все новинки'
-                                                                                            }
-                                                                                        }
+                                                                                content: (function () {
+                                                                                    var content = [];
 
+                                                                                    for (var i=0; i<10; i++ ) {
+
+                                                                                        content.push({
+
+                                                                                            elem: 'item',
+                                                                                            tag: 'img',
+                                                                                            attrs: {
+                                                                                                src: i + '.png'
+                                                                                            }
+
+                                                                                        });
                                                                                     }
-                                                                                ]
+
+                                                                                    return content;
+
+                                                                                }())
                                                                             }
                                                                         ]
                                                                     }
