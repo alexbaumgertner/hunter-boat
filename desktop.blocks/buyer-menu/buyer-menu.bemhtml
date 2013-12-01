@@ -8,7 +8,7 @@ block buyer-menu {
         content: {
             block: 'b-link',
             content: this.ctx.name,
-            url: this.ctx.url
+            url:  'http://localhost:8080/desktop.bundles/' + this.ctx.url.match(/\/(\S+)\./)[1]  + this.ctx.url
         }
     }
 
