@@ -1,8 +1,0 @@
-.dealers__item
-{
-    margin: 0 0 20px 0;
-}
-
-.dealers__item:last-child {
-    margin-bottom: 0;
-}

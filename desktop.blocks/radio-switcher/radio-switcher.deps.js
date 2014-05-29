@@ -1,7 +1,0 @@
-({
-    shouldDeps: [
-        {
-            block: 'tabbed-pane'
-        }
-    ]
-})

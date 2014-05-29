@@ -1,8 +1,0 @@
-.faq__item
-{
-    margin: 0 0 30px 0;
-}
-
-.faq__item:last-child {
-    margin-bottom: 0;
-}

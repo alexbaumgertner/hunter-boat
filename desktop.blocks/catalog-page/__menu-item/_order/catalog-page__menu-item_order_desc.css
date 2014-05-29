@@ -1,7 +1,0 @@
-.catalog-page__menu-item_order_desc
-{
-}
-
-.catalog-page__menu-item_order_desc .catalog-page__menu-item-title:after {
-    content: '↓';
-}

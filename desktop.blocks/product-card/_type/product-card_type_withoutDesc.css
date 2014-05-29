@@ -1,9 +1,0 @@
-.product-card_type_withoutDesc
-{
-    padding: 0;
-    width: 195px;
-}
-
-.product-card_type_withoutDesc .product-card__icon {
-    display: none;
-}

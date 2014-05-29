@@ -1,9 +1,0 @@
-.finished-products-counter__separator
-{
-    background: url("finished-products-counter__separator.png") no-repeat 0 bottom;
-    width: 5px;
-    height: 8px;
-    display: inline-block;
-    position: relative;
-    margin: 60px 2px 0 0;
-}
