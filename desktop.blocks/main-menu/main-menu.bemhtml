@@ -9,7 +9,7 @@ block main-menu {
         tag: 'li',
         content: {
            block: 'b-link',
-           url:  'http://localhost:8080/desktop.bundles/' + this.ctx.url.match(/\/(\S+)\./)[1]  + this.ctx.url,
+           url:  this.ctx.url.split('/')[1],
            content: {
                 block: 'main-menu',
                 elem: 'item-selector',
