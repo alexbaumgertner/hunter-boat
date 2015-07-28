@@ -1,0 +1,10 @@
+block('ya-site-results-wrapper')(
+    js()(true),
+    content()({
+        block: 'ya-site-results',
+        attrs: {
+            id: 'ya-site-results',
+            onclick: 'return {tld: \'ru\', language: \'ru\', encoding: \'\', htmlcss: \'1.x\', updatehash: true}'
+        }
+    })
+);

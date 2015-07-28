@@ -1,0 +1,4 @@
+block('article-anounce')(
+    elem('date').tag()('span'),
+    elem('title').tag()('span')
+);

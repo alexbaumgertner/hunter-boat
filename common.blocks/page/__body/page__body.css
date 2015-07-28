@@ -1,0 +1,36 @@
+.page__body
+{
+    margin: 0;
+    padding: 0;
+    background: url("body__background.png") no-repeat center 205px #e2f6ff;
+    font-family: Arial, sans-serif;
+    min-width: 1002px;
+}
+
+/* global styles (begin) */
+
+html {
+    background: #000;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent !important;
+}
+input:focus::-moz-placeholder {
+    color: transparent !important;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent !important;
+}
+textarea:focus::-moz-placeholder {
+    color: transparent !important;
+}
+
+/* global styles (end) */

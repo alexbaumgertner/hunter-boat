@@ -1,71 +1,52 @@
-block price {
+block('price')(
+    tag()('span'),
+    js()(true),
+    elem('value').tag()('span'),
+    elem('currency').tag()('span'),
+    mod('currency', 'empty').content()(function() {
+        return [{
+            elem: 'value',
+            content: this.ctx.value
+        }];
+    }),
+    mod('currency', 'dot-dash').content()(function() {
+        return [{
+            elem: 'value',
+            content: this.ctx.value
+        }, {
+            elem: 'currency',
+            content: '.-'
+        }];
+    }),
+    mod('currency', 'RUB').content()(function() {
+        return [{
+            elem: 'value',
+            content: this.ctx.value
+        }, {
+            elem: 'currency',
+            mix: [{
+                block: 'i-font',
+                mods: {
+                    face: 'ALSRubl'
+                }
+            }],
+            content: 'Р'
+        }];
+    }),
+    mod('currency', 'USD').content()(function() {
+        return [{
+            elem: 'currency',
+            content: '$'
+        }, {
+            elem: 'value',
+            content: this.ctx.value
+        }];
+    })
+);
 
-    tag: 'span',
-    js: true
-
-    elem value {
-        tag: 'span'
-    }
-
-    elem currency {
-        tag: 'span'
-    }
-
-
-    mod currency empty {
-        content: [
-            {
-                elem: 'value',
-                content: this.ctx.value
-            }
-        ]
-    }
-
-
-    mod currency 'dot-dash' {
-        content: [
-            {
-                elem: 'value',
-                content: this.ctx.value
-            },
-            {
-                elem: 'currency',
-                content: '.-'
-            }
-        ]
-    }
-
-
-    mod currency RUB {
-        content: [
-            {
-                elem: 'value',
-                content: this.ctx.value
-            },
-            {
-                elem: 'currency',
-                mix: [ { block: 'i-font', mods: { face: 'ALSRubl' } } ],
-                content: 'Р' /* russian big P */
-            }
-        ]
-    }
-
-
-    mod currency USD {
-        content: [
-            {
-                elem: 'currency',
-                content: '$'
-            },
-            {
-                elem: 'value',
-                content: this.ctx.value
-            }
-        ]
-    }
-}
-
-block price, !this.ctx.value {
-    tag: '',
-    content: ''
-}
+block('price').match(function() {
+    return !this.ctx.value;
+})(
+    tag()(''),
+    content()('')
+);

@@ -1,0 +1,6 @@
+.catalog-menu__item_state_current,
+.catalog-menu__item_state_current > .link
+{
+    color: #ff0000;
+    border-bottom-color: #ff0000;
+}

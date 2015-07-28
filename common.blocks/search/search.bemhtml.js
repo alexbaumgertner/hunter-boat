@@ -1,0 +1,53 @@
+block('search')(
+    js()(true),
+    attrs()({
+        id: 'search'
+    }),
+    content()([{
+        block: 'ya-site-form',
+        mods: {
+            inited: 'no'
+        },
+        attrs: {
+            onclick: 'return {\'bg\': \'transparent\', \'target\': \'_blank\', \'language\': \'ru\', \'suggest\': true, \'tld\': \'ru\', \'site_suggest\': true, \'action\': \'http://hb.d-idei.ru/search-result.html\', \'webopt\': false, \'fontsize\': 12, \'arrow\': false, \'fg\': \'#000000\', \'searchid\': \'2056472\', \'logo\': \'rb\', \'websearch\': false, \'type\': 3}'
+        },
+        content: [{
+            block: 'search',
+            elem: 'form',
+            tag: 'form',
+            attrs: {
+                action: 'http://yandex.ru/sitesearch',
+                method: 'get',
+                target: '_blank'
+            },
+            content: [{
+                tag: 'input',
+                attrs: {
+                    type: 'hidden',
+                    name: 'searchid',
+                    value: '2056472'
+                }
+            }, {
+                tag: 'input',
+                attrs: {
+                    type: 'hidden',
+                    name: 'l10n',
+                    value: 'ru'
+                }
+            }, {
+                tag: 'input',
+                attrs: {
+                    type: 'hidden',
+                    name: 'reqenc',
+                    value: ''
+                }
+            }, {
+                elem: 'input',
+                tag: 'input',
+                attrs: {
+                    name: 'text'
+                }
+            }]
+        }]
+    }])
+);

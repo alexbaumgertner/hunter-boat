@@ -1,0 +1,4 @@
+block('markets-list')(
+    tag()('ul'),
+    elem('item').tag()('li')
+);

@@ -1,14 +1,9 @@
 ({
     shouldDeps: [
         {
-            block: 'price',
-            elem: 'value'
+            elems: ['value', 'currency']
         },
-        {
-            block: 'price',
-            elem: 'currency'
-        },
-        { block: 'i-font', mods: { face: 'ALSRubl' } },
-        { mods: { 'new': 'yes', 'old': 'yes' } }
+        {block: 'i-font', mods: {face: 'ALSRubl'}},
+        {mods: {'new': 'yes', 'old': 'yes'}}
     ]
-})
+});

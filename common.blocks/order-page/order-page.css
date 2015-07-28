@@ -1,0 +1,16 @@
+.order-page
+{
+    margin: 55px auto 0;
+    display: block;
+    width: 920px;
+}
+
+.order-page .link:hover {
+    color: #00aefe;
+}
+
+.order-page .input_type_text,
+.order-page .textarea {
+    background: #eeeeee;
+    font-size: 14px;
+}

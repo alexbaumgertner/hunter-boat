@@ -1,0 +1,14 @@
+.how-to-buy-page__section-text
+{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.how-to-buy-page__section-text .link {
+    color: #007eb9;
+}
+
+.how-to-buy-page__section-text .link:hover {
+    color: #00aefe;
+}
+

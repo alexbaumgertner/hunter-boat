@@ -1,0 +1,28 @@
+.catalog-section__link-to-all
+{
+    width: 115px;
+    border: 1px solid #0095da;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 12px 13px;
+    background: #f0faff;
+    margin: 32px auto;
+    border-radius: 8px;
+}
+
+.catalog-section__link-to-all .link {
+    text-decoration: none;
+}
+
+.catalog-section__link-to-all span {
+    border-bottom: 1px solid #8b8c8c;
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.catalog-section__link-to-all:hover span {
+    color: #00aefe;
+    border-bottom-color: #00aefe;
+}

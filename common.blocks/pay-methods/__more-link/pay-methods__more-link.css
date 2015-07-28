@@ -1,0 +1,22 @@
+.pay-methods__more-link
+{
+    margin: 15px 0 0 20px;
+    width: 80%;
+}
+
+.pay-methods__more-link_state_current:after {
+    content: '↓';
+    position: relative;
+    left: 5px;
+    top: -1px;
+}
+
+.pay-methods__more-link_state_current .link {
+    color: #000000!important;
+    cursor: default;
+}
+
+
+.pay-methods__more-link_state_current .link .link__inner {
+    border-bottom: none !important;
+}

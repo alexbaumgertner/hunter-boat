@@ -1,0 +1,9 @@
+.buyer-menu__item_state_current,
+.buyer-menu__item_state_current .link,
+.buyer-menu__item_state_current:hover,
+.buyer-menu__item_state_current:hover .link
+{
+    color: #ff0000;
+    border-bottom: none;
+    cursor: default;
+}

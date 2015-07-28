@@ -1,0 +1,19 @@
+block('articles-tabs')(
+    elem('menu-item-header').mix()([{
+        block: 'i-font',
+        mods: {
+            face: 'hermes'
+        }
+    }]),
+    js()(true),
+    elem('menu')(
+        tag()('ul'),
+        js()({
+            id: 'articles-tabs'
+        })
+    ),
+    elem('menu-item').tag()('li'),
+    elem('tabs').js()({
+        id: 'articles-tabs'
+    })
+);
