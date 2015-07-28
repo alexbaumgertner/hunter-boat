@@ -1,0 +1,19 @@
+.article-anounce__title
+{
+    display: inline-block;
+    margin: 0 0 0 15px;
+    width: 380px;
+    font-weight: bold;
+}
+
+.article-anounce__title .link {
+    color: #0081bc;
+}
+
+.article-anounce__title .link:hover {
+    color: #00aefe;
+}
+
+.article-anounce__title p {
+    margin: 0;
+}

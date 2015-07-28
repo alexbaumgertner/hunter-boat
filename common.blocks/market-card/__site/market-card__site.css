@@ -1,0 +1,13 @@
+.market-card__site
+{
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.market-card__site .link {
+    color: #007eb9;
+}
+
+.market-card__site .link:hover {
+    color: #00aefe;
+}

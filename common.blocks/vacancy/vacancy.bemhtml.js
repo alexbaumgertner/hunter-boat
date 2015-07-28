@@ -1,0 +1,7 @@
+block('vacancy')(
+    elem('title').tag()('h4'),
+    elem('desc').tag()('ul'),
+    elem('desc-item').tag()('li'),
+    elem('desc-name').tag()('span'),
+    elem('desc-content').tag()('span')
+);

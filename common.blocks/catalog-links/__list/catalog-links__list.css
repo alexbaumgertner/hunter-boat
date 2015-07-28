@@ -1,0 +1,13 @@
+.catalog-links__list
+{
+    list-style: none;
+    margin: 0 -7px 0 15px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.catalog-links__list .link {
+    text-decoration: none;
+    color: inherit;
+}

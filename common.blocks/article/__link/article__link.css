@@ -1,0 +1,12 @@
+.article__link
+{
+    font-size: 14px;
+    line-height: 19px;
+    margin: 15px 0 0 0;
+    color: #0081bc;
+}
+
+
+.article__link .link:hover {
+    color: #00aefe;
+}

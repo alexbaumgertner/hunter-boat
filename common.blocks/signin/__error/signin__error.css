@@ -1,0 +1,18 @@
+.signin__error {
+    color: #ff0000;
+    line-height: 15px;
+    font-size: 13px;
+    font-style: italic;
+    margin: 35px 0 0 15px;
+    width: 375px;
+}
+
+
+.i-ua_js_yes .signin__error .link_pseudo_yes .link__inner {
+    border-bottom-style: solid;
+    color: #890000;
+}
+
+.i-ua_js_yes .signin__error .link_pseudo_yes:hover .link__inner {
+    color: #ff0000;
+}

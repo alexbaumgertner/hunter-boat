@@ -1,0 +1,22 @@
+.order-page__menu-item
+{
+    position: relative;
+    display: inline-block;
+    padding: 7px 17px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #9c9c9c;
+    box-sizing: border-box;
+}
+
+.order-page__menu-item:last-of-type {
+    margin-right: 0;
+}
+
+.order-page__menu-item .link {
+    text-decoration: none;
+}
+
+.order-page__menu-item .link:hover {
+    color: #000000;
+}

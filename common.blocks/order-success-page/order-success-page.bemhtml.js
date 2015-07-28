@@ -1,0 +1,9 @@
+block('order-success-page')(
+    elem('column').tag()('span'),
+    elem('print')(
+        tag()('span'),
+        attrs()({
+            onclick: 'window.print()'
+        })
+    )
+);

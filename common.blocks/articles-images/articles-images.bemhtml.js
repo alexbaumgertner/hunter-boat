@@ -1,0 +1,14 @@
+block('articles-images')(
+    tag()('span'),
+    elem('image')(
+        tag()('img'),
+        attrs()(function() {
+            return (function() {
+                var random = Math.floor((Math.random() * 6)) + 1;
+                return {
+                    src: ('img/articles/test-article/' + random + '_small.jpg')
+                };
+            })();
+        })
+    )
+);

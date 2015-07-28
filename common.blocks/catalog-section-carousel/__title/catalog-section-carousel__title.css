@@ -1,0 +1,16 @@
+.catalog-section-carousel__title
+{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.catalog-section-carousel__title .link {
+    text-decoration: none;
+    line-height: 20px;
+    display: inline-block;
+    border-bottom: 1px solid;
+}
+
+.catalog-section-carousel__title .link:hover {
+    color: #0081bc;
+}

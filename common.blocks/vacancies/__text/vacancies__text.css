@@ -1,0 +1,17 @@
+.vacancies__text
+{
+    width: 460px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.vacancies__text .link {
+    color: #006999;
+}
+
+
+.vacancies__text .link:hover {
+    color: #00aefe;
+}

@@ -1,0 +1,14 @@
+.info-block__link
+{
+    margin: 0;
+    font-size: 15px;
+}
+
+.info-block__link .link {
+    color: #0081bc;
+}
+
+
+.info-block__link .link:hover {
+    color: #00aefe;
+}

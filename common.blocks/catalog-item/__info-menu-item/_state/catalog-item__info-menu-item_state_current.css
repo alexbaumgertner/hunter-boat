@@ -1,0 +1,12 @@
+.catalog-item__info-menu-item_state_current
+{
+    border: 1px solid #43a2ce;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 7px;
+    padding: 5px 16px;
+}
+
+.i-ua_js_yes .catalog-item__info-menu-item_state_current .link_pseudo_yes .link__inner {
+   border-bottom: none;
+}

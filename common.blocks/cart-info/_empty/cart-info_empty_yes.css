@@ -1,0 +1,8 @@
+.cart-info_empty_yes
+{
+    opacity: 0;
+}
+
+.cart-info_empty_yes .link {
+    display: none;
+}

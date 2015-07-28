@@ -1,0 +1,16 @@
+.buy-now-list__list
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.buy-now-list__list .link {
+    color: #0081bc;
+}
+
+.buy-now-list__list .link:hover {
+    color: #00aefe;
+}

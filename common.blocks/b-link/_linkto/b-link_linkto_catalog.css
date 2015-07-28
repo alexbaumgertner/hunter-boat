@@ -1,0 +1,19 @@
+.link_linkto_catalog
+{
+    background: url("link_linkto_catalog_sprite.png") no-repeat;
+    width: 155px;
+    height: 60px;
+    display: block;
+    position: relative;
+    top: -30px;
+    margin: 0 auto;
+    left: 11px;
+}
+
+.link_linkto_catalog:hover {
+    background-position: -156px 0;
+}
+
+.link_linkto_catalog:active {
+    background-position: -313px 0;
+}

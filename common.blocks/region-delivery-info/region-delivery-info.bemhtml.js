@@ -1,0 +1,4 @@
+block('region-delivery-info')(
+    elem('textarea').tag()('span'),
+    elem('label').tag()('span')
+);

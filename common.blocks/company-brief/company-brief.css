@@ -1,0 +1,13 @@
+.company-brief
+{
+    margin: 7px 0 0 0;
+}
+
+.company-brief .link {
+    font-size: 14px;
+    color: #0081bc;
+}
+
+.company-brief .link:hover {
+    color: #00aefe;
+}

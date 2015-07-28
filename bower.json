@@ -1,0 +1,14 @@
+{
+  "name": "hunter-boat",
+  "version": "2.0.0",
+  "description": "Frontent of hunterboat.ru (before refactoring from BEM to jQuery)",
+  "bugs": "https://github.com/alexbaumgertner/hunter-boat/issues",
+  "ignore": [
+    ".bem/cache",
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {
+    "bem-components": "2.2.1"
+  }
+}

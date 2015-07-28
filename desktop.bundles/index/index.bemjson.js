@@ -1,28 +1,28 @@
 ({
-    block: 'b-page',
-    mods: { page: 'index' },
+    block: 'page',
+    mods: {page: 'index'},
     title: 'Title of the page',
     favicon: '/favicon.ico',
     head: [
-        { elem: 'css', url: '_index.css', ie: false },
-        { elem: 'css', url: '_index', ie: true },
-        { block: 'i-jquery', elem: 'core'},
-        { elem: 'js', url: '_index.js' }
+        {elem: 'meta', attrs: {name: 'description', content: ''}},
+        {elem: 'meta', attrs: {name: 'viewport', content: 'width=device-width, initial-scale=1'}},
+        {elem: 'css', url: '_index.css'}
     ],
+    scripts: [{elem: 'js', url: '_index.js'}],
     content: [
         {
             block: 'header',
-            mods: { page: 'index' },
-            js: { logoImagesLength: 4 },
+            mods: {page: 'index'},
+            js: {logoImagesLength: 4},
             content: [
                 {
                     block: 'wrapper-fix-width',
-                    mods: { width: '962' },
+                    mods: {width: '962'},
                     content: [
                         {
                             block: 'header',
                             elem: 'column',
-                            elemMods: { position: 'left' },
+                            elemMods: {position: 'left'},
                             content: [
                                 {
                                     block: 'logo',
@@ -34,7 +34,7 @@
                         {
                             block: 'header',
                             elem: 'column',
-                            elemMods: { position: 'right' },
+                            elemMods: {position: 'right'},
                             content: [
                                 {
                                     block: 'cart-info',
@@ -42,7 +42,7 @@
                                         {
                                             elem: 'link',
                                             content: {
-                                                block: 'b-link',
+                                                block: 'link',
                                                 url: 'order.html',
                                                 content: 'В заказе:'
                                             }
@@ -56,7 +56,11 @@
                                                 },
                                                 {
                                                     elem: 'total-price',
-                                                    content: { block: 'price', mods: { currency: 'dot-dash' }, value: '95000' }
+                                                    content: {
+                                                        block: 'price',
+                                                        mods: {currency: 'dot-dash'},
+                                                        value: '95000'
+                                                    }
                                                 }
                                             ]
                                         }
@@ -64,7 +68,7 @@
                                 },
                                 {
                                     block: 'contacts',
-                                    mods: { color: '000000' },
+                                    mods: {color: '000000'},
                                     content: [
                                         {
                                             elem: 'phone',
@@ -82,8 +86,8 @@
                                         {
                                             elem: 'link',
                                             content: {
-                                                block: 'b-link',
-                                                mods: { pseudo: 'yes' },
+                                                block: 'link',
+                                                mods: {pseudo: 'yes'},
                                                 content: 'Обратный звонок'
                                             }
                                         }
@@ -99,7 +103,7 @@
                                                 content: [
                                                     {
                                                         elem: 'item',
-                                                        elemMods: { section: 'catalog' },
+                                                        elemMods: {section: 'catalog'},
                                                         name: 'Каталог',
                                                         url: '/catalog.html'
                                                     }
@@ -228,7 +232,7 @@
                                         },
                                         {
                                             elem: 'menu-item',
-                                            elemMods: { state: 'current' }
+                                            elemMods: {state: 'current'}
                                         },
                                         {
                                             elem: 'menu-item'
@@ -243,13 +247,18 @@
                                     content: [
                                         {
                                             elem: 'title',
-                                            content: { block: 'b-link', mix: [
-                                                { block: 'index-promo-carousel', elem: 'url' }
-                                            ], url: '/', content: 'Надувные моторные лодки Хантер' }
+                                            content: {
+                                                block: 'link', mix: [
+                                                    {block: 'index-promo-carousel', elem: 'url'}
+                                                ], url: '/', content: 'Надувные моторные лодки Хантер'
+                                            }
                                         },
                                         {
                                             elem: 'text',
-                                            content: { elem: 'text-inner', content: 'позволят добраться <br> до самых заветных мест рыбалки или отдыха.' }
+                                            content: {
+                                                elem: 'text-inner',
+                                                content: 'позволят добраться <br> до самых заветных мест рыбалки или отдыха.'
+                                            }
                                         },
                                         {
                                             elem: 'sub-text',
@@ -260,7 +269,7 @@
                                             content: [
                                                 'от', {
                                                     block: 'price',
-                                                    mods: { currency: 'dot-dash' },
+                                                    mods: {currency: 'dot-dash'},
                                                     value: 9800
 
                                                 }
@@ -281,23 +290,23 @@
         },
         {
             block: 'content',
-            mods: { page: 'index' },
+            mods: {page: 'index'},
             content: [
                 {
                     block: 'wrapper-fix-width',
-                    mods: { width: '962' },
+                    mods: {width: '962'},
                     content: [
                         {
                             block: 'content',
                             elem: 'column',
-                            elemMods: { position: 'full' },
+                            elemMods: {position: 'full'},
                             content: [
                                 {
                                     block: 'index-page',
                                     content: [
                                         {
-                                            block: 'b-link',
-                                            mods: { linkto: 'catalog' },
+                                            block: 'link',
+                                            mods: {linkto: 'catalog'},
                                             url: 'catalog.html'
                                         },
                                         {
@@ -321,7 +330,7 @@
                                                 },
                                                 {
                                                     elem: 'column',
-                                                    elemMods: { position: 'center' },
+                                                    elemMods: {position: 'center'},
                                                     content: [
                                                         {
                                                             elem: 'header',
@@ -335,7 +344,7 @@
                                                             elem: 'link-to-all',
                                                             content: [
                                                                 {
-                                                                    block: 'b-link',
+                                                                    block: 'link',
                                                                     url: '/about.html',
                                                                     content: 'Узнать все о нас'
                                                                 }
@@ -346,11 +355,11 @@
                                                 },
                                                 {
                                                     elem: 'column',
-                                                    attrs: { style: 'margin: 58px 0 0;' },
+                                                    attrs: {style: 'margin: 58px 0 0;'},
                                                     content: [
                                                         {
                                                             block: 'brands',
-                                                            mods: { style: 'compact' },
+                                                            mods: {style: 'compact'},
                                                             content: {
                                                                 elem: 'list',
                                                                 content: [
@@ -358,22 +367,34 @@
                                                                         elem: 'item',
                                                                         content: {
                                                                             elem: 'item-header',
-                                                                            content: { block: 'b-icon', alt: 'yamaha', url: 'img/content/brand-icons/yamaha-logo_small.png' }
+                                                                            content: {
+                                                                                block: 'b-icon',
+                                                                                alt: 'yamaha',
+                                                                                url: 'img/content/brand-icons/yamaha-logo_small.png'
+                                                                            }
                                                                         }
                                                                     },
                                                                     {
                                                                         elem: 'item',
-                                                                        attrs: { style: 'margin: 5px 0 -5px 15px;' },
+                                                                        attrs: {style: 'margin: 5px 0 -5px 15px;'},
                                                                         content: {
                                                                             elem: 'item-header',
-                                                                            content: { block: 'b-icon', alt: 'hdx', url: 'img/content/brand-icons/hdx-logo_small.png' }
+                                                                            content: {
+                                                                                block: 'b-icon',
+                                                                                alt: 'hdx',
+                                                                                url: 'img/content/brand-icons/hdx-logo_small.png'
+                                                                            }
                                                                         }
                                                                     },
                                                                     {
                                                                         elem: 'item',
                                                                         content: {
                                                                             elem: 'item-header',
-                                                                            content: { block: 'b-icon', alt: 'nissamaran', url: 'img/content/brand-icons/nissamaran-logo_small.png' }
+                                                                            content: {
+                                                                                block: 'b-icon',
+                                                                                alt: 'nissamaran',
+                                                                                url: 'img/content/brand-icons/nissamaran-logo_small.png'
+                                                                            }
                                                                         }
                                                                     }
                                                                 ]
@@ -417,16 +438,36 @@
                                             ]
                                         },
 
-                                        { block: 'line', mods: { type: 'wavy-0081bd' } },
+                                        {block: 'line', mods: {type: 'wavy-0081bd'}},
 
                                         {
                                             block: 'sale-stock',
                                             mix: [
-                                                { block: 'carousel', mods: { type: 'horiz' }, js: { frameCurr: 1, frameItemsCount: 3, frameItemsStep: 3 } }
+                                                {
+                                                    block: 'carousel',
+                                                    mods: {type: 'horiz'},
+                                                    js: {frameCurr: 1, frameItemsCount: 3, frameItemsStep: 3}
+                                                }
                                             ],
                                             content: [
-                                                { block: 'carousel', elem: 'control', elemMods: { direction: 'prev' }, content: { block: 'button', mods: { direction: 'prev', type: 'carousel-horiz' } }},
-                                                { block: 'carousel', elem: 'control', elemMods: { direction: 'next' }, content: { block: 'button', mods: { direction: 'next', type: 'carousel-horiz' } }},
+                                                {
+                                                    block: 'carousel',
+                                                    elem: 'control',
+                                                    elemMods: {direction: 'prev'},
+                                                    content: {
+                                                        block: 'button',
+                                                        mods: {direction: 'prev', type: 'carousel-horiz'}
+                                                    }
+                                                },
+                                                {
+                                                    block: 'carousel',
+                                                    elem: 'control',
+                                                    elemMods: {direction: 'next'},
+                                                    content: {
+                                                        block: 'button',
+                                                        mods: {direction: 'next', type: 'carousel-horiz'}
+                                                    }
+                                                },
                                                 {
                                                     elem: 'header',
                                                     content: 'Акции'
@@ -438,13 +479,13 @@
                                                         block: 'sale-stock',
                                                         elem: 'list',
                                                         mix: [
-                                                            { block: 'carousel', elem: 'items' }
+                                                            {block: 'carousel', elem: 'items'}
                                                         ],
                                                         content: [
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -454,7 +495,7 @@
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -464,7 +505,7 @@
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -474,7 +515,7 @@
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -484,7 +525,7 @@
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -494,7 +535,7 @@
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -504,7 +545,7 @@
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -514,7 +555,7 @@
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -524,7 +565,7 @@
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -534,7 +575,7 @@
                                                             {
                                                                 elem: 'item',
                                                                 mix: [
-                                                                    { block: 'carousel', elem: 'item' }
+                                                                    {block: 'carousel', elem: 'item'}
                                                                 ],
                                                                 content: {
                                                                     block: 'product-card',
@@ -547,7 +588,7 @@
                                             ]
                                         },
 
-                                        { block: 'line', mods: { type: 'wavy-0081bd' } },
+                                        {block: 'line', mods: {type: 'wavy-0081bd'}},
 
                                         {
                                             elem: 'column',
@@ -560,7 +601,7 @@
                                                             content: [
                                                                 {
                                                                     elem: 'menu-item',
-                                                                    elemMods: { state: 'current' },
+                                                                    elemMods: {state: 'current'},
                                                                     content: [
                                                                         {
                                                                             elem: 'menu-item-header',
@@ -607,7 +648,7 @@
                                                             content: [
                                                                 {
                                                                     elem: 'tab',
-                                                                    elemMods: { state: 'current' },
+                                                                    elemMods: {state: 'current'},
                                                                     content: [
                                                                         {
                                                                             block: 'article-anounce',
@@ -618,7 +659,11 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: 'newsone.html', content: 'с Наступающим Новым 2013 годом' }
+                                                                                    content: {
+                                                                                        block: 'link',
+                                                                                        url: 'newsone.html',
+                                                                                        content: 'с Наступающим Новым 2013 годом'
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
@@ -631,7 +676,11 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: '/', content: 'Сезонные скидки на надувные лодки Хантер' }
+                                                                                    content: {
+                                                                                        block: 'link',
+                                                                                        url: '/',
+                                                                                        content: 'Сезонные скидки на надувные лодки Хантер'
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
@@ -644,14 +693,18 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: '/', content: 'Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
+                                                                                    content: {
+                                                                                        block: 'link',
+                                                                                        url: '/',
+                                                                                        content: 'Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК'
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
                                                                         {
                                                                             elem: 'link-to-all',
                                                                             content: {
-                                                                                block: 'b-link',
+                                                                                block: 'link',
                                                                                 url: 'news.html',
                                                                                 content: 'Все новости'
                                                                             }
@@ -670,7 +723,11 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: 'articlesone.html', content: 'Статья с Наступающим Новым 2013 годом' }
+                                                                                    content: {
+                                                                                        block: 'link',
+                                                                                        url: 'articlesone.html',
+                                                                                        content: 'Статья с Наступающим Новым 2013 годом'
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
@@ -683,7 +740,11 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: '/', content: 'Статья Сезонные скидки на надувные лодки Хантер' }
+                                                                                    content: {
+                                                                                        block: 'link',
+                                                                                        url: '/',
+                                                                                        content: 'Статья Сезонные скидки на надувные лодки Хантер'
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
@@ -696,14 +757,18 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: '/', content: 'Статья Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
+                                                                                    content: {
+                                                                                        block: 'link',
+                                                                                        url: '/',
+                                                                                        content: 'Статья Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК'
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
                                                                         {
                                                                             elem: 'link-to-all',
                                                                             content: {
-                                                                                block: 'b-link',
+                                                                                block: 'link',
                                                                                 url: 'articles.html',
                                                                                 content: 'Все статьи'
                                                                             }
@@ -722,8 +787,15 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    mix: [ { block: 'text-truncate', js: { stringLength: 50 } } ],
-                                                                                    content: { block: 'b-link', url: 'reviews.html', content: 'Отзыв с Наступающим Новым 2013 годом Отзыв с Наступающим Новым 2013 годом' }
+                                                                                    mix: [{
+                                                                                        block: 'text-truncate',
+                                                                                        js: {stringLength: 50}
+                                                                                    }],
+                                                                                    content: {
+                                                                                        block: 'link',
+                                                                                        url: 'reviews.html',
+                                                                                        content: 'Отзыв с Наступающим Новым 2013 годом Отзыв с Наступающим Новым 2013 годом'
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
@@ -736,7 +808,11 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: '/', content: 'Отзыв Сезонные скидки на надувные лодки Хантер' }
+                                                                                    content: {
+                                                                                        block: 'link',
+                                                                                        url: '/',
+                                                                                        content: 'Отзыв Сезонные скидки на надувные лодки Хантер'
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
@@ -749,14 +825,18 @@
                                                                                 },
                                                                                 {
                                                                                     elem: 'title',
-                                                                                    content: { block: 'b-link', url: '/', content: 'Отзыв Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК' }
+                                                                                    content: {
+                                                                                        block: 'link',
+                                                                                        url: '/',
+                                                                                        content: 'Отзыв Новинка от «Бот-Трэйдинг» - Надувная килевая бюджетная лодка Хантер 320 ЛК'
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
                                                                         {
                                                                             elem: 'link-to-all',
                                                                             content: {
-                                                                                block: 'b-link',
+                                                                                block: 'link',
                                                                                 url: 'reviews.html',
                                                                                 content: 'Все отзывы'
                                                                             }
@@ -780,7 +860,11 @@
                                                         },
                                                         {
                                                             elem: 'title',
-                                                            content: { block: 'b-link', url: '/photoalbum.html', content: 'Тест драйв лодки Хантер 280 Т' }
+                                                            content: {
+                                                                block: 'link',
+                                                                url: '/photoalbum.html',
+                                                                content: 'Тест драйв лодки Хантер 280 Т'
+                                                            }
                                                         },
                                                         {
                                                             elem: 'counter',
@@ -798,8 +882,8 @@
                                                     ]
                                                 },
                                                 {
-                                                    block: 'b-link',
-                                                    mods: { 'linkto': 'photoalbums' },
+                                                    block: 'link',
+                                                    mods: {'linkto': 'photoalbums'},
                                                     url: '/photoalbums.html',
                                                     content: 'Фотогалерея'
                                                 }
@@ -819,16 +903,16 @@
             content: [
                 {
                     block: 'wrapper-fix-width',
-                    mods: { width: '962' },
+                    mods: {width: '962'},
                     content: [
                         {
                             block: 'footer',
                             elem: 'column',
-                            elemMods: { position: 'left' },
+                            elemMods: {position: 'left'},
                             content: [
                                 {
                                     block: 'contacts',
-                                    mods: { color: 'e5e5e5' },
+                                    mods: {color: 'e5e5e5'},
                                     content: [
                                         {
                                             elem: 'phone',
@@ -846,8 +930,8 @@
                                         {
                                             elem: 'link',
                                             content: {
-                                                block: 'b-link',
-                                                mods: { pseudo: 'yes' },
+                                                block: 'link',
+                                                mods: {pseudo: 'yes'},
                                                 content: 'Обратный звонок'
                                             }
                                         },
@@ -866,7 +950,7 @@
                         {
                             block: 'footer',
                             elem: 'column',
-                            elemMods: { position: 'center' },
+                            elemMods: {position: 'center'},
                             content: [
                                 {
                                     block: 'search'
@@ -891,11 +975,11 @@
                         {
                             block: 'footer',
                             elem: 'column',
-                            elemMods: { position: 'right' },
+                            elemMods: {position: 'right'},
                             content: [
                                 {
                                     block: 'studio-idei',
-                                    mods: { color: '909090' },
+                                    mods: {color: '909090'},
                                     projectUrl: 'project-url'
                                 }
                             ]
@@ -905,6 +989,4 @@
             ]
         }
     ]
-
-
-})
+});

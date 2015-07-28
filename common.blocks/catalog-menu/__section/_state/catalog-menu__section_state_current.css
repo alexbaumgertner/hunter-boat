@@ -1,0 +1,18 @@
+.catalog-menu__section_state_current
+{
+
+}
+
+.catalog-menu__section_state_current .catalog-icon__img
+{
+    opacity: 1;
+}
+
+.catalog-menu__section_state_current .catalog-menu__section-header {
+    color: #ff0000;
+}
+
+.catalog-menu__section_state_current .catalog-menu__section-header .link {
+    border-bottom: none;
+    color: #ff0000;
+}

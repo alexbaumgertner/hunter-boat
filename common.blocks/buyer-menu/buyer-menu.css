@@ -1,0 +1,20 @@
+.buyer-menu
+{
+    list-style: none;
+    margin: 15px 5px 0 0;
+    padding: 0;
+    color: #000000;
+    font-size: 13px;
+    float: right;
+}
+
+.buyer-menu .link {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #8d8d8d;
+}
+
+.buyer-menu .link:hover {
+    color: #0081bc;
+    border-bottom: 1px solid #6ba5bf;
+}

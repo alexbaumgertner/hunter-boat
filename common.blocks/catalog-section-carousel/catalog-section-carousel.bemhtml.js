@@ -1,0 +1,14 @@
+block('catalog-section-carousel')(
+    elem('counter').tag()('span'),
+    elem('title')(
+        tag()('span'),
+        mix()([{
+            block: 'i-font',
+            mods: {
+                face: 'hermes'
+            }
+        }])
+    ),
+    elem('list').tag()('ul'),
+    elem('item').tag()('li')
+);
